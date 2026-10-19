@@ -1,0 +1,173 @@
+[
+  {
+    "slug": "top-studied-peptides-for-biohackers",
+    "title": "Top-Studied Peptides for Biohackers",
+    "excerpt": "Peptides for recovery and regeneration are short chains of amino acids that signal specific repair processes. Here is what the human evidence actually supports.",
+    "date": "2026-08-28",
+    "readTime": 9,
+    "categories": ["Health & Wellness", "Fitness & Recovery"],
+    "entities": ["creatine", "protein-intake", "hs-crp", "hrv"],
+    "topics": ["recovery", "longevity"],
+    "answers": "Which peptides have human evidence behind them?",
+    "body": [
+      "Peptides sit in an unusual position in biohacking: the underlying science is legitimate and well funded, while the consumer market around it is largely unregulated. Understanding which is which is the whole task.",
+      "A peptide is simply a short chain of amino acids — shorter than a protein, long enough to act as a signalling molecule. Your body already uses hundreds of them. The therapeutic interest comes from the fact that some peptides activate very specific repair or growth pathways, rather than the broad effects of a hormone.",
+      "The best-supported categories in human research are the GLP-1 receptor agonists used in metabolic medicine, and a small set of growth hormone secretagogues studied in clinical settings. Most of the regeneration-focused peptides circulating in biohacking communities have animal or in-vitro data only, and are sold under research chemical labelling for exactly that reason.",
+      "The practical framing the Hub recommends: peptides are a medical category, not a supplement category. If the evidence for one is strong enough to be worth using, it is strong enough to warrant a clinician. If no clinician will prescribe it, that is information about the evidence base."
+    ]
+  },
+  {
+    "slug": "complete-guide-to-the-biohacking-diet",
+    "title": "A Complete Guide To The Biohacking Diet, With Examples",
+    "excerpt": "There is no single biohacking diet. There is a method: measure, remove, reintroduce, and let your own markers decide.",
+    "date": "2026-08-20",
+    "readTime": 17,
+    "categories": ["Nutrition", "Health & Wellness"],
+    "entities": ["time-restricted-eating", "continuous-glucose-monitoring", "protein-intake", "fasting-insulin", "omega-3"],
+    "topics": ["nutrition", "metabolic-health"],
+    "answers": "What is the biohacking diet?",
+    "body": [
+      "The first step is a comprehensive body assessment — blood tests, hormone panels, and where relevant microbiome and food sensitivity testing. The results give a picture of where you actually are, which is what separates a biohacking approach from following someone else diet.",
+      "Once you have baseline data, the method is iterative. Remove a variable, hold everything else constant, measure for a defined period, and reintroduce. Most people discover two or three genuine personal responses this way — an alcohol intolerance, a poor response to a specific grain, a marked improvement from moving dinner three hours earlier.",
+      "What almost every successful version has in common is unglamorous: enough protein, enough fibre, a high proportion of whole foods, and an eating window that respects the circadian clock. The personalisation happens at the margins, not at the foundation.",
+      "The examples in this guide are starting templates, not prescriptions. Run them for four weeks, measure, and then adjust based on what your own numbers say."
+    ]
+  },
+  {
+    "slug": "biohacking-trends-2026",
+    "title": "Biohacking Trends of 2026: The Biggest Health and Longevity Trends to Watch",
+    "excerpt": "The modern world of biohacking has dozens of ways to improve how you feel and function. These are the ones with momentum going into 2026.",
+    "date": "2026-08-12",
+    "readTime": 11,
+    "categories": ["Longevity & Anti-Aging", "Health & Wellness"],
+    "entities": ["biological-age", "continuous-glucose-monitoring", "nmn", "red-light-therapy", "hrv"],
+    "topics": ["longevity", "metabolic-health"],
+    "answers": "What are the biggest biohacking trends right now?",
+    "body": [
+      "Three shifts define this year. The first is the move from single metrics to composite panels — people are learning that one wearable number means little without the bloodwork alongside it.",
+      "The second is the mainstreaming of metabolic measurement. Continuous glucose monitoring left the diabetes clinic and became a two-week self-education tool, and fasting insulin is now a routine request on longevity panels that most standard checkups still omit.",
+      "The third is a correction in the longevity supplement market. After several years of rapid growth, buyers are asking harder questions about human trial data, and the products with real clinical evidence are separating from those with mechanistic stories.",
+      "Underneath all three is the same trend: the field is growing up. The questions being asked at conferences this year are about evidence quality, measurement reliability and cost per unit of benefit."
+    ]
+  },
+  {
+    "slug": "best-nootropics-for-focus",
+    "title": "Best Nootropics for Focus and Productivity, Ranked and Reviewed",
+    "excerpt": "Most nootropic stacks are built backwards. Start with the interventions that produce the largest measured effects, then consider the compounds.",
+    "date": "2026-08-02",
+    "readTime": 14,
+    "categories": ["Cognitive Enhancement"],
+    "entities": ["caffeine-l-theanine", "creatine", "omega-3", "deep-sleep", "zone-2-training"],
+    "topics": ["cognition"],
+    "answers": "What are the best nootropics for focus?",
+    "body": [
+      "Here is the uncomfortable ranking. The largest measured improvements in attention and working memory in healthy adults come from sleeping adequately, being cardiovascularly fit, and keeping blood glucose stable. No compound in the nootropic market produces effects of that size.",
+      "Within compounds, caffeine paired with L-theanine has the most reproducible data, and it is also the cheapest. Creatine shows clear cognitive effects under energetic stress — sleep deprivation, high load, or low dietary intake. Omega-3 supports the structural side over months rather than hours.",
+      "Racetams, cholinergics and the longer exotic stacks have thinner evidence and considerably more variability between individuals. They are not necessarily useless, but they belong after the foundations, not instead of them.",
+      "One rule worth keeping: if a stack only works while you are underslept, what you have bought is a mask, not an enhancement."
+    ]
+  },
+  {
+    "slug": "affordable-supplements-biohacking-community",
+    "title": "Affordable Supplements Popular in the Biohacking Community",
+    "excerpt": "A short list of supplements where the evidence justifies the cost — and a longer list of where it does not.",
+    "date": "2026-07-24",
+    "readTime": 12,
+    "categories": ["Nutrition", "Longevity & Anti-Aging"],
+    "entities": ["creatine", "magnesium", "vitamin-d", "omega-3", "protein-intake"],
+    "topics": ["nutrition", "longevity"],
+    "answers": "Which supplements are worth the money?",
+    "body": [
+      "Cost per unit of evidence is an underused way to evaluate supplements. By that measure, creatine monohydrate wins outright: a few cents per day, hundreds of human trials, and effects on strength, lean mass and cognition under stress.",
+      "Magnesium, vitamin D where deficiency exists, and omega-3 make up the rest of the short list. All four are cheap, well studied and have a clear mechanism and a test that tells you whether you need them.",
+      "The expensive end of the market — NAD+ precursors, senolytic formulations, proprietary longevity blends — is where the evidence thins out fastest per dollar spent. That does not mean they will not eventually be validated. It means you are funding a hypothesis.",
+      "A reasonable rule: no supplement enters the stack without a reason you can state, a dose you can justify, and ideally a marker you can check."
+    ]
+  },
+  {
+    "slug": "top-biohacking-devices",
+    "title": "Top Biohacking Devices for True Biohackers",
+    "excerpt": "From sleep trackers to red light panels, here is how to judge whether a device earns its place — and its price.",
+    "date": "2026-07-15",
+    "readTime": 14,
+    "categories": ["Devices"],
+    "entities": ["hrv", "deep-sleep", "red-light-therapy", "continuous-glucose-monitoring", "sauna-heat-therapy"],
+    "topics": ["recovery", "sleep"],
+    "answers": "Which biohacking devices are actually worth buying?",
+    "body": [
+      "Devices fall into two categories that people constantly confuse: measurement devices and intervention devices. A sleep tracker measures. A red light panel intervenes. The evaluation criteria are completely different.",
+      "For measurement devices, ask about validation. Does this device track change in one person reliably over time? Wearable sleep staging is moderate against polysomnography, which makes it useful for trends and unreliable for a single night. That is fine, as long as you use it that way.",
+      "For intervention devices, ask what the effect size is in humans, at what dose, and whether the device delivers that dose. This is where photobiomodulation devices most often fail — the wavelengths are right, the irradiance at your actual treatment distance is not.",
+      "The device that pays for itself most often is the cheapest one in this article: a set of blackout curtains and a thermometer for the bedroom."
+    ]
+  },
+  {
+    "slug": "sleep-tracking-what-the-numbers-mean",
+    "title": "Sleep Tracking: What Your Numbers Actually Mean",
+    "excerpt": "Your ring says 48 minutes of deep sleep. Is that bad? Here is how to read sleep data without letting it make your sleep worse.",
+    "date": "2026-07-08",
+    "readTime": 10,
+    "categories": ["Sleep", "Devices"],
+    "entities": ["deep-sleep", "hrv", "circadian-rhythm", "sleep-hygiene-protocol", "caffeine-l-theanine"],
+    "topics": ["sleep", "recovery"],
+    "answers": "How accurate are sleep trackers?",
+    "body": [
+      "Consumer sleep trackers infer stages from heart rate, movement and skin temperature. They do not measure brain activity, which is what defines a sleep stage. Against polysomnography, they are good at detecting sleep versus wake and moderate at staging.",
+      "The correct use is trend analysis. If your deep sleep average across three weeks rises after you move dinner two hours earlier, that is real information. If last night showed 38 minutes instead of your usual 70, that is mostly noise.",
+      "There is a documented phenomenon called orthosomnia, where anxiety about sleep scores causes worse sleep than the problem the tracker was bought to solve. If you find yourself checking your score before you have fully woken up, the device has stopped helping.",
+      "Track weekly. Act on patterns. Ignore single nights."
+    ]
+  },
+  {
+    "slug": "cold-plunge-vs-sauna",
+    "title": "Cold Plunge vs Sauna: Which Should You Do, and When?",
+    "excerpt": "Both are hormetic stressors. They do different things, and the order you do them in matters more than most people realise.",
+    "date": "2026-06-26",
+    "readTime": 8,
+    "categories": ["Fitness & Recovery"],
+    "entities": ["cold-exposure", "sauna-heat-therapy", "hrv", "hs-crp", "deep-sleep"],
+    "topics": ["recovery", "longevity"],
+    "answers": "Should I do cold plunge or sauna?",
+    "body": [
+      "The short version: sauna has the stronger long-term outcome data, cold has the stronger acute mood and alertness data, and the two are not interchangeable.",
+      "Sauna produces a cardiovascular load comparable to moderate exercise and has large observational cohorts linking frequent use to reduced cardiovascular and all-cause mortality. Cold exposure produces a sharp catecholamine release with a well-documented effect on mood and focus lasting an hour or more.",
+      "Timing is the practical issue. Cold immediately after resistance training blunts hypertrophy signalling. Heat is safer around training and may even support adaptation. If you do contrast therapy, finishing on heat in the evening supports the core temperature drop that helps sleep onset.",
+      "If you can only have one, choose based on your goal: sauna for cardiovascular and longevity markers, cold for mood, alertness and stress tolerance."
+    ]
+  },
+  {
+    "slug": "what-your-annual-bloodwork-misses",
+    "title": "What Your Annual Bloodwork Misses",
+    "excerpt": "A standard checkup is designed to catch disease. A longevity panel is designed to catch the decade before it.",
+    "date": "2026-06-14",
+    "readTime": 11,
+    "categories": ["Health & Wellness", "Longevity & Anti-Aging"],
+    "entities": ["fasting-insulin", "apob", "hs-crp", "vitamin-d-blood", "rbc-magnesium"],
+    "topics": ["metabolic-health", "longevity"],
+    "answers": "What blood tests should I ask for?",
+    "body": [
+      "Standard panels are optimised for detecting existing disease at acceptable cost across a whole population. That is a legitimate goal, and a different one from detecting the direction you are heading in.",
+      "Four tests account for most of the gap. Fasting insulin reveals insulin resistance years before glucose moves. ApoB counts atherogenic particles rather than their cholesterol content. hs-CRP captures chronic low-grade inflammation. And 25-hydroxyvitamin D is the only way to know your actual vitamin D status.",
+      "Two more are worth adding if budget allows: Lp(a), which is largely genetic and worth knowing once in your life, and RBC magnesium, which reflects tissue status where serum magnesium does not.",
+      "Take the list to your physician rather than to a direct-to-consumer panel if you can. Interpretation in the context of your history is the part that matters, and reference ranges describe the population, not the optimum."
+    ]
+  },
+  {
+    "slug": "beginners-guide-to-biohacking",
+    "title": "The Beginner Guide to Biohacking: Where to Actually Start",
+    "excerpt": "If you are new to biohacking, the answer is not a supplement. It is a 30-day sequence, in this order.",
+    "date": "2026-06-02",
+    "readTime": 13,
+    "categories": ["Health & Wellness"],
+    "entities": ["sleep-hygiene-protocol", "circadian-rhythm", "zone-2-training", "protein-intake", "hrv"],
+    "topics": ["sleep", "recovery", "nutrition"],
+    "answers": "How do I start biohacking as a beginner?",
+    "body": [
+      "Biohacking looks expensive from the outside because the visible parts — devices, plunges, panels, peptides — are the expensive parts. The interventions with the largest measured effects are almost all free.",
+      "Week one: fix your wake time and get outdoor light within an hour of waking. Nothing else. This single change reorganises sleep, energy and appetite for most people.",
+      "Week two: add protein. Most people eating a typical diet are well below the range that supports body composition and recovery. Aim for 30 to 40 grams at three meals.",
+      "Week three: add movement — three sessions of easy aerobic work where you can hold a conversation. Week four: get baseline bloodwork, so that everything you do afterwards can be measured rather than guessed at.",
+      "Only after those thirty days does buying anything make sense. At that point you will have a baseline, a habit structure, and enough self-knowledge to evaluate whether a product is doing something."
+    ]
+  }
+]

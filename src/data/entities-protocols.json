@@ -1,0 +1,945 @@
+[
+  {
+    "slug": "cold-exposure",
+    "name": "Cold Exposure",
+    "type": "protocol",
+    "aka": [
+      "Cold plunge",
+      "Ice bath",
+      "Cold water immersion",
+      "CWI"
+    ],
+    "topics": [
+      "recovery",
+      "cognition",
+      "metabolic-health"
+    ],
+    "evidence": "Moderate",
+    "summary": "Cold exposure is the deliberate use of cold water or air to trigger an acute stress response. It reliably raises catecholamines and mood, and is genuinely useful for recovery — with one important exception around strength training.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Hormetic stress protocol"
+      },
+      {
+        "label": "Common practice",
+        "value": "2–5 minutes at 10–15°C, 2–4 times per week"
+      },
+      {
+        "label": "Best-supported effect",
+        "value": "Mood and alertness via catecholamine release"
+      },
+      {
+        "label": "Key caution",
+        "value": "Blunts hypertrophy if done soon after resistance training"
+      },
+      {
+        "label": "Contraindications",
+        "value": "Cardiac conditions, pregnancy, Raynaud phenomenon"
+      }
+    ],
+    "sections": [
+      {
+        "h": "What cold actually does",
+        "body": [
+          "Cold water immersion triggers a large release of noradrenaline — studies report increases of 200 to 300 percent that persist for an hour or more. This underlies the reported improvements in mood, alertness and focus, which are among the most consistently reproduced findings in the area.",
+          "Cold also activates brown adipose tissue and increases non-shivering thermogenesis, which is the basis for the metabolic claims. Effects on body composition in humans are real but small."
+        ]
+      },
+      {
+        "h": "The training timing problem",
+        "body": [
+          "Cold immersion immediately after resistance training reduces the inflammatory signalling that drives muscle adaptation. Multiple trials show attenuated hypertrophy and strength gains when cold is applied within a few hours of lifting.",
+          "This does not make cold useless for athletes — it is still effective for acute recovery between competition rounds or during dense fixture periods, where recovering fast matters more than adapting maximally. It does mean you should separate cold from strength sessions by at least four to six hours if growth is the goal."
+        ]
+      },
+      {
+        "h": "A reasonable starting protocol",
+        "list": [
+          "Start with the end of a normal shower at the coldest comfortable setting for 30 to 60 seconds.",
+          "Progress to immersion at 10 to 15°C for two to three minutes; colder is not better.",
+          "Two to four exposures per week, totalling around 11 minutes, is the commonly cited target from the available literature.",
+          "Breathe slowly and deliberately. The goal is to stay calm in the stress response, which is much of the transferable benefit.",
+          "Do not combine with breath-holding in water. Shallow water blackout is a genuine and fatal risk."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What does cold exposure do?",
+        "a": "Cold exposure triggers a sharp release of noradrenaline and adrenaline, producing a durable lift in alertness and mood. It also activates brown fat and, in acute settings, reduces perceived muscle soreness."
+      },
+      {
+        "q": "How long should I stay in a cold plunge?",
+        "a": "Two to five minutes at 10 to 15°C is sufficient for most benefits. Around 11 minutes of total weekly exposure, spread across two to four sessions, is the figure most often cited from the research."
+      },
+      {
+        "q": "Does cold exposure hurt muscle growth?",
+        "a": "It can. Cold water immersion within a few hours after resistance training blunts the inflammatory signalling that drives hypertrophy. Separate cold exposure from strength sessions by at least four to six hours."
+      }
+    ],
+    "related": [
+      "sauna-heat-therapy",
+      "hrv",
+      "breathwork",
+      "mitochondria",
+      "deep-sleep"
+    ],
+    "updated": "2026-08-25"
+  },
+  {
+    "slug": "sauna-heat-therapy",
+    "name": "Sauna & Heat Therapy",
+    "type": "protocol",
+    "aka": [
+      "Sauna",
+      "Heat stress",
+      "Hyperthermic conditioning"
+    ],
+    "topics": [
+      "recovery",
+      "longevity",
+      "sleep"
+    ],
+    "evidence": "Moderate",
+    "summary": "Regular sauna use produces cardiovascular stress similar to moderate exercise and activates heat shock proteins. Large Finnish cohort studies link frequent use to lower cardiovascular and all-cause mortality.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Hormetic stress protocol"
+      },
+      {
+        "label": "Studied protocol",
+        "value": "4–7 sessions per week, 15–20 min, 80–100°C"
+      },
+      {
+        "label": "Mechanisms",
+        "value": "Heat shock proteins, plasma volume, endothelial function"
+      },
+      {
+        "label": "Strongest data",
+        "value": "Observational cohorts, notably from Finland"
+      },
+      {
+        "label": "Cautions",
+        "value": "Dehydration, pregnancy, low blood pressure, alcohol"
+      }
+    ],
+    "sections": [
+      {
+        "h": "The cohort evidence",
+        "body": [
+          "The Kuopio Ischaemic Heart Disease study followed over two thousand Finnish men for two decades. Those using a sauna four to seven times weekly had substantially lower cardiovascular and all-cause mortality than those using it once a week, with a clear dose-response relationship.",
+          "This is observational data, so confounding cannot be excluded — sauna frequency may track with leisure time, income and health. But the dose-response gradient and plausible mechanisms make it one of the more compelling non-pharmacological findings in longevity research."
+        ]
+      },
+      {
+        "h": "What heat stress does physiologically",
+        "list": [
+          "Raises core temperature and heart rate to a level comparable with moderate aerobic exercise.",
+          "Induces heat shock proteins, which assist protein folding and cellular stress resistance.",
+          "Expands plasma volume, an adaptation that also improves endurance performance.",
+          "Improves endothelial function and reduces arterial stiffness over weeks of regular use.",
+          "Increases the depth of subsequent sleep, likely through the post-sauna drop in core temperature."
+        ]
+      },
+      {
+        "h": "Practical use",
+        "body": [
+          "Fifteen to twenty minutes at traditional sauna temperatures, four or more times per week, matches the protocols in the cohort data. Infrared saunas operate much cooler and have far less outcome evidence, though they are more tolerable for beginners.",
+          "Rehydrate with water and electrolytes. Do not drink alcohol in or before a sauna — this combination accounts for a meaningful share of sauna-related deaths in Finland."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "How often should I use a sauna?",
+        "a": "The cohort data showing the largest mortality reduction used four to seven sessions per week of 15 to 20 minutes at 80 to 100°C. Benefits appear dose-dependent above roughly two sessions per week."
+      },
+      {
+        "q": "Is infrared sauna as good as traditional?",
+        "a": "Infrared saunas operate at much lower temperatures and produce a smaller cardiovascular stress. They are gentler and more accessible, but the strong mortality data comes from traditional Finnish sauna use."
+      },
+      {
+        "q": "Does sauna help sleep?",
+        "a": "Many people sleep more deeply after evening sauna use. The likely mechanism is the pronounced drop in core body temperature that follows heat exposure, which is a strong sleep-onset signal."
+      }
+    ],
+    "related": [
+      "cold-exposure",
+      "hs-crp",
+      "hrv",
+      "deep-sleep",
+      "vo2-max"
+    ],
+    "updated": "2026-08-05"
+  },
+  {
+    "slug": "zone-2-training",
+    "name": "Zone 2 Training",
+    "type": "protocol",
+    "aka": [
+      "Aerobic base training",
+      "Low-intensity steady state",
+      "LISS"
+    ],
+    "topics": [
+      "longevity",
+      "metabolic-health",
+      "recovery"
+    ],
+    "evidence": "Strong",
+    "summary": "Zone 2 is sustained aerobic exercise at an intensity you could hold for hours — just below the point where lactate begins to accumulate. It is the primary stimulus for building mitochondrial density and fat oxidation capacity.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Aerobic training protocol"
+      },
+      {
+        "label": "Intensity",
+        "value": "Conversational pace; roughly 60–70 percent of max HR"
+      },
+      {
+        "label": "Weekly target",
+        "value": "150–240 minutes, in sessions of 45–60 minutes"
+      },
+      {
+        "label": "Primary adaptation",
+        "value": "Mitochondrial density and fat oxidation"
+      },
+      {
+        "label": "Field test",
+        "value": "You can speak full sentences but would rather not"
+      }
+    ],
+    "sections": [
+      {
+        "h": "Why low intensity is the point",
+        "body": [
+          "Zone 2 sits at the intensity where type I muscle fibres and mitochondrial fat oxidation do most of the work. Training here increases mitochondrial number and efficiency, raises the lactate threshold, and improves the body ability to use fat as fuel — which spares glycogen and improves metabolic flexibility.",
+          "Going harder feels more productive and produces a different, less specific adaptation. Most recreational athletes train in a grey zone that is too hard to build base and too easy to build top-end capacity."
+        ]
+      },
+      {
+        "h": "Finding your zone",
+        "list": [
+          "Talk test — you can hold a conversation in full sentences but would prefer to breathe through your nose.",
+          "Nasal breathing — if you must open your mouth to sustain the pace, you are above zone 2.",
+          "Heart rate — approximately 60 to 70 percent of maximum, though formulas are unreliable individually.",
+          "Lactate — 1.7 to 2.0 mmol/L measured with a finger-prick meter is the precise definition.",
+          "Perceived exertion — around 4 or 5 on a 10-point scale."
+        ]
+      },
+      {
+        "h": "Why longevity people care",
+        "body": [
+          "Mitochondrial function declines with age and underlies much of the loss in energy, exercise capacity and metabolic control. Zone 2 is the most direct non-pharmacological lever on mitochondrial density available.",
+          "It also pairs efficiently with a weekly high-intensity session: base volume builds the engine, intervals raise the ceiling. That combination produces the largest gains in VO2 max."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is zone 2 training?",
+        "a": "Zone 2 is steady aerobic exercise at the highest intensity you can sustain while still clearing lactate as fast as you produce it — roughly a conversational pace. It is the primary driver of mitochondrial adaptation."
+      },
+      {
+        "q": "How much zone 2 should I do per week?",
+        "a": "Most protocols target 150 to 240 minutes per week, typically three to four sessions of 45 to 60 minutes. Sessions shorter than 30 minutes provide less of the intended adaptation."
+      },
+      {
+        "q": "How do I know if I am in zone 2?",
+        "a": "The simplest field test is the talk test: you should be able to speak in full sentences but prefer not to. If you have to breathe through your mouth to hold the pace, you have gone above zone 2."
+      }
+    ],
+    "related": [
+      "mitochondria",
+      "vo2-max",
+      "fasting-insulin",
+      "hrv",
+      "nad"
+    ],
+    "updated": "2026-08-09"
+  },
+  {
+    "slug": "time-restricted-eating",
+    "name": "Time-Restricted Eating",
+    "type": "protocol",
+    "aka": [
+      "TRE",
+      "Intermittent fasting",
+      "16:8",
+      "Eating window"
+    ],
+    "topics": [
+      "metabolic-health",
+      "longevity",
+      "nutrition"
+    ],
+    "evidence": "Moderate",
+    "summary": "Time-restricted eating confines food intake to a consistent daily window, most commonly eight to ten hours. Benefits appear to come from both circadian alignment and, in practice, reduced total intake.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Dietary timing protocol"
+      },
+      {
+        "label": "Common windows",
+        "value": "16:8, 14:10, 12:12"
+      },
+      {
+        "label": "Best-supported version",
+        "value": "Early time-restricted eating, window ending mid-afternoon"
+      },
+      {
+        "label": "Main mechanisms",
+        "value": "Circadian alignment, reduced intake, improved insulin sensitivity"
+      },
+      {
+        "label": "Watch out for",
+        "value": "Under-eating protein; not advised in eating disorder history"
+      }
+    ],
+    "sections": [
+      {
+        "h": "Timing beats duration",
+        "body": [
+          "The interesting finding of the last few years is that when the window sits matters more than how long it is. Early time-restricted eating — for example 8am to 4pm — improves insulin sensitivity and blood pressure more than a late window of identical length, even when calories are matched.",
+          "This is a circadian effect. Insulin sensitivity is naturally higher in the morning, and eating late runs against the body internal clock as well as against sleep quality."
+        ]
+      },
+      {
+        "h": "How much is calories and how much is timing?",
+        "body": [
+          "Trials that control calories tightly find smaller effects than free-living trials, which suggests a significant part of the real-world benefit comes from simply eating less when the window is shorter.",
+          "That is not a criticism — a protocol that reduces intake without counting is genuinely useful. But it argues against claiming unique metabolic magic."
+        ]
+      },
+      {
+        "h": "Who should be careful",
+        "list": [
+          "Anyone with a history of disordered eating — restriction-based protocols carry real risk here.",
+          "People training heavily, who may struggle to fit protein and total energy into a short window.",
+          "Women with menstrual irregularities, where aggressive fasting sometimes worsens symptoms.",
+          "Anyone on glucose-lowering medication, which requires medical supervision.",
+          "Older adults at risk of sarcopenia, where protein distribution across the day matters."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is time-restricted eating?",
+        "a": "It is a pattern of confining all food intake to a consistent window each day, commonly eight to ten hours, without necessarily changing what is eaten."
+      },
+      {
+        "q": "Is 16:8 fasting effective?",
+        "a": "It produces modest improvements in weight, insulin sensitivity and blood pressure in most trials. A substantial part of the effect in real-world settings comes from eating less overall."
+      },
+      {
+        "q": "Is it better to skip breakfast or dinner?",
+        "a": "Evidence favours skipping dinner. Early eating windows that finish in the mid-afternoon improve insulin sensitivity and blood pressure more than late windows of the same length."
+      }
+    ],
+    "related": [
+      "autophagy",
+      "fasting-insulin",
+      "circadian-rhythm",
+      "protein-intake",
+      "continuous-glucose-monitoring"
+    ],
+    "updated": "2026-08-14"
+  },
+  {
+    "slug": "red-light-therapy",
+    "name": "Red Light Therapy",
+    "type": "protocol",
+    "aka": [
+      "Photobiomodulation",
+      "PBM",
+      "LLLT",
+      "Near-infrared therapy"
+    ],
+    "topics": [
+      "recovery",
+      "sleep",
+      "longevity",
+      "skincare"
+    ],
+    "evidence": "Emerging",
+    "summary": "Red and near-infrared light therapy applies specific wavelengths to tissue, where they are absorbed by mitochondrial cytochrome c oxidase. Evidence is strongest for skin and wound healing, weaker and noisier elsewhere.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Photobiomodulation protocol"
+      },
+      {
+        "label": "Wavelengths",
+        "value": "Red 630–670 nm; near-infrared 810–850 nm"
+      },
+      {
+        "label": "Typical session",
+        "value": "10–20 minutes, several times per week"
+      },
+      {
+        "label": "Strongest evidence",
+        "value": "Skin quality, wound healing, some musculoskeletal pain"
+      },
+      {
+        "label": "Weakness of the field",
+        "value": "Inconsistent dosing makes trials hard to compare"
+      }
+    ],
+    "sections": [
+      {
+        "h": "The proposed mechanism",
+        "body": [
+          "Cytochrome c oxidase, the final enzyme in the mitochondrial electron transport chain, absorbs light in the red and near-infrared range. The hypothesis is that this displaces inhibitory nitric oxide from the enzyme, briefly increasing ATP production and triggering a mild signalling cascade.",
+          "The mechanism is plausible and supported by cell work. The gap is between that and a measurable clinical outcome in a healthy person."
+        ]
+      },
+      {
+        "h": "Where the evidence is decent",
+        "list": [
+          "Skin — collagen density, wrinkle depth and wound healing show consistent positive results.",
+          "Musculoskeletal pain and delayed-onset muscle soreness — moderate support.",
+          "Androgenic hair loss — several positive trials with laser devices.",
+          "Transcranial applications for cognition — early, small, and not yet convincing.",
+          "Systemic longevity claims — mechanistic speculation rather than evidence."
+        ]
+      },
+      {
+        "h": "The dosing problem",
+        "body": [
+          "Photobiomodulation follows a biphasic dose response: too little does nothing, and too much can be less effective than an intermediate dose. Because trials report irradiance, duration and distance inconsistently, comparing them is unusually difficult.",
+          "If you buy a device, the number that matters is irradiance at your actual treatment distance, not the sum of the LED wattages on the spec sheet."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Does red light therapy work?",
+        "a": "For skin quality, wound healing and some musculoskeletal pain, the evidence is reasonably supportive. For systemic effects such as cognition, metabolism or longevity, it remains early and unproven."
+      },
+      {
+        "q": "What wavelength of red light is best?",
+        "a": "Red around 630 to 670 nm penetrates superficially and is used for skin. Near-infrared at 810 to 850 nm penetrates deeper and is used for joints, muscle and transcranial applications."
+      }
+    ],
+    "related": [
+      "mitochondria",
+      "circadian-rhythm",
+      "melatonin",
+      "deep-sleep",
+      "sauna-heat-therapy"
+    ],
+    "updated": "2026-07-28"
+  },
+  {
+    "slug": "breathwork",
+    "name": "Breathwork",
+    "type": "protocol",
+    "aka": [
+      "Slow breathing",
+      "Resonance breathing",
+      "Box breathing",
+      "Cyclic sighing"
+    ],
+    "topics": [
+      "recovery",
+      "cognition",
+      "sleep"
+    ],
+    "evidence": "Moderate",
+    "summary": "Breathwork uses deliberate control of breathing rate and pattern to shift autonomic state. Slow-paced breathing at around six breaths per minute is the most reliably studied version, and it moves HRV within minutes.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Autonomic regulation protocol"
+      },
+      {
+        "label": "Resonance frequency",
+        "value": "Roughly 5–6 breaths per minute"
+      },
+      {
+        "label": "Session length",
+        "value": "5–20 minutes"
+      },
+      {
+        "label": "Fastest-acting on",
+        "value": "HRV, subjective anxiety, sleep onset"
+      },
+      {
+        "label": "Safety note",
+        "value": "Never practise breath-holding in or near water"
+      }
+    ],
+    "sections": [
+      {
+        "h": "Why slow breathing works",
+        "body": [
+          "Breathing at about six breaths per minute synchronises the natural oscillations in heart rate and blood pressure, producing a resonance effect that maximises heart rate variability. This is direct, measurable vagal stimulation, and it is available for free in five minutes.",
+          "Extending the exhale relative to the inhale is the key variable. Exhalation activates parasympathetic output; a longer exhale shifts the balance toward rest."
+        ]
+      },
+      {
+        "h": "Three protocols worth knowing",
+        "list": [
+          "Resonance breathing — inhale 4 seconds, exhale 6 seconds, for 5 to 20 minutes. The best general-purpose practice.",
+          "Cyclic sighing — a double inhale through the nose followed by a long exhale. In a controlled trial it outperformed mindfulness meditation for daily mood improvement over one month.",
+          "Box breathing — equal counts of inhale, hold, exhale, hold. Widely used for acute stress and pre-performance focus.",
+          "Rapid hyperventilation styles produce a very different, sympathetic response. They can be useful but are not relaxation practices, and must never be done in water."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the best breathing technique for stress?",
+        "a": "Slow-paced breathing at roughly six breaths per minute with an extended exhale is the best-supported technique for acutely reducing sympathetic arousal. Cyclic sighing has the strongest recent trial data for daily mood."
+      },
+      {
+        "q": "Does breathwork improve HRV?",
+        "a": "Yes, and quickly. Breathing at resonance frequency produces measurable increases in heart rate variability within a single session, and regular practice raises baseline HRV over weeks."
+      }
+    ],
+    "related": [
+      "hrv",
+      "cold-exposure",
+      "sleep-hygiene-protocol",
+      "deep-sleep",
+      "circadian-rhythm"
+    ],
+    "updated": "2026-08-25"
+  },
+  {
+    "slug": "sleep-hygiene-protocol",
+    "name": "Sleep Protocol",
+    "type": "protocol",
+    "aka": [
+      "Sleep hygiene",
+      "Evening routine",
+      "Sleep optimisation"
+    ],
+    "topics": [
+      "sleep",
+      "recovery",
+      "cognition"
+    ],
+    "evidence": "Strong",
+    "summary": "A sleep protocol is the ordered set of behavioural and environmental changes that improve sleep, applied in the order of their effect size — light and timing first, environment second, supplements last.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Behavioural protocol"
+      },
+      {
+        "label": "Highest-leverage change",
+        "value": "Consistent wake time, seven days per week"
+      },
+      {
+        "label": "Bedroom temperature",
+        "value": "16–19°C for most people"
+      },
+      {
+        "label": "Morning light",
+        "value": "10–30 minutes of outdoor light within an hour of waking"
+      },
+      {
+        "label": "Time to see results",
+        "value": "One to three weeks"
+      }
+    ],
+    "sections": [
+      {
+        "h": "Do these first",
+        "list": [
+          "Fix your wake time, including weekends. Consistency has a larger effect on sleep quality than duration alone.",
+          "Get outdoor light within an hour of waking. Even on an overcast day, outdoor light is many times brighter than indoor lighting and is the strongest circadian signal you have.",
+          "Stop caffeine 8 to 10 hours before bed.",
+          "Stop alcohol, or accept that it will fragment the second half of your night.",
+          "Finish eating 3 hours before bed."
+        ]
+      },
+      {
+        "h": "Then the environment",
+        "list": [
+          "Cool the room to 16 to 19°C. Core temperature must fall for sleep to initiate and deepen.",
+          "Make it genuinely dark, or use a properly fitted mask.",
+          "Dim household lighting after sunset; overhead lights are the main evening melatonin suppressor.",
+          "Remove the phone from arm reach — this is about the behavioural loop, not just the blue light."
+        ]
+      },
+      {
+        "h": "Only then, supplements",
+        "body": [
+          "Magnesium glycinate, glycine, L-theanine and low-dose melatonin all have some supporting evidence, and all of them are small effects compared with the behavioural changes above.",
+          "The common failure pattern is buying the supplement stack while keeping a 1am bedtime, an 8am alarm, evening screens and afternoon coffee. The supplements cannot compete with those inputs."
+        ]
+      },
+      {
+        "h": "When to stop self-experimenting",
+        "body": [
+          "Loud snoring, witnessed pauses in breathing, waking unrefreshed after adequate hours, or persistent insomnia lasting more than three months are reasons to see a clinician rather than to buy another device. Sleep apnoea is common, under-diagnosed and treatable.",
+          "CBT-I — cognitive behavioural therapy for insomnia — outperforms sleep medication for chronic insomnia in head-to-head trials and is the appropriate first-line treatment."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "How can I improve my sleep?",
+        "a": "In order of effect size: fix a consistent wake time, get outdoor light within an hour of waking, stop caffeine 8 to 10 hours before bed, avoid alcohol, finish eating three hours before bed, and cool the bedroom to 16 to 19°C. Supplements come after all of these."
+      },
+      {
+        "q": "What temperature should my bedroom be?",
+        "a": "Most people sleep best between 16 and 19°C. Core body temperature has to drop to initiate and maintain deep sleep, and a warm room directly blocks that."
+      },
+      {
+        "q": "Does morning light really help sleep?",
+        "a": "Yes. Outdoor light in the first hour after waking sets the timing of melatonin release roughly 14 to 16 hours later, which is why it is the single most effective non-behavioural intervention for a late sleep schedule."
+      }
+    ],
+    "related": [
+      "circadian-rhythm",
+      "deep-sleep",
+      "melatonin",
+      "magnesium",
+      "caffeine-l-theanine"
+    ],
+    "updated": "2026-08-18"
+  },
+  {
+    "slug": "continuous-glucose-monitoring",
+    "name": "Continuous Glucose Monitoring",
+    "type": "protocol",
+    "aka": [
+      "CGM",
+      "Glucose monitor",
+      "Glucose tracking"
+    ],
+    "topics": [
+      "metabolic-health",
+      "nutrition"
+    ],
+    "evidence": "Moderate",
+    "summary": "A continuous glucose monitor is a small sensor worn on the arm that reports interstitial glucose every few minutes. For people without diabetes it is best used as a two-week learning tool rather than a permanent dashboard.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Measurement tool"
+      },
+      {
+        "label": "Wear period",
+        "value": "10–14 days per sensor"
+      },
+      {
+        "label": "Measures",
+        "value": "Interstitial glucose, lagging blood glucose by 5–15 minutes"
+      },
+      {
+        "label": "Best use",
+        "value": "A time-limited experiment to learn your own responses"
+      },
+      {
+        "label": "Caution",
+        "value": "Non-diabetic reference ranges are not well established"
+      }
+    ],
+    "sections": [
+      {
+        "h": "What it is genuinely good for",
+        "body": [
+          "A CGM turns abstract nutrition advice into personal feedback. You learn that your oats spike you but your colleague oats do not, that a ten minute walk after dinner flattens the curve, that a poor night of sleep raises your whole next-day baseline.",
+          "Those are durable lessons. Most people extract them within two weeks and do not need to keep wearing a sensor."
+        ]
+      },
+      {
+        "h": "How to run a useful two-week experiment",
+        "list": [
+          "Week one: eat normally, change nothing, and simply record. You need a baseline.",
+          "Week two: test one variable at a time — meal order, a post-meal walk, an earlier dinner, swapping a specific food.",
+          "Log sleep and training alongside, because both shift the whole glucose curve.",
+          "Look at the area under the curve and the return-to-baseline time, not just the peak height.",
+          "Repeat any surprising result before you act on it. Sensor noise is real."
+        ]
+      },
+      {
+        "h": "The over-interpretation trap",
+        "body": [
+          "Healthy people have glucose excursions. A rise after a meal is normal physiology, not damage. There is no agreed evidence base defining optimal non-diabetic CGM ranges, which means much of the advice built on them is extrapolation.",
+          "Avoiding every spike can push people toward unnecessarily restrictive eating. Judge by trends, and by whether the underlying blood markers improve."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Should a healthy person wear a CGM?",
+        "a": "It can be a valuable short experiment — typically two weeks — to learn how your own body responds to specific foods, meal timing, exercise and sleep. Continuous long-term use in healthy people has little evidence behind it."
+      },
+      {
+        "q": "What is a normal glucose spike after eating?",
+        "a": "Healthy non-diabetic people commonly peak in the 120 to 140 mg/dL range after a mixed meal and return toward baseline within two hours. Optimal ranges for people without diabetes are not well established."
+      }
+    ],
+    "related": [
+      "fasting-insulin",
+      "time-restricted-eating",
+      "zone-2-training",
+      "apob",
+      "protein-intake"
+    ],
+    "updated": "2026-08-14"
+  },
+  {
+    "slug": "circadian-rhythm",
+    "name": "Circadian Rhythm",
+    "type": "concept",
+    "aka": [
+      "Body clock",
+      "Circadian biology",
+      "Chronobiology"
+    ],
+    "topics": [
+      "sleep",
+      "metabolic-health",
+      "cognition"
+    ],
+    "evidence": "Strong",
+    "summary": "The circadian rhythm is the roughly 24-hour internal clock that governs sleep timing, hormone release, body temperature, digestion and cognitive performance. Light is its primary input.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Foundational concept"
+      },
+      {
+        "label": "Master clock",
+        "value": "Suprachiasmatic nucleus in the hypothalamus"
+      },
+      {
+        "label": "Primary input",
+        "value": "Light detected by retinal ganglion cells"
+      },
+      {
+        "label": "Peripheral clocks",
+        "value": "Liver, gut, muscle — entrained partly by meal timing"
+      },
+      {
+        "label": "Consequence of misalignment",
+        "value": "Impaired glucose control, mood, and sleep quality"
+      }
+    ],
+    "sections": [
+      {
+        "h": "One master clock, many local clocks",
+        "body": [
+          "The suprachiasmatic nucleus keeps time using light signals from specialised retinal cells that respond to blue-weighted wavelengths. It then coordinates clocks in nearly every tissue — liver, pancreas, gut, muscle, immune cells.",
+          "Those peripheral clocks are also entrained by feeding. Eat at a time that contradicts the light signal — a large meal at midnight — and the central and peripheral clocks fall out of phase. This internal desynchrony is a plausible mechanism behind the metabolic problems seen in shift workers."
+        ]
+      },
+      {
+        "h": "Why light timing dominates",
+        "list": [
+          "Morning outdoor light advances the clock and sets melatonin onset roughly 14 to 16 hours later.",
+          "Evening bright light delays the clock and suppresses melatonin.",
+          "Indoor lighting is dim by biological standards — often 100 to 500 lux against 10,000 or more outdoors.",
+          "The effect is dose-dependent on intensity, duration and timing, and consistency compounds it."
+        ]
+      },
+      {
+        "h": "Chronotype is real, but flexible",
+        "body": [
+          "Genuine chronotype variation exists and is partly genetic. Forcing a late chronotype into an early schedule produces social jetlag with real metabolic and mood consequences.",
+          "That said, most self-described night owls are dealing with a delayed phase driven by bright evenings and dark mornings — which is reversible with light timing rather than fixed by genetics."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the circadian rhythm?",
+        "a": "It is the internal roughly 24-hour cycle that regulates sleep timing, hormone release, body temperature, metabolism and cognitive performance. It is set primarily by light exposure."
+      },
+      {
+        "q": "How do I reset my circadian rhythm?",
+        "a": "Get bright outdoor light within an hour of waking, keep a fixed wake time, dim lights in the evening, and stop eating several hours before bed. Changes usually take one to two weeks to consolidate."
+      },
+      {
+        "q": "Does meal timing affect the body clock?",
+        "a": "Yes. Peripheral clocks in the liver, gut and muscle are entrained partly by feeding time. Eating late can desynchronise them from the central light-driven clock."
+      }
+    ],
+    "related": [
+      "melatonin",
+      "sleep-hygiene-protocol",
+      "deep-sleep",
+      "time-restricted-eating",
+      "red-light-therapy"
+    ],
+    "updated": "2026-08-18"
+  },
+  {
+    "slug": "autophagy",
+    "name": "Autophagy",
+    "type": "concept",
+    "aka": [
+      "Cellular recycling",
+      "Mitophagy",
+      "Self-eating"
+    ],
+    "topics": [
+      "longevity",
+      "metabolic-health"
+    ],
+    "evidence": "Moderate",
+    "summary": "Autophagy is the cellular process of breaking down and recycling damaged proteins and organelles. It is a core longevity mechanism in model organisms — and one of the most over-claimed concepts in consumer biohacking.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Cellular process"
+      },
+      {
+        "label": "Nobel Prize",
+        "value": "Yoshinori Ohsumi, 2016"
+      },
+      {
+        "label": "Triggered by",
+        "value": "Energy restriction, exercise, low insulin, some stressors"
+      },
+      {
+        "label": "Suppressed by",
+        "value": "mTOR activation — feeding, particularly protein"
+      },
+      {
+        "label": "Human measurement",
+        "value": "Very difficult; no reliable consumer test exists"
+      }
+    ],
+    "sections": [
+      {
+        "h": "What it does",
+        "body": [
+          "Cells accumulate damaged proteins and worn-out organelles. Autophagy tags and delivers them to lysosomes for breakdown, and the components are reused. Mitophagy, the selective version for mitochondria, is particularly relevant to aging because damaged mitochondria leak reactive oxygen species.",
+          "In yeast, worms and mice, enhancing autophagy extends lifespan. That is a robust finding and the reason the field matters."
+        ]
+      },
+      {
+        "h": "The claim that runs ahead of the evidence",
+        "body": [
+          "You will frequently read that autophagy switches on at a specific number of fasting hours. That number does not come from human data. Most of the timing claims are extrapolated from rodents, whose metabolic rate is several times higher — a mouse fasting 24 hours is not equivalent to a human fasting 24 hours.",
+          "Measuring autophagy in a living human is genuinely hard. It requires tissue biopsy and markers that are difficult to interpret. Anyone giving you a precise hour count is going beyond what is known."
+        ]
+      },
+      {
+        "h": "What reliably increases it",
+        "list": [
+          "Exercise — one of the best-documented autophagy stimuli in human tissue.",
+          "Energy restriction over days, rather than a specific fasting hour.",
+          "Sleep, during which brain clearance processes are most active.",
+          "Some evidence for heat stress and for specific compounds such as spermidine, though human outcome data is limited."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is autophagy?",
+        "a": "Autophagy is the process by which cells break down and recycle damaged proteins and organelles. It is essential for cellular maintenance and is one of the mechanisms linked to longevity in laboratory organisms."
+      },
+      {
+        "q": "How many hours of fasting trigger autophagy?",
+        "a": "There is no established number in humans. The commonly quoted figures of 16 or 24 hours are extrapolated from rodent studies, and measuring autophagy in living humans is technically very difficult."
+      },
+      {
+        "q": "Does exercise trigger autophagy?",
+        "a": "Yes — exercise is one of the best-documented stimuli for autophagy in human tissue, and arguably more reliable than fasting duration claims."
+      }
+    ],
+    "related": [
+      "time-restricted-eating",
+      "mitochondria",
+      "nad",
+      "nmn",
+      "protein-intake"
+    ],
+    "updated": "2026-08-22"
+  },
+  {
+    "slug": "mitochondria",
+    "name": "Mitochondria",
+    "type": "concept",
+    "aka": [
+      "Mitochondrial function",
+      "Cellular powerhouse",
+      "Bioenergetics"
+    ],
+    "topics": [
+      "longevity",
+      "recovery",
+      "metabolic-health"
+    ],
+    "evidence": "Strong",
+    "summary": "Mitochondria are the organelles that convert food and oxygen into ATP. Their number, quality and turnover underpin energy, endurance, metabolic flexibility and much of the biology of aging.",
+    "keyFacts": [
+      {
+        "label": "Type",
+        "value": "Cellular organelle"
+      },
+      {
+        "label": "Primary output",
+        "value": "ATP via oxidative phosphorylation"
+      },
+      {
+        "label": "Density varies",
+        "value": "From hundreds to thousands per cell by tissue"
+      },
+      {
+        "label": "Best stimulus",
+        "value": "Zone 2 aerobic training"
+      },
+      {
+        "label": "Own genome",
+        "value": "Mitochondrial DNA, inherited maternally"
+      }
+    ],
+    "sections": [
+      {
+        "h": "Why mitochondria sit under everything",
+        "body": [
+          "Fatigue, poor endurance, difficulty using fat as fuel and reduced metabolic flexibility all trace back to mitochondrial capacity. This is why the same interventions keep appearing across unrelated goals — they are working on the same substrate.",
+          "Mitochondria also generate reactive oxygen species as a byproduct. In moderation these act as signalling molecules that drive adaptation; in excess, when quality control fails, they contribute to damage."
+        ]
+      },
+      {
+        "h": "Quality control matters as much as quantity",
+        "body": [
+          "Mitochondria constantly fuse, divide and are recycled through mitophagy. A healthy system removes damaged units and replaces them. With age this turnover becomes less efficient, and damaged mitochondria accumulate.",
+          "That is why exercise, which stimulates both biogenesis and mitophagy, does more for mitochondrial health than any supplement marketed for it."
+        ]
+      },
+      {
+        "h": "What actually improves them",
+        "list": [
+          "Zone 2 training — the strongest and best-documented stimulus for mitochondrial biogenesis.",
+          "High-intensity intervals — complementary, improving mitochondrial function as well as density.",
+          "Energy restriction and time-restricted eating, via AMPK signalling.",
+          "Heat and cold stress, through hormetic pathways.",
+          "Adequate NAD+ availability, which is required for oxidative metabolism to run at all."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What do mitochondria do?",
+        "a": "Mitochondria convert nutrients and oxygen into ATP, the energy currency of the cell. They also regulate calcium signalling, produce reactive oxygen species used in signalling, and participate in programmed cell death."
+      },
+      {
+        "q": "How can I improve mitochondrial function?",
+        "a": "Zone 2 aerobic training is the most effective known stimulus, complemented by high-intensity intervals. Energy restriction, heat and cold exposure, and adequate sleep all contribute."
+      }
+    ],
+    "related": [
+      "zone-2-training",
+      "nad",
+      "autophagy",
+      "vo2-max",
+      "red-light-therapy"
+    ],
+    "updated": "2026-08-09"
+  }
+]

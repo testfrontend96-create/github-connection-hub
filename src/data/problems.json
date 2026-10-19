@@ -1,0 +1,158 @@
+[
+  {
+    "slug": "poor-sleep",
+    "name": "Poor Sleep",
+    "question": "Why can I not sleep properly?",
+    "tagline": "You are in bed long enough, and still wake up flat",
+    "summary": "Trouble falling asleep, waking at 3am, or sleeping a full night and still feeling unrested. Poor sleep is the most common entry point into biohacking and the one with the clearest route out.",
+    "signs": [
+      "Taking more than 30 minutes to fall asleep, most nights",
+      "Waking between 2am and 4am and struggling to get back down",
+      "Sleeping seven or eight hours and still needing caffeine to function",
+      "Sleep quality that collapses on weeknights and rebounds at weekends"
+    ],
+    "causes": [
+      {"h": "Circadian misalignment", "p": "Your internal clock and your schedule disagree. Dark mornings and bright evenings push melatonin onset later, so you are not tired at bedtime and are exhausted at 7am."},
+      {"h": "Stimulant and alcohol load", "p": "Caffeine has a five to six hour half-life, so an afternoon coffee is measurably present at midnight. Alcohol sedates you first and fragments the second half of the night."},
+      {"h": "Temperature and environment", "p": "Core temperature must fall to initiate deep sleep. A warm bedroom is one of the most common and most fixable causes of shallow sleep."},
+      {"h": "An undiagnosed sleep disorder", "p": "Sleep apnoea is common, under-diagnosed and treatable. Loud snoring or waking unrefreshed after adequate hours is a reason to see a clinician, not to buy another supplement."}
+    ],
+    "topics": ["sleep", "recovery"],
+    "measure": ["deep-sleep", "hrv"],
+    "protocols": ["sleep-hygiene-protocol", "breathwork", "sauna-heat-therapy"],
+    "molecules": ["magnesium", "melatonin", "caffeine-l-theanine"],
+    "concepts": ["circadian-rhythm"],
+    "firstStep": "Fix your wake time for seven days and get outdoor light within an hour of waking. Change nothing else. This one intervention resolves a surprising share of sleep complaints on its own.",
+    "clinical": "See a clinician if you snore loudly, have been told you stop breathing in your sleep, fall asleep unintentionally during the day, or have had insomnia for more than three months. CBT-I outperforms sleep medication for chronic insomnia."
+  },
+  {
+    "slug": "brain-fog",
+    "name": "Brain Fog",
+    "question": "Why do I feel mentally slow and unfocused?",
+    "tagline": "The words are there, they just arrive late",
+    "summary": "Brain fog is not a diagnosis — it is a description. Slowed recall, difficulty holding a thought, and a sense of working through fog. It almost always traces back to sleep, blood glucose, inflammation or stress load.",
+    "signs": [
+      "Losing the thread mid-sentence, or reaching for common words",
+      "Reading the same paragraph three times",
+      "A sharp afternoon drop that coffee no longer fixes",
+      "Feeling clearer on holiday within two or three days"
+    ],
+    "causes": [
+      {"h": "Sleep debt", "p": "The single largest contributor. Working memory and processing speed degrade measurably after even one short night, and the deficit accumulates without you noticing the decline."},
+      {"h": "Glucose instability", "p": "Large post-meal glucose swings produce the classic afternoon crash. The pattern is visible within days on a continuous glucose monitor."},
+      {"h": "Chronic low-grade inflammation", "p": "Systemic inflammation affects cognition. hs-CRP is the cheapest window into whether this is part of your picture."},
+      {"h": "Nutrient and thyroid status", "p": "Low vitamin D, low B12, iron deficiency and under-treated thyroid disease all present as brain fog. All are ruled in or out by standard blood tests."}
+    ],
+    "topics": ["cognition", "metabolic-health"],
+    "measure": ["deep-sleep", "hs-crp", "continuous-glucose-monitoring", "vitamin-d-blood"],
+    "protocols": ["sleep-hygiene-protocol", "zone-2-training", "time-restricted-eating"],
+    "molecules": ["omega-3", "creatine", "caffeine-l-theanine", "vitamin-d"],
+    "concepts": ["mitochondria"],
+    "firstStep": "Before buying a nootropic, run a two-week sleep audit and a basic blood panel including vitamin D, B12, ferritin and thyroid function. Most brain fog resolves at that layer.",
+    "clinical": "Persistent cognitive change, especially of sudden onset or alongside mood change, headache, or neurological symptoms, should be assessed by a doctor rather than self-managed."
+  },
+  {
+    "slug": "chronic-stress",
+    "name": "Chronic Stress",
+    "question": "How do I get my nervous system out of overdrive?",
+    "tagline": "Wired, tired, and unable to switch off",
+    "summary": "Sustained sympathetic activation — the physiological state of being permanently switched on. It shows up in HRV before it shows up in how you feel, and it degrades sleep, recovery, digestion and cognition simultaneously.",
+    "signs": [
+      "A resting heart rate that has crept up several beats over months",
+      "HRV trending down against your own baseline",
+      "Waking at the same early hour with your mind already running",
+      "Feeling exhausted but unable to rest"
+    ],
+    "causes": [
+      {"h": "Unresolved cognitive load", "p": "Stress physiology responds to perceived threat, and open loops — unfinished decisions, unspoken conflicts — keep the response active long after the event."},
+      {"h": "Training load exceeding recovery", "p": "High training volume without adequate sleep and fuel produces the same autonomic signature as psychological stress. HRV cannot tell the two apart, which is why it is useful."},
+      {"h": "Poor circadian anchoring", "p": "Cortisol follows a daily rhythm. Weak light signals and irregular schedules flatten that curve, which is why chronically stressed people often feel worst in the morning."},
+      {"h": "Stimulant compensation", "p": "Using caffeine to override fatigue increases sympathetic tone, worsens sleep, and deepens the fatigue it was covering."}
+    ],
+    "topics": ["recovery", "sleep"],
+    "measure": ["hrv", "hs-crp", "deep-sleep"],
+    "protocols": ["breathwork", "zone-2-training", "sauna-heat-therapy", "cold-exposure"],
+    "molecules": ["magnesium", "caffeine-l-theanine"],
+    "concepts": ["circadian-rhythm"],
+    "firstStep": "Five minutes of slow-paced breathing at six breaths per minute, twice daily. It is free, it moves HRV within a single session, and it gives you a repeatable way to down-regulate on demand.",
+    "clinical": "Persistent low mood, anxiety that interferes with daily function, or thoughts of self-harm need professional support. Breathwork and training are adjuncts, not treatments."
+  },
+  {
+    "slug": "low-energy",
+    "name": "Low Energy & Fatigue",
+    "question": "Why am I tired all the time?",
+    "tagline": "Not sleepy — depleted",
+    "summary": "Persistent fatigue that sleep does not fix. The useful split is between fatigue caused by inadequate recovery, fatigue caused by a metabolic or nutrient problem, and fatigue that signals an undiagnosed medical condition.",
+    "signs": [
+      "Needing caffeine to start and something else to stop",
+      "Energy that drops sharply 90 minutes after meals",
+      "Exercise that leaves you flattened for two days rather than energised",
+      "Fatigue that has been present for months rather than weeks"
+    ],
+    "causes": [
+      {"h": "Sleep quantity or quality", "p": "Always check first. Adequate hours in bed is not the same as adequate sleep, and sleep apnoea is the most common overlooked cause."},
+      {"h": "Metabolic inflexibility", "p": "If your body cannot switch efficiently between fuels, energy tracks your last meal. Mitochondrial capacity built through aerobic training is the main lever."},
+      {"h": "Nutrient deficiency", "p": "Iron, B12, vitamin D and magnesium deficiencies each present as fatigue and are inexpensive to test and correct."},
+      {"h": "Thyroid, anaemia or other medical causes", "p": "A meaningful proportion of chronic fatigue has a specific medical cause that blood work will find. This is a reason to test rather than to experiment."}
+    ],
+    "topics": ["metabolic-health", "recovery", "nutrition"],
+    "measure": ["fasting-insulin", "vitamin-d-blood", "rbc-magnesium", "hrv", "vo2-max"],
+    "protocols": ["zone-2-training", "sleep-hygiene-protocol", "time-restricted-eating"],
+    "molecules": ["vitamin-d", "magnesium", "creatine", "protein-intake"],
+    "concepts": ["mitochondria", "nad"],
+    "firstStep": "Get bloodwork before you get supplements. Full blood count, ferritin, B12, vitamin D, thyroid function and fasting insulin will explain most cases or rule out the serious ones.",
+    "clinical": "Fatigue lasting more than a few weeks, or accompanied by weight change, breathlessness, fever or night sweats, needs medical assessment."
+  },
+  {
+    "slug": "slow-recovery",
+    "name": "Slow Recovery",
+    "question": "Why am I not recovering between sessions?",
+    "tagline": "Training hard, adapting slowly",
+    "summary": "When soreness lingers, performance plateaus and motivation drops, the problem is almost never the training programme. It is the balance between the stress applied and the recovery supplied.",
+    "signs": [
+      "Soreness lasting beyond 72 hours as a routine occurrence",
+      "Resting heart rate up and HRV down across a week or more",
+      "Performance flat or declining despite consistent training",
+      "Sleep getting worse as training volume increases"
+    ],
+    "causes": [
+      {"h": "Under-recovery, not under-training", "p": "Adaptation happens during rest. Sleep is the single largest recovery input, and it is the first thing high performers cut."},
+      {"h": "Insufficient protein or total energy", "p": "Repair requires substrate. Under-eating protein or total calories reliably slows recovery regardless of what else you do."},
+      {"h": "Too much intensity, not enough base", "p": "Training mostly in the grey zone — too hard to recover from, too easy to drive top-end adaptation — is the most common structural error."},
+      {"h": "Mistimed recovery tools", "p": "Cold immersion right after lifting blunts the hypertrophy signal. The tool is not wrong, the timing is."}
+    ],
+    "topics": ["recovery", "nutrition"],
+    "measure": ["hrv", "vo2-max", "deep-sleep"],
+    "protocols": ["zone-2-training", "sauna-heat-therapy", "cold-exposure", "breathwork", "sleep-hygiene-protocol"],
+    "molecules": ["protein-intake", "creatine", "omega-3", "magnesium"],
+    "concepts": ["mitochondria"],
+    "firstStep": "Track HRV on a seven-day rolling average for two weeks alongside your training log. The relationship between your hard days and your autonomic response is usually obvious once it is on one chart.",
+    "clinical": "Sudden performance collapse, persistent joint pain, or recurrent injury warrants assessment by a sports medicine clinician."
+  },
+  {
+    "slug": "metabolic-drift",
+    "name": "Weight & Metabolic Drift",
+    "question": "Why is my body composition changing when nothing else has?",
+    "tagline": "The same habits, a different result",
+    "summary": "Gradual weight gain, rising waist circumference or worsening blood markers despite unchanged behaviour. This usually reflects insulin resistance developing quietly over years, which standard annual bloodwork is poorly designed to catch.",
+    "signs": [
+      "Waist circumference increasing while weight looks stable",
+      "Energy dips and hunger returning within two hours of eating",
+      "Triglycerides rising and HDL falling on routine bloodwork",
+      "Fasting glucose still normal — which is why it gets missed"
+    ],
+    "causes": [
+      {"h": "Compensated insulin resistance", "p": "The pancreas raises insulin output for years to keep glucose normal. Fasting insulin reveals this; fasting glucose does not until much later."},
+      {"h": "Loss of lean mass", "p": "Muscle is the main site of glucose disposal. Losing it with age lowers your metabolic buffer even at a stable weight."},
+      {"h": "Circadian and meal timing drift", "p": "Eating later shifts intake into the part of the day when insulin sensitivity is lowest, worsening the same food."},
+      {"h": "Sleep restriction", "p": "A single week of restricted sleep measurably reduces insulin sensitivity in healthy adults and raises appetite hormones."}
+    ],
+    "topics": ["metabolic-health", "nutrition", "longevity"],
+    "measure": ["fasting-insulin", "apob", "continuous-glucose-monitoring", "hs-crp"],
+    "protocols": ["time-restricted-eating", "zone-2-training", "continuous-glucose-monitoring"],
+    "molecules": ["protein-intake", "omega-3", "creatine"],
+    "concepts": ["autophagy", "mitochondria"],
+    "firstStep": "Request fasting insulin alongside your next routine bloodwork, and calculate HOMA-IR. It is inexpensive, rarely offered by default, and it reframes the whole picture.",
+    "clinical": "Unintentional weight loss, excessive thirst or urination, or an abnormal glucose result should be reviewed by a doctor promptly."
+  }
+]

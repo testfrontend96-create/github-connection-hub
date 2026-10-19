@@ -1,0 +1,8 @@
+[
+  {"name": "Instagram", "handle": "@biohackers.world", "url": "https://www.instagram.com/biohackers.world/", "blurb": "Daily clips, speaker quotes and event moments."},
+  {"name": "YouTube", "handle": "@BiohackersWorld", "url": "https://www.youtube.com/@BiohackersWorld", "blurb": "Full keynotes and podcast video."},
+  {"name": "LinkedIn", "handle": "biohackersworld", "url": "https://www.linkedin.com/company/biohackersworld/", "blurb": "Industry news and practitioner discussion."},
+  {"name": "X", "handle": "@biohackersworld", "url": "https://x.com/biohackersworld", "blurb": "Research threads and live event coverage."},
+  {"name": "TikTok", "handle": "@biohackers.world", "url": "https://www.tiktok.com/@biohackers.world", "blurb": "Short protocol explainers."},
+  {"name": "Reddit", "handle": "u/biohackersworld", "url": "https://www.reddit.com/user/biohackersworld/", "blurb": "Community Q&A and AMAs."}
+]

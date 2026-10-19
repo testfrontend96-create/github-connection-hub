@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "sleep",
+    "name": "Sleep",
+    "tagline": "Recovery starts at night",
+    "question": "How can I improve my sleep?",
+    "summary": "Sleep is the highest-leverage intervention in biohacking. Almost every other marker — cognition, glucose control, heart rate variability, hormones, mood — degrades when sleep quality or duration falls short.",
+    "intro": [
+      "Most people looking into biohacking arrive with a sleep problem: they fall asleep late, wake at 3am, or sleep eight hours and still feel flat. Sleep is where the science is strongest and where changes are felt fastest, which is why it is usually the first place to work.",
+      "The Hub organises sleep into the things you can measure (biomarkers), the things you can take (molecules) and the things you can do (protocols). Start with any one of them and follow the links — they all connect back."
+    ],
+    "beginnerPath": [
+      "circadian-rhythm",
+      "deep-sleep",
+      "sleep-hygiene-protocol",
+      "magnesium",
+      "melatonin"
+    ],
+    "color": "#38389C",
+    "icon": "moon"
+  },
+  {
+    "slug": "longevity",
+    "name": "Longevity & Aging",
+    "tagline": "Adding life to years",
+    "question": "What actually slows biological aging?",
+    "summary": "Longevity biohacking looks at the biology of aging — cellular energy, senescence, inflammation, autophagy — and at the measurable markers that track how fast a body is aging relative to the calendar.",
+    "intro": [
+      "Longevity is the most crowded and most over-claimed corner of biohacking. The Hub separates what has human outcome data (exercise capacity, metabolic health, sleep) from what is promising but still early (NAD+ precursors, senolytics, rapamycin).",
+      "Where evidence is thin, we say so. Every molecule page carries an evidence grade and a plain statement of what is not yet known."
+    ],
+    "beginnerPath": [
+      "biological-age",
+      "nad",
+      "nmn",
+      "vo2-max",
+      "time-restricted-eating"
+    ],
+    "color": "#2E2E88",
+    "icon": "infinity"
+  },
+  {
+    "slug": "recovery",
+    "name": "Physical Activity",
+    "tagline": "Train, recover, adapt",
+    "question": "How do I train and recover better?",
+    "summary": "Recovery is the measurable balance between the stress you apply and the adaptation your body makes. The tools here are heat, cold, load management, protein and sleep — tracked with autonomic markers.",
+    "intro": [
+      "Performance gains do not come from training. They come from recovering from training. That is why HRV, resting heart rate and sleep depth became the core biohacking dashboard.",
+      "This topic connects the classic recovery protocols — sauna, cold exposure, zone 2, breathwork — to the markers that tell you whether they are working for you specifically."
+    ],
+    "beginnerPath": [
+      "hrv",
+      "zone-2-training",
+      "sauna-heat-therapy",
+      "cold-exposure",
+      "creatine"
+    ],
+    "color": "#4D4DC4",
+    "icon": "bolt"
+  },
+  {
+    "slug": "cognition",
+    "name": "Cognitive Function",
+    "tagline": "Focus, memory, clarity",
+    "question": "What improves focus and mental clarity?",
+    "summary": "Cognitive biohacking covers nootropics, brain energy metabolism, neuroinflammation and the lifestyle inputs — sleep, exercise, light, blood sugar — that determine how well a brain performs day to day.",
+    "intro": [
+      "Nootropics get the attention, but the largest measured effects on cognition come from sleep quality, cardiovascular fitness and stable blood glucose. The Hub puts those first and treats supplements as an addition, not a substitute.",
+      "Each molecule page here states the size of the effect, who it was measured in, and whether it holds up in healthy people rather than only in clinical populations."
+    ],
+    "beginnerPath": [
+      "omega-3",
+      "creatine",
+      "caffeine-l-theanine",
+      "breathwork",
+      "zone-2-training"
+    ],
+    "color": "#5757D7",
+    "icon": "brain"
+  },
+  {
+    "slug": "metabolic-health",
+    "name": "Metabolic Health",
+    "tagline": "The engine underneath everything",
+    "question": "How do I know if my metabolism is healthy?",
+    "summary": "Metabolic health is how efficiently your body handles fuel. It underpins energy, body composition, cardiovascular risk and — through insulin signalling — much of the longevity conversation.",
+    "intro": [
+      "You can be a normal weight and metabolically unhealthy. Standard annual bloodwork often misses it, because fasting glucose is the last marker to move. Fasting insulin, triglyceride-to-HDL ratio and ApoB move much earlier.",
+      "This topic is the clearest example of why the Hub is organised around entities: one biomarker, fasting insulin, connects nutrition, exercise, sleep and supplementation into a single picture."
+    ],
+    "beginnerPath": [
+      "fasting-insulin",
+      "apob",
+      "continuous-glucose-monitoring",
+      "time-restricted-eating",
+      "zone-2-training"
+    ],
+    "color": "#6162EB",
+    "icon": "flame"
+  },
+  {
+    "slug": "nutrition",
+    "name": "Nutrition & Supplementation",
+    "tagline": "Food first, then the gaps",
+    "question": "What supplements are actually worth taking?",
+    "summary": "Nutrition covers dietary patterns, protein and micronutrient adequacy, and the small set of supplements with enough evidence to be worth the money for most people.",
+    "intro": [
+      "The honest answer to what supplements should I take is: fewer than the internet suggests. A short list — vitamin D where deficient, omega-3, magnesium, creatine, protein adequacy — covers most of the measurable benefit for most people.",
+      "Every molecule page in the Hub gives a dose range, a form comparison, interactions and the tests that tell you whether you actually need it."
+    ],
+    "beginnerPath": [
+      "vitamin-d",
+      "omega-3",
+      "magnesium",
+      "protein-intake",
+      "creatine"
+    ],
+    "color": "#4243B0",
+    "icon": "leaf"
+  },
+  {
+    "slug": "skincare",
+    "name": "Skincare",
+    "tagline": "Skin is an organ, treat it like one",
+    "question": "What actually improves skin health?",
+    "summary": "Skin reflects sleep, inflammation, sun exposure and nutrition before anything else does. The evidence base is strongest for photoprotection, retinoids and — among biohacking tools — red light therapy.",
+    "intro": [
+      "Skincare is where biohacking overlaps with dermatology, and where marketing outruns evidence more than anywhere else. The Hub covers the small set of interventions with human data: sun protection, red and near-infrared light, adequate omega-3 and vitamin D status, and sleep.",
+      "Collagen density and wound healing have the strongest photobiomodulation data of any application, which is why red light therapy sits at the centre of this pillar."
+    ],
+    "beginnerPath": [
+      "red-light-therapy",
+      "deep-sleep",
+      "omega-3",
+      "vitamin-d",
+      "hs-crp"
+    ],
+    "color": "#6B6CFF",
+    "icon": "sun"
+  }
+]

@@ -1,24 +1,27 @@
-# GitHub Connection Hub
+# Biohacking Hub — React
 
-Just create this project without anything in it just yet. I need to connect my github but there is no option as the project doesn't exist just yet
+A faithful React + Vite + TypeScript port of the Biohackers World Biohacking Hub.
+Content lives in `src/data/*.json`; the design system is the original `src/hub.css`,
+reused verbatim. The knowledge-graph resolution (symmetric edges, inbound blog/
+podcast references, topic & problem rollups) is ported to `src/lib/data.ts`.
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1ecdcb91-c98a-46a8-8879-290f40a70b24).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+## Run
+```bash
+npm install
+npm run dev      # http://localhost:5190
+npm run build    # outputs dist/
+npm run preview  # serve the production build
 ```
+
+## Structure
+- `src/lib/data.ts` — data + knowledge graph (ported from build.py)
+- `src/components/` — TopNav, Footer, PageHead, Player (site-wide podcast dock),
+  shared cards/icons, platform logos
+- `src/pages/` — Home, Topic, KnowledgeBase, Entity, Blog, Article, Podcast,
+  Episode, Biohackers, Profile, Social, FAQ, Problem, Reports/How-To/About/Search
+- `src/hub.css` — the original stylesheet, unchanged
+
+## Deploy
+It's a static SPA. `npm run build`, then publish `dist/` to Netlify, Cloudflare
+Pages, Vercel or GitHub Pages. `public/_redirects` and `vercel.json` provide the
+SPA fallback so deep links (e.g. /biohackers/andrew-huberman) resolve.

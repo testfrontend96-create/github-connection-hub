@@ -1,0 +1,2 @@
+/* SPA-specific adjustments on top of the ported hub.css */
+#root { min-height: 100vh; }

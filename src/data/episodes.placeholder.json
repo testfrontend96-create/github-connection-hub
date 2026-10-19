@@ -1,0 +1,154 @@
+[
+  {
+    "slug": "hrv-what-your-nervous-system-is-telling-you",
+    "title": "HRV: What Your Nervous System Is Actually Telling You",
+    "number": 48,
+    "guest": "Dr. Elena Marchetti",
+    "guestTitle": "Autonomic Physiology Researcher",
+    "date": "2026-08-26",
+    "duration": "58 min",
+    "topics": ["recovery", "sleep"],
+    "entities": ["hrv", "breathwork", "cold-exposure", "deep-sleep", "zone-2-training"],
+    "answers": "What does HRV really measure?",
+    "description": "A working explanation of heart rate variability — what the number represents, why comparing it to other people is meaningless, and how to use a seven-day trend instead of a daily score.",
+    "takeaways": [
+      "HRV is a measure of autonomic balance, not a fitness score. Absolute values are not comparable between people.",
+      "Alcohol is the most reliable single suppressor of HRV, with visible effects for one to two nights.",
+      "A three-day sustained drop against your baseline is information; a one-day drop is noise.",
+      "Slow-paced breathing at six breaths per minute raises HRV measurably within a single session."
+    ]
+  },
+  {
+    "slug": "sleep-architecture-and-longevity",
+    "title": "Sleep Architecture and Longevity",
+    "number": 47,
+    "guest": "Dr. Amara Osei",
+    "guestTitle": "Sleep Medicine Physician",
+    "date": "2026-08-19",
+    "duration": "1 hr 12 min",
+    "topics": ["sleep", "longevity"],
+    "entities": ["deep-sleep", "circadian-rhythm", "melatonin", "sleep-hygiene-protocol", "magnesium"],
+    "answers": "Why does sleep quality affect how fast we age?",
+    "description": "Why deep sleep is front-loaded into the first half of the night, what the glymphatic system does while you are in it, and why sleep consistency may matter more than sleep duration.",
+    "takeaways": [
+      "Deep sleep concentrates in the first half of the night, so a late bedtime cuts it disproportionately.",
+      "Glymphatic clearance of metabolic waste from the brain increases substantially during slow-wave sleep.",
+      "Sleep timing consistency predicts health outcomes independently of total sleep duration.",
+      "Loud snoring or unrefreshing sleep after adequate hours warrants a clinical assessment, not another supplement."
+    ]
+  },
+  {
+    "slug": "the-nad-question",
+    "title": "The NAD+ Question: Separating Mechanism From Marketing",
+    "number": 46,
+    "guest": "Prof. Daniel Reyes",
+    "guestTitle": "Molecular Biologist, Aging Research",
+    "date": "2026-08-12",
+    "duration": "1 hr 04 min",
+    "topics": ["longevity"],
+    "entities": ["nad", "nmn", "autophagy", "mitochondria", "biological-age"],
+    "answers": "Do NAD+ supplements actually work?",
+    "description": "An honest look at what NAD+ precursor trials have shown in humans, why mouse results have not translated, and which non-supplement levers raise NAD+ for free.",
+    "takeaways": [
+      "NAD+ decline with age is well documented. Whether oral precursors restore tissue function is the open question.",
+      "Human trials reliably show raised blood NAD+ but inconsistent functional outcomes.",
+      "Exercise, energy restriction and reduced alcohol all raise NAD+ without a supplement.",
+      "No head-to-head human data establishes NMN as superior to NR or niacin."
+    ]
+  },
+  {
+    "slug": "metabolic-health-before-longevity",
+    "title": "Fix Metabolic Health Before You Chase Longevity",
+    "number": 45,
+    "guest": "Dr. Priya Raman",
+    "guestTitle": "Endocrinologist",
+    "date": "2026-08-05",
+    "duration": "55 min",
+    "topics": ["metabolic-health", "longevity"],
+    "entities": ["fasting-insulin", "apob", "continuous-glucose-monitoring", "time-restricted-eating", "zone-2-training"],
+    "answers": "Which blood markers matter most for metabolic health?",
+    "description": "Why fasting insulin is the marker most annual checkups leave out, how ApoB reframes cardiovascular risk, and what a two-week CGM experiment can and cannot teach you.",
+    "takeaways": [
+      "Fasting insulin rises years before fasting glucose does, making it the earlier warning signal.",
+      "ApoB counts atherogenic particles; LDL cholesterol measures their contents. The two can disagree.",
+      "A CGM is best used as a time-limited learning tool, not a permanent dashboard.",
+      "Laboratory reference ranges describe the population, and a large part of that population is metabolically unwell."
+    ]
+  },
+  {
+    "slug": "heat-cold-and-hormesis",
+    "title": "Heat, Cold and Hormesis: Using Stress on Purpose",
+    "number": 44,
+    "guest": "Dr. Lars Halvorsen",
+    "guestTitle": "Exercise Physiologist",
+    "date": "2026-07-29",
+    "duration": "1 hr 08 min",
+    "topics": ["recovery", "longevity"],
+    "entities": ["cold-exposure", "sauna-heat-therapy", "hrv", "mitochondria", "hs-crp"],
+    "answers": "Is cold plunging better than sauna?",
+    "description": "The Finnish cohort data on sauna frequency, the catecholamine response to cold water, and the one timing mistake that undermines strength training.",
+    "takeaways": [
+      "Sauna use four to seven times weekly showed the largest mortality reduction in Finnish cohort data.",
+      "Cold water immersion raises noradrenaline by 200 to 300 percent, with effects lasting well past the session.",
+      "Cold within a few hours after resistance training blunts hypertrophy signalling.",
+      "Contrast protocols finishing with heat in the evening may support sleep onset through core temperature drop."
+    ]
+  },
+  {
+    "slug": "protein-muscle-and-aging-well",
+    "title": "Protein, Muscle and Aging Well",
+    "number": 43,
+    "guest": "Dr. Marcus Whitfield",
+    "guestTitle": "Nutrition Scientist",
+    "date": "2026-07-22",
+    "duration": "49 min",
+    "topics": ["nutrition", "longevity", "recovery"],
+    "entities": ["protein-intake", "creatine", "vo2-max", "autophagy", "time-restricted-eating"],
+    "answers": "How much protein do older adults need?",
+    "description": "Anabolic resistance, the leucine threshold, and why the protein restriction argument from longevity research runs into sarcopenia data after age 50.",
+    "takeaways": [
+      "Older muscle is less sensitive to the anabolic signal, so per-meal protein needs rise with age.",
+      "Three to four meals of 30 to 40 grams beat the same total concentrated at dinner.",
+      "Sarcopenia is one of the strongest predictors of frailty and mortality in older adults.",
+      "Periodic energy restriction is a better autophagy lever than chronic protein restriction."
+    ]
+  },
+  {
+    "slug": "light-circadian-rhythm-and-modern-life",
+    "title": "Light, the Circadian Clock and Modern Life",
+    "number": 42,
+    "guest": "Dr. Sofia Lindqvist",
+    "guestTitle": "Chronobiologist",
+    "date": "2026-07-15",
+    "duration": "1 hr 01 min",
+    "topics": ["sleep", "cognition", "metabolic-health"],
+    "entities": ["circadian-rhythm", "melatonin", "sleep-hygiene-protocol", "time-restricted-eating", "red-light-therapy"],
+    "answers": "How does light affect the body clock?",
+    "description": "How morning outdoor light sets melatonin onset 14 to 16 hours later, why peripheral clocks respond to meal timing, and what shift work does to metabolism.",
+    "takeaways": [
+      "Outdoor light is many times brighter than indoor lighting and is the dominant circadian signal.",
+      "Peripheral clocks in liver, gut and muscle are entrained partly by when you eat.",
+      "Most self-described night owls have a reversible delayed phase rather than a fixed chronotype.",
+      "Evening overhead lighting is a larger melatonin suppressor than most people assume."
+    ]
+  },
+  {
+    "slug": "how-to-read-a-study",
+    "title": "How to Read a Study Without Being Fooled",
+    "number": 41,
+    "guest": "Dr. Nadia Brennan",
+    "guestTitle": "Clinical Epidemiologist",
+    "date": "2026-07-08",
+    "duration": "1 hr 15 min",
+    "topics": ["longevity", "nutrition"],
+    "entities": ["nmn", "biological-age", "red-light-therapy", "autophagy", "hs-crp"],
+    "answers": "How do I tell good health research from bad?",
+    "description": "Mouse versus human, surrogate markers versus outcomes, absolute versus relative risk, and the specific claims in biohacking that fail each test.",
+    "takeaways": [
+      "A surrogate marker moving is not the same as an outcome improving — the NAD+ field is the clearest current example.",
+      "Rodent metabolic rates are several times higher than human, which breaks most fasting-duration extrapolations.",
+      "Relative risk reduction without the absolute numbers is the most common way statistics mislead.",
+      "Small, short, unblinded trials with industry funding should shift your confidence, not settle the question."
+    ]
+  }
+]

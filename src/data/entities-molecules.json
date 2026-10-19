@@ -1,0 +1,877 @@
+[
+ {
+  "slug": "magnesium",
+  "name": "Magnesium",
+  "type": "molecule",
+  "aka": [
+   "Mg",
+   "Magnesium glycinate",
+   "Magnesium threonate",
+   "Magnesium citrate"
+  ],
+  "topics": [
+   "sleep",
+   "recovery",
+   "nutrition"
+  ],
+  "evidence": "Strong",
+  "summary": "Magnesium is an essential mineral involved in more than 300 enzymatic reactions, including energy production, muscle relaxation, nerve signalling and the regulation of the nervous system during sleep.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "Essential mineral"
+   },
+   {
+    "label": "Typical intake",
+    "value": "200–400 mg elemental per day (supplemental)"
+   },
+   {
+    "label": "Best-studied forms",
+    "value": "Glycinate, citrate, malate, threonate"
+   },
+   {
+    "label": "Time to effect",
+    "value": "Days to weeks"
+   },
+   {
+    "label": "Tested by",
+    "value": "RBC magnesium (serum is a poor proxy)"
+   }
+  ],
+  "sections": [
+   {
+    "h": "What magnesium does in the body",
+    "body": [
+     "Magnesium is a cofactor for the enzymes that make and use ATP, which is why low magnesium shows up as fatigue before it shows up as anything else. It also sits inside the NMDA receptor as a natural gate, dampening excitatory signalling in the nervous system — the mechanism behind its reputation as a calming mineral.",
+     "In muscle, magnesium is the counterpart to calcium. Calcium drives contraction; magnesium permits relaxation. Cramping, twitching eyelids and restless legs are common, though non-specific, signs that intake is low."
+    ]
+   },
+   {
+    "h": "Magnesium and sleep",
+    "body": [
+     "Magnesium supports sleep through two routes: it modulates GABA activity, and it is required for the enzymatic conversion that produces melatonin. Trials in older adults with insomnia show modest improvements in sleep onset time and sleep efficiency. In healthy adults with adequate intake, the effect is smaller.",
+     "Practically: magnesium is worth trying for sleep, it is inexpensive and low-risk, but it will not override a disrupted circadian rhythm, late caffeine or an inconsistent schedule."
+    ]
+   },
+   {
+    "h": "Choosing a form",
+    "list": [
+     "Glycinate — best general choice. Well absorbed, gentle on the gut, the glycine itself is mildly sleep-supporting.",
+     "Citrate — well absorbed and cheap, but laxative at higher doses. Useful if constipation is also an issue.",
+     "L-threonate — the form with the most data on crossing into the central nervous system; studied for cognition. Considerably more expensive per mg.",
+     "Malate — often chosen for daytime use and muscle soreness.",
+     "Oxide — poorly absorbed. Common in cheap supplements; mostly a laxative."
+    ]
+   },
+   {
+    "h": "Safety and interactions",
+    "body": [
+     "The most common side effect of oral magnesium is loose stools, which is dose- and form-dependent. Magnesium is cleared by the kidneys, so anyone with reduced kidney function should not supplement without medical supervision.",
+     "Magnesium can reduce absorption of certain antibiotics and thyroid medication; separate doses by several hours."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is magnesium?",
+    "a": "Magnesium is an essential mineral that acts as a cofactor in over 300 enzyme systems, including those governing energy production, muscle relaxation, blood glucose control and nerve transmission. It cannot be made by the body and must come from food or supplements."
+   },
+   {
+    "q": "How much magnesium should I take?",
+    "a": "Most supplemental protocols use 200–400 mg of elemental magnesium per day, taken in the evening. Food intake counts toward the total; leafy greens, nuts, seeds, legumes and dark chocolate are the main dietary sources."
+   },
+   {
+    "q": "Does magnesium help you sleep?",
+    "a": "There is moderate evidence that magnesium improves sleep onset and sleep efficiency, with the clearest effects in people who are deficient or older. It is a supportive intervention rather than a sedative."
+   },
+   {
+    "q": "Which magnesium is best for sleep?",
+    "a": "Magnesium glycinate is the usual first choice for sleep because it is well absorbed, rarely causes digestive upset, and the attached glycine has its own mild calming effect."
+   }
+  ],
+  "measuredBy": [
+   "rbc-magnesium"
+  ],
+  "related": [
+   "melatonin",
+   "deep-sleep",
+   "sleep-hygiene-protocol",
+   "vitamin-d",
+   "hrv"
+  ],
+  "updated": "2026-08-18"
+ },
+ {
+  "slug": "nmn",
+  "name": "NMN",
+  "type": "molecule",
+  "aka": [
+   "Nicotinamide mononucleotide",
+   "β-NMN"
+  ],
+  "topics": [
+   "longevity"
+  ],
+  "evidence": "Emerging",
+  "summary": "NMN (nicotinamide mononucleotide) is a precursor molecule the body converts into NAD+, a coenzyme central to cellular energy production that declines with age. It is one of the most discussed longevity supplements and one of the least settled.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "NAD+ precursor (vitamin B3 derivative)"
+   },
+   {
+    "label": "Studied doses",
+    "value": "250–900 mg per day in human trials"
+   },
+   {
+    "label": "Converts to",
+    "value": "NAD+"
+   },
+   {
+    "label": "Evidence in humans",
+    "value": "Small trials; biomarkers improve, outcomes unproven"
+   },
+   {
+    "label": "Regulatory note",
+    "value": "Status varies by country; check local rules"
+   }
+  ],
+  "sections": [
+   {
+    "h": "Why NAD+ precursors became a longevity target",
+    "body": [
+     "NAD+ levels fall with age across tissues. Because NAD+ is required by the sirtuins and by PARP enzymes involved in DNA repair, the hypothesis is that restoring NAD+ restores some functions that decline with aging. NMN sits one step from NAD+ in the salvage pathway, which is why it is used as a supplement.",
+     "Mouse studies have been striking — improvements in insulin sensitivity, mitochondrial function and physical capacity. The honest caveat is that mouse longevity findings have a poor track record of translating to humans."
+    ]
+   },
+   {
+    "h": "What the human trials show",
+    "body": [
+     "Human trials to date are small and short, typically 8 to 12 weeks with a few dozen participants. They consistently show that oral NMN raises blood NAD+ levels in a dose-dependent way, which confirms the mechanism works.",
+     "Functional results are more mixed. Some trials report improvements in walking distance, muscle insulin sensitivity in prediabetic women, and subjective fatigue. Others find no significant change against placebo. No trial has run long enough to say anything about lifespan or disease risk in humans."
+    ]
+   },
+   {
+    "h": "NMN versus NR versus niacin",
+    "list": [
+     "NMN — one step from NAD+, the most-hyped form, moderate human data.",
+     "NR (nicotinamide riboside) — a different precursor with a comparable body of human trials and a clearer regulatory position in several markets.",
+     "Niacin / nicotinic acid — cheap, decades of use, raises NAD+ effectively, but causes flushing at higher doses.",
+     "There is no good head-to-head evidence that any one precursor is superior for healthy adults."
+    ]
+   },
+   {
+    "h": "How to think about it",
+    "body": [
+     "NMN is a reasonable experiment for someone who has already addressed sleep, training, body composition and metabolic markers, and who accepts that they are buying a plausible mechanism rather than a proven outcome.",
+     "It is a poor first purchase. The measurable return per dollar is far higher from cardiorespiratory fitness, protein adequacy and sleep consistency."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is NMN?",
+    "a": "NMN, or nicotinamide mononucleotide, is a naturally occurring molecule and a direct precursor to NAD+, a coenzyme required for cellular energy metabolism and DNA repair. It is sold as a supplement aimed at counteracting the age-related decline in NAD+."
+   },
+   {
+    "q": "Does NMN actually work?",
+    "a": "NMN reliably raises blood NAD+ levels in human trials. Whether that translates into slower aging or better health outcomes is unproven — human trials so far are small, short and mixed in their functional results."
+   },
+   {
+    "q": "Is NMN safe?",
+    "a": "Short-term human trials at doses up to 900 mg per day report no serious adverse effects. Long-term safety data does not exist, and regulatory status differs between countries."
+   },
+   {
+    "q": "NMN or NR — which is better?",
+    "a": "There is no reliable head-to-head human evidence showing one is superior. Both raise NAD+. NR has a longer commercial track record; NMN is one step closer to NAD+ in the pathway."
+   }
+  ],
+  "measuredBy": [
+   "biological-age"
+  ],
+  "related": [
+   "nad",
+   "autophagy",
+   "mitochondria",
+   "biological-age",
+   "time-restricted-eating"
+  ],
+  "updated": "2026-08-22"
+ },
+ {
+  "slug": "nad",
+  "name": "NAD+",
+  "type": "molecule",
+  "aka": [
+   "Nicotinamide adenine dinucleotide"
+  ],
+  "topics": [
+   "longevity",
+   "metabolic-health"
+  ],
+  "evidence": "Strong",
+  "summary": "NAD+ is a coenzyme present in every living cell that carries electrons in energy metabolism and acts as a required substrate for DNA repair enzymes and sirtuins. Its decline with age is one of the best-documented biochemical features of aging.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "Coenzyme"
+   },
+   {
+    "label": "Core roles",
+    "value": "Energy metabolism, DNA repair, sirtuin activity"
+   },
+   {
+    "label": "Age-related change",
+    "value": "Declines substantially across tissues with age"
+   },
+   {
+    "label": "Raised by",
+    "value": "NMN, NR, niacin, exercise, fasting"
+   },
+   {
+    "label": "Depleted by",
+    "value": "DNA damage, chronic inflammation, alcohol"
+   }
+  ],
+  "sections": [
+   {
+    "h": "The two jobs of NAD+",
+    "body": [
+     "The first job is metabolic. NAD+ cycles between its oxidised and reduced forms to shuttle electrons through glycolysis, the citric acid cycle and oxidative phosphorylation. Without it, mitochondria cannot convert fuel into ATP.",
+     "The second job is regulatory. Sirtuins — enzymes linked to stress resistance and metabolic control — consume NAD+ to function, as do PARP enzymes that repair damaged DNA. When DNA damage is high, PARP activity drains the NAD+ pool, which is one proposed link between accumulated damage and metabolic decline."
+    ]
+   },
+   {
+    "h": "Raising NAD+ without a supplement",
+    "list": [
+     "Exercise, particularly endurance work, upregulates the enzymes of the NAD+ salvage pathway.",
+     "Fasting and energy restriction increase the NAD+ to NADH ratio.",
+     "Reducing alcohol intake removes a significant NAD+ consumer.",
+     "Sleep and circadian alignment matter — NAD+ synthesis follows a daily rhythm."
+    ]
+   },
+   {
+    "h": "Where the uncertainty sits",
+    "body": [
+     "That NAD+ declines with age is not in dispute. What is in dispute is whether raising circulating NAD+ with an oral precursor restores function inside the specific tissues that matter, and whether that produces a health benefit you would notice.",
+     "This is the central open question of the NAD+ field, and it is why the Hub grades NAD+ biology as strong but NAD+ supplements as emerging."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is NAD+?",
+    "a": "NAD+ (nicotinamide adenine dinucleotide) is a coenzyme found in all living cells. It carries electrons during energy production and is consumed by enzymes that repair DNA and regulate metabolism."
+   },
+   {
+    "q": "Why does NAD+ decline with age?",
+    "a": "Two forces combine: synthesis through the salvage pathway becomes less efficient, and consumption rises as accumulated DNA damage and chronic inflammation activate NAD+-consuming enzymes such as PARP1 and CD38."
+   },
+   {
+    "q": "How can I increase NAD+ naturally?",
+    "a": "Endurance exercise, energy restriction or time-restricted eating, limiting alcohol, and maintaining a consistent circadian rhythm all support NAD+ levels without supplementation."
+   }
+  ],
+  "related": [
+   "nmn",
+   "mitochondria",
+   "autophagy",
+   "zone-2-training",
+   "time-restricted-eating"
+  ],
+  "updated": "2026-08-22"
+ },
+ {
+  "slug": "creatine",
+  "name": "Creatine",
+  "type": "molecule",
+  "aka": [
+   "Creatine monohydrate",
+   "Cr"
+  ],
+  "topics": [
+   "recovery",
+   "cognition",
+   "nutrition"
+  ],
+  "evidence": "Strong",
+  "summary": "Creatine is a compound stored in muscle and brain tissue that regenerates ATP during short, intense effort. It is the most studied sports supplement in existence, and increasingly studied for cognition and mood.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "Amino acid derivative"
+   },
+   {
+    "label": "Standard dose",
+    "value": "3–5 g per day, no cycling required"
+   },
+   {
+    "label": "Best form",
+    "value": "Creatine monohydrate (no benefit shown for pricier forms)"
+   },
+   {
+    "label": "Time to saturation",
+    "value": "3–4 weeks at 5 g per day"
+   },
+   {
+    "label": "Cost",
+    "value": "Among the cheapest evidence-backed supplements"
+   }
+  ],
+  "sections": [
+   {
+    "h": "How creatine works",
+    "body": [
+     "Muscle stores creatine as phosphocreatine, a rapid phosphate donor. During the first seconds of maximal effort, phosphocreatine regenerates ATP faster than any other pathway. Supplementing raises stored phosphocreatine by roughly 20 to 40 percent, which translates into more total work per session and, over months, more strength and lean mass.",
+     "The brain uses the same system. Neurons are energetically expensive, and brain phosphocreatine buffers ATP during demanding cognitive work."
+    ]
+   },
+   {
+    "h": "Beyond the gym",
+    "body": [
+     "The most interesting recent work on creatine is cognitive. Effects are clearest under energetic stress — sleep deprivation, high mental load, or in vegetarians who start with lower baseline stores. In well-rested omnivores, cognitive effects are small.",
+     "There is also a growing body of research in older adults, where creatine combined with resistance training shows better preservation of lean mass and functional strength than training alone."
+    ]
+   },
+   {
+    "h": "Common misconceptions",
+    "list": [
+     "Creatine is not a steroid. It is a naturally occurring compound also found in meat and fish.",
+     "It does not damage healthy kidneys. It does raise serum creatinine, a lab value, which can look alarming without causing harm — mention supplementation before blood work.",
+     "Loading phases are optional. They saturate stores in about a week instead of a month; the endpoint is identical.",
+     "Some initial weight gain is intracellular water in muscle, not fat."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What does creatine do?",
+    "a": "Creatine increases the muscle and brain stores of phosphocreatine, which regenerates ATP during short bursts of intense physical or mental effort. The practical result is more work performed per session and, over time, greater strength and lean mass."
+   },
+   {
+    "q": "Should I take creatine every day?",
+    "a": "Yes — 3 to 5 grams daily, including rest days, keeps muscle stores saturated. Cycling off provides no benefit."
+   },
+   {
+    "q": "Does creatine help the brain?",
+    "a": "Evidence suggests cognitive benefits mainly under stress conditions such as sleep deprivation or in people with low dietary intake, including vegetarians. In well-rested omnivores the effect is modest."
+   }
+  ],
+  "related": [
+   "protein-intake",
+   "zone-2-training",
+   "hrv",
+   "vo2-max",
+   "omega-3"
+  ],
+  "updated": "2026-07-30"
+ },
+ {
+  "slug": "omega-3",
+  "name": "Omega-3",
+  "type": "molecule",
+  "aka": [
+   "EPA",
+   "DHA",
+   "Fish oil",
+   "Marine omega-3"
+  ],
+  "topics": [
+   "cognition",
+   "nutrition",
+   "recovery",
+   "skincare"
+  ],
+  "evidence": "Strong",
+  "summary": "Omega-3 fatty acids — principally EPA and DHA — are structural components of cell membranes and precursors to the molecules that resolve inflammation. DHA is a major structural fat in the brain and retina.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "Essential polyunsaturated fatty acids"
+   },
+   {
+    "label": "Typical dose",
+    "value": "1–2 g combined EPA + DHA per day"
+   },
+   {
+    "label": "Food sources",
+    "value": "Oily fish, algae, (ALA from flax, chia, walnuts)"
+   },
+   {
+    "label": "Tested by",
+    "value": "Omega-3 Index (target above 8 percent)"
+   },
+   {
+    "label": "Note",
+    "value": "Plant ALA converts to EPA/DHA at a very low rate"
+   }
+  ],
+  "sections": [
+   {
+    "h": "Why the ratio matters",
+    "body": [
+     "Modern diets deliver far more omega-6 than omega-3. Both families compete for the same enzymes, and the balance shifts which signalling molecules your body produces — those that initiate inflammation, or those that resolve it. Raising omega-3 intake shifts membrane composition over a period of months, not days.",
+     "The Omega-3 Index measures EPA and DHA as a percentage of red blood cell fatty acids and is the most informative single test. Levels below 4 percent are associated with elevated cardiovascular risk in observational data."
+    ]
+   },
+   {
+    "h": "What the evidence supports",
+    "list": [
+     "Triglyceride reduction — consistent and dose-dependent, the strongest finding.",
+     "Cognitive and mood support — moderate evidence, strongest for EPA-dominant formulas in depressive symptoms.",
+     "Exercise recovery — reduced muscle soreness and inflammatory markers in several trials.",
+     "Cardiovascular events — mixed results across large trials, with dose and formulation likely explaining much of the disagreement."
+    ]
+   },
+   {
+    "h": "Choosing a supplement",
+    "body": [
+     "Read the label for the EPA and DHA content rather than the total fish oil weight; a 1000 mg capsule often contains only 300 mg of actual omega-3. Triglyceride and re-esterified triglyceride forms absorb somewhat better than ethyl esters.",
+     "Oxidation is a real issue. Rancid fish oil is common. Store it cold, buy from suppliers publishing oxidation values, and stop if capsules smell strongly."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What are omega-3 fatty acids?",
+    "a": "Omega-3s are essential polyunsaturated fats the body cannot synthesise. The two most biologically important forms, EPA and DHA, come mainly from oily fish and algae and are used to build cell membranes and to produce inflammation-resolving signalling molecules."
+   },
+   {
+    "q": "How much omega-3 should I take?",
+    "a": "Most protocols target 1 to 2 grams of combined EPA and DHA per day. People eating oily fish several times per week may already be at target — the Omega-3 Index test settles the question."
+   },
+   {
+    "q": "Is fish oil or algae oil better?",
+    "a": "Algae oil is the original source of EPA and DHA and is equivalent for vegetarians and vegans. Fish oil is generally cheaper per gram; algae oil avoids heavy metal and sustainability concerns."
+   }
+  ],
+  "measuredBy": [
+   "hs-crp"
+  ],
+  "related": [
+   "vitamin-d",
+   "creatine",
+   "hs-crp",
+   "magnesium",
+   "apob"
+  ],
+  "updated": "2026-08-04"
+ },
+ {
+  "slug": "vitamin-d",
+  "name": "Vitamin D",
+  "type": "molecule",
+  "aka": [
+   "Cholecalciferol",
+   "Vitamin D3",
+   "25(OH)D"
+  ],
+  "topics": [
+   "nutrition",
+   "longevity",
+   "sleep",
+   "skincare"
+  ],
+  "evidence": "Strong",
+  "summary": "Vitamin D is a hormone precursor synthesised in skin from UVB exposure and obtained in smaller amounts from food. It regulates calcium handling, immune function and the expression of hundreds of genes.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "Fat-soluble vitamin / prohormone"
+   },
+   {
+    "label": "Typical dose",
+    "value": "1000–4000 IU per day, guided by blood level"
+   },
+   {
+    "label": "Target blood level",
+    "value": "Commonly 30–50 ng/mL (75–125 nmol/L)"
+   },
+   {
+    "label": "Cofactors",
+    "value": "Magnesium, vitamin K2"
+   },
+   {
+    "label": "Tested by",
+    "value": "Serum 25-hydroxyvitamin D"
+   }
+  ],
+  "sections": [
+   {
+    "h": "Why deficiency is so common",
+    "body": [
+     "Synthesis requires UVB reaching bare skin at a sufficient solar angle. Above roughly 37 degrees latitude, that does not happen for several months of the year. Indoor work, sunscreen, darker skin pigmentation and age all reduce production further.",
+     "This is the rare case where a blood test is genuinely worth doing before supplementing, because both the starting point and the dose response vary enormously between people."
+    ]
+   },
+   {
+    "h": "The cofactor question",
+    "body": [
+     "Vitamin D increases calcium absorption. Vitamin K2 helps direct that calcium into bone rather than soft tissue, and magnesium is required by the enzymes that activate vitamin D. High-dose vitamin D without adequate magnesium can leave people feeling worse rather than better.",
+     "For most people this argues for moderate, consistent dosing alongside adequate magnesium rather than occasional megadoses."
+    ]
+   },
+   {
+    "h": "What it does and does not do",
+    "body": [
+     "Correcting a genuine deficiency reliably improves bone health markers and reduces the risk of acute respiratory infection modestly. Large trials in already-replete populations have generally not shown additional benefit, which is the usual pattern for nutrient supplementation.",
+     "In short: fix a deficiency, do not chase a supraphysiological number."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is vitamin D?",
+    "a": "Vitamin D is a fat-soluble prohormone produced in the skin from UVB light and obtained in smaller amounts from food. It regulates calcium absorption, supports immune function, and influences the expression of a wide range of genes."
+   },
+   {
+    "q": "How much vitamin D should I take?",
+    "a": "Typical supplementation ranges from 1000 to 4000 IU per day, but the correct dose depends on your starting blood level, body weight, latitude and sun exposure. A serum 25(OH)D test is the only way to know."
+   },
+   {
+    "q": "Does vitamin D affect sleep?",
+    "a": "Observational data links low vitamin D status with poorer sleep quality, and vitamin D receptors are present in brain regions involved in sleep regulation. Intervention evidence is limited and mixed."
+   }
+  ],
+  "measuredBy": [
+   "vitamin-d-blood"
+  ],
+  "related": [
+   "magnesium",
+   "omega-3",
+   "sleep-hygiene-protocol",
+   "circadian-rhythm",
+   "hs-crp"
+  ],
+  "updated": "2026-08-11"
+ },
+ {
+  "slug": "melatonin",
+  "name": "Melatonin",
+  "type": "molecule",
+  "aka": [
+   "N-acetyl-5-methoxytryptamine",
+   "Sleep hormone"
+  ],
+  "topics": [
+   "sleep",
+   "longevity"
+  ],
+  "evidence": "Strong",
+  "summary": "Melatonin is the hormone the pineal gland releases in darkness to signal biological night. It is a timing signal rather than a sedative — which explains why dose and timing matter more than most people assume.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "Hormone (neurohormone)"
+   },
+   {
+    "label": "Effective dose",
+    "value": "0.3–1 mg is usually sufficient"
+   },
+   {
+    "label": "Common retail dose",
+    "value": "5–10 mg — often far above physiological need"
+   },
+   {
+    "label": "Best use case",
+    "value": "Circadian shifting, jet lag, delayed sleep phase"
+   },
+   {
+    "label": "Suppressed by",
+    "value": "Evening light, especially short-wavelength"
+   }
+  ],
+  "sections": [
+   {
+    "h": "Timing signal, not a sedative",
+    "body": [
+     "Melatonin tells the body that night has begun. It does not force sleep the way a hypnotic drug does. Taken at the wrong time it can shift your clock in the wrong direction, which is why people sometimes report feeling worse rather than better.",
+     "For advancing a late sleep schedule, a small dose taken several hours before the intended bedtime is the evidence-supported approach — not a large dose at lights-out."
+    ]
+   },
+   {
+    "h": "The dose problem",
+    "body": [
+     "Physiological nocturnal melatonin peaks at a level reached by roughly 0.3 mg orally. Commercial products commonly contain 5 or 10 mg, which produces blood levels many times higher than the body ever makes and can leave a morning hangover.",
+     "Studies comparing low and high doses generally find no added benefit above about 1 mg for sleep onset in healthy adults."
+    ]
+   },
+   {
+    "h": "What suppresses your own melatonin",
+    "list": [
+     "Bright light in the two to three hours before bed, particularly blue-weighted light.",
+     "Late, large meals and alcohol, which disrupt the whole sleep architecture.",
+     "Irregular sleep timing, which weakens the amplitude of the entire circadian signal.",
+     "Insufficient morning daylight, which sets the timer for evening melatonin onset."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is melatonin?",
+    "a": "Melatonin is a hormone produced by the pineal gland in response to darkness. It signals to the body that biological night has begun and helps synchronise the sleep-wake cycle with the external light-dark cycle."
+   },
+   {
+    "q": "How much melatonin should I take?",
+    "a": "Between 0.3 and 1 mg is enough for most people. Higher retail doses of 5 to 10 mg produce supraphysiological levels without improving results and may cause grogginess."
+   },
+   {
+    "q": "Is it safe to take melatonin every night?",
+    "a": "Short-term use is well tolerated. Long-term nightly use has less data, and because melatonin is a hormone, it is worth periodically testing whether the underlying light and schedule issues can be fixed instead."
+   }
+  ],
+  "related": [
+   "circadian-rhythm",
+   "sleep-hygiene-protocol",
+   "magnesium",
+   "deep-sleep",
+   "red-light-therapy"
+  ],
+  "updated": "2026-08-18"
+ },
+ {
+  "slug": "caffeine-l-theanine",
+  "name": "Caffeine + L-Theanine",
+  "type": "molecule",
+  "aka": [
+   "Smooth caffeine",
+   "Theanine stack"
+  ],
+  "topics": [
+   "cognition",
+   "sleep"
+  ],
+  "evidence": "Moderate",
+  "summary": "The combination of caffeine with L-theanine, an amino acid from tea leaves, is the most reliably reproduced nootropic stack: caffeine supplies alertness while theanine reduces the associated jitteriness and blood pressure response.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "Stimulant + amino acid"
+   },
+   {
+    "label": "Common ratio",
+    "value": "100 mg caffeine : 200 mg L-theanine"
+   },
+   {
+    "label": "Onset",
+    "value": "30–45 minutes"
+   },
+   {
+    "label": "Caffeine half-life",
+    "value": "Roughly 5–6 hours, highly variable"
+   },
+   {
+    "label": "Sleep rule",
+    "value": "Stop caffeine 8–10 hours before bed"
+   }
+  ],
+  "sections": [
+   {
+    "h": "Why the pairing works",
+    "body": [
+     "Caffeine blocks adenosine receptors, removing the brakes on arousal. The side effect is a sympathetic response — raised heart rate, tension, sometimes anxiety. L-theanine increases alpha wave activity associated with relaxed attention and blunts that sympathetic edge without reducing alertness.",
+     "Trials on the combination show improvements in attention switching and reduced susceptibility to distraction, larger than caffeine alone in several studies."
+    ]
+   },
+   {
+    "h": "The part most people get wrong",
+    "body": [
+     "Caffeine does not create energy. It postpones the perception of fatigue by masking adenosine accumulation — and the adenosine is still there when it wears off. Using caffeine to paper over insufficient sleep compounds the underlying deficit.",
+     "The half-life is the practical issue. With a six hour half-life, an afternoon coffee at 4pm still leaves a quarter of the dose circulating at midnight, measurably reducing deep sleep even in people who report falling asleep fine."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What does L-theanine do with caffeine?",
+    "a": "L-theanine smooths the stimulant response to caffeine, reducing jitteriness and the rise in blood pressure while preserving — and in some studies enhancing — the improvement in attention."
+   },
+   {
+    "q": "When should I stop drinking caffeine?",
+    "a": "Eight to ten hours before bedtime is the common recommendation, because caffeine has a half-life of roughly five to six hours and its metabolites continue to reduce deep sleep even when sleep onset feels normal."
+   }
+  ],
+  "related": [
+   "deep-sleep",
+   "circadian-rhythm",
+   "sleep-hygiene-protocol",
+   "hrv",
+   "creatine"
+  ],
+  "updated": "2026-07-21"
+ },
+ {
+  "slug": "protein-intake",
+  "name": "Protein Intake",
+  "type": "concept",
+  "aka": [
+   "Dietary protein",
+   "Protein requirement",
+   "Leucine threshold"
+  ],
+  "topics": [
+   "nutrition",
+   "recovery",
+   "longevity"
+  ],
+  "evidence": "Strong",
+  "summary": "Protein intake is the single most consequential dietary variable for body composition, recovery and the preservation of muscle with age. Requirements for an active or aging person are substantially higher than the minimum RDA.",
+  "keyFacts": [
+   {
+    "label": "RDA (minimum)",
+    "value": "0.8 g per kg bodyweight per day"
+   },
+   {
+    "label": "Active / aging target",
+    "value": "1.6–2.2 g per kg per day"
+   },
+   {
+    "label": "Per-meal threshold",
+    "value": "Roughly 30–40 g to maximise muscle protein synthesis"
+   },
+   {
+    "label": "Key amino acid",
+    "value": "Leucine (about 2.5–3 g per meal)"
+   },
+   {
+    "label": "Linked marker",
+    "value": "Lean mass, grip strength, VO2 max"
+   }
+  ],
+  "sections": [
+   {
+    "h": "The RDA is a floor, not a target",
+    "body": [
+     "0.8 g per kg is the amount that prevents deficiency in a sedentary adult. It is not the amount that optimises muscle retention, recovery from training, or satiety. Intervention studies in resistance-trained and older populations consistently support 1.6 g per kg or more.",
+     "For a 70 kg person, that is the difference between 56 g and around 115 g per day — a gap most people do not close by accident."
+    ]
+   },
+   {
+    "h": "Distribution matters",
+    "body": [
+     "Muscle protein synthesis responds to a threshold of leucine in a meal rather than to daily totals alone. Three or four meals each containing 30 to 40 g of quality protein stimulate synthesis more effectively than the same total eaten mostly at dinner.",
+     "This becomes more important with age, because older muscle is less sensitive to the anabolic signal — a phenomenon known as anabolic resistance."
+    ]
+   },
+   {
+    "h": "The longevity objection",
+    "body": [
+     "Some longevity arguments favour protein restriction, based on mTOR signalling and on animal studies. The counterweight is that sarcopenia — age-related muscle loss — is one of the strongest predictors of frailty, falls and mortality in older adults.",
+     "The prevailing synthesis is that adequate protein plus resistance training wins for most people over 50, and that periodic energy restriction, rather than chronic protein restriction, is the better lever for autophagy."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "How much protein do I need per day?",
+    "a": "Active adults and people over 50 generally do best between 1.6 and 2.2 grams per kilogram of bodyweight per day. The 0.8 g per kg RDA is a deficiency-prevention minimum, not an optimum."
+   },
+   {
+    "q": "Does protein timing matter?",
+    "a": "Distribution matters more than precise timing. Spreading intake across three or four meals of 30 to 40 grams each stimulates muscle protein synthesis more effectively than concentrating protein in one evening meal."
+   }
+  ],
+  "related": [
+   "creatine",
+   "time-restricted-eating",
+   "autophagy",
+   "vo2-max",
+   "zone-2-training"
+  ],
+  "updated": "2026-08-01"
+ },
+ {
+  "slug": "peptides",
+  "name": "Peptides",
+  "type": "molecule",
+  "aka": [
+   "Therapeutic peptides",
+   "Peptide therapy",
+   "Bioregulator peptides"
+  ],
+  "topics": [
+   "longevity",
+   "nutrition"
+  ],
+  "evidence": "Emerging",
+  "summary": "Peptides are short chains of amino acids — smaller than proteins — that act as signalling molecules in the body. A handful are well-established drugs; most of the peptides marketed to biohackers for recovery, fat loss and anti-aging are far less proven.",
+  "keyFacts": [
+   {
+    "label": "Class",
+    "value": "Short amino-acid chains (typically 2–50 residues)"
+   },
+   {
+    "label": "How they act",
+    "value": "Signalling molecules — they bind receptors to trigger a response"
+   },
+   {
+    "label": "Well-established examples",
+    "value": "Insulin, GLP-1 agonists (semaglutide), growth-hormone analogues"
+   },
+   {
+    "label": "Biohacking-popular examples",
+    "value": "BPC-157, TB-500, CJC-1295, ipamorelin"
+   },
+   {
+    "label": "Regulatory note",
+    "value": "Many research peptides are not approved for human use; status varies by country"
+   }
+  ],
+  "sections": [
+   {
+    "h": "What a peptide actually is",
+    "body": [
+     "A peptide is a short chain of amino acids — the same building blocks as proteins, just fewer of them. The line between a long peptide and a small protein is arbitrary, usually drawn around 50 amino acids. What makes peptides interesting is that many act as precise signalling molecules: they bind a receptor and tell a cell to do one specific thing.",
+     "That specificity is why peptides are some of the most important drugs in medicine. Insulin is a peptide. So are the GLP-1 agonists now used for diabetes and weight loss. The question for biohacking is not whether peptides work — some of the best-evidenced drugs in the world are peptides — but whether the particular peptides sold for recovery and anti-aging have the evidence their marketing implies."
+    ]
+   },
+   {
+    "h": "The two very different categories",
+    "list": [
+     "Approved peptide drugs — insulin, semaglutide, growth-hormone analogues. Large trials, known safety profiles, prescribed and regulated.",
+     "Research and grey-market peptides — BPC-157, TB-500, CJC-1295, ipamorelin and others. Popular for healing, recovery and growth-hormone release, but human evidence is thin to absent and quality control is unregulated.",
+     "Treating the second group as if it carried the evidence of the first is the central mistake in peptide biohacking."
+    ]
+   },
+   {
+    "h": "What the evidence supports",
+    "body": [
+     "For the approved peptides, the data is robust and the use cases are specific and medical. For the biohacking-popular compounds, most human claims rest on animal studies, in-vitro work or anecdote. BPC-157, for instance, shows promising tissue-healing effects in rodents but has essentially no controlled human trials.",
+     "Purity is a separate problem. Research peptides are sold \"not for human use\", are not pharmaceutically regulated, and independent testing regularly finds mislabelled dose or contamination. Even a peptide that worked could be undermined by what is actually in the vial."
+    ]
+   },
+   {
+    "h": "How to think about it",
+    "body": [
+     "Peptides are a real and powerful class of molecule, and the approved ones belong in a conversation with a physician. The research peptides are an experiment with an unknown compound at an unknown dose, and should be treated as such — not as a settled recovery tool.",
+     "The measurable return for most people is still far higher from protein adequacy, training and sleep than from any peptide bought online."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "What are peptides?",
+    "a": "Peptides are short chains of amino acids that act as signalling molecules in the body. They are smaller than proteins. Some, like insulin and GLP-1 agonists, are well-established drugs; others are marketed for recovery and anti-aging with much weaker evidence."
+   },
+   {
+    "q": "Do biohacking peptides like BPC-157 work?",
+    "a": "The evidence is mostly from animal and lab studies, not controlled human trials. They are popular for healing and recovery, but their human efficacy and long-term safety are unproven, and most are sold outside medical regulation."
+   },
+   {
+    "q": "Are research peptides safe?",
+    "a": "Unknown. Most are sold \"not for human use\", are not pharmaceutically regulated, and independent testing often finds mislabelled or contaminated product. Approved peptide drugs are a different matter and have established safety profiles."
+   },
+   {
+    "q": "Are peptides legal?",
+    "a": "It depends on the peptide and the country. Approved peptide medicines are prescription drugs. Many research peptides occupy a legal grey area — legal to sell for research, not approved for human consumption."
+   }
+  ],
+  "related": [
+   "protein-intake",
+   "creatine",
+   "biological-age",
+   "vo2-max"
+  ],
+  "updated": "2026-10-08"
+ }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "biohacking-industry-report-2026",
+    "title": "State of Biohacking 2026: Annual Industry Report",
+    "kind": "Industry statistics",
+    "date": "2026-09-08",
+    "excerpt": "Market size, the fastest-growing product categories, and what 1,500+ conference attendees say they actually spend on. Our annual read on where the industry is heading.",
+    "stats": [{"v": "$32B", "l": "est. global market"}, {"v": "26%", "l": "of attendees are practitioners"}, {"v": "3.4×", "l": "growth in CGM use since 2023"}],
+    "topics": ["longevity", "metabolic-health"],
+    "entities": ["continuous-glucose-monitoring", "nmn", "biological-age"]
+  },
+  {
+    "slug": "sleep-habits-survey-2026",
+    "title": "How Biohackers Sleep: 2,100-Person Survey",
+    "kind": "Original survey",
+    "date": "2026-08-24",
+    "excerpt": "Bedtimes, wearables, supplements and what people say worked. The gap between what the community tracks and what it acts on is wider than expected.",
+    "stats": [{"v": "71%", "l": "track sleep nightly"}, {"v": "34%", "l": "act on the data weekly"}, {"v": "22:48", "l": "median bedtime"}],
+    "topics": ["sleep"],
+    "entities": ["deep-sleep", "magnesium", "melatonin", "hrv"]
+  },
+  {
+    "slug": "miami-2026-speaker-insights",
+    "title": "Conference Report: 35 Speakers, 12 Shared Conclusions",
+    "kind": "Conference report",
+    "date": "2026-07-30",
+    "excerpt": "Where the Miami 2026 stage agreed, where it argued, and the three claims that came up in more talks than any other. A synthesis for people who could not be in the room.",
+    "stats": [{"v": "35", "l": "speakers"}, {"v": "12", "l": "consensus points"}, {"v": "3", "l": "open disagreements"}],
+    "topics": ["longevity", "recovery"],
+    "entities": ["zone-2-training", "vo2-max", "protein-intake", "sauna-heat-therapy"]
+  }
+]

@@ -1,0 +1,399 @@
+[
+  {
+    "slug": "hrv",
+    "name": "HRV",
+    "type": "biomarker",
+    "aka": ["Heart rate variability", "RMSSD", "Vagal tone"],
+    "topics": ["recovery", "sleep", "cognition"],
+    "evidence": "Strong",
+    "summary": "Heart rate variability is the variation in time between consecutive heartbeats. It reflects the balance between the sympathetic and parasympathetic branches of the autonomic nervous system, and is the most widely used recovery marker in biohacking.",
+    "keyFacts": [
+      {"label": "Type", "value": "Autonomic nervous system marker"},
+      {"label": "Common metric", "value": "RMSSD, measured in milliseconds"},
+      {"label": "Measured by", "value": "Wearables, chest straps, morning readiness apps"},
+      {"label": "Normal range", "value": "Highly individual — compare only to your own baseline"},
+      {"label": "Best measurement window", "value": "During sleep or on waking, consistently"}
+    ],
+    "sections": [
+      {
+        "h": "What HRV actually measures",
+        "body": [
+          "A healthy heart does not beat like a metronome. The interval between beats varies slightly with breathing and with autonomic input. High variability indicates strong parasympathetic — vagal — influence, which is the state associated with rest, digestion and recovery. Low variability indicates sympathetic dominance: stress, illness, poor sleep, alcohol, or accumulated training load.",
+          "The number itself is nearly meaningless across people. A 25 ms RMSSD may be normal for one person and alarming for another. The signal is the deviation from your own rolling baseline."
+        ]
+      },
+      {
+        "h": "What moves HRV",
+        "list": [
+          "Alcohol — the single most reliable HRV suppressor; effects are visible for one to two nights.",
+          "Sleep debt and late sleep timing.",
+          "Training load, especially high-intensity work in the preceding 24 hours.",
+          "Illness, often one to two days before symptoms appear.",
+          "Psychological stress and unresolved cognitive load.",
+          "Slow breathing practice, sauna, and consistent aerobic training raise it over weeks."
+        ]
+      },
+      {
+        "h": "How to use it without obsessing",
+        "body": [
+          "Use a seven-day rolling average rather than daily readings. A single low day is noise; three consecutive low days against your baseline is information — usually that the total load across training, sleep, alcohol and stress exceeds what you are recovering from.",
+          "The most common failure mode is anxiety about the number, which itself lowers HRV. Treat it as one input alongside subjective energy and performance, not a verdict."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "What is HRV?", "a": "HRV, or heart rate variability, is the variation in the time interval between consecutive heartbeats. It is used as a non-invasive indicator of autonomic nervous system balance and therefore of recovery status."},
+      {"q": "What is a good HRV score?", "a": "There is no universal good score. HRV varies enormously with age, genetics and measurement method. What matters is the trend relative to your own baseline over seven to thirty days."},
+      {"q": "How can I improve my HRV?", "a": "The most reliable levers are removing alcohol, increasing sleep duration and consistency, building aerobic base through zone 2 training, slow-paced breathing practice, and managing psychological stress."},
+      {"q": "Why did my HRV drop suddenly?", "a": "Common causes are alcohol the previous evening, a hard training session, a late or short night, incoming illness, or acute stress. A single drop is normal variation; a sustained multi-day drop signals accumulated load."}
+    ],
+    "related": ["breathwork", "cold-exposure", "zone-2-training", "deep-sleep", "sauna-heat-therapy"],
+    "updated": "2026-08-25"
+  },
+  {
+    "slug": "deep-sleep",
+    "name": "Deep Sleep",
+    "type": "biomarker",
+    "aka": ["Slow-wave sleep", "SWS", "N3"],
+    "topics": ["sleep", "recovery", "longevity"],
+    "evidence": "Strong",
+    "summary": "Deep sleep, or slow-wave sleep, is the stage in which growth hormone is released, the glymphatic system clears metabolic waste from the brain, and physical restoration is concentrated. It is front-loaded into the first half of the night.",
+    "keyFacts": [
+      {"label": "Type", "value": "Sleep architecture stage (N3)"},
+      {"label": "Typical amount", "value": "13–23 percent of total sleep in healthy adults"},
+      {"label": "When it occurs", "value": "Predominantly in the first half of the night"},
+      {"label": "Measured by", "value": "Polysomnography (gold standard); wearables estimate it"},
+      {"label": "Declines with", "value": "Age, alcohol, late eating, elevated evening temperature"}
+    ],
+    "sections": [
+      {
+        "h": "Why deep sleep matters",
+        "body": [
+          "During slow-wave sleep the brain shifts into large synchronised waves, growth hormone pulses, and the glymphatic system increases clearance of metabolic byproducts including beta-amyloid. This is the physiological basis for the link between long-term poor sleep and neurodegenerative risk.",
+          "Because deep sleep is concentrated early in the night, going to bed two hours late does not simply shorten sleep evenly — it disproportionately cuts deep sleep, while sleeping in disproportionately preserves REM."
+        ]
+      },
+      {
+        "h": "What reduces deep sleep",
+        "list": [
+          "Alcohol — sedates initially, then fragments the second half of the night and suppresses REM.",
+          "Late large meals, which keep core temperature and digestive activity elevated.",
+          "A warm bedroom; core temperature must fall to initiate and sustain slow-wave sleep.",
+          "Caffeine consumed within eight to ten hours of bed, even when sleep onset feels unaffected.",
+          "Inconsistent sleep timing, which flattens circadian amplitude."
+        ]
+      },
+      {
+        "h": "A note on wearable accuracy",
+        "body": [
+          "Consumer wearables infer sleep stages from heart rate, movement and temperature rather than measuring brain activity. Stage-level accuracy against polysomnography is moderate — good enough to track your own trends, not good enough to treat a single night as a clinical measurement.",
+          "Use the trend line. If your deep sleep average rises over three weeks after you move dinner earlier, that is a usable signal."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "What is deep sleep?", "a": "Deep sleep, also called slow-wave sleep or stage N3, is the most physically restorative sleep stage. Growth hormone is released, brain waste clearance increases, and the body performs most of its tissue repair."},
+      {"q": "How much deep sleep do I need?", "a": "Healthy adults typically spend 13 to 23 percent of total sleep time in deep sleep, which is roughly 60 to 110 minutes for an eight hour night. The proportion declines naturally with age."},
+      {"q": "How can I get more deep sleep?", "a": "Keep the bedroom cool, stop eating three hours before bed, avoid alcohol, hold a consistent sleep and wake time, and get bright light exposure in the morning to strengthen circadian amplitude."}
+    ],
+    "related": ["circadian-rhythm", "sleep-hygiene-protocol", "melatonin", "magnesium", "hrv"],
+    "updated": "2026-08-18"
+  },
+  {
+    "slug": "vo2-max",
+    "name": "VO2 Max",
+    "type": "biomarker",
+    "aka": ["Maximal oxygen uptake", "Cardiorespiratory fitness", "CRF"],
+    "topics": ["longevity", "recovery", "metabolic-health"],
+    "evidence": "Strong",
+    "summary": "VO2 max is the maximum rate at which your body can take in and use oxygen during intense exercise. Among all measurable markers, it has one of the strongest associations with all-cause mortality.",
+    "keyFacts": [
+      {"label": "Type", "value": "Cardiorespiratory fitness marker"},
+      {"label": "Units", "value": "mL of oxygen per kg of bodyweight per minute"},
+      {"label": "Measured by", "value": "Lab gas-exchange test; estimated by wearables"},
+      {"label": "Trainability", "value": "15–20 percent improvement is realistic over months"},
+      {"label": "Age-related decline", "value": "Roughly 10 percent per decade if untrained"}
+    ],
+    "sections": [
+      {
+        "h": "Why longevity researchers care about it",
+        "body": [
+          "Large cohort studies comparing cardiorespiratory fitness categories find that the gap in mortality risk between the lowest and highest fitness groups exceeds the gap attributable to smoking, diabetes or hypertension. Moving out of the bottom quartile produces the largest single improvement.",
+          "The practical reading: VO2 max is not a competitive metric for athletes. It is a functional reserve measure — how much physiological headroom you have as you age."
+        ]
+      },
+      {
+        "h": "How to raise it",
+        "list": [
+          "Build an aerobic base with zone 2 training — three to four hours per week is a common target.",
+          "Add one weekly high-intensity session; 4x4 minute intervals at near-maximal effort is the best-studied protocol.",
+          "Maintain lean mass; VO2 max is normalised to bodyweight, so body composition affects the number.",
+          "Consistency beats intensity over a twelve-month window."
+        ]
+      },
+      {
+        "h": "Wearable estimates",
+        "body": [
+          "Watch-estimated VO2 max derives from the relationship between pace and heart rate during outdoor runs. It is reasonably good at tracking change in one person over time and considerably less reliable as an absolute number.",
+          "If the absolute value matters to you — for example to compare against age percentile tables — a lab test is worth doing once."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "What is VO2 max?", "a": "VO2 max is the maximum volume of oxygen your body can consume per minute during maximal exercise, expressed relative to bodyweight. It reflects the combined capacity of your heart, lungs, blood and muscles to deliver and use oxygen."},
+      {"q": "Why is VO2 max linked to longevity?", "a": "In large cohort studies, low cardiorespiratory fitness is associated with a greater increase in all-cause mortality risk than smoking, diabetes or hypertension. It appears to act as a proxy for whole-system physiological reserve."},
+      {"q": "How do I improve VO2 max?", "a": "Combine a base of low-intensity zone 2 aerobic work with one weekly high-intensity interval session. Improvements of 15 to 20 percent are realistic within three to six months for previously untrained people."}
+    ],
+    "related": ["zone-2-training", "mitochondria", "biological-age", "protein-intake", "fasting-insulin"],
+    "updated": "2026-08-09"
+  },
+  {
+    "slug": "fasting-insulin",
+    "name": "Fasting Insulin",
+    "type": "biomarker",
+    "aka": ["Insulin", "HOMA-IR"],
+    "topics": ["metabolic-health", "longevity"],
+    "evidence": "Strong",
+    "summary": "Fasting insulin measures how much insulin your pancreas needs to secrete to keep blood glucose normal while fasted. It rises years before fasting glucose does, making it an early warning marker for insulin resistance.",
+    "keyFacts": [
+      {"label": "Type", "value": "Metabolic hormone marker"},
+      {"label": "Optimal range", "value": "Commonly cited as below 5–7 µIU/mL"},
+      {"label": "Derived metric", "value": "HOMA-IR = (glucose × insulin) / 405"},
+      {"label": "Why it matters", "value": "Rises years before fasting glucose becomes abnormal"},
+      {"label": "Rarely included in", "value": "Standard annual blood panels — usually must be requested"}
+    ],
+    "sections": [
+      {
+        "h": "The marker standard panels miss",
+        "body": [
+          "Insulin resistance develops gradually. For years, the pancreas compensates by producing more insulin, and fasting glucose stays in the normal range. By the time glucose rises, considerable beta cell capacity has already been lost.",
+          "Fasting insulin — and HOMA-IR, which combines it with glucose — reveals that compensation. This is why it appears on almost every serious longevity panel and almost no routine one."
+        ]
+      },
+      {
+        "h": "What moves it",
+        "list": [
+          "Visceral fat reduction — the single largest lever.",
+          "Resistance training, which increases glucose disposal into muscle independently of insulin.",
+          "Zone 2 aerobic work, improving mitochondrial fat oxidation.",
+          "Sleep — a single week of restricted sleep measurably reduces insulin sensitivity in healthy adults.",
+          "Time-restricted eating, mainly through reduced total intake and improved circadian alignment of meals."
+        ]
+      },
+      {
+        "h": "Interpreting it honestly",
+        "body": [
+          "Reference ranges on lab reports are wide because they describe the population, and a large part of that population is metabolically unwell. A result flagged as normal may still be well above optimal.",
+          "Track the trend across at least two measurements taken under the same conditions — same fasting duration, similar activity in the preceding days."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "What does fasting insulin tell you?", "a": "It shows how hard your pancreas is working to maintain normal blood glucose. A high fasting insulin with normal glucose indicates insulin resistance that is still being compensated for — an early stage that routine testing usually misses."},
+      {"q": "What is a good fasting insulin level?", "a": "Many longevity-oriented clinicians target below 5 to 7 µIU/mL, which is considerably tighter than typical laboratory reference ranges. Interpretation should always be done with your own clinician and alongside glucose."},
+      {"q": "How do I lower fasting insulin?", "a": "Reducing visceral fat, adding resistance training, building aerobic capacity, improving sleep duration, and aligning meals earlier in the day all improve insulin sensitivity."}
+    ],
+    "related": ["continuous-glucose-monitoring", "time-restricted-eating", "zone-2-training", "apob", "vo2-max"],
+    "updated": "2026-08-14"
+  },
+  {
+    "slug": "apob",
+    "name": "ApoB",
+    "type": "biomarker",
+    "aka": ["Apolipoprotein B", "Atherogenic particle count"],
+    "topics": ["metabolic-health", "longevity"],
+    "evidence": "Strong",
+    "summary": "ApoB counts the number of atherogenic lipoprotein particles in blood — one ApoB molecule per particle. It predicts cardiovascular risk more accurately than LDL cholesterol, which measures cargo rather than vehicles.",
+    "keyFacts": [
+      {"label": "Type", "value": "Cardiovascular risk marker"},
+      {"label": "What it counts", "value": "Atherogenic particles (LDL, VLDL, IDL, Lp(a))"},
+      {"label": "Advantage over LDL-C", "value": "Measures particle number, not cholesterol content"},
+      {"label": "Commonly cited targets", "value": "Below 80 mg/dL general; lower with existing risk"},
+      {"label": "Availability", "value": "Inexpensive, widely available, rarely ordered by default"}
+    ],
+    "sections": [
+      {
+        "h": "Particles, not cholesterol",
+        "body": [
+          "Atherosclerosis begins when an apoB-containing particle crosses the arterial wall and is retained. The probability of that happening scales with how many particles are present, not with how much cholesterol each one carries.",
+          "Two people can have identical LDL cholesterol with very different particle counts. The one with more, smaller particles carries higher risk — and only ApoB reveals that."
+        ]
+      },
+      {
+        "h": "Why it is the better test",
+        "body": [
+          "In studies where LDL cholesterol and ApoB disagree, ApoB tracks risk. Several major lipid guidelines now recognise it as a preferred or co-primary target, particularly in people with metabolic syndrome, diabetes or high triglycerides — the exact groups where LDL-C is most misleading.",
+          "It costs little more than a standard lipid panel, and unlike LDL-C it does not require fasting for a valid result."
+        ]
+      },
+      {
+        "h": "What lowers it",
+        "list": [
+          "Reducing saturated fat intake and replacing it with unsaturated sources.",
+          "Soluble fibre, which increases hepatic clearance of apoB particles.",
+          "Weight loss and improved insulin sensitivity, which reduce VLDL production.",
+          "Pharmacological therapy where indicated — a decision for your physician, not a supplement stack."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "What is ApoB?", "a": "ApoB, or apolipoprotein B, is the structural protein found on every atherogenic lipoprotein particle. Measuring it gives a direct count of the particles capable of causing arterial plaque."},
+      {"q": "Is ApoB better than LDL cholesterol?", "a": "For risk prediction, generally yes. LDL-C measures the cholesterol carried inside particles; ApoB counts the particles themselves, which is what drives plaque formation. The two diverge most in people with metabolic dysfunction."},
+      {"q": "What is a good ApoB level?", "a": "Commonly discussed targets sit below 80 mg/dL for people without known cardiovascular disease, and considerably lower for those with existing disease or elevated risk. Targets are a clinical decision."}
+    ],
+    "related": ["fasting-insulin", "omega-3", "hs-crp", "time-restricted-eating", "biological-age"],
+    "updated": "2026-08-14"
+  },
+  {
+    "slug": "hs-crp",
+    "name": "hs-CRP",
+    "type": "biomarker",
+    "aka": ["High-sensitivity C-reactive protein", "Inflammation marker"],
+    "topics": ["longevity", "metabolic-health", "recovery"],
+    "evidence": "Strong",
+    "summary": "High-sensitivity C-reactive protein is a blood marker of systemic inflammation. Chronically elevated low-grade levels are associated with cardiovascular risk, metabolic dysfunction and accelerated biological aging.",
+    "keyFacts": [
+      {"label": "Type", "value": "Inflammation marker"},
+      {"label": "Low risk", "value": "Below 1.0 mg/L"},
+      {"label": "Average risk", "value": "1.0–3.0 mg/L"},
+      {"label": "High risk", "value": "Above 3.0 mg/L"},
+      {"label": "Caution", "value": "Acute infection or hard training can spike it temporarily"}
+    ],
+    "sections": [
+      {
+        "h": "Acute versus chronic signal",
+        "body": [
+          "CRP rises sharply during infection — values in the tens or hundreds are an acute-phase response, not a longevity signal. The marker of interest here is the persistent low-grade elevation between 1 and 3 mg/L or above, measured when you are well.",
+          "That chronic elevation is what the term inflammaging describes: a slow background inflammatory tone that increases with age and correlates with most age-related disease."
+        ]
+      },
+      {
+        "h": "Testing correctly",
+        "list": [
+          "Do not test within two weeks of an infection, vaccination or injury.",
+          "Avoid testing within 48 hours of an unusually hard training session.",
+          "Repeat at least twice, several weeks apart, before drawing conclusions.",
+          "Interpret alongside ApoB, fasting insulin and body composition, not alone."
+        ]
+      },
+      {
+        "h": "What lowers chronic inflammation",
+        "body": [
+          "The interventions that work are unglamorous: reducing visceral fat, sleeping adequately, regular aerobic exercise, adequate omega-3 intake, treating periodontal disease, and moderating alcohol.",
+          "Sauna use has some of the more interesting supporting data, with observational cohorts linking frequent use to lower inflammatory markers and cardiovascular mortality."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "What does hs-CRP measure?", "a": "It measures C-reactive protein at low concentrations, which serves as an indicator of chronic systemic inflammation rather than acute infection."},
+      {"q": "What is a good hs-CRP level?", "a": "Below 1.0 mg/L is generally considered low cardiovascular risk, 1.0 to 3.0 mg/L average, and above 3.0 mg/L high — provided you are not currently ill or recently injured."}
+    ],
+    "related": ["omega-3", "sauna-heat-therapy", "biological-age", "apob", "vitamin-d"],
+    "updated": "2026-08-05"
+  },
+  {
+    "slug": "biological-age",
+    "name": "Biological Age",
+    "type": "biomarker",
+    "aka": ["Epigenetic age", "DNA methylation age", "Pace of aging"],
+    "topics": ["longevity"],
+    "evidence": "Emerging",
+    "summary": "Biological age estimates how old your body appears physiologically, most often from DNA methylation patterns. Second-generation clocks that predict pace of aging are more useful than first-generation clocks that predict chronological age.",
+    "keyFacts": [
+      {"label": "Type", "value": "Composite aging estimate"},
+      {"label": "Main method", "value": "DNA methylation (epigenetic clocks)"},
+      {"label": "Notable clocks", "value": "PhenoAge, GrimAge, DunedinPACE"},
+      {"label": "Test-retest variability", "value": "Can be meaningful — repeat before acting"},
+      {"label": "Cheaper proxies", "value": "VO2 max, grip strength, ApoB, hs-CRP, HbA1c"}
+    ],
+    "sections": [
+      {
+        "h": "Not all clocks measure the same thing",
+        "body": [
+          "First-generation clocks were trained to predict chronological age from methylation, which means an accurate clock tells you what you already know. Second-generation clocks such as PhenoAge and GrimAge were trained against mortality and clinical markers, and DunedinPACE estimates the rate at which you are aging right now.",
+          "For anyone testing, the pace-of-aging style output is the more actionable one, because it can respond to changes within a year."
+        ]
+      },
+      {
+        "h": "How seriously to take the number",
+        "body": [
+          "Test-retest variability in consumer epigenetic testing can be several years between samples taken close together. A single result that says you are five years younger than your birth certificate should not be treated as a measurement in the way a blood pressure reading is.",
+          "Use it as one data point in a panel, repeated annually under consistent conditions, and give more weight to functional markers you can verify — cardiorespiratory fitness, strength, metabolic panels."
+        ]
+      },
+      {
+        "h": "A practical alternative",
+        "body": [
+          "A composite of VO2 max percentile, grip strength, ApoB, fasting insulin, hs-CRP and sleep consistency gives a picture of biological aging that is cheaper, more reproducible, and directly actionable — each component has a known intervention.",
+          "Epigenetic testing is a legitimate research tool and an interesting personal experiment. It is not yet a dashboard to steer by."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "What is biological age?", "a": "Biological age is an estimate of how old your body appears physiologically compared with your chronological age, usually calculated from DNA methylation patterns or from a composite of clinical biomarkers."},
+      {"q": "Are epigenetic age tests accurate?", "a": "They are reproducible enough for population research but show meaningful test-retest variability at the individual level. Treat a single consumer result as indicative rather than definitive."},
+      {"q": "How can I lower my biological age?", "a": "The interventions with the best supporting evidence are the same ones that improve functional markers: cardiorespiratory fitness, resistance training, sleep quality, metabolic health, not smoking, and moderate alcohol intake."}
+    ],
+    "related": ["vo2-max", "hs-crp", "nmn", "autophagy", "apob"],
+    "updated": "2026-08-22"
+  },
+  {
+    "slug": "rbc-magnesium",
+    "name": "RBC Magnesium",
+    "type": "biomarker",
+    "aka": ["Red blood cell magnesium", "Erythrocyte magnesium"],
+    "topics": ["nutrition", "sleep"],
+    "evidence": "Moderate",
+    "summary": "RBC magnesium measures magnesium inside red blood cells rather than in serum, giving a better picture of tissue status. Serum magnesium is tightly regulated and stays normal even when body stores are low.",
+    "keyFacts": [
+      {"label": "Type", "value": "Micronutrient status marker"},
+      {"label": "Why not serum", "value": "Under 1 percent of body magnesium is in serum"},
+      {"label": "Commonly targeted range", "value": "Upper half of the laboratory reference range"},
+      {"label": "Availability", "value": "Widely available, inexpensive, rarely ordered by default"}
+    ],
+    "sections": [
+      {
+        "h": "Why the standard test misleads",
+        "body": [
+          "The body defends serum magnesium concentration tightly, pulling from bone and tissue when intake falls. A normal serum magnesium result is therefore compatible with meaningful depletion, which is why it is a poor screening test.",
+          "RBC magnesium reflects intracellular status over the lifespan of a red blood cell — roughly 120 days — making it a better indicator of longer-term intake."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "Is serum magnesium a good test?", "a": "No. Less than one percent of total body magnesium circulates in serum, and the body holds that concentration steady by drawing on tissue stores. RBC magnesium reflects intracellular status more usefully."}
+    ],
+    "related": ["magnesium", "deep-sleep", "vitamin-d"],
+    "updated": "2026-08-18"
+  },
+  {
+    "slug": "vitamin-d-blood",
+    "name": "25(OH)D",
+    "type": "biomarker",
+    "aka": ["Serum 25-hydroxyvitamin D", "Vitamin D blood level"],
+    "topics": ["nutrition", "longevity"],
+    "evidence": "Strong",
+    "summary": "Serum 25-hydroxyvitamin D is the standard measure of vitamin D status, reflecting both sun-derived synthesis and dietary intake over the preceding weeks.",
+    "keyFacts": [
+      {"label": "Type", "value": "Micronutrient status marker"},
+      {"label": "Deficiency", "value": "Below 20 ng/mL (50 nmol/L)"},
+      {"label": "Insufficiency", "value": "20–30 ng/mL"},
+      {"label": "Commonly targeted", "value": "30–50 ng/mL"},
+      {"label": "Best test timing", "value": "End of winter, for your seasonal low point"}
+    ],
+    "sections": [
+      {
+        "h": "Reading the result",
+        "body": [
+          "Test at the end of winter if you want to know your worst-case level, or three months after starting supplementation if you want to know whether your dose works. Dose response varies several-fold between individuals, driven by body weight, genetics and baseline status.",
+          "Very high levels are not better. Above roughly 100 ng/mL the risk of hypercalcaemia rises, and there is no evidence of additional benefit in that range."
+        ]
+      }
+    ],
+    "faq": [
+      {"q": "What vitamin D level should I aim for?", "a": "Most clinicians target a serum 25(OH)D between 30 and 50 ng/mL. Below 20 ng/mL is deficiency. Higher is not better — levels above 100 ng/mL carry a risk of hypercalcaemia."}
+    ],
+    "related": ["vitamin-d", "magnesium", "circadian-rhythm"],
+    "updated": "2026-08-11"
+  }
+]

@@ -1,0 +1,883 @@
+[
+  {
+    "slug": "bryan-johnson",
+    "name": "Bryan Johnson",
+    "title": "Founder of Blueprint; founder of Kernel and OS Fund",
+    "known": "Tracking and publishing his own biomarker data while following an intensive anti-aging regimen known as Blueprint.",
+    "bio": [
+      "Bryan Johnson is an American entrepreneur born in 1977. He founded the payments company Braintree in 2007, which bought Venmo in 2012 and was acquired by PayPal for $800 million in 2013. He later put $100 million of his own money into OS Fund, a venture firm backing early-stage science companies, and a further $100 million into Kernel, which builds devices that measure brain activity.",
+      "In 2021 Johnson announced Project Blueprint, a personal effort to slow and measure his own biological aging. It became a Los Angeles company, co-founded with Kate Tolo, that sells supplements and foods based on his protocol. The regimen involves a strict plant-based diet, a fixed early bedtime and regular tracking of more than one hundred health measurements, many of which he shares publicly.",
+      "Johnson's approach has drawn wide media attention and was the subject of the 2025 Netflix documentary Don't Die: The Man Who Wants to Live Forever. It has also met skepticism from some aging researchers, who question how far the results of a single self-experimenter can be generalized. Since 2025 Blueprint has had a separate chief executive, while Johnson continues to lead product and protocol development."
+    ],
+    "highlights": [
+      "Founder of Braintree (acquired by PayPal, 2013)",
+      "Founder of Kernel and OS Fund",
+      "Founder of Blueprint (2021)",
+      "Subject of Netflix's Don't Die (2025)"
+    ],
+    "focus": [
+      "biological-age",
+      "sleep-hygiene-protocol",
+      "deep-sleep"
+    ],
+    "topics": [
+      "longevity",
+      "sleep"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/bryanjohnson_",
+      "linkedin": "https://www.linkedin.com/in/bryanrjohnson"
+    },
+    "website": "https://www.bryanjohnson.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Bryan_Johnson_2026.jpg/960px-Bryan_Johnson_2026.jpg",
+    "imageCredit": "M Robertson / CC BY 4.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bryan_Johnson",
+      "https://www.bryanjohnson.com"
+    ],
+    "organizations": [
+      {
+        "name": "Blueprint",
+        "role": "Founder",
+        "url": "https://blueprint.bryanjohnson.com"
+      },
+      {
+        "name": "Kernel",
+        "role": "Founder",
+        "url": "https://www.kernel.com"
+      },
+      {
+        "name": "OS Fund",
+        "role": "Founder"
+      }
+    ]
+  },
+  {
+    "slug": "dave-asprey",
+    "name": "Dave Asprey",
+    "title": "Founder of Bulletproof and Upgrade Labs",
+    "known": "Popularizing the term biohacking and creating Bulletproof Coffee, the butter-blended coffee behind the Bulletproof brand.",
+    "bio": [
+      "Dave Asprey is an American entrepreneur and author born in 1973. Before turning to health, he spent years in the technology industry, holding product, marketing and security roles at companies including Citrix, Blue Coat Systems and Trend Micro. He began writing about self-experimentation on his blog while still working in tech, and published his recipe for coffee blended with butter and oil in 2009.",
+      "Asprey founded Bulletproof 360 in 2013 to sell coffee, oils and supplements, and stepped down as CEO in 2019 while remaining executive chairman. He wrote The Bulletproof Diet (2014), a low-carbohydrate, high-fat plan, and hosts a long-running podcast that began as Bulletproof Radio. In 2021 he launched franchising for Upgrade Labs, a chain of centers offering biohacking and recovery technologies.",
+      "He is widely credited with bringing the word biohacking into mainstream use and has written several further books on performance and aging."
+    ],
+    "highlights": [
+      "Founder of Bulletproof 360 (2013)",
+      "Author of The Bulletproof Diet (2014)",
+      "Host of The Human Upgrade podcast (formerly Bulletproof Radio)",
+      "Founder of Upgrade Labs"
+    ],
+    "focus": [
+      "mitochondria",
+      "red-light-therapy",
+      "time-restricted-eating"
+    ],
+    "topics": [
+      "nutrition",
+      "cognition",
+      "longevity"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/dave.asprey",
+      "facebook": "https://www.facebook.com/Daveaspreyofficial",
+      "linkedin": "https://www.linkedin.com/in/asprey"
+    },
+    "website": "https://daveasprey.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Dave_Asprey_Dec_2018.png",
+    "imageCredit": "Valder Beebe Show / CC BY 3.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dave_Asprey",
+      "https://daveasprey.com"
+    ],
+    "organizations": [
+      {
+        "name": "Bulletproof",
+        "role": "Founder",
+        "url": "https://www.bulletproof.com"
+      },
+      {
+        "name": "Upgrade Labs",
+        "role": "Founder",
+        "url": "https://upgradelabs.com"
+      }
+    ]
+  },
+  {
+    "slug": "andrew-huberman",
+    "name": "Dr. Andrew Huberman",
+    "title": "Stanford neuroscientist; host of the Huberman Lab podcast",
+    "known": "Hosting Huberman Lab, one of the most followed science podcasts, covering sleep, light exposure, focus and stress tools.",
+    "bio": [
+      "Andrew Huberman is an American neuroscientist born in 1975. He earned a PhD in neuroscience from UC Davis in 2004, completed postdoctoral work at Stanford, and taught at UC San Diego before joining the Stanford University School of Medicine, where he is an associate professor of neurobiology and ophthalmology. His research has focused on the visual system, vision regeneration and the neural basis of stress.",
+      "In 2021 he launched the Huberman Lab podcast, which quickly became one of the most listened-to shows on Spotify and Apple Podcasts. Episodes explain the biology behind topics such as sleep, morning light, focus, exercise and cold exposure, often ending with practical protocols. His book Protocols: An Operating Manual for the Human Body was published in September 2026 and debuted at number one on the New York Times list.",
+      "Huberman is widely credited with making neuroscience accessible to a very large audience. His podcast won an iHeartPodcast award in 2025."
+    ],
+    "highlights": [
+      "Associate professor of neurobiology, Stanford School of Medicine",
+      "Host of the Huberman Lab podcast (since 2021)",
+      "Author of Protocols (2026)",
+      "PhD in neuroscience, UC Davis (2004)"
+    ],
+    "focus": [
+      "sleep-hygiene-protocol",
+      "circadian-rhythm",
+      "cold-exposure",
+      "breathwork"
+    ],
+    "topics": [
+      "sleep",
+      "cognition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/hubermanlab",
+      "facebook": "https://www.facebook.com/hubermanlab",
+      "linkedin": "https://www.linkedin.com/in/andrew-huberman"
+    },
+    "website": "https://www.hubermanlab.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Andrew_D._Huberman%2C_Ph.D..jpg/960px-Andrew_D._Huberman%2C_Ph.D..jpg",
+    "imageCredit": "Jamesbrianbounds / CC BY-SA 4.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Andrew_D._Huberman",
+      "https://www.hubermanlab.com"
+    ],
+    "organizations": [
+      {
+        "name": "Stanford School of Medicine",
+        "role": "Associate professor of neurobiology",
+        "url": "https://med.stanford.edu"
+      },
+      {
+        "name": "Huberman Lab",
+        "role": "Host",
+        "url": "https://www.hubermanlab.com"
+      }
+    ]
+  },
+  {
+    "slug": "peter-attia",
+    "name": "Dr. Peter Attia",
+    "title": "Physician, author of Outlive and host of The Drive podcast",
+    "known": "Framing longevity around healthspan, with emphasis on exercise, VO2 max, zone 2 training and early cardiovascular risk markers.",
+    "bio": [
+      "Peter Attia is a Canadian-American physician born in Toronto in 1973. He studied mechanical engineering and applied mathematics at Queen's University before earning his MD at Stanford in 2001. He trained in general surgery at Johns Hopkins, spent two years at the National Cancer Institute, and later worked at McKinsey before shifting his focus to nutrition, metabolism and longevity.",
+      "Attia hosts The Peter Attia Drive, a long-form interview podcast on longevity, exercise and metabolic health that CBS News reported had passed 100 million downloads by 2025. His 2023 book Outlive: The Science and Art of Longevity, written with Bill Gifford, became a major bestseller. He also appeared in Limitless with Chris Hemsworth, a National Geographic series.",
+      "His work centers on extending healthspan, the years lived in good health, through structured exercise, nutrition, sleep and early attention to chronic disease risk, including cardiovascular markers. He lives in the Austin, Texas area."
+    ],
+    "highlights": [
+      "Author of Outlive (2023)",
+      "Host of The Peter Attia Drive podcast",
+      "MD, Stanford University (2001)",
+      "Named to TIME100 Health (2024)"
+    ],
+    "focus": [
+      "zone-2-training",
+      "vo2-max",
+      "apob",
+      "protein-intake"
+    ],
+    "topics": [
+      "longevity",
+      "metabolic-health"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/peterattiamd",
+      "facebook": "https://www.facebook.com/peterattiamd"
+    },
+    "website": "https://peterattiamd.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Peter_Attia_4473.jpg",
+    "imageCredit": "CBS News / CC BY 2.5",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Peter_Attia",
+      "https://peterattiamd.com"
+    ],
+    "organizations": []
+  },
+  {
+    "slug": "david-sinclair",
+    "name": "Dr. David Sinclair",
+    "title": "Professor of Genetics at Harvard Medical School",
+    "known": "Research on sirtuins, NAD+ and the epigenetics of aging, and the bestselling book Lifespan.",
+    "bio": [
+      "David Sinclair is an Australian-American biologist born in 1969. He earned a PhD in molecular genetics from the University of New South Wales in 1995 and did postdoctoral research on yeast aging in Leonard Guarente's lab at MIT. He joined Harvard Medical School in 1999, became a tenured professor of genetics, and is founding director of the Paul F. Glenn Laboratories for the Biological Mechanisms of Aging.",
+      "His research has examined sirtuin enzymes, the coenzyme NAD+ and, more recently, epigenetic reprogramming as a possible way to restore youthful cell function in animal models. He has co-founded several biotechnology companies, including Sirtris Pharmaceuticals, acquired by GlaxoSmithKline in 2008, Metro Biotech, which works on NAD+ precursors, and Life Biosciences, which develops gene therapies aimed at age-related disease. He also holds a conjoint professorship at UNSW.",
+      "Sinclair's 2019 book Lifespan: Why We Age and Why We Don't Have To, co-written with journalist Matthew LaPlante, brought his views on aging to a broad public audience. He is a frequent speaker and podcast guest. Some of his claims, particularly those about resveratrol and age reversal, have been disputed by other researchers in the field."
+    ],
+    "highlights": [
+      "Professor of Genetics, Harvard Medical School",
+      "Co-author of Lifespan (2019)",
+      "Founding director, Paul F. Glenn Laboratories at Harvard",
+      "Co-founder of Sirtris Pharmaceuticals and Life Biosciences"
+    ],
+    "focus": [
+      "nad",
+      "nmn",
+      "biological-age"
+    ],
+    "topics": [
+      "longevity"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/davidsinclairphd",
+      "facebook": "https://www.facebook.com/davidsinclairphd",
+      "linkedin": "https://www.linkedin.com/in/sinclairda"
+    },
+    "website": "https://lifespanbook.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/David_Sinclair.jpg/960px-David_Sinclair.jpg",
+    "imageCredit": "Editor5627 / CC BY-SA 4.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/David_A._Sinclair",
+      "https://lifespanbook.com"
+    ],
+    "organizations": [
+      {
+        "name": "Harvard Medical School",
+        "role": "Professor of Genetics",
+        "url": "https://hms.harvard.edu"
+      },
+      {
+        "name": "Life Biosciences",
+        "role": "Co-founder",
+        "url": "https://www.lifebiosciences.com"
+      }
+    ]
+  },
+  {
+    "slug": "ben-greenfield",
+    "name": "Ben Greenfield",
+    "title": "Author, coach and host of the Boundless Life podcast",
+    "known": "Mixing endurance-sport training with biohacking tools such as ice baths, infrared light and fasting, documented in Boundless.",
+    "bio": [
+      "Ben Greenfield is an American author, coach and former triathlete born in 1981. He holds bachelor's and master's degrees in sports science and exercise physiology from the University of Idaho. He has competed in 13 Ironman events and dozens of Spartan races, and the National Strength and Conditioning Association named him its Personal Trainer of the Year in 2008.",
+      "Greenfield began focusing on biohacking around 2011 and has since written widely on training, nutrition and recovery. His books include Beyond Training (2014) and Boundless (2020), a large guide to brain, body and longevity practices that was revised in 2025. He hosts the Boundless Life podcast, previously the Ben Greenfield Life podcast; his first show launched in 2007.",
+      "He co-founded the supplement company KION and runs the Ben Greenfield Life website. Greenfield openly experiments on himself and shares the results, with practices ranging from cold immersion and infrared light therapy to intermittent fasting. In 2025 he became a strategic adviser to a group of private health clubs, helping design their anti-aging and longevity programs."
+    ],
+    "highlights": [
+      "Author of Boundless (2020; revised 2025)",
+      "Host of the Boundless Life podcast",
+      "Co-founder of KION",
+      "NSCA Personal Trainer of the Year (2008)"
+    ],
+    "focus": [
+      "cold-exposure",
+      "red-light-therapy",
+      "time-restricted-eating"
+    ],
+    "topics": [
+      "recovery",
+      "longevity"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/bengreenfieldfitness",
+      "facebook": "https://www.facebook.com/BGFitness"
+    },
+    "website": "https://bengreenfieldlife.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ben_Greenfield_speaking_at_the_Health_Optimization_Summit.jpg/960px-Ben_Greenfield_speaking_at_the_Health_Optimization_Summit.jpg",
+    "imageCredit": "TAterPARsOLI / CC BY-SA 4.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ben_Greenfield",
+      "https://bengreenfieldlife.com"
+    ],
+    "organizations": [
+      {
+        "name": "KION",
+        "role": "Co-founder",
+        "url": "https://getkion.com"
+      }
+    ]
+  },
+  {
+    "slug": "rhonda-patrick",
+    "name": "Dr. Rhonda Patrick",
+    "title": "Biomedical scientist and founder of FoundMyFitness",
+    "known": "Explaining research on micronutrients, omega-3s, vitamin D and hormetic stressors like sauna and cold through FoundMyFitness.",
+    "bio": [
+      "Rhonda Patrick is a biomedical scientist and health educator. She earned a PhD in biomedical science, carrying out her graduate research at St. Jude Children's Research Hospital on mitochondrial metabolism, cell death and cancer. She then did a postdoctoral fellowship with Bruce Ames at Children's Hospital Oakland Research Institute, studying how vitamin and mineral shortfalls affect metabolism, inflammation, DNA damage and aging.",
+      "Patrick founded FoundMyFitness, a platform of articles, videos and a podcast on which she interviews researchers and summarizes studies on nutrition, aging and disease prevention. Recurring themes include omega-3 fatty acids, vitamin D, sleep, exercise and the effects of mild stressors, such as sauna use and cold exposure, a concept often described as hormesis, along with the genetics of how people respond to diet.",
+      "Earlier in her career she also studied aging at the Salk Institute for Biological Studies, looking at insulin signaling and protein misfolding. She is an associate scientist and board member at the Fatty Acid Research Institute, and her research has appeared in journals including Nature Cell Biology, the FASEB Journal and Science, including a 2014 paper on vitamin D and serotonin."
+    ],
+    "highlights": [
+      "Founder and host of FoundMyFitness",
+      "PhD in biomedical science (research at St. Jude Children's Research Hospital)",
+      "Postdoctoral fellow with Bruce Ames",
+      "Associate scientist, Fatty Acid Research Institute"
+    ],
+    "focus": [
+      "sauna-heat-therapy",
+      "omega-3",
+      "vitamin-d",
+      "cold-exposure"
+    ],
+    "topics": [
+      "longevity",
+      "nutrition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/foundmyfitness",
+      "facebook": "https://www.facebook.com/foundmyfitness"
+    },
+    "website": "https://www.foundmyfitness.com",
+    "image": null,
+    "imageCredit": null,
+    "sources": [
+      "https://www.foundmyfitness.com/about-dr-rhonda-patrick"
+    ],
+    "organizations": [
+      {
+        "name": "FoundMyFitness",
+        "role": "Founder and host",
+        "url": "https://www.foundmyfitness.com"
+      },
+      {
+        "name": "Fatty Acid Research Institute",
+        "role": "Associate scientist",
+        "url": "https://faresinst.org"
+      }
+    ]
+  },
+  {
+    "slug": "tim-ferriss",
+    "name": "Tim Ferriss",
+    "title": "Author, investor and host of The Tim Ferriss Show",
+    "known": "The 4-Hour Body and a top interview podcast that brought self-experimentation and lifestyle optimization to a mass audience.",
+    "bio": [
+      "Tim Ferriss is an American author, investor and podcaster born in 1977. After graduating from Princeton in 2000, he founded an online supplement business, an experience he drew on for The 4-Hour Workweek (2007). He followed it with The 4-Hour Body (2010), a book of diet, exercise and self-tracking experiments, and later The 4-Hour Chef, Tools of Titans and Tribe of Mentors.",
+      "Since 2014 he has hosted The Tim Ferriss Show, an interview podcast with more than one billion downloads featuring athletes, scientists, entrepreneurs and artists. Before stepping back from angel investing in 2015, he was an early investor in or adviser to companies including Uber, Facebook, Twitter, Duolingo and Shopify, which helped shape his reputation in Silicon Valley.",
+      "Ferriss is also a prominent funder of psychedelic research, supporting work at Johns Hopkins, Imperial College London and UC Berkeley, partly motivated by his own experience with depression. In recent years he has said he places less weight on pure measurement and optimization than in his early books, emphasizing Stoicism, meditation and resilience instead. He gave a 2017 TED talk on defining fears rather than goals."
+    ],
+    "highlights": [
+      "Author of The 4-Hour Body (2010)",
+      "Host of The Tim Ferriss Show (since 2014)",
+      "Author of Tools of Titans (2016)",
+      "Funder of psychedelic research at Johns Hopkins and Imperial College"
+    ],
+    "focus": [
+      "protein-intake",
+      "cold-exposure"
+    ],
+    "topics": [
+      "cognition",
+      "nutrition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/timferriss",
+      "facebook": "https://www.facebook.com/TimFerriss",
+      "linkedin": "https://www.linkedin.com/in/timferriss"
+    },
+    "website": "https://tim.blog",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Tim_Ferriss.jpg/960px-Tim_Ferriss.jpg",
+    "imageCredit": "Todd White / CC BY-SA 4.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tim_Ferriss",
+      "https://tim.blog"
+    ],
+    "organizations": []
+  },
+  {
+    "slug": "mark-hyman",
+    "name": "Dr. Mark Hyman",
+    "title": "Co-founder and Chief Medical Officer of Function Health",
+    "known": "Functional medicine advocacy, lab-based health testing via Function Health, and bestselling books including Young Forever.",
+    "bio": [
+      "Mark Hyman is an American physician and author born in 1959. He earned his medical degree from the University of Ottawa and trained in family medicine. After working as a family and emergency physician, he served as co-medical director at Canyon Ranch and then opened The UltraWellness Center in Lenox, Massachusetts. In 2014 he founded the Center for Functional Medicine at the Cleveland Clinic.",
+      "Hyman is one of the best-known proponents of functional medicine. He has written numerous New York Times bestsellers, including Eat Fat, Get Thin, Food Fix and Young Forever, and hosts The Dr. Hyman Show podcast, which covers nutrition, chronic disease and aging.",
+      "In 2021 he co-founded Function Health, a membership service offering broad direct-to-consumer laboratory testing, where he serves as chief medical officer; the company later acquired the MRI scanning firm Ezra. Hyman was named to the TIME100 Health list in 2025 and has testified before US congressional committees on the root causes of chronic disease and on nutrition policy."
+    ],
+    "highlights": [
+      "Co-founder and CMO of Function Health (2021)",
+      "Founder of the Cleveland Clinic Center for Functional Medicine (2014)",
+      "Author of Young Forever (2023)",
+      "Host of The Dr. Hyman Show podcast"
+    ],
+    "focus": [
+      "fasting-insulin",
+      "hs-crp",
+      "biological-age"
+    ],
+    "topics": [
+      "metabolic-health",
+      "nutrition",
+      "longevity"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/drmarkhyman",
+      "facebook": "https://www.facebook.com/drmarkhyman"
+    },
+    "website": "https://drhyman.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Mark_Hyman_M.D.%2C_Co-Founder_and_Chief_Medical_Officer_Function_Health.png",
+    "imageCredit": "Stephanie Williams / CC BY-SA 4.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mark_Hyman_(doctor)",
+      "https://drhyman.com"
+    ],
+    "organizations": [
+      {
+        "name": "Function Health",
+        "role": "Co-founder and Chief Medical Officer",
+        "url": "https://www.functionhealth.com"
+      },
+      {
+        "name": "Cleveland Clinic Center for Functional Medicine",
+        "role": "Founder",
+        "url": "https://my.clevelandclinic.org/departments/functional-medicine"
+      }
+    ]
+  },
+  {
+    "slug": "wim-hof",
+    "name": "Wim Hof",
+    "title": "Creator of the Wim Hof Method",
+    "known": "\"The Iceman\": cold-endurance feats and the Wim Hof Method, which combines breathing exercises, cold exposure and mindset training.",
+    "bio": [
+      "Wim Hof is a Dutch extreme athlete and motivational speaker born in Sittard in 1959. Known as The Iceman, he became famous for feats of cold endurance, including Guinness records for swimming under ice and for a barefoot half marathon on ice and snow in Finland in 2007. He also climbed Kilimanjaro with journalist Scott Carney in 2016.",
+      "Hof attributes his abilities to the Wim Hof Method, a practice combining cyclic breathing, regular cold exposure and focused mindset. Researchers at Radboud University began studying him in 2011, and later studies of the method have produced mixed results, with reviews calling for larger, better-controlled trials. His book The Wim Hof Method was published in 2020.",
+      "The method has become one of the most widely practiced cold and breathing routines in the world, taught through online courses and certified instructors. Safety experts stress that the breathing exercises should never be done in or near water, or while driving, because they can cause fainting; the method's own guidance gives the same warning."
+    ],
+    "highlights": [
+      "Creator of the Wim Hof Method",
+      "Author of The Wim Hof Method (2020)",
+      "Former Guinness record holder for swimming under ice",
+      "Subject of research at Radboud University (from 2011)"
+    ],
+    "focus": [
+      "cold-exposure",
+      "breathwork"
+    ],
+    "topics": [
+      "recovery"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/iceman_hof",
+      "facebook": "https://www.facebook.com/icemanwimhof"
+    },
+    "website": "https://www.wimhofmethod.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/2019_Wim_Hof_-_by_2eight_-_DSC6933.jpg/960px-2019_Wim_Hof_-_by_2eight_-_DSC6933.jpg",
+    "imageCredit": "Stefan Brending (2eight) / CC BY-SA 3.0 DE",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wim_Hof",
+      "https://www.wimhofmethod.com/the-wim-hof-method-book"
+    ],
+    "organizations": [
+      {
+        "name": "Wim Hof Method",
+        "role": "Creator",
+        "url": "https://www.wimhofmethod.com"
+      }
+    ]
+  },
+  {
+    "slug": "gary-brecka",
+    "name": "Gary Brecka",
+    "title": "Founder of The Ultimate Human and host of its podcast",
+    "known": "Simple daily routines built on sunlight, breathwork, cold water and grounding, shared through The Ultimate Human podcast.",
+    "bio": [
+      "Gary Brecka is an American longevity personality who describes himself as a human biologist. By his own account, he spent about two decades in the life insurance industry analyzing medical and demographic data to predict mortality, before moving into personal health consulting and wellness programs built around blood tests, genetic markers and simple lifestyle changes.",
+      "He co-founded the wellness company 10X Health System with partners including Grant Cardone and left in late 2024; the resulting legal disputes were later settled. He now runs The Ultimate Human, which offers protocols, products and memberships, and hosts The Ultimate Human podcast, launched in 2023 with UFC chief Dana White as its first guest. His routines center on sunlight, breathwork, cold water and grounding."
+    ],
+    "highlights": [
+      "Founder of The Ultimate Human",
+      "Host of The Ultimate Human podcast (since 2023)",
+      "Former co-founder of 10X Health System"
+    ],
+    "focus": [
+      "breathwork",
+      "cold-exposure"
+    ],
+    "topics": [
+      "longevity",
+      "recovery"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/garybrecka"
+    },
+    "website": "https://www.theultimatehuman.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Gary_Brecka_%2854235051571%29.jpg/960px-Gary_Brecka_%2854235051571%29.jpg",
+    "imageCredit": "Gage Skidmore / CC BY-SA 2.0",
+    "sources": [
+      "https://www.theultimatehuman.com/about",
+      "https://podcasts.apple.com/us/podcast/the-ultimate-human-with-gary-brecka/id1709740887",
+      "https://insurancenewsnet.com/innarticle/grant-cardone-gary-brecka-settle-dueling-state-lawsuits"
+    ],
+    "organizations": [
+      {
+        "name": "The Ultimate Human",
+        "role": "Founder",
+        "url": "https://www.theultimatehuman.com"
+      }
+    ]
+  },
+  {
+    "slug": "siim-land",
+    "name": "Siim Land",
+    "title": "Author, speaker and biohacking educator",
+    "known": "Books and videos on intermittent fasting, autophagy and metabolic flexibility, including Metabolic Autophagy.",
+    "bio": [
+      "Siim Land is an Estonian author, speaker and online educator who writes about nutrition, fasting and physical performance. Raised on the island of Saaremaa, he holds a bachelor's degree in socio-cultural anthropology and has built a large international audience through YouTube, social media and a series of self-published books on health optimization, fasting and longevity.",
+      "His best-known book, Metabolic Autophagy, explores combining intermittent fasting with resistance training to preserve muscle while supporting long-term health. He has also written Keto Bodybuilding and Intermittent Fasting and Feasting, among other titles. Land offers online courses, coaching and retreats, and regularly speaks at biohacking conferences in Europe and the United States, where he often discusses metabolic flexibility."
+    ],
+    "highlights": [
+      "Author of Metabolic Autophagy",
+      "Author of multiple books on fasting and ketogenic diets",
+      "Speaker at international biohacking conferences"
+    ],
+    "focus": [
+      "autophagy",
+      "time-restricted-eating"
+    ],
+    "topics": [
+      "longevity",
+      "nutrition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/siimland",
+      "facebook": "https://www.facebook.com/thesiimland"
+    },
+    "website": "https://www.siimland.co",
+    "image": null,
+    "imageCredit": null,
+    "sources": [
+      "https://www.siimland.co/about",
+      "https://www.goodreads.com/author/show/14774804.Siim_Land"
+    ],
+    "organizations": []
+  },
+  {
+    "slug": "aubrey-de-grey",
+    "name": "Dr. Aubrey de Grey",
+    "title": "President and Chief Science Officer, LEV Foundation",
+    "known": "Arguing that aging can be treated as a set of repairable damage types, the idea behind the SENS rejuvenation research agenda.",
+    "bio": [
+      "Aubrey de Grey is an English biomedical gerontologist born in London in 1963. He studied computer science at Cambridge and worked in software before moving into aging research, managing software for the FlyBase genetics database at the university. Cambridge awarded him a PhD in 2000 on the basis of his book The Mitochondrial Free Radical Theory of Aging.",
+      "De Grey proposed SENS, short for strategies for engineered negligible senescence, a plan to treat aging by repairing distinct categories of cellular and molecular damage. He co-founded the Methuselah Foundation in 2003 and the SENS Research Foundation in 2009, serving as its chief science officer until 2021, and co-wrote Ending Aging (2007) with Michael Rae.",
+      "In 2022 he started the Longevity Escape Velocity Foundation, where he is president and chief science officer and which funds large-scale mouse rejuvenation studies. He also edits the journal Rejuvenation Research. His predictions about dramatic extensions of the human lifespan remain controversial among scientists, although his ideas have shaped much of the modern longevity movement."
+    ],
+    "highlights": [
+      "President and CSO of the LEV Foundation",
+      "Co-author of Ending Aging (2007)",
+      "Co-founder of the Methuselah Foundation and SENS Research Foundation",
+      "Editor of Rejuvenation Research"
+    ],
+    "focus": [
+      "biological-age",
+      "mitochondria"
+    ],
+    "topics": [
+      "longevity"
+    ],
+    "social": {},
+    "website": "https://www.levf.org",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Aubrey_de_Grey_-_How_We_Will_Beat_Aging.jpg",
+    "imageCredit": "Stifterverband / CC BY 3.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aubrey_de_Grey",
+      "https://www.levf.org"
+    ],
+    "organizations": [
+      {
+        "name": "LEV Foundation",
+        "role": "President and Chief Science Officer",
+        "url": "https://www.levf.org"
+      },
+      {
+        "name": "SENS Research Foundation",
+        "role": "Co-founder",
+        "url": "https://www.sens.org"
+      },
+      {
+        "name": "Methuselah Foundation",
+        "role": "Co-founder",
+        "url": "https://www.mfoundation.org"
+      }
+    ]
+  },
+  {
+    "slug": "molly-maloof",
+    "name": "Dr. Molly Maloof",
+    "title": "Physician, author of The Spark Factor and founder of Adamo Bioscience",
+    "known": "Personalized, data-driven healthspan medicine and a focus on mitochondrial health in women, set out in The Spark Factor.",
+    "bio": [
+      "Molly Maloof is an American physician who has practiced personalized, preventive medicine since around 2012, running a concierge practice that works largely with technology founders, investors and executives. Her approach combines detailed lab testing, wearable data and lifestyle changes to help clients improve energy, metabolism and resilience, and she has advised many digital health, diagnostics and food companies.",
+      "She taught a course on extending healthspan at Stanford University's School of Medicine, which became the basis for her 2023 book The Spark Factor, published by Harper Wave, on mitochondrial health and women's biology. Maloof also founded Adamo Bioscience, a company focused on sexual and relational health, and speaks frequently on health technology and longevity."
+    ],
+    "highlights": [
+      "Author of The Spark Factor (2023)",
+      "Former lecturer on healthspan extension at Stanford",
+      "Founder of Adamo Bioscience"
+    ],
+    "focus": [
+      "mitochondria",
+      "hrv"
+    ],
+    "topics": [
+      "longevity",
+      "metabolic-health"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/drmolly.co",
+      "linkedin": "https://www.linkedin.com/in/mollymaloofmd"
+    },
+    "website": "https://drmolly.co",
+    "image": null,
+    "imageCredit": null,
+    "sources": [
+      "https://drmolly.co/about/",
+      "https://www.amazon.com/Spark-Factor-Supercharging-Becoming-Resilient/dp/0063207206"
+    ],
+    "organizations": [
+      {
+        "name": "Adamo Bioscience",
+        "role": "Founder"
+      }
+    ]
+  },
+  {
+    "slug": "max-lugavere",
+    "name": "Max Lugavere",
+    "title": "Author of Genius Foods and host of The Genius Life podcast",
+    "known": "Writing and podcasting on how diet and lifestyle relate to brain health, starting with the bestseller Genius Foods.",
+    "bio": [
+      "Max Lugavere is an American author and filmmaker who studied film at the University of Miami and worked as a presenter on the cable network Current TV from 2005 to 2011. After his mother began showing signs of dementia around 2011, he turned his attention to research on the links between diet, lifestyle and brain health.",
+      "His first book, Genius Foods (2018), co-written with Paul Grewal, became a New York Times bestseller, followed by The Genius Life (2020) and Genius Kitchen (2022). He hosts The Genius Life podcast and in 2024 released Little Empty Boxes, a documentary about his mother's illness. He favors whole foods and opposes ultra-processed foods; some science writers dispute parts of his advice."
+    ],
+    "highlights": [
+      "Author of Genius Foods (2018)",
+      "Host of The Genius Life podcast",
+      "Director of the documentary Little Empty Boxes (2024)"
+    ],
+    "focus": [
+      "omega-3",
+      "protein-intake"
+    ],
+    "topics": [
+      "cognition",
+      "nutrition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/maxlugavere",
+      "facebook": "https://www.facebook.com/maxlugavere"
+    },
+    "website": "https://www.maxlugavere.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Max_Lugavere_on_Mind_Pump_Show_%28cropped%29.jpg",
+    "imageCredit": "Mind Pump Show / CC BY 3.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Max_Lugavere",
+      "https://www.maxlugavere.com"
+    ],
+    "organizations": []
+  },
+  {
+    "slug": "casey-means",
+    "name": "Casey Means",
+    "title": "Co-founder of Levels; co-author of Good Energy",
+    "known": "Promoting metabolic health and continuous glucose monitoring for non-diabetics through Levels and the book Good Energy.",
+    "bio": [
+      "Casey Means is an American author and wellness figure born in 1987. She earned her undergraduate and medical degrees from Stanford and began an ear, nose and throat surgical residency at Oregon Health and Science University, leaving in 2018 before completing it. She then ran a functional medicine practice in Portland; her medical license has been inactive since 2024.",
+      "Means co-founded Levels, a health technology company that pairs continuous glucose monitors with an app showing how food and habits affect blood sugar. With her brother Calley Means she wrote Good Energy (2024), which argues that metabolic dysfunction underlies many chronic diseases."
+    ],
+    "highlights": [
+      "Co-founder of Levels",
+      "Co-author of Good Energy (2024)",
+      "MD, Stanford University School of Medicine (2014)"
+    ],
+    "focus": [
+      "continuous-glucose-monitoring",
+      "fasting-insulin",
+      "mitochondria"
+    ],
+    "topics": [
+      "metabolic-health",
+      "nutrition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/drcaseyskitchen",
+      "facebook": "https://www.facebook.com/CaseyMeansMD",
+      "linkedin": "https://www.linkedin.com/in/casey-means-md"
+    },
+    "website": "https://www.caseymeans.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Casey_Means_on_Ron_Johnson_Roundtable_Discussion.jpg",
+    "imageCredit": "US Senate staff / Public domain",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Casey_Means",
+      "https://www.caseymeans.com"
+    ],
+    "organizations": [
+      {
+        "name": "Levels",
+        "role": "Co-founder",
+        "url": "https://www.levelshealth.com"
+      }
+    ]
+  },
+  {
+    "slug": "valter-longo",
+    "name": "Dr. Valter Longo",
+    "title": "Director of the USC Longevity Institute",
+    "known": "Research on fasting and nutrient-sensing genes, and developing the fasting-mimicking diet behind ProLon.",
+    "bio": [
+      "Valter Longo is an Italian-American biogerontologist born in Genoa in 1967. He first studied jazz guitar before switching to biochemistry, earning his PhD at UCLA in 1997 and completing postdoctoral training at the University of Southern California. He is the Edna M. Jones Professor of Gerontology and Biological Sciences at USC and directs the USC Longevity Institute.",
+      "His research looks at how fasting and nutrient-response genes affect cell protection, aging and disease. He developed the fasting-mimicking diet, a five-day low-calorie, plant-based program sold as ProLon by L-Nutra, the company he founded. According to his website, he donates his L-Nutra consulting fees and book royalties to charity and has pledged most of his company shares to charitable causes as well.",
+      "Longo also leads a longevity and cancer program at the IFOM institute in Milan. His books include The Longevity Diet and Fasting Cancer (2025), and his work inspired the documentary Fasting and the Longevity Revolution. TIME named him among the 50 most influential people in health care in 2018, and he appears on Clarivate's Highly Cited Researchers list."
+    ],
+    "highlights": [
+      "Director, USC Longevity Institute",
+      "Developer of the fasting-mimicking diet (ProLon)",
+      "Author of The Longevity Diet",
+      "Named to TIME's 50 most influential in health care (2018)"
+    ],
+    "focus": [
+      "time-restricted-eating",
+      "autophagy"
+    ],
+    "topics": [
+      "longevity",
+      "nutrition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/prof_valterlongo",
+      "facebook": "https://www.facebook.com/profvalterlongo"
+    },
+    "website": "https://valterlongo.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Valter_Longo_2022.png/960px-Valter_Longo_2022.png",
+    "imageCredit": "The Dr. Gundry Podcast / CC BY 3.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Valter_Longo",
+      "https://valterlongo.com"
+    ],
+    "organizations": [
+      {
+        "name": "USC Longevity Institute",
+        "role": "Director",
+        "url": "https://gero.usc.edu"
+      }
+    ]
+  },
+  {
+    "slug": "mark-sisson",
+    "name": "Mark Sisson",
+    "title": "Founder of Mark's Daily Apple and co-founder of Primal Kitchen",
+    "known": "The Primal Blueprint, an ancestral-style eating and lifestyle approach promoted through his long-running blog Mark's Daily Apple.",
+    "bio": [
+      "Mark Sisson is an American author and former endurance athlete born in Maine in 1953. A biology graduate of Williams College, he was a nationally ranked marathoner who qualified for the 1980 US Olympic Trials and finished fourth at the 1982 Ironman World Championship. He later chaired the International Triathlon Union's anti-doping commission for 15 years.",
+      "Sisson promotes an ancestral, paleo-style way of eating he calls the Primal Blueprint, covered on his blog Mark's Daily Apple since 2006 and in books such as The Primal Blueprint (2009), The Keto Reset Diet (2017) and Two Meals a Day (2021). In 2015 he co-founded Primal Kitchen, which Kraft Heinz agreed to acquire in 2018 for about $200 million."
+    ],
+    "highlights": [
+      "Author of The Primal Blueprint (2009)",
+      "Founder of Mark's Daily Apple (2006)",
+      "Co-founder of Primal Kitchen (acquired by Kraft Heinz, 2018)",
+      "4th at the 1982 Ironman World Championship"
+    ],
+    "focus": [
+      "time-restricted-eating",
+      "zone-2-training"
+    ],
+    "topics": [
+      "nutrition",
+      "metabolic-health"
+    ],
+    "social": {},
+    "website": "https://www.marksdailyapple.com",
+    "image": null,
+    "imageCredit": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mark_Sisson"
+    ],
+    "organizations": [
+      {
+        "name": "Mark's Daily Apple",
+        "role": "Founder",
+        "url": "https://www.marksdailyapple.com"
+      },
+      {
+        "name": "Primal Kitchen",
+        "role": "Co-founder",
+        "url": "https://www.primalkitchen.com"
+      }
+    ]
+  },
+  {
+    "slug": "stacy-sims",
+    "name": "Dr. Stacy Sims",
+    "title": "Exercise physiologist and nutrition scientist; author of ROAR and Next Level",
+    "known": "Research and advocacy on female-specific training and nutrition, summed up in her motto \"Women are not small men.\"",
+    "bio": [
+      "Stacy Sims is an American exercise physiologist and nutrition scientist born in 1973. She earned a PhD at the University of Otago in New Zealand in 2006 and was a research associate at Stanford from 2007 to 2012, studying sex differences in exercise, performance and health. A former professional cyclist and triathlete, she has raced at the Ironman World Championship in Kona.",
+      "Sims focuses on how women should train, fuel and recover across the menstrual cycle, perimenopause and beyond. She co-wrote ROAR (2016) and Next Level (2022) with Selene Yeager, gave a TEDx talk titled \"Women are not small men\" in 2019, and founded Osmo Nutrition in 2012. She holds research and adjunct roles at Auckland University of Technology and Stanford."
+    ],
+    "highlights": [
+      "Co-author of ROAR (2016) and Next Level (2022)",
+      "PhD, University of Otago (2006)",
+      "Founder of Osmo Nutrition (2012)",
+      "TEDx talk \"Women are not small men\" (2019)"
+    ],
+    "focus": [
+      "protein-intake",
+      "creatine"
+    ],
+    "topics": [
+      "recovery",
+      "nutrition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/drstacysims",
+      "facebook": "https://www.facebook.com/drstacysims",
+      "linkedin": "https://www.linkedin.com/in/stacy-t-sims-phd"
+    },
+    "website": "https://www.drstacysims.com",
+    "image": null,
+    "imageCredit": null,
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stacy_Sims",
+      "https://www.drstacysims.com"
+    ],
+    "organizations": [
+      {
+        "name": "Osmo Nutrition",
+        "role": "Founder",
+        "url": "https://www.osmonutrition.com"
+      }
+    ]
+  },
+  {
+    "slug": "matthew-walker",
+    "name": "Dr. Matthew Walker",
+    "title": "Professor of Neuroscience and Psychology at UC Berkeley",
+    "known": "Bringing sleep science to the public through the bestseller Why We Sleep, his TED talk and The Matt Walker Podcast.",
+    "bio": [
+      "Matthew Walker is a British neuroscientist raised in Liverpool and Chester. He studied neuroscience at the University of Nottingham and earned a PhD in neurophysiology from Newcastle University in 1999. After working as an assistant professor of psychiatry at Harvard Medical School, he moved to the University of California, Berkeley in 2007, where he is a professor of neuroscience and psychology.",
+      "At Berkeley he founded and directs the Center for Human Sleep Science, which uses brain imaging, overnight sleep recordings and other methods to study the role of sleep in memory, mental health and disease. His 2017 book Why We Sleep became an international bestseller.",
+      "Walker's 2019 TED talk, Sleep Is Your Superpower, reached a very large online audience and made him one of the most recognized voices on sleep. He also hosts The Matt Walker Podcast, a short-form show on sleep, the brain and the body, and has worked with technology companies, including a period advising Google, on sleep research."
+    ],
+    "highlights": [
+      "Author of Why We Sleep (2017)",
+      "Founder and director, Center for Human Sleep Science, UC Berkeley",
+      "TED talk: Sleep Is Your Superpower (2019)",
+      "Host of The Matt Walker Podcast"
+    ],
+    "focus": [
+      "deep-sleep",
+      "sleep-hygiene-protocol",
+      "circadian-rhythm"
+    ],
+    "topics": [
+      "sleep",
+      "cognition"
+    ],
+    "social": {
+      "instagram": "https://www.instagram.com/drmattwalker"
+    },
+    "website": "https://www.sleepdiplomat.com",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Matt_Scientist_Headshot.jpg/960px-Matt_Scientist_Headshot.jpg",
+    "imageCredit": "Remdreamer / CC BY-SA 4.0",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Matthew_Walker_(scientist)",
+      "https://www.sleepdiplomat.com"
+    ],
+    "organizations": [
+      {
+        "name": "Center for Human Sleep Science, UC Berkeley",
+        "role": "Founder and director",
+        "url": "https://www.humansleepscience.com"
+      }
+    ]
+  }
+]

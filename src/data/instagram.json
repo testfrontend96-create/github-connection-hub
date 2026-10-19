@@ -1,0 +1,90 @@
+{
+  "_note": "Real posts from instagram.com/biohackers.world, captured 2026-09-23. Instagram does not expose captions, like counts or comment counts to logged-out visitors, so those fields are absent rather than estimated. To show engagement figures and captions, connect the Instagram Graph API with a token from the business account and populate like_count / comments_count / caption here. Thumbnails are downloaded locally because Instagram CDN URLs are signed and expire.",
+  "account": {
+    "handle": "biohackers.world",
+    "url": "https://www.instagram.com/biohackers.world/",
+    "followers": "39.6K"
+  },
+  "posts": [
+    {
+      "id": "DdoslrnDWxE",
+      "media_type": "IMAGE",
+      "permalink": "https://www.instagram.com/biohackers.world/p/DdoslrnDWxE/",
+      "timestamp": "2026-09-23T12:00:00Z",
+      "image": "assets/instagram/ig-01-DdoslrnDWxE.jpg",
+      "alt": ""
+    },
+    {
+      "id": "DdmkKPpjXwL",
+      "media_type": "IMAGE",
+      "permalink": "https://www.instagram.com/biohackers.world/p/DdmkKPpjXwL/",
+      "timestamp": "2026-09-22T12:00:00Z",
+      "image": "assets/instagram/ig-02-DdmkKPpjXwL.jpg",
+      "alt": ""
+    },
+    {
+      "id": "DdkCJj9tM1T",
+      "media_type": "REELS",
+      "permalink": "https://www.instagram.com/biohackers.world/reel/DdkCJj9tM1T/",
+      "timestamp": "2026-09-21T12:00:00Z",
+      "image": "assets/instagram/ig-03-DdkCJj9tM1T.jpg",
+      "alt": "magazine, poster and text"
+    },
+    {
+      "id": "DdhbYMwNltT",
+      "media_type": "REELS",
+      "permalink": "https://www.instagram.com/biohackers.world/reel/DdhbYMwNltT/",
+      "timestamp": "2026-09-20T12:00:00Z",
+      "image": "assets/instagram/ig-04-DdhbYMwNltT.jpg",
+      "alt": "television, screen, carpet, sofa, office and text"
+    },
+    {
+      "id": "DdecovdDYnb",
+      "media_type": "IMAGE",
+      "permalink": "https://www.instagram.com/biohackers.world/p/DdecovdDYnb/",
+      "timestamp": "2026-09-19T12:00:00Z",
+      "image": "assets/instagram/ig-05-DdecovdDYnb.jpg",
+      "alt": ""
+    },
+    {
+      "id": "DdcAvHrDaom",
+      "media_type": "IMAGE",
+      "permalink": "https://www.instagram.com/biohackers.world/p/DdcAvHrDaom/",
+      "timestamp": "2026-09-18T12:00:00Z",
+      "image": "assets/instagram/ig-06-DdcAvHrDaom.jpg",
+      "alt": ""
+    },
+    {
+      "id": "DdZrpzuNIIs",
+      "media_type": "REELS",
+      "permalink": "https://www.instagram.com/biohackers.world/reel/DdZrpzuNIIs/",
+      "timestamp": "2026-09-17T12:00:00Z",
+      "image": "assets/instagram/ig-07-DdZrpzuNIIs.jpg",
+      "alt": "carpet and text"
+    },
+    {
+      "id": "DdXMS6DjSLg",
+      "media_type": "IMAGE",
+      "permalink": "https://www.instagram.com/biohackers.world/p/DdXMS6DjSLg/",
+      "timestamp": "2026-09-16T12:00:00Z",
+      "image": "assets/instagram/ig-08-DdXMS6DjSLg.jpg",
+      "alt": "text"
+    },
+    {
+      "id": "Dc7IWNEjbDn",
+      "media_type": "IMAGE",
+      "permalink": "https://www.instagram.com/biohackers.world/p/Dc7IWNEjbDn/",
+      "timestamp": "2026-09-05T12:00:00Z",
+      "image": "assets/instagram/ig-09-Dc7IWNEjbDn.jpg",
+      "alt": ""
+    },
+    {
+      "id": "DZvPohjjQND",
+      "media_type": "IMAGE",
+      "permalink": "https://www.instagram.com/biohackers.world/p/DZvPohjjQND/",
+      "timestamp": "2026-06-18T12:00:00Z",
+      "image": "assets/instagram/ig-10-DZvPohjjQND.jpg",
+      "alt": ""
+    }
+  ]
+}
