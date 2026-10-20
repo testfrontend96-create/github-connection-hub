@@ -583,20 +583,20 @@ h3.display{font-size:clamp(1.4rem,2.4vw,2rem)}
 .ev[data-lvl="Contested"] i:first-child{background:#B04A4A}
 
 /* bento lead zone */
-.board{background:var(--ink);color:rgba(255,255,255,.78);padding:22px 0 34px}
-.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:minmax(168px,auto);gap:14px}
+.board{background:var(--ink);color:rgba(255,255,255,.78);padding:16px 0 22px}
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:minmax(118px,auto);gap:10px}
 .tile{
   position:relative;border-radius:18px;background:rgba(255,255,255,.035);border:1px solid var(--line-dark);
-  padding:22px;text-decoration:none;color:inherit;display:flex;flex-direction:column;overflow:hidden;transition:.2s;
+   padding:15px 18px;text-decoration:none;color:inherit;display:flex;flex-direction:column;overflow:hidden;transition:.2s;
 }
 a.tile:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.055);transform:translateY(-2px)}
-.tile h2,.tile h3{color:#fff;letter-spacing:-.03em;line-height:1.1;margin:10px 0 8px;font-weight:800}
-.tile h2{font-size:clamp(1.7rem,2.8vw,2.6rem)}
-.tile h3{font-size:1.15rem;font-weight:700;line-height:1.25}
-.tile p{color:rgba(255,255,255,.58);font-size:.9rem;line-height:1.5;margin:0}
-.tile .meta{margin-top:auto;padding-top:14px;font-size:.72rem;color:rgba(255,255,255,.45);display:flex;gap:10px}
+.tile h2,.tile h3{color:#fff;letter-spacing:-.03em;line-height:1.1;margin:8px 0 6px;font-weight:800}
+.tile h2{font-size:clamp(1.5rem,2.4vw,2.2rem)}
+.tile h3{font-size:1.05rem;font-weight:700;line-height:1.25}
+.tile p{color:rgba(255,255,255,.58);font-size:.84rem;line-height:1.45;margin:0}
+.tile .meta{margin-top:auto;padding-top:8px;font-size:.7rem;color:rgba(255,255,255,.45);display:flex;gap:10px}
 .tile .meta b{color:#fff;font-weight:600}
-.tile--lead{grid-column:1/8;grid-row:1/3;justify-content:flex-end;min-height:420px;
+.tile--lead{grid-column:1/8;grid-row:1/3;justify-content:flex-end;min-height:300px;
   background:
     radial-gradient(ellipse at 15% 100%, rgba(217,108,74,.35), transparent 55%),
     radial-gradient(ellipse at 100% 0%, rgba(18,166,178,.28), transparent 50%),
@@ -609,7 +609,7 @@ a.tile:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.055)
 .tile--lead > .kick{margin-top:0}
 @media(max-width:640px){.tile--lead .big{font-size:5rem;flex:0 0 auto;margin-bottom:14px}}
 .tile--lead h2{max-width:16ch}
-.tile--lead p{max-width:52ch;font-size:.98rem}
+.tile--lead p{max-width:52ch;font-size:.88rem}
 .tile--problems{grid-column:8/13;grid-row:1/2;background:linear-gradient(135deg,rgba(33,199,129,.16),rgba(18,166,178,.08));border-color:rgba(33,199,129,.3)}
 .tile--brief{grid-column:8/13;grid-row:2/3}
 .tile--a{grid-column:1/7}.tile--b{grid-column:7/13}
@@ -621,17 +621,17 @@ a.tile:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.055)
 @media(max-width:640px){.bento > *{grid-column:1/13 !important}.bento{grid-auto-rows:auto}}
 
 .tile-kick{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.prob-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.prob-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .prob-chips a{
-  border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 14px;color:#fff;font-size:.8rem;
+  border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:5px 11px;color:#fff;font-size:.74rem;
   font-weight:600;text-decoration:none;transition:.15s;background:rgba(5,4,13,.35);
 }
 .prob-chips a:hover{background:var(--green);color:#04120C;border-color:var(--green)}
-.brief{list-style:none;margin:10px 0 0;padding:0;counter-reset:b}
-.brief li{display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:start;padding:9px 0;border-top:1px solid var(--line-dark)}
-.brief li:first-child{border-top:0;padding-top:4px}
-.brief li::before{counter-increment:b;content:counter(b);font-weight:900;font-size:1.25rem;color:var(--green);letter-spacing:-.05em;line-height:1.1}
-.brief a{color:#fff;text-decoration:none;font-size:.9rem;font-weight:600;line-height:1.3;letter-spacing:-.01em;display:block}
+.brief{list-style:none;margin:6px 0 0;padding:0;counter-reset:b}
+.brief li{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;padding:5px 0;border-top:1px solid var(--line-dark)}
+.brief li:first-child{border-top:0;padding-top:2px}
+.brief li::before{counter-increment:b;content:counter(b);font-weight:900;font-size:1.05rem;color:var(--green);letter-spacing:-.05em;line-height:1.1}
+.brief a{color:#fff;text-decoration:none;font-size:.84rem;font-weight:600;line-height:1.3;letter-spacing:-.01em;display:block}
 .brief a:hover{text-decoration:underline;text-underline-offset:3px}
 .brief small{display:block;grid-column:2;color:rgba(255,255,255,.42);font-size:.7rem;margin-top:-4px;font-weight:500}
 
@@ -850,7 +850,7 @@ a.tile:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.055)
   background:linear-gradient(180deg,transparent 40%,rgba(22,20,31,.85) 100%);
 }
 .tile--lead .meta{gap:22px;border-top:1px solid var(--line-dark);padding-top:16px;margin-top:14px}
-.tile--lead .meta b{font-size:1.35rem;font-weight:900;letter-spacing:-.04em;display:block;line-height:1}
+.tile--lead .meta b{font-size:1.1rem;font-weight:900;letter-spacing:-.04em;display:block;line-height:1}
 .tile--lead .meta span{display:flex;flex-direction:column;gap:5px}
 @media(max-width:640px){.tile--lead{min-height:300px}.tile--lead::before{height:40%}}
 
