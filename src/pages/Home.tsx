@@ -82,7 +82,6 @@ export default function Home() {
           <div className="sec-head"><h2>{t.question}</h2><Link to={`/topics/${slug}`}>All {label.toLowerCase()} →</Link></div>
           <div className="sec-grid"><Story item={leadI} size="md" />{rest.map((i) => <Story key={i.u} item={i} size="sm" />)}</div>
         </div>
-        </div>
       </section>
     )
   })
