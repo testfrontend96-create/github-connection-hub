@@ -123,7 +123,7 @@ export default function Home() {
       </div></section>
 
       <div className="wrap">
-        <div className="rail-head" style={{ marginTop: 30 }}>Latest from the blog <Link to="/blog">All articles →</Link></div>
+        <div className="rail-head" style={{ marginTop: 24 }}>Latest from the blog <Link to="/blog">All articles →</Link></div>
         <div className="grid g2" style={{ marginTop: 4 }}>{latest.map((a) => <ArticleCard key={a.slug} slug={a.slug} />)}</div>
       </div>
 
