@@ -81,10 +81,7 @@ export default function Home() {
         <div>
           <div className="sec-head"><h2>{t.question}</h2><Link to={`/topics/${slug}`}>All {label.toLowerCase()} →</Link></div>
           <div className="sec-grid"><Story item={leadI} size="md" />{rest.map((i) => <Story key={i.u} item={i} size="sm" />)}</div>
-          <div className="pillar-cats">
-            <span className="pillar-cats-label">Browse all categories</span>
-            <div className="chip-row">{BLOG_CATEGORIES.map(([name, url]) => <a key={name} className="chip cat-chip" href={url} rel="noopener">{name}</a>)}</div>
-          </div>
+        </div>
         </div>
       </section>
     )
