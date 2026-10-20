@@ -108,13 +108,13 @@ export default function Home() {
           </Link>
           <div className="tile tile--problems" id="problems">
             <div className="tile-kick"><span className="kick" data-k="event">Start here</span></div>
-            <h3 style={{ fontSize: '1.35rem' }}>What are you interested in?</h3>
+            <h3 style={{ fontSize: '1.1rem' }}>What are you interested in?</h3>
             <p>Pick the symptom. Each page routes you to what to measure, what to do and what to consider.</p>
             <div className="prob-chips">{problems.map((p) => <Link key={p.slug} to={`/problems/${p.slug}`}>{p.name}</Link>)}</div>
           </div>
           <div className="tile tile--brief">
             <div className="tile-kick"><span className="kick" data-k="article">New</span><span style={{ fontSize: '.72rem', color: 'rgba(255,255,255,.5)' }}>{weekday}, {pretty(BUILT.toISOString().slice(0, 10))}</span></div>
-            <h3 style={{ fontSize: '1.35rem' }}>Five things to know</h3>
+            <h3 style={{ fontSize: '1.1rem' }}>Five things to know</h3>
             <ol className="brief">{brief.map((i) => <li key={i.u}><Link to={i.u}>{i.t}</Link><small>{i.kick} · {pretty(i.date)}</small></li>)}</ol>
           </div>
           <Tile item={tileA} cls="tile--a" />
