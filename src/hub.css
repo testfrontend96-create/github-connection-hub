@@ -1737,7 +1737,7 @@ h1.prof-name{margin:0;font-size:clamp(2.4rem,5.2vw,4.4rem);color:#fff;text-wrap:
 
 /* front-page pillar: blog category browse row, tinted to the section accent */
 .pillar-cats{margin-top:24px}
-.pillar-cats--global{margin:34px 0 6px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.5)}
+.pillar-cats--global{margin:34px 0 34px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.5)}
 .pillar-cats--global .pillar-cats-label{margin-bottom:8px}
 .pillar-cats-label{display:block;font-size:.7rem;font-weight:800;letter-spacing:.08em;
   text-transform:uppercase;color:var(--muted);margin-bottom:11px}
