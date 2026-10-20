@@ -16,17 +16,21 @@ const NavLink = ({ href, label, active }: { href: string; label: string; active?
 export function TopNav() {
   const { pathname } = useLocation()
   const [open, setOpen] = useState(false)
+  const [condensed, setCondensed] = useState(false)
+  const [subOpen, setSubOpen] = useState(false)
   const headerRef = useRef<HTMLElement>(null)
   const toggleRef = useRef<HTMLButtonElement>(null)
+  const subToggleRef = useRef<HTMLButtonElement>(null)
   const active = SUB_CHANNELS.find(([href]) => pathname === href || pathname.startsWith(href + '/'))
     ?? (pathname.startsWith('/articles/') ? SUB_CHANNELS[0] : pathname.startsWith('/knowledge/') ? SUB_CHANNELS[4] : undefined)
-  useEffect(() => setOpen(false), [pathname])
+  useEffect(() => { setOpen(false); setSubOpen(false) }, [pathname])
 
   useEffect(() => {
     const onScroll = () => {
       const header = headerRef.current
       if (!header) return
       header.classList.toggle('is-condensed', window.scrollY > 40)
+      setCondensed(window.scrollY > 40)
       const range = document.documentElement.scrollHeight - window.innerHeight
       header.style.setProperty('--nav-progress', String(range > 0 ? Math.max(.02, Math.min(1, window.scrollY / range)) : 1))
     }
@@ -36,15 +40,19 @@ export function TopNav() {
   }, [])
 
   useEffect(() => {
-    if (!open) return
+    if (!open && !subOpen) return
     const startY = window.scrollY
     const close = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') { setOpen(false); toggleRef.current?.focus() }
+      if (event.key === 'Escape') {
+        setOpen(false); setSubOpen(false)
+        if (subOpen) subToggleRef.current?.focus()
+        else toggleRef.current?.focus()
+      }
     }
     const outside = (event: PointerEvent) => {
-      if (event.target instanceof Node && !headerRef.current?.contains(event.target)) setOpen(false)
+      if (event.target instanceof Node && !headerRef.current?.contains(event.target)) { setOpen(false); setSubOpen(false) }
     }
-    const scroll = () => { if (Math.abs(window.scrollY - startY) > 60) setOpen(false) }
+    const scroll = () => { if (Math.abs(window.scrollY - startY) > 60) { setOpen(false); setSubOpen(false) } }
     document.addEventListener('keydown', close)
     document.addEventListener('pointerdown', outside)
     window.addEventListener('scroll', scroll, { passive: true })
@@ -53,7 +61,7 @@ export function TopNav() {
       document.removeEventListener('pointerdown', outside)
       window.removeEventListener('scroll', scroll)
     }
-  }, [open])
+  }, [open, subOpen])
 
   const ring = <svg className="hub-nav-ring" aria-hidden="true"><rect x=".5" y=".5" width="calc(100% - 1px)" height="calc(100% - 1px)" rx="16" fill="none" pathLength="1" /></svg>
 
@@ -75,11 +83,17 @@ export function TopNav() {
           </button>
           <a className="hub-nav-cta" href={TICKETS_URL}>Buy Tickets<TnArrow /></a>
         </div>
-        <nav className="hub-nav-links hub-nav-secondary" aria-label="Biohacking Hub">
-          {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} aria-current={active?.[0] === href ? 'page' : undefined}>
-            {active?.[0] === href && ring}<span>{label}</span>
-          </Link>)}
-        </nav>
+        <div className={`hub-nav-sub${condensed ? ' is-collapsed' : ''}`}>
+          {condensed && <button ref={subToggleRef} className="hub-nav-sub-toggle" type="button" aria-label={subOpen ? 'Close Hub navigation' : 'Open Hub navigation'} aria-expanded={subOpen} aria-controls="hub-sub-navigation" onClick={() => setSubOpen(value => !value)}>
+            {ring}<span>{active?.[1] ?? 'Biohacking Hub'}</span>
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true" className={subOpen ? 'is-open' : undefined}><path d="m6 8 4 4 4-4" /></svg>
+          </button>}
+          {(!condensed || subOpen) && <nav id="hub-sub-navigation" className="hub-nav-links hub-nav-secondary" aria-label="Biohacking Hub">
+            {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} onClick={() => setSubOpen(false)} aria-current={active?.[0] === href ? 'page' : undefined}>
+              {!condensed && active?.[0] === href && ring}<span>{label}</span>
+            </Link>)}
+          </nav>}
+        </div>
         {open && <div id="hub-navigation-menu" className="hub-nav-menu">
           <nav className="hub-nav-menu-group" aria-label="Biohackers World pages">
             {PRODUCT_NAV.map(([label, href]) => <NavLink key={href} href={href} label={label} active={href === '/'} />)}
