@@ -138,7 +138,13 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <div id="topics">{pillarSections}</div>
+        <div id="topics">
+          <div className="pillar-cats pillar-cats--global">
+            <span className="pillar-cats-label">Browse all categories</span>
+            <div className="chip-row">{BLOG_CATEGORIES.map(([name, url]) => <a key={name} className="chip cat-chip" href={url} rel="noopener">{name}</a>)}</div>
+          </div>
+          {pillarSections}
+        </div>
       </div>
 
       <section className="igband on-dark"><div className="wrap">
