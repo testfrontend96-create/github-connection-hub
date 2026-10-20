@@ -2,9 +2,10 @@
 // footer() plus the nav-scroll and cursor-lit-grid behaviour from hub.js.
 import { useEffect, useRef, useState, ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { PRODUCT_NAV, SUB_CHANNELS, SUB_TOPICS, BRAND_URL, ACADEMY_URL, TICKETS_URL, topics } from '../lib/data'
-import { TnArrow } from './icons'
+import { SUB_CHANNELS, BRAND_URL, ACADEMY_URL, TICKETS_URL, topics } from '../lib/data'
+import { TnArrow, IconClose } from './icons'
 import { Crumbs } from './ui'
+import navLogo from '../assets/sales-nav-logo.png.asset.json'
 
 const isInternal = (href: string) => href.startsWith('/')
 const NavLink = ({ href, label, active }: { href: string; label: string; active?: boolean }) =>
@@ -15,48 +16,70 @@ const NavLink = ({ href, label, active }: { href: string; label: string; active?
 export function TopNav() {
   const { pathname } = useLocation()
   const [open, setOpen] = useState(false)
+  const headerRef = useRef<HTMLElement>(null)
+  const toggleRef = useRef<HTMLButtonElement>(null)
+  const active = SUB_CHANNELS.find(([href]) => pathname === href || pathname.startsWith(href + '/'))
+    ?? (pathname.startsWith('/articles/') ? SUB_CHANNELS[0] : pathname.startsWith('/knowledge/') ? SUB_CHANNELS[4] : undefined)
   useEffect(() => setOpen(false), [pathname])
 
   useEffect(() => {
-    const root = document.documentElement
-    let t: number
     const onScroll = () => {
-      root.classList.toggle('tn-scrolled', window.scrollY > 40)
-      root.classList.add('tn-scrolling')
-      window.clearTimeout(t)
-      t = window.setTimeout(() => root.classList.remove('tn-scrolling'), 220)
+      const header = headerRef.current
+      if (!header) return
+      header.classList.toggle('is-condensed', window.scrollY > 40)
+      const range = document.documentElement.scrollHeight - window.innerHeight
+      header.style.setProperty('--nav-progress', String(range > 0 ? Math.max(.02, Math.min(1, window.scrollY / range)) : 1))
     }
-    root.classList.toggle('tn-scrolled', window.scrollY > 40)
+    onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    if (!open) return
+    const startY = window.scrollY
+    const close = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { setOpen(false); toggleRef.current?.focus() }
+    }
+    const outside = (event: PointerEvent) => {
+      if (event.target instanceof Node && !headerRef.current?.contains(event.target)) setOpen(false)
+    }
+    const scroll = () => { if (Math.abs(window.scrollY - startY) > 60) setOpen(false) }
+    document.addEventListener('keydown', close)
+    document.addEventListener('pointerdown', outside)
+    window.addEventListener('scroll', scroll, { passive: true })
+    return () => {
+      document.removeEventListener('keydown', close)
+      document.removeEventListener('pointerdown', outside)
+      window.removeEventListener('scroll', scroll)
+    }
+  }, [open])
+
+  const ring = <svg className="hub-nav-ring" aria-hidden="true"><rect x=".5" y=".5" width="calc(100% - 1px)" height="calc(100% - 1px)" rx="16" fill="none" pathLength="1" /></svg>
+
   return (
     <>
-      <header className="topnav">
-        <div className="tn-inner">
-          <nav className="tn-main" aria-label="Biohackers World">
-            <a className="tn-logo" href={BRAND_URL}><img src="/assets/logo.svg" alt="Biohackers World" width={36} height={24} /></a>
-            <div className="tn-links">
-              {PRODUCT_NAV.map(([label, href]) => <NavLink key={label} href={href} label={label} active={href === '/' && pathname === '/'} />)}
-            </div>
-            <a className="tn-cta" href={TICKETS_URL}>Buy Tickets<TnArrow /></a>
-            <button className="tn-menu nav-toggle" type="button" aria-label="Menu" onClick={() => setOpen((o) => !o)}>Menu</button>
+      <header className="hub-nav" ref={headerRef}>
+        <div className="hub-nav-bar">
+          <Link className="hub-nav-brand" to="/" aria-label="Biohacking Hub home">
+            <img src={`https://id-preview--${navLogo.project_id}.lovable.app${navLogo.url}`} alt="Biohackers World" />
+            <span className="hub-nav-brand-divider" aria-hidden="true" />
+            <span className="hub-nav-lockup"><span>Biohacking</span><span>Hub</span></span>
+          </Link>
+          <nav className="hub-nav-links" aria-label="Biohacking Hub">
+            {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} aria-current={active?.[0] === href ? 'page' : undefined}>
+              {active?.[0] === href && ring}<span>{label}</span>
+            </Link>)}
           </nav>
-          <div className={'tn-drop mobile-nav' + (open ? ' open' : '')}>
-            {PRODUCT_NAV.map(([label, href]) => <NavLink key={label} href={href} label={label} />)}
-            <a href={TICKETS_URL}>Buy Tickets</a>
-          </div>
-          <nav className="tn-sub" aria-label="Biohacking Hub sections">
-            <div className="tn-channels">
-              {SUB_CHANNELS.map(([href, label]) => <NavLink key={href} href={href} label={label} active={pathname === href} />)}
-            </div>
-            <span className="tn-div" aria-hidden="true" />
-            <div className="tn-topics">
-              {SUB_TOPICS.map(([href, label]) => <NavLink key={href} href={href} label={label} active={pathname === href} />)}
-            </div>
-          </nav>
+          <button ref={toggleRef} className="hub-nav-toggle" type="button" aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={open} aria-controls="hub-navigation-menu" onClick={() => setOpen(value => !value)}>
+            {ring}<span className="hub-nav-current">{active?.[1] ?? 'Menu'}</span>
+            {open ? <IconClose /> : <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true"><path d="M4 6h12M4 10h12M4 14h12" /></svg>}
+          </button>
+          <a className="hub-nav-cta" href={TICKETS_URL}>Buy Tickets<TnArrow /></a>
         </div>
+        {open && <nav id="hub-navigation-menu" className="hub-nav-menu" aria-label="Hub pages">
+          {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} onClick={() => setOpen(false)} aria-current={active?.[0] === href ? 'page' : undefined}>{label}{active?.[0] === href && <span className="hub-nav-dot" aria-hidden="true" />}</Link>)}
+        </nav>}
       </header>
       <div className="tn-spacer" aria-hidden="true" />
     </>
@@ -69,7 +92,8 @@ export function PageHead({ accent, crumbs, title, lede, children }: {
 }) {
   const ref = useRef<HTMLElement>(null)
   useEffect(() => {
-    const head = ref.current!
+    const head = ref.current
+    if (!head) return
     let frame = 0, pending: { x: number; y: number } | null = null
     const apply = () => { frame = 0; if (!pending) return; head.style.setProperty('--mx', pending.x + 'px'); head.style.setProperty('--my', pending.y + 'px') }
     const move = (e: PointerEvent) => {
