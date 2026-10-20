@@ -2,7 +2,7 @@
 // footer() plus the nav-scroll and cursor-lit-grid behaviour from hub.js.
 import { useEffect, useRef, useState, ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { SUB_CHANNELS, BRAND_URL, ACADEMY_URL, TICKETS_URL, topics } from '../lib/data'
+import { PRODUCT_NAV, SUB_CHANNELS, BRAND_URL, ACADEMY_URL, TICKETS_URL, topics } from '../lib/data'
 import { TnArrow, IconClose } from './icons'
 import { Crumbs } from './ui'
 import navLogo from '../assets/sales-nav-logo.png.asset.json'
@@ -66,10 +66,8 @@ export function TopNav() {
             <span className="hub-nav-brand-divider" aria-hidden="true" />
             <span className="hub-nav-lockup"><span>Biohacking</span><span>Hub</span></span>
           </Link>
-          <nav className="hub-nav-links" aria-label="Biohacking Hub">
-            {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} aria-current={active?.[0] === href ? 'page' : undefined}>
-              {active?.[0] === href && ring}<span>{label}</span>
-            </Link>)}
+          <nav className="hub-nav-links hub-nav-primary" aria-label="Biohackers World">
+            {PRODUCT_NAV.map(([label, href]) => <NavLink key={href} href={href} label={label} active={href === '/'} />)}
           </nav>
           <button ref={toggleRef} className="hub-nav-toggle" type="button" aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={open} aria-controls="hub-navigation-menu" onClick={() => setOpen(value => !value)}>
             {ring}<span className="hub-nav-current">{active?.[1] ?? 'Menu'}</span>
@@ -77,9 +75,19 @@ export function TopNav() {
           </button>
           <a className="hub-nav-cta" href={TICKETS_URL}>Buy Tickets<TnArrow /></a>
         </div>
-        {open && <nav id="hub-navigation-menu" className="hub-nav-menu" aria-label="Hub pages">
-          {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} onClick={() => setOpen(false)} aria-current={active?.[0] === href ? 'page' : undefined}>{label}{active?.[0] === href && <span className="hub-nav-dot" aria-hidden="true" />}</Link>)}
-        </nav>}
+        <nav className="hub-nav-links hub-nav-secondary" aria-label="Biohacking Hub">
+          {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} aria-current={active?.[0] === href ? 'page' : undefined}>
+            {active?.[0] === href && ring}<span>{label}</span>
+          </Link>)}
+        </nav>
+        {open && <div id="hub-navigation-menu" className="hub-nav-menu">
+          <nav className="hub-nav-menu-group" aria-label="Biohackers World pages">
+            {PRODUCT_NAV.map(([label, href]) => <NavLink key={href} href={href} label={label} active={href === '/'} />)}
+          </nav>
+          <nav className="hub-nav-menu-group" aria-label="Hub pages">
+            {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} onClick={() => setOpen(false)} aria-current={active?.[0] === href ? 'page' : undefined}>{label}{active?.[0] === href && <span className="hub-nav-dot" aria-hidden="true" />}</Link>)}
+          </nav>
+        </div>}
       </header>
       <div className="tn-spacer" aria-hidden="true" />
     </>
