@@ -33,6 +33,5 @@ export function listenLinks(title: string): [string, string][] {
     ['YouTube', `https://www.youtube.com/results?search_query=${q}`],
     ['Apple Podcasts', `https://podcasts.apple.com/search?term=${q}`],
     ['Spotify', `https://open.spotify.com/search/${q}/episodes`],
-    ['Google Podcasts', `https://music.youtube.com/search?q=${q}`],
   ]
 }
