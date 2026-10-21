@@ -87,3 +87,16 @@
 .knowledge-stats { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .knowledge-guide:target { border-left: 3px solid var(--teal); padding-left: 18px; }
 @media (max-width: 600px) { .hub-masthead { align-items: stretch; flex-direction: column; gap: 12px; } .hub-masthead h1 { font-size: 1.5rem; } .hub-masthead form { width: 100%; } .page-head--compact h1.display { font-size: 2rem; } .knowledge-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .knowledge-stats .stat:last-child { grid-column: 1 / -1; } }
+
+/* Podcast */
+.card-thumb[data-k="episode"] { aspect-ratio: 1 / 1; }
+.ep-head { display: flex; gap: 24px; align-items: center; }
+.ep-head-cover { width: 148px; height: 148px; border-radius: 16px; flex: none; object-fit: cover; }
+.page-head h1.display.ep-title { font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.15; letter-spacing: 0; margin: 0; }
+.ep-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 22px; }
+.ep-detail-play .play-btn { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 99px; border: 0; background: var(--pulse); color: #0A0818; cursor: pointer; }
+.ep-detail-play .play-btn svg { width: 22px; height: 22px; display: block; }
+.ep-detail-play .play-btn svg:nth-of-type(2), .ep-detail-play .play-btn.is-playing svg:nth-of-type(1) { display: none; }
+.ep-detail-play .play-btn.is-playing svg:nth-of-type(2) { display: block; }
+.ep-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+@media (max-width: 600px) { .ep-head { align-items: flex-start; gap: 14px; } .ep-head-cover { width: 88px; height: 88px; } }

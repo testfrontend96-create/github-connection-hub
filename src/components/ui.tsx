@@ -87,7 +87,7 @@ export function EpisodeCard({ slug, dark = false }: { slug: string; dark?: boole
     <div className="card-wrap">
       <Link className={dark ? 'card card--dark' : 'card'} to={`/podcast/${slug}`}>
         <CardThumb img={p.image} k="episode" track={track} />
-        <span className="tag tag--episode">{p.number ? `Episode ${p.number}` : 'Podcast'}</span>
+        <span className="tag tag--episode">{p.number ? (p.season ? `S${p.season} · Ep. ${p.number}` : `Episode ${p.number}`) : 'Podcast'}</span>
         <h3>{p.title}</h3><p>{clip(p.description, 110)}</p>
         <div className="card-meta"><span>{p.guest}</span><span>{p.duration}</span></div>
       </Link>
