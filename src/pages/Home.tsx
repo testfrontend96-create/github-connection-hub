@@ -1,4 +1,7 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { SearchField } from '../components/controls'
+import { guideUrl } from '../lib/browsing'
 import { Story, Motif, ArticleCard, EvMeter, Tag } from '../components/ui'
 import { PlayButton } from '../components/Player'
 import { SocLogo } from '../components/social'
@@ -43,6 +46,8 @@ function Tile({ item, cls }: { item: any; cls: string }) {
 }
 
 export default function Home() {
+  const [query, setQuery] = useState('')
+  const navigate = useNavigate()
   const items = feed()
   const used = new Set<string>()
   const take = (pred: (i: any) => boolean, n: number) => {
@@ -95,6 +100,12 @@ export default function Home() {
   return (
     <>
       <section className="board on-dark"><div className="wrap">
+        <div className="hub-masthead">
+          <h1>Biohacking Hub</h1>
+          <form role="search" onSubmit={event => { event.preventDefault(); if (query.trim()) navigate(`/search?q=${encodeURIComponent(query.trim())}`) }}>
+            <SearchField label="Search the Hub" placeholder="Search the Hub…" value={query} onChange={setQuery} />
+          </form>
+        </div>
         <div className="bento">
           <Link className={'tile tile--lead' + (lead.img ? ' tile--photo' : '')} data-k={lead.k} to={lead.u}>
             {lead.img && <span className="tile-photo"><img src={lead.img} alt="" loading="lazy" decoding="async" /></span>}
@@ -177,10 +188,10 @@ export default function Home() {
         </section>
 
         <section className="sec" style={{ ['--sc' as any]: 'var(--teal)' }}>
-          <div className="sec-head"><h2>How-To</h2><p className="q">Step-by-step guides you can run this week</p><Link to="/howto">All guides →</Link></div>
+          <div className="sec-head"><h2>How-To</h2><p className="q">Step-by-step guides you can run this week</p><Link to="/knowledge-base?type=howto">All guides →</Link></div>
           <div className="howtos" style={{ paddingBottom: 30 }}>
             {howtos.slice(0, 4).map((h) => (
-              <Link key={h.slug} className="howto" to={`/howto#${h.slug}`}>
+              <Link key={h.slug} className="howto" to={guideUrl(h.slug)}>
                 <span className="n">{h.steps}</span><h3>{h.title}</h3><p>{clip(h.excerpt, 90)}</p><div className="meta">{h.steps} steps · {h.time}</div>
               </Link>
             ))}

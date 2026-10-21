@@ -1,11 +1,12 @@
 import { useParams } from 'react-router-dom'
 import { Crumbs, Mention } from '../components/ui'
-import { A, E, pretty } from '../lib/data'
+import { A, E, T, pretty } from '../lib/data'
+import { articleTopic } from '../lib/browsing'
 import NotFound from './NotFound'
 
 export default function Article() {
   const { slug } = useParams()
-  const a = A[slug!]
+  const a = slug ? A[slug] : undefined
   if (!a) return <NotFound />
   const ents = (a.entities || []).filter((s: string) => s in E)
   return (
@@ -13,7 +14,7 @@ export default function Article() {
       <section className="page-head"><div className="wrap">
         <Crumbs items={[['Hub', '/'], ['Blog', '/blog'], [a.title, null]]} />
         <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginBottom: 14 }}>
-          <span className="kick" data-k="article" style={{ color: '#A9AAFF' }}>Blog</span>
+          <span className="tag tag--article">{articleTopic(a, T)}</span>
           <span style={{ color: 'rgba(255,255,255,.5)', fontSize: '.84rem' }}>{pretty(a.date)} · {a.readTime} min read</span>
         </div>
         <h1 className="display">{a.title}</h1>
