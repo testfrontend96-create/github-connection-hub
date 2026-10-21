@@ -3,6 +3,7 @@
 import { Link } from 'react-router-dom'
 import { Any, E, T, A, EP, KIND_LABEL, clip, pretty } from '../lib/data'
 import { PlayButton } from './Player'
+import { articleTopic } from '../lib/browsing'
 
 export const initials = (name: string) =>
   name.replace(/,/g, '').split(/\s+/).slice(0, 2).map((w) => w[0]).join('')
@@ -72,7 +73,7 @@ export function ArticleCard({ slug, dark = false }: { slug: string; dark?: boole
   return (
     <Link className={dark ? 'card card--dark' : 'card'} to={`/articles/${slug}`}>
       <CardThumb img={a.image} k="article" />
-      <span className="tag tag--article">Blog</span>
+      <span className="tag tag--article">{articleTopic(a, T)}</span>
       <h3>{a.title}</h3><p>{clip(a.excerpt, 118)}</p>
       <div className="card-meta"><span>{pretty(a.date)}</span><span>{a.readTime} min read</span></div>
     </Link>

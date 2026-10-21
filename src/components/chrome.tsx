@@ -109,8 +109,8 @@ export function TopNav() {
 }
 
 // dark hero with a cursor-lit purple grid (ports hub.js page-head tracking)
-export function PageHead({ accent, crumbs, title, lede, children }: {
-  accent?: string; crumbs?: [string, string | null][]; title?: string; lede?: string; children?: ReactNode
+export function PageHead({ accent, crumbs, title, lede, children, compact = false }: {
+  accent?: string; crumbs?: [string, string | null][]; title?: string; lede?: string; children?: ReactNode; compact?: boolean
 }) {
   const ref = useRef<HTMLElement>(null)
   useEffect(() => {
@@ -131,7 +131,7 @@ export function PageHead({ accent, crumbs, title, lede, children }: {
     return () => { head.removeEventListener('pointermove', move); head.removeEventListener('pointerleave', leave) }
   }, [])
   return (
-    <section className="page-head" ref={ref} style={accent ? { ['--sc' as any]: accent } : undefined}>
+    <section className={`page-head${compact ? ' page-head--compact' : ''}`} ref={ref} style={accent ? { ['--sc' as any]: accent } : undefined}>
       <div className="wrap">
         {crumbs && <Crumbs items={crumbs} />}
         {title && <h1 className="display">{title}</h1>}

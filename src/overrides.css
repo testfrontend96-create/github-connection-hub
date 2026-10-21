@@ -65,3 +65,24 @@
 @media (max-width: 420px) { .hub-nav-bar { gap: 8px; } .hub-nav-current { display: none; } .hub-nav-toggle { width: 32px; padding: 0; } }
 @keyframes hub-menu-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) { .hub-nav *, .hub-nav.is-condensed .hub-nav-bar { animation: none; transition: none; } }
+
+/* Compact editorial masthead and content browsing. */
+.hub-masthead { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 4px 0 18px; }
+.hub-masthead h1 { margin: 0; font-size: 1.8rem; font-weight: 800; line-height: 1.15; letter-spacing: 0; color: var(--white); }
+.hub-masthead form { width: 340px; max-width: 100%; }
+.content-search { height: 44px; width: 100%; background: var(--white); border-radius: 8px; }
+.page-head--compact { padding: 24px 0 26px; }
+.page-head--compact h1.display { font-size: 2.5rem; line-height: 1.1; letter-spacing: 0; }
+.page-head--compact .lede { margin: 8px 0 0; font-size: 1rem; }
+.blog-listing { padding-top: 28px; }
+.content-filter-bar { display: flex; flex-direction: column; gap: 18px; }
+.content-filter-bar .content-search { max-width: 520px; flex: none; }
+.content-result-count { color: var(--muted); font-size: .8rem; margin: 18px 0 22px; }
+.content-empty { padding: 24px 0; color: var(--muted); }
+.knowledge-guide { padding: 20px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 140px; }
+.knowledge-guide h3 { margin: 0 0 8px; color: var(--ink); font-size: 1.2rem; }
+.knowledge-guide p { margin: 0 0 12px; max-width: 75ch; }
+.knowledge-guide-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 10px; color: var(--muted); font-size: .8rem; }
+.tag--howto { color: var(--teal); background: var(--surface); }
+.knowledge-guide:target { border-left: 3px solid var(--teal); padding-left: 18px; }
+@media (max-width: 600px) { .hub-masthead { align-items: stretch; flex-direction: column; gap: 12px; } .hub-masthead h1 { font-size: 1.5rem; } .hub-masthead form { width: 100%; } .page-head--compact h1.display { font-size: 2rem; } }
