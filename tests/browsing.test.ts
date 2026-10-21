@@ -15,3 +15,13 @@ describe('content browsing', () => {
     expect(guideUrl('how-to-find-your-zone-2')).toBe('/knowledge-base?type=howto#how-to-find-your-zone-2')
   })
 })
+import { filterEpisodes, episodeLabel } from '../src/lib/browsing'
+describe('podcast browsing', () => {
+  it('combines topic and search filters', () => {
+    const items = [{title: 'Sleep talk', description: '', topics: ['sleep']}, {title: 'Sleep and food', description: '', topics: ['nutrition']}]
+    expect(filterEpisodes(items, 'sleep', 'sleep')).toEqual([items[0]])
+  })
+  it('labels episodes with their season', () => {
+    expect(episodeLabel({season: 7, number: 3})).toBe('Season 7 · Episode 3')
+  })
+})
