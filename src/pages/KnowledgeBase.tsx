@@ -38,7 +38,7 @@ export default function KnowledgeBase() {
       </PageHead>
 
       <section className="section--tight" style={{ paddingTop: 40 }}><div className="wrap">
-        <div className="stats" style={{ marginBottom: 40 }}>
+        <div className="stats knowledge-stats" style={{ marginBottom: 40 }}>
           {STAT_ORDER.map((k) => <div key={k} className="stat"><b>{counts[k]}</b><span>{k === 'howto' ? 'How To guides' : `${KIND_LABEL[k]}s`}</span></div>)}
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 14 }}>

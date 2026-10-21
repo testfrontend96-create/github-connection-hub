@@ -84,5 +84,6 @@
 .knowledge-guide p { margin: 0 0 12px; max-width: 75ch; }
 .knowledge-guide-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 10px; color: var(--muted); font-size: .8rem; }
 .tag--howto { color: var(--teal); background: var(--surface); }
+.knowledge-stats { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .knowledge-guide:target { border-left: 3px solid var(--teal); padding-left: 18px; }
-@media (max-width: 600px) { .hub-masthead { align-items: stretch; flex-direction: column; gap: 12px; } .hub-masthead h1 { font-size: 1.5rem; } .hub-masthead form { width: 100%; } .page-head--compact h1.display { font-size: 2rem; } }
+@media (max-width: 600px) { .hub-masthead { align-items: stretch; flex-direction: column; gap: 12px; } .hub-masthead h1 { font-size: 1.5rem; } .hub-masthead form { width: 100%; } .page-head--compact h1.display { font-size: 2rem; } .knowledge-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .knowledge-stats .stat:last-child { grid-column: 1 / -1; } }
