@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'bun:test'
-import { filterArticles, filterKnowledge, guideUrl } from './browsing'
+import { filterArticles, filterKnowledge, guideUrl } from '../src/lib/browsing'
 
 describe('content browsing', () => {
   it('combines Blog category and search filters', () => {
