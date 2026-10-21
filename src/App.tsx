@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { PlayerProvider } from './components/Player'
 import { TopNav, Footer } from './components/chrome'
 import Home from './pages/Home'
@@ -24,6 +24,11 @@ function ScrollToTop() {
   return null
 }
 
+function LegacyHowTo() {
+  const { hash } = useLocation()
+  return <Navigate replace to={`/knowledge-base?type=howto${hash}`} />
+}
+
 export default function App() {
   return (
     <PlayerProvider>
@@ -45,7 +50,7 @@ export default function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/problems/:slug" element={<Problem />} />
           <Route path="/reports" element={<Simple which="reports" />} />
-          <Route path="/howto" element={<Simple which="howto" />} />
+          <Route path="/howto" element={<LegacyHowTo />} />
           <Route path="/about" element={<Simple which="about" />} />
           <Route path="/search" element={<Simple which="search" />} />
           <Route path="*" element={<NotFound />} />

@@ -1,11 +1,15 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { Mention, ArticleCard, EpisodeCard, EntityCard } from '../components/ui'
 import { reports, howtos, entities, articles, episodes, pretty, clip } from '../lib/data'
 import { IconSearch } from '../components/icons'
+import { guideUrl } from '../lib/browsing'
 
-export default function Simple({ which }: { which: 'reports' | 'howto' | 'about' | 'search' }) {
+export default function Simple({ which }: { which: 'reports' | 'about' | 'search' }) {
+  const [params, setParams] = useSearchParams()
+  const q = params.get('q') || ''
+  const setQ = (value: string) => setParams(value ? { q: value } : {}, { replace: true, preventScrollReset: true })
   if (which === 'reports') {
     return (
       <>
@@ -23,23 +27,6 @@ export default function Simple({ which }: { which: 'reports' | 'howto' | 'about'
             </article>
           ))}
         </div></section>
-      </>
-    )
-  }
-  if (which === 'howto') {
-    return (
-      <>
-        <PageHead crumbs={[['Hub', '/'], ['How-To', null]]} title="How-To" lede="Step-by-step guides you can run this week." />
-        <section className="section"><div className="wrap"><div className="grid g2">
-          {howtos.map((h) => (
-            <article key={h.slug} id={h.slug} className="card" style={{ display: 'block' }}>
-              <span className="tag">{h.steps} steps · {h.time}</span>
-              <h3>{h.title}</h3><p>{h.excerpt}</p>
-              <div className="card-meta"><span>{pretty(h.date)}</span></div>
-              <div className="mentions" style={{ marginTop: 10 }}>{h.entities.map((s: string) => <Mention key={s} slug={s} />)}</div>
-            </article>
-          ))}
-        </div></div></section>
       </>
     )
   }
@@ -61,20 +48,20 @@ export default function Simple({ which }: { which: 'reports' | 'howto' | 'about'
     )
   }
   // search
-  const [q, setQ] = useState('')
   const needle = q.trim().toLowerCase()
   const hits = needle.length < 2 ? [] : [
     ...entities.filter((e) => (e.name + ' ' + e.summary).toLowerCase().includes(needle)).map((e) => ({ t: e.name, d: clip(e.summary, 120), u: `/knowledge/${e.slug}`, kind: 'entity' })),
     ...articles.filter((a) => a.title.toLowerCase().includes(needle)).map((a) => ({ t: a.title, d: clip(a.excerpt, 120), u: `/articles/${a.slug}`, kind: 'article' })),
     ...episodes.filter((p) => p.title.toLowerCase().includes(needle)).map((p) => ({ t: p.title, d: clip(p.description, 120), u: `/podcast/${p.slug}`, kind: 'episode' })),
+    ...howtos.filter(h => (h.title + ' ' + h.excerpt).toLowerCase().includes(needle)).map(h => ({ t: h.title, d: clip(h.excerpt, 120), u: guideUrl(h.slug), kind: 'howto' })),
   ].slice(0, 40)
   return (
     <>
-      <PageHead crumbs={[['Hub', '/'], ['Search', null]]} title="Search" lede="Search across molecules, biomarkers, protocols, articles and episodes." />
+      <PageHead crumbs={[['Hub', '/'], ['Search', null]]} title="Search" lede="Search across molecules, biomarkers, protocols, articles, episodes and How To guides." />
       <section className="section"><div className="wrap">
         <label className="dir-search" style={{ maxWidth: 560 }}>
           <IconSearch />
-          <input type="search" placeholder="Try HRV, magnesium, fasting…" value={q} onChange={(e) => setQ(e.target.value)} autoFocus />
+          <input type="search" aria-label="Search the Hub" placeholder="Try HRV, magnesium, fasting…" value={q} onChange={(e) => setQ(e.target.value)} autoFocus />
         </label>
         <div className="grid g3" style={{ marginTop: 28 }}>
           {hits.map((h, i) => (
