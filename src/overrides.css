@@ -264,3 +264,6 @@ h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
 .story--sm .art { border-radius: 10px; }
 .content-search { border-radius: 9999px; height: 48px; }
 .ep-head-cover { border-radius: 22px; }
+/* Content directly under a heading band starts close to it */
+.page-head--compact + .section, .page-head--compact + * .section:first-child { padding-top: 40px; }
+.blog-listing { padding-top: 0; }
