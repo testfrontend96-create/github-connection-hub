@@ -1,20 +1,21 @@
 import { useParams, Link } from 'react-router-dom'
-import { Crumbs, Tag, ArticleCard, EpisodeCard } from '../components/ui'
+import { Tag, ArticleCard, EpisodeCard } from '../components/ui'
+import { PageHead } from '../components/chrome'
 import { PR, E, pretty } from '../lib/data'
 import NotFound from './NotFound'
 
 export default function Problem() {
   const { slug } = useParams()
-  const pr = PR[slug!]
+  const pr = slug ? PR[slug] : undefined
   if (!pr) return <NotFound />
   return (
     <>
-      <section className="page-head" style={{ paddingBottom: 52 }}><div className="wrap">
-        <Crumbs items={[['Hub', '/'], ['Where it hurts', '/#problems'], [pr.name, null]]} />
+      <PageHead compact crumbs={[['Hub', '/'], ['Where it hurts', '/#problems'], [pr.name, null]]}>
         <p className="eyebrow">{pr.tagline}</p>
         <h1 className="display">{pr.name}</h1>
         <p className="lede">{pr.summary}</p>
-      </div></section>
+      </PageHead>
+
       <section className="section--tight" style={{ paddingTop: 48 }}><div className="wrap">
         <div className="entity-layout">
           <div className="prose">

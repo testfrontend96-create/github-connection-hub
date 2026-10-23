@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
-import { Crumbs, Mention } from '../components/ui'
+import { PageHead } from '../components/chrome'
+import { Mention } from '../components/ui'
 import { PlayButton } from '../components/Player'
 import { EP, E, T, pretty } from '../lib/data'
 import { episodeLabel, listenLinks } from '../lib/browsing'
@@ -7,7 +8,7 @@ import NotFound from './NotFound'
 
 export default function Episode() {
   const { slug } = useParams()
-  const p = EP[slug!]
+  const p = slug ? EP[slug] : undefined
   if (!p) return <NotFound />
   const ents = (p.entities || []).filter((s: string) => s in E)
   const tops = (p.topics || []).filter((s: string) => T[s])
@@ -17,19 +18,18 @@ export default function Episode() {
   crumbs.push([`Episode ${p.number}`, null])
   return (
     <>
-      <section className="page-head"><div className="wrap">
-        <Crumbs items={crumbs} />
+      <PageHead compact crumbs={crumbs}>
         <div className="ep-head">
           {p.image && <img className="ep-head-cover" src={p.image} alt="" width={148} height={148} />}
           <div>
-            <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap', marginBottom: 10 }}>
-              <span className="kick" data-k="episode" style={{ color: '#A9AAFF' }}>{episodeLabel(p)}</span>
-              <span style={{ color: 'rgba(255,255,255,.5)', fontSize: '.84rem' }}>{p.guest} · {p.duration} · {pretty(p.date)}</span>
+            <div className="detail-head-meta">
+              <span className="tag tag--episode">{episodeLabel(p)}</span>
+              <span>{p.guest} · {p.duration} · {pretty(p.date)}</span>
             </div>
-            <h1 className="display ep-title">{p.title}</h1>
+            <h1 className="display">{p.title}</h1>
           </div>
         </div>
-      </div></section>
+      </PageHead>
       <section className="section"><div className="wrap" style={{ maxWidth: '72ch' }}>
         <div className="ep-actions">
           {track && <span className="ep-detail-play"><PlayButton track={track} className="play-btn" /></span>}
