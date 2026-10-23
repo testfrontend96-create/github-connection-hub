@@ -13,4 +13,5 @@
 - [x] Give the main navigation a frosted glass fill of 1% white.
 - [x] Match the A–Z / Z–A sort control on Top Biohackers to the search field beside it.
 - [x] Shrink the Social Media heading band and cards so all six show on load without scrolling.
-- [ ] Refit the Social Media page for one screen using padding only, after reverting the card compaction.
+- [x] Refit the Social Media page for one screen using padding only, after reverting the card compaction.
+- [ ] Replace the hand-drawn Social Media platform marks with the official logos the user attached.
