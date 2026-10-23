@@ -160,5 +160,6 @@
 /* Section headings centered across the page */
 .home .sec-head { flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; }
 .home .sec-head .q { flex: none; max-width: 64ch; }
-.home .rail-head { justify-content: center; gap: 18px; text-align: center; }
+.home .rail-head { flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; }
+.home .sec-head h2::before { display: none; }
 .home .pillar .sec-head { grid-column: 1 / -1; }
