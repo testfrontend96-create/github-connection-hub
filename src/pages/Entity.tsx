@@ -17,7 +17,7 @@ export default function Entity() {
   return (
     <>
       <PageHead compact accent="var(--indigo)" crumbs={[['Hub', '/'], ['Knowledge Base', '/knowledge-base'], [e.name, null]]}>
-          <div className="detail-head-meta">
+          <div className="detail-head-meta knowledge-item-meta">
             <Tag kind={e.type} />
             <span className="evidence" data-lvl={e.evidence}>{e.evidence} evidence</span>
           </div>

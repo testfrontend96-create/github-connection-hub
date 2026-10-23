@@ -102,6 +102,7 @@
 .knowledge-guide-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 10px; color: var(--muted); font-size: .8rem; }
 .tag--howto { color: var(--teal); background: var(--surface); }
 .knowledge-stats { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.knowledge-topic-filters { margin-top: 16px; }
 .knowledge-guide:target { border-left: 3px solid var(--teal); padding-left: 18px; }
 @media (max-width: 600px) { .hub-masthead { align-items: stretch; flex-direction: column; gap: 12px; } .hub-masthead h1 { font-size: 1.5rem; } .hub-masthead form { width: 100%; } .page-head--compact h1.display { font-size: 2rem; } .knowledge-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .knowledge-stats .stat:last-child { grid-column: 1 / -1; } }
 
@@ -189,6 +190,10 @@
 .page-head--compact .display { overflow-wrap: anywhere; }
 .detail-head-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 12px; color: var(--muted-dark); font-size: .84rem; }
 .detail-head-counts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+/* Knowledge entry bands are shallower, without changing shared title sizes. */
+#main:has(.knowledge-item-meta) > .page-head.page-head--compact { padding-top: 151px; padding-bottom: 18px; }
+#main:has(.knowledge-item-meta) > .page-head .crumbs { padding-top: 12px; margin-bottom: 12px; }
+.knowledge-item-meta { margin-bottom: 8px; }
 .page-head--compact .prof-hero { grid-template-columns: 148px minmax(0, 1fr); gap: 24px; align-items: center; margin-top: 0; }
 .page-head--compact .prof-photo { border-radius: 16px; }
 .page-head--compact .prof-title { margin: 0 0 8px; }
