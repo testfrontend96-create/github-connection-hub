@@ -82,11 +82,9 @@ export default function Home() {
     [leadI, ...rest].forEach((i) => pillarUsed.add(i.u))
     return (
       <section key={slug} className={'pillar' + (n % 2 ? ' pillar--flip' : '')} style={{ ['--sc' as any]: t.color }}>
+        <div className="sec-head"><h2>{t.question}</h2><MoreLink to={`/topics/${slug}`}>All {label}</MoreLink></div>
         <div className="spine"><span>{label}</span></div>
-        <div>
-          <div className="sec-head"><h2>{t.question}</h2><MoreLink to={`/topics/${slug}`}>All {label}</MoreLink></div>
-          <div className="sec-grid"><Story item={leadI} size="md" />{rest.map((i) => <Story key={i.u} item={i} size="sm" />)}</div>
-        </div>
+        <div className="sec-grid"><Story item={leadI} size="md" />{rest.map((i) => <Story key={i.u} item={i} size="sm" />)}</div>
       </section>
     )
   })
