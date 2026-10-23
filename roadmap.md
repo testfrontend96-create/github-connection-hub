@@ -25,4 +25,4 @@
 - [x] Lay out section heading rows horizontally — heading text left, "see more" link right.
 - [x] Change the "Browse all categories" label from all caps to sentence case everywhere it appears.
 - [x] Change the small format labels above titles ("Molecule", "Blog · Oct 8, 2026") from all caps to title case everywhere.
-- [ ] Smooth the gradient at the bottom of the homepage hero section.
+- [x] Smooth the gradient at the bottom of the homepage hero section.
