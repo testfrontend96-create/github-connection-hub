@@ -70,13 +70,23 @@
 /* Hero board: fade the dark band into the light page instead of a hard cut.
    The fade must start below the last bento row (the Blog/Podcast tiles), so it
    never washes out through those cards: keep --board-fade shorter than the
-   board's bottom padding, which is the empty space under the tiles. */
+   board's bottom padding, which is the empty space under the tiles.
+   The stops follow an ease-in-out curve instead of a straight line, so the dark
+   releases slowly, crosses the middle fastest and lands on white with no seam. */
 .board {
-  --board-fade: 140px;
-  padding-bottom: 176px;
-  background: linear-gradient(180deg, var(--ink) calc(100% - var(--board-fade)), var(--white) 100%);
+  --board-fade: 170px;
+  padding-bottom: 190px;
+  background: linear-gradient(180deg,
+    var(--ink) calc(100% - var(--board-fade)),
+    color-mix(in srgb, var(--ink), var(--white) 5.5%) calc(100% - var(--board-fade) * 0.8571),
+    color-mix(in srgb, var(--ink), var(--white) 20%) calc(100% - var(--board-fade) * 0.7143),
+    color-mix(in srgb, var(--ink), var(--white) 39.5%) calc(100% - var(--board-fade) * 0.5714),
+    color-mix(in srgb, var(--ink), var(--white) 60.5%) calc(100% - var(--board-fade) * 0.4286),
+    color-mix(in srgb, var(--ink), var(--white) 80%) calc(100% - var(--board-fade) * 0.2857),
+    color-mix(in srgb, var(--ink), var(--white) 94.5%) calc(100% - var(--board-fade) * 0.1429),
+    var(--white) calc(100% - var(--board-fade) * 0));
 }
-@media (max-width: 640px) { .board { --board-fade: 104px; padding-bottom: 132px; } }
+@media (max-width: 640px) { .board { --board-fade: 126px; padding-bottom: 148px; } }
 
 /* Section heading rows: no rule under the heading text. */
 .rail-head { border-bottom: 0; }
