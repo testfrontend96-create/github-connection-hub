@@ -67,13 +67,16 @@
 @keyframes hub-menu-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) { .hub-nav *, .hub-nav.is-condensed .hub-nav-bar { animation: none; transition: none; } }
 
-/* Hero board: fade the dark band into the light page instead of a hard cut. */
+/* Hero board: fade the dark band into the light page instead of a hard cut.
+   The fade must start below the last bento row (the Blog/Podcast tiles), so it
+   never washes out through those cards: keep --board-fade shorter than the
+   board's bottom padding, which is the empty space under the tiles. */
 .board {
-  --board-fade: 210px;
-  padding-bottom: 150px;
+  --board-fade: 140px;
+  padding-bottom: 176px;
   background: linear-gradient(180deg, var(--ink) calc(100% - var(--board-fade)), var(--white) 100%);
 }
-@media (max-width: 640px) { .board { --board-fade: 160px; padding-bottom: 110px; } }
+@media (max-width: 640px) { .board { --board-fade: 104px; padding-bottom: 132px; } }
 
 /* Section heading rows: no rule under the heading text. */
 .rail-head { border-bottom: 0; }
