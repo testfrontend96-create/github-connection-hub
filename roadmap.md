@@ -17,3 +17,4 @@
 - [x] Replace the hand-drawn Social Media platform marks with the official logos the user attached.
 - [x] Swap the YouTube card for Facebook, keeping the six-card grid and the colour ramp.
 - [ ] Confirm the real Facebook page URL — /biohackersworld is assumed from the other profiles.
+- [x] Give the Social Media heading band the same padding and text sizes as Blog/Podcast, refitting the one-screen layout with grid spacing instead.
