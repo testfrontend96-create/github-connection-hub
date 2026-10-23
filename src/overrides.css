@@ -267,3 +267,8 @@ h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
 /* Content directly under a heading band starts close to it */
 .page-head--compact + .section, .page-head--compact + * .section:first-child { padding-top: 40px; }
 .blog-listing { padding-top: 0; }
+/* Heading bands: cursor hue only, no grid lines */
+.page-head::after {
+  background-image: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(84,82,198,.32), rgba(70,70,160,.12) 36%, transparent 66%);
+  background-size: 100% 100%;
+}
