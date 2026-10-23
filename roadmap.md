@@ -22,3 +22,5 @@
 - [x] Give the Social Media heading band the same padding and text sizes as Blog/Podcast, refitting the one-screen layout with grid spacing instead.
 - [x] Reduce the height of the six Social Media cards.
 - [x] Fix the Reddit icons so the Snoo reads correctly.
+- [x] Lay out section heading rows horizontally — heading text left, "see more" link right.
+- [x] Change the "Browse all categories" label from all caps to sentence case everywhere it appears.

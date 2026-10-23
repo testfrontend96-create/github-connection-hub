@@ -158,10 +158,15 @@
 .hub-masthead .content-search input { color: var(--white); }
 .hub-masthead .content-search input::placeholder { color: rgba(255, 255, 255, .45); }
 
-/* Section headings centered across the page */
-.home .sec-head { flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; }
-.home .sec-head .q { flex: none; max-width: 64ch; }
-.home .rail-head { flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; }
+/* Section heading rows: heading text left, "see more" CTA right */
+.home .sec-head { align-items: baseline; justify-content: space-between; }
+.home .sec-head .q { flex: 1; max-width: none; padding-right: 24px; }
+.home .rail-head { justify-content: space-between; }
+.home .sec-head h2::before { display: none; }
+@media (max-width: 600px) {
+  .home .sec-head { flex-wrap: wrap; gap: 4px; }
+  .home .sec-head .q { flex-basis: 100%; padding-right: 0; }
+}
 .home .sec-head h2::before { display: none; }
 .home .pillar .sec-head { grid-column: 1 / -1; }
 
