@@ -15,4 +15,5 @@
 - [x] Shrink the Social Media heading band and cards so all six show on load without scrolling.
 - [x] Refit the Social Media page for one screen using padding only, after reverting the card compaction.
 - [x] Replace the hand-drawn Social Media platform marks with the official logos the user attached.
-- [ ] Facebook logo was supplied but the page has no Facebook card — awaiting the user's choice.
+- [x] Swap the YouTube card for Facebook, keeping the six-card grid and the colour ramp.
+- [ ] Confirm the real Facebook page URL — /biohackersworld is assumed from the other profiles.
