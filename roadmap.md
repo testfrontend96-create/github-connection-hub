@@ -7,3 +7,6 @@
 - [x] Soften the card border color shown on hover.
 - [x] Give the homepage search box the same glass treatment as the cards.
 - [x] Center every section heading horizontally across the homepage.
+- [x] Remove the solid fill behind the main navigation over each page's heading band.
+- [ ] Give Social Media, Top Biohackers, Knowledge Base and FAQ the Blog/Podcast heading treatment.
+- [ ] Use the shared search field on Top Biohackers and Knowledge Base, keeping their copy.
