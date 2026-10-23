@@ -137,3 +137,6 @@
 .on-dark .rail-head .section-cta:hover,
 .on-dark .sec-head .section-cta:hover,
 .on-dark .section-cta:hover { color: var(--pulse); }
+
+/* First pillar section sits under the category card — no divider above it */
+#topics .pillar:first-of-type { border-top: 0; }
