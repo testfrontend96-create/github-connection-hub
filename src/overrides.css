@@ -91,8 +91,20 @@
 /* Section heading rows: no rule under the heading text. */
 .rail-head { border-bottom: 0; }
 
-/* Cards: hover outline stays a soft mid grey, never full ink. */
-.card:hover { border-color: var(--muted-dark); }
+/* Cards: the hover outline is one light step above the resting border — never
+   full ink, never a hard accent. Three tokens so every card surface matches:
+   grey for plain cards, a paler periwinkle where the accent marks the card,
+   and a softer white line where cards sit on dark. */
+:root {
+  --card-hover: #C3C5CB;
+  --card-hover-accent: color-mix(in srgb, var(--pulse), var(--white) 34%);
+  --card-hover-dark: rgba(255, 255, 255, .4);
+}
+.card:hover, .soc:hover, .erow:hover { border-color: var(--card-hover); }
+.howto:hover, .net:hover, .pcard-link:hover, .report:hover, .mention:hover,
+.ig:hover, .next-card:hover { border-color: var(--card-hover-accent); }
+.card--dark:hover { border-color: var(--card-hover-dark); }
+a.tile:hover { border-color: rgba(255, 255, 255, .24); }
 
 
 

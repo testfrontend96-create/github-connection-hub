@@ -29,3 +29,4 @@
 - [x] Make the spacing between homepage thumbnails and the text below consistent.
 - [x] Replace episode covers with verified YouTube thumbnails and preserve the full artwork in thumbnail frames.
 - [x] Match the Biohackers A–Z control to the search field beside it.
+- [x] Lighten the hover outline on every card surface — plain, accent-marked and dark cards.
