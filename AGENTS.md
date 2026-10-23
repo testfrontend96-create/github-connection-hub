@@ -9,3 +9,4 @@
 - Render section "see more" links with the shared `MoreLink` control (`src/components/controls.tsx`, styled once as `.section-cta`) so every section on a page carries the same call-to-action.
 - Let top heading bands run up behind the fixed header (band pulled up with compensating top padding) and keep the bar's fill transparent only while the band still covers it, so the band's glow is never clipped but the links stay legible over light content.
 - Scope a single page's band or section spacing with `#main:has(<marker only that page has>)` selectors rather than editing the shared `.page-head--compact` / `.section` rules, so one page's layout target never moves the other Hub pages.
+- Keep every Hub page's heading band at the shared compact band's padding and text sizes; when a page must fit in one screen, trim section and grid spacing instead of the band, so headings stay identical across the Hub.
