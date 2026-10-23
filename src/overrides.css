@@ -75,6 +75,13 @@
 }
 @media (max-width: 640px) { .board { --board-fade: 160px; padding-bottom: 110px; } }
 
+/* Section heading rows: no rule under the heading text. */
+.rail-head { border-bottom: 0; }
+
+/* Cards: hover outline stays a soft mid grey, never full ink. */
+.card:hover { border-color: var(--muted-dark); }
+
+
 
 /* Compact editorial masthead and content browsing. */
 .hub-masthead { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 4px 0 18px; }
