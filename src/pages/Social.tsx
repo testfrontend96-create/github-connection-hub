@@ -30,7 +30,7 @@ function NetArt({ name }: { name: string }) {
 export default function Social() {
   return (
     <>
-      <PageHead accent="#6B6CFF" title="Social Media" lede="Connect with the community wherever you already are." />
+      <PageHead compact accent="#6B6CFF" title="Social Media" lede="Connect with the community wherever you already are." />
       <section className="section"><div className="wrap">
         <div className="netgrid">
           {social.map((x) => (

@@ -32,7 +32,7 @@ export default function FAQ() {
 
   return (
     <>
-      <PageHead accent="#38389C" title="FAQ" lede="Answers to the questions people bring to the Hub most often. Select a question to read the answer." />
+      <PageHead compact accent="#38389C" title="FAQ" lede="Answers to the questions people bring to the Hub most often. Select a question to read the answer." />
       <section className="section faqx"><div className="wrap faqx-wrap">
         <div className="dir-bar faqx-bar">
           <label className="dir-search">

@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { PersonPhoto, Mention } from '../components/ui'
-import { IconArrow, IconSearch, IconClose } from '../components/icons'
+import { IconArrow } from '../components/icons'
+import { SearchField } from '../components/controls'
 import { hackers, E, personSortKey, clip } from '../lib/data'
 
 const fold = (s: string) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -22,14 +23,10 @@ export default function Biohackers() {
 
   return (
     <>
-      <PageHead accent="#5757D7" title="Top Biohackers" lede="The best-known names in biohacking and longevity." />
+      <PageHead compact accent="#5757D7" title="Top Biohackers" lede="The best-known names in biohacking and longevity." />
       <section className="section dir" data-noun="biohackers"><div className="wrap dir-wrap">
         <div className="dir-bar">
-          <label className="dir-search">
-            <IconSearch />
-            <input type="search" placeholder="Search by name" autoComplete="off" spellCheck={false} value={q} onChange={(e) => setQ(e.target.value)} aria-label="Search biohackers by name" />
-            {q && <button className="dir-clear" type="button" aria-label="Clear search" onClick={() => setQ('')}><IconClose /></button>}
-          </label>
+          <SearchField label="Search biohackers by name" placeholder="Search by name" value={q} onChange={setQ} onClear={() => setQ('')} />
           <div className="dir-controls">
             <div className="seg" role="group" aria-label="Sort by name">
               <button type="button" aria-pressed={sort === 'az'} onClick={() => setSort('az')}>A–Z</button>
