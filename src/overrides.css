@@ -173,8 +173,8 @@
 .hub-nav.is-over-band .hub-nav-bar,
 .hub-nav.is-over-band .hub-nav-secondary,
 .hub-nav.is-over-band .hub-nav-sub-toggle {
-  background: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+  background: rgba(255, 255, 255, .01);
+  backdrop-filter: blur(26px) saturate(170%);
+  -webkit-backdrop-filter: blur(26px) saturate(170%);
   box-shadow: none;
 }
