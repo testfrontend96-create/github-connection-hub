@@ -233,6 +233,7 @@
   --radius-lg: 26px;           /* ds radius-3xl: slabs */
   --space-eyebrow: 20px; --space-title: 20px; --space-h3: 12px; --space-para: 16px;
   --space-block: 56px; --space-grid: 24px;
+  --space-thumbnail-text: 16px;
 }
 body { font-family: var(--ds-font); font-size: 17px; line-height: 1.55; letter-spacing: -0.015em; }
 h1, h2, h3, h4 { text-wrap: balance; }
@@ -300,3 +301,16 @@ h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
 .rail-head .section-cta, .sec-head .section-cta { font-size: 15px; letter-spacing: 0; }
 .pillar .sec-head h2 { font-size: 34px; }
 @media (max-width: 767px) { .pillar .sec-head h2 { font-size: 28px; } }
+
+/* Homepage thumbnails: fixed image-to-copy spacing, never stretched by the
+   neighbouring story's height. Background-photo tiles remain overlays. */
+.home .sec-grid .story--sm {
+  align-content: start;
+  row-gap: var(--space-thumbnail-text);
+}
+.home .sec-grid .story--md .art,
+.home .card-thumb,
+.home .person .av { margin-bottom: var(--space-thumbnail-text); }
+.home .sec-grid .story--md > .kick { display: flex; width: fit-content; }
+.home .card-thumb + .tag { display: table; margin-top: 0; }
+.home .ig-body { padding-top: var(--space-thumbnail-text); }

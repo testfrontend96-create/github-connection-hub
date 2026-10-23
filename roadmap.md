@@ -26,3 +26,4 @@
 - [x] Change the "Browse all categories" label from all caps to sentence case everywhere it appears.
 - [x] Change the small format labels above titles ("Molecule", "Blog · Oct 8, 2026") from all caps to title case everywhere.
 - [x] Smooth the gradient at the bottom of the homepage hero section.
+- [x] Make the spacing between homepage thumbnails and the text below consistent.
