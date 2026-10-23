@@ -201,3 +201,69 @@
   .page-head--compact .prof-hero { grid-template-columns: 88px minmax(0, 1fr); gap: 14px; align-items: start; }
   .page-head--compact .prof-id { min-width: 0; }
 }
+
+/* ===========================================================
+   Unified Design System layer: type scale, spacing rhythm and
+   corner radii (colours stay with the Hub palette).
+   =========================================================== */
+:root {
+  --ds-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --display: var(--ds-font);
+  --ds-r: 14px;
+  --radius-sm: 10px;           /* ds radius-sm */
+  --radius: 22px;              /* ds radius-2xl: cards */
+  --radius-lg: 26px;           /* ds radius-3xl: slabs */
+  --space-eyebrow: 20px; --space-title: 20px; --space-h3: 12px; --space-para: 16px;
+  --space-block: 56px; --space-grid: 24px;
+}
+body { font-family: var(--ds-font); font-size: 17px; line-height: 1.55; letter-spacing: -0.015em; }
+h1, h2, h3, h4 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+/* Headlines: natural case, semibold, tight tracking */
+.display { font-weight: 600; text-transform: none; letter-spacing: -0.03em; line-height: 1.05; }
+h1.display { font-size: 40px; letter-spacing: -0.03em; line-height: 1.05; }
+h2.display { font-size: 30px; line-height: 1.1; }
+h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
+@media (min-width: 768px) {
+  h1.display { font-size: 56px; }
+  h2.display { font-size: 44px; }
+  h3.display { font-size: 34px; }
+}
+.page-head--compact h1.display { font-size: 40px; line-height: 1.05; letter-spacing: -0.03em; }
+.page-head--compact .lede { margin-top: var(--space-title); font-size: 17px; }
+.eyebrow { font-size: 13px; font-weight: 500; letter-spacing: 0.14em; line-height: 1; margin-bottom: var(--space-eyebrow); }
+.lede { font-size: 19px; line-height: 1.5; }
+
+/* Card and body type */
+.card { border-radius: 22px; padding: 24px; }
+.card h3 { font-size: 18px; font-weight: 600; line-height: 1.35; letter-spacing: -0.015em; margin: var(--space-h3) 0 8px; }
+.card p, .erow-sum, .sr-sub { font-size: 15px; line-height: 1.5; }
+.card-meta, .crumbs, .content-result-count, .knowledge-guide-meta { font-size: 13px; line-height: 1.4; }
+.topic-card h3 { font-weight: 600; text-transform: none; letter-spacing: -0.02em; font-size: 22px; }
+.erow-name, .faq-q, .sr-title { font-weight: 600; }
+.faq-q { font-size: 18px; }
+.faq-a, .takeaways li { font-size: 17px; line-height: 1.55; }
+.prose h2 { font-size: 28px; font-weight: 600; line-height: 1.15; letter-spacing: -0.025em; }
+.prose p, .article-body p { font-size: 17px; line-height: 1.55; margin-bottom: var(--space-para); }
+.next-card h4, .knowledge-guide h3 { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; }
+.stat b { font-weight: 600; letter-spacing: -0.03em; }
+.btn { font-size: 15px; font-weight: 500; height: 44px; padding: 0 20px; }
+.btn--sm { height: 36px; padding: 0 14px; font-size: 13px; }
+
+/* Spacing rhythm */
+.section { padding: 80px 0; }
+@media (min-width: 768px) { .section { padding: 112px 0; } }
+.section--tight { padding: 56px 0; }
+.grid { gap: var(--space-grid); }
+
+/* Corner radii on surfaces */
+.report, .explainer, .howto, .soc, .story--md .art { border-radius: 22px; }
+.promo, .slab { border-radius: 26px; }
+.explainers, .story .art, .sec-grid .story--sm .art { border-radius: 14px; }
+.story--sm .art { border-radius: 10px; }
+.content-search { border-radius: 9999px; height: 48px; }
+.ep-head-cover { border-radius: 22px; }
+/* Content directly under a heading band starts close to it */
+.page-head--compact + .section, .page-head--compact + * .section:first-child { padding-top: 40px; }
+.blog-listing { padding-top: 0; }
