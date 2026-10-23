@@ -28,3 +28,4 @@
 - [x] Smooth the gradient at the bottom of the homepage hero section.
 - [x] Make the spacing between homepage thumbnails and the text below consistent.
 - [ ] Replace episode covers with verified YouTube thumbnails and preserve the full artwork in thumbnail frames.
+- [ ] Match the Biohackers A–Z control to the search field beside it.
