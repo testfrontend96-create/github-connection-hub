@@ -200,9 +200,9 @@
 
 /* The A–Z / Z–A control sits next to the shared search field, so it takes the
    same box: same height, corner radius, border and fill. */
-.dir-bar .seg { height: 44px; padding: 4px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); transition: border-color .2s; }
+.dir-bar .seg { height: 48px; padding: 4px; border: 1px solid var(--line); border-radius: 9999px; background: var(--white); transition: border-color .2s; }
 .dir-bar .seg:hover { border-color: #cfcdd8; }
-.dir-bar .seg button { border-radius: 6px; }
+.dir-bar .seg button { border-radius: 9999px; }
 
 /* Detail headers inherit the same compact band and typography as directories. */
 .page-head--compact .display { overflow-wrap: anywhere; }
