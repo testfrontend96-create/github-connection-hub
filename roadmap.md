@@ -12,3 +12,4 @@
 - [x] Use the shared search field on Top Biohackers and Knowledge Base, keeping their copy.
 - [x] Give the main navigation a frosted glass fill of 1% white.
 - [x] Match the A–Z / Z–A sort control on Top Biohackers to the search field beside it.
+- [x] Shrink the Social Media heading band and cards so all six show on load without scrolling.
