@@ -1690,7 +1690,7 @@ h1.prof-name{margin:0;font-size:clamp(2.4rem,5.2vw,4.4rem);color:#fff;text-wrap:
 .net-art--posts{display:grid;grid-template-columns:1.55fr 1fr;grid-template-rows:1fr 1fr;gap:2px}
 .net-art--posts .net-tile:first-child{grid-row:1 / span 2}
 .net-tile{position:relative;overflow:hidden}
-.net-tile img{width:100%;height:100%;object-fit:cover;transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.net-tile img{width:100%;height:100%;object-fit:cover;object-position:bottom;transition:transform .35s cubic-bezier(.16,1,.3,1)}
 .net:hover .net-tile img{transform:scale(1.05)}
 .net-play{position:absolute;right:7px;top:7px;width:19px;height:19px;color:#fff;opacity:.92;
   filter:drop-shadow(0 1px 3px rgba(0,0,0,.6))}
