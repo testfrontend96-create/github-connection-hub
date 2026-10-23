@@ -142,3 +142,17 @@
 .home .pillar,
 .home .sec,
 .home .fp-footer-note { border-top: 0; }
+
+/* Homepage masthead search — same glass treatment as the cards below it */
+.hub-masthead .content-search {
+  background: rgba(255, 255, 255, .035);
+  border: 1px solid var(--line-dark);
+  border-radius: 18px;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.hub-masthead .content-search:hover { background: rgba(255, 255, 255, .055); border-color: rgba(255, 255, 255, .3); }
+.hub-masthead .content-search:focus-within { background: rgba(255, 255, 255, .055); border-color: rgba(255, 255, 255, .3); box-shadow: 0 0 0 3px rgba(255, 255, 255, .08); }
+.hub-masthead .content-search svg { color: rgba(255, 255, 255, .55); }
+.hub-masthead .content-search input { color: var(--white); }
+.hub-masthead .content-search input::placeholder { color: rgba(255, 255, 255, .45); }
