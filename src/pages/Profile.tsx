@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
-import { Crumbs, PersonPhoto, Mention } from '../components/ui'
+import { PersonPhoto, Mention } from '../components/ui'
+import { PageHead } from '../components/chrome'
 import { IconLink } from '../components/icons'
 import { SOCIAL_ORDER, SocialIcon, socialLabel } from '../components/social'
 import { H, E, T, hackers, firstName, personSortKey, clip, TICKETS_URL } from '../lib/data'
@@ -9,7 +10,7 @@ const EVENT_LABEL: Record<string, string> = { 'miami-2027': 'Speaker at Miami 20
 
 export default function Profile() {
   const { slug } = useParams()
-  const b = H[slug!]
+  const b = slug ? H[slug] : undefined
   if (!b) return <NotFound />
   const miami = (b.events || []).includes('miami-2027')
   const focus = (b.focus || []).filter((x: string) => x in E)
@@ -25,23 +26,22 @@ export default function Profile() {
 
   return (
     <>
-      <section className="page-head prof-head"><div className="wrap">
-        <Crumbs items={[['Hub', '/'], ['Top Biohackers', '/biohackers'], [b.name, null]]} />
+      <PageHead compact crumbs={[['Hub', '/'], ['Top Biohackers', '/biohackers'], [b.name, null]]}>
         <div className="prof-hero">
           <PersonPhoto b={b} cls="prof-photo" eager />
           <div className="prof-id">
-            <p className="prof-title">{b.title}</p>
-            <h1 className="display prof-name">{b.name}</h1>
+            <p className="lede prof-title">{b.title}</p>
+            <h1 className="display">{b.name}</h1>
             {(miami || (b.speaker && !miami)) && (
               <div className="prof-chips">
                 {(b.events || []).filter((e: string) => EVENT_LABEL[e]).map((e: string) => <span key={e} className="p-chip"><i />{EVENT_LABEL[e]}</span>)}
                 {b.speaker && !miami && <span className="p-chip p-chip--quiet"><i />Biohackers World speaker</span>}
               </div>
             )}
-            {!b.speaker && <p className="prof-lede">{clip(b.known, 240)}</p>}
+            {!b.speaker && <p className="lede">{clip(b.known, 240)}</p>}
           </div>
         </div>
-      </div></section>
+      </PageHead>
 
       <section className="section prof-body"><div className="wrap prof-grid">
         <div className="prof-main">

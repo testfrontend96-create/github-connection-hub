@@ -1,12 +1,12 @@
 import { useParams, Link } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
-import { Crumbs, Tag, ArticleCard, EpisodeCard } from '../components/ui'
+import { Tag, ArticleCard, EpisodeCard } from '../components/ui'
 import { E, T, PR, BRAND_URL, ACADEMY_URL, pretty } from '../lib/data'
 import NotFound from './NotFound'
 
 export default function Entity() {
   const { slug } = useParams()
-  const e = E[slug!]
+  const e = slug ? E[slug] : undefined
   if (!e) return <NotFound />
   const tl = (e.topics || []).filter((t: string) => t in T)
   const rel = [...e._related].sort((a: string, b: string) => E[a].name.localeCompare(E[b].name))
@@ -16,17 +16,14 @@ export default function Entity() {
 
   return (
     <>
-      <section className="page-head">
-        <div className="wrap">
-          <Crumbs items={[['Hub', '/'], ['Knowledge Base', '/knowledge-base'], [e.name, null]]} />
-          <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginBottom: 16 }}>
+      <PageHead compact accent="var(--indigo)" crumbs={[['Hub', '/'], ['Knowledge Base', '/knowledge-base'], [e.name, null]]}>
+          <div className="detail-head-meta">
             <Tag kind={e.type} />
-            <span className="evidence" data-lvl={e.evidence} style={{ color: 'rgba(255,255,255,.6)' }}>{e.evidence} evidence</span>
+            <span className="evidence" data-lvl={e.evidence}>{e.evidence} evidence</span>
           </div>
           <h1 className="display">{e.name}</h1>
-          {e.aka?.length > 0 && <p style={{ color: 'rgba(255,255,255,.42)', fontSize: '.86rem', margin: '14px 0 0' }}>Also known as: {e.aka.join(', ')}</p>}
-        </div>
-      </section>
+          {e.aka?.length > 0 && <p className="lede">Also known as: {e.aka.join(', ')}</p>}
+      </PageHead>
 
       <section className="section"><div className="wrap">
         <div className="entity-layout">

@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
-import { Crumbs, Tag, EntityCard, ArticleCard, EpisodeCard } from '../components/ui'
+import { Tag, EntityCard, ArticleCard, EpisodeCard } from '../components/ui'
+import { PageHead } from '../components/chrome'
 import { T, E, KIND_LABEL, clip } from '../lib/data'
 import NotFound from './NotFound'
 
@@ -10,26 +11,23 @@ const HEADS: Record<string, string> = {
 
 export default function Topic() {
   const { slug } = useParams()
-  const t = T[slug!]
+  const t = slug ? T[slug] : undefined
   if (!t) return <NotFound />
   const byKind: Record<string, string[]> = {}
   for (const s of t._entities) (byKind[E[s].type] ||= []).push(s)
 
   return (
     <>
-      <section className="page-head" style={{ paddingBottom: 56 }}>
-        <div className="wrap">
-          <Crumbs items={[['Hub', '/'], ['Topics', '/#topics'], [t.name, null]]} />
-          <p className="eyebrow">{t.tagline}</p>
-          <h1 className="display">{t.name}</h1>
-          <p className="lede">{t.summary}</p>
-          <div style={{ marginTop: 26, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-            <span className="count-pill">{t._entities.length} knowledge entries</span>
-            <span className="count-pill">{t._articles.length} articles</span>
-            <span className="count-pill">{t._episodes.length} episodes</span>
-          </div>
+      <PageHead compact crumbs={[['Hub', '/'], ['Topics', '/#topics'], [t.name, null]]}>
+        <p className="eyebrow">{t.tagline}</p>
+        <h1 className="display">{t.name}</h1>
+        <p className="lede">{t.summary}</p>
+        <div className="detail-head-counts">
+          <span className="count-pill">{t._entities.length} knowledge entries</span>
+          <span className="count-pill">{t._articles.length} articles</span>
+          <span className="count-pill">{t._episodes.length} episodes</span>
         </div>
-      </section>
+      </PageHead>
 
       <section className="section--tight" style={{ paddingTop: 48 }}><div className="wrap">
         <div className="entity-layout">
