@@ -1,5 +1,6 @@
 /* SPA-specific adjustments on top of the ported hub.css */
 #root { min-height: 100vh; }
+#main { padding-bottom: 64px; }
 
 /* Sales navigation: dark glass shell, white lockup, chapter pills. */
 :root {
