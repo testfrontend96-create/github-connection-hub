@@ -12,3 +12,4 @@
 - Keep every Hub page's heading band at the shared compact band's padding and text sizes; when a page must fit in one screen, trim section and grid spacing instead of the band, so headings stay identical across the Hub.
 - Use shared compact `PageHead` on linked detail pages as well as directories, retaining their own breadcrumbs, metadata and imagery as children so typography, band spacing and effects stay consistent.
 - Where a flattened brand mark renders wrong, swap in that platform's canonical single-path logo rather than hand-editing the flattened geometry; keep the per-platform watermark bleed in one shared rule and override only the marks whose artwork shape needs it.
+- Apply the Unified Design System type scale, spacing rhythm and corner radii as one layer at the end of `src/overrides.css`, keeping the Hub colour palette, so typography and shapes change in one place.
