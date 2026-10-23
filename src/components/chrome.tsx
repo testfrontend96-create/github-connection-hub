@@ -31,6 +31,13 @@ export function TopNav() {
       if (!header) return
       header.classList.toggle('is-condensed', window.scrollY > 40)
       setCondensed(window.scrollY > 40)
+      // the bar only needs its own fill once the dark heading band has scrolled
+      // out from behind it — over the band it stays transparent so the band reads whole
+      const band = document.querySelector('#main > .page-head, #main > .board, #main > .home > .board')
+      const bandBottom = band instanceof HTMLElement ? band.getBoundingClientRect().bottom : -Infinity
+      const spacer = document.querySelector('.tn-spacer')
+      const spacerBottom = spacer instanceof HTMLElement ? spacer.getBoundingClientRect().bottom : 0
+      header.classList.toggle('is-over-band', Math.max(bandBottom, spacerBottom) > header.getBoundingClientRect().bottom + 8)
       const range = document.documentElement.scrollHeight - window.innerHeight
       header.style.setProperty('--nav-progress', String(range > 0 ? Math.max(.02, Math.min(1, window.scrollY / range)) : 1))
     }
