@@ -27,3 +27,5 @@
 - [x] Change the small format labels above titles ("Molecule", "Blog · Oct 8, 2026") from all caps to title case everywhere.
 - [x] Smooth the gradient at the bottom of the homepage hero section.
 - [x] Make the spacing between homepage thumbnails and the text below consistent.
+- [x] Replace episode covers with verified YouTube thumbnails and preserve the full artwork in thumbnail frames.
+- [x] Match the Biohackers A–Z control to the search field beside it.
