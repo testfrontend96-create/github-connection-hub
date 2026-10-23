@@ -117,3 +117,23 @@
 .ep-detail-play .play-btn.is-playing svg:nth-of-type(2) { display: block; }
 .ep-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
 @media (max-width: 600px) { .ep-head { align-items: flex-start; gap: 14px; } .ep-head-cover { width: 88px; height: 88px; } }
+
+/* Section "see more" call-to-action — one treatment everywhere */
+.rail-head .section-cta,
+.sec-head .section-cta,
+.section-cta {
+  display: inline-flex; align-items: center; gap: 7px;
+  color: var(--ink); font-size: .8rem; font-weight: 700; letter-spacing: .01em;
+  text-decoration: none; white-space: nowrap; border-bottom: 0;
+}
+.section-cta-arrow { transition: transform .18s ease; }
+.rail-head .section-cta:hover,
+.sec-head .section-cta:hover,
+.section-cta:hover { color: var(--green-dim); }
+.section-cta:hover .section-cta-arrow { transform: translateX(3px); }
+.on-dark .rail-head .section-cta,
+.on-dark .sec-head .section-cta,
+.on-dark .section-cta { color: var(--white); }
+.on-dark .rail-head .section-cta:hover,
+.on-dark .sec-head .section-cta:hover,
+.on-dark .section-cta:hover { color: var(--pulse); }

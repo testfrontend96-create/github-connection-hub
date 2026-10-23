@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { SearchField } from '../components/controls'
+import { MoreLink, SearchField } from '../components/controls'
 import { guideUrl } from '../lib/browsing'
 import { Story, Motif, ArticleCard, EvMeter, Tag } from '../components/ui'
 import { PlayButton } from '../components/Player'
@@ -84,7 +84,7 @@ export default function Home() {
       <section key={slug} className={'pillar' + (n % 2 ? ' pillar--flip' : '')} style={{ ['--sc' as any]: t.color }}>
         <div className="spine"><span>{label}</span></div>
         <div>
-          <div className="sec-head"><h2>{t.question}</h2><Link to={`/topics/${slug}`}>All {label.toLowerCase()} →</Link></div>
+          <div className="sec-head"><h2>{t.question}</h2><MoreLink to={`/topics/${slug}`}>All {label}</MoreLink></div>
           <div className="sec-grid"><Story item={leadI} size="md" />{rest.map((i) => <Story key={i.u} item={i} size="sm" />)}</div>
         </div>
       </section>
@@ -130,12 +130,12 @@ export default function Home() {
       </div></section>
 
       <div className="wrap">
-        <div className="rail-head" style={{ marginTop: 24 }}>Latest from the blog <Link to="/blog">All articles →</Link></div>
+        <div className="rail-head" style={{ marginTop: 24 }}>Latest from the blog <MoreLink to="/blog">All articles</MoreLink></div>
         <div className="grid g2" style={{ marginTop: 4 }}>{latest.map((a) => <ArticleCard key={a.slug} slug={a.slug} />)}</div>
       </div>
 
       <div className="wrap">
-        <div className="rail-head" style={{ marginTop: 30 }}>Top Terms — Knowledge Base <Link to="/knowledge-base">All {E && Object.keys(E).length} entries →</Link></div>
+        <div className="rail-head" style={{ marginTop: 30 }}>Top Terms — Knowledge Base <MoreLink to="/knowledge-base">All {E && Object.keys(E).length} entries</MoreLink></div>
         <div className="explainers">
           {feat && (
             <Link className="explainer explainer--feature" to={`/knowledge/${feat.slug}`}>
@@ -162,7 +162,7 @@ export default function Home() {
         <div className="sec-head" style={{ marginBottom: 24 }}>
           <h2 style={{ color: '#fff' }}>From Instagram</h2>
           <p className="q" style={{ color: 'rgba(255,255,255,.5)' }}>Latest posts from @{instagram.account.handle} · {instagram.account.followers} followers</p>
-          <a href={instagram.account.url} rel="noopener" style={{ color: '#fff' }}>Follow on Instagram →</a>
+          <MoreLink href={instagram.account.url}>Follow on Instagram</MoreLink>
         </div>
         <div className="igrid">
           {instagramTop(4).map((p, i) => (
@@ -176,7 +176,7 @@ export default function Home() {
 
       <div className="wrap">
         <section className="sec" style={{ ['--sc' as any]: 'var(--indigo)', borderTop: 0 }}>
-          <div className="sec-head"><h2>Top Biohackers</h2><p className="q">The people shaping the field</p><Link to="/biohackers">All profiles →</Link></div>
+          <div className="sec-head"><h2>Top Biohackers</h2><p className="q">The people shaping the field</p><MoreLink to="/biohackers">All profiles</MoreLink></div>
           <div className="people" style={{ paddingBottom: 30 }}>
             {frontPeople.map((b) => (
               <Link key={b.slug} className="person" to={`/biohackers/${b.slug}`}>
@@ -188,7 +188,7 @@ export default function Home() {
         </section>
 
         <section className="sec" style={{ ['--sc' as any]: 'var(--teal)' }}>
-          <div className="sec-head"><h2>How-To</h2><p className="q">Step-by-step guides you can run this week</p><Link to="/knowledge-base?type=howto">All guides →</Link></div>
+          <div className="sec-head"><h2>How-To</h2><p className="q">Step-by-step guides you can run this week</p><MoreLink to="/knowledge-base?type=howto">All guides</MoreLink></div>
           <div className="howtos" style={{ paddingBottom: 30 }}>
             {howtos.slice(0, 4).map((h) => (
               <Link key={h.slug} className="howto" to={guideUrl(h.slug)}>
@@ -199,14 +199,14 @@ export default function Home() {
         </section>
 
         <section className="sec">
-          <div className="sec-head"><h2>Common questions</h2><p className="q">Straight answers to what people ask most</p><Link to="/faq">All FAQ →</Link></div>
+          <div className="sec-head"><h2>Common questions</h2><p className="q">Straight answers to what people ask most</p><MoreLink to="/faq">All FAQ</MoreLink></div>
           <div className="faqs" style={{ paddingBottom: 30 }}>
             {faqs.slice(0, 6).map((f, i) => <div key={i} className="faq-item"><p className="faq-q">{f.q}</p><p className="faq-a">{clip(f.a, 200)}</p></div>)}
           </div>
         </section>
 
         <section className="sec" style={{ ['--sc' as any]: 'var(--ink)' }}>
-          <div className="sec-head"><h2>Social</h2><p className="q">Connect with the community wherever you already are</p><Link to="/social">All platforms →</Link></div>
+          <div className="sec-head"><h2>Social</h2><p className="q">Connect with the community wherever you already are</p><MoreLink to="/social">All platforms</MoreLink></div>
           <div className="social" style={{ paddingBottom: 30 }}>
             {social.map((s) => (
               <a key={s.name} className="soc" href={s.url}><SocLogo name={s.name} /><b>{s.name}</b><i>{s.handle}</i><span>{s.blurb}</span></a>
