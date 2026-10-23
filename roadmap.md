@@ -19,3 +19,4 @@
 - [ ] Confirm the real Facebook page URL — /biohackersworld is assumed from the other profiles.
 - [x] Give the Social Media heading band the same padding and text sizes as Blog/Podcast, refitting the one-screen layout with grid spacing instead.
 - [x] Reduce the height of the six Social Media cards.
+- [x] Fix the Reddit icons so the Snoo reads correctly.
