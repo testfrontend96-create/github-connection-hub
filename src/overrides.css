@@ -138,5 +138,7 @@
 .on-dark .sec-head .section-cta:hover,
 .on-dark .section-cta:hover { color: var(--pulse); }
 
-/* First pillar section sits under the category card — no divider above it */
-#topics .pillar:first-of-type { border-top: 0; }
+/* Homepage: sections flow together without divider lines */
+.home .pillar,
+.home .sec,
+.home .fp-footer-note { border-top: 0; }

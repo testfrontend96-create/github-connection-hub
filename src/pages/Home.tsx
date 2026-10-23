@@ -98,7 +98,7 @@ export default function Home() {
   })()
 
   return (
-    <>
+    <div className="home">
       <section className="board on-dark"><div className="wrap">
         <div className="hub-masthead">
           <h1>Biohacking Hub</h1>
@@ -175,7 +175,7 @@ export default function Home() {
       </div></section>
 
       <div className="wrap">
-        <section className="sec" style={{ ['--sc' as any]: 'var(--indigo)', borderTop: 0 }}>
+        <section className="sec" style={{ ['--sc' as any]: 'var(--indigo)' }}>
           <div className="sec-head"><h2>Top Biohackers</h2><p className="q">The people shaping the field</p><MoreLink to="/biohackers">All profiles</MoreLink></div>
           <div className="people" style={{ paddingBottom: 30 }}>
             {frontPeople.map((b) => (
@@ -216,6 +216,6 @@ export default function Home() {
       </div>
 
       <div className="wrap"><p className="fp-footer-note">Placement on this page is driven by the knowledge graph: every item is tagged to pillars and entities, and each section gathers the newest content across all formats.</p></div>
-    </>
+    </div>
   )
 }
