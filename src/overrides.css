@@ -156,3 +156,9 @@
 .hub-masthead .content-search svg { color: rgba(255, 255, 255, .55); }
 .hub-masthead .content-search input { color: var(--white); }
 .hub-masthead .content-search input::placeholder { color: rgba(255, 255, 255, .45); }
+
+/* Section headings centered across the page */
+.home .sec-head { flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; }
+.home .sec-head .q { flex: none; max-width: 64ch; }
+.home .rail-head { justify-content: center; gap: 18px; text-align: center; }
+.home .pillar .sec-head { grid-column: 1 / -1; }
