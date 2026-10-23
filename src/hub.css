@@ -1657,7 +1657,7 @@ h1.prof-name{margin:0;font-size:clamp(2.4rem,5.2vw,4.4rem);color:#fff;text-wrap:
    the brand mark on a panel tinted from the same ramp as the
    topic bands, because we hold no genuine media for them.
    =========================================================== */
-.netgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 20px}
+.netgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 20px}
 @media(max-width:900px){.netgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.netgrid{grid-template-columns:minmax(0,1fr)}}
 /* The six platform cards are the whole point of this page, so it is laid out to
