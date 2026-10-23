@@ -37,11 +37,11 @@ export default function KnowledgeBase() {
         </div>
         <div className="content-filter-bar">
           <SearchField label="Filter the Knowledge Base" placeholder="Filter entries — try HRV, magnesium, fasting…" value={q} onChange={setQ} />
-          <div className="chip-row">
+          <div className="chip-row" role="group" aria-label="Entry types">
             <Button className={'chip' + (kind === 'all' ? ' is-active' : '')} aria-pressed={kind === 'all'} onClick={() => setKind('all')}>All types</Button>
             {KINDS.map((k) => <Button key={k} className={'chip' + (kind === k ? ' is-active' : '')} aria-pressed={kind === k} onClick={() => setKind(k)}>{k === 'howto' ? 'How To' : `${KIND_LABEL[k]}s`}</Button>)}
           </div>
-          <div className="chip-row">
+          <div className="chip-row knowledge-topic-filters" role="group" aria-label="Entry topics">
             <Button className={'chip' + (topic === 'all' ? ' is-active' : '')} aria-pressed={topic === 'all'} onClick={() => setTopic('all')}>All topics</Button>
             {topics.map((t) => <Button key={t.slug} className={'chip' + (topic === t.slug ? ' is-active' : '')} aria-pressed={topic === t.slug} onClick={() => setTopic(t.slug)}>{t.name}</Button>)}
           </div>
