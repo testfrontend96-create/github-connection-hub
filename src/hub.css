@@ -402,8 +402,8 @@ h3.display{font-size:clamp(1.4rem,2.4vw,2rem)}
 .ticker a{color:var(--ink);text-decoration:none;font-weight:500;border-bottom:1px solid var(--line)}
 .ticker a:hover{border-bottom-color:var(--green)}
 
-/* kickers */
-.kick{font-size:.64rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px}
+/* kickers — title case, so the tracking stays normal rather than caps-wide */
+.kick{font-size:.7rem;font-weight:700;letter-spacing:.01em;display:inline-flex;align-items:center;gap:6px}
 .kick::before{content:"";width:6px;height:6px;border-radius:1px;background:var(--green);transform:rotate(45deg)}
 .kick[data-k="article"]{color:var(--green-dim)}
 .kick[data-k="episode"]{color:var(--indigo)}.kick[data-k="episode"]::before{background:var(--indigo)}
