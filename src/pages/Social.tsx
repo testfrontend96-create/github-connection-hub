@@ -22,7 +22,7 @@ function NetArt({ name }: { name: string }) {
   return (
     <span className="net-art net-art--mark">
       <img className="net-logo" src="/assets/logo.svg" alt="" width={104} height={70} loading="lazy" />
-      <span className="net-watermark" aria-hidden="true"><NetIcon name={name} /></span>
+      <span className={`net-watermark net-watermark--${name.toLowerCase()}`} aria-hidden="true"><NetIcon name={name} /></span>
     </span>
   )
 }
