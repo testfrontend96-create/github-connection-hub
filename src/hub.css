@@ -1673,7 +1673,7 @@ h1.prof-name{margin:0;font-size:clamp(2.4rem,5.2vw,4.4rem);color:#fff;text-wrap:
   box-shadow:0 18px 38px -22px rgba(10,8,24,.45)}
 .net:focus-visible{outline:2px solid var(--sc);outline-offset:3px}
 
-.net-art{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:var(--void)}
+.net-art{position:relative;display:block;aspect-ratio:2.1;overflow:hidden;background:var(--void)}
 .net-art--mark{display:grid;place-items:center;
   background:
     radial-gradient(120% 140% at 15% 0%,var(--sc),transparent 62%),
@@ -1690,7 +1690,7 @@ h1.prof-name{margin:0;font-size:clamp(2.4rem,5.2vw,4.4rem);color:#fff;text-wrap:
 .net-art--posts{display:grid;grid-template-columns:1.55fr 1fr;grid-template-rows:1fr 1fr;gap:2px}
 .net-art--posts .net-tile:first-child{grid-row:1 / span 2}
 .net-tile{position:relative;overflow:hidden}
-.net-tile img{width:100%;height:100%;object-fit:cover;transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.net-tile img{width:100%;height:100%;object-fit:cover;object-position:bottom;transition:transform .35s cubic-bezier(.16,1,.3,1)}
 .net:hover .net-tile img{transform:scale(1.05)}
 .net-play{position:absolute;right:7px;top:7px;width:19px;height:19px;color:#fff;opacity:.92;
   filter:drop-shadow(0 1px 3px rgba(0,0,0,.6))}
@@ -1703,7 +1703,7 @@ h1.prof-name{margin:0;font-size:clamp(2.4rem,5.2vw,4.4rem);color:#fff;text-wrap:
 .net-glyph{display:grid;place-items:center;width:26px;height:26px;color:var(--sc);flex:none}
 .net-glyph svg{width:20px;height:20px}
 .net b{display:block;color:var(--ink);font-size:1.02rem;font-weight:800;letter-spacing:-.01em}
-.net i{display:block;font-style:normal;color:var(--sc);font-size:.8rem;font-weight:600;margin:3px 0 6px}
+.net i{display:block;font-style:normal;color:var(--sc);font-size:.8rem;font-weight:600;margin:2px 0 4px}
 .net-blurb{display:block;font-size:.86rem;color:var(--muted);line-height:1.5}
 .net-go{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:.8rem;font-weight:700;
   color:var(--ink)}
@@ -1760,11 +1760,11 @@ h1.prof-name{margin:0;font-size:clamp(2.4rem,5.2vw,4.4rem);color:#fff;text-wrap:
 }
 
 /* Social cards: platform name leads at the top, bigger; content sits below */
-.net-head{padding:12px 18px 10px;gap:11px}
+.net-head{padding:10px 18px 8px;gap:11px}
 .net-glyph{width:30px;height:30px}
 .net-glyph svg{width:24px;height:24px}
 .net b{font-size:1.4rem;letter-spacing:-.02em}
-.net-body{padding:12px 18px 16px}
+.net-body{padding:10px 18px 12px}
 
 /* profile: social icons live in the Professional card now (by the website) */
 .pro-social{display:flex;gap:8px;flex-wrap:wrap}
