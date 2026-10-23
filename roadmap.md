@@ -1,5 +1,5 @@
 # Page updates
-- [ ] Match all linked detail-page headers to the compact parent-page style, preserving content and controls.
+- [x] Match all linked detail-page headers to the compact parent-page style, preserving content and controls.
 - [x] Add compact homepage title and Hub search.
 - [x] Integrate How To into Knowledge Base and redirect old guide links.
 - [x] Add Blog category/search filters, compact heading, and topic tags.
