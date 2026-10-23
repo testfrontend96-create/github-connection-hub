@@ -5,3 +5,5 @@
 - [x] Verify searches, filters, guide links, and layouts.
 - [x] Remove the underline drawn under section heading rows.
 - [x] Soften the card border color shown on hover.
+- [x] Give the homepage search box the same glass treatment as the cards.
+- [ ] Center every section heading horizontally across the homepage.
