@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { Mention } from '../components/ui'
-import { IconSearch, IconClose, IconArrow } from '../components/icons'
+import { IconArrow } from '../components/icons'
+import { SearchField } from '../components/controls'
 import { faqs, entities, topics, T, E, KIND_LABEL } from '../lib/data'
 
 type Item = { q: string; a: string; topic: string; entities: string[]; href?: string; entity?: string }
@@ -32,14 +33,10 @@ export default function FAQ() {
 
   return (
     <>
-      <PageHead accent="#38389C" title="FAQ" lede="Answers to the questions people bring to the Hub most often. Select a question to read the answer." />
+      <PageHead compact accent="#38389C" title="FAQ" lede="Answers to the questions people bring to the Hub most often. Select a question to read the answer." />
       <section className="section faqx"><div className="wrap faqx-wrap">
         <div className="dir-bar faqx-bar">
-          <label className="dir-search">
-            <IconSearch />
-            <input type="search" placeholder={`Search ${items.length} questions`} autoComplete="off" spellCheck={false} value={q} onChange={(e) => setQ(e.target.value)} aria-label="Search the FAQ" />
-            {q && <button className="dir-clear" type="button" aria-label="Clear search" onClick={() => setQ('')}><IconClose /></button>}
-          </label>
+          <SearchField label="Search the FAQ" placeholder={`Search ${items.length} questions`} value={q} onChange={setQ} onClear={() => setQ('')} />
         </div>
         <p className="dir-count">Showing {needle ? shown.length : <>all <b>{items.length}</b></>} questions</p>
         <ol className="fq-list">

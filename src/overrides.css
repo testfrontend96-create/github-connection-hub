@@ -163,3 +163,24 @@
 .home .rail-head { flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; }
 .home .sec-head h2::before { display: none; }
 .home .pillar .sec-head { grid-column: 1 / -1; }
+
+/* Hub heading bands run up behind the header instead of stopping under it:
+   the band is pulled up under the fixed bar (padding keeps the copy where it
+   was), and the bar drops its fill while it still sits over that band. */
+#main > .page-head { margin-top: -155px; padding-top: 209px; }
+#main > .page-head.page-head--compact { padding-top: 179px; }
+#main > .home > .board { margin-top: -155px; padding-top: 167px; }
+.hub-nav.is-over-band .hub-nav-bar,
+.hub-nav.is-over-band .hub-nav-secondary,
+.hub-nav.is-over-band .hub-nav-sub-toggle {
+  background: rgba(255, 255, 255, .01);
+  backdrop-filter: blur(26px) saturate(170%);
+  -webkit-backdrop-filter: blur(26px) saturate(170%);
+  box-shadow: none;
+}
+
+/* The A–Z / Z–A control sits next to the shared search field, so it takes the
+   same box: same height, corner radius, border and fill. */
+.dir-bar .seg { height: 44px; padding: 4px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); transition: border-color .2s; }
+.dir-bar .seg:hover { border-color: #cfcdd8; }
+.dir-bar .seg button { border-radius: 6px; }

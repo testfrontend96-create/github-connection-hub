@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { Tag, Mention } from '../components/ui'
-import { Button } from '../components/controls'
+import { Button, SearchField } from '../components/controls'
 import { entities, howtos, topics, KIND_LABEL, clip, pretty } from '../lib/data'
 import { filterKnowledge } from '../lib/browsing'
 
@@ -28,20 +28,15 @@ export default function KnowledgeBase() {
 
   return (
     <>
-      <PageHead accent="#4243B0" title="Knowledge Base"
-        lede="Molecules, biomarkers, protocols, concepts and How To guides — connected to the topics, articles and episodes that reference them.">
-        <div style={{ maxWidth: 560, marginTop: 28 }}>
-          <div className="searchbox" style={{ margin: 0 }}>
-            <input type="search" placeholder="Filter entries — try HRV, magnesium, fasting…" aria-label="Filter the Knowledge Base" value={q} onChange={(e) => setQ(e.target.value)} />
-          </div>
-        </div>
-      </PageHead>
+      <PageHead compact accent="#4243B0" title="Knowledge Base"
+        lede="Molecules, biomarkers, protocols, concepts and How To guides — connected to the topics, articles and episodes that reference them." />
 
       <section className="section--tight" style={{ paddingTop: 40 }}><div className="wrap">
         <div className="stats knowledge-stats" style={{ marginBottom: 40 }}>
           {STAT_ORDER.map((k) => <div key={k} className="stat"><b>{counts[k]}</b><span>{k === 'howto' ? 'How To guides' : `${KIND_LABEL[k]}s`}</span></div>)}
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 14 }}>
+        <div className="content-filter-bar">
+          <SearchField label="Filter the Knowledge Base" placeholder="Filter entries — try HRV, magnesium, fasting…" value={q} onChange={setQ} />
           <div className="chip-row">
             <Button className={'chip' + (kind === 'all' ? ' is-active' : '')} aria-pressed={kind === 'all'} onClick={() => setKind('all')}>All types</Button>
             {KINDS.map((k) => <Button key={k} className={'chip' + (kind === k ? ' is-active' : '')} aria-pressed={kind === k} onClick={() => setKind(k)}>{k === 'howto' ? 'How To' : `${KIND_LABEL[k]}s`}</Button>)}
