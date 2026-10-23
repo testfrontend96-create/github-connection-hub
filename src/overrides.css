@@ -120,7 +120,7 @@
 @media (max-width: 600px) { .hub-masthead { align-items: stretch; flex-direction: column; gap: 12px; } .hub-masthead h1 { font-size: 1.5rem; } .hub-masthead form { width: 100%; } .page-head--compact h1.display { font-size: 2rem; } .knowledge-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .knowledge-stats .stat:last-child { grid-column: 1 / -1; } }
 
 /* Podcast */
-.card-thumb[data-k="episode"] { aspect-ratio: 1 / 1; }
+.card-thumb[data-k="episode"] { aspect-ratio: 16 / 9; }
 .ep-head { display: flex; gap: 24px; align-items: center; }
 .ep-head-cover { width: 148px; height: 148px; border-radius: 16px; flex: none; object-fit: cover; }
 .ep-head > div { min-width: 0; }
@@ -314,3 +314,11 @@ h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
 .home .sec-grid .story--md > .kick { display: flex; width: fit-content; }
 .home .card-thumb + .tag { display: table; margin-top: 0; }
 .home .ig-body { padding-top: var(--space-thumbnail-text); }
+
+/* Video thumbnails carry their own text: preserve the full 16:9 artwork. */
+.story .art[data-k="episode"],
+.sec-grid .story--sm .art[data-k="episode"] { aspect-ratio: 16 / 9; }
+.art[data-k="episode"] img,
+.card-thumb[data-k="episode"] img { object-fit: contain; }
+a:hover .art[data-k="episode"] img,
+.card:hover .card-thumb[data-k="episode"] img { transform: none; }
