@@ -272,3 +272,13 @@ h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
   background-image: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(84,82,198,.32), rgba(70,70,160,.12) 36%, transparent 66%);
   background-size: 100% 100%;
 }
+/* Section headings: no all-caps labels — design system H3 style everywhere */
+.rail-head, .sec-head h2, .promo h2, .prof-h, .prof-box h3, .side-block h4 {
+  text-transform: none; font-size: 28px; font-weight: 600; line-height: 1.15;
+  letter-spacing: -0.025em; color: var(--ink);
+}
+@media (min-width: 768px) { .rail-head, .sec-head h2, .promo h2, .prof-h, .prof-box h3, .side-block h4 { font-size: 34px; } }
+.promo h2, .on-dark .rail-head, .dark .rail-head, .on-dark .sec-head h2, .dark .sec-head h2 { color: var(--white); }
+.rail-head .section-cta, .sec-head .section-cta { font-size: 15px; letter-spacing: 0; }
+.pillar .sec-head h2 { font-size: 34px; }
+@media (max-width: 767px) { .pillar .sec-head h2 { font-size: 28px; } }
