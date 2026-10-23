@@ -1,5 +1,5 @@
 # Page updates
-- [ ] Separate Knowledge Base type/topic filters and shorten individual item heading bands.
+- [x] Separate Knowledge Base type/topic filters and shorten individual item heading bands.
 - [x] Match all linked detail-page headers to the compact parent-page style, preserving content and controls.
 - [x] Add compact homepage title and Hub search.
 - [x] Integrate How To into Knowledge Base and redirect old guide links.
