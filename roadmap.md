@@ -58,3 +58,4 @@
 - [x] How-to card meta line ("5 steps · 10 min") and pillar spine labels: no longer all caps.
 - [x] Social cards: platform mark beside the name, sized to the text.
 - [x] Feature grid: lead tile narrowed to 6 of 12 columns; the two tiles on its right widened to match.
+- [x] Category-label markers: the small diamond before "Blog · Oct 8, 2026" and every similar label is now a round dot.
