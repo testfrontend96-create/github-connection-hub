@@ -49,3 +49,4 @@
 
 - [x] Give unselected tabs a light periwinkle hover label and border instead of unreadable bone-on-white.
 - [x] Tighten the tab pills' padding and gaps on every page that shows a tab row.
+- [x] Enlarge the homepage blog tile\u2019s photo, fade it on a diagonal and dim it slightly.
