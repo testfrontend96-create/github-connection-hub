@@ -106,13 +106,18 @@
 .board > .wrap { position: relative; z-index: 1; }
 .board-glow, .board-atmos { position: absolute; pointer-events: none; z-index: 0; }
 .board-glow {
-  top: -14%; left: -12%; width: 62%; height: 74%;
+  /* Centred on the lead "Top-studied peptides" card: with a 62% x 74% box,
+     left = 28.6-31 and top = 42.7-37 put the light's centre on the card's
+     centre. The box ends above the band's pale fade, so the mask only has to
+     trim the blur bleed at the very bottom — trimming higher would cut the
+     light across the card and pull it up off the middle. */
+  top: 5.7%; left: -2.4%; width: 62%; height: 74%;
   background: radial-gradient(46% 46% at 50% 50%,
     color-mix(in srgb, var(--pulse) 16%, transparent), transparent 70%);
   filter: blur(40px);
   will-change: transform;
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
-  mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 78%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 78%, transparent 100%);
   animation: board-glow-drift 34s cubic-bezier(.45, 0, .55, 1) infinite;
 }
 .board-glow--b {
