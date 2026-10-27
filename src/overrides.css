@@ -489,8 +489,9 @@ a:hover .art[data-k="episode"] img,
     mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .4) 30%, var(--white) 62%);
   }
   .bento .tile--a::after {
-    background: linear-gradient(90deg, rgba(5, 4, 13, .9) 0%, rgba(5, 4, 13, .66) 42%, rgba(5, 4, 13, 0) 78%);
+    background: linear-gradient(90deg, rgba(5, 4, 13, .92) 0%, rgba(5, 4, 13, .8) 46%, rgba(5, 4, 13, .5) 68%, rgba(5, 4, 13, 0) 92%);
   }
+  .bento .tile--a .tile-photo img { filter: brightness(.72) saturate(.94); }
 }
 @media (prefers-reduced-motion: reduce) {
   .tile:not(.tile--photo), .card--dark, .report, .next-card, .ig,
