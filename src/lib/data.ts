@@ -18,6 +18,7 @@ import faqRaw from '../data/faq.json'
 import socialRaw from '../data/social.json'
 import instagramRaw from '../data/instagram.json'
 import { guideUrl } from './browsing'
+import { sentenceCase } from './sentenceCase'
 
 export type Any = Record<string, any>
 
@@ -44,6 +45,7 @@ export const episodes: Any[] = clone(episodesRaw)
 export const problems: Any[] = clone(problemsRaw)
 export const reports: Any[] = clone(reportsRaw)
 export const howtos: Any[] = clone(howtosRaw)
+for (const list of [articles, episodes, reports, howtos]) for (const x of list) x.title = sentenceCase(x.title)
 export const faqs: Any[] = clone(faqRaw)
 export const social: Any[] = clone(socialRaw)
 export const instagram: Any = clone(instagramRaw)
