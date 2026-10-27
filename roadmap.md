@@ -55,3 +55,4 @@
 - [x] Blog bento tile uses the user's supplied photo as-is (soft left edge only)
 - [x] Sticky Hub search bar: white clear (x) button.
 - [x] Profile cards: name above the role/description line (directory + homepage).
+- [x] How-to card meta line ("5 steps · 10 min") and pillar spine labels: no longer all caps.
