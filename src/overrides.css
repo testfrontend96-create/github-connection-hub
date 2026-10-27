@@ -83,20 +83,12 @@
    board's bottom padding, which is the empty space under the tiles.
    The stops follow an ease-in-out curve instead of a straight line, so the dark
    releases slowly, crosses the middle fastest and lands on white with no seam. */
+/* hard edge: the dark band ends sharply under the tiles, no fade */
 .board {
-  --board-fade: 170px;
-  padding-bottom: 190px;
-  background: linear-gradient(180deg,
-    var(--ink) calc(100% - var(--board-fade)),
-    color-mix(in srgb, var(--ink), var(--white) 5.5%) calc(100% - var(--board-fade) * 0.8571),
-    color-mix(in srgb, var(--ink), var(--white) 20%) calc(100% - var(--board-fade) * 0.7143),
-    color-mix(in srgb, var(--ink), var(--white) 39.5%) calc(100% - var(--board-fade) * 0.5714),
-    color-mix(in srgb, var(--ink), var(--white) 60.5%) calc(100% - var(--board-fade) * 0.4286),
-    color-mix(in srgb, var(--ink), var(--white) 80%) calc(100% - var(--board-fade) * 0.2857),
-    color-mix(in srgb, var(--ink), var(--white) 94.5%) calc(100% - var(--board-fade) * 0.1429),
-    var(--white) calc(100% - var(--board-fade) * 0));
+  padding-bottom: 48px;
+  background: var(--ink);
 }
-@media (max-width: 640px) { .board { --board-fade: 126px; padding-bottom: 148px; } }
+@media (max-width: 640px) { .board { padding-bottom: 32px; } }
 
 /* Hero board: the drifting hue light from the Biohackers Media Hub hero.
    Two soft accent glows wander slowly across the dark band behind the masthead,
@@ -519,9 +511,11 @@ a:hover .art[data-k="episode"] img,
   line-clamp: 2;
   overflow: hidden;
 }
+/* horizontal scrim over the artwork: deep on the copy side, clearing toward the right */
 .bento .tile--a::after, .bento .tile--b::after {
-  background: linear-gradient(90deg, rgba(5, 4, 13, .25) 0%, rgba(5, 4, 13, .08) 40%, rgba(5, 4, 13, 0) 60%);
+  background: linear-gradient(90deg, rgba(5, 4, 13, .96) 0%, rgba(5, 4, 13, .88) 32%, rgba(5, 4, 13, .55) 58%, rgba(5, 4, 13, .18) 82%, rgba(5, 4, 13, .05) 100%);
 }
+.bento .tile--a .tile-photo { width: 78%; }
 .bento .tile--a:hover, .bento .tile--b:hover {
   background: var(--content-glass-hover);
   border-color: var(--card-hover-dark);
@@ -543,8 +537,8 @@ a:hover .art[data-k="episode"] img,
 
 /* Feature grid: the lead tile hands a column to the two tiles on its right,
    so the pair beside it grows and the seams line up with the row below. */
-.bento .tile--lead { grid-column: 1 / 7; }
-.bento .tile--problems, .bento .tile--brief { grid-column: 7 / 13; }
+.bento .tile--lead { grid-column: 1 / 6; }
+.bento .tile--problems, .bento .tile--brief { grid-column: 6 / 13; }
 @media (max-width: 1020px) {
   .bento .tile--lead { grid-column: 1 / 13; }
   .bento .tile--problems { grid-column: 1 / 7; }
