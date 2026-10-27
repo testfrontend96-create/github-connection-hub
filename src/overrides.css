@@ -756,7 +756,7 @@ a:hover .art[data-k="episode"] img,
 /* Narrow cards: a card that is tall for its width can only hold the wide
    two-shot by cutting one speaker out, so below the reflow point the artwork
    lies flat across the top of the card instead and the copy runs beneath it. */
-@media (max-width: 1020px) {
+@media (max-width: 1080px) {
   .bento .tile--b { padding-top: 146px; }
   .bento .tile--b .tile-photo {
     left: 0; right: 0; top: 0; bottom: auto; width: auto; height: 132px;
