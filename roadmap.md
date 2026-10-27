@@ -62,3 +62,4 @@
 - [x] Hero band: add the Biohackers Media Hub's drifting hue light — two slow periwinkle/indigo glows plus a faint dotted atmosphere behind the masthead.
 - [x] Hero band: left periwinkle glow moved lower and left so its light centre sits on the lead "Top-studied peptides" card (mask now trims only the last stretch of the box).
 - [x] Hero band: third drifting hue added low across the band's bottom edge (teal, centred under the Blog/Podcast row), masked from the top so the band's bottom stays a sharp cut.
+- [x] How-To cards: the big numeral now reads "5 steps" (small grey label on its baseline); the line below keeps only the duration.
