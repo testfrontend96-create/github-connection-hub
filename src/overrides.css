@@ -110,7 +110,7 @@
      left edge and its mask trims the bottom, so the light reads up and to the
      right of the box; these offsets are tuned so the visible light lands on the
      card's centre (28.6% x, 42.7% y of the band). */
-  top: 18.8%; left: -8.3%; width: 62%; height: 74%;
+  top: 23.7%; left: -10.6%; width: 62%; height: 74%;
   background: radial-gradient(46% 46% at 50% 50%,
     color-mix(in srgb, var(--pulse) 16%, transparent), transparent 70%);
   filter: blur(40px);
