@@ -496,7 +496,14 @@ a:hover .art[data-k="episode"] img,
   box-shadow: var(--content-glass-shadow);
 }
 @media (max-width: 640px) {
-  .bento .tile--a h3, .bento .tile--a p { max-width: 100%; }
+  /* Phone: the copy keeps its own column and the photo panel is pushed into the
+     right edge, its left dissolve reaching zero well before the text. */
+  .bento .tile--a h3, .bento .tile--a p { max-width: 55%; }
+  .bento .tile--a .tile-photo {
+    width: 46%;
+    right: -8%;
+    --fade-left: linear-gradient(115deg, transparent 38%, rgba(0,0,0,.5) 55%, #000 76%);
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .tile:not(.tile--photo), .card--dark, .report, .next-card, .ig,
