@@ -40,3 +40,4 @@
 - [x] Remove all caps from the Instagram section labels.
 - [x] Restyle the guide page "In one paragraph" label as a tiny sentence-case heading overline.
 - [x] Centre each guide page fact row's label and value vertically inside its box.
+- [x] Show exactly two lines of copy, then an ellipsis, on the homepage bento article and podcast tiles.
