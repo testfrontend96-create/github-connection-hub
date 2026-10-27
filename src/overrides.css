@@ -456,10 +456,18 @@ a:hover .art[data-k="episode"] img,
   width: 50%;
   height: 112%;
   aspect-ratio: auto;
-  transform: rotate(-4deg);
+  transform: rotate(-3deg);
   transform-origin: 72% 100%;
-  -webkit-mask-image: linear-gradient(152deg, transparent 0%, rgba(0,0,0,.45) 24%, #000 52%, #000 95%, transparent 100%);
-  mask-image: linear-gradient(152deg, transparent 0%, rgba(0,0,0,.45) 24%, #000 52%, #000 95%, transparent 100%);
+  /* three fade axes, intersected: a vertical one so the whole top dissolves
+     and the base stays grounded, plus two tilted ones so the dissolve runs on
+     a slant left and right instead of a straight crop */
+  --fade-top: linear-gradient(to top, transparent 0%, rgba(0,0,0,.5) 16%, #000 44%, #000 96%, transparent 100%);
+  --fade-left: linear-gradient(115deg, transparent 4%, rgba(0,0,0,.55) 30%, #000 62%);
+  --fade-right: linear-gradient(245deg, transparent 0%, rgba(0,0,0,.5) 18%, #000 42%);
+  -webkit-mask-image: var(--fade-top), var(--fade-left), var(--fade-right);
+  mask-image: var(--fade-top), var(--fade-left), var(--fade-right);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
@@ -469,12 +477,6 @@ a:hover .art[data-k="episode"] img,
   object-fit: cover;
   object-position: center 62%;
   opacity: 1;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.55) 24%, #000 48%, #000 84%, transparent 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.55) 24%, #000 48%, #000 84%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
 }
 .bento .tile--a h3, .bento .tile--a p { max-width: 58%; }
 /* Bento article and episode tiles: the copy shows exactly two lines, then an ellipsis */
