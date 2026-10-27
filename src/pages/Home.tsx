@@ -98,7 +98,11 @@ export default function Home() {
 
   return (
     <div className="home">
-      <section className="board on-dark"><div className="wrap">
+      <section className="board on-dark">
+        <span className="board-glow" aria-hidden="true" />
+        <span className="board-glow board-glow--b" aria-hidden="true" />
+        <span className="board-atmos" aria-hidden="true" />
+        <div className="wrap">
         <div className="hub-masthead">
           <h1>Biohacking Hub</h1>
           <form role="search" onSubmit={event => { event.preventDefault(); if (query.trim()) navigate(`/search?q=${encodeURIComponent(query.trim())}`) }}>

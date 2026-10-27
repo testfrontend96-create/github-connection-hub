@@ -98,6 +98,47 @@
 }
 @media (max-width: 640px) { .board { --board-fade: 126px; padding-bottom: 148px; } }
 
+/* Hero board: the drifting hue light from the Biohackers Media Hub hero.
+   Two soft accent glows wander slowly across the dark band behind the masthead,
+   with a faint dotted atmosphere laid over them. Both are masked so the light
+   dies out before the band turns pale and never washes over the tiles. */
+.board { position: relative; overflow: clip; }
+.board > .wrap { position: relative; z-index: 1; }
+.board-glow, .board-atmos { position: absolute; pointer-events: none; z-index: 0; }
+.board-glow {
+  top: -14%; left: -12%; width: 62%; height: 74%;
+  background: radial-gradient(46% 46% at 50% 50%,
+    color-mix(in srgb, var(--pulse) 16%, transparent), transparent 70%);
+  filter: blur(40px);
+  will-change: transform;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 62%, transparent 100%);
+  animation: board-glow-drift 34s cubic-bezier(.45, 0, .55, 1) infinite;
+}
+.board-glow--b {
+  top: -6%; left: auto; right: -14%; width: 56%; height: 66%;
+  background: radial-gradient(46% 46% at 50% 50%,
+    color-mix(in srgb, var(--deep) 34%, transparent), transparent 70%);
+  filter: blur(52px);
+  animation: board-glow-drift 46s cubic-bezier(.45, 0, .55, 1) -12s infinite reverse;
+}
+.board-atmos {
+  inset: 0;
+  background-image:
+    radial-gradient(rgb(255 255 255 / .55) .6px, transparent .7px),
+    linear-gradient(to right, rgb(255 255 255 / .16) 1px, transparent 1px);
+  background-size: 26px 26px, 132px 100%;
+  opacity: .055;
+  -webkit-mask-image: radial-gradient(72% 60% at 50% 42%, #000 0%, transparent 78%);
+  mask-image: radial-gradient(72% 60% at 50% 42%, #000 0%, transparent 78%);
+}
+@keyframes board-glow-drift {
+  0% { transform: translate3d(-4%, 2%, 0) scale(1); }
+  50% { transform: translate3d(5%, -3%, 0) scale(1.12); }
+  100% { transform: translate3d(-4%, 2%, 0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) { .board-glow { animation: none; } }
+
 /* Section heading rows: no rule under the heading text. */
 .rail-head { border-bottom: 0; }
 
