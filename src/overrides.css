@@ -99,6 +99,8 @@
   --card-hover: #C3C5CB;
   --card-hover-accent: color-mix(in srgb, var(--pulse), var(--white) 34%);
   --card-hover-dark: rgba(255, 255, 255, .4);
+  /* Hover label for unselected tabs: a light tint of the primary periwinkle. */
+  --chip-hover-text: color-mix(in srgb, var(--pulse), var(--white) 18%);
 }
 .card:hover, .soc:hover, .erow:hover { border-color: var(--card-hover); }
 .howto:hover, .net:hover, .pcard-link:hover, .report:hover, .mention:hover,
@@ -130,7 +132,7 @@ a.tile:hover { border-color: rgba(255, 255, 255, .24); }
 /* Unselected tabs and chips borrow the search field's outline grey for both the border and the label;
    the chosen tab keeps its filled treatment and hover stays a solid step so the row reads as interactive. */
 .chip:not(.is-active):not(.chip--dark) { background: #ffffff; border: 1px solid var(--line); color: #6C7278; }
-.chip:not(.is-active):not(.chip--dark):hover { border-color: var(--deep); color: var(--bone); }
+.chip:not(.is-active):not(.chip--dark):hover { background: #ffffff; border-color: var(--card-hover-accent); color: var(--chip-hover-text); }
 /* Knowledge Base filters: entry types live in one designed menu, topics stay tabs on a single line */
 
 .kb-filter-row { display: flex; align-items: center; gap: 16px; }
