@@ -446,13 +446,15 @@ a:hover .art[data-k="episode"] img,
 .bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img { filter: none; transform: none; }
 .bento .tile--a .tile-photo {
   left: auto;
-  width: auto;
-  aspect-ratio: 1/1;
-  -webkit-mask-image: linear-gradient(90deg, transparent, var(--white) 35%);
-  mask-image: linear-gradient(90deg, transparent, var(--white) 35%);
+  width: 46%;
+  height: 100%;
+  aspect-ratio: auto;
+  /* the photo dissolves into the glass on a diagonal, not a straight vertical edge */
+  -webkit-mask-image: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, .42) 36%, var(--white) 70%);
+  mask-image: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, .42) 36%, var(--white) 70%);
 }
-.bento .tile--a .tile-photo img { object-fit: cover; opacity: 1; }
-.bento .tile--a h3, .bento .tile--a p { max-width: 60%; }
+.bento .tile--a .tile-photo img { object-fit: cover; opacity: 1; filter: brightness(.74) saturate(.94); }
+.bento .tile--a h3, .bento .tile--a p { max-width: 52%; }
 /* Bento article and episode tiles: the copy shows exactly two lines, then an ellipsis */
 .bento .tile--a p, .bento .tile--b p {
   display: -webkit-box;
