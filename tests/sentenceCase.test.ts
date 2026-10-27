@@ -6,6 +6,6 @@ describe('title sentence case', () => {
   })
   it('keeps names and acronyms capitalised', () => {
     expect(sentenceCase('Why Your Brain Shrinks At Night (And How To Fix It) | Dr. Patrick Porter')).toBe('Why your brain shrinks at night (and how to fix it) | Dr. Patrick Porter')
-    expect(sentenceCase('The NAD Crisis: Why Most Biohackers Are Deficient')).toBe('The NAD crisis: Why most Biohackers are deficient')
+    expect(sentenceCase('The NAD Crisis: Why Most Biohackers Are Deficient')).toBe('The NAD crisis: Why most biohackers are deficient')
   })
 })

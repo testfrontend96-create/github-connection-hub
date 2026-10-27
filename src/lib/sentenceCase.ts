@@ -2,7 +2,7 @@
 // "|", "." or a dash) capitalised; everything else lower case unless it is an
 // acronym, contains a digit, or is a known proper noun (people, places, brands).
 const PROPER = new Set([
-  'Dr.', 'Biohackers', 'World', 'Botox', 'Patrick', 'Porter', 'Nathan', 'S', 'Bryan', 'Mike', 'C-Roc',
+  'Dr.', 'Botox', 'Patrick', 'Porter', 'Nathan', 'S', 'Bryan', 'Mike', 'C-Roc',
   'Lea', 'Llovio', 'Alison', 'Fiori', 'Arabica', 'Cunegin', 'Natalia', 'Naila', 'I', 'Miami',
   'Europe', 'America', 'USA', 'Instagram', 'YouTube', 'Facebook', 'Reddit', 'Spotify', 'Apple',
 ])
