@@ -446,15 +446,24 @@ a:hover .art[data-k="episode"] img,
 .bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img { filter: none; transform: none; }
 .bento .tile--a .tile-photo {
   left: auto;
-  width: 46%;
+  width: 52%;
   height: 100%;
   aspect-ratio: auto;
-  /* the photo dissolves into the glass on a diagonal, not a straight vertical edge */
-  -webkit-mask-image: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, .42) 36%, var(--white) 70%);
-  mask-image: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, .42) 36%, var(--white) 70%);
+  /* the photo dissolves into the glass along a soft seam on its left edge; the
+     fade band stays narrow so the subject is never swallowed by it */
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .35) 14%, var(--white) 34%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .35) 14%, var(--white) 34%);
 }
-.bento .tile--a .tile-photo img { object-fit: cover; opacity: 1; filter: brightness(.74) saturate(.94); }
-.bento .tile--a h3, .bento .tile--a p { max-width: 52%; }
+/* the woman sits left-of-centre in the source photo, so the frame is nudged
+   right and zoomed slightly: she lands clear of the fade band */
+.bento .tile--a .tile-photo img {
+  object-fit: cover;
+  opacity: 1;
+  filter: brightness(.82) saturate(.96);
+  transform: scale(1.18);
+  transform-origin: 55% center;
+}
+.bento .tile--a h3, .bento .tile--a p { max-width: 48%; }
 /* Bento article and episode tiles: the copy shows exactly two lines, then an ellipsis */
 .bento .tile--a p, .bento .tile--b p {
   display: -webkit-box;
@@ -473,14 +482,14 @@ a:hover .art[data-k="episode"] img,
 }
 @media (max-width: 640px) {
   .bento .tile--a h3, .bento .tile--a p { max-width: 100%; }
-  /* the copy runs full width on a phone, so the photo gives it more room:
-     the diagonal fade reaches further across and the scrim leans the same way */
+  /* the copy runs full width on a phone, so the photo gives it more room: the
+     seam reaches further across and the scrim fades the same way, from the left */
   .bento .tile--a .tile-photo {
-    -webkit-mask-image: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, .35) 46%, var(--white) 84%);
-    mask-image: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, .35) 46%, var(--white) 84%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .4) 30%, var(--white) 62%);
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .4) 30%, var(--white) 62%);
   }
   .bento .tile--a::after {
-    background: linear-gradient(115deg, rgba(5, 4, 13, .9) 0%, rgba(5, 4, 13, .66) 42%, rgba(5, 4, 13, 0) 78%);
+    background: linear-gradient(90deg, rgba(5, 4, 13, .9) 0%, rgba(5, 4, 13, .66) 42%, rgba(5, 4, 13, 0) 78%);
   }
 }
 @media (prefers-reduced-motion: reduce) {
