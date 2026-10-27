@@ -530,3 +530,6 @@ a:hover .art[data-k="episode"] img,
 .home .soc b { font-size: 18px; line-height: 1.35; font-weight: 600; }
 .home .soc i { font-size: 13px; line-height: 1.4; }
 .home .howto .n { font-size: 28px; font-weight: 600; letter-spacing: -0.025em; }
+
+/* Instagram band labels: no all caps */
+.igband .ig-kind, .igband .ig-date { text-transform: none; letter-spacing: 0; font-size: 13px; font-weight: 500; }

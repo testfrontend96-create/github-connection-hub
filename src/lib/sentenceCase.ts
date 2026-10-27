@@ -20,6 +20,7 @@ export function sentenceCase(title: string): string {
     const bare = core.replace(/[.'’]+$/, '')
     const keep = PROPER.has(core) || PROPER.has(bare) || /\d/.test(core) || (bare.length > 1 && bare === bare.toUpperCase() && /\p{L}/u.test(bare))
     if (!keep && core) out = core.toLowerCase()
+    else if (/\d/.test(core)) out = core.replace(/-(\p{Lu})/gu, (_, c) => "-" + c.toLowerCase())
     if (start && out) out = out[0].toUpperCase() + out.slice(1)
     if (core || pre.match(/\p{L}/u)) start = false
     if (BREAK.test(tok) || /^[|—–]$/.test(tok)) start = true
