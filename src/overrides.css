@@ -742,11 +742,12 @@ a:hover .art[data-k="episode"] img,
   z-index: 0;
   background: linear-gradient(90deg, rgba(5,4,13,.94) 0%, rgba(5,4,13,.82) 30%, rgba(5,4,13,.5) 55%, rgba(5,4,13,.15) 80%, rgba(5,4,13,0) 100%);
 }
-/* The fade has to be fully gone before it reaches either speaker, so it ends on
-   the artwork's left edge (42%) instead of running over the picture. */
+/* The artwork's own fade carries the left speaker, so the scrim only has to hold
+   the copy column: it stays deep to the right edge of the text, then lifts off
+   completely before the brighter part of the picture begins. */
 .bento .tile--b::after {
   z-index: 0;
-  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 18%, rgba(5,4,13,.5) 30%, rgba(5,4,13,0) 42%);
+  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.94) 24%, rgba(5,4,13,.78) 33%, rgba(5,4,13,.4) 42%, rgba(5,4,13,.12) 48%, rgba(5,4,13,0) 54%);
 }
 /* the copy keeps the column the artwork leaves it; the episode's details stack
    as who / how long + when so nothing orphans onto its own line */
