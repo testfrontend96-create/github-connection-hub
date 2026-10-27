@@ -1,4 +1,5 @@
 # Page updates
+- [x] Match the Sales glass effect on Start here and suitable shared card surfaces, preserving photos and legibility.
 - [x] Separate Knowledge Base type/topic filters and shorten individual item heading bands.
 - [x] Match all linked detail-page headers to the compact parent-page style, preserving content and controls.
 - [x] Add compact homepage title and Hub search.

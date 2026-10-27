@@ -339,3 +339,42 @@ h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
 .card-thumb[data-k="episode"] img { object-fit: contain; }
 a:hover .art[data-k="episode"] img,
 .card:hover .card-thumb[data-k="episode"] img { transform: none; }
+
+/* Sales content glass, shared across suitable Hub card surfaces. */
+:root {
+  --content-glass-fill: rgb(255 255 255 / .06);
+  --content-glass-hover: rgb(255 255 255 / .08);
+  --content-glass-border: rgb(255 255 255 / .08);
+  --content-glass-shadow: 0 20px 60px -20px rgba(0, 0, 0, .8);
+  --content-glass-light: color-mix(in srgb, var(--white), transparent 20%);
+  --content-glass-light-hover: color-mix(in srgb, var(--white), transparent 8%);
+}
+.tile:not(.tile--photo), .card--dark, .report, .next-card, .ig,
+.hub-masthead .content-search {
+  background: var(--content-glass-fill);
+  border-color: var(--content-glass-border);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, border-color 200ms ease;
+}
+.tile:not(.tile--photo):hover, .card--dark:hover, .report:hover,
+.next-card:hover, .ig:hover {
+  background: var(--content-glass-hover);
+  border-color: var(--card-hover-dark);
+  box-shadow: var(--content-glass-shadow);
+}
+.hub-masthead .content-search:hover,
+.hub-masthead .content-search:focus-within { background: var(--content-glass-hover); }
+.card:not(.card--dark), .howto, .soc, .explainer:not(.explainer--feature), .pcard-link {
+  background: var(--content-glass-light);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.card:not(.card--dark):hover, .howto:hover, .soc:hover,
+.explainer:not(.explainer--feature):hover, .pcard-link:hover {
+  background: var(--content-glass-light-hover);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tile:not(.tile--photo), .card--dark, .report, .next-card, .ig,
+  .hub-masthead .content-search { transition: none; }
+}
