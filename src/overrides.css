@@ -457,10 +457,10 @@ a:hover .art[data-k="episode"] img,
   aspect-ratio: auto;
   transform: rotate(-3deg);
   transform-origin: 72% 100%;
-  /* three fade axes, intersected: a vertical one so the whole top dissolves
-     and the base stays grounded, plus two tilted ones so the dissolve runs on
-     a slant left and right instead of a straight crop */
-  --fade-top: linear-gradient(to top, transparent 0%, rgba(0,0,0,.5) 16%, #000 44%, #000 96%, transparent 100%);
+  /* three fade axes, intersected: a vertical one that keeps the base solid and
+     dissolves the top, plus two tilted ones so the dissolve runs on a slant
+     left and right instead of a straight crop */
+  --fade-top: linear-gradient(to top, #000 0%, #000 44%, rgba(0,0,0,.55) 70%, transparent 86%);
   --fade-left: linear-gradient(115deg, transparent 4%, rgba(0,0,0,.55) 30%, #000 62%);
   --fade-right: linear-gradient(245deg, transparent 0%, rgba(0,0,0,.5) 18%, #000 42%);
   -webkit-mask-image: var(--fade-top), var(--fade-left), var(--fade-right);
