@@ -455,7 +455,7 @@ a:hover .art[data-k="episode"] img,
   width: 50%;
   height: 112%;
   aspect-ratio: auto;
-  transform: rotate(-3deg);
+  transform: rotate(-5deg);
   transform-origin: 72% 100%;
   /* three fade axes, intersected. The vertical one keeps the base solid and
      dissolves the top. The two tilted ones are tuned to hit zero exactly at the
