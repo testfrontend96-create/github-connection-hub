@@ -90,68 +90,28 @@
 }
 @media (max-width: 640px) { .board { padding-bottom: 32px; } }
 
-/* Hero board: the drifting hue light from the Biohackers Media Hub hero.
-   Two soft accent glows wander slowly across the dark band behind the masthead,
-   with a faint dotted atmosphere laid over them. Both are masked so the light
-   dies out before the band turns pale and never washes over the tiles. */
-.board { position: relative; overflow: clip; }
-.board > .wrap { position: relative; z-index: 1; }
-.board-glow, .board-atmos { position: absolute; pointer-events: none; z-index: 0; }
-.board-glow {
-  /* Centred on the lead "Top-studied peptides" card: with a 62% x 74% box,
-     left = 28.6-31 and top = 42.7-37 put the light's centre on the card's
-     centre. The box ends above the band's pale fade, so the mask only has to
-     trim the blur bleed at the very bottom — trimming higher would cut the
-     light across the card and pull it up off the middle. */
-  top: 5.7%; left: -2.4%; width: 62%; height: 74%;
-  background: radial-gradient(46% 46% at 50% 50%,
-    color-mix(in srgb, var(--pulse) 16%, transparent), transparent 70%);
-  filter: blur(40px);
-  will-change: transform;
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 78%, transparent 100%);
-  mask-image: linear-gradient(180deg, #000 0%, #000 78%, transparent 100%);
-  animation: board-glow-drift 34s cubic-bezier(.45, 0, .55, 1) infinite;
+/* Shared Hub band wash and pointer halo: homepage and directory headers. */
+:root {
+  --hub-hue-accent: #4243B0;
+  --hub-hue-wash: radial-gradient(120% 150% at 4% -10%, var(--sc), transparent 58%), radial-gradient(85% 130% at 100% 115%, var(--pulse), transparent 55%);
+  --hub-hue-halo: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(84, 82, 198, .32), rgba(70, 70, 160, .12) 36%, transparent 66%);
+  --hub-hue-mask: radial-gradient(circle 300px at var(--mx, 50%) var(--my, 50%), var(--white) 0%, color-mix(in srgb, var(--white) 55%, transparent) 42%, transparent 72%);
 }
-.board-glow--b {
-  top: -6%; left: auto; right: -14%; width: 56%; height: 66%;
-  background: radial-gradient(46% 46% at 50% 50%,
-    color-mix(in srgb, var(--deep) 34%, transparent), transparent 70%);
-  filter: blur(52px);
-  animation: board-glow-drift 46s cubic-bezier(.45, 0, .55, 1) -12s infinite reverse;
+.board.hub-hue { --sc: var(--hub-hue-accent); position: relative; overflow: clip; isolation: isolate; }
+.hub-hue > .wrap { position: relative; z-index: 2; }
+.hub-hue::before {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  pointer-events: none; opacity: .42; background: var(--hub-hue-wash);
 }
-/* Third hue: the site's original teal (hub.css palette comment), held in a
-   local token because the --teal token itself was remapped to grey in the
-   monochrome layer. It sits low, centred under the Blog/Podcast row, so the
-   band reads as a cool triad: periwinkle on the lead card, deep indigo in the
-   top-right corner, teal rising from the bottom edge. Masked from the top only
-   — the band's bottom is a hard edge, and overflow:clip cuts this glow on the
-   same line as the band, so the cut reads as intentional. */
-.board { --board-hue-teal: #12A6B2; }
-.board-glow--c {
-  top: 62%; left: 34%; right: auto; width: 60%; height: 56%;
-  background: radial-gradient(46% 46% at 50% 50%,
-    color-mix(in srgb, var(--board-hue-teal) 44%, transparent), transparent 70%);
-  filter: blur(44px);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 42%, #000 100%);
-  mask-image: linear-gradient(180deg, transparent 0%, #000 42%, #000 100%);
-  animation: board-glow-drift 40s cubic-bezier(.45, 0, .55, 1) -6s infinite;
+.hub-hue::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  opacity: 0; transition: opacity .34s ease;
+  background-image: var(--hub-hue-halo); background-size: 100% 100%;
+  -webkit-mask-image: var(--hub-hue-mask); mask-image: var(--hub-hue-mask);
 }
-.board-atmos {
-  inset: 0;
-  background-image:
-    radial-gradient(rgb(255 255 255 / .55) .6px, transparent .7px),
-    linear-gradient(to right, rgb(255 255 255 / .16) 1px, transparent 1px);
-  background-size: 26px 26px, 132px 100%;
-  opacity: .055;
-  -webkit-mask-image: radial-gradient(72% 60% at 50% 42%, #000 0%, transparent 78%);
-  mask-image: radial-gradient(72% 60% at 50% 42%, #000 0%, transparent 78%);
-}
-@keyframes board-glow-drift {
-  0% { transform: translate3d(-4%, 2%, 0) scale(1); }
-  50% { transform: translate3d(5%, -3%, 0) scale(1.12); }
-  100% { transform: translate3d(-4%, 2%, 0) scale(1); }
-}
-@media (prefers-reduced-motion: reduce) { .board-glow { animation: none; } }
+.hub-hue.is-lit::after { opacity: 1; }
+@media (hover: none) { .hub-hue::after { display: none; } }
+@media (prefers-reduced-motion: reduce) { .hub-hue::after { transition: none; } }
 
 /* Section heading rows: no rule under the heading text. */
 .rail-head { border-bottom: 0; }
@@ -413,11 +373,6 @@ h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
 /* Content directly under a heading band starts close to it */
 .page-head--compact + .section, .page-head--compact + * .section:first-child { padding-top: 40px; }
 .blog-listing { padding-top: 0; }
-/* Heading bands: cursor hue only, no grid lines */
-.page-head::after {
-  background-image: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(84,82,198,.32), rgba(70,70,160,.12) 36%, transparent 66%);
-  background-size: 100% 100%;
-}
 /* Section headings: no all-caps labels — design system H3 style everywhere */
 .rail-head, .sec-head h2, .promo h2, .prof-h, .prof-box h3, .side-block h4 {
   text-transform: none; font-size: 28px; font-weight: 600; line-height: 1.15;
