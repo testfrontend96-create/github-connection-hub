@@ -220,7 +220,7 @@ export default function Home() {
           <div className="sec-head"><h2>Social</h2><p className="q">Connect with the community wherever you already are</p><MoreLink to="/social">All platforms</MoreLink></div>
           <div className="social" style={{ paddingBottom: 30 }}>
             {social.map((s) => (
-              <a key={s.name} className="soc" href={s.url}><SocLogo name={s.name} /><b>{s.name}</b><i>{s.handle}</i><span>{s.blurb}</span></a>
+              <a key={s.name} className="soc" href={s.url}><span className="soc-head"><SocLogo name={s.name} /><b>{s.name}</b></span><i>{s.handle}</i><span>{s.blurb}</span></a>
             ))}
           </div>
         </section>

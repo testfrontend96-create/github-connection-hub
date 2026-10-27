@@ -56,3 +56,4 @@
 - [x] Sticky Hub search bar: white clear (x) button.
 - [x] Profile cards: name above the role/description line (directory + homepage).
 - [x] How-to card meta line ("5 steps · 10 min") and pillar spine labels: no longer all caps.
+- [x] Social cards: platform mark beside the name, sized to the text.
