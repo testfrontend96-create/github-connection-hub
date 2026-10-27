@@ -1,5 +1,6 @@
 // Shared presentational primitives, ported from build.py render helpers so the
 // existing hub.css classes style them unchanged.
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Any, E, T, A, EP, KIND_LABEL, clip, pretty } from '../lib/data'
 import { PlayButton } from './Player'
@@ -105,7 +106,8 @@ export function EntityCard({ slug, dark = false }: { slug: string; dark?: boolea
 }
 
 export function PersonPhoto({ b, cls, eager = false }: { b: Any; cls: string; eager?: boolean }) {
-  if (b.image) return <span className={cls}><img src={b.image} alt="" {...(eager ? {} : { loading: 'lazy' as const })} decoding="async" /></span>
+  const [broken, setBroken] = useState(false)
+  if (b.image && !broken) return <span className={cls}><img src={b.image} alt="" {...(eager ? {} : { loading: 'lazy' as const })} decoding="async" onError={() => setBroken(true)} /></span>
   return <span className={`${cls} ${cls}--none`} aria-hidden="true"><b>{initials(b.name)}</b></span>
 }
 

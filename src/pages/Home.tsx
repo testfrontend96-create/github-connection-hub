@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { MoreLink, SearchField } from '../components/controls'
 import { guideUrl } from '../lib/browsing'
-import { Story, Motif, ArticleCard, EvMeter, Tag } from '../components/ui'
+import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../components/ui'
 import { PlayButton } from '../components/Player'
 import { SocLogo } from '../components/social'
 import { IconArrow } from '../components/icons'
@@ -92,7 +92,7 @@ export default function Home() {
   const frontPeople = (() => {
     const famous = hackers.filter((b) => !b.speaker && b.image).slice(0, 3)
     const miami = hackers.filter((b) => (b.events || []).includes('miami-2027'))
-    return [...famous, ...miami].slice(0, 5)
+    return [...famous, ...miami].slice(0, 4)
   })()
 
   return (
@@ -175,13 +175,25 @@ export default function Home() {
       <div className="wrap">
         <section className="sec" style={{ ['--sc' as any]: 'var(--indigo)' }}>
           <div className="sec-head"><h2>Top Biohackers</h2><p className="q">The people shaping the field</p><MoreLink to="/biohackers">All profiles</MoreLink></div>
-          <div className="people" style={{ paddingBottom: 30 }}>
-            {frontPeople.map((b) => (
-              <Link key={b.slug} className="person" to={`/biohackers/${b.slug}`}>
-                {b.image ? <span className="av"><img src={b.image} alt="" loading="lazy" decoding="async" /></span> : <span className="av">{b.name.replace(/,/g, '').split(/\s+/).slice(0, 2).map((w: string) => w[0]).join('')}</span>}
-                <b>{b.name}</b><span>{clip(b.title, 52)}</span>
-              </Link>
-            ))}
+          <div className="pgrid" style={{ paddingBottom: 30 }}>
+            {frontPeople.map((b) => {
+              const focus = (b.focus || []).filter((x: string) => x in E)
+              return (
+                <article key={b.slug} className="pcard">
+                  <Link className="pcard-link" to={`/biohackers/${b.slug}`}>
+                    <span className="pcard-media">
+                      <PersonPhoto b={b} cls="pcard-photo" />
+                      <span className="pcard-more">
+                        <span className="pcard-summary">{clip(b.known || b.summary, 190)}</span>
+                        {focus.length > 0 && <span className="pcard-focus">{focus.map((x: string) => <span key={x}>{E[x].name}</span>)}</span>}
+                        <span className="pcard-cta">View full profile<IconArrow /></span>
+                      </span>
+                    </span>
+                    <span className="pcard-body"><span className="pcard-title">{b.title}</span><h3 className="pcard-name">{b.name}</h3></span>
+                  </Link>
+                </article>
+              )
+            })}
           </div>
         </section>
 
