@@ -531,7 +531,10 @@ h3.display{font-size:clamp(1.4rem,2.4vw,2rem)}
 @media(max-width:520px){.howtos{grid-template-columns:1fr}}
 .howto{text-decoration:none;display:block;border:1px solid var(--line);border-radius:12px;padding:18px;color:var(--body);transition:.15s}
 .howto:hover{border-color:var(--teal)}
-.howto .n{font-size:1.8rem;font-weight:900;color:var(--teal);letter-spacing:-.05em;line-height:1}
+.howto .n{font-size:1.8rem;font-weight:900;color:var(--teal);letter-spacing:-.05em;line-height:1;display:inline-flex;align-items:baseline;gap:6px}
+/* the word that gives the big number its context — kept small and grey so the
+   numeral stays the loudest thing on the card */
+.howto .n small{font-size:.72rem;font-weight:700;letter-spacing:-.01em;color:var(--muted)}
 .howto h3{color:var(--ink);font-size:1rem;margin:10px 0 6px;letter-spacing:-.02em;line-height:1.3;font-weight:700}
 .howto p{font-size:.82rem;color:var(--muted);margin:0}
 .howto .meta{font-size:.7rem;color:var(--muted);margin-top:12px;letter-spacing:-.01em;font-weight:600}
