@@ -6,6 +6,7 @@ import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../compone
 import { SocLogo } from '../components/social'
 import { IconArrow } from '../components/icons'
 import blogTilePhoto from '../assets/home/blog-tile.png.asset.json'
+import podcastTilePhoto from '../assets/home/podcast-tile.png.asset.json'
 import {
   feed, problems, FRONT_PILLARS, T, E, KIND_LABEL, articles, howtos, faqs, social,
   hackers, instagram, instagramTop, clip, pretty,
@@ -127,17 +128,17 @@ export default function Home() {
             <ol className="brief">{brief.map((i) => <li key={i.u}><Link to={i.u}>{i.t}</Link><small>{i.kick} · {pretty(i.date)}</small></li>)}</ol>
           </div>
           <Tile item={{ ...tileA, img: blogTilePhoto.url }} cls="tile--a" />
-          <Tile item={tileB} cls="tile--b" />
+          <Tile item={{ ...tileB, img: podcastTilePhoto.url }} cls="tile--b" />
         </div>
       </div></section>
 
       <div className="wrap">
-        <div className="rail-head" style={{ marginTop: 24 }}>Latest from the blog <MoreLink to="/blog">All articles</MoreLink></div>
+        <div className="rail-head" style={{ marginTop: 88 }}>Latest from the blog <MoreLink to="/blog">All articles</MoreLink></div>
         <div className="grid g2" style={{ marginTop: 4 }}>{latest.map((a) => <ArticleCard key={a.slug} slug={a.slug} />)}</div>
       </div>
 
       <div className="wrap">
-        <div className="rail-head" style={{ marginTop: 30 }}>Top Terms — Knowledge Base <MoreLink to="/knowledge-base">All {E && Object.keys(E).length} entries</MoreLink></div>
+        <div className="rail-head" style={{ marginTop: 30 }}>Top terms — knowledge base <MoreLink to="/knowledge-base">All {E && Object.keys(E).length} entries</MoreLink></div>
         <div className="explainers">
           {feat && (
             <Link className="explainer explainer--feature" to={`/knowledge/${feat.slug}`}>
@@ -178,7 +179,7 @@ export default function Home() {
 
       <div className="wrap">
         <section className="sec" style={{ ['--sc' as any]: 'var(--indigo)' }}>
-          <div className="sec-head"><h2>Top Biohackers</h2><p className="q">The people shaping the field</p><MoreLink to="/biohackers">All profiles</MoreLink></div>
+          <div className="sec-head"><h2>Top biohackers</h2><p className="q">The people shaping the field</p><MoreLink to="/biohackers">All profiles</MoreLink></div>
           <div className="pgrid" style={{ paddingBottom: 30 }}>
             {frontPeople.map((b) => {
               const focus = (b.focus || []).filter((x: string) => x in E)
@@ -202,7 +203,7 @@ export default function Home() {
         </section>
 
         <section className="sec" style={{ ['--sc' as any]: 'var(--teal)' }}>
-          <div className="sec-head"><h2>How-To</h2><p className="q">Step-by-step guides you can run this week</p><MoreLink to="/knowledge-base?type=howto">All guides</MoreLink></div>
+          <div className="sec-head"><h2>How-to</h2><p className="q">Step-by-step guides you can run this week</p><MoreLink to="/knowledge-base?type=howto">All guides</MoreLink></div>
           <div className="howtos" style={{ paddingBottom: 30 }}>
             {howtos.slice(0, 4).map((h) => (
               <Link key={h.slug} className="howto" to={guideUrl(h.slug)}>
