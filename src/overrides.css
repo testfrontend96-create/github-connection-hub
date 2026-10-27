@@ -93,6 +93,8 @@
 /* Shared Hub band wash and pointer halo: homepage and directory headers. */
 :root {
   --hub-hue-accent: #4243B0;
+}
+.hub-hue {
   --hub-hue-wash: radial-gradient(120% 150% at 4% -10%, var(--sc), transparent 58%), radial-gradient(85% 130% at 100% 115%, var(--pulse), transparent 55%);
   --hub-hue-halo: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(84, 82, 198, .32), rgba(70, 70, 160, .12) 36%, transparent 66%);
   --hub-hue-mask: radial-gradient(circle 300px at var(--mx, 50%) var(--my, 50%), var(--white) 0%, color-mix(in srgb, var(--white) 55%, transparent) 42%, transparent 72%);
