@@ -33,7 +33,16 @@ export default function KnowledgeBase() {
 
       <section className="section--tight" style={{ paddingTop: 40 }}><div className="wrap">
         <div className="stats knowledge-stats" style={{ marginBottom: 40 }}>
-          {STAT_ORDER.map((k) => <div key={k} className="stat"><b>{counts[k]}</b><span>{k === 'howto' ? 'How To guides' : `${KIND_LABEL[k]}s`}</span></div>)}
+          {STAT_ORDER.map((k) => {
+            const label = k === 'howto' ? 'How To guides' : `${KIND_LABEL[k]}s`
+            return <div key={k} className="stat">
+              <span>{label}</span>
+              <b>{counts[k]}</b>
+              <Button className="knowledge-stat-action" aria-label={`Show ${label}`} title={`Show ${label}`} onClick={() => setKind(k)}>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+              </Button>
+            </div>
+          })}
         </div>
         <div className="content-filter-bar">
           <SearchField label="Filter the Knowledge Base" placeholder="Filter entries — try HRV, magnesium, fasting…" value={q} onChange={setQ} />

@@ -404,3 +404,78 @@ a:hover .art[data-k="episode"] img,
   .tile:not(.tile--photo), .card--dark, .report, .next-card, .ig,
   .hub-masthead .content-search { transition: none; }
 }
+
+/* Knowledge summary: Sales conference light cards, scoped to this directory. */
+:root {
+  --knowledge-card-fill: #ffffff;
+  --knowledge-card-line: rgb(0 0 0 / .07);
+  --knowledge-card-label: rgb(0 0 0 / .45);
+  --knowledge-card-text: #1d1d1f;
+  --knowledge-action-fill: rgb(0 0 0 / .06);
+  --knowledge-action-text: rgb(0 0 0 / .6);
+  --knowledge-card-radius: 28px;
+}
+.knowledge-stats.stats {
+  gap: 16px;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+}
+.knowledge-stats .stat {
+  position: relative;
+  min-height: 220px;
+  padding: 28px 24px 72px;
+  text-align: left;
+  background: var(--knowledge-card-fill);
+  border: 1px solid var(--knowledge-card-line);
+  border-radius: var(--knowledge-card-radius);
+  transition: border-color 600ms ease;
+}
+.knowledge-stats .stat:hover { border-color: var(--card-hover); }
+.knowledge-stats .stat span {
+  margin: 0;
+  color: var(--knowledge-card-label);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.knowledge-stats .stat b {
+  margin-top: 12px;
+  color: var(--knowledge-card-text);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+}
+.knowledge-stat-action {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--knowledge-action-fill);
+  color: var(--knowledge-action-text);
+  cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+.knowledge-stat-action:hover { background: var(--deep); color: var(--white); }
+.knowledge-stat-action:focus-visible { outline: 2px solid var(--deep); outline-offset: 3px; }
+@media (max-width: 900px) {
+  .knowledge-stats.stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .knowledge-stats .stat:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .knowledge-stats.stats { gap: 12px; }
+  .knowledge-stats .stat { padding: 20px 16px 64px; min-height: 180px; }
+  .knowledge-stats .stat b { font-size: 42px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .knowledge-stats .stat, .knowledge-stat-action { transition: none; }
+}
