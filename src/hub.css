@@ -534,7 +534,7 @@ h3.display{font-size:clamp(1.4rem,2.4vw,2rem)}
 .howto .n{font-size:1.8rem;font-weight:900;color:var(--teal);letter-spacing:-.05em;line-height:1}
 .howto h3{color:var(--ink);font-size:1rem;margin:10px 0 6px;letter-spacing:-.02em;line-height:1.3;font-weight:700}
 .howto p{font-size:.82rem;color:var(--muted);margin:0}
-.howto .meta{font-size:.7rem;color:var(--muted);margin-top:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.howto .meta{font-size:.7rem;color:var(--muted);margin-top:12px;letter-spacing:-.01em;font-weight:600}
 
 /* faq two-column */
 .faq2{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
@@ -654,7 +654,7 @@ a.tile:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.055)
 .spine::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:3px;background:var(--sc)}
 .spine span{
   position:absolute;left:14px;top:0;writing-mode:vertical-rl;transform:rotate(180deg);
-  font-weight:900;text-transform:uppercase;letter-spacing:.02em;font-size:1.05rem;color:var(--sc);white-space:nowrap;
+  font-weight:900;letter-spacing:0;font-size:1.05rem;color:var(--sc);white-space:nowrap;
 }
 .pillar .sec-head{margin-bottom:18px}
 .pillar .sec-head h2::before{display:none}
