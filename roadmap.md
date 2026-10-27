@@ -50,3 +50,4 @@
 - [x] Give unselected tabs a light periwinkle hover label and border instead of unreadable bone-on-white.
 - [x] Tighten the tab pills' padding and gaps on every page that shows a tab row.
 - [x] Enlarge the homepage blog tile's photo, fade it on a diagonal and dim it slightly.
+- [x] Re-cut the homepage blog tile: photo on the right with a soft left seam, the woman shifted right and clearly visible.
