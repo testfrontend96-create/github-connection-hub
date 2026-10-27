@@ -59,3 +59,4 @@
 - [x] Social cards: platform mark beside the name, sized to the text.
 - [x] Feature grid: lead tile narrowed to 6 of 12 columns; the two tiles on its right widened to match.
 - [x] Category-label markers: the small diamond before "Blog · Oct 8, 2026" and every similar label is now a round dot.
+- [x] Hero band: add the Biohackers Media Hub's drifting hue light — two slow periwinkle/indigo glows plus a faint dotted atmosphere behind the masthead.
