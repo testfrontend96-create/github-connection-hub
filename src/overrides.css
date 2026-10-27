@@ -130,8 +130,8 @@
 .board-glow--c {
   top: 62%; left: 34%; right: auto; width: 60%; height: 56%;
   background: radial-gradient(46% 46% at 50% 50%,
-    color-mix(in srgb, var(--board-hue-teal) 22%, transparent), transparent 70%);
-  filter: blur(56px);
+    color-mix(in srgb, var(--board-hue-teal) 44%, transparent), transparent 70%);
+  filter: blur(44px);
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 42%, #000 100%);
   mask-image: linear-gradient(180deg, transparent 0%, #000 42%, #000 100%);
   animation: board-glow-drift 40s cubic-bezier(.45, 0, .55, 1) -6s infinite;
