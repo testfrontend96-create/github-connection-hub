@@ -645,3 +645,8 @@ a:hover .art[data-k="episode"] img,
 #main:has(.knowledge-item-meta) .next-card .k { font-size: 13px; text-transform: none; letter-spacing: 0; }
 #main:has(.knowledge-item-meta) .next-card h4 { font-size: 18px; font-weight: 600; line-height: 1.35; margin: var(--space-h3) 0 8px; }
 #main:has(.knowledge-item-meta) .next-card p { font-size: 15px; line-height: 1.55; }
+
+/* Social cards: the platform mark sits beside the platform name, sized to the text. */
+.soc-head { display: flex; align-items: center; gap: 8px; }
+.soc .soc-logo { display: inline-flex; width: 18px; height: 18px; margin: 0; flex: none; color: var(--ink); }
+.soc .soc-logo svg { width: 100%; height: 100%; display: block; }
