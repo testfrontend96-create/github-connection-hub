@@ -1,9 +1,9 @@
 // Top navigation, page-head hero and footer — ported from build.py's header()/
 // footer() plus the nav-scroll and cursor-lit-grid behaviour from hub.js.
 import { useEffect, useRef, useState, ReactNode } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { PRODUCT_NAV, SUB_CHANNELS, BRAND_URL, ACADEMY_URL, TICKETS_URL, topics } from '../lib/data'
-import { TnArrow, IconClose } from './icons'
+import { TnArrow, IconClose, IconSearch } from './icons'
 import { Crumbs } from './ui'
 import navLogo from '../assets/sales-nav-logo.png.asset.json'
 
@@ -18,6 +18,9 @@ export function TopNav() {
   const [open, setOpen] = useState(false)
   const [condensed, setCondensed] = useState(false)
   const [subOpen, setSubOpen] = useState(false)
+  const [searchHidden, setSearchHidden] = useState(false)
+  const [navQuery, setNavQuery] = useState('')
+  const navigate = useNavigate()
   const headerRef = useRef<HTMLElement>(null)
   const toggleRef = useRef<HTMLButtonElement>(null)
   const subToggleRef = useRef<HTMLButtonElement>(null)
@@ -31,6 +34,8 @@ export function TopNav() {
       if (!header) return
       header.classList.toggle('is-condensed', window.scrollY > 40)
       setCondensed(window.scrollY > 40)
+      const pageSearch = document.querySelector('#main .content-search')
+      setSearchHidden(pageSearch instanceof HTMLElement ? pageSearch.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom : true)
       // the bar only needs its own fill once the dark heading band has scrolled
       // out from behind it — over the band it stays transparent so the band reads whole
       const band = document.querySelector('#main > .page-head, #main > .board, #main > .home > .board')
@@ -91,10 +96,16 @@ export function TopNav() {
           <a className="hub-nav-cta" href={TICKETS_URL}>Buy Tickets<TnArrow /></a>
         </div>
         <div className={`hub-nav-sub${condensed ? ' is-collapsed' : ''}`}>
-          {condensed && <button ref={subToggleRef} className="hub-nav-sub-toggle" type="button" aria-label={subOpen ? 'Close Hub navigation' : 'Open Hub navigation'} aria-expanded={subOpen} aria-controls="hub-sub-navigation" onClick={() => setSubOpen(value => !value)}>
+          {condensed && <div className="hub-nav-sub-row">
+          <button ref={subToggleRef} className="hub-nav-sub-toggle" type="button" aria-label={subOpen ? 'Close Hub navigation' : 'Open Hub navigation'} aria-expanded={subOpen} aria-controls="hub-sub-navigation" onClick={() => setSubOpen(value => !value)}>
             {ring}<span>{active?.[1] ?? 'Biohacking Hub'}</span>
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true" className={subOpen ? 'is-open' : undefined}><path d="m6 8 4 4 4-4" /></svg>
-          </button>}
+          </button>
+          {searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) navigate(`/search?q=${encodeURIComponent(navQuery.trim())}`) }}>
+            <IconSearch />
+            <input type="search" aria-label="Search the Hub" placeholder="Search the Hub…" value={navQuery} onChange={event => setNavQuery(event.target.value)} />
+          </form>}
+          </div>}
           {(!condensed || subOpen) && <nav id="hub-sub-navigation" className="hub-nav-links hub-nav-secondary" aria-label="Biohacking Hub">
             {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} onClick={() => setSubOpen(false)} aria-current={active?.[0] === href ? 'page' : undefined}>
               {!condensed && active?.[0] === href && ring}<span>{label}</span>
