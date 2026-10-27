@@ -445,14 +445,15 @@ a:hover .art[data-k="episode"] img,
 }
 .bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img { filter: none; transform: none; }
 /* the article tile uses a supplied photo with its fade already baked in,
-   so it is shown as-is: right side, full height, no extra mask, zoom or dimming */
+   so it is shown as-is: right side, full height, no zoom or dimming;
+   only its outer left edge is softened so no hard seam shows */
 .bento .tile--a .tile-photo {
   left: auto;
   width: 60%;
   height: 100%;
   aspect-ratio: auto;
-  -webkit-mask-image: none;
-  mask-image: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, var(--white) 30%);
+  mask-image: linear-gradient(90deg, transparent 0%, var(--white) 30%);
 }
 .bento .tile--a .tile-photo img {
   object-fit: cover;
