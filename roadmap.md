@@ -57,3 +57,4 @@
 - [x] Profile cards: name above the role/description line (directory + homepage).
 - [x] How-to card meta line ("5 steps · 10 min") and pillar spine labels: no longer all caps.
 - [x] Social cards: platform mark beside the name, sized to the text.
+- [x] Feature grid: lead tile narrowed to 6 of 12 columns; the two tiles on its right widened to match.
