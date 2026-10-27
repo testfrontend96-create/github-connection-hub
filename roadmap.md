@@ -35,3 +35,4 @@
 - [x] Keep large and small editorial thumbnails, matching all small formats to Podcast thumbnail heights.
 - [x] Give the bento article and episode tiles the Start here glass background — sharp artwork as a square beside the copy, never blurred.
 - [x] Match the homepage Top Biohackers cards to the Top Biohackers page card design, with initials shown when a photo is missing.
+- [x] Centre the number vertically in each row of the homepage "Five things to know" list.

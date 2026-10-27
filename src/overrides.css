@@ -485,3 +485,7 @@ a:hover .art[data-k="episode"] img,
 @media (prefers-reduced-motion: reduce) {
   .knowledge-stats .stat, .knowledge-stat-action { transition: none; }
 }
+
+/* "Five things to know": the number sits centred against its row, not at the top. */
+.brief li { align-items: center; }
+.brief li::before { align-self: center; }
