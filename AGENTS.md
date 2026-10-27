@@ -16,3 +16,4 @@
 - Resolve episode thumbnail images from project-owned asset pointers in the episode data so all feed, listing, and detail views use the same verified artwork.
 - Keep editorial grid thumbnail proportions shared across content formats and sized by the lead/small grid tracks, so mixed-content rows align without clipping podcast artwork.
 - Define shared content-glass tokens and surface rules in `src/overrides.css`, with light-page adaptations and photo tiles excluded, so glass styling stays consistent without obscuring artwork.
+- Scope Knowledge Base summary-card styling to `.knowledge-stats` in `src/overrides.css`; its plus controls reuse the directory type filter so the Sales-inspired cards retain meaningful actions.
