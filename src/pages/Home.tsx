@@ -38,7 +38,7 @@ function Tile({ item, cls }: { item: any; cls: string }) {
       {photo && <span className="tile-photo"><img src={item.img} alt="" loading="lazy" decoding="async" /></span>}
       <div className="tile-kick"><span className="kick" data-k={item.k}>{item.kick}</span></div>
       <h3>{item.t}</h3><p>{clip(item.d, 400)}</p>
-      <div className="meta"><b>{item.meta}</b><span>{pretty(item.date)}</span></div>
+      <div className="meta"><b>{item.guest || item.meta}</b><span>{item.duration ? `${item.duration} · ` : ''}{pretty(item.date)}</span></div>
       <Motif kind={item.k} />
     </Link>
   )
