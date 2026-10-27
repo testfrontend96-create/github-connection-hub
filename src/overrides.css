@@ -723,3 +723,7 @@ a:hover .art[data-k="episode"] img,
   z-index: 0;
   background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 45%, rgba(5,4,13,.4) 70%, rgba(5,4,13,0) 100%);
 }
+.bento .tile--b .tile-photo {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, var(--white) 28%);
+  mask-image: linear-gradient(90deg, transparent 0%, var(--white) 28%);
+}
