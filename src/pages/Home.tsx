@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { MoreLink, SearchField } from '../components/controls'
+import { useHueTracking } from '../components/chrome'
 import { guideUrl } from '../lib/browsing'
 import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../components/ui'
 import { SocLogo } from '../components/social'
@@ -46,6 +47,7 @@ function Tile({ item, cls }: { item: any; cls: string }) {
 }
 
 export default function Home() {
+  const heroRef = useHueTracking()
   const [query, setQuery] = useState('')
   const navigate = useNavigate()
   const items = feed()
@@ -97,11 +99,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <section className="board on-dark">
-        <span className="board-glow" aria-hidden="true" />
-        <span className="board-glow board-glow--b" aria-hidden="true" />
-        <span className="board-glow board-glow--c" aria-hidden="true" />
-        <span className="board-atmos" aria-hidden="true" />
+      <section className="board on-dark hub-hue" ref={heroRef}>
         <div className="wrap">
         <div className="hub-masthead">
           <h1>Biohacking Hub</h1>

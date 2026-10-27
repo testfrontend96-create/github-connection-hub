@@ -1,4 +1,5 @@
 # Page updates
+- [x] Match homepage hero gradients to the other Hub heading bands and share their pointer-following hue effect.
 - [x] Make Knowledge Base summary cards light and match the Sales conference section cards.
 - [x] Match the Sales glass effect on Start here and suitable shared card surfaces, preserving photos and legibility.
 - [x] Separate Knowledge Base type/topic filters and shorten individual item heading bands.

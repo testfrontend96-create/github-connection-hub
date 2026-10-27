@@ -17,4 +17,5 @@
 - Keep editorial grid thumbnail proportions shared across content formats and sized by the lead/small grid tracks, so mixed-content rows align without clipping podcast artwork.
 - Keep the hero podcast artwork flush to its card's top, bottom and right edges only while the card is wide enough to show both speakers (≥1200px); below that the same artwork lies uncropped across the top of the card with the copy beneath it, so narrow cards never cut a speaker out.
 - Define shared content-glass tokens and surface rules in `src/overrides.css`, with light-page adaptations and photo tiles excluded, so glass styling stays consistent without obscuring artwork.
+- Share `hub-hue` surface styles and `useHueTracking` between the homepage board and PageHead so the standing gradients and pointer halo stay identical across Hub pages.
 - Scope Knowledge Base summary-card styling to `.knowledge-stats` in `src/overrides.css`; its plus controls reuse the directory type filter so the Sales-inspired cards retain meaningful actions.
