@@ -132,6 +132,10 @@ a.tile:hover { border-color: rgba(255, 255, 255, .24); }
 /* Unselected tabs and chips borrow the search field's outline grey for both the border and the label;
    the chosen tab keeps its filled treatment and hover stays a solid step so the row reads as interactive. */
 .chip:not(.is-active):not(.chip--dark) { background: #ffffff; border: 1px solid var(--line); color: #6C7278; }
+/* Tabs: tighter pills everywhere they appear — the fill narrows, the height
+   holds so the Knowledge Base type menu still lines up with them. */
+.chip { padding: 6px 11px; }
+.chip-row, .knowledge-topic-filters { gap: 7px; }
 .chip:not(.is-active):not(.chip--dark):hover { background: #ffffff; border-color: var(--card-hover-accent); color: var(--chip-hover-text); }
 /* Knowledge Base filters: entry types live in one designed menu, topics stay tabs on a single line */
 
