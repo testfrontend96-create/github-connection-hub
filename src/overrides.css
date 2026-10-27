@@ -734,7 +734,7 @@ a:hover .art[data-k="episode"] img,
    crops only ~1.5% off each edge — both heads stay whole — and it is half
    again as wide as the old square. */
 .bento .tile--b .tile-photo {
-  top: 0; bottom: 0; right: 0; left: auto; height: 100%; width: 58%; aspect-ratio: auto;
+  top: 0; bottom: 0; right: 0; left: auto; height: 100%; width: 55%; aspect-ratio: auto;
   /* the left speaker's head sits flush against the frame's own left edge, so a
      hard vertical seam reads as a slice through his skull — this blends only the
      last few pixels of the back of his head into the dark copy side; his face
@@ -748,11 +748,11 @@ a:hover .art[data-k="episode"] img,
   background: linear-gradient(90deg, rgba(5,4,13,.94) 0%, rgba(5,4,13,.82) 30%, rgba(5,4,13,.5) 55%, rgba(5,4,13,.15) 80%, rgba(5,4,13,0) 100%);
 }
 /* The fade has to be fully gone before it reaches either speaker, so it ends on
-   the artwork's left edge (42%) instead of running over the picture. */
+   the artwork's left edge (45%) instead of running over the picture. */
 .bento .tile--b::after {
   z-index: 0;
-  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 16%, rgba(5,4,13,.5) 30%, rgba(5,4,13,0) 42%);
+  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 18%, rgba(5,4,13,.5) 32%, rgba(5,4,13,0) 45%);
 }
 /* the copy keeps the column the artwork leaves it */
-.bento .tile--b h3, .bento .tile--b p { max-width: 38%; }
-.bento .tile--b .meta { max-width: 38%; flex-wrap: wrap; row-gap: 1px; }
+.bento .tile--b h3, .bento .tile--b p, .bento .tile--b .meta { max-width: 44%; }
+.bento .tile--b .meta { flex-wrap: wrap; row-gap: 1px; }
