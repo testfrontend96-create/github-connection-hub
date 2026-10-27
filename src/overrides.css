@@ -728,3 +728,28 @@ a:hover .art[data-k="episode"] img,
   .bento .tile--b .meta { flex-direction: row; align-items: center; gap: 8px; }
   .bento .tile--b::after { background: none; }
 }
+
+/* Phone screens: the Blog and Podcast tiles both run image-over-copy, the way the
+   Podcast tile already does once the cards get narrow. Each tile carries its own
+   phone artwork (supplied by the user), laid whole across the top of the card with
+   the copy underneath and no scrim over the picture, so nothing in it is dimmed
+   or cropped. The desktop crop stays for wider screens. */
+.tile-photo .tile-photo-mob { display: none; }
+@media (max-width: 640px) {
+  .bento .tile--a, .bento .tile--b { padding-top: 50%; }
+  .bento .tile--a .tile-photo, .bento .tile--b .tile-photo {
+    left: 0; right: 0; top: 0; bottom: auto; width: auto; height: auto;
+    aspect-ratio: 872 / 406;
+    -webkit-mask-image: linear-gradient(180deg, var(--white) 74%, transparent 100%);
+    mask-image: linear-gradient(180deg, var(--white) 74%, transparent 100%);
+  }
+  .bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img {
+    object-fit: cover; object-position: center top;
+  }
+  .bento .tile--a .tile-photo-desk, .bento .tile--b .tile-photo-desk { display: none; }
+  .bento .tile--a .tile-photo-mob, .bento .tile--b .tile-photo-mob { display: block; }
+  .bento .tile--a h3, .bento .tile--a p,
+  .bento .tile--b h3, .bento .tile--b p { max-width: 100%; }
+  .bento .tile--a .meta, .bento .tile--b .meta { flex-direction: row; align-items: center; gap: 8px; }
+  .bento .tile--a::after, .bento .tile--b::after { background: none; }
+}

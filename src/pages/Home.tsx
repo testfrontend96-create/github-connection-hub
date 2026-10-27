@@ -8,6 +8,8 @@ import { SocLogo } from '../components/social'
 import { IconArrow } from '../components/icons'
 import blogTilePhoto from '../assets/home/blog-tile.png.asset.json'
 import podcastTilePhoto from '../assets/home/podcast-tile.png.asset.json'
+import blogTileMobile from '../assets/home/blog-tile-mobile.png.asset.json'
+import podcastTileMobile from '../assets/home/podcast-tile-mobile.png.asset.json'
 import {
   feed, problems, FRONT_PILLARS, T, E, KIND_LABEL, articles, howtos, faqs, social,
   hackers, instagram, instagramTop, clip, pretty,
@@ -37,7 +39,14 @@ function Tile({ item, cls }: { item: any; cls: string }) {
   const photo = !!item.img
   return (
     <Link className={`tile ${cls}${photo ? ' tile--photo' : ''}`} data-k={item.k} to={item.u}>
-      {photo && <span className="tile-photo"><img src={item.img} alt="" loading="lazy" decoding="async" /></span>}
+      {/* phone screens carry their own artwork (item.imgMobile): both tiles then
+          run image-over-copy, so the wide art is shown whole across the top */}
+      {photo && (
+        <span className="tile-photo">
+          <img className="tile-photo-desk" src={item.img} alt="" loading="lazy" decoding="async" />
+          {item.imgMobile && <img className="tile-photo-mob" src={item.imgMobile} alt="" loading="lazy" decoding="async" />}
+        </span>
+      )}
       <div className="tile-kick"><span className="kick" data-k={item.k}>{item.kick}</span></div>
       <h3>{item.t}</h3><p>{clip(item.d, 400)}</p>
       <div className="meta"><b>{item.guest || item.meta}</b><span>{item.duration ? `${item.duration} · ` : ''}{pretty(item.date)}</span></div>
@@ -125,8 +134,8 @@ export default function Home() {
             <h3 style={{ fontSize: '1.1rem' }}>Five things to know</h3>
             <ol className="brief">{brief.map((i) => <li key={i.u}><Link to={i.u}>{i.t}</Link><small>{i.kick} · {pretty(i.date)}</small></li>)}</ol>
           </div>
-          <Tile item={{ ...tileA, img: blogTilePhoto.url }} cls="tile--a" />
-          <Tile item={{ ...tileB, img: podcastTilePhoto.url }} cls="tile--b" />
+          <Tile item={{ ...tileA, img: blogTilePhoto.url, imgMobile: blogTileMobile.url }} cls="tile--a" />
+          <Tile item={{ ...tileB, img: podcastTilePhoto.url, imgMobile: podcastTileMobile.url }} cls="tile--b" />
         </div>
       </div></section>
 
