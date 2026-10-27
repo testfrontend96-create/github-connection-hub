@@ -49,7 +49,7 @@ export default function Biohackers() {
                       <span className="pcard-cta">View full profile<IconArrow /></span>
                     </span>
                   </span>
-                  <span className="pcard-body"><span className="pcard-title">{b.title}</span><h3 className="pcard-name">{b.name}</h3></span>
+                  <span className="pcard-body"><h3 className="pcard-name">{b.name}</h3><span className="pcard-title">{b.title}</span></span>
                 </Link>
               </article>
             )
