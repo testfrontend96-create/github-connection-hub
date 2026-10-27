@@ -654,7 +654,7 @@ a.tile:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.055)
 .spine::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:3px;background:var(--sc)}
 .spine span{
   position:absolute;left:14px;top:0;writing-mode:vertical-rl;transform:rotate(180deg);
-  font-weight:900;text-transform:uppercase;letter-spacing:.02em;font-size:1.05rem;color:var(--sc);white-space:nowrap;
+  font-weight:900;letter-spacing:0;font-size:1.05rem;color:var(--sc);white-space:nowrap;
 }
 .pillar .sec-head{margin-bottom:18px}
 .pillar .sec-head h2::before{display:none}
