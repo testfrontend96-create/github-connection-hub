@@ -537,6 +537,9 @@ a:hover .art[data-k="episode"] img,
 /* Knowledge item page: Unified Design System type, spacing and radii */
 #main:has(.knowledge-item-meta) .answer-box { padding: 28px; border-radius: var(--radius); }
 #main:has(.knowledge-item-meta) .answer-box p:not(.eyebrow) { font-size: 17px; line-height: 1.55; }
+/* "In one paragraph" reads as a tiny heading overline, not a letterspaced caps label */
+#main:has(.knowledge-item-meta) .answer-box .eyebrow { font-size: 13px; font-weight: 600; line-height: 1.35; letter-spacing: -0.01em; text-transform: none; }
+
 #main:has(.knowledge-item-meta) .facts { border-radius: var(--radius); overflow: hidden; margin: var(--space-block) 0; gap: 1px; }
 #main:has(.knowledge-item-meta) .facts > div { padding: 20px 24px; }
 #main:has(.knowledge-item-meta) .facts dt { font-size: 13px; font-weight: 500; letter-spacing: 0; text-transform: none; margin-bottom: 8px; }

@@ -38,3 +38,4 @@
 - [x] Centre the number vertically in each row of the homepage "Five things to know" list.
 - [x] Use sentence case for all titles, keeping names, places and acronyms capitalised.
 - [x] Remove all caps from the Instagram section labels.
+- [x] Restyle the guide page "In one paragraph" label as a tiny sentence-case heading overline.
