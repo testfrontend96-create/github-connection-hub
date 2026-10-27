@@ -730,29 +730,30 @@ a:hover .art[data-k="episode"] img,
 .bento .tile--a .tile-photo img { object-position: center 30%; }
 /* The podcast artwork is a two-shot: the left speaker's head starts at ~1% of
    the frame and the right speaker's ends at ~99%, so showing both means showing
-   the whole 16:9 frame. At the card's full height a 58% wide box (325 x 208)
-   crops only ~1.5% off each edge — both heads stay whole — and it is half
-   again as wide as the old square. */
+   the whole 16:9 frame. The box is 58% of the card and the image is shown with
+   `contain`, so nothing is cropped at all — it reads as a padded picture rather
+   than the old square, and both speakers stay whole. */
 .bento .tile--b .tile-photo {
-  top: 0; bottom: 0; right: 0; left: auto; height: 100%; width: 55%; aspect-ratio: auto;
+  top: 0; bottom: 0; right: 0; left: auto; height: 100%; width: 58%; aspect-ratio: auto;
   /* the left speaker's head sits flush against the frame's own left edge, so a
      hard vertical seam reads as a slice through his skull — this blends only the
-     last few pixels of the back of his head into the dark copy side; his face
-     (he faces right) and the whole right speaker stay untouched */
+     back of his head into the dark copy side; his face (he faces right) and the
+     whole right speaker stay untouched */
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, var(--white) 6%);
   mask-image: linear-gradient(90deg, transparent 0%, var(--white) 6%);
 }
-.bento .tile--b .tile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.bento .tile--b .tile-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center; }
 .bento .tile--a::after {
   z-index: 0;
   background: linear-gradient(90deg, rgba(5,4,13,.94) 0%, rgba(5,4,13,.82) 30%, rgba(5,4,13,.5) 55%, rgba(5,4,13,.15) 80%, rgba(5,4,13,0) 100%);
 }
 /* The fade has to be fully gone before it reaches either speaker, so it ends on
-   the artwork's left edge (45%) instead of running over the picture. */
+   the artwork's left edge (42%) instead of running over the picture. */
 .bento .tile--b::after {
   z-index: 0;
-  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 18%, rgba(5,4,13,.5) 32%, rgba(5,4,13,0) 45%);
+  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 18%, rgba(5,4,13,.5) 30%, rgba(5,4,13,0) 42%);
 }
-/* the copy keeps the column the artwork leaves it */
-.bento .tile--b h3, .bento .tile--b p, .bento .tile--b .meta { max-width: 44%; }
-.bento .tile--b .meta { flex-wrap: wrap; row-gap: 1px; }
+/* the copy keeps the column the artwork leaves it; the episode's details stack
+   as who / how long + when so nothing orphans onto its own line */
+.bento .tile--b h3, .bento .tile--b p, .bento .tile--b .meta { max-width: 40%; }
+.bento .tile--b .meta { flex-direction: column; align-items: flex-start; gap: 2px; }
