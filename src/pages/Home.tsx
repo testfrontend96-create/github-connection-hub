@@ -206,7 +206,7 @@ export default function Home() {
           <div className="howtos" style={{ paddingBottom: 30 }}>
             {howtos.slice(0, 4).map((h) => (
               <Link key={h.slug} className="howto" to={guideUrl(h.slug)}>
-                <span className="n">{h.steps}</span><h3>{h.title}</h3><p>{clip(h.excerpt, 90)}</p><div className="meta">{h.steps} steps · {h.time}</div>
+                <span className="n">{h.steps}<small>{h.steps === 1 ? 'step' : 'steps'}</small></span><h3>{h.title}</h3><p>{clip(h.excerpt, 90)}</p><div className="meta">{h.time}</div>
               </Link>
             ))}
           </div>
