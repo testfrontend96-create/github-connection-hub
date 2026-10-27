@@ -753,3 +753,24 @@ a:hover .art[data-k="episode"] img,
    as who / how long + when so nothing orphans onto its own line */
 .bento .tile--b h3, .bento .tile--b p, .bento .tile--b .meta { max-width: 40%; }
 .bento .tile--b .meta { flex-direction: column; align-items: flex-start; gap: 2px; }
+/* Narrow cards: a card that is tall for its width can only hold the wide
+   two-shot by cutting one speaker out, so below the reflow point the artwork
+   lies flat across the top of the card instead and the copy runs beneath it. */
+@media (max-width: 1020px) {
+  .bento .tile--b { padding-top: 146px; }
+  .bento .tile--b .tile-photo {
+    left: 0; right: 0; top: 0; bottom: auto; width: auto; height: 132px;
+    -webkit-mask-image: linear-gradient(180deg, var(--white) 62%, transparent 100%);
+    mask-image: linear-gradient(180deg, var(--white) 62%, transparent 100%);
+  }
+  .bento .tile--b .tile-photo img { object-position: center top; }
+  .bento .tile--b h3, .bento .tile--b p, .bento .tile--b .meta { max-width: 100%; }
+  .bento .tile--b .meta { flex-direction: row; align-items: center; gap: 8px; }
+  .bento .tile--b::after {
+    background: linear-gradient(180deg, rgba(5,4,13,.18) 0%, rgba(5,4,13,.4) 34%, rgba(5,4,13,.95) 48%, rgba(5,4,13,.97) 100%);
+  }
+}
+@media (max-width: 640px) {
+  .bento .tile--b { padding-top: 214px; }
+  .bento .tile--b .tile-photo { height: 200px; }
+}
