@@ -481,17 +481,17 @@ a:hover .art[data-k="episode"] img,
   box-shadow: var(--content-glass-shadow);
 }
 @media (max-width: 640px) {
-  .bento .tile--a h3, .bento .tile--a p { max-width: 100%; }
-  /* the copy runs full width on a phone, so the photo gives it more room: the
-     seam reaches further across and the scrim fades the same way, from the left */
+  .bento .tile--a h3, .bento .tile--a p { max-width: 64%; }
+  /* on a phone the copy keeps the left two thirds and the woman keeps the right:
+     the seam rises through the middle so neither the words nor her face is lost */
   .bento .tile--a .tile-photo {
-    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .4) 30%, var(--white) 62%);
-    mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .4) 30%, var(--white) 62%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .3) 32%, var(--white) 58%);
+    mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .3) 32%, var(--white) 58%);
   }
   .bento .tile--a::after {
-    background: linear-gradient(90deg, rgba(5, 4, 13, .92) 0%, rgba(5, 4, 13, .8) 46%, rgba(5, 4, 13, .5) 68%, rgba(5, 4, 13, 0) 92%);
+    background: linear-gradient(90deg, rgba(5, 4, 13, .92) 0%, rgba(5, 4, 13, .74) 44%, rgba(5, 4, 13, .3) 66%, rgba(5, 4, 13, 0) 84%);
   }
-  .bento .tile--a .tile-photo img { filter: brightness(.72) saturate(.94); }
+  .bento .tile--a .tile-photo img { filter: brightness(.78) saturate(.94); }
 }
 @media (prefers-reduced-motion: reduce) {
   .tile:not(.tile--photo), .card--dark, .report, .next-card, .ig,
