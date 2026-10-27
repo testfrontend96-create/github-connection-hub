@@ -99,6 +99,7 @@ export default function Home() {
       <section className="board on-dark">
         <span className="board-glow" aria-hidden="true" />
         <span className="board-glow board-glow--b" aria-hidden="true" />
+        <span className="board-glow board-glow--c" aria-hidden="true" />
         <span className="board-atmos" aria-hidden="true" />
         <div className="wrap">
         <div className="hub-masthead">
