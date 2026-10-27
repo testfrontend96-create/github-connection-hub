@@ -126,10 +126,8 @@ export function TopNav() {
   )
 }
 
-// dark hero with a cursor-lit purple grid (ports hub.js page-head tracking)
-export function PageHead({ accent, crumbs, title, lede, children, compact = false }: {
-  accent?: string; crumbs?: [string, string | null][]; title?: string; lede?: string; children?: ReactNode; compact?: boolean
-}) {
+// Shared pointer-following hue for heading bands and the homepage board.
+export function useHueTracking() {
   const ref = useRef<HTMLElement>(null)
   useEffect(() => {
     const head = ref.current
@@ -146,10 +144,17 @@ export function PageHead({ accent, crumbs, title, lede, children, compact = fals
     const leave = () => head.classList.remove('is-lit')
     head.addEventListener('pointermove', move)
     head.addEventListener('pointerleave', leave)
-    return () => { head.removeEventListener('pointermove', move); head.removeEventListener('pointerleave', leave) }
+    return () => { head.removeEventListener('pointermove', move); head.removeEventListener('pointerleave', leave); if (frame) cancelAnimationFrame(frame) }
   }, [])
+  return ref
+}
+
+export function PageHead({ accent, crumbs, title, lede, children, compact = false }: {
+  accent?: string; crumbs?: [string, string | null][]; title?: string; lede?: string; children?: ReactNode; compact?: boolean
+}) {
+  const ref = useHueTracking()
   return (
-    <section className={`page-head${compact ? ' page-head--compact' : ''}`} ref={ref} style={accent ? { ['--sc' as any]: accent } : undefined}>
+    <section className={`page-head hub-hue${compact ? ' page-head--compact' : ''}`} ref={ref} style={accent ? { ['--sc' as any]: accent } : undefined}>
       <div className="wrap">
         {crumbs && <Crumbs items={crumbs} />}
         {title && <h1 className="display">{title}</h1>}
