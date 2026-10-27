@@ -64,3 +64,4 @@
 - [x] Hero band: left periwinkle glow moved lower and left so its light centre sits on the lead "Top-studied peptides" card (mask now trims only the last stretch of the box).
 - [x] Hero band: third drifting hue added low across the band's bottom edge (teal, centred under the Blog/Podcast row), masked from the top so the band's bottom stays a sharp cut.
 - [x] How-To cards: the big numeral now reads "5 steps" (small grey label on its baseline); the line below keeps only the duration.
+- [x] Hero Blog and Podcast tiles on phones: the user's supplied phone artwork, and the Blog card stacks text under its picture like the Podcast card.
