@@ -734,7 +734,7 @@ a:hover .art[data-k="episode"] img,
    `contain`, so nothing is cropped at all — it reads as a padded picture rather
    than the old square, and both speakers stay whole. */
 .bento .tile--b .tile-photo {
-  top: 0; bottom: 0; right: 0; left: auto; height: 100%; width: 58%; aspect-ratio: auto;
+  top: 0; bottom: 0; right: 8px; left: auto; height: 100%; width: calc(58% - 8px); aspect-ratio: auto;
   /* the left speaker's head sits flush against the frame's own left edge, so a
      hard vertical seam reads as a slice through his skull — this blends only the
      back of his head into the dark copy side; his face (he faces right) and the
