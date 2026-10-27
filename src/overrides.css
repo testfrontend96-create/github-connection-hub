@@ -489,3 +489,11 @@ a:hover .art[data-k="episode"] img,
 /* "Five things to know": the number sits centred against its row, not at the top. */
 .brief li { align-items: center; }
 .brief li::before { align-self: center; }
+
+/* "Five things to know": Unified Design System card typography */
+.tile--brief .tile-kick .kick { font-size: 13px; font-weight: 500; line-height: 1; }
+.tile--brief .tile-kick > span:last-child { font-size: 13px !important; line-height: 1; }
+.tile--brief h3 { font-size: 18px !important; font-weight: 600; line-height: 1.35; letter-spacing: -0.015em; margin: var(--space-h3) 0 8px; }
+.tile--brief .brief li { gap: 12px; padding: 10px 0; }
+.tile--brief .brief li::before { font-size: 18px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+.tile--brief .brief a { font-size: 15px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; }
