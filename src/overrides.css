@@ -449,10 +449,10 @@ a:hover .art[data-k="episode"] img,
   width: 52%;
   height: 100%;
   aspect-ratio: auto;
-  /* the photo dissolves into the glass along a soft seam on its left edge; the
-     fade band stays narrow so the subject is never swallowed by it */
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .35) 14%, var(--white) 34%);
-  mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .35) 14%, var(--white) 34%);
+  /* the photo dissolves into the glass along a soft seam that leans off vertical;
+     the fade band stays narrow so the subject is never swallowed */
+  -webkit-mask-image: linear-gradient(72deg, transparent 0%, rgba(255, 255, 255, .35) 18%, var(--white) 42%);
+  mask-image: linear-gradient(72deg, transparent 0%, rgba(255, 255, 255, .35) 18%, var(--white) 42%);
 }
 /* the woman sits left-of-centre in the source photo, so the frame is nudged
    right and zoomed slightly: she lands clear of the fade band */
@@ -483,10 +483,11 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 640px) {
   .bento .tile--a h3, .bento .tile--a p { max-width: 64%; }
   /* on a phone the copy keeps the left two thirds and the woman keeps the right:
-     the seam rises through the middle so neither the words nor her face is lost */
+     the seam rises through the middle, leaning off vertical, so neither the
+     words nor her face is lost */
   .bento .tile--a .tile-photo {
-    -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .3) 32%, var(--white) 58%);
-    mask-image: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, .3) 32%, var(--white) 58%);
+    -webkit-mask-image: linear-gradient(74deg, transparent 0%, rgba(255, 255, 255, .3) 34%, var(--white) 62%);
+    mask-image: linear-gradient(74deg, transparent 0%, rgba(255, 255, 255, .3) 34%, var(--white) 62%);
   }
   .bento .tile--a::after {
     background: linear-gradient(90deg, rgba(5, 4, 13, .92) 0%, rgba(5, 4, 13, .74) 44%, rgba(5, 4, 13, .3) 66%, rgba(5, 4, 13, 0) 84%);
