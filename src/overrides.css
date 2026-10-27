@@ -375,40 +375,19 @@ a:hover .art[data-k="episode"] img,
   background: var(--content-glass-light-hover);
 }
 
-/* Bento article and episode tiles: the same glass surface as the Start here tile.
-   The artwork sits behind the frost as a soft glow so the panel reads as glass. */
+/* Bento article and episode tiles: the same glass background as the Start here
+   and New tiles. The artwork itself stays sharp — the glass is only the card
+   surface behind it, never a filter over the imagery. */
 .bento .tile--a, .bento .tile--b {
-  --photo-blur: 14px;
-  --photo-film: rgb(255 255 255 / .11);
   background: var(--content-glass-fill);
   border-color: var(--content-glass-border);
   transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, border-color 200ms ease;
 }
-.bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img {
-  filter: blur(var(--photo-blur)) saturate(115%);
-  transform: scale(1.08);
-}
-.bento .tile--a::after, .bento .tile--b::after {
-  background:
-    linear-gradient(var(--photo-film), var(--photo-film)),
-    linear-gradient(180deg, rgba(5, 4, 13, .15) 0%, rgba(5, 4, 13, .55) 42%, rgba(5, 4, 13, .88) 72%, rgba(5, 4, 13, .97) 100%);
-}
-.bento .tile--a[data-k="episode"]::after, .bento .tile--b[data-k="episode"]::after {
-  background:
-    linear-gradient(var(--photo-film), var(--photo-film)),
-    linear-gradient(90deg, rgba(5, 4, 13, .97) 0%, rgba(5, 4, 13, .92) 40%, rgba(5, 4, 13, .45) 68%, rgba(5, 4, 13, 0) 100%);
-}
+.bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img { filter: none; transform: none; }
 .bento .tile--a:hover, .bento .tile--b:hover {
   background: var(--content-glass-hover);
   border-color: var(--card-hover-dark);
   box-shadow: var(--content-glass-shadow);
-}
-@media (max-width: 640px) {
-  .bento .tile--a[data-k="episode"]::after, .bento .tile--b[data-k="episode"]::after {
-    background:
-      linear-gradient(var(--photo-film), var(--photo-film)),
-      linear-gradient(180deg, rgba(5, 4, 13, .5) 0%, rgba(5, 4, 13, .9) 60%, rgba(5, 4, 13, .97) 100%);
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .tile:not(.tile--photo), .card--dark, .report, .next-card, .ig,
