@@ -1,6 +1,8 @@
 /* SPA-specific adjustments on top of the ported hub.css */
 #root { min-height: 100vh; }
 #main { padding-bottom: 64px; }
+/* A page that ends on a dark band runs straight into the dark footer: no white strip. */
+#main:has(> .dark:last-child) { padding-bottom: 0; }
 
 /* Sales navigation: dark glass shell, white lockup, chapter pills. */
 :root {
