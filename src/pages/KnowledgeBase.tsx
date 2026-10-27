@@ -46,13 +46,18 @@ export default function KnowledgeBase() {
         </div>
         <div className="content-filter-bar">
           <SearchField label="Filter the Knowledge Base" placeholder="Filter entries — try HRV, magnesium, fasting…" value={q} onChange={setQ} />
-          <div className="chip-row" role="group" aria-label="Entry types">
-            <Button className={'chip' + (kind === 'all' ? ' is-active' : '')} aria-pressed={kind === 'all'} onClick={() => setKind('all')}>All types</Button>
-            {KINDS.map((k) => <Button key={k} className={'chip' + (kind === k ? ' is-active' : '')} aria-pressed={kind === k} onClick={() => setKind(k)}>{k === 'howto' ? 'How To' : `${KIND_LABEL[k]}s`}</Button>)}
-          </div>
-          <div className="chip-row knowledge-topic-filters" role="group" aria-label="Entry topics">
-            <Button className={'chip' + (topic === 'all' ? ' is-active' : '')} aria-pressed={topic === 'all'} onClick={() => setTopic('all')}>All topics</Button>
-            {topics.map((t) => <Button key={t.slug} className={'chip' + (topic === t.slug ? ' is-active' : '')} aria-pressed={topic === t.slug} onClick={() => setTopic(t.slug)}>{t.name}</Button>)}
+          <div className="kb-filter-row">
+            <label className="kb-type-select">
+              <select value={kind} onChange={(event) => setKind(event.target.value)} aria-label="Filter by entry type">
+                <option value="all">All types</option>
+                {KINDS.map((k) => <option key={k} value={k}>{k === 'howto' ? 'How To' : `${KIND_LABEL[k]}s`}</option>)}
+              </select>
+              <svg className="kb-type-select-caret" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+            </label>
+            <div className="chip-row knowledge-topic-filters" role="group" aria-label="Entry topics">
+              <Button className={'chip' + (topic === 'all' ? ' is-active' : '')} aria-pressed={topic === 'all'} onClick={() => setTopic('all')}>All topics</Button>
+              {topics.map((t) => <Button key={t.slug} className={'chip' + (topic === t.slug ? ' is-active' : '')} aria-pressed={topic === t.slug} onClick={() => setTopic(t.slug)}>{t.name}</Button>)}
+            </div>
           </div>
         </div>
         <p className="content-result-count" aria-live="polite">Showing {hits.length} of {sorted.length} entries</p>
