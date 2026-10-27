@@ -47,3 +47,4 @@
 - [x] Match unselected tabs and chips to the search field's border grey, on the border and the label.
 
 
+- [x] Give unselected tabs a light periwinkle hover label and border instead of unreadable bone-on-white.
