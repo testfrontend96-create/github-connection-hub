@@ -386,7 +386,13 @@ a:hover .art[data-k="episode"] img,
   transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, border-color 200ms ease;
 }
 .bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img { filter: none; transform: none; }
-.bento .tile--a .tile-photo { left: auto; width: auto; aspect-ratio: 1/1; }
+.bento .tile--a .tile-photo {
+  left: auto;
+  width: auto;
+  aspect-ratio: 1/1;
+  -webkit-mask-image: linear-gradient(90deg, transparent, var(--white) 35%);
+  mask-image: linear-gradient(90deg, transparent, var(--white) 35%);
+}
 .bento .tile--a .tile-photo img { object-fit: cover; opacity: 1; }
 .bento .tile--a h3, .bento .tile--a p { max-width: 60%; }
 .bento .tile--a::after, .bento .tile--b::after {
