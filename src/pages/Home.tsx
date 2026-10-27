@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { MoreLink, SearchField } from '../components/controls'
 import { guideUrl } from '../lib/browsing'
 import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../components/ui'
-import { PlayButton } from '../components/Player'
 import { SocLogo } from '../components/social'
 import { IconArrow } from '../components/icons'
 import blogTilePhoto from '../assets/home/blog-tile.png.asset.json'
@@ -31,7 +30,6 @@ const BLOG_CATEGORIES: [string, string][] = [
   ['Testing & Monitoring', 'https://www.biohackers.world/blog?categories=453'],
 ]
 
-const trackOf = (i: any) => (i.audio ? { src: i.audio, title: i.t, img: i.img, url: i.listen } : undefined)
 
 function Tile({ item, cls }: { item: any; cls: string }) {
   const photo = !!item.img
