@@ -327,6 +327,11 @@ h3.display { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
 .home .card-thumb + .tag { display: table; margin-top: 0; }
 .home .ig-body { padding-top: var(--space-thumbnail-text); }
 
+/* Editorial grids use two sizes: a large lead and matching small thumbnails.
+   Every content format shares the Podcast frame proportions. */
+.sec-grid .story--md .art,
+.sec-grid .story--sm .art { aspect-ratio: 16 / 9; }
+
 /* Video thumbnails carry their own text: preserve the full 16:9 artwork. */
 .story .art[data-k="episode"],
 .sec-grid .story--sm .art[data-k="episode"] { aspect-ratio: 16 / 9; }

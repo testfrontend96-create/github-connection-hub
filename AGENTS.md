@@ -14,3 +14,4 @@
 - Where a flattened brand mark renders wrong, swap in that platform's canonical single-path logo rather than hand-editing the flattened geometry; keep the per-platform watermark bleed in one shared rule and override only the marks whose artwork shape needs it.
 - Apply the Unified Design System type scale, spacing rhythm and corner radii as one layer at the end of `src/overrides.css`, keeping the Hub colour palette, so typography and shapes change in one place.
 - Resolve episode thumbnail images from project-owned asset pointers in the episode data so all feed, listing, and detail views use the same verified artwork.
+- Keep editorial grid thumbnail proportions shared across content formats and sized by the lead/small grid tracks, so mixed-content rows align without clipping podcast artwork.
