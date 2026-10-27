@@ -495,6 +495,18 @@ a:hover .art[data-k="episode"] img,
   .hub-masthead .content-search { transition: none; }
 }
 
+/* Feature grid: the lead tile hands a column to the two tiles on its right,
+   so the pair beside it grows and the seams line up with the row below. */
+.bento .tile--lead { grid-column: 1 / 7; }
+.bento .tile--problems, .bento .tile--brief { grid-column: 7 / 13; }
+@media (max-width: 1020px) {
+  .bento .tile--lead { grid-column: 1 / 13; }
+  .bento .tile--problems { grid-column: 1 / 7; }
+  .bento .tile--brief { grid-column: 7 / 13; }
+}
+
+
+
 /* Knowledge summary: Sales conference light cards, scoped to this directory. */
 :root {
   --knowledge-card-fill: #ffffff;
