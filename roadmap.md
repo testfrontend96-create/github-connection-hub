@@ -42,3 +42,4 @@
 - [x] Centre each guide page fact row's label and value vertically inside its box.
 - [x] Show exactly two lines of copy, then an ellipsis, on the homepage bento article and podcast tiles.
 - [x] Put the Knowledge Base entry types in one dropdown and keep the topic tabs on a single line.
+- [x] Match the Knowledge Base type dropdown's height and text size to the topic tabs beside it.
