@@ -6,6 +6,7 @@ import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../compone
 import { PlayButton } from '../components/Player'
 import { SocLogo } from '../components/social'
 import { IconArrow } from '../components/icons'
+import blogTilePhoto from '../assets/home/blog-tile.png.asset.json'
 import {
   feed, problems, FRONT_PILLARS, T, E, KIND_LABEL, articles, howtos, faqs, social,
   hackers, instagram, instagramTop, clip, pretty,
@@ -122,7 +123,7 @@ export default function Home() {
             <h3 style={{ fontSize: '1.1rem' }}>Five things to know</h3>
             <ol className="brief">{brief.map((i) => <li key={i.u}><Link to={i.u}>{i.t}</Link><small>{i.kick} · {pretty(i.date)}</small></li>)}</ol>
           </div>
-          <Tile item={tileA} cls="tile--a" />
+          <Tile item={{ ...tileA, img: blogTilePhoto.url }} cls="tile--a" />
           <Tile item={tileB} cls="tile--b" />
         </div>
       </div></section>

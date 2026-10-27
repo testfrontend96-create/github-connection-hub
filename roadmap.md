@@ -52,3 +52,4 @@
 - [x] Enlarge the homepage blog tile's photo, fade it on a diagonal and dim it slightly.
 - [x] Re-cut the homepage blog tile: photo on the right with a soft left seam, the woman shifted right and clearly visible.
 - [x] Lean the homepage blog tile's photo fade slightly off vertical instead of a straight vertical cut.
+- [x] Blog bento tile uses the user's supplied photo as-is (soft left edge only)
