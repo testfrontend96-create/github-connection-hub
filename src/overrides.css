@@ -702,3 +702,28 @@ a:hover .art[data-k="episode"] img,
 .soc .soc-head { display: flex; align-items: center; gap: 8px; }
 .soc .soc-logo { display: inline-flex; width: 18px; height: 18px; margin: 0; flex: none; color: var(--ink); }
 .soc .soc-logo svg { width: 100%; height: 100%; display: block; }
+
+/* Bento Blog + Podcast tiles: artwork covered by a horizontal scrim (reference: dark
+   on the copy side, clearing to the right). Blog photo fills the whole card;
+   the podcast cover runs the card's full height, uncropped, on the right. */
+.bento .tile--a .tile-photo {
+  inset: 0; left: 0; width: 100%; height: 100%;
+  -webkit-mask-image: none; mask-image: none;
+}
+.bento .tile--a .tile-photo img { object-position: center 30%; }
+.bento .tile--b .tile-photo {
+  top: 0; bottom: 0; right: 0; left: auto; height: 100%; width: auto; aspect-ratio: 1 / 1;
+}
+.bento .tile--b .tile-photo img { width: 100%; height: 100%; object-fit: cover; }
+.bento .tile--a::after {
+  z-index: 0;
+  background: linear-gradient(90deg, rgba(5,4,13,.94) 0%, rgba(5,4,13,.82) 30%, rgba(5,4,13,.5) 55%, rgba(5,4,13,.15) 80%, rgba(5,4,13,0) 100%);
+}
+.bento .tile--b::after {
+  z-index: 0;
+  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 45%, rgba(5,4,13,.4) 70%, rgba(5,4,13,0) 100%);
+}
+.bento .tile--b .tile-photo {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, var(--white) 28%);
+  mask-image: linear-gradient(90deg, transparent 0%, var(--white) 28%);
+}
