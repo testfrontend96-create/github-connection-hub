@@ -728,22 +728,14 @@ a:hover .art[data-k="episode"] img,
   -webkit-mask-image: none; mask-image: none;
 }
 .bento .tile--a .tile-photo img { object-position: center 30%; }
-/* The podcast artwork is a two-shot: the left speaker's head starts at ~1% of
-   the frame and the right speaker's ends at ~99%, so showing both means showing
-   the whole width. The frame also carries baked-in black bars in its top and
-   bottom ~4%. Give the picture a box whose aspect matches the artwork's real
-   content (1280x670 — the frame minus those dead bars): `cover` then trims only
-   the bars, never the people, and the card's own surface pads the rest, so it
-   reads as a padded picture with no letterbox and nothing sliced. */
+/* The podcast artwork (872x406) is a two-shot with one speaker against each edge,
+   so showing both means showing the whole width: the box carries the artwork's
+   own aspect ratio, which leaves nothing cropped, and its left edge is already
+   transparent in the file, so it dissolves into the dark copy side on its own —
+   no mask, no letterbox, and the fade ends before either face. */
 .bento .tile--b .tile-photo {
-  top: 50%; bottom: auto; right: 14px; left: auto; width: calc(58% - 14px);
-  height: auto; aspect-ratio: 1280 / 670; transform: translateY(-50%); overflow: hidden;
-  /* the left speaker's head sits flush against the frame's own left edge, so a
-     hard vertical seam reads as a slice through his skull — this blends only the
-     back of his head into the dark copy side; his face (he faces right) and the
-     whole right speaker stay untouched */
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, var(--white) 6%);
-  mask-image: linear-gradient(90deg, transparent 0%, var(--white) 6%);
+  top: 50%; bottom: auto; right: 14px; left: auto; width: calc(62% - 14px);
+  height: auto; aspect-ratio: 872 / 406; transform: translateY(-50%); overflow: hidden;
 }
 .bento .tile--b .tile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .bento .tile--a::after {
