@@ -497,3 +497,36 @@ a:hover .art[data-k="episode"] img,
 .tile--brief .brief li { gap: 12px; padding: 10px 0; }
 .tile--brief .brief li::before { font-size: 18px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
 .tile--brief .brief a { font-size: 15px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; }
+
+/* ===========================================================
+   Homepage: every section mapped onto the Unified Design System
+   type scale (h1 40/56, h2 30/44, h3 28/34, h4 20/22, h5 18,
+   body 17, body-sm 15, caption 13, overline 13/500).
+   Kicks keep title case per the Hub's no-all-caps rule.
+   =========================================================== */
+.home .hub-masthead h1 { font-size: 40px; line-height: 1.05; font-weight: 600; letter-spacing: -0.03em; }
+.home .kick, .home .tile-kick > span, .home .pillar-cats-label, .home .ig-kind, .home .pcard-title, .home .spine span { font-size: 13px !important; line-height: 1.4; font-weight: 500; }
+.home .meta, .home .meta b, .home .meta span, .home .card-meta, .home .ig-date, .home .howto .meta, .home .brief small, .home .fp-footer-note { font-size: 13px; line-height: 1.4; }
+.home .meta b { font-weight: 600; }
+
+/* section heading rows */
+.home .sec-head h2, .home .rail-head { font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.02em; }
+.home .sec-head .q { font-size: 15px; line-height: 1.5; }
+@media (min-width: 768px) { .home .sec-head h2, .home .rail-head { font-size: 22px; } }
+
+/* bento */
+.home .tile--lead h2 { font-size: 28px; line-height: 1.15; font-weight: 600; letter-spacing: -0.025em; }
+@media (min-width: 768px) { .home .tile--lead h2 { font-size: 34px; } }
+.home .tile h3 { font-size: 18px !important; line-height: 1.35; font-weight: 600; letter-spacing: -0.015em; }
+.home .tile p, .home .tile--problems p { font-size: 15px; line-height: 1.5; }
+.home .prob-chips a, .home .chip { font-size: 13px; font-weight: 500; }
+
+/* stories, cards, explainers */
+.home .story--md h3, .home .story--lead h2 { font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.02em; }
+.home .story--sm h3, .home .card h3, .home .howto h3, .home .pcard-name, .home .faq-q { font-size: 18px; line-height: 1.35; font-weight: 600; letter-spacing: -0.015em; }
+.home .story p, .home .card p, .home .explainer p, .home .howto p, .home .faq-a, .home .soc span { font-size: 15px; line-height: 1.5; }
+.home .explainer .term { font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.02em; }
+.home .explainer--feature .term { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
+.home .soc b { font-size: 18px; line-height: 1.35; font-weight: 600; }
+.home .soc i { font-size: 13px; line-height: 1.4; }
+.home .howto .n { font-size: 28px; font-weight: 600; letter-spacing: -0.025em; }
