@@ -44,4 +44,6 @@
 - [x] Put the Knowledge Base entry types in one dropdown and keep the topic tabs on a single line.
 - [x] Match the Knowledge Base type dropdown's height and text size to the topic tabs beside it.
 - [x] Replace the Knowledge Base type dropdown with a designed menu panel and centre its label vertically.
+- [x] Match unselected tabs and chips to the search field's border grey, on the border and the label.
+
 

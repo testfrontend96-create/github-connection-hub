@@ -127,7 +127,12 @@ a.tile:hover { border-color: rgba(255, 255, 255, .24); }
 .knowledge-guide-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 10px; color: var(--muted); font-size: .8rem; }
 .tag--howto { color: var(--teal); background: var(--surface); }
 .knowledge-stats { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+/* Unselected tabs and chips borrow the search field's outline grey for both the border and the label;
+   the chosen tab keeps its filled treatment and hover stays a solid step so the row reads as interactive. */
+.chip:not(.is-active):not(.chip--dark) { border-color: var(--line); color: var(--line); }
+.chip:not(.is-active):not(.chip--dark):hover { border-color: var(--deep); color: var(--bone); }
 /* Knowledge Base filters: entry types live in one designed menu, topics stay tabs on a single line */
+
 .kb-filter-row { display: flex; align-items: center; gap: 16px; }
 .kb-type { position: relative; display: inline-flex; flex: none; z-index: 20; }
 .kb-type-trigger {
