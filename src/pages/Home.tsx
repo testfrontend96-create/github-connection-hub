@@ -37,7 +37,7 @@ function Tile({ item, cls }: { item: any; cls: string }) {
   const photo = !!item.img
   return (
     <Link className={`tile ${cls}${photo ? ' tile--photo' : ''}`} data-k={item.k} to={item.u}>
-      {photo && <span className="tile-photo"><img src={item.img} alt="" loading="lazy" decoding="async" />{item.audio && <PlayButton track={trackOf(item)} />}</span>}
+      {photo && <span className="tile-photo"><img src={item.img} alt="" loading="lazy" decoding="async" /></span>}
       <div className="tile-kick"><span className="kick" data-k={item.k}>{item.kick}</span></div>
       <h3>{item.t}</h3><p>{clip(item.d, 400)}</p>
       <div className="meta"><b>{item.meta}</b><span>{pretty(item.date)}</span></div>
