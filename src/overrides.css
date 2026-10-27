@@ -728,19 +728,25 @@ a:hover .art[data-k="episode"] img,
   -webkit-mask-image: none; mask-image: none;
 }
 .bento .tile--a .tile-photo img { object-position: center 30%; }
+/* The podcast artwork is a two-shot: the left speaker's head starts at ~1% of
+   the frame and the right speaker's ends at ~99%, so showing both means showing
+   the whole 16:9 frame. At the card's full height a 58% wide box (325 x 208)
+   crops only ~1.5% off each edge — both heads stay whole — and it is half
+   again as wide as the old square. */
 .bento .tile--b .tile-photo {
-  top: 0; bottom: 0; right: 0; left: auto; height: 100%; width: auto; aspect-ratio: 1 / 1;
+  top: 0; bottom: 0; right: 0; left: auto; height: 100%; width: 58%; aspect-ratio: auto;
+  -webkit-mask-image: none; mask-image: none;
 }
-.bento .tile--b .tile-photo img { width: 100%; height: 100%; object-fit: cover; }
+.bento .tile--b .tile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .bento .tile--a::after {
   z-index: 0;
   background: linear-gradient(90deg, rgba(5,4,13,.94) 0%, rgba(5,4,13,.82) 30%, rgba(5,4,13,.5) 55%, rgba(5,4,13,.15) 80%, rgba(5,4,13,0) 100%);
 }
+/* The fade has to be fully gone before it reaches either speaker, so it ends on
+   the artwork's left edge (42%) instead of running over the picture. */
 .bento .tile--b::after {
   z-index: 0;
-  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 45%, rgba(5,4,13,.4) 70%, rgba(5,4,13,0) 100%);
+  background: linear-gradient(90deg, rgba(5,4,13,.97) 0%, rgba(5,4,13,.92) 16%, rgba(5,4,13,.5) 30%, rgba(5,4,13,0) 42%);
 }
-.bento .tile--b .tile-photo {
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, var(--white) 28%);
-  mask-image: linear-gradient(90deg, transparent 0%, var(--white) 28%);
-}
+/* the copy keeps the column the artwork leaves it */
+.bento .tile--b h3, .bento .tile--b p { max-width: 38%; }
