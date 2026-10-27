@@ -49,3 +49,4 @@
 
 - [x] Give unselected tabs a light periwinkle hover label and border instead of unreadable bone-on-white.
 - [x] Tighten the tab pills' padding and gaps on every page that shows a tab row.
+- [x] Make the homepage blog card photo a slanted, bottom-anchored masked panel that dissolves upward, on desktop and phone.
