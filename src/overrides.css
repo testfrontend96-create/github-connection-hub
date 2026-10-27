@@ -541,8 +541,8 @@ a:hover .art[data-k="episode"] img,
 #main:has(.knowledge-item-meta) .answer-box .eyebrow { font-size: 13px; font-weight: 600; line-height: 1.35; letter-spacing: -0.01em; text-transform: none; }
 
 #main:has(.knowledge-item-meta) .facts { border-radius: var(--radius); overflow: hidden; margin: var(--space-block) 0; gap: 1px; }
-#main:has(.knowledge-item-meta) .facts > div { padding: 20px 24px; }
-#main:has(.knowledge-item-meta) .facts dt { font-size: 13px; font-weight: 500; letter-spacing: 0; text-transform: none; margin-bottom: 8px; }
+#main:has(.knowledge-item-meta) .facts > div { padding: 20px 24px; align-items: center; }
+#main:has(.knowledge-item-meta) .facts dt { font-size: 13px; font-weight: 500; letter-spacing: 0; text-transform: none; margin-bottom: 0; }
 #main:has(.knowledge-item-meta) .facts dd { font-size: 15px; line-height: 1.5; }
 #main:has(.knowledge-item-meta) .prose h2 { font-size: 22px; font-weight: 600; line-height: 1.3; letter-spacing: -0.015em; margin: var(--space-block) 0 var(--space-h3); }
 #main:has(.knowledge-item-meta) .prose h3 { font-size: 18px; font-weight: 600; line-height: 1.35; margin: 32px 0 var(--space-h3); }
