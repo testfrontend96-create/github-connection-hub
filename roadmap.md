@@ -32,5 +32,5 @@
 - [x] Match the Biohackers A–Z control to the search field beside it.
 - [x] Lighten the hover outline on every card surface — plain, accent-marked and dark cards.
 - [x] Keep large and small editorial thumbnails, matching all small formats to Podcast thumbnail heights.
-- [x] Give the selected bento article and episode tiles the same glass surface as Start here, with the artwork frosted behind it.
+- [x] Give the bento article and episode tiles the Start here glass background — sharp artwork as a square beside the copy, never blurred.
 - [x] Match the homepage Top Biohackers cards to the Top Biohackers page card design, with initials shown when a photo is missing.
