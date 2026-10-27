@@ -119,6 +119,23 @@
   filter: blur(52px);
   animation: board-glow-drift 46s cubic-bezier(.45, 0, .55, 1) -12s infinite reverse;
 }
+/* Third hue: the site's original teal (hub.css palette comment), held in a
+   local token because the --teal token itself was remapped to grey in the
+   monochrome layer. It sits low, centred under the Blog/Podcast row, so the
+   band reads as a cool triad: periwinkle on the lead card, deep indigo in the
+   top-right corner, teal rising from the bottom edge. Masked from the top only
+   — the band's bottom is a hard edge, and overflow:clip cuts this glow on the
+   same line as the band, so the cut reads as intentional. */
+.board { --board-hue-teal: #12A6B2; }
+.board-glow--c {
+  top: 62%; left: 34%; right: auto; width: 60%; height: 56%;
+  background: radial-gradient(46% 46% at 50% 50%,
+    color-mix(in srgb, var(--board-hue-teal) 44%, transparent), transparent 70%);
+  filter: blur(44px);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 42%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 42%, #000 100%);
+  animation: board-glow-drift 40s cubic-bezier(.45, 0, .55, 1) -6s infinite;
+}
 .board-atmos {
   inset: 0;
   background-image:

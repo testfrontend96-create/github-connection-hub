@@ -61,3 +61,4 @@
 - [x] Category-label markers: the small diamond before "Blog · Oct 8, 2026" and every similar label is now a round dot.
 - [x] Hero band: add the Biohackers Media Hub's drifting hue light — two slow periwinkle/indigo glows plus a faint dotted atmosphere behind the masthead.
 - [x] Hero band: left periwinkle glow moved lower and left so its light centre sits on the lead "Top-studied peptides" card (mask now trims only the last stretch of the box).
+- [x] Hero band: third drifting hue added low across the band's bottom edge (teal, centred under the Blog/Podcast row), masked from the top so the band's bottom stays a sharp cut.
