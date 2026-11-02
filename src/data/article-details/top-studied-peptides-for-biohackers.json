@@ -4,7 +4,7 @@
   "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
   "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
  },
- "intro": "Peptides are organic substances formed by amino acid chains. Most of them are synthesized by the human body itself, while a smaller amount is obtained from food. Their significance is actively discussed in scientific, medical, and sports circles: how much do peptides prolong youth and beauty, and how do they improve appearance — let’s find out with our biohacking experts!",
+ "intro": "",
  "highlights": [
   "Peptides are short chains of amino acids used not only for treatment but also for wellness and beauty.",
   "The most studied peptides for tissue repair include BPC-157, TB-500, and Tα1.",
@@ -57,7 +57,28 @@
    ]
   },
   {
-   "t": "events"
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
   },
   {
    "t": "p",
@@ -96,6 +117,15 @@
   {
    "t": "p",
    "text": "Tb-500, also known as thymosin beta-4, is a peptide that occurs naturally in the human body and plays a key role in regulating the activity of actin filaments in cells. This peptide has attracted attention for its potential regenerative properties."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/cover3-4-768x572-optimized.png",
+   "alt": "What Is Biohacking In Fitness"
+  },
+  {
+   "t": "p",
+   "text": "What Is Biohacking In Fitness Blog, Health & Wellness, Fitness & Recovery, Fitness 14 min read How Biohacking is Related to Fitness Fitness biohacking and sports in general is a powerful method that can improve many areas of your life. For example, it can: reduce your risk of developing a disease to which you may be genetically predisposed; improve physical health; reduce symptoms of depression; lower blood pressure; aid in weight […] [Read The Full Article](https://www.biohackers.world/blog/fitness-and-biohacking)"
   },
   {
    "t": "p",
@@ -142,6 +172,15 @@
     "increases the level of antioxidant and anti-inflammatory enzymes;",
     "reduces the risk of scarring."
    ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/02/cover3-1-768x572-optimized.png",
+   "alt": "Top-Rated Biohacking Skincare Products"
+  },
+  {
+   "t": "p",
+   "text": "Top-Rated Biohacking Skincare Products Blog, Health & Wellness, Skin & Body Care 14 min read Ingredients to Look For in Biohacking Skincare What distinguishes biohacking beauty cosmetics from others? Such cosmetic products contain physiological components – active substances that are easily assimilated and work perfectly as they relate to our bodies. These are amino acids, vitamins, minerals, enzymes, nucleic acids, lipids, and lactic acids (resources). They are usually taken from […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-skincare)"
   },
   {
    "t": "p",
@@ -262,7 +301,13 @@
    "text": "Ipamorelin is a peptide hormone that enhances growth hormone secretion and mimics ghrelin’s action in the body."
   },
   {
-   "t": "academy"
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
   },
   {
    "t": "p",
@@ -344,7 +389,7 @@
   },
   {
    "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/20.-Thymosin-Alpha-1-T%CE%B11-optimized.webp",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/20.-Thymosin-Alpha-1-Tα1-optimized.webp",
    "alt": "Thymosin Alpha-1 (Tα1)"
   },
   {
@@ -362,7 +407,7 @@
   },
   {
    "t": "p",
-   "text": "**Peptides**: GHK-Cu, Matrixyl, Argireline"
+   "text": "**Peptides** : GHK-Cu, Matrixyl, Argireline"
   },
   {
    "t": "p",
@@ -391,7 +436,7 @@
   },
   {
    "t": "p",
-   "text": "**Peptides**: Argireline, Matrixyl"
+   "text": "**Peptides** : Argireline, Matrixyl"
   },
   {
    "t": "p",
@@ -416,7 +461,7 @@
   },
   {
    "t": "p",
-   "text": "**Peptides**: a complex of growth factors + signaling peptides"
+   "text": "**Peptides** : a complex of growth factors + signaling peptides"
   },
   {
    "t": "p",
@@ -441,7 +486,7 @@
   },
   {
    "t": "p",
-   "text": "**Peptides**: collagen peptides"
+   "text": "**Peptides** : collagen peptides"
   },
   {
    "t": "p",
@@ -466,7 +511,7 @@
   },
   {
    "t": "p",
-   "text": "**Peptide**: Semaglutide (GLP-1 analog)"
+   "text": "**Peptide** : Semaglutide (GLP-1 analog)"
   },
   {
    "t": "p",
@@ -520,6 +565,18 @@
   {
    "t": "p",
    "text": "A responsible approach to your health is a key principle of biohacking and anti-aging medicine: any supplements and peptides should be used consciously, safely, and under professional supervision. Only in this way will they have the desired and beneficial effect on the biohacker’s body."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Are Peptides Safe?",
+   "a": "Peptides are actively researched in medicine, but their safety, efficacy, optimal dosages, and long-term effects for many compounds are still being studied. Therefore, their use requires a particularly balanced and individualized approach."
   }
  ]
 }

@@ -1,0 +1,219 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Acupuncture reduces pain, stress, and supports recovery.",
+  "It balances energy and boosts healing through body points.",
+  "The most popular types are traditional, trigger point, and electroacupuncture.",
+  "To stay safe, choose a licensed practitioner and check for sterile needles."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What is Acupuncture",
+   "id": "what-is-acupuncture"
+  },
+  {
+   "t": "p",
+   "text": "Acupuncture is a therapeutic practice in which very fine steel needles are inserted into the skin to stimulate specific points on the body. This practice, which originated in traditional Chinese medicine, is used to alleviate health conditions or symptoms such as pain, cramps, and swelling. Over the years, it has been used to treat many health problems, including stress. Today, it is preferred as a complement to primary medical treatment. Acupuncture should only be performed by professionals trained in this field and after approval by a medical specialist."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/06/close-up-patient-acupuncture-procedure-1-1024x681-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "What Does Acupuncture Treat",
+   "id": "what-does-acupuncture-treat"
+  },
+  {
+   "t": "p",
+   "text": "Doctors who practice this method of treatment have developed it over thousands of years so that its use promotes healing and recovery. Diseases, injuries, and pain can disrupt blood circulation and metabolism, block the flow of energy, and thus lead to bodily imbalances. Removing these blocks eliminates problems and promotes healing."
+  },
+  {
+   "t": "p",
+   "text": "The main diseases and ailments for which acupuncture is particularly often used are as follows:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Headaches and migraines.",
+    "Back, neck, and muscle pain.",
+    "Knee pain.",
+    "Menstrual cramps.",
+    "Digestive system diseases.",
+    "Psychiatric problems.",
+    "Respiratory diseases.",
+    "Allergies.",
+    "Pregnancy complications.",
+    "Immune system problems.",
+    "Irritable bowel syndrome.",
+    "Weight loss."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Other benefits of acupuncture:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Acupuncture can alleviate side effects such as pain, nausea, and fatigue.",
+    "The US National Institutes of Health includes acupuncture in its list of treatments for nausea and vomiting caused by chemotherapy.",
+    "Acupuncture can reduce the need for pain medication and make your child’s life more comfortable."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Acupuncture as a Biohacking Tool",
+   "id": "acupuncture-as-a-biohacking-tool"
+  },
+  {
+   "t": "note",
+   "text": "In [biohacking](https://www.biohackers.world/blog/what-is-biohacking), acupuncture works to [enhance sleep quality](https://www.biohackers.world/blog/biohacking-sleep), [alleviate stress](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health), mitigate pain, and promote overall well-being. It can also be considered as one of the tools for optimizing physiological processes and achieving the desired state of health and well-being."
+  },
+  {
+   "t": "p",
+   "text": "For example, renowned biohacker and entrepreneur Marvin Liao, CEO of 500 Startups, frequently discusses his fascination with Chinese medicine and the benefits of recovery from long flights. In 2009, he was an executive at Yahoo! and traveled much more than he does now, which resulted in him becoming ill frequently. After undergoing tests and listening to his body’s signals, he began taking nootropics and Chinese herbs and practicing acupuncture. According to Marvin, the results were not long in coming."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/02/cover3-11-768x571-optimized.png",
+   "alt": "Biohacking experts from pioneers level to modern innovators"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking experts from pioneers level to modern innovators Blog, Health & Wellness 14 min read Who are biohackers Biohackers are a community that explores the capabilities of the human body. The main goals are to improve productivity. They want to improve the quality of life and, therefore, try to hack their bodies with various practices, ranging from dietary supplements and physical exercise to blood transfusions, nootropics, and chip implantation. Biohackers […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-experts-from-pioneers-level-to-modern-innovators)"
+  },
+  {
+   "t": "h2",
+   "text": "Types of Acupuncture",
+   "id": "types-of-acupuncture"
+  },
+  {
+   "t": "h3",
+   "text": "Traditional Chinese Acupuncture"
+  },
+  {
+   "t": "p",
+   "text": "This is the most well-known form of acupuncture, based on the principles of Traditional Chinese Medicine (TCM). It involves inserting fine needles into specific points along the body’s meridians to balance the flow of Qi (vital energy), promote healing, and restore harmony within the body."
+  },
+  {
+   "t": "h3",
+   "text": "Trigger Point Therapy"
+  },
+  {
+   "t": "p",
+   "text": "Also known as dry needling, this approach targets tight muscle knots or «trigger points» that cause pain or limit movement. By inserting needles into these areas, the muscle can relax, improving function and reducing discomfort."
+  },
+  {
+   "t": "h3",
+   "text": "Electroacupuncture"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/06/close-up-patient-getting-electro-dry-needling-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "This modern variation involves attaching small electrodes to the acupuncture needles and applying a mild electric current. It enhances the stimulation of acupuncture points, often used for pain management, muscle recovery, and neurological conditions."
+  },
+  {
+   "t": "h3",
+   "text": "Auricular Acupuncture"
+  },
+  {
+   "t": "p",
+   "text": "Focused on the ear, this method is based on the idea that the ear is a microsystem representing the entire body. Needles are placed on specific points in the ear to treat various conditions, including addiction, pain, and anxiety."
+  },
+  {
+   "t": "h2",
+   "text": "What to Expect During and After Acupuncture Session",
+   "id": "what-to-expect-during-and-after-acupuncture-session"
+  },
+  {
+   "t": "p",
+   "text": "Acupuncture treatment involves inserting needles into specific points of the body, depending on the condition being treated. Sterile, disposable, and very thin needles are used for this purpose. During the procedure, you may feel very slight pain when the needles are first inserted. Otherwise, the patient experiences no pain. A slight feeling of warmth may occur at the treated points. Depending on the condition, the duration of the needles’ effect may vary, but it is usually 20-30 minutes."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "Stimulation techniques may be used to achieve specific effects. In this case, the needles are additionally heated or moved up and down."
+  },
+  {
+   "t": "p",
+   "text": "The duration of treatment and the number of sessions depends on the individual and the level of discomfort they experience. It is generally believed that 10 to 15 sessions are sufficient for treatment. In some cases, patients may respond to treatment more quickly and recover in approximately 3-5 sessions."
+  },
+  {
+   "t": "h2",
+   "text": "How to Choose a Practitioner",
+   "id": "how-to-choose-a-practitioner"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/06/close-up-therapist-wearing-medical-mask-1024x681-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Before visiting an acupuncture specialist, consult with your primary care physician or therapist, who may be able to recommend a licensed specialist with experience in treating your condition. Licensed specialists will always use sterile needles and perform the procedure properly to prevent injury and infection."
+  },
+  {
+   "t": "p",
+   "text": "There may be medical boards in your area that have this information. Licensing requirements vary from region to region. The American Board of Medical Acupuncture certifies acupuncture practitioners in the United States. The American Academy of Medical Acupuncture maintains a directory of practitioners who specialize in medical acupuncture."
+  },
+  {
+   "t": "h2",
+   "text": "How to Measure the Effectiveness of Acupuncture",
+   "id": "how-to-measure-the-effectiveness-of-acupuncture"
+  },
+  {
+   "t": "p",
+   "text": "Treatment effectiveness gauges how well your treatments are working based on patient feedback and clinical outcomes. This metric can be measured through follow-up consultations, different surveys, patient pain reductions, better sleep, and health outcome reports."
+  },
+  {
+   "t": "h2",
+   "text": "Is Acupuncture Safe?",
+   "id": "is-acupuncture-safe"
+  },
+  {
+   "t": "p",
+   "text": "Acupuncture therapy is generally very safe when performed by a licensed professional. The most common side effects are mild and temporary, including slight bruising, minor soreness, or fatigue after a session."
+  },
+  {
+   "t": "h2",
+   "text": "What Science Says About Acupuncture",
+   "id": "what-science-says-about-acupuncture"
+  },
+  {
+   "t": "p",
+   "text": "Science says that acupuncture, a traditional Chinese medicine method, can be effective in relieving pain and other symptoms. Still, the mechanisms of action are not fully understood. Although there is scientific evidence supporting the effect of acupuncture on endorphin production and modulation of the nervous and immune systems, the theory of “qi” and meridians underlying acupuncture has not been conclusively proven scientifically."
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "Acupuncture is a time-tested healing practice rooted in Traditional Chinese Medicine, with growing support from modern science. It involves the insertion of fine needles into specific points on the body to stimulate healing, relieve pain, and restore balance. From Traditional Chinese Acupuncture to specialized techniques like Trigger Point Therapy and Electroacupuncture, this therapy offers a wide range of benefits for physical and emotional well-being. Whether seeking relief from chronic pain and stress or enhancing your overall health, acupuncture can be a safe and effective part of your biohacking wellness journey."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is Acupuncture Safe?",
+   "a": "Acupuncture therapy is generally very safe when performed by a licensed professional. The most common side effects are mild and temporary, including slight bruising, minor soreness, or fatigue after a session."
+  }
+ ]
+}

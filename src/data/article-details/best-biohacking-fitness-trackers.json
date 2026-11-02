@@ -1,0 +1,408 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Fitness trackers are wearable devices that help you understand how your body works and improve it using real data.",
+  "They track key metrics like steps, heart rate, HRV, sleep, breathing, calories, and overall recovery.",
+  "Smartwatches and smart rings are the most popular trackers for daily activity, sleep, and recovery monitoring.",
+  "Chest strap trackers give the most accurate heart rate and HRV data, especially during intense workouts.",
+  "Smart insoles help analyze gait, balance, and foot pressure to improve running and reduce joint stress.",
+  "Smart clothing tracks movement, posture, breathing, and muscle load directly through built-in sensors."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What are Fitness Trackers in Biohacking?",
+   "id": "what-are-fitness-trackers-in-biohacking"
+  },
+  {
+   "t": "p",
+   "text": "Wearable health trackers encompass all kinds of devices for measuring your performance during exercise. These could be devices that monitor your heart rate, blood oxygen levels, or simply remind you to calm down and breathe. There are a variety of them on the market today: you can look at smartwatches from giants like Apple and Xiaomi or explore more niche options like the Oura ring or Whoop. One of the largest reviews included data from nearly 164,000 people from 39 systematic reviews and meta-analyses. It found that using activity trackers increases physical activity and improves fitness. These improvements were sustained over time and were reflected in changes in body composition and increased overall activity."
+  },
+  {
+   "t": "note",
+   "text": "But trackers aren’t always focused solely on your physical activity. They can also be used to track sleep and anxiety."
+  },
+  {
+   "t": "p",
+   "text": "They manage and improve various health conditions. That’s why they’re so valuable in the biohacking world. One clinical study showed that wearable devices can improve the quality of nighttime sleep in healthy participants. They collected data on heart rate, respiration, and sleep phases, and users reported a reduction in nocturnal disturbances after starting to use the tracker. The devices used demonstrated low error in sleep measurements compared to laboratory methods."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/high-angle-gym-outfit-dumbbells-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Metrics Biohackers Should Track",
+   "id": "metrics-biohackers-should-track"
+  },
+  {
+   "t": "p",
+   "text": "There are several key indicators that influence our body’s health. These are the ones you should pay attention to, because if you set a goal and improve them, your body will perform better. It’s important to remember that discipline is a key factor, and this isn’t a quick process. With this in mind, let’s look at the most popular metrics."
+  },
+  {
+   "t": "h3",
+   "text": "1. Physical Activity"
+  },
+  {
+   "t": "p",
+   "text": "Key activity indicators are steps, calories burned, active minutes, and exercise time. They provide a basic understanding of the level of movement throughout the day. Average recommendation 7-10 thousand steps per day and at least 150 minutes of moderate physical activity per week. For active people or those working on endurance, the numbers may be higher. It’s not just the number of steps that matters, but also traffic intensity. Moderate exercise like walking, swimming, or [yoga](https://www.biohackers.world/blog/biohackers-guide-to-yoga) improves circulation and reduces stress, while interval and strength training help [strengthen muscles](https://www.biohackers.world/blog/how-to-strengthen-muscle-growth-using-biohacking-methods) and boost metabolism. Using exercise measuring devices helps tracking your actual activity, especially on days when you feel like you’ve been moving enough."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/02/cover3-9-768x572-optimized.png",
+   "alt": "Biohacks for Stress Relief"
+  },
+  {
+   "t": "p",
+   "text": "Biohacks for Stress Relief Blog, Health & Wellness, Cognitive Enhancement 12 min read Connection between biohacking and stress relief Short-term stress can be beneficial by keeping you motivated, but prolonged exposure to it negatively affects your health. According to a study by scientists at Yale University, chronic stress accelerates the aging process, TechInsider reports. The researchers analyzed an “epigenetic clock” that uses DNA methylation markers to estimate biological […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health)"
+  },
+  {
+   "t": "h3",
+   "text": "2. Heart Rate"
+  },
+  {
+   "t": "p",
+   "text": "This data helps you understand how efficiently your heart is working. For most people, at rest, the heart rate is within 60-80 beats per minute. If you are a more trained athlete, this data may be 50 and below, which indicates high cardiac muscle efficiency. Tracking these measurements during exercise is helpful plus zones, as they reflect the intensity of the load. They are divided into several levels:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "50-60% of maximum heart rate is the recovery zone,",
+    "70-80% – endurance zone,",
+    "85-90% – high intensity zone."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The most effective strategy is to alternate between zones. This will improve your endurance and avoid overtraining. Your heart rate can also help you understand how well your body has recovered. For example, if it’s above 8-10 beats per second in the morning, you’re likely not fully recovered yet."
+  },
+  {
+   "t": "h3",
+   "text": "3. HRV"
+  },
+  {
+   "t": "note",
+   "text": "Heart rate variability. This is one of the important biomarkers of recovery and stress. It reflects how flexibly the body responds to external stress."
+  },
+  {
+   "t": "p",
+   "text": "This indicator is usually measured in milliseconds. The higher the indicator, the greater the body’s ability to adapt. The standard range is 40-100 ms. In trained athletes, it is above 100 ms. HRV is influenced by quite a few external factors, such as sleep, stress, nutrition, alcohol, and body temperature. And if your HRV drops sharply, you may need to take a break. Many biohackers track HRV through the Oura Ring but this format could not be suited for everyone. So if you like bracelets more, try one of the best wrist trackers such as Whoop or Garmin to adjust training depending on the state of the nervous system."
+  },
+  {
+   "t": "h3",
+   "text": "4. VO2 max"
+  },
+  {
+   "t": "p",
+   "text": "VO₂ max- the body’s maximum oxygen consumption during physical exertion. If this indicator is in good condition, your entire body becomes more resilient. It is expressed in millilitres of oxygen per kilogram of body weight per minute. For untrained men, the average level is 35-45 ml/kg/min. For women 30-40 ml/kg/min. Well-trained athletes have higher 55-60 ml/kg/min."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "p",
+   "text": "To increase your VO₂max, try incorporating interval training into your training routine. Anaerobic training, such as running and cycling, is also suitable. This is one of the key indicators of biohacking, as it is directly linked to longevity. Research from Harvard Medical School shows that a high VO₂max correlates with a lower risk of cardiovascular disease and metabolic syndrome."
+  },
+  {
+   "t": "h3",
+   "text": "5. Respiratory Rate"
+  },
+  {
+   "t": "p",
+   "text": "This indicator calculates the number of breaths per minute. The norm for an adult is usually 12-20 breaths. The indicator is measured most often in a dream or at rest, since any movement affects accuracy. Workout tracking devices like these are used for monitoring your breathing helps you understand how your respiratory system is working and adjust your [breathing practices](https://www.biohackers.world/blog/breathwork-biohacking) to reduce anxiety and [improve sleep](https://www.biohackers.world/blog/biohacking-sleep)."
+  },
+  {
+   "t": "h3",
+   "text": "6. Sleeping Cycles"
+  },
+  {
+   "t": "p",
+   "text": "This indicator is important for the overall health of the body, so many biohackers try to closely monitor this indicator. Sleep consists of four stages:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "light sleep – transition phase,",
+    "deep sleep – physical recovery,",
+    "REM or dream phase – restoration of cognitive functions,",
+    "short awakenings that occur naturally."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Ideally, the deep sleep phase takes 15-25%, a REM 20-25% of the total sleep duration, this affects the quality of your sleep. Going to bed at roughly the same time each night and maintaining a comfortable temperature throughout the night will impact your sleep quality. Also, avoid eating too late, as this can impair sleep. A lack of REM and deep sleep stages can lead to memory impairment, weakened immunity, and delayed recovery after exercise."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
+  },
+  {
+   "t": "h2",
+   "text": "Best Fitness Activity Trackers",
+   "id": "best-fitness-activity-trackers"
+  },
+  {
+   "t": "p",
+   "text": "Now that we’ve covered the most important indicators you can monitor, let’s talk about the essential gadgets for this purpose. They’ll help you get to know your body better and tune it to the desired state, both physically and mentally. We explored the best rated fitness trackers and are ready to tell you about them."
+  },
+  {
+   "t": "h3",
+   "text": "Smartwatches"
+  },
+  {
+   "t": "p",
+   "text": "This versatile watch measures steps, heart rate, active minutes, calories, stress levels, HRV, sleep patterns, and often VO₂ max. It works 24/7 and syncs with your phone. Responsible for the measurement of heart rate, activity, sleep, VO₂ max, GPS tracking, and respiration. Basic synchronisation via the proprietary app is mandatory. Premium subscriptions provide advanced analysis: daily reports, recovery dynamics, and personalised advice. Examples:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Apple Watch Series 9. About $399-429, This data-driven device gives accurate heart rate, ECG, oxygen measurement, Apple Health integration, and the ability to add training plans. You also can see calories burnt per day or month.",
+    "Garmin Fēnix 7. $699-899, biohacker gadget has multisport modes, powerful battery life, detailed VO₂ max and recovery analysis. The Garmin Connect app is free, and Garmin Coach is included in the app.",
+    "Polar Pacer Pro. $299-349, a lightweight watch for runners and triathletes with accurate GPS and training performance measurement."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/arabic-woman-teaching-senior-man-use-smartwatch-with-smartphone-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Smart Rings"
+  },
+  {
+   "t": "p",
+   "text": "These are compact devices that continuously monitor sleep, HRV, heart rate, and activity. Ideal for minimalist lifestyles and long-term monitoring without the need for daily charging. Measure sleep phases, HRV, pulse, activity, and skin temperature. Synchronisation and analysis via the proprietary app. Premium subscriptions provide a detailed sleep and recovery graph. Examples:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Oura Ring Gen3. Aboutcircuit$299-$399. The ring provides deep sleep and recovery analysis, temperature, HRV, and activity tracking. Oura app + subscription for advanced reports.",
+    "Samsung Galaxy Ring. Aboutcircuit$399, integration with the Samsung Health ecosystem, sleep and activity analysis.",
+    "Amazfit Helio Ring. $139.99, basic sleep and activity tracking, budget option."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/Best-Smart-Rings-Review-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Upper Arm Fitness Trackers"
+  },
+  {
+   "t": "p",
+   "text": "Trekers, which are put on the shoulder with the help of a shoulder girdle, give accurate measurement of upper body activity, providing a useful emphasis for strength training, cross-training, and movement quality assessment. They measure strength training modes, range of motion, intensity and symmetry depending on the model. Examples:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Push Band 2.0. $99-$129, accurate measurement of speed and power during strength exercises.",
+    "Atlas Wearables. $150-$180, automatic exercise recognition, and detailed repetition network analysis. Works through the app."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/img-1024x1024-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Activity Tracker With Chest Strap"
+  },
+  {
+   "t": "p",
+   "text": "Chest straps are the standard for heart rate measurement, especially during intense exercise. Such fitness trackers provide more accurate data than optical wrist sensors. With their help you can measure pPulse, HRV, VO₂ max, and intensity zones. These usually require a dedicated app to function correctly: Strava, TrainingPeaks, Garmin, Polar."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/02/cover3-12-768x572-optimized.png",
+   "alt": "Biohacking Apps for Health Optimization"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking Apps for Health Optimization Blog, Fitness & Recovery, Sleep, Skin & Body Care, Devices, Nutrition, Fitness 8 min read Why do biohackers use apps With biohacking apps, you can make and improve your life more comfortable. Many functions and tasks are now taken over by smartphone apps – they collect and store data from devices, provide ready-made programs and recipes, motivate, relax, and can even help you find new friends with similar sporting interests. […] [Read The Full Article](https://www.biohackers.world/blog/top-biohacking-apps-for-health-sleep-brain-food-and-body)"
+  },
+  {
+   "t": "p",
+   "text": "Examples:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Polar H10. $89-$99. This fitness tracker is considered the gold standard for heart rate accuracy and syncs well with most apps.",
+    "Wahoo TICKR X. $79-$99, support for multi-sensory data, suitable for cross-training and interval training."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/AdobeStock_311231825-1024x683-optimized.jpeg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Athletic Clothes with Smart Sensors"
+  },
+  {
+   "t": "p",
+   "text": "This is a new generation of sportswear. It has built-in sensors that measure biomechanics of movements, body position, muscle load and sometimes breathing. This is a step toward integrating technology directly into the equipment. Such workout tracking devices in clothing can measure joint movement, amplitude, acceleration, balance, and sometimes muscle activity. Examples:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Hexoskin Smart Shirts. $199-$299, measure heart rate, breathing, activity, and the data is synchronised with the app.",
+    "Sensoria Smart Socks. $199, gait and balance analysis, useful for runners and rehabilitation."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/polnyi-vystrel-muzcina-zanimaetsa-sportom-so-statistikoi-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Smart Insoles with Sensors"
+  },
+  {
+   "t": "p",
+   "text": "Withinsoles with pressure and motion sensors help you see load distribution on the foot. With this gadget, you can analyse your gait, balance, and even find out if your running technique is correct. This allows you to improve overall health, as improper gait or running can put unnecessary stress on your joints. Insoles are measured pressure in different zones of the foot, ground contact time, step symmetry, step length and frequency. The peculiarity of such a product is thatOften they require separate pins, chips and an app. Examples:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "NURVV Run Insoles. $299Detailed analysis of gait, cadence, balance, and efficiency; syncs with the app; requires shoes and a mobile app for analysis.",
+    "Under Armour SpeedForm Gemini 3 Smart InsolesOlder models, but with long-standing reviews from runners."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Skin Sensors"
+  },
+  {
+   "t": "p",
+   "text": "A relatively new category. These are sensors that attach to the skin and track temperature, hydration, skin conductivity, and sweat levels. Sometimes, they can also analyse heart rate and respiration data. They began to emerge at the intersection of pharmaceuticals, sports science, and [biohacking](https://www.biohackers.world/blog/what-is-biohacking). They haven’t yet entered pop culture or become mainstream. Biohackers are exploring them to understand the body at the metabolic level. They measure changes in skin temperature, sweating, galvanic skin response, and sometimes HRV when integrated with other equipment. These sensors are already being used in advanced research on recovery and post-exercise recovery. They can signal approaching fatigue or the onset of inflammatory reactions earlier than subjectively noticeable. Examples:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "WHOOP Body Skin Sensor. Part of the WHOOP system, it collects skin conductivity and temperature data to analyse recovery and adaptation. Works only with a mandatory WHOOP subscription and a paired wristband."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Empatica E4. A scientifically advanced device used in research: it measures galvanic skin response, temperature, and heart rate. It’s not intended for mass consumption, but it’s already finding use in stress and recovery research."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "How We Choose the Best Fitness Activity Trackers",
+   "id": "how-we-choose-the-best-fitness-activity-trackers"
+  },
+  {
+   "t": "p",
+   "text": "To choose a truly useful tracker, it’s important to approach the matter carefully. Try watching specialised videos and reviews, and read reviews of the product you’re looking for. Compare options; the most expensive option isn’t always the best. Be mindful of how comfortable you feel with a particular gadget. Don’t forget to research activity trackers reviews to understand which one shows the most accurate results."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/10/1.-Cover-768x513-optimized.webp",
+   "alt": "Top Biohacking Devices for True Biohackers"
+  },
+  {
+   "t": "p",
+   "text": "Top Biohacking Devices for True Biohackers Blog 14 min read Best Sleep Devices One of the essentials for our health is sleep. In the evening, our body recovers, so if this process doesn’t happen properly, you will feel it straight away. Anxiety rises, and low energy doesn’t allow for efficiency. Let’s have a look at a few top biohacking devices you can buy for developing […] [Read The Full Article](https://www.biohackers.world/blog/top-biohacking-devices)"
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "As you see, fitness trackers are a nice possibility to increase your efficiency. In this article, we’ve covered the key metrics worth tracking such as heart rate and HRV to sleep and respiration. We’ve compared the best wearable trackers for biohaking suitable for both [beginners](https://www.biohackers.world/blog/biohacking-for-beginners) and advanced users."
+  },
+  {
+   "t": "p",
+   "text": "A few useful tips for future:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "Don’t chase the number of functions – the accuracy of measurements and wearing comfort are more important.",
+    "Use the data to adjust your rest and diet, not to self-limit.",
+    "Check your gadget’s compatibility with apps and remember to protect your personal data.",
+    "Gradually add new metrics once you’ve mastered the basic ones.",
+    "Be persistent with what you are tracking as discipline is the key in development."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What are Fitness Trackers in Biohacking?",
+   "a": "Wearable health trackers encompass all kinds of devices for measuring your performance during exercise. These could be devices that monitor your heart rate, blood oxygen levels, or simply remind you to calm down and breathe. There are a variety of them on the market today: you can look at smartwatches from giants like Apple and Xiaomi or explore more niche options like the Oura ring or Whoop. One of the largest reviews included data from nearly 164,000 people from 39 systematic reviews and meta-analyses. It found that using activity trackers increases physical activity and improves fitness. These improvements were sustained over time and were reflected in changes in body composition and increased overall activity."
+  }
+ ]
+}

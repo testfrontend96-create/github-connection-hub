@@ -1,0 +1,527 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Biohacking boosts longevity, productivity and well-being through lifestyle, nutrition, and self-tracking.",
+  "Beginners can start with meditation, adjusting the circadian rhythm, fasting and supplementation.",
+  "Track sleep, vitals, and habits with wearables or a simple health journal.",
+  "Smart supplements, light therapy, and implants elevate advanced biohacking."
+ ],
+ "blocks": [
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/cover-3-1024x427-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "What is biohacking?",
+   "id": "what-is-biohacking"
+  },
+  {
+   "t": "p",
+   "text": "The term “[biohacking](https://www.biohackers.world/blog/what-is-biohacking)” appeared in the last century. In 1988, biohackers were considered to be genetic engineers who studied science and conducted experiments outside university laboratories."
+  },
+  {
+   "t": "p",
+   "text": "The word “biohackers” came to refer to enthusiasts who studied modern research in biology and medicine, vacated the general public’s access to such information, and conducted amateur experiments. Today, the meaning of the term “biohackers” has been transformed. This word is often used to refer to people who diagnose and attempt to treat diseases (including incurable diseases such as diabetes) without a medical degree."
+  },
+  {
+   "t": "p",
+   "text": "The surge of interest was no coincidence: in 2002, scientists were able to decipher the human genome for the first time. Over the next decade, biohackers began to be discussed in the media around the world. For example, in 2010, the public learned about physicist Rob Carlson, who created a laboratory in his garage and engaged in DNA research."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/02/cover3-11-768x571-optimized.png",
+   "alt": "Biohacking experts from pioneers level to modern innovators"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking experts from pioneers level to modern innovators Blog, Health & Wellness 14 min read Who are biohackers Biohackers are a community that explores the capabilities of the human body. The main goals are to improve productivity. They want to improve the quality of life and, therefore, try to hack their bodies with various practices, ranging from dietary supplements and physical exercise to blood transfusions, nootropics, and chip implantation. Biohackers […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-experts-from-pioneers-level-to-modern-innovators)"
+  },
+  {
+   "t": "p",
+   "text": "Today, biohackers with hundreds of thousands of followers can be found on famous social networks. Courses teaching this craft are sold on the Internet. In many countries around the world, there are laboratories that help to study their body and health with the help of biohacking methods. Nevertheless, science and official medicine’s attitude toward this field is ambiguous."
+  },
+  {
+   "t": "h2",
+   "text": "How to Become a Biohacker: Simple Examples",
+   "id": "how-to-become-a-biohacker-simple-examples"
+  },
+  {
+   "t": "note",
+   "text": "Biohacking isn’t about drastic changes or expensive tools — it starts with small, mindful decisions that influence how we sleep, eat, move, and manage stress."
+  },
+  {
+   "t": "p",
+   "text": "The foundation of this lifestyle lies in understanding how the body works and giving it the optimal conditions to thrive. Here are several simple yet powerful steps that will guide you into the world of biohacking."
+  },
+  {
+   "t": "h3",
+   "text": "Stress Management"
+  },
+  {
+   "t": "p",
+   "text": "Stress is one of the most underestimated disruptors of health. In the biohacking community, [managing stress](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health) is considered non-negotiable. The idea is simple: by reducing chronic anxiety, we allow the body to repair, the mind to focus, and the hormones to stabilize. Techniques like [meditation](https://www.biohackers.world/blog/biohacking-meditation), [breathwork](https://www.biohackers.world/blog/breathwork-biohacking), and hobbies that promote relaxation can be highly effective. Even five minutes of deep breathing a day can activate the parasympathetic nervous system — the “rest and digest” mode — helping your body calm down and recharge."
+  },
+  {
+   "t": "p",
+   "text": "Practical ways to begin include using guided meditation apps like Calm or Insight Timer, practicing simple breathwork techniques such as box breathing, or making space for quiet activities like journaling or drawing. The goal is to create daily rituals that tell your body: it’s safe to relax."
+  },
+  {
+   "t": "h3",
+   "text": "Natural Daylight"
+  },
+  {
+   "t": "p",
+   "text": "Getting outside first thing in the morning may seem trivial, but it’s a core part of basic biohacking. Morning sunlight helps reset your internal clock, known as the circadian rhythm, which governs everything from sleep to digestion and hormone cycles. Natural daylight boosts serotonin levels, lifts your mood, and triggers the body’s production of vitamin D — essential for immunity and bone health."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "Try spending at least 10 minutes outside shortly after waking up. Whether it’s a short walk or simply enjoying your coffee by the window, morning sunlight can have a profound impact on how your body performs throughout the day."
+  },
+  {
+   "t": "h3",
+   "text": "Reduce Blue Light"
+  },
+  {
+   "t": "p",
+   "text": "While light is healing during the day, it becomes disruptive at night. Exposure to blue light from screens after sunset sends mixed signals to the brain, suppressing melatonin and delaying the onset of sleep. Biohackers address this by controlling their evening environment."
+  },
+  {
+   "t": "p",
+   "text": "Simple adjustments — like wearing blue-light-blocking glasses, enabling “night shift” mode on your devices, or avoiding screens an hour before bed — can make your sleep deeper and more restorative. It’s not about ditching technology, but using it with greater awareness of how it affects your body’s rhythms."
+  },
+  {
+   "t": "h3",
+   "text": "Circadian Rhythm Optimization"
+  },
+  {
+   "t": "p",
+   "text": "Your circadian rhythm is the master clock that synchronizes countless processes in your body, from energy levels to detoxification. Biohackers know that the more aligned your daily schedule is with natural light-dark cycles, the better your health outcomes."
+  },
+  {
+   "t": "p",
+   "text": "Optimizing your circadian rhythm involves regularity: going to sleep and waking up at the same time every day (even on weekends), eating meals during daylight, and limiting stimulants like caffeine in the afternoon. These small shifts support everything from better metabolic function to improved emotional stability."
+  },
+  {
+   "t": "h3",
+   "text": "Intermittent Fasting"
+  },
+  {
+   "t": "p",
+   "text": "Instead of constant grazing, biohackers often follow [intermittent fasting](https://www.biohackers.world/blog/intermittent-fasting) protocols — controlled periods of eating and fasting — to give their bodies time to rest and regenerate. When we’re not digesting food, our cells switch into repair mode, reducing inflammation and optimizing insulin sensitivity."
+  },
+  {
+   "t": "p",
+   "text": "There’s no one-size-fits-all fasting approach. Many start with a gentle 12:12 rhythm (12 hours of fasting, 12 hours of eating), and some transition to 16:8 as their bodies adapt. During fasting windows, drinking water, herbal teas, or black coffee can help curb hunger and maintain mental clarity."
+  },
+  {
+   "t": "h3",
+   "text": "Nutrition Biohacking"
+  },
+  {
+   "t": "p",
+   "text": "Biohackers treat food as more than fuel — it’s information. The right foods can energize your brain, balance your hormones, support gut health, and extend your lifespan. The key is to eliminate what inflames you and include what nourishes you."
+  },
+  {
+   "t": "p",
+   "text": "Focus on whole, colorful, nutrient-dense foods. Think vegetables, fruits, wild fish, nuts, fermented products, and high-quality fats. Avoid processed foods, excess sugar, and seed oils. Listen to your body — personalized nutrition beats trendy diets every time."
+  },
+  {
+   "t": "h3",
+   "text": "Biohacks for Physical Activity"
+  },
+  {
+   "t": "p",
+   "text": "[Exercise](https://www.biohackers.world/blog/fitness-and-biohacking) is essential — but smart movement is better than overtraining. Biohackers aim to move often, but with intention, focusing on how the body recovers and adapts."
+  },
+  {
+   "t": "p",
+   "text": "Short, high-intensity interval workouts (HIIT), daily walks, or mobility-focused training can improve cardiovascular health and brain performance. Tools like heart rate variability (HRV) trackers help measure recovery, while practices like cold exposure, stretching, and sauna use accelerate repair."
+  },
+  {
+   "t": "h3",
+   "text": "Biohacking Devices"
+  },
+  {
+   "t": "p",
+   "text": "One of the most exciting aspects of biohacking is the ability to measure and track progress. From smartwatches to continuous glucose monitors, tech helps you understand what’s going on inside your body in real time."
+  },
+  {
+   "t": "p",
+   "text": "You don’t need expensive equipment to start. A simple health journal — logging sleep, food, energy, and mood — can reveal patterns and help you make informed choices. For those ready to dive deeper, wearables like Oura Rings, WHOOP bands, or sleep trackers can provide actionable insights."
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "h3",
+   "text": "Vitamins and Supplements"
+  },
+  {
+   "t": "p",
+   "text": "Modern food and lifestyle choices often leave us lacking in key nutrients. [Supplements](https://www.biohackers.world/blog/best-biohacking-supplements) help fill the gaps and target specific goals: better sleep, sharper focus, stronger immunity, or smoother digestion."
+  },
+  {
+   "t": "p",
+   "text": "Biohackers often take a personalized approach — guided by blood tests, symptoms, or performance goals. Popular supplements include vitamin D3 (especially for those in low-sunlight areas), magnesium for relaxation, omega-3 for brain health, and adaptogens like ashwagandha or rhodiola for stress support. However, supplements are just that — supplementary. They work best when paired with a clean, balanced diet and healthy habits."
+  },
+  {
+   "t": "h2",
+   "text": "More Advanced Biohacking",
+   "id": "more-advanced-biohacking"
+  },
+  {
+   "t": "p",
+   "text": "Once you’ve laid the foundation with good sleep, smart nutrition, and mindful daily routines, you may feel ready to experiment with more advanced biohacking techniques. These methods are popular in the global biohacking community. They are often used by performance-driven individuals, longevity enthusiasts, and tech-savvy health optimizers. They’re not for everyone, but they can offer powerful insights and benefits when used wisely."
+  },
+  {
+   "t": "h3",
+   "text": "Bulletproof Coffee"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/close-up-coffee-beans-with-cup-coffee-cookies-dark-blue-light-blue-marble-background-horizontal-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "More than just a trendy beverage, bulletproof coffee — a blend of coffee, grass-fed butter, and MCT oil — is a biohacker’s favorite morning ritual. It’s designed to provide steady energy, enhance mental focus, and support fat metabolism."
+  },
+  {
+   "t": "p",
+   "text": "The idea is to replace your traditional breakfast with a high-fat drink that doesn’t spike insulin. The MCT oil quickly converts to ketones, which fuel your brain, while the caffeine enhances alertness without the crash. While it’s not for everyone, many use it during intermittent fasting to extend focus and maintain stable energy levels throughout the morning."
+  },
+  {
+   "t": "p",
+   "text": "Example:"
+  },
+  {
+   "t": "p",
+   "text": "Start your day with a cup of organic black coffee, add a tablespoon of grass-fed butter, and a spoon of MCT oil. Blend until creamy — and you’ve got a no-sugar energy booster that supports both fasting and cognitive clarity."
+  },
+  {
+   "t": "h3",
+   "text": "Nootropics (Smart Drugs)"
+  },
+  {
+   "t": "p",
+   "text": "Nootropics are substances — either natural or synthetic — that aim to improve cognitive function, particularly memory, creativity, focus, or motivation. Biohackers often turn to these tools to enhance mental performance during periods of high productivity or stress."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "They range from simple compounds like caffeine, L-theanine, and creatine to more advanced stacks involving racetams or prescription-level options (used with medical guidance). Natural nootropics such as lion’s mane mushroom or bacopa monnieri are popular for long-term brain support without overstimulation."
+  },
+  {
+   "t": "p",
+   "text": "Caution:"
+  },
+  {
+   "t": "p",
+   "text": "Always research nootropics thoroughly and consider speaking with a healthcare professional before use. The effects can vary significantly depending on your body and goals."
+  },
+  {
+   "t": "h3",
+   "text": "Light Therapy"
+  },
+  {
+   "t": "p",
+   "text": "Our bodies respond to light in profound ways, and light therapy taps into this potential. From treating seasonal depression to improving sleep and skin health, this technique uses targeted wavelengths to produce specific biological effects."
+  },
+  {
+   "t": "p",
+   "text": "[Red and near-infrared light therapy](https://www.biohackers.world/blog/red-light-therapy-biohacking-methods-for-health-benefits), for instance, is used for mitochondrial stimulation, muscle recovery, reduced inflammation, and anti-aging. On the other hand, bright white light therapy helps regulate mood and circadian rhythm in people affected by limited daylight or disrupted sleep patterns."
+  },
+  {
+   "t": "p",
+   "text": "Example:"
+  },
+  {
+   "t": "p",
+   "text": "Using a red light therapy panel for 10–15 minutes a day can help improve skin tone, reduce joint pain, or support recovery after workouts. Morning exposure to a bright therapy lamp (10,000 lux) is also effective for boosting mood and wakefulness during darker seasons."
+  },
+  {
+   "t": "h3",
+   "text": "Implants"
+  },
+  {
+   "t": "p",
+   "text": "For those exploring the intersection of biology and technology, biohacking sometimes goes as far as body augmentation. Implanted chips — often RFID or NFC — allow biohackers to unlock devices, store data, or monitor health markers."
+  },
+  {
+   "t": "p",
+   "text": "While still controversial, some see this as the future of seamless integration between humans and machines. Others use glucose monitors or temperature sensors implanted temporarily for real-time biometric data."
+  },
+  {
+   "t": "p",
+   "text": "Important note:"
+  },
+  {
+   "t": "note",
+   "text": "Implants are an extreme form of biohacking and come with both ethical and medical considerations. If you’re interested in this field, start by educating yourself on the risks and current regulations."
+  },
+  {
+   "t": "h3",
+   "text": "Genetic Testing"
+  },
+  {
+   "t": "p",
+   "text": "One of the most personal and impactful forms of advanced biohacking is genetic testing. By analyzing your DNA, you can uncover predispositions to specific health conditions, how your body metabolizes nutrients, your sensitivity to caffeine or alcohol, and even your risk of injury from certain exercises."
+  },
+  {
+   "t": "p",
+   "text": "With this information, biohackers can fine-tune their diet, training, supplement routine, and sleep habits for maximum efficiency and longevity. Services like 23andMe, DNAfit, and others make this technology widely accessible — though it’s essential to interpret the results with the help of a professional."
+  },
+  {
+   "t": "p",
+   "text": "Example: a genetic report might reveal that you’re a slow caffeine metabolizer — meaning coffee late in the day could disrupt your sleep more than it does for others. Or it might show that your body doesn’t convert beta-carotene to vitamin A efficiently, making supplementation necessary."
+  },
+  {
+   "t": "h2",
+   "text": "The Biohacker Mindset",
+   "id": "the-biohacker-mindset"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/human-brain-medical-digital-illustration-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "The essence of biohacking is the conscious improvement of physical and psycho-emotional well-being through various technologies, methods, and lifestyle adjustments."
+  },
+  {
+   "t": "h3",
+   "text": "Physical activity in biohacking"
+  },
+  {
+   "t": "p",
+   "text": "Physical activity is an integral part of biohacking and the basis of any preventive medicine program. The goals here are broader than just a “healthy lifestyle”: they include improving overall well-being, increasing performance, stimulating metabolism, and activating all body systems."
+  },
+  {
+   "t": "p",
+   "text": "Biohacking emphasizes personalized training programs using professional equipment. Biohacking trainers play a leading role, allowing the load to be adjusted according to the user’s level of training and physiological parameters. Barotrainers are also widely used—these are devices that combine physical activity with the effects of reduced pressure and hypoxia therapy to trigger adaptive mechanisms."
+  },
+  {
+   "t": "p",
+   "text": "Physical activity in biohacking is often supplemented with the following technologies:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Vacuum stimulation",
+    "Infrared radiation",
+    "Collagen therapy",
+    "Phototherapy",
+    "Hypoxic-hyperoxic therapy"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "These methods enhance the effectiveness of training, accelerate recovery, and improve the overall condition of the body."
+  },
+  {
+   "t": "note",
+   "text": "The introduction of modern biohacking equipment into fitness and wellness programs allows for fast, safe, and sustainable health results."
+  },
+  {
+   "t": "h3",
+   "text": "Mental health and biohacking"
+  },
+  {
+   "t": "p",
+   "text": "Mental health is one of the key aspects of biohacking. Biohackers consider stress resistance, emotional balance, and improved memory and cognitive functions to be an integral part of the path to active longevity. Maintaining a healthy mental and emotional state directly affects quality of life, energy levels, and the ability to cope with external stressors."
+  },
+  {
+   "t": "p",
+   "text": "Biohacking programs for mental health widely use both mindfulness practices and highly effective hardware techniques."
+  },
+  {
+   "t": "h3",
+   "text": "Medical checkups and diagnostics"
+  },
+  {
+   "t": "p",
+   "text": "Medical checkups are one of the most critical components of biohacking. Unlike the traditional “once-a-year checkup” model, biohacking involves regular monitoring of biomarkers: tests, functional indicators, and overall health. This allows for quick adjustments to diet, physical activity, and recovery routines, and the data can be used to create personalized programs."
+  },
+  {
+   "t": "h3",
+   "text": "Nutrition"
+  },
+  {
+   "t": "p",
+   "text": "Optimizing your diet is one of the key elements of biohacking. Proponents of this approach believe it is essential to regularly monitor the state of the body using biomarkers (biological indicators) and adjust your diet based on the data obtained."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/07/woman-shopping-with-fabric-tote-bag-768x512-optimized.jpg",
+   "alt": "The Biohacker’s Guide to Sustainable Nutrition"
+  },
+  {
+   "t": "p",
+   "text": "The Biohacker’s Guide to Sustainable Nutrition Blog 12 min read What is Sustainable Nutrition? Sustainable nutrition is a way of eating that aims to get everything you need from food without depleting natural resources and leaving a minimum amount of waste from consumption. In this version, a person becomes part of the world’s ecosystem and approaches every step consciously. You choose seasonal products and food […] [Read The Full Article](https://www.biohackers.world/blog/the-biohackers-guide-to-sustainable-nutrition)"
+  },
+  {
+   "t": "p",
+   "text": "Biohackers recommend reducing the proportion of industrially processed foods in your diet, giving preference to fresh and plant-based foods. Nutraceuticals, micronutrients, and biologically active supplements are also actively used to replenish individual deficiencies and support optimal metabolism."
+  },
+  {
+   "t": "p",
+   "text": "This approach allows you to more accurately tailor your diet to the real needs of your body, increasing your energy levels, stress resistance, and overall quality of life."
+  },
+  {
+   "t": "h2",
+   "text": "Starter Biohacking Plan",
+   "id": "starter-biohacking-plan"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/3d-illustration-pen-putting-blue-ticks-paper-1024x768-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "1. Start Your Day with Natural Light"
+  },
+  {
+   "t": "p",
+   "text": "Expose yourself to sunlight within the first hour of waking up. Morning light helps reset your circadian rhythm, boosts your mood, and supports natural energy production. Just like a variant: take a short walk or enjoy your coffee outside."
+  },
+  {
+   "t": "h3",
+   "text": "2. Practice Daily Meditation or Breathwork"
+  },
+  {
+   "t": "p",
+   "text": "Just 5–10 minutes of deep breathing or meditation a day can lower stress levels, improve focus, and enhance your overall well-being. Start simple: try box breathing or use apps like Calm or Headspace."
+  },
+  {
+   "t": "h3",
+   "text": "3. Try Intermittent Fasting"
+  },
+  {
+   "t": "p",
+   "text": "Fasting helps regulate insulin, supports fat metabolism, and gives your digestive system time to rest. Begin with a 12:12 schedule: fast for 12 hours, eat within a 12-hour window — and adjust gradually."
+  },
+  {
+   "t": "h3",
+   "text": "4. Reduce Blue Light at Night"
+  },
+  {
+   "t": "p",
+   "text": "Limit screen time after sunset to improve sleep quality. Blue light disrupts melatonin and delays sleep onset. Use blue light-blocking glasses or turn off devices 1 hour before bed."
+  },
+  {
+   "t": "h3",
+   "text": "5. Use a Health Tracker or Journal"
+  },
+  {
+   "t": "p",
+   "text": "What gets measured gets improved. Use a wearable device or simple journal to track your sleep, energy, mood, and food. The goal is to start noticing patterns and make minor adjustments that work for your body."
+  },
+  {
+   "t": "h3",
+   "text": "6. Become a Part of the Biohacking Community"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking isn’t just about what you eat or how you sleep — it’s about who you learn from and grow with. One of the most effective ways to start your journey is by connecting with others who share the same curiosity and drive for self-optimization."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "The easiest way to meet like-minded people? Attend a biohacking conference. These events offer a mix of beginner-friendly insights and advanced tools, featuring expert speakers, live demos, and a powerful sense of community."
+  },
+  {
+   "t": "p",
+   "text": "A great example is the Biohackers World Conference & Expo. Now’s the time to act! This is your great chance to secure your spot at the best price and unlock the secrets to optimizing your health and performance. Buy tickets now on the website: [www.biohackers.world](https://www.biohackers.world/)"
+  },
+  {
+   "t": "h2",
+   "text": "Books and Podcasts for Beginners",
+   "id": "books-and-podcasts-for-beginners"
+  },
+  {
+   "t": "h3",
+   "text": "Head Strong: The Bulletproof Plan to Activate Untapped Brain Energy to Work Smarter and Think Faster-in Just Two Weeks \\  DAVE ASPREY"
+  },
+  {
+   "t": "img",
+   "src": "https://www.optimoz.com.au/cdn/shop/products/HeadStrong_Bulletproof_DaveAsprey.jpg?v=1558910867",
+   "alt": "Head Strong by Dave Asprey - OptimOZ.com.au"
+  },
+  {
+   "t": "p",
+   "text": "Suppose you are constantly tired or feel a loss of energy every day at a particular time. In that case, brain biohacking is something you need to pay attention to. In this biohacker`s handbook, you will learn how to get the energy you need by changing your environment and turning off external stimuli that are harmful to your brain."
+  },
+  {
+   "t": "p",
+   "text": "Dave Asprey is a Silicon Valley investor and founder of the Bulletproof Executive blog, read by about 1.5 million visitors monthly. He also has his own podcast, which has millions of downloads."
+  },
+  {
+   "t": "p",
+   "text": "At one time, Dave spent 15 years of his life and $300 thousand to thoroughly and meticulously study biohacking and the human brain’s capabilities. His efforts were worthwhile. Thanks to his research, Dave lost weight without exhausting calorie counting, raised his IQ by several points, learned to get enough sleep quickly, and reduced his biological age. Recently, we’ve focused on Dave Asprey’s biohacking book."
+  },
+  {
+   "t": "h3",
+   "text": "Brain Body Diet by Sara Gottfried"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/biohacking-for-beginners-optimized.webp",
+   "alt": "biohacking-for-beginners"
+  },
+  {
+   "t": "p",
+   "text": "Want to learn tips from the personal physicians of many Hollywood celebrities? Then, be sure to read Sarah Gottfried’s biohacking book! It is written specifically for women."
+  },
+  {
+   "t": "p",
+   "text": "The preventive medicine and gynecologist doctor will share the basic principles to help you stay young and beautiful, lose weight, and harmonize your body and mind."
+  },
+  {
+   "t": "p",
+   "text": "Her course will especially appeal to those who like quick results, as it lasts for 40 days. During this time, you’ll improve yourself in eight areas. And before that, you can assess your progress in each of them. If you want to feel what the stars do to look amazing, go ahead!"
+  },
+  {
+   "t": "h3",
+   "text": "Siim Land Podcast"
+  },
+  {
+   "t": "p",
+   "text": "Siim Land is an author, speaker, and consultant. He discusses optimizing health, performance, and longevity through various techniques and biohacking methods."
+  },
+  {
+   "t": "h2",
+   "text": "To sum up",
+   "id": "to-sum-up"
+  },
+  {
+   "t": "note",
+   "text": "Biohacking is a relatively new approach to health and prolonging youth by optimizing all areas of human activity: nutrition, sleep, physical activity, avoidance of bad habits, work with mental health, stress and emotion management, nutrient support, and much more."
+  },
+  {
+   "t": "p",
+   "text": "In other words, biohacking is a pro-conscious approach that utilizes the knowledge of biology to improve the quality of life and well-being."
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is biohacking?",
+   "a": "The term “biohacking” appeared in the last century. In 1988, biohackers were considered to be genetic engineers who studied science and conducted experiments outside university laboratories."
+  }
+ ]
+}

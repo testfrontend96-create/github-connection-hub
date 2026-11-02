@@ -1,0 +1,397 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Implants can enhance senses or deliver therapeutic effects.",
+  "Chips are tiny RFID/NFC devices implanted under the skin to interact with other devices.",
+  "Chips enhance identification, access, and digital interaction.",
+  "Implants may impact physiology, while chips remain largely inert."
+ ],
+ "blocks": [
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/cover-1-1024x427-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "What are biohacking implants?",
+   "id": "what-are-biohacking-implants"
+  },
+  {
+   "t": "p",
+   "text": "[Biohacking](https://www.biohackers.world/blog/what-is-biohacking) is gaining momentum and is sure to become commonplace soon. For several years now, organizations have aimed to improve mankind with the help of technology. The tasks are large-scale: to improve the human organism to such an extent that it will stop getting sick and aging, using scientific and engineering achievements and genetic tools. This is how implants for the human body appear."
+  },
+  {
+   "t": "p",
+   "text": "For example, some grinder biohacking implants various electronics into the body by themselves. In this case, the first was British cybernetic scientist Kevin Warwick, who implanted an electronic chip in 1998. The device interacted with a computer: when a signal came from it, the system opened doors and turned on the light in the room. The scientist then installed another device, linking it to his wife’s chip. This technology allowed Warwick to know what his wife was doing. So, the technology created a connection akin to telepathy."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "In recent years, machine-readable ID chips have become widely used. These chips are becoming smaller and smaller, so they can be inserted under the skin as an injection. Using radio frequency identification (RFID) and NFC technology, these chips can be programmed to do the simplest things: open a door with the touch of a hand, carry a business card in a finger, and send it to an Android smartphone with a swipe."
+  },
+  {
+   "t": "p",
+   "text": "Another direction is the integration of human nerves with machines, allowing the paralyzed to control electronic prostheses. Biohacking has serious advantages that are growing with the development of neurocomputer interfaces. The real breakthrough has come in 3D printing, which creates artificial bones and tissues with well-defined individual properties. This allows them to easily take root in the human body without causing rejection. Although this technology is not classic biohacking, the idea is the same: combining biology and artificial devices for improved body properties."
+  },
+  {
+   "t": "p",
+   "text": "Brain chips and intracranial direct brain stimulation are the fastest-growing branches of biohacking. Stimulation [helps concentrate attention, restore memory, solve complex problems](https://www.biohackers.world/blog/how-to-biohack-brain-health), and even get rid of bad habits. Such techniques are already used in civilian and military medicine to treat illnesses and enhance soldiers’ physical and mental abilities. In particular, similar experiments have long been conducted in the Pentagon."
+  },
+  {
+   "t": "h2",
+   "text": "Best biohacking implants by location",
+   "id": "best-biohacking-implants-by-location"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/young-doctor-wearing-vr-goggles-examining-mannequin-vr-simulation_181624-8894-1024x576-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Eye Implants"
+  },
+  {
+   "t": "p",
+   "text": "There are several types of eye biohacking implants:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Bionic eyes** : help restore or enhance vision (e.g., night vision).",
+    "**Smart contact lenses can track** health conditions (e.g., glucose levels) or provide augmented reality (AR)."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Implants under the skin of the arm"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**RFID/NFC chips:** for access, payment, and data storage.",
+    "**Health monitors:** track heart rate, temperature, or blood sugar levels.",
+    "**LED implants:** these are used for aesthetics or indication of body condition."
+   ]
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "p",
+   "text": "Each of these implants helps biohackers improve functionality and body integration with technology."
+  },
+  {
+   "t": "h3",
+   "text": "Brain or Neural Implants"
+  },
+  {
+   "t": "p",
+   "text": "Biocompatibility of medical implants poses a significant challenge in biohacking technology. Neural implants, integral to curative therapies, initially exhibit efficacy but can lead to unforeseen long-term side effects. The material composition and dimensions of implants are critical factors influencing their biocompatibility within brain tissue. Typically, neural implants are identified as foreign entities by the human immune system, triggering persistent inflammation and severe adverse effects. They can record brain activity (electrophysiology) or stimulate specific areas of the brain with electrical impulses."
+  },
+  {
+   "t": "h3",
+   "text": "Sensory Enhancements"
+  },
+  {
+   "t": "p",
+   "text": "Sensory enhancement refers to the artificial manipulation or augmentation of sensory input to improve perception and performance. This can involve techniques such as magnification for low vision or more complex methods, like sensory substitution, where information is presented through a different sensory channel. Artificial intelligence (AI) is increasingly playing a role, allowing for more sophisticated input-output mapping and potentially enhancing the quality of sensory information."
+  },
+  {
+   "t": "h2",
+   "text": "Implants VS Chips",
+   "id": "implants-vs-chips"
+  },
+  {
+   "t": "p",
+   "text": "In biohacking, implants and chips are two types of technology used to improve a person’s physical or cognitive capabilities. However, their functions and uses are the same."
+  },
+  {
+   "t": "h3",
+   "text": "RFID vs. NFC Chips – What’s the Difference?"
+  },
+  {
+   "t": "note",
+   "text": "RFID (Radio Frequency Identification) and NFC (Near Field Communication) chips are both used in biohacking for seamless interaction with devices and environments, but they have distinct functions. RFID chips communicate wirelessly by transmitting data to a reader over a distance that can range from a few centimeters to several meters, depending on the frequency of operation."
+  },
+  {
+   "t": "p",
+   "text": "They’re commonly used for access control, pet tracking, and inventory systems."
+  },
+  {
+   "t": "p",
+   "text": "NFC, on the other hand, is a subset of RFID technology but works only at very short ranges — typically under 4 cm. Its key advantage is two-way communication, allowing devices to both read and write data. This makes NFC ideal for tasks like unlocking your phone, making secure payments, or storing digital medical records — all with just a tap."
+  },
+  {
+   "t": "p",
+   "text": "For biohackers, choosing between the two depends on the intended use: RFID for broader applications and NFC for secure, short-range interactions. To anticipate somewhat, we can state that an NFC is always an RFID implant. However, an RFID implant does not necessarily have to be an NFC implant."
+  },
+  {
+   "t": "h3",
+   "text": "Chips"
+  },
+  {
+   "t": "p",
+   "text": "In biohacking, a chip is a small device, often with RFID or NFC technology, implanted under the skin to interact with other devices."
+  },
+  {
+   "t": "p",
+   "text": "Examples and functions:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Access and identification: opening doors, unlocking computers, and using them as electronic wallets.",
+    "Health and monitoring: tracking body temperature, stress levels, or other biomarkers.",
+    "Connected technologies: interfacing with smart home or medical systems."
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Biohacking chip implants are more often used to collect data or facilitate interaction with technology, and their insertion is less invasive than implants."
+  },
+  {
+   "t": "h2",
+   "text": "How are chips implanted?",
+   "id": "how-are-chips-implanted"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/businessman-holding-hologram-microchip-smart-technology_53876-96308-1024x731-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "The process of chip implantation is fairly simple and minimally invasive. Typically, RFID or NFC chips the size of a grain of rice are used and placed under the skin."
+  },
+  {
+   "t": "h3",
+   "text": "Basic stages of implantation"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "**Preparation** .Disinfecting the area (most commonly the skin between the thumb and index finger). Checking the sterility of the equipment.",
+    "**Placement of the chip** . A sterile injector or special syringe injects the chip under the skin. The procedure, which resembles a piercing, takes a few minutes.",
+    "**Post placement** .After the procedure, a small patch is applied to prevent infection. Within a few days, the insertion site heals."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The chip does not contain batteries and is only activated when scanned by a unique device, making it safe for the body."
+  },
+  {
+   "t": "h2",
+   "text": "How biohackers can use implanted chips",
+   "id": "how-biohackers-can-use-implanted-chips"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/front-view-young-woman-with-prosthesis_23-2150589322-1024x682-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Some biohackers implant themselves with chips as an experimental art project; others have health problems, so they use the implants to improve their quality of life."
+  },
+  {
+   "t": "p",
+   "text": "Tim Shank, president of Minneapolis-based futuristic community TwinCities+, has a chip implanted in his arm that opens an electronic lock on his front door. His wife has the same key."
+  },
+  {
+   "t": "p",
+   "text": "Shank has several chips in his hand, including an NFC sensor like those used for contactless payments. Tim’s sensor stores a virtual business card with TwinCities+ contacts. Shank is one of many biohackers implanting various electronic devices into the body, from microchips to magnets."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/02/cover3-11-768x571-optimized.png",
+   "alt": "Biohacking experts from pioneers level to modern innovators"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking experts from pioneers level to modern innovators Blog, Health & Wellness 14 min read Who are biohackers Biohackers are a community that explores the capabilities of the human body. The main goals are to improve productivity. They want to improve the quality of life and, therefore, try to hack their bodies with various practices, ranging from dietary supplements and physical exercise to blood transfusions, nootropics, and chip implantation. Biohackers […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-experts-from-pioneers-level-to-modern-innovators)"
+  },
+  {
+   "t": "p",
+   "text": "Another reason for implanting chips is to expand the capabilities of human perception. For example, Shank experimented with a portable remote sensor that triggered the vibration of a biohacking magnet implant in his arm. The mechanism of operation is similar to that of sonar. With such a chip, one can realize how far away obstacles are. In addition, Tim is considering installing a chip that will track the temperature of his body."
+  },
+  {
+   "t": "p",
+   "text": "But not all biohackers are so ambitious. For some, an implanted chip is a convenient way to store data or open a door."
+  },
+  {
+   "t": "p",
+   "text": "A California resident has entered the Guinness Book of World Records because of her number of implants. According to the Daily Mail, Anastaysha Sinn has had 52 implants."
+  },
+  {
+   "t": "p",
+   "text": "They perform mundane functions such as opening locks, searching for metal objects, and dialing phone numbers. One of them even makes a woman’s hand vibrate."
+  },
+  {
+   "t": "p",
+   "text": "Sinn describes herself as a magician, stuntwoman, and “biohacker” who modifies her body with modern technology."
+  },
+  {
+   "t": "note",
+   "text": "“I can now officially declare that I am the most technologically modified person in the world. Even Guinness World Records had to create a new category for me,” stated Sinn."
+  },
+  {
+   "t": "p",
+   "text": "Sinn’s implants include the largest magnet ever implanted in a human being and a sound-transmitting magnet implanted in her ear’s goiter."
+  },
+  {
+   "t": "p",
+   "text": "According to her, she most often uses the implant that opens the front door of her house."
+  },
+  {
+   "t": "p",
+   "text": "Half of her implants are microchips programmed to give her mistress heightened senses and abilities, such as opening locks and turning on computers. Other implants have magnetism and give her mistress a so-called “sixth sense,” such as sensing live wires behind a wall. She can also tell if a transformer or power supply is connected to electricity."
+  },
+  {
+   "t": "p",
+   "text": "To qualify for the Guinness Book of World Records, Sinn had to provide a complete list of her implants and x-rays confirming their presence in her body. Even though the number of implants installed is already high, the biohacker still needs to be done with modifying her body. For example, she will place an NFC scanner on her leg and hide NFC tags inside playing cards. This way, while playing poker, Sinn could read the cards without the other players knowing."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/futuristic-networking-technology-remix-with-woman-using-virtual-screen_53876-108509-1024x682-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "This practice of implanting chips into the body is very dangerous and is often done clandestinely. According to Sinn, her modifications were performed by a nurse and an underground surgeon. About half of her implants were inserted with a thick hypodermic needle, and the rest were inserted with a scalpel, after which the skin was stitched up."
+  },
+  {
+   "t": "p",
+   "text": "In addition, the biohacker revealed that she has to remove and check her implants from time to time because of their “experimental” chemical coating. Degradation of the implant coating can expose the body to toxic elements such as circuit boards, copper wire, and neodymium."
+  },
+  {
+   "t": "p",
+   "text": "Also, not all biohacking procedures have been successful. For example, Sinn decided to remove all her teeth and replace them with cyborg prosthetics that she could put in and remove. Whatever the plan, the doctor, who “couldn’t understand” the patient’s wants, could not realize it."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "Another example of biohacking being used to solve health problems is the story of Neil Harbisson, an artist who suffers from color blindness. He uses an implanted antenna that translates colors into a sound equivalent."
+  },
+  {
+   "t": "p",
+   "text": "One more biohacker who uses implants in his art is artist, dancer, and self-proclaimed cyborg Moon Ribas. An internet-connected implant in her arm reports on active earthquakes, which she uses for her dance practice. If there are no earthquakes, she doesn’t dance."
+  },
+  {
+   "t": "h2",
+   "text": "Concerns",
+   "id": "concerns"
+  },
+  {
+   "t": "h3",
+   "text": "Сonfidentiality"
+  },
+  {
+   "t": "p",
+   "text": "One of the main concerns surrounding chip implants in biohacking is data privacy. RFID and NFC chips can store personal information — such as access credentials, medical data, or even cryptocurrency keys. While most implants have a limited range and require close proximity to a reader, unauthorized access, also known as “skimming,” remains a potential risk. Without strong encryption or security measures, sensitive data could be exposed or misused. As biohackers push the boundaries of human-device integration, the importance of securing personal information becomes critical — not just for the individual, but for the broader acceptance of implant technologies."
+  },
+  {
+   "t": "h3",
+   "text": "Human Rights"
+  },
+  {
+   "t": "p",
+   "text": "The use of implanted chips also raises ethical and legal concerns, particularly regarding bodily autonomy and informed consent. Some critics argue that widespread chip adoption — especially if mandated by employers or governments — could infringe on human rights. There’s also concern that individuals could be tracked or surveilled without their knowledge. While most current biohacking efforts are voluntary and self-directed, the potential for misuse remains. Biohackers and innovators must navigate this space carefully, advocating for transparency, consent, and regulation that protects individual freedoms while embracing technological progress."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/cover3-1-768x572-optimized.png",
+   "alt": "Top Biohacking Companies Revolutionizing Human Optimization"
+  },
+  {
+   "t": "p",
+   "text": "Top Biohacking Companies Revolutionizing Human Optimization Blog, Health & Wellness, Devices, Nutrition 12 min read Biohacking Market Analysis The biohacking market is growing at a rate of 20% per year. Grand View Research says its volume will exceed 70 billion dollars by 2030. People want to live longer, maintain high productivity, and control their health with the help of science. This uses technology, genetics, nutrition, and psychology to improve health […] [Read The Full Article](https://www.biohackers.world/blog/top-13-biohacking-companies-transforming-the-industry)"
+  },
+  {
+   "t": "h3",
+   "text": "Health Problem"
+  },
+  {
+   "t": "p",
+   "text": "Undoubtedly, biohacking enables individuals to take responsibility for their health and make informed decisions about how to improve it, reflecting the trend towards individualization in the modern world. At the same time, biohacking is closely connected with consumer mass culture and fashion. It has a wide range of products and services, from[nutritional supplements](https://www.biohackers.world/blog/best-biohacking-supplements)to ingenious gadgets."
+  },
+  {
+   "t": "p",
+   "text": "The belief in the ability of technology to solve all of humanity’s problems and improve the quality of life is at the heart of many of these practices. At the same time, over the past decade, the term has expanded its boundaries and acquired new connotations. Today, in popular consciousness, bio- and neurohacking refers to a set of techniques for[“hacking” specific biological processes, including aging](https://www.biohackers.world/blog/how-biohacking-can-reverse-aging), metabolism, body, and brain activity."
+  },
+  {
+   "t": "h3",
+   "text": "Social Inequality"
+  },
+  {
+   "t": "p",
+   "text": "Many biohacking techniques and tools are costly, which increases social inequality. This may lead to the emergence of the so-called biohacking elite, which has access to the most advanced technologies."
+  },
+  {
+   "t": "p",
+   "text": "Of course, we also encounter “biohacking” daily, a new variation of the popular concept of healthy living inspired by the ideas of transhumanism and immortality, i.e., the desire to avoid or minimize one’s death."
+  },
+  {
+   "t": "h3",
+   "text": "Regulations and Legal Landscape"
+  },
+  {
+   "t": "p",
+   "text": "Alternatively, to bring it closer, doctors have repeatedly warned about the risks associated with such attempts and call absurd the desire to control one’s biochemistry in “manual mode,” not to mention the fact that biohackers with adequate medical education are, alas, quite rare. For example, in the spring of 2018, Aaron Traywick, a well-known biohacker and director of Ascendance Biomedical, was found dead in a spa in Washington, D.C. Shortly before the tragic outcome, Traywick had injected himself with an undiscovered drug. That is, the problem is not biohacking, but it should be approached skillfully and under the supervision of specialists."
+  },
+  {
+   "t": "p",
+   "text": "The legality of using chips varies by country and the purpose of implantation."
+  },
+  {
+   "t": "note",
+   "text": "For example, in the USA, the EU, Australia, and Japan, implanting chips for personal use, such as identification or payment, is legal in these countries. In other countries, chips can sometimes be used for medical purposes to monitor health."
+  },
+  {
+   "t": "p",
+   "text": "But, on the other hand, people fear surveillance, data hacking, or loss of personal freedom. Companies and government agencies cannot require chipping without a person’s consent."
+  },
+  {
+   "t": "p",
+   "text": "Either way, SpaceX and Tesla CEO Elon Musk believes that chips and brain implants will soon become commonplace, replacing older technologies such as smartphones and smart homes."
+  },
+  {
+   "t": "h2",
+   "text": "To Sum Up",
+   "id": "to-sum-up"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/front-view-woman-with-prosthetic-arm_23-2149832752-1024x682-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Biohacking implants and chips represent the cutting edge of human enhancement, bridging the gap between biology and technology. From restoring vision with bionic eyes to opening doors with biohacking ear RFID implants, these innovations promise to revolutionize how we interact with our bodies and the world around us. However, as exciting as these advancements are, they also come with ethical, legal, and health considerations that society must address. As biohacking continues to evolve, it holds immense potential for improving lives — if courted responsibly and under expert supervision. The future of humanity might indeed be cyborg-like, but it’s up to us to determine how far we should go."
+  }
+ ],
+ "faq": [
+  {
+   "q": "What are biohacking implants?",
+   "a": "Biohacking is gaining momentum and is sure to become commonplace soon. For several years now, organizations have aimed to improve mankind with the help of technology. The tasks are large-scale: to improve the human organism to such an extent that it will stop getting sick and aging, using scientific and engineering achievements and genetic tools. This is how implants for the human body appear."
+  },
+  {
+   "q": "RFID vs. NFC Chips – What’s the Difference?",
+   "a": "They’re commonly used for access control, pet tracking, and inventory systems."
+  },
+  {
+   "q": "How are chips implanted?",
+   "a": "The process of chip implantation is fairly simple and minimally invasive. Typically, RFID or NFC chips the size of a grain of rice are used and placed under the skin."
+  }
+ ]
+}
