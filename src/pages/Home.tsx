@@ -49,7 +49,9 @@ function Tile({ item, cls }: { item: any; cls: string }) {
       )}
       {item.kick && <div className="tile-kick"><span className="kick" data-k={item.k}>{item.kick}</span></div>}
       <h3>{item.t}</h3><p>{clip(item.d, 400)}</p>
-      <div className="meta"><b>{item.guest || item.meta}</b><span>{item.duration ? `${item.duration} · ` : ''}{pretty(item.date)}</span></div>
+      {item.k === 'article'
+        ? <div className="meta"><span>{pretty(item.date)} · {item.meta}</span></div>
+        : <div className="meta"><b>{item.guest || item.meta}</b><span>{item.duration ? `${item.duration} · ` : ''}{pretty(item.date)}</span></div>}
       <Motif kind={item.k} />
     </Link>
   )
@@ -134,8 +136,8 @@ export default function Home() {
             <h3 style={{ fontSize: '1.1rem' }}>Five things to know</h3>
             <ol className="brief">{brief.map((i) => <li key={i.u}><Link to={i.u}>{i.t}</Link><small>{i.kick ? `${i.kick} · ` : ''}{pretty(i.date)}</small></li>)}</ol>
           </div>
-          <Tile item={{ ...tileA, img: blogTilePhoto.url, imgMobile: blogTileMobile.url }} cls="tile--a" />
-          <Tile item={{ ...tileB, img: podcastTilePhoto.url, imgMobile: podcastTileMobile.url }} cls="tile--b" />
+          <Tile item={{ ...tileA, img: blogTilePhoto.url, imgMobile: tileA.img || blogTileMobile.url }} cls="tile--a" />
+          <Tile item={{ ...tileB, img: podcastTilePhoto.url, imgMobile: tileB.img || podcastTileMobile.url }} cls="tile--b" />
         </div>
       </div></section>
 

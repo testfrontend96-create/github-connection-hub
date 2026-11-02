@@ -774,6 +774,26 @@ a:hover .art[data-k="episode"] img,
 .tile--brief .brief li::before { font-size: 16px; }
 .tile--brief .brief a { font-size: 14px; }
 
+/* Below full desktop both Blog and Podcast tiles use the item's own page
+   thumbnail, stacked image-over-copy at 16:9 so nothing is cropped oddly. */
+.bento .tile--a .meta { flex-direction: row; align-items: center; white-space: nowrap; }
+@media (max-width: 1199px) {
+  .bento .tile--a, .bento .tile--b { padding-top: calc(56.25% + 8px); }
+  .bento .tile--a .tile-photo, .bento .tile--b .tile-photo {
+    left: 0; right: 0; top: 0; bottom: auto; width: auto; height: auto;
+    aspect-ratio: 16 / 9; -webkit-mask: none; mask: none; overflow: hidden;
+  }
+  .bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center;
+  }
+  .bento .tile--a .tile-photo-desk, .bento .tile--b .tile-photo-desk { display: none; }
+  .bento .tile--a .tile-photo-mob, .bento .tile--b .tile-photo-mob { display: block; }
+  .bento .tile--a h3, .bento .tile--a p, .bento .tile--a .meta,
+  .bento .tile--b h3, .bento .tile--b p, .bento .tile--b .meta { max-width: 100%; }
+  .bento .tile--a .meta, .bento .tile--b .meta { flex-direction: row; align-items: center; gap: 8px; flex-wrap: nowrap; white-space: nowrap; }
+  .bento .tile--a::after, .bento .tile--b::after { background: none; }
+}
+
 /* Phone hero, news-front style: one big lead story, then the Blog and Podcast
    stories as compact rows (thumbnail + headline) so all three show on load;
    Start here and New follow below. */
