@@ -1,4 +1,4 @@
-import { Fragment, useRef, useState, type ReactNode, type FormEvent } from 'react'
+import { Fragment, useLayoutEffect, useRef, useState, type ReactNode, type FormEvent } from 'react'
 import { useParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { Mention, ArticleCard } from '../components/ui'
@@ -164,6 +164,27 @@ function related(a: any) {
 
 export default function Article() {
   const { slug } = useParams()
+  const topRef = useRef<HTMLElement>(null)
+  useLayoutEffect(() => {
+    const top = topRef.current
+    const main = top?.parentElement
+    if (!top || !main) return
+    const hero = top.querySelector('.art-hero-img')
+    const eventsSection = main.querySelector('.art-events')
+    const update = () => {
+      if (hero) main.style.setProperty('--article-image-height', `${hero.getBoundingClientRect().height}px`)
+      if (eventsSection) main.style.setProperty('--article-promo-height', `${eventsSection.getBoundingClientRect().height}px`)
+    }
+    const observer = new ResizeObserver(update)
+    if (hero) observer.observe(hero)
+    if (eventsSection) observer.observe(eventsSection)
+    update()
+    return () => {
+      observer.disconnect()
+      main.style.removeProperty('--article-image-height')
+      main.style.removeProperty('--article-promo-height')
+    }
+  }, [slug])
   const a = slug ? A[slug] : undefined
   if (!a) return <NotFound />
   const d = detailFor(a.slug)
@@ -181,7 +202,7 @@ export default function Article() {
   return (
     <>
       <PageHead compact crumbs={[['Hub', '/'], ['Blog', '/blog'], [a.title, null]]} />
-      <section className="section art-top"><div className="wrap">
+      <section className="section art-top" ref={topRef}><div className="wrap">
         <div className="art-hero">
           <div className="art-hero-title"><h1 className="display">{a.title}</h1></div>
           {a.image && <img className="art-hero-img" src={a.image} alt="" />}
