@@ -13,24 +13,7 @@
  ],
  "blocks": [
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h2",
@@ -513,29 +496,6 @@
   {
    "t": "p",
    "text": "Progress offers us various scientific advancements to extend or improve our quality of life, and it makes sense to start using them, especially when our surroundings deprive us of natural light, restful sleep, and energy. Staying in shape, [monitoring your health](https://www.biohackers.world/blog/ai-powered-health-optimization), and preventing illnesses rather than treating them will help you become healthier and more active. It’s great that some devices now come in lighter, more compact versions that can be used at home, without the need for constant trips to the doctor. Of course, this is only a supplement, not a full replacement for therapy, sleep, or sunlight. Also keep in mind that wearables are useful, but sometimes they can also increase “tracking anxiety.” Some of the most useful feedback from wearables is trends over time."
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
-  },
-  {
-   "t": "events"
   },
   {
    "t": "academy"

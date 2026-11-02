@@ -84,24 +84,7 @@
    "text": "So, close your eyes while lying in bed. Allow yourself to relax a little. Think of something good, pleasant, and soothing, because thoughts shape your mood and feelings. These could be upcoming events for tomorrow or memories from the past. Perhaps even just some positive fantasies."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h3",
@@ -380,9 +363,6 @@
   {
    "t": "p",
    "text": "This article is for informational and educational purposes only and should not be considered medical advice, diagnosis, or treatment. Sleep problems can have many underlying causes, including stress, lifestyle factors, hormonal imbalances, neurological conditions, or other health issues. If you experience persistent insomnia, frequent night awakenings, daytime fatigue, or long-term sleep disturbances, consult a qualified healthcare professional or sleep specialist for proper evaluation and support."
-  },
-  {
-   "t": "events"
   },
   {
    "t": "academy"

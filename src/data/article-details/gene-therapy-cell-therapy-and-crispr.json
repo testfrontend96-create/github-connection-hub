@@ -57,24 +57,7 @@
    "text": "In the 1960s and 1970s, shortly after the development of molecular biology and genetic engineering technologies, primarily recombinant DNA technology, ideas about gene therapy emerged. He proposed the idea of using viruses as vectors to deliver therapeutic genes into cells. It exploited the inherent ability of viruses to insert their genetic material into host cells."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "p",
@@ -230,24 +213,7 @@
    "text": "As you can see human genome therapy is a wide topic to discuss, in which everyone can reach something useful. We have examined what gene-based therapy technology, cell therapy, and CRISPR are, why they are considered revolutionary, and how they are used in practice today. Real-life cases are described, from blood disorders and neurodegeneration to cholesterol reduction, demonstrating the growth of the evidence base. At the same time, scientific and ethical challenges remain, requiring caution."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "academy"
   },
   {
    "t": "p",
@@ -264,12 +230,6 @@
     "Be aware of the possible side effects of gene editing technology and the risks of off-target changes.",
     "Remember that the technology is still evolving – there is still a long way to go."
    ]
-  },
-  {
-   "t": "events"
-  },
-  {
-   "t": "academy"
   }
  ],
  "faq": [

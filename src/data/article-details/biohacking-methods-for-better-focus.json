@@ -65,24 +65,7 @@
    "text": "When you do several tasks at once, it may seem as if you are more productive. But in reality, you become exhausted and distracted, which slows down your efficiency and impairs your concentration. Even if a person knows in advance that they will be switching tasks, the brain stillneedsextra time to refocus attention and working memory. This is precisely why doing one thing at a time is usually more effective than constantly switching between tabs, chats and notifications."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h3",
@@ -316,24 +299,7 @@
    "text": "This method helps you monitor and control the brain more consciously. To do this, you wear a special sensor that records your electroencephalogram. This is used to analyse your brain waves, and you receive visual or auditory feedback. For example, when the brain enters a more focused state, you may see an improved image on the screen or hear a change in sound. Over time, the brain learns to reproduce more optimal patterns of activity independently. This method helps reduce ADHD symptoms and can be used whilst studying or at work, where perseverance and concentration are required. It also helps combat [stress](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health) and brain fog. Among popular consumer devices, EEG headsets such as the Muse Headband and Neurosity Crown stand out, allowing you to track your state of attention and [meditation](https://www.biohackers.world/blog/biohacking-meditation) at home."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "academy"
   },
   {
    "t": "h3",
@@ -370,12 +336,6 @@
     "Include physical activity in your daily routine. This helps maintain mental flexibility.",
     "Get your diet in order. Include complex carbohydrates, green vegetables and sufficient protein on your plate. Don’t forget about unsaturated fats."
    ]
-  },
-  {
-   "t": "events"
-  },
-  {
-   "t": "academy"
   }
  ],
  "faq": []

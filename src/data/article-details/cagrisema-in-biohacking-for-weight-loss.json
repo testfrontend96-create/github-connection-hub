@@ -59,24 +59,7 @@
    "text": "Semaglutide lowers blood glucose levels by stimulating glucose-dependent insulin secretion and suppressing glucagon secretion. Thus, when blood glucose levels rise, insulin secretion is stimulated, and glucagon secretion is suppressed."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "p",
@@ -205,9 +188,6 @@
   {
    "t": "p",
    "text": "CagriSema is a promising combination drug from Novo Nordisk intended for the treatment of obesity and type 2 diabetes, which is positioned as a more potent successor to the popular drug Wegovy (semaglutide). The CagriSema blend’s potential is based on the combination of two active ingredients: semaglutide (a GLP-1 analog) and cagrilintide (an amylin analog) in the form of a weekly injection. As of early 2026, the drug has not been approved by the FDA; however, Novo Nordisk submitted an application for approval in December 2025."
-  },
-  {
-   "t": "events"
   },
   {
    "t": "academy"

@@ -26,24 +26,7 @@
    "text": "Human genes do not change throughout life, so a health DNA test is performed only once, and the result will be your indispensable assistant at any age. Knowing your body’s strengths and weaknesses, you can focus your efforts on solving specific problems rather than wasting time and money on unnecessary procedures."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h2",
@@ -261,24 +244,7 @@
    "text": "Laboratories protect DNA data using a variety of methods, but the level of protection depends on the analysis’s purpose. Protection includes physical and organizational measures such as controlling access to samples and databases, encryption, anonymizing results for specific purposes, and maintaining confidentiality as required by law. DNA data is protected by multiple layers of encryption and stored on secure servers."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "academy"
   },
   {
    "t": "h2",
@@ -288,12 +254,6 @@
   {
    "t": "p",
    "text": "DNA tests for health and diagnostics provide personalized information about disease predisposition, metabolic characteristics, and drug response. They help identify hereditary diseases, predict risks, optimize diet and exercise, and select more effective treatments while avoiding side effects. To perform the test, biological samples such as saliva, blood, or a buccal swab are collected, followed by DNA analysis to decode the genetic information. It can be a great biohacking genetic health screening."
-  },
-  {
-   "t": "events"
-  },
-  {
-   "t": "academy"
   }
  ],
  "faq": [

@@ -140,24 +140,7 @@
    ]
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h3",
@@ -274,9 +257,6 @@
   {
    "t": "p",
    "text": "Modern technologies offer many solutions to improve physical fitness, and electromyostimulation (EMS) is among the leading innovations in this field. It is a powerful tool for accelerating recovery after physical activity and relaxation, if used correctly. EMS can be used for rehabilitation and injury treatment, as well as for training and improving muscle tone. Before starting EMS, it is important to undergo a medical examination to rule out contraindications and determine optimal training parameters."
-  },
-  {
-   "t": "events"
   },
   {
    "t": "academy"
