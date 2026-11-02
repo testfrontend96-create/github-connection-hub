@@ -779,7 +779,7 @@ a:hover .art[data-k="episode"] img,
    Start here and New follow below. */
 @media (max-width: 640px) {
   .bento { display: flex; flex-direction: column; gap: 10px; }
-  .bento .tile--lead { order: 1; min-height: 340px; }
+  .bento .tile--lead { order: 1; min-height: 290px; }
   .bento .tile--lead p { -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
   .bento .tile--a { order: 2; } .bento .tile--b { order: 3; }
   .bento .tile--problems { order: 4; } .bento .tile--brief { order: 5; }
