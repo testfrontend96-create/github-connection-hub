@@ -859,7 +859,7 @@ a:hover .art[data-k="episode"] img,
 .art-news h3 { margin: 0 0 4px !important; font-size: 18px !important; }
 .art-news p { margin: 0 !important; font-size: 14px !important; line-height: 1.5 !important; color: var(--muted) !important; }
 .art-news form { display: flex; gap: 8px; }
-.art-news input { flex: 1 0 auto; min-width: 0; height: 44px; padding: 0 16px; border: 1px solid #E7E5DE; border-radius: 999px; background: var(--white); font: inherit; font-size: 15px; color: var(--ink); }
+.art-news input { flex: 1 1 auto; min-width: 0; height: 44px; padding: 0 16px; border: 1px solid #E7E5DE; border-radius: 999px; background: var(--white); font: inherit; font-size: 15px; color: var(--ink); }
 .art-news input:focus { outline: 2px solid var(--pulse); outline-offset: 1px; }
 .art-news button { height: 44px; padding: 0 20px; border: 0; border-radius: 999px; background: var(--pulse); color: var(--white); font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; }
 .art-news button:hover { filter: brightness(1.08); }
