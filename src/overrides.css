@@ -773,3 +773,22 @@ a:hover .art[data-k="episode"] img,
 .tile--brief .brief li { padding: 4px 0; }
 .tile--brief .brief li::before { font-size: 16px; }
 .tile--brief .brief a { font-size: 14px; }
+
+/* Phone hero, news-front style: one big lead story, then the Blog and Podcast
+   stories as compact rows (thumbnail + headline) so all three show on load;
+   Start here and New follow below. */
+@media (max-width: 640px) {
+  .bento { display: flex; flex-direction: column; gap: 10px; }
+  .bento .tile--lead { order: 1; min-height: 290px; }
+  .bento .tile--lead p { -webkit-line-clamp: 2; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+  .bento .tile--a { order: 2; } .bento .tile--b { order: 3; }
+  .bento .tile--problems { order: 4; } .bento .tile--brief { order: 5; }
+  .bento .tile.tile--a, .bento .tile.tile--b { min-height: 0; padding: 12px 12px 12px 136px; justify-content: center; }
+  .bento .tile--a .tile-photo, .bento .tile--b .tile-photo { top: 12px; bottom: 12px; left: 12px; right: auto; width: 112px; height: auto; aspect-ratio: auto; border-radius: 10px; overflow: hidden; -webkit-mask: none; mask: none; }
+  .bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .bento .tile--a h3, .bento .tile--b h3 { font-size: 16px !important; line-height: 1.3; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .bento .tile--a p, .bento .tile--b p { display: none; }
+  .bento .tile--a .tile-kick, .bento .tile--b .tile-kick { margin: 0 0 4px; }
+  .bento .tile--a .meta, .bento .tile--b .meta { margin-top: 6px; }
+  .bento .tile--a .meta b, .bento .tile--b .meta b { display: none; }
+}

@@ -58,7 +58,7 @@ export function Story({ item, size = 'sm', withArt = true, dek = true }: { item:
   const art = withArt ? <Art item={item} extra={size === 'lead' ? 'art--wide' : ''} /> : null
   const body = (
     <>
-      <span className="kick" data-k={item.k}>{item.kick}</span>
+      {item.kick && <span className="kick" data-k={item.k}>{item.kick}</span>}
       <H>{item.t}</H>
       {dek && <p>{clip(item.d, size === 'lead' ? 200 : 110)}</p>}
       <div className="meta"><b>{item.meta}</b><span>{pretty(item.date)}</span></div>
