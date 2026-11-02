@@ -42,24 +42,7 @@
    "text": "This helps to “turn on” the body more quickly and reduce residual drowsiness without stimulants."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h3",
@@ -311,24 +294,7 @@
    "text": "Exercise or simply take a walk in the fresh air. Physical activity helps relieve tension and improve your mood."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "academy"
   },
   {
    "t": "h3",
@@ -410,12 +376,6 @@
   {
    "t": "p",
    "text": "Motivation becomes more sustainable when you approach it through a biohacking lens – by shaping your habits, environment, and routines instead of relying on willpower alone. Start with small, manageable actions to build consistency, and connect new habits to existing routines to make them easier to maintain. Your environment also plays a key role: reducing distractions and keeping helpful cues visible can significantly improve focus and discipline."
-  },
-  {
-   "t": "events"
-  },
-  {
-   "t": "academy"
   }
  ],
  "faq": []

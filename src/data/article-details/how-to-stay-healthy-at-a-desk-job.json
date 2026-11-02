@@ -188,24 +188,7 @@
    ]
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "p",
@@ -265,9 +248,6 @@
   {
    "t": "p",
    "text": "Biohacking productivity doesn’t always require major lifestyle changes. Several wellness tips for office workers​, from movement and exercise to light management and workspace upgrades, can help support focus, energy, and long-term performance. The key is experimenting with habits that fit your routine and building sustainable systems over time."
-  },
-  {
-   "t": "events"
   },
   {
    "t": "academy"

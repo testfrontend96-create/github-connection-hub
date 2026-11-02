@@ -66,24 +66,7 @@
    "text": "This is where the energy spikes. These booths invite you to experience the science firsthand — through immersive VR setups, neurostimulation demos, or cutting-edge recovery systems. Don’t just observe — participate. Feel how your body or mind responds, notice what changes, and use the opportunity to engage directly with the creators. Their passion often says as much about the innovation as the technology itself."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h3",
@@ -207,24 +190,7 @@
    ]
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "academy"
   },
   {
    "t": "ul",
@@ -289,26 +255,6 @@
    "text": "Don’t overlook the new players. Startups often bring their most innovative ideas and are eager to build relationships — plus, their samples and gifts tend to be surprisingly generous."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
-  },
-  {
    "t": "ul",
    "items": [
     "**Talk to the founders when you can.**"
@@ -336,12 +282,6 @@
   {
    "t": "p",
    "text": "Visiting the conference expo zone at Biohacking Conference & Expo is an excellent opportunity to gain not only theoretical knowledge and listen to speakers, but also be the first to touch the latest technologies and scientific developments, and try new biohacking brand products in one place. With our tips, we are sure it will be easy for you! Have fun and see you at the nearest event!"
-  },
-  {
-   "t": "events"
-  },
-  {
-   "t": "academy"
   }
  ],
  "faq": [

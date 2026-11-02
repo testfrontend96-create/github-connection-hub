@@ -83,24 +83,7 @@
    ]
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h2",
@@ -281,9 +264,6 @@
     "Watch your diet and body composition. A diet rich in whole foods and sufficient protein, along with healthy visceral fat levels, contributes to healthy aging.",
     "Evaluate health comprehensively, not by a single number. Chronological age is important, but the combination of biological age, laboratory indicators, and physical fitness data provides a much better understanding of long-term health and longevity prospects."
    ]
-  },
-  {
-   "t": "events"
   },
   {
    "t": "academy"

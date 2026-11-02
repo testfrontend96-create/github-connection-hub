@@ -66,24 +66,7 @@
    "id": "biohackers-world-conference-and-expo-an-event-for-the-biohac"
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "p",
@@ -185,9 +168,6 @@
   {
    "t": "p",
    "text": "Visiting the Biohacking Conference & Expo 2027 in Miami is an excellent opportunity to gain not only theoretical knowledge and listen to speakers, but also be the first to touch the latest technologies and scientific developments, and try new biohacking brand products in one place. Practice all the innovations, share your experience, learn all the greatest news, get answers to all your questions, practice your networking skills and keep in touch with like-minded people!"
-  },
-  {
-   "t": "events"
   },
   {
    "t": "academy"

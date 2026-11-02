@@ -18,24 +18,7 @@
    "text": "In 2026, the main change will be a shift from individual gadgets and add-ons to data-driven biohacking. AI can analyze large amounts of information, wearable devices collect data almost continuously, and personalized platforms try to combine sleep, activity, nutrition, heart rate, and laboratory scores into a one big picture."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h2",
@@ -335,24 +318,7 @@
    "text": "To preserve your health, remember that you can only use proven and safe trends. Any substance that enters your body must undergo a sufficient number of clinical trials and have proven outcomes. Only then will the risk of unexpected side effects be minimized."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "academy"
   },
   {
    "t": "h2",
@@ -415,12 +381,6 @@
   {
    "t": "p",
    "text": "**The future of biohacking is becoming more personalized, data-driven, and focused on measurable health outcomes – not simply trying the latest trend.** It is the ability to distinguish a proven tool from an attractive, but as yet unconfirmed hypothesis that has become a major skill of a modern biohacker."
-  },
-  {
-   "t": "events"
-  },
-  {
-   "t": "academy"
   }
  ],
  "faq": [

@@ -52,24 +52,7 @@
    "text": "Moreover, in healthcare, AI technologies help process the vast and diverse amounts of data collected by medical institutions, opening up a wide range of innovative possibilities. Medical staff can use AI applications to improve the accuracy and efficiency of their work and speed up decision-making."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h2",
@@ -357,24 +340,7 @@
    ]
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "academy"
   },
   {
    "t": "h3",
@@ -383,12 +349,6 @@
   {
    "t": "p",
    "text": "The rapid advancement of artificial intelligence is already transforming medicine, offering incredible benefits in disease diagnosis, treatment, and medical research. Healthcare professionals must integrate artificial intelligence into their practice while ensuring that these tools meet strict safety and efficacy standards. And people should be empowered to better manage their health through AI-assisted coaching, with the confidence that these technologies are reliable and that their personal health data will be handled with the utmost responsibility. This collective effort, backed by robust privacy and security measures, has the potential to transform healthcare and biohacking, benefiting millions of people worldwide."
-  },
-  {
-   "t": "events"
-  },
-  {
-   "t": "academy"
   }
  ],
  "faq": [

@@ -31,24 +31,7 @@
    "text": "**We recommend** : BluBlox Sleep. They filter 100% of % blue and green spectrum, have a lightweight frame, and an anti-reflective coating. The glasses improve sleep quality, reduce eye fatigue, and prevent headaches. The price is about $95-150."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "h2",
@@ -143,24 +126,7 @@
    "text": "**We recommend:** Oura Ring Gen 3. The features include sleep phase analysis, HRV, body temperature, SpO2, and cycle alarm. Also, it offers advantages such as accurate data, battery life of up to 7 days, and water resistance. Price starts from $200 to $400."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "academy"
   },
   {
    "t": "h2",
@@ -315,12 +281,6 @@
   {
    "t": "note",
    "text": "Just to note the warning, all recommendations in the article are on the medical ones! Before using new devices, please consult with your doctor. Be aware about your chronic diseases if you have any and how safe it is to use a particular gadget in such circumstances."
-  },
-  {
-   "t": "events"
-  },
-  {
-   "t": "academy"
   }
  ],
  "faq": []

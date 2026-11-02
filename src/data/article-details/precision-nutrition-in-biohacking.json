@@ -77,24 +77,7 @@
    "text": "The most conscious way to regulate your diet is by taking regular blood and sugar tests. It depends on them which foods to abstain from. For example, in the case of insulin resistance, the diet should include foods that do not sharply raise insulin levels in the blood and rely on those that do not. CGM (continuous glucose monitoring, such as Levels or Freestyle Libre) shows how specific products affect your glucose response."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
-   "alt": "Biohackers World Miami 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
-   "alt": "Biohacking Conference in San Francisco 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
-   "alt": "Biohackers World Chicago 2027 event logo"
-  },
-  {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
-   "alt": "Biohackers World Los Angeles 2027 event logo"
+   "t": "events"
   },
   {
    "t": "p",
@@ -245,9 +228,6 @@
     "Make changes gradually, review the precision nutrition you’ve followed, and correct if needed at least once a month.",
     "Don’t look for one-size-fits-all solutions and work with the ones that are right for you."
    ]
-  },
-  {
-   "t": "events"
   },
   {
    "t": "academy"
