@@ -47,7 +47,7 @@ function Tile({ item, cls }: { item: any; cls: string }) {
           {item.imgMobile && <img className="tile-photo-mob" src={item.imgMobile} alt="" loading="lazy" decoding="async" />}
         </span>
       )}
-      <div className="tile-kick"><span className="kick" data-k={item.k}>{item.kick}</span></div>
+      {item.kick && <div className="tile-kick"><span className="kick" data-k={item.k}>{item.kick}</span></div>}
       <h3>{item.t}</h3><p>{clip(item.d, 400)}</p>
       <div className="meta"><b>{item.guest || item.meta}</b><span>{item.duration ? `${item.duration} · ` : ''}{pretty(item.date)}</span></div>
       <Motif kind={item.k} />
@@ -119,7 +119,7 @@ export default function Home() {
         <div className="bento">
           <Link className={'tile tile--lead' + (lead.img ? ' tile--photo' : '')} data-k={lead.k} to={lead.u}>
             {lead.img && <span className="tile-photo"><img src={lead.img} alt="" loading="lazy" decoding="async" /></span>}
-            <span className="kick" data-k={lead.k}>{lead.kick} · {pretty(lead.date)}</span>
+            <span className="kick" data-k={lead.k}>{lead.kick ? `${lead.kick} · ` : ''}{pretty(lead.date)}</span>
             <h2>{lead.t}</h2><p>{clip(lead.d, 180)}</p>
             <div className="meta"><b>{lead.meta}</b></div>
           </Link>
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="tile tile--brief">
             <div className="tile-kick"><span className="kick" data-k="article">New</span><span style={{ fontSize: '.72rem', color: 'rgba(255,255,255,.5)' }}>{weekday}, {pretty(BUILT.toISOString().slice(0, 10))}</span></div>
             <h3 style={{ fontSize: '1.1rem' }}>Five things to know</h3>
-            <ol className="brief">{brief.map((i) => <li key={i.u}><Link to={i.u}>{i.t}</Link><small>{i.kick} · {pretty(i.date)}</small></li>)}</ol>
+            <ol className="brief">{brief.map((i) => <li key={i.u}><Link to={i.u}>{i.t}</Link><small>{i.kick ? `${i.kick} · ` : ''}{pretty(i.date)}</small></li>)}</ol>
           </div>
           <Tile item={{ ...tileA, img: blogTilePhoto.url, imgMobile: blogTileMobile.url }} cls="tile--a" />
           <Tile item={{ ...tileB, img: podcastTilePhoto.url, imgMobile: podcastTileMobile.url }} cls="tile--b" />
@@ -237,7 +237,6 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="wrap"><p className="fp-footer-note">Placement on this page is driven by the knowledge graph: every item is tagged to pillars and entities, and each section gathers the newest content across all formats.</p></div>
     </div>
   )
 }
