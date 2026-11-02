@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { ArticleCard } from '../components/ui'
@@ -12,7 +12,9 @@ export default function Blog() {
   const sorted = useMemo(() => [...articles].sort((a, b) => (a.date < b.date ? 1 : -1)), [])
   const categories = useMemo(() => [...new Set(articles.flatMap(a => a.categories || []))].filter(value => value !== 'Blog').sort() as string[], [])
   const hits = filterArticles(sorted, query, category)
-  const [lead, ...rest] = hits
+  const [shown, setShown] = useState(9)
+  useEffect(() => setShown(9), [query, category])
+  const [lead, ...rest] = hits.slice(0, shown)
   return (
     <>
       <PageHead compact title="Blog" lede="Biohacking insights: the source to unleash your potential." />
@@ -34,6 +36,7 @@ export default function Blog() {
           </Link>}
           {rest.map((a) => <ArticleCard key={a.slug} slug={a.slug} />)}
         </div>
+        {hits.length > shown && <div className="blog-more"><Button className="section-cta" onClick={() => setShown(n => n + 6)}>Load more</Button></div>}
         {hits.length === 0 && <div className="content-empty"><p>No articles match your search and category.</p><Button className="chip" onClick={() => { setQuery(''); setCategory('all') }}>Clear filters</Button></div>}
       </div></section>
     </>

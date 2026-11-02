@@ -965,3 +965,4 @@ a:hover .art[data-k="episode"] img,
   .art-academy { grid-template-columns: 1fr; }
   .prose .art-academy-lead { min-height: 340px; }
 }
+.blog-more { display: flex; justify-content: center; margin-top: 32px; }
