@@ -761,3 +761,10 @@ a:hover .art[data-k="episode"] img,
 .tile--brief .brief li { grid-template-columns: 26px minmax(0, 1fr); }
 .tile--brief .brief a { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bento .tile--lead { min-height: 0; }
+.bento .tile--problems, .bento .tile--brief { padding: 16px 18px; }
+.tile--problems h3, .tile--brief h3 { margin-top: 8px !important; margin-bottom: 4px !important; }
+.tile--problems p { margin: 0 0 10px; font-size: 14px !important; line-height: 1.45 !important; }
+.tile--problems .prob-chips { gap: 6px; }
+.tile--problems .prob-chips a { padding: 4px 10px; font-size: 12px; }
+.tile--brief .brief li { padding: 5px 0; }
+.home .tile--lead h2 { max-width: 22ch; }
