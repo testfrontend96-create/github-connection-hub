@@ -1,0 +1,528 @@
+{
+ "author": {
+  "name": "Irene Kist",
+  "role": "Writer at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/10/t13-150x150-optimized.webp"
+ },
+ "intro": "Although aging is an inherent part of life, we continuously strive to extend our healthspan and push the boundaries of youth. Modern science allows this to be done more effectively than before. Regular health assessments and performance tracking enable us to [optimize wellness](https://www.biohackers.world/blog/biohackers-world-conference-expo-ignites-chicago-with-first-ever-wellness-event-of-its-kind), sustaining both physical and cognitive health.",
+ "highlights": [
+  "Modern science enables tracking key biomarkers to understand biological age and optimize health strategies for longer, active living.",
+  "Essential biomarkers like ApoB, hs‑CRP, HbA1c, and VO₂ Max reveal cardiovascular, metabolic, and fitness health risks before symptoms appear.",
+  "Personalized data from biomarkers helps tailor nutrition, exercise, and recovery for improved health span rather than just lifespan.",
+  "Regular testing—annual for blood markers and continuous for HRV and sleep — ensures early detection and prevention of age‑related decline."
+ ],
+ "blocks": [
+  {
+   "t": "p",
+   "text": "Let’s talk about the longevity biomarkers. They are becoming a growing trend among modern biohackers. It is through them that you can understand your biological age and state of the body. Knowing them, you can build the structure of your eating habits, become healthy and make more informed decisions about your body. We will talk about which markers are most important and look at [how science helps](https://academy.biohackers.world/) to develop this branch."
+  },
+  {
+   "t": "h2",
+   "text": "What Are Longevity Biomarkers?",
+   "id": "what-are-longevity-biomarkers"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/07/What-Are-Longevity-Biomarkers-1024x683-optimized.jpg",
+   "alt": "Longevity Biomarkers"
+  },
+  {
+   "t": "p",
+   "text": "Aging as a whole is a rather complex process that depends on many factors. The longevity testing is one way to understand this process. Longevity biomarkers is the common term for measurable indicators that highlight a person’s biological age. Instead of the age you have in your passport, this one helps to realise your health capability."
+  },
+  {
+   "t": "p",
+   "text": "[Biomarkers](https://www.biohackers.world/shop/prolon-5-day-fasting-mimicking-diet) can often be confused with symptoms, but these are quite different concepts. The former helps to prevent potential problems and risks for the body in the form of inflammations, development of chronic diseases, etc. While the symptoms are already present, hiccups that need to be corrected. That is why, knowing your data, you can understand what health problems may be waiting for you and in theory prevent such an external environment from triggering them."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h2",
+   "text": "Why Biomarkers Matter for Healthy Aging",
+   "id": "why-biomarkers-matter-for-healthy-aging"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/07/Why-Biomarkers-Matter-for-Healthy-Aging-1024x683-optimized.jpg",
+   "alt": "Biomarkers Matter for Healthy Aging"
+  },
+  {
+   "t": "p",
+   "text": "This scientific approach to your life helps in solving a fairly wide range of problems. For starters, knowing your body’s features can predict more accurate health risks. When we talk about the [biomarkers of aging](https://www.biohackers.world/blog/how-biohacking-can-reverse-aging), it is worth understanding that we not only want to prolong life, but also improve its quality. Lifespan certainly matters as well, but healthspan biomarkers are fundamental in this context. This is the period of a person’s life in which he remains active, retains energy and efficiency. Healthspan is the most important indicator for biomarkers."
+  },
+  {
+   "t": "p",
+   "text": "Data personalization is also a fundamental part of the process. It’s what gives you the most effective health outcome. After all, each of us is individual. Some people need improved metabolic health, others need reduced inflammation or increased endurance. Aging biomarkers help you make health decisions based solely on real data about your body."
+  },
+  {
+   "t": "h3",
+   "text": "Quick Overview Table"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Biomarker",
+     "Why is it important?",
+     "How often to check"
+    ],
+    [
+     "ApoB",
+     "Cardiovascular risk assessment",
+     "Once a year"
+    ],
+    [
+     "hs-CRP",
+     "Control of chronic inflammation",
+     "1-2 times a year"
+    ],
+    [
+     "HbA1c",
+     "Long-term blood sugar control",
+     "1-2 times a year"
+    ],
+    [
+     "Fasting Insulin",
+     "Insulin resistance assessment",
+     "Once a year"
+    ],
+    [
+     "CGM Metrics",
+     "Control of glucose fluctuations",
+     "As needed"
+    ],
+    [
+     "Omega-3 Index",
+     "Brain and Heart Health",
+     "Once a year"
+    ],
+    [
+     "Vitamin D",
+     "Immunity and bone health",
+     "1-2 times a year"
+    ],
+    [
+     "VO2 Max",
+     "Cardiorespiratory endurance",
+     "Every 6-12 months"
+    ],
+    [
+     "Grip Strength",
+     "General physical function",
+     "Every 6-12 months"
+    ],
+    [
+     "Body Composition",
+     "Control of muscle mass and visceral fat",
+     "Every 6 months"
+    ],
+    [
+     "Biological Age Testing",
+     "Estimation of the aging rate",
+     "Once a year"
+    ],
+    [
+     "Homocysteine",
+     "Cardiovascular health",
+     "Once a year"
+    ],
+    [
+     "Testosterone & Hormonal Health",
+     "Hormonal balance",
+     "Once a year"
+    ],
+    [
+     "Sleep Metrics",
+     "Restoring the body",
+     "Constantly"
+    ],
+    [
+     "Heart Rate Variability",
+     "State of the nervous system",
+     "Constantly"
+    ]
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Biomarkers to Cover",
+   "id": "biomarkers-to-cover"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/07/Biomarkers-Should-You-Prioritize-1024x683-optimized.jpg",
+   "alt": "Biomarkers"
+  },
+  {
+   "t": "h3",
+   "text": "1. ApoB (Apolipoprotein B)"
+  },
+  {
+   "t": "p",
+   "text": "This protein is contained in lipoproteins. They are involved in the formation of atherosclerotic plaques, and thanks to these biomarkers of aging, today the risk of [cardiovascular diseases is quite preventable](https://pubmed.ncbi.nlm.nih.gov/30704847/). For most people, a level below 90 mg/dl is considered optimal. To improve the score, exercise should be done in both cardio and power. It is also worth diversifying your diet with fiber and not forgetting fatty acids such as omega-3. It is worth checking him once a year or more often on the recommendation of a doctor."
+  },
+  {
+   "t": "h3",
+   "text": "2. hs-CRP (High-Sensitivity C-Reactive Protein)"
+  },
+  {
+   "t": "p",
+   "text": "This is a token indicating systemic inflammation. You may feel good but not realise that you have them, so this token is important. His elevated levels are linked to [an increased risk of cardiovascular disease and overall mortality](https://pubmed.ncbi.nlm.nih.gov/19454641/). Quality sleep, reduced stress and a Mediterranean diet bias will help improve performance. To maintain health, it is desirable to aim for values below 1 mg/l. Regular exercise, balanced diet, quality sleep and stress monitoring help to reduce HS-CRP, and it is recommended that the test be done 1-2 times a year."
+  },
+  {
+   "t": "h3",
+   "text": "3. HbA1c"
+  },
+  {
+   "t": "p",
+   "text": "This aging biomarker shows the average blood glucose level for the last 2-3 months. His elevated scores are also linked to accelerated aging and the risk of diabetes. The desired HbA1c level is less than 5.7%. To work with this metric, you should monitor your sugar intake and include both exercise and cardio. It costs 1-2 times a year to check."
+  },
+  {
+   "t": "h3",
+   "text": "4. Fasting Insulin"
+  },
+  {
+   "t": "p",
+   "text": "Insulin resistance can occur before diabetes itself. It is also considered a factor in more rapid aging. This analysis measures insulin levels at a time of exhaustion. Often, optimal values are considered to be less than 8 μeΩ/ml. To improve this, you should keep your body weight in check and increase your protein intake. Also important is your sleep, it must be complete. To check insulin once a year is expensive."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/05/diet-concept-composition-with-cutlery-measuring-tape-alarm-clock-color-background-copy-space-top-view-768x512-optimized.jpg",
+   "alt": "How to Start Intermittent Fasting for Maximum Benefits"
+  },
+  {
+   "t": "p",
+   "text": "How to Start Intermittent Fasting for Maximum Benefits Blog 10 min read What is Intermittent Fasting? Intermittent fasting is not a diet but an eating pattern in which you eat only during a limited period during the day and fast the rest of the time. For example, you can only eat for eight hours, from noon to 8:00 p.m., and then there is a 16-hour fasting time […] [Read The Full Article](https://www.biohackers.world/blog/intermittent-fasting)"
+  },
+  {
+   "t": "h3",
+   "text": "5. Continuous Glucose Monitoring (CGM Metrics)"
+  },
+  {
+   "t": "p",
+   "text": "This is a system that allows glucose levels to be monitored continuously for 24 hours. It is believed that spikes in blood sugar can accelerate aging processes. This longevity blood test helps you understand average glucose levels, glycemic variability, and more generally how your body reacts to different products. If the jumps are too strong, here are a few ways to improve your performance: combine carbohydrates with protein and fiber; move more after meals; avoid constant snacking; maintain a healthy weight. In general, this figure can be checked several times a year."
+  },
+  {
+   "t": "h3",
+   "text": "6. Omega-3 Index"
+  },
+  {
+   "t": "p",
+   "text": "This biomarker helps you see the percentage of EPA and DHA. These are two major fatty acids in the red cell membranes. This is an important indicator, as a sufficient level of omega-3 affects the cardiovascular system, cognitive function and also [reduces chronic inflammation and improves insulin sensitivity](https://pubmed.ncbi.nlm.nih.gov/25331725/). An optimal score is usually considered to be 8% or higher. For this indicator, it is important to consume enough fatty fish or add omega-3 as a supplement. It is also worth reducing the excess omega-6 fatty acids. It is recommended to check once a year or several months after starting the intake of supplements."
+  },
+  {
+   "t": "h3",
+   "text": "7. Vitamin D"
+  },
+  {
+   "t": "p",
+   "text": "Vitamin D is involved in a fairly wide range of tasks in our body. Its spectrum extends to the work of the immune system, bone health, and the body’s metabolic processes. It is therefore important to understand your condition. Vitamin D deficiency has been linked to increased risk of infection, deterioration of bone tissue and a decline in overall health. For most people, about 30-50 ng/ml are considered optimal. If your indicator is in short supply, you should spend more time in the sun, eat fatty fish, or add vitamin D as a pill. Check these anti-aging biomarkers at least once a year, especially if you live in a region with little sun."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
+  },
+  {
+   "t": "h3",
+   "text": "8. VO2 Max"
+  },
+  {
+   "t": "p",
+   "text": "With this indicator, you can understand how much oxygen your body can use during intense exercise. It helps to predict the longevity and health of your body. High levels of cardiac mortality training are [associated with lower risk of premature death](https://pubmed.ncbi.nlm.nih.gov/38864459/). Values depend on age and gender, but the higher the score relative to the age norm, the better. To improve your performance, pay attention to interval training as well as exercise in zone 2. It is also important to maintain a healthy body weight. It is worth checking every six months."
+  },
+  {
+   "t": "h3",
+   "text": "9. Grip Strength"
+  },
+  {
+   "t": "p",
+   "text": "This is measured with a special dynamometer. Although this seems like a simple test, grip strength is still considered a good indicator of overall muscle strength. It helps [track the functional state of the body and even risk of premature death.](https://pubmed.ncbi.nlm.nih.gov/31157800/) Usually this indicator is tracked with special tables, as the rate varies according to age and gender. Exercises for the forearm, strength training at the top of the body help improve grip. It is worth checking them every 6-12 months."
+  },
+  {
+   "t": "h3",
+   "text": "10. Body Composition (Muscle Mass & Visceral Fat)"
+  },
+  {
+   "t": "p",
+   "text": "This indicator will be especially useful for athletes and those who want to lose extra weight or conversely gain the missing one. It shows the ratio of muscle mass, fat tissue and visceral fat level surrounding internal organs. It is the amount of muscle mass that is crucial in old age, which determines how free you feel. It is also important to note that the excess of visceral fat is associated with an increased risk of diabetes, cardiovascular disease, and chronic inflammation. Specific measures vary by gender, age and method of measurement, but the main goal is to maintain high muscle mass and a minimum visceral fat. For a balanced indicator, it is not worth neglecting the vortices, and it is also important to consume enough protein and total calories. Such an assessment should be made every six months."
+  },
+  {
+   "t": "h3",
+   "text": "11. Biological Age Testing"
+  },
+  {
+   "t": "p",
+   "text": "This biomarker helps in assessing how fast your body is aging. It shows how your lifestyle affects health in the long run. This can be done using epigenetic clocks, DNA methylation analysis, biochemical blood tests and other modern technologies. Ideally, your biological age and chronology should match. For an upgrade of this indicator, it is worth trying a [combination of Omega-3, vitamin D and regular physical activity.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11922767/) It is important to stop smoking and to use alcohol at a minimum. For most people, it is sufficient to test once a year."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/cover3-1-768x572-optimized.png",
+   "alt": "Exploring the Science of Biological Aging: Insights from TruDiagnostic CEO Matt Dawson"
+  },
+  {
+   "t": "p",
+   "text": "Exploring the Science of Biological Aging: Insights from TruDiagnostic CEO Matt Dawson Blog, Health & Wellness 3 min read Unlocking the Mysteries of Aging The field of biological aging has seen remarkable progress in recent years, thanks to advancements in epigenetics and personalized health science. At the forefront of this research is Matt Dawson, the CEO of TruDiagnostic, a company that uses epigenetic testing to measure biological age and provide actionable insights for improving […] [Read The Full Article](https://www.biohackers.world/blog/exploring-the-science-of-biological-aging-insights-from-trudiagnostic-ceo-matt-dawson)"
+  },
+  {
+   "t": "h3",
+   "text": "12. Homocysteine"
+  },
+  {
+   "t": "p",
+   "text": "It is an amino acid that is formed during metabolism. Its level affects the condition of vessels, cardiovascular system and cognitive functions. It is therefore considered one of the important anti-aging biomarkers. For long-term health, many experts recommend maintaining levels below 10 μmol/l. To improve this demonstrably, it is important to consume enough fat, provide the body with vitamins B6 and B12, a balanced diet, no smoking and regular physical activity. It is recommended to check once a year."
+  },
+  {
+   "t": "h3",
+   "text": "13. Testosterone & hormonal health"
+  },
+  {
+   "t": "p",
+   "text": "Hormones are responsible for a wide range of bodily functions. They affect our mood, metabolism, muscle mass and energy. Checking your[hormones](https://www.biohackers.world/blog/how-to-raise-your-immune-system) is important for both men and women, so it’s important to make time for your hormonal health. Moreover, as they change with age, this is also worth monitoring. The optimal performance depends on age, gender and individual characteristics of an organism, so the assessment must be carried out in a comprehensive manner. But overall performance improvement can also be achieved through exercise, stress reduction, and better sleep. It is generally recommended that laboratory assessments be conducted once a year."
+  },
+  {
+   "t": "h3",
+   "text": "14. Sleep Metrics"
+  },
+  {
+   "t": "p",
+   "text": "[Full sleep](https://www.biohackers.world/blog/13-best-sleep-gadgets) is the foundation of any healthy body. Therefore, your sleep indicators will help you to deal with a fairly wide range of problems such as loss of concentration, irritability and also accelerated aging. The thing is that if you sleep poorly, your blood cortisol increases and accelerates this process. Your nervous system does not have time to recover and cellular regeneration is slowed. To [improve sleep performance](https://www.biohackers.world/blog/best-peptides-for-sleep), it is important to follow a daily routine, not use gadgets for several hours before sleep, and block the blue screen light. Often this biomarker can be tracked on wearables, which makes it possible to be constantly updated with their indicators and correct them in a timely manner."
+  },
+  {
+   "t": "h3",
+   "text": "15. Heart Rate Variability (HRV)"
+  },
+  {
+   "t": "p",
+   "text": "The measure of heart rate variability helps to understand the ability of the nervous system to adapt to stress and strain. High HRV is usually associated with good recovery and resistance to stress, whereas low values may indicate overexertion or chronic stress. While there is no universal meaning, it is still important to track one’s own state. For improvement, breathing exercises, cardio exercise and sufficient recovery between workouts will be useful. When using wearable devices, HRV can be monitored daily."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/06/Longevity-Coaching-and-Biohacking-Education-768x512-optimized.jpg",
+   "alt": "Why More People Are Turning to Longevity Coaching and Biohacking Education"
+  },
+  {
+   "t": "p",
+   "text": "Why More People Are Turning to Longevity Coaching and Biohacking Education Blog 8 min read Why Longevity Science Academy Is Emerging at the Perfect Time A few years back, most people didn’t even know the term “biohacking.” People are talking everywhere about living longer, bouncing back faster, supplements, calming the nervous system, and boosting performance. They track sleep scores, watch stress, try fasting, and eat better, because daily choices can […] [Read The Full Article](https://www.biohackers.world/blog/longevity-coaching-and-biohacking-education)"
+  },
+  {
+   "t": "h2",
+   "text": "Which Biomarkers Should You Prioritize?",
+   "id": "which-biomarkers-should-you-prioritize"
+  },
+  {
+   "t": "p",
+   "text": "Not all of the above-mentioned biomarkers are needed in everyday life. Now that we understand what biomarkers for longevity are and know what they are, let’s talk about relevance. Let’s look into what you should consider."
+  },
+  {
+   "t": "h3",
+   "text": "Most Important"
+  },
+  {
+   "t": "p",
+   "text": "These options will help you predict the broadest range of problems. They can be used to understand the overall state of your body and identify problems:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "ApoB",
+    "hs-CRP",
+    "HbA1c",
+    "Fasting Insulin",
+    "VO2 Max"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Important"
+  },
+  {
+   "t": "p",
+   "text": "These indicators are not of primary importance and are required for a more in-depth examination of your body:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Omega-3 Index",
+    "Homocysteine",
+    "HRV"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Advanced"
+  },
+  {
+   "t": "p",
+   "text": "You can monitor these biomarkers less frequently and they are less important for overall health. They are only necessary if you’ve already checked all the other markers but still want to further improve your body:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Biological Age Testing",
+    "Continuous Glucose Monitoring"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "How Often Should You Test Longevity Biomarkers?",
+   "id": "how-often-should-you-test-longevity-biomarkers"
+  },
+  {
+   "t": "p",
+   "text": "Let’s have a quick look and summarise the timings you might need to do biomarkers tests:"
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Biomarker",
+     "Recommended Frequency"
+    ],
+    [
+     "ApoB (Apolipoprotein B)",
+     "Once a year"
+    ],
+    [
+     "hs-CRP",
+     "1-2 times per year"
+    ],
+    [
+     "HbA1c",
+     "1-2 times per year"
+    ],
+    [
+     "Fasting Insulin",
+     "Once a year"
+    ],
+    [
+     "VO2 Max",
+     "Every 6-12 months"
+    ],
+    [
+     "Omega-3 Index",
+     "Once a year"
+    ],
+    [
+     "Homocysteine",
+     "Once a year"
+    ],
+    [
+     "HRV",
+     "Constantly"
+    ],
+    [
+     "Biological Age Testing",
+     "Once a year"
+    ],
+    [
+     "Continuous Glucose Monitoring (CGM Metrics)",
+     "For 2-4 weeks several times per year or as needed"
+    ]
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h2",
+   "text": "The Future of Longevity Testing",
+   "id": "the-future-of-longevity-testing"
+  },
+  {
+   "t": "p",
+   "text": "It is worth noting that the development of biomarkers and life extension has not stopped. Each year, they evolve and seek new options for healthy aging. Wearable devices play a rather important role in the development of this field in science. With fitness trackers, you can see your performance in real time. This helps you to consciously approach your workouts and understand what causes stress, as well as adjust sleep. continuous health monitoring such as glucose tracking system provides data about an organism over 24 hours. This is especially useful for [people with diabetes](https://www.biohackers.world/blog/glp-2-vs-glp-3-in-biohacking) to understand the state of their bodies."
+  },
+  {
+   "t": "p",
+   "text": "AI can also be a useful complement. It allows you to analyze large amounts of information related to your data. This way you can understand more from your data and biomarkers and build a strategy for the future. And here it is worth mentioning personalized medicine, which also helps to work not with general knowledge about the average organism but specifically targets your unique case and experience. This approach helps to make more accurate decisions and makes disease prevention as effective as possible."
+  },
+  {
+   "t": "h3",
+   "text": "To sum up"
+  },
+  {
+   "t": "p",
+   "text": "As you can see, the topic of biomarkers is not as complex as it might seem. These metrics are worth knowing to better understand your body and make plans to work with it, recognizing its strengths and weaknesses. After all, you cannot improve what you do not know. This approach helps you to approach your health with intelligence and do it more individually. Remember:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Do not make all the biomarkers at once, just go through the most popular ones",
+    "Take small steps towards a healthy future and remember that this is a marathon not a sprint",
+    "Adjust your habits every day, remember that regularity and discipline are the key to success"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "notionvc: 8372e0a2-385e-4cde-b228-00015aa4b126"
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What Are Longevity Biomarkers?",
+   "a": "Aging as a whole is a rather complex process that depends on many factors. The longevity testing is one way to understand this process. Longevity biomarkers is the common term for measurable indicators that highlight a person’s biological age. Instead of the age you have in your passport, this one helps to realise your health capability."
+  },
+  {
+   "q": "Which Biomarkers Should You Prioritize?",
+   "a": "Not all of the above-mentioned biomarkers are needed in everyday life. Now that we understand what biomarkers for longevity are and know what they are, let’s talk about relevance. Let’s look into what you should consider."
+  },
+  {
+   "q": "How Often Should You Test Longevity Biomarkers?",
+   "a": "Let’s have a quick look and summarise the timings you might need to do biomarkers tests:"
+  }
+ ]
+}

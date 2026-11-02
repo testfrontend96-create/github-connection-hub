@@ -1,0 +1,544 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Start with blood tests to personalize your biohacking nutrition plan.",
+  "Intermittent fasting is key to weight loss in biohacking.",
+  "Proper nutrition must balance calories, nutrients, and hydration.",
+  "Lack of sleep increases hunger and sabotages weight loss.",
+  "Even simple daily movement can lead to noticeable weight loss results."
+ ],
+ "blocks": [
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/cover-1-1024x427-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "1. Start With Blood Testing and Biomarker Analysis",
+   "id": "1-start-with-blood-testing-and-biomarker-analysis"
+  },
+  {
+   "t": "p",
+   "text": "After [reading the books](https://www.biohackers.world/blog/books-about-biohacking) and familiarizing themselves with the theory, a biohacker can move on to practice. The first step is to visit a doctor for tests. Usually, the “minimum program” includes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "genetic testing;",
+    "blood test for hormonal parameters;",
+    "tests to determine the level of proteins (total protein, albumin), fats (lipidogram), and carbohydrates (glucose, glycated hemoglobin, and insulin).",
+    "blood test for vitamins and allergens."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "In addition to the above tests, it is necessary to assess the amount of fluid you lose during the day (degree of dehydration) and draw up a fluid intake plan: how much you lost and how much you need to replenish."
+  },
+  {
+   "t": "p",
+   "text": "The tests mentioned earlier are just the beginning of the path to an [ideal diet](https://www.biohackers.world/blog/biohacking-diet) because, in addition to them, it is also important to check that everything we eat is properly digested and unnecessary is excreted. Therefore, creatinine, urea, uric acid, total bilirubin, AST, and ALT are next in line to help analyze liver and kidney function."
+  },
+  {
+   "t": "p",
+   "text": "Then, with the support of specialists, it is necessary to establish a diet and fluid intake regimen, [normalize sleep](https://www.biohackers.world/blog/biohacking-sleep) and physical activity, and periodically check hormones and vitamins."
+  },
+  {
+   "t": "h3",
+   "text": "1.1 Also Monitor Your Blood Glucose Levels"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/Blood-Glucose-Levels-1024x767-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "In recent years, more and more has been played about the diabetes epidemic. According to the WHO, more than 200 million people worldwide are diagnosed with this disease, increasing every year. The whole reason is that we take in more calories than we use. We are not moving enough and missing the body’s signals."
+  },
+  {
+   "t": "p",
+   "text": "Blood sugar levels should be measured once a year. However, if you are in a group (for example, if you have diabetes, Are overweight, have a worse lifestyle, etc.), you should check your blood sugar level at least twice a year."
+  },
+  {
+   "t": "p",
+   "text": "Diagnosis will require laboratory tests for hormones and biochemical tests of blood and urine."
+  },
+  {
+   "t": "note",
+   "text": "You will need to have your blood tested before biohacking fat loss for glucose, glycosylated hemoglobin, and fructosamine; a glucose tolerance test is used to determine the type of diabetes. For self-monitoring, every patient with diabetes, regardless of the degree of the disease, should have a glucose meter to measure the glucose level."
+  },
+  {
+   "t": "p",
+   "text": "For those who have already been diagnosed, as well as for patients who do not belong to the category of diabetics but are prone to periodic sugar spikes, it is recommended to purchase such a device to be able to take a measurement at any time. With the device at hand, the patient will be able to observe changes in the dynamics, determine which processes or foods led to an increase or decrease in sugar levels, and accordingly change the diet and nutrition regimen."
+  },
+  {
+   "t": "h2",
+   "text": "2. Biohacking Diet Plan For Weight Loss",
+   "id": "2-biohacking-diet-plan-for-weight-loss"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/fitness-body-builder-challenge_53876-122826-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Many of us associate losing weight with strict diets, on which an adult cannot function normally. Women, especially, are often subjecting their bodies to such stress due to the established social norms in the world and the idea of ​​pop culture about skinny girls. As a result, one of the most significant problems of modern times is eating disorders, especially anorexia. However, there are numerous ways to get fit and improve your health. The most important thing to remember is that food is not the enemy, and you should not be afraid."
+  },
+  {
+   "t": "p",
+   "text": "There are no good or bad products. Yes, slow carbohydrates can be better, and fast ones give less energy, but this does not make you wrong if you ate them. After all, the benefit of food is also its pleasure, so that our nervous system does not get stressed during weight loss. One of the most effective ways to control your weight is to create a calorie deficit. You do not have to give up your favourite products in this option, the main thing is not to forget to count what you eat."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "With a deficit, you will lose weight even without doing gruelling workouts. In addition, it helps psychologically, because you do not have to limit yourself as strictly as with a completely healthy diet, which excludes conditionally unhealthy products such as sugar or white flour. It is worth noting that any carbohydrates eventually break down into glucose in our bodies, whether it is whole-grain porridge or a chocolate bar. But it is still important to supplement your plate with protein and vegetables. Meat and other protein sources help build our muscles, and vegetables contain vitamins, fibre, and perfectly satisfy our body’s needs."
+  },
+  {
+   "t": "p",
+   "text": "To understand how many calories you need to consume per day, use websites or applications that specialise in this. Each person has their own deficit, often it is 1800 kcal, but it is better to find out the correct norm for you individually. But do not set too strict a deficit for yourself – do not go below 1400 kcal under any circumstances. This is not good for the body or for weight loss. In the case of a critical calorie deficit, our body begins to save energy and slow us down. You become sluggish and sleep more during the day. We must not forget that our brain also consumes calories, and brain activity is fueled by the same energy derived from nutrition."
+  },
+  {
+   "t": "note",
+   "text": "To properly enter a calorie deficit, try to start reducing your daily calorie intake slowly. For example, remove 100-200 kcal in the first two weeks to a month, and then gradually increase the deficit, adjusting it according to your condition."
+  },
+  {
+   "t": "p",
+   "text": "A useful addition to this will be control of proteins, fats, and carbohydrates. Even without this point, you will still lose weight, but by doing so, your diet will be more balanced."
+  },
+  {
+   "t": "p",
+   "text": "Recommended macronutrient ratio for men. Norms per 1 kg of body weight**:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Protein: 1.5–2.0 g",
+    "Fats: 0.8–1.0 g",
+    "Carbohydrates: 2.0–2.5 g"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Percentage distribution of calories:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Protein: 20–25 %",
+    "Fats: 25–30 %",
+    "Carbohydrates: 45–55 %"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "For women:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Protein: 1.5–1.8 g",
+    "Fats: 0.8–1.0 g",
+    "Carbohydrates: 2.0–2.2 g"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Percentage distribution of calories:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Protein: 18–22 %",
+    "Fats: 25–30 %",
+    "Carbohydrates: 48–55 %"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "If we talk about specific ones, a biohacking diet plan for weight loss and speeding up your metabolism is worth trying, such as intermittent fasting. In this mode, you have an allotted time for food; the most popular scheme is the 16/8 method. That is, an 8-hour window is open for you to eat, and the rest of the time is devoted to hunger. You can also try incorporating this method gradually, starting with 5 days on a standard diet and 2 days on intermittent fasting. There are also stricter schemes, for example, fasting for 24 hours. However, you need to be prepared for such radical options, and it is better to consider them after consulting your doctor."
+  },
+  {
+   "t": "p",
+   "text": "Also, the keto diet is quite a popular option for biohacking weight loss. In it, we put the body into a state of ketosis, where the body begins to use fats as its main fuel, rather than carbohydrates. On the keto diet, fats become the primary source of energy, accounting for up to 70% of the total daily intake. But they should also be healthy, for example, fatty fish, dairy products, and nuts."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/05/diet-concept-composition-with-cutlery-measuring-tape-alarm-clock-color-background-copy-space-top-view-768x512-optimized.jpg",
+   "alt": "How to Start Intermittent Fasting for Maximum Benefits"
+  },
+  {
+   "t": "p",
+   "text": "How to Start Intermittent Fasting for Maximum Benefits Blog 10 min read What is Intermittent Fasting? Intermittent fasting is not a diet but an eating pattern in which you eat only during a limited period during the day and fast the rest of the time. For example, you can only eat for eight hours, from noon to 8:00 p.m., and then there is a 16-hour fasting time […] [Read The Full Article](https://www.biohackers.world/blog/intermittent-fasting)"
+  },
+  {
+   "t": "p",
+   "text": "Some bonus biohacks for you:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Swap fresh juice for smoothies. This way, you’ll get extra fibre from the drink.",
+    "To control the calorie content of your coffee, avoid drinking it with milk every time. Black coffee is lower in calories and is still considered a healthy option.",
+    "Don’t eat until you are full, it will come a bit later. Try to finish your meal feeling light in your stomach.",
+    "If you want something sweet, make it a separate meal. This way you won’t be excluding your favourite cake, but it won’t overload you as an addition after the main dishes.",
+    "Eat plenty of vegetables at your main meals. Try to always have a salad. It helps you feel full, and there are not many calories in greens.",
+    "Have a big breakfast, even if it’s 500-600 calories, but you won’t be hungry until noon."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "3. Best Biohacking Supplements For Weight Loss",
+   "id": "3-best-biohacking-supplements-for-weight-loss"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/view-healthy-food-incased-pill-shaped-container_23-2151344846-1024x682-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Weight loss products may include a single active ingredient, such as an exotic plant extract, or contain various substances, including amino acids, soluble fiber, caffeine, and minerals."
+  },
+  {
+   "t": "p",
+   "text": "The problem is that many [biohacking supplements](https://www.biohackers.world/blog/best-biohacking-supplements) for weight loss need to be better researched. For example, efficacy has been tested on animals or a small number of participants, the exact concentration of the active ingredient has not been specified, or a cocktail of ingredients has been studied, so it’s unclear exactly what worked."
+  },
+  {
+   "t": "p",
+   "text": "Below, we’ll list biohacking supplements for weight loss organized into three categories:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "Effective – there is ample research supporting the benefits of taking them.",
+    "Conditionally effective – there is some evidence of efficacy but not much, or the data needs to be more consistent.",
+    "Ineffective – there needs to be more research, and the results of scientific studies are negative."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "So, what biohacking supplements for weight loss are really effective, and is this scientifically proven?"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Caffeine. Many weight loss products include caffeine or [herbal sources](https://www.biohackers.world/blog/botanical-biohacking): guarana, yerba mate (Paraguayan tea), and kola nut. Caffeine stimulates the CNS, heart, and skeletal muscle function, increasing thermogenesis – heat production with associated energy expenditure. Taking 100 mg of caffeine causes you to expend 9.2 kcal per hour more than a placebo, and this effect lasts for about three hours. In addition, caffeine can increase fat oxidation through increased sympathetic activity and increased fluid loss, slow gastric emptying, and provide a feeling of satiety."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/still-life-press-kit-coffee-1-768x512-optimized.jpg",
+   "alt": "How to Biohack Your Coffee Ritual"
+  },
+  {
+   "t": "p",
+   "text": "How to Biohack Your Coffee Ritual Blog, Health & Wellness, Nutrition 18 min read How does caffeine work Caffeine belongs to the class of alkaloids, and the pharmacological effects of the substance are that it is analeptic, cardiotonic, and psychostimulant. Simply put, it directly affects the lungs, heart, and brain. At the respiratory system level, breathing becomes more frequent and deep. From the gastrointestinal tract, the secretion of the […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-coffee)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Green tea extract. Green tea contains several active ingredients, including caffeine. It is believed to help you lose weight by increasing thermogenesis, accelerating metabolism, and fat oxidation. In addition, green tea extract positively affects the levels of the hormones associated with appetite and fat breakdown – adiponectin and ghrelin.",
+    "Chitosan. This aminosaccharide is similar to cellulose extracted from insects and crustaceans’ chitin. Chitosan is thought to bind to fats in the digestive tract, interfering with their absorption."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "4. Sleep Optimization",
+   "id": "4-sleep-optimization"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/Circadian-Rhythms-1024x707-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Sleep is just as crucial for biohacking for weight loss as diet and exercise. Lack of sleep can sabotage your efforts if you try to dwell on the pain. Unfortunately, many people don’t get enough sleep and don’t think that it affects their body’s processes. At the same time, little sleep is associated with poor food choices. Hunger and excessive caloric intake decrease exercise and increase weight. Although each person’s needs vary, most adults need about 7-9 hours of sleep per night. Getting the rest you need can be crucial to achieving your weight loss goals."
+  },
+  {
+   "t": "note",
+   "text": "Many studies have found that sleep-deprived people report increased appetite and higher daily calorie intake. Researchers write that people who experienced sleep deprivation consumed an additional 385 calories daily. Moreover, a larger than usual share of calories came from fat. Another study showed that sleep deprivation significantly increases hunger, food cravings, increased portion sizes, and consumption of chocolate and fat."
+  },
+  {
+   "t": "h2",
+   "text": "5. Cold Therapy For Fat Loss",
+   "id": "5-cold-therapy-for-fat-loss"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/Cold-Therapy-For-Fat-Loss-1024x572-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "In addition to standard weight loss techniques, you can turn to more advanced biohacking methods. One of these is [cold therapy](https://www.biohackers.world/blog/cold-water-therapy). Although your body experiences shock at first, and it may seem that there is little pleasure in such a procedure, after 30 seconds, the body begins to produce heat and expend energy. Cold therapy helps:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Improve your metabolism by increasing your energy expenditure even at rest.",
+    "Activate brown fat, which burns energy to warm the body, and that’s how biohacking fat loss happens.",
+    "Activate the hormones of vivacity: irisin, adiponectin, and FGF-21. They make us more mobile and energised, support vascular health, and reduce inflammation.",
+    "Increase insulin sensitivity.",
+    "Regulate glucose metabolism."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/cover3-4-optimized.png",
+   "alt": "Biohacking Recovery with Cryotherapy"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking Recovery with Cryotherapy Blog, Health & Wellness, Longevity & Anti-Aging, Skin & Body Care 8 min read What is cryotherapy? Cryotherapy or cold treatment – the effect on the body of ultra-low temperatures. The impact of the procedure is achieved due to the body’s natural reaction to cold. The first of these is a powerful release of endorphins, which can be compared to a full-fledged workout in the gym. The second reaction […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-cryotherapy)"
+  },
+  {
+   "t": "h2",
+   "text": "6. Best Exercises To Lose Weight",
+   "id": "6-best-exercises-to-lose-weight"
+  },
+  {
+   "t": "p",
+   "text": "Although [sports](https://www.biohackers.world/blog/fitness-and-biohacking) are not a must to lose weight, they are still beneficial for health optimisation. First of all, during weight loss, we lose muscle mass and water, and only after that does fat begin to decrease. This is how our body is designed – it is designed for survival. It therefore tries to preserve fat reserves until the end. As a result, the body can become flabby, making it difficult for you to perform even routine actions. Sports help [maintain muscle mass](https://www.biohackers.world/blog/how-to-strengthen-muscle-growth-using-biohacking-methods), keep the skin elastic, and influence your perception of the world. Thanks to dopamine, which is produced during activities, we feel a surge of strength and positive emotions. This is not as fast-acting as, for example, the dopamine release from food or doomscrolling, but it works in the long run. When you watch funny reels on social media, your energy decreases and anxiety grows. But for physical activity, the body will thank you twice as much with a boost of energy and a calm mind."
+  },
+  {
+   "t": "p",
+   "text": "Although it has long been believed that women do not need strength training with weights, this is a big misconception. For both women and men, it is not only beneficial but also helps prolong youth and wellness. After 25 years, we begin to rapidly lose muscle mass, so it is critically important to build it up. This is what happens as a result of strength training. But do not forget about anaerobic exercise. It affects our endurance and can be beneficial in everyday life. For example, when you need to lift bags of groceries into the apartment and the elevator is not working, you will appreciate both cardio and strength training, as your heart will be able to help you without shortness of breath. Strong biceps and back will withstand all the kilograms that you bought at the grocery store."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/06/woman-digital-disconnecting-home-by-doing-yoga-768x512-optimized.jpg",
+   "alt": "Biohacker’s Guide to Yoga"
+  },
+  {
+   "t": "p",
+   "text": "Biohacker’s Guide to Yoga Blog 13 min read What is Yoga Yoga is an ancient system of self-regulation of the body and mind that originated in India over 5,000 years ago. For a modern biohacker, it is a multi-level technology for optimizing physiology, neuroplasticity, and mental productivity. Yoga reduces chronic inflammation by lowering CRP, cytokine, and cortisol levels after just 10-16 days of […] [Read The Full Article](https://www.biohackers.world/blog/biohackers-guide-to-yoga)"
+  },
+  {
+   "t": "p",
+   "text": "But let’s try it in practice. Here is a small set of exercises that will help you to perk up and work the muscles of the whole body. Try to do it 3 times a week:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "**Sprints 30 seconds + 30 seconds walk** . Repeat this 10 times, and the anaerobic system works, burning calories.",
+    "**Burpees 3×15 reps** . Engages the whole body, increases the pulse.",
+    "**Kettlebell Goblet Squat 3×12** .Strengthens the legs and core.",
+    "**Box jumps 3 × 10** . Develops strength and power in the legs."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "You can combine them in a [MetCon](https://www.biohackers.world/blog/metcon-workouts)/HIIT format: perform each block consecutively with a 60-second rest, and repeat 3-4 rounds. You can also include a yoga session to relieve tension and improve flexibility."
+  },
+  {
+   "t": "h3",
+   "text": "6.1 Use Activity Trackers"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking to lose weight also encourages the use of proper gadgets and modern services, such as meditation programs, fitness bracelets, sleep monitors, and biomarker detection devices. They can help you get all your health data exactly and just in time."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/02/cover3-12-768x572-optimized.png",
+   "alt": "Biohacking Apps for Health Optimization"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking Apps for Health Optimization Blog, Fitness & Recovery, Sleep, Skin & Body Care, Devices, Nutrition, Fitness 8 min read Why do biohackers use apps With biohacking apps, you can make and improve your life more comfortable. Many functions and tasks are now taken over by smartphone apps – they collect and store data from devices, provide ready-made programs and recipes, motivate, relax, and can even help you find new friends with similar sporting interests. […] [Read The Full Article](https://www.biohackers.world/blog/top-biohacking-apps-for-health-sleep-brain-food-and-body)"
+  },
+  {
+   "t": "h2",
+   "text": "7. Manage Stress with Breathing",
+   "id": "7-manage-stress-with-breathing"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/Stress-And-Breathing-1024x573-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "We often underestimate the power of stressful situations and their impact on our bodies. At the same time, prolonged stress triggers the release of cortisol, a hormone that increases appetite and promotes fat accumulation. This does not happen because the body is our enemy; it is simply trying to protect itself in an unstable and traumatic environment."
+  },
+  {
+   "t": "note",
+   "text": "According to data from Harvard Health, stress activates the so-called “hormonal hunger”, which makes you crave sweets and fatty foods, even if you are full. Constant stress also destroys the balance of intestinal microflora, worsens insulin sensitivity, and slows down metabolism."
+  },
+  {
+   "t": "p",
+   "text": "However, you can fight all of this without needing any complicated, fancy devices. It’s straightforward – use your lungs. This way, you will slow down the brain, and it will understand that the danger has passed. Which means you can relax and return to normal life. Slow and conscious breathing practices reduce the activity of the sympathetic nervous system and activate the parasympathetic nervous system. It slows down the pulse, normalises blood pressure, and reduces cortisol levels in literally minutes. One of the effective biohacking methods is breathing. Here are some techniques you can use today:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "4-7-8: inhale for 4 seconds, hold for 7, exhale for 8.",
+    "Box-breathing. Divide your breath into 4 equal parts: inhale, hold, exhale, pause. Each segment should last the same amount of time. Start with 4 seconds and try to reach 20.",
+    "Diaphragmatic breathing. Take a deep breath while sitting or lying down so that you feel your stomach rise. Then, on a slow exhale, pull it in, as if pushing it under the diaphragm. Do this for 5 to 10 minutes."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "You can also use special supplements to help manage stress, including magnesium, B-complex vitamins, and adaptogens. They will support the effect and increase it, but don’t forget to consult with your doctor beforehand."
+  },
+  {
+   "t": "h2",
+   "text": "8. Drink Bulletproof Coffee",
+   "id": "8-drink-bulletproof-coffee"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/Bulletproof-Coffee-1024x519-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "“Bulletproof coffee” is based on regular coffee with natural butter and MCT medium-chain fats. Entrepreneur Dave Asprey introduced the recipe to North America."
+  },
+  {
+   "t": "p",
+   "text": "Almost all his life, he was haunted by the problem of being overweight — at the age of 30, he weighed more than 130 kg. He was helped to lose weight by an unexpected product — a traditional Tibetan drink called masala, which is tea with butter dissolved in it. Dave noted two important factors. One such cup, drunk instead of breakfast, relieved the feeling of hunger for 3-4 hours. At the same time, he felt a surge of energy and mental clarity."
+  },
+  {
+   "t": "p",
+   "text": "After returning home to the States, Asprey continued his experiments but switched from tea to coffee. He also replaced part of the butter with triglycerides. In 2011, he introduced a new product to the market — bulletproof coffee — and launched a company of the same name to produce it."
+  },
+  {
+   "t": "p",
+   "text": "The drink’s creator attaches great importance to the quality of the beans. Under his trademark, he sells environmentally friendly, selected products of elite varieties. Costa Rican coffee fully meets such high-quality requirements. In addition, a good selection of fresh coffee direct from sunny Costa Rica is always available in the online store Cafe-a.ru. The rest of the ingredients:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "1-2 tablespoons of butter;",
+    "The same amount of MCT oil can be bought in specialty stores offering keto diet products, or coconut oil can be substituted."
+   ]
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "p",
+   "text": "Preparing Bulletproof coffee is fairly simple:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "We brew a portion of coffee in any convenient way – espresso, in a turbo, using a French press, and so on.",
+    "We send the hot drink to a blender and add oils.",
+    "Blend everything well for 10-15 seconds."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "As an individual and comprehensive approach to health and self-knowledge, biohacking can positively affect people’s relationship with their bodies. But remember that any intervention in the body and health should take place under the close supervision of doctors."
+  },
+  {
+   "t": "h2",
+   "text": "9. Gene Editing With CRISPR",
+   "id": "9-gene-editing-with-crispr"
+  },
+  {
+   "t": "p",
+   "text": "CRISPR/Cas9 edits genes by precisely cutting DNA and then harnessing natural DNA repair processes to modify the gene in the desired manner. The system has two components: the Cas9 enzyme and a guide RNA. This is a rapidly translating a revolutionary technology to develop transformative therapies."
+  },
+  {
+   "t": "h2",
+   "text": "10. Support Your Gut Microbiome",
+   "id": "10-support-your-gut-microbiome"
+  },
+  {
+   "t": "p",
+   "text": "Our body contains about 2 kg of bacteria, fungi, and microorganisms. All this is called the microbiome. It is on it that the general state of digestion, immunity, and energy level of each of us depends. Suppose the microflora in the body is balanced. In that case, our body can easily cope with external negative factors and regulate appetite and weight."
+  },
+  {
+   "t": "p",
+   "text": "These microbes inside you are a second brain, because the microbiome is directly connected to our central nervous system. Therefore, the state of your microbes directly depends on your diet. Both conditionally beneficial and pathogenic bacteria reside in the intestines. Our task is to provide food to those who work for us. Healthy foods for the microbiome, natural prebiotics and probiotics:"
+  },
+  {
+   "t": "p",
+   "text": "Prebiotic food for beneficial bacteria:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Artichokes.",
+    "Garlic, onion, leek.",
+    "Bananas.",
+    "Oatmeal, flax seeds, and asparagus."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Here is a list of foods that contain live bacteria and promote a balanced microflora.:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Kefir, cottage cheese, and other products from sour milk.",
+    "Fermented soy products such as miso and tofu.",
+    "Kombucha.",
+    "Fermented vegetables such as cucumbers, cabbage, tomatoes, and kimchi."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h3",
+   "text": "Biohacking Supplements for Gut Health:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Probiotics with specific strains affect the composition of the microflora and weight.",
+    "Prebiotic fibers like inulin.",
+    "Glutamine restores the intestinal mucosa.",
+    "L-acetylcarnitine and omega-3s relieve inflammation.",
+    "Zinc and magnesium participate in the regulation of the intestinal barrier."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "It is best to select probiotics for a specific purpose and alternate courses once or twice a year."
+  },
+  {
+   "t": "h3",
+   "text": "A Few Bonus Tips to Support Your Microbiome:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Eat more fibre, at least 25-30 grams per day",
+    "If you need to take antibiotics, don’t forget to additionally support your intestinal microflora and take probiotics",
+    "Add walking, moderate exercise, and quality sleep, and microbes love it",
+    "Drink water, not necessarily 2 litres a day, but don’t forget to hydrate."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Make It A Habit",
+   "id": "make-it-a-habit"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/nutrition-facts-comparison-food-dietery_53876-124887-1024x965-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "As an individual and comprehensive approach to health and self-knowledge, biohacking to lose weight can positively affect people’s relationship with their bodies. But remember that any intervention in the body and health should take place under the close supervision of doctors. Moreover: you should do it regularly, with understanding the goal and love to yourself."
+  }
+ ],
+ "faq": []
+}

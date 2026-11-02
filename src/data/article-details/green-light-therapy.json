@@ -1,0 +1,465 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Green light therapy helps reduce pain, migraines, and skin redness.",
+  "It is safe for most skin types and does not cause cancer.",
+  "Evening green light can improve relaxation and sleep quality.",
+  "Green LED masks and lamps support skin healing and tone balance."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What is Green Light Therapy",
+   "id": "what-is-green-light-therapy"
+  },
+  {
+   "t": "p",
+   "text": "Green light therapy is a light therapy method that uses a narrow-spectrum light with a wavelength of approximately 520-560 nm. This light affects the visual system, neural pathways, and cellular processes in the skin, thereby influencing pain, sleep, mood, and tissue regeneration."
+  },
+  {
+   "t": "p",
+   "text": "Innovative green light therapy is primarily used to treat hyperpigmentation conditions such as sun spots, age spots, and melasma. It may also be beneficial for:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Reducing redness and inflammation: Green light can help soothe irritated skin and reduce redness associated with conditions such as rosacea.",
+    "Pain relief: Some studies suggest that green light may help relieve certain types of pain, such as fibromyalgia and neuropathic pain.",
+    "Migraine treatment: Green light has shown promise in reducing the frequency and severity of migraines."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Research on Green Light Therapy"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/What-is-Green-Light-Therapy1-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Green light has a positive effect on the immune and nervous systems. It normalizes blood pressure and cardiovascular function and treats arrhythmia. Green light can be used to treat acute respiratory infections due to its anti-allergic and anti-inflammatory effects."
+  },
+  {
+   "t": "p",
+   "text": "Studies show that green light therapy (especially narrowband, 520-530 nm) effectively reduces chronic pain, including migraines and fibromyalgia, by acting on pain receptors in the spinal cord and reducing nervous system excitability. Daily sessions significantly reduce headache frequency and pain intensity without causing side effects."
+  },
+  {
+   "t": "p",
+   "text": "Green light therapy is safe for most skin types and does not cause cancer. Studies have found no convincing evidence linking green light therapy to cancer risk."
+  },
+  {
+   "t": "p",
+   "text": "Scientists from Fudan University in China claim that exposure to green light helps reduce pain in conditions such as arthritis, fibromyalgia, and migraines. Neuroscientists have also identified the mechanism behind this effect. They presented the findings of their study in the journal Science Translational Medicine."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h2",
+   "text": "Benefits of Green Light Therapy",
+   "id": "benefits-of-green-light-therapy"
+  },
+  {
+   "t": "p",
+   "text": "Green LED light therapy is an easy, pain-free treatment to get relief. What does green light therapy do? People use it to reduce aches and stress. It can help with headaches and other constant pains. The green light therapy benefits go beyond just reducing pain. It helps people relax and feel great without harsh side effects. It helps you live a happier and healthier life safely."
+  },
+  {
+   "t": "h3",
+   "text": "For the skin"
+  },
+  {
+   "t": "p",
+   "text": "Green light is used in cosmetology to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "reduce hyperpigmentation;",
+    "even out skin tone;",
+    "reduce redness;",
+    "accelerate recovery after treatments."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "It has a gentler effect than red or blue light, making it suitable for sensitive skin."
+  },
+  {
+   "t": "h3",
+   "text": "For migraines"
+  },
+  {
+   "t": "p",
+   "text": "Some studies have shown that regular exposure to low-dose green light can:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "reduce the frequency of attacks;",
+    "reduce pain intensity;",
+    "reduce photosensitivity."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "This is due to the fact that green light stimulates the visual pain pathways less than white or blue light."
+  },
+  {
+   "t": "h3",
+   "text": "For pain relief"
+  },
+  {
+   "t": "p",
+   "text": "Experimental data indicate a possible reduction in chronic pain (e.g., fibromyalgia or muscle pain). The mechanism is associated with an effect on the central nervous system and endorphin pathways."
+  },
+  {
+   "t": "h3",
+   "text": "For sleep"
+  },
+  {
+   "t": "p",
+   "text": "Evening exposure to soft green light:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "suppresses melatonin production less than bright white or blue light;",
+    "helps create a calmer light environment before bed;",
+    "may improve relaxation and preparation for sleep."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Green Light Therapy Devices",
+   "id": "green-light-therapy-devices"
+  },
+  {
+   "t": "p",
+   "text": "Green light therapy devices are non-invasive tools used to treat chronic pain, reduce migraines, and address skin issues such as hyperpigmentation and redness. Common devices include specialized LED lamps, portable panels, and wearable masks."
+  },
+  {
+   "t": "h3",
+   "text": "Green Light Therapy Mask​"
+  },
+  {
+   "t": "img",
+   "src": "https://eu-shop.nanoleaf.me/cdn/shop/files/face-mask-nanoleaf-treatment-green-desktop_1920x.jpg?v=1757411492",
+   "alt": "Nanoleaf LED Face Mask | Red Light Therapy | Dermatologist Approved –  Nanoleaf Shop Europe"
+  },
+  {
+   "t": "p",
+   "text": "An LED mask for light therapy is an innovative solution for cosmetologists at a reasonable price. These mask colors have no cosmetic functions. Light therapy goes very well with any procedure. With significant additions to procedures and deep consolidation of their results. Even though the LED procedure itself is very effective, it can affect the skin. Chromotherapy, combined with an LED mask, is a unique method of bathing with light that eliminates the plumpness of the figure and the color of the skin, while preserving the skin’s natural color."
+  },
+  {
+   "t": "p",
+   "text": "This also adds additional functions:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "increased lifting, renewal of elasticity, enhancement of facial contours, and correction of thin areas;",
+    "smooth out wrinkles;",
+    "thinning of scars and vascular mesh;",
+    "tonization of facial sores;",
+    "normalization of the functioning of the internal secretions;",
+    "treatment of sleepy sores and pustular illnesses."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "However, the benefits of the green light therapy mask will not end. It’s really easy to get caught up in her. Completely cleanse the skin, and apply a cosmetic sealant. Turn on the device, press the button, and smoothly move the light switch."
+  },
+  {
+   "t": "h3",
+   "text": "Green Light Therapy Lamp"
+  },
+  {
+   "t": "img",
+   "src": "https://gammalighttherapy.com/cdn/shop/files/soothe-green-light-therapy-hero.webp?v=1723236254&width=3840",
+   "alt": "Soothe Pain & Relax with 520nm Green Light Therapy by Gamma"
+  },
+  {
+   "t": "p",
+   "text": "Green lamp – an indispensable assistant for stress, chronic fatigue syndrome, neuropsychiatric overload of schoolchildren, neurosis, headache, migraine, neuralgia, bronchial asthma, pneumonia, acute respiratory viral infections, strokes, osteochondrosis. Green light has a gentle effect on the body and penetrates to a depth of 3-5 mm into human tissues."
+  },
+  {
+   "t": "p",
+   "text": "Green light, characteristic of the nature surrounding us, has the most physiological, soft, normalizing effect on the human body. It does not cause pronounced changes in the functional state of the central nervous system, but rather balances the processes of excitation and inhibition."
+  },
+  {
+   "t": "p",
+   "text": "Green light improves the condition of nerve fibers, microcirculation in tissues, normalizes the tone of veins and arteries, harmonizes the activity of the autonomic nervous system, lowers blood pressure, reduces heart rate, sweating, improves the activity of the cardiovascular system, reduces the tone of striated and smooth muscles, and reduces the release of histamine from basophils and mast cells."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
+  },
+  {
+   "t": "p",
+   "text": "The green lamp has a positive effect in three directions:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "monochrome green radiation;",
+    "magnetic field;",
+    "point toning massage."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Green radiation has a normalizing effect on the nervous system. Monochrome green light at 540 nm reduces the severity of headaches, sleep disorders, irritability, and hyperactivity. Such radiation stimulates microcirculation, thereby reducing edema. This is accompanied by an improvement in nerve function in diseases of the nerve trunk and its branches."
+  },
+  {
+   "t": "p",
+   "text": "The magnetic field improves cellular metabolism, promotes the healing of wound surfaces, and suppresses allergic reactions."
+  },
+  {
+   "t": "p",
+   "text": "Acupressure is performed using optical lenses with LEDs that protrude from the device head. Such massage removes excess fluid from tissues, relieves swelling, and enhances blood circulation in capillaries. Green light – gently strengthens capillaries, reduces redness, and is ideal for sensitive skin."
+  },
+  {
+   "t": "h3",
+   "text": "Green Light Therapy Panel"
+  },
+  {
+   "t": "img",
+   "src": "https://hips.hearstapps.com/hmg-prod/images/female-patient-undergoes-green-led-light-or-rlt-royalty-free-image-1738090224.pjpeg?crop=0.88847xw:1xh;center,top&resize=1200:*",
+   "alt": "Green Light Therapy For Skin: Benefits And Side Effects"
+  },
+  {
+   "t": "p",
+   "text": "A green light therapy panel is an LED device designed to therapeutically affect the body, most commonly to reduce pain, migraines, stress, and improve sleep. Green light acts on specialized retinal light-sensitive cells (ipRGCs), which regulate circadian rhythms and pain perception. This can reduce the intensity of pain signals and light sensitivity in some people."
+  },
+  {
+   "t": "p",
+   "text": "Green light panels are ideal for healing and relaxing skin, as they improve circulation and reduce stress. They are often used in combination with red light panels for a more comprehensive therapeutic approach."
+  },
+  {
+   "t": "h3",
+   "text": "Green Light Therapy Glasses"
+  },
+  {
+   "t": "p",
+   "text": "Green light therapy glasses are an innovative solution for people suffering from seasonal affective disorder (SAD) and other issues related to sunlight deprivation. These glasses allow for light therapy without interrupting your normal morning routine. Instead of sitting still in front of a stationary lamp, users can wear them while performing their morning routine, making them convenient and effective."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Light type:** LEDs that produce green-enriched white light, peaking at 468 nm. This wavelength is most effective for correcting circadian rhythms.",
+    "**Session duration:** recommended daily use: 20 to 45 minutes, depending on the selected light intensity level.",
+    "**Ease of use:** can be worn over regular glasses; they don’t require a constant power source and are easily rechargeable.",
+    "**Mobility:** the glasses allow for freedom of movement and morning activities without restricting the user to the space in front of the lamp.",
+    "**Safety** : the glasses are safe for the eyes (CE certified) and do not emit ultraviolet or infrared light."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h2",
+   "text": "Is Green Light Therapy Safe?",
+   "id": "is-green-light-therapy-safe"
+  },
+  {
+   "t": "p",
+   "text": "By understanding the potential risks and taking the necessary precautions, you can safely enjoy the rejuvenating benefits of LED light therapy. If you have any concerns or questions, it’s best to seek advice from a healthcare professional."
+  },
+  {
+   "t": "p",
+   "text": "Home LED light therapy devices, such as masks or portable devices, are generally easy to use. However, it’s important to follow best practices to avoid any negative effects. Here are a few simple tips to ensure safe and effective green light therapy:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "When choosing a green light therapy device, it’s recommended to choose one with protective light-blocking visors or built-in eye protection. This added feature can reduce concerns about potential eye damage.",
+    "Before purchasing, check whether the mask or other device has undergone rigorous testing and is FDA-approved. This ensures the product meets the required safety standards.",
+    "It’s also helpful to read reviews not only of the product itself but also of the company that manufactures it. Consider whether the company is responsive to customer inquiries and offers a return and exchange policy. To ensure the safety and effectiveness of light therapy, please read the instructions before first use. Keep these instructions for future reference."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Green Light Therapy vs Other Light Therapies",
+   "id": "green-light-therapy-vs-other-light-therapies"
+  },
+  {
+   "t": "p",
+   "text": "Light therapy can use different light spectrums–red, blue, infrared, and green. Each has a different physiological effect on the body."
+  },
+  {
+   "t": "p",
+   "text": "**Green light**"
+  },
+  {
+   "t": "p",
+   "text": "The main features of green LED light therapy are:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "a gentle effect on the nervous system;",
+    "a reduction in the intensity of migraines and chronic pain;",
+    "a reduction in photosensitivity;",
+    "possible improvement in sleep and relaxation."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Green light is considered one of the most comfortable for the eyes, as it causes less retinal irritation compared to blue light."
+  },
+  {
+   "t": "p",
+   "text": "**Red and infrared lights**"
+  },
+  {
+   "t": "p",
+   "text": "[Red and infrared light therapy](https://www.biohackers.world/blog/red-light-therapy-biohacking-methods-for-health-benefits) are most often used:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "to accelerate tissue healing,",
+    "stimulate collagen production,",
+    "restore muscle and skin,",
+    "reduce inflammation."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "These spectra penetrate deeper into tissue, and are therefore used primarily in cosmetology and sports medicine."
+  },
+  {
+   "t": "p",
+   "text": "**Blue light**"
+  },
+  {
+   "t": "p",
+   "text": "Blue light is mainly used:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "for acne (antibacterial effect),",
+    "to regulate circadian rhythms (morning lamps),",
+    "for seasonal depression treatment."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "However, with prolonged exposure, it can cause eye strain and suppress melatonin production in the evening."
+  },
+  {
+   "t": "h3",
+   "text": "Key Differences"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Intended use: green light – pain and migraines, red – tissue repair, blue – dermatology and wakefulness.",
+    "Penetration depth: red and infrared – deepest, green – medium, blue – superficial.",
+    "Ocular comfort: green light is generally easier to tolerate than other spectrums."
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Therefore, green light therapy occupies a special niche – it is less focused on cosmetic effects and more used for its neurosensory and analgesic effects, especially for migraines and increased photosensitivity."
+  },
+  {
+   "t": "h2",
+   "text": "To sum up",
+   "id": "to-sum-up"
+  },
+  {
+   "t": "p",
+   "text": "Green light therapy uses light with a wavelength of 520–560 nm and positively affects the nervous system, visual pathways, and cellular processes in the skin. This method is used both in cosmetology and for general wellness."
+  },
+  {
+   "t": "p",
+   "text": "The main applications of this therapy include:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "reducing hyperpigmentation and evening out skin tone;",
+    "reducing redness and inflammation;",
+    "reducing the frequency and intensity of migraines;",
+    "relieving chronic pain (such as fibromyalgia);",
+    "improving relaxation and sleep quality."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Research shows that regular exposure to green light can reduce pain sensitivity and the need for pain medication."
+  },
+  {
+   "t": "p",
+   "text": "Various devices are used by biohackers for the treatments, including LED masks, lamps, panels, and special glasses, allowing the therapy to be used both in clinics and at home."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is Green Light Therapy Safe?",
+   "a": "By understanding the potential risks and taking the necessary precautions, you can safely enjoy the rejuvenating benefits of LED light therapy. If you have any concerns or questions, it’s best to seek advice from a healthcare professional."
+  }
+ ]
+}

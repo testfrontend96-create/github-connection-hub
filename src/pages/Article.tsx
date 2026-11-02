@@ -1,9 +1,9 @@
 import { Fragment, useState, type ReactNode, type FormEvent } from 'react'
 import { useParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
-import { Mention } from '../components/ui'
+import { Mention, ArticleCard } from '../components/ui'
 import { SocLogo } from '../components/social'
-import { A, E, T, ACADEMY_URL, pretty } from '../lib/data'
+import { A, E, T, ACADEMY_URL, pretty, articles, faqs } from '../lib/data'
 import { articleTopic } from '../lib/browsing'
 import { sentenceCase } from '../lib/sentenceCase'
 import events from '../data/events.json'
@@ -114,11 +114,35 @@ function Block({ b }: { b: any }) {
     case 'ol': return <ol>{b.items.map((x: string, i: number) => <li key={i}><Inline text={x} /></li>)}</ol>
     case 'note': return <blockquote className="art-note"><Inline text={b.text} /></blockquote>
     case 'img': return <img className="art-img" src={b.src} alt={b.alt || ''} loading="lazy" />
+    case 'h4': return <h3>{b.text}</h3>
+    case 'table': return <div className="art-table"><table><tbody>{b.rows.map((r: string[], i: number) => <tr key={i}>{r.map((c, j) => i === 0 ? <th key={j}>{c}</th> : <td key={j}>{c}</td>)}</tr>)}</tbody></table></div>
     case 'video': return <div className="art-video"><iframe src={`https://www.youtube-nocookie.com/embed/${b.id}`} title="Video" loading="lazy" allowFullScreen /></div>
     case 'events': return <Events />
     case 'academy': return <Academy />
     default: return null
   }
+}
+
+function Faq({ items }: { items: { q: string; a: string }[] }) {
+  if (!items.length) return null
+  return (
+    <section className="art-faq" aria-labelledby="art-faq-h">
+      <h2 id="art-faq-h">Frequently asked questions</h2>
+      {items.map((f, i) => (
+        <details key={i} className="art-faq-item" open={i === 0}>
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </section>
+  )
+}
+
+// Related = most shared topics/entities, newest first.
+function related(a: any) {
+  const score = (b: any) => (b.topics || []).filter((t: string) => (a.topics || []).includes(t)).length * 2 + (b.entities || []).filter((t: string) => (a.entities || []).includes(t)).length
+  return articles.filter((b) => b.slug !== a.slug).map((b) => [score(b), b] as const)
+    .sort((x, y) => y[0] - x[0] || (x[1].date < y[1].date ? 1 : -1)).slice(0, 3).map(([, b]) => b)
 }
 
 export default function Article() {
@@ -133,13 +157,16 @@ export default function Article() {
   const paras: string[] = d ? [] : a.body
   const intro = d ? d.intro : paras[0]
   const rest = d ? null : paras.slice(1)
+  // Article's own question headings; topped up with general Hub questions.
+  const own = d?.faq || []
+  const faqItems = [...own, ...faqs.filter((f) => !own.some((o: any) => o.q === f.q))].slice(0, Math.max(own.length, 4)).slice(0, 6)
 
   return (
     <>
       <PageHead compact crumbs={[['Hub', '/'], ['Blog', '/blog'], [a.title, null]]} />
       <section className="section art-top"><div className="wrap">
         <div className="art-hero">
-          <h1 className="display">{a.title}</h1>
+          <div className="art-hero-title"><h1 className="display">{a.title}</h1></div>
           {a.image && <img className="art-hero-img" src={a.image} alt="" />}
         </div>
         <div className="art-meta">
@@ -169,6 +196,7 @@ export default function Article() {
               <Academy />
             </>)}
             {ents.length > 0 && <div className="mentions" style={{ marginTop: 28 }}>{ents.map((s: string) => <Mention key={s} slug={s} />)}</div>}
+            <Faq items={faqItems} />
             {a.sourceUrl && <p className="art-source">Originally published on the <a href={a.sourceUrl}>Biohackers World blog</a>.</p>}
           </article>
           <aside className="side">
@@ -180,6 +208,12 @@ export default function Article() {
             )}
           </aside>
         </div>
+      </div></section>
+
+      <section className="section art-bottom"><div className="wrap">
+        <Newsletter />
+        <div className="rail-head art-related-head">Related articles</div>
+        <div className="grid g3 art-related">{related(a).map((b) => <ArticleCard key={b.slug} slug={b.slug} />)}</div>
       </div></section>
     </>
   )

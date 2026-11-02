@@ -1,0 +1,443 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Biohacking is the optimization of physical fitness and performance with the help of technology.",
+  "Before diving into biohacking, make sure to run a full biomarker check-up.",
+  "Essential biohacks for beginners are sleep, nutrition, exercise, and stress management.",
+  "More advanced biohackers make data-based, personalized health decisions."
+ ],
+ "blocks": [
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/cover5-1-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "What Is Biohacking",
+   "id": "what-is-biohacking"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking is a conscious practice of health optimization, utilizing the body’s work with the help of modern technologies, science, and a particular way of life. The goal of biohacking is to develop the whole body’s work and improve longevity. Biohacking enthusiasts track their health indicators to understand what they lack and what supplements they need. They exercise and try to eat right to be their best version."
+  },
+  {
+   "t": "p",
+   "text": "But for now, this all sounds like a healthy lifestyle. So what’s so special about this term, and why do entire communities of biohackers exist?"
+  },
+  {
+   "t": "note",
+   "text": "The fact is that fans of this lifestyle connect science to every process in the body and are not afraid to experiment on themselves. Within legal limits, of course. They combine neuroscience, genetics, nutrition, and technology."
+  },
+  {
+   "t": "h2",
+   "text": "Examples Of Biohacking",
+   "id": "examples-of-biohacking"
+  },
+  {
+   "t": "p",
+   "text": "Every part of your external and internal state can be hacked. It all depends on what bothers you or what you want to improve. Let’s look at some biohacking examples."
+  },
+  {
+   "t": "h3",
+   "text": "Anti-Aging Biohacking"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/Anti-Aging-Biohacking-1024x610-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "One of the essentials in biohacking is to stop age. Dave Asprey, the first person who started this lifestyle, reverted to aging and got his young body back. Biohacking to [slow down aging](https://www.biohackers.world/blog/how-biohacking-can-reverse-aging) includes methods to reduce cellular damage, improve mitochondrial health, and regulate hormones. What you could start doing even now:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "taking resveratrol;",
+    "[intermittent fasting](https://www.biohackers.world/blog/intermittent-fasting);",
+    "regularly using an [infrared sauna](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2130724);",
+    "daily walking in the fresh air;",
+    "track biological age using epigenetic marker tests."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "One of the most studied indicators of aging is [telomere length](https://www.genome.gov/genetics-glossary/Telomere) – they can be measured through specialized DNA tests. Try to take omega-3, and vitamin D. Monitor glucose and insulin levels – stable blood sugar is directly related to slowing down aging."
+  },
+  {
+   "t": "video",
+   "id": "orFg7At0_mM"
+  },
+  {
+   "t": "h3",
+   "text": "Biohacking For Weight Loss"
+  },
+  {
+   "t": "p",
+   "text": "Not only is calorie restriction essential for [weight loss](https://www.biohackers.world/blog/biohacking-for-weight-loss), but metabolic flexibility, hormonal balance, and sleep quality are also important. Approaches include the keto diet, real-time glucose tracking, and [breathing exercises](https://www.biohackers.world/blog/breathwork-biohacking) to reduce cravings. Use devices such as continuous glucose monitors or calorie trackers like MyFitnessPal to understand your body’s response to food. Leptin and insulin levels from blood tests are good biomarkers of metabolic health. Some exercises will help to lose weight:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "high-intensity interval training.",
+    "morning walking.",
+    "monitoring carbohydrates in the evening.",
+    "measuring your body fat percentage using bioimpedance analysis."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Biohack Your Sleep"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/Sleep-Biohacking-1024x585-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "[Proper sleep](https://www.biohackers.world/blog/biohacking-sleep) is the foundation of biohacking: it affects recovery, hormones, immunity, and brain function. Here are some tips for you to have a good and deep sleep:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "get rid of the blue screens before sleep;",
+    "cool your bedroom with a fresh air;",
+    "make some [meditations](https://www.biohackers.world/blog/biohacking-meditation) before going to bed;",
+    "take magnesium; it will help you to calm down and concentrate on relaxing;",
+    "4-7-8 breathing before bed;",
+    "a salt bath will be helpful for your mental state."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Measure your sleep quality with trackers like Sleep Cycle – analyze your sleep phases and frequency of awakenings. If you wake up at night, do not take your phone – use the “slow count” method or repeat a mantra."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h3",
+   "text": "Biohacking For Muscle Growth"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/Biohacking-For-Muscle-Growth-1024x565-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "The last studies showed that muscles could increase the longevity of your youth. However, training is required [to grow them](https://www.biohackers.world/blog/how-to-strengthen-muscle-growth-using-biohacking-methods), and deep sleep, [protein nutrition](https://www.biohackers.world/blog/biohacking-and-protein), recovery, and hormonal balance are needed. Supplements such as creatine, zinc, and l-carnitine improve anabolic processes. Protein – minimum 1.6 g per kg of body weight per day. Exercises that help you grow some muscles:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Classic strength training (3x per week);",
+    "Microtraining during the day (push-ups, squats);",
+    "EMS stimulation for passive load;",
+    "HIIT training;",
+    "[stretching](https://www.biohackers.world/blog/full-body-stretching-exersices) and breathing to speed up recovery."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Biohacking For Stress Management"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/Biohacking-For-Stress-Management-1024x707-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Modern biohacking offers many [methods for reducing stress levels](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health) and stabilizing the nervous system. These include:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "cold and heat treatments;",
+    "adaptogens such as ashwagandha or Rhodiola;",
+    "breathing according to the Wim Hof ​​method;",
+    "[a cold shower](https://www.biohackers.world/blog/cold-water-therapy) in the morning."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Measure your cortisol levels (in the blood or in saliva in the morning) and HRV using gadgets. A steady increase in HRV is an indicator of a more stable psyche. Limit notifications and avoid “toxic info-noise.”"
+  },
+  {
+   "t": "h3",
+   "text": "Biohacking Your Brain’s Health"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/Biohacking-Your-Brains-Health-1024x511-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "[Improving cognitive function](https://www.biohackers.world/blog/how-to-biohack-brain-health) is one of the main areas of biohacking. This includes nutrition, nootropics, light, sleep, and brain training. To be aware of your brain’s function, it’s worth testing such biomarkers as BDNF (brain-derived neurotrophic factor), homocysteine ​​levels, and vitamins B12, D, and [omega-3](https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/). Eating greens, fatty fish, berries, and dark chocolate is also helpful."
+  },
+  {
+   "t": "video",
+   "id": "79p1X_7rAMo"
+  },
+  {
+   "t": "h2",
+   "text": "Our Biohacking Tips for Beginners",
+   "id": "our-biohacking-tips-for-beginners"
+  },
+  {
+   "t": "p",
+   "text": "Sometimes, the hardest part is taking the first steps. You can read specialized literature, such as Dave Asprey’s book “Game Changer,” or take biohacking courses."
+  },
+  {
+   "t": "p",
+   "text": "But if you want to try everything in practice, here are some tips."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Make a diagnosis of your body.** Before including biohacking in your daily routine, you should know what state your body is in. After a full checkup, all the data will be in your hands. Health awareness is the main thing in biohacking your body.",
+    "**Start your day with water, movement, and light.** In the first 30 minutes after waking up, go outside or open a window – sunlight starts your biological clock and reduces morning cortisol. Drink a glass of warm water with a pinch of salt to activate digestion and electrolyte balance. Do a light warm-up or 10-minute walk to improve blood circulation. This creates a powerful “starter” for a productive and energetic day. Such [a morning ritual](https://www.biohackers.world/blog/morning-routine-biohacks) starts your metabolism and improves your mood.",
+    "**Monitor your vitamin D and omega-3 levels.** Get tested for vitamin D and [take supplements](https://www.biohackers.world/blog/best-biohacking-supplements) if necessary – especially in the fall and winter. A deficiency of this vitamin affects immunity, mood, and cognitive function. Getting enough omega-3 fatty acids from fish or supplements is also essential. They reduce inflammation, improve brain function, and protect blood vessels.",
+    "**Don’t forget about your mental health.** Introduce a digital detox permanently. Don’t look at social networks for more than two hours a day, and you will notice how much time you free up. Try to devote it to meditation or reading."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Popular Biohacking Techniques",
+   "id": "popular-biohacking-techniques"
+  },
+  {
+   "t": "p",
+   "text": "In addition to tracking your data and taking a conscious approach to sleep, you can hack your body externally through massages, [vibrations](https://www.biohackers.world/blog/body-vibration-therapy-for-biohackers), or even special lights. Here are a few biohacking techniques."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Red Light Therapy.** Red and infrared light penetrate cells, stimulating mitochondria and increasing the production of ATP, the body’s energy. This helps speed tissue repair, [improve skin quality](https://www.biohackers.world/blog/biohacking-skincare), and enhance cognitive function.",
+    "[**Cryotherapy**](https://www.biohackers.world/blog/biohacking-cryotherapy). Short exposure to extreme cold, usually -110°C to -140°C, activates norepinephrine production and improves blood circulation. Regular cryotherapy can reduce chronic inflammation, increase energy levels, and improve mood.",
+    "**PEMF Therapy.** Pulsed electromagnetic field therapy uses low-frequency magnetic pulses to stimulate cellular activity and tissue regeneration. This technique can help with chronic pain, improve sleep, and increase bone density.",
+    "**Heat therapy.** As with cold therapy, this method is a great addition to your routine. Exposure to heat activates heat shock proteins, which protect cells from aging and oxidative stress. Regular sauna use is associated with improved cardiovascular health and even a reduced risk of dementia."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Types of Biohackers",
+   "id": "types-of-biohackers"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking communities include quite a few industries that study our bodies in different ways. Some are into genetics and trying innovative approaches to themselves. Others use more traditional methods and seek the help of scientists and doctors. What biohacking secrets are they hiding? Let’s see."
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "h3",
+   "text": "DIY Biology"
+  },
+  {
+   "t": "p",
+   "text": "DIY Biology Do-It-Yourself Biology is a field in which enthusiasts, not necessarily with an academic background, conduct biological experiments independently. They often work in home labs or coworking spaces, using available equipment – from microscopes to genetic engineering. Such biohackers can clone DNA, edit bacteria, or create biosensors. The main goal is to make biotechnology accessible to everyone and accelerate innovation. For example, modifying yeast to produce caffeine, creating fluorescent bacteria, and cloning CRISPR arrays. Such projects are often carried out in communities like BioCurious or DIYbio.org."
+  },
+  {
+   "t": "h3",
+   "text": "Nutrigenomics"
+  },
+  {
+   "t": "p",
+   "text": "Nutrigenomics studies how our genes interact with food and nutrients. Biohackers in this field do DNA tests to find out which foods are best for their body hacking and what genetic risks they have. For example, a person may have a genetic predisposition to poor folate absorption or increased inflammation. The main idea is “personalized nutrition” based on the genome."
+  },
+  {
+   "t": "video",
+   "id": "LbDaMqlWjdw"
+  },
+  {
+   "t": "h3",
+   "text": "Grinders"
+  },
+  {
+   "t": "p",
+   "text": "Grinders are radical biohackers who seek to integrate technology into their bodies, making themselves cyborgs. They [implant microchips, sensors, magnets, or implants](https://www.biohackers.world/blog/best-biohacking-implants) to expand their capabilities – from opening doors without a key to “feeling magnetic fields.” These experiments occur outside official medicine and are often associated with risks."
+  },
+  {
+   "t": "p",
+   "text": "The goal of grinders is human biohacking evolution through the synthesis of biology and technology. And it’s not only theoretical studies. NFC chip implants, temperature or sugar sensors, and navigation magnetic fingers develop daily. Popular communities are Grindhouse Wetware and Dangerous Things."
+  },
+  {
+   "t": "h2",
+   "text": "Is It Safe?",
+   "id": "is-it-safe"
+  },
+  {
+   "t": "p",
+   "text": "The safety of biohacking depends on the approach. If everything is done scientifically, based on tests, and under the supervision of specialists, the risk is minimal. The danger begins when there is no medical assessment, self-medication is used, or untested substances are used. This is especially true for neotropics, hormonal interventions, or DNA experiments. Extremes are also unsafe: strict fasting, excessive supplements, and overloading the body."
+  },
+  {
+   "t": "note",
+   "text": "It is important to track indicators: regular blood tests, ECG, ultrasound, and biomarker tracking will help identify risks. The most reliable forms of biohacking are monitoring sleep, nutrition, movement, and psycho-emotional state. If biohacking is introduced as a supplement to medicine rather than its replacement, this is a safe strategy."
+  },
+  {
+   "t": "h2",
+   "text": "Is Biohacking Illegal?",
+   "id": "is-biohacking-illegal"
+  },
+  {
+   "t": "p",
+   "text": "Sleep tracking, meditations, and supplements are not illegal. However, some areas, such as genetic modification, nootropics, self-administration of hormones, or uncertified implants, may violate the law. Grinders, DIY experiments with CRISPR, or unlicensed interventions in physiology often raise concerns among regulators. Laws vary in different countries: in the US, they are more permissive, and in Europe and Asia, they are stricter."
+  },
+  {
+   "t": "p",
+   "text": "Legal biohacking is based on personal responsibility and accessible science. If the intervention affects public health or violates medical standards, it may be illegal. However, thousands are already creating safe health-tracking systems and adapting their habits without legal consequences."
+  },
+  {
+   "t": "h2",
+   "text": "Biohacking Testing and Measuring the Effectiveness",
+   "id": "biohacking-testing-and-measuring-the-effectiveness"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/Biohacking-Blood-Testing-1024x281-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Without objective data, it is impossible to understand whether the practices used work. That is why biohackers always note their results and carefully test themselves. Tests, gadgets, and trackers allow you to track changes in the body and brain. This is one of the main points in this approach to health."
+  },
+  {
+   "t": "p",
+   "text": "It is recommended to keep a biohacking diary, recording changes in nutrition, sleep, exercise, supplements, and well-being. Regular blood tests, DNA tests, and tracking of physiological parameters help identify what improves the condition. A combination of measurements such as HRV, vitamin levels, sleep phases, and cognitive indicators is the ideal path to optimization."
+  },
+  {
+   "t": "h3",
+   "text": "DNA Testing"
+  },
+  {
+   "t": "p",
+   "text": "Genetic tests allow you to determine the body’s individual characteristics: susceptibility to diseases, sensitivity to food and substances, and metabolic features. Tests from 23andMe, Atlas or Genotek provide data on hundreds of genes that affect health and biohacking solutions. For example, variations in the MTHFR gene may mean that you need active folate, not regular folic acid. It can also identify risks for inflammation, diabetes, depression, or a weak liver detoxification pathway."
+  },
+  {
+   "t": "h3",
+   "text": "Blood Tests and Biomarkers"
+  },
+  {
+   "t": "p",
+   "text": "Blood tests can help you understand the condition of the entire body. This helps to assess hormones, inflammation, vitamins, liver and kidney function, lipids, and even the level of biological age. Popular biomarkers: vitamin D, B12, homocysteine, C-reactive protein, insulin, cortisol, TSH, ferritin. It is important to take them regularly – at least once every six months, to track the dynamics. Biohackers also pay attention to new markers: BDNF (brain-derived neurotrophic factor), NAD+ levels, and mitochondrial health tests. InsideTracker, WellnessFX, and Helix are the apps you could use to track your results."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h3",
+   "text": "Biohacking Wearable Devices"
+  },
+  {
+   "t": "p",
+   "text": "Today, technologies allow you to continuously track physiological parameters – pulse, HRV, sleep, breathing, and even stress. Among the popular gadgets:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Oura Ring helps analyze sleep and recovery;",
+    "Whoop tracks stress;",
+    "Muse helps with meditation."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "These devices and applications create personalized reports and help you see the real effect of breathing practices, [training](https://www.biohackers.world/blog/fitness-and-biohacking), or supplements. For example, an improvement in HRV and a decrease in resting heart rate are signs that recovery is progressing well. Visualizing data through [apps](https://www.biohackers.world/blog/top-biohacking-apps-for-health-sleep-brain-food-and-body) helps you make decisions based on objective indicators. After a while, this checking becomes the basis of your routine. It makes self-monitoring simple, accurate, and daily."
+  },
+  {
+   "t": "h2",
+   "text": "Latest Biohacking Technologies",
+   "id": "latest-biohacking-technologies"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking technologies are rapidly developing. One of the brightest areas has become NAD+ infusions – the intravenous restoration of cellular energy and age-defying studies. Genetic editing, including homemade CRISPR kits, is gaining popularity, mainly in the DIY environment. Precision medicine based on individual data – genetics, metabolism, biomarkers – is actively being introduced in medicine."
+  },
+  {
+   "t": "p",
+   "text": "Neuroimaging, tDCS brain stimulation, personalized microbiota, and food “chips” with sensors are vital in biohacking. New startups offer digital body doubles – health avatars. All this brings the idea of ​​​​the “biological optimum” closer to practice. But it’s important to use all these trends consciously to make yourself healthier, not vice versa."
+  },
+  {
+   "t": "p",
+   "text": "Remember! It is worth noting that most of these approaches are still at the research stage. The evidence base for them may be somewhat limited, so it is difficult to predict how they will affect your health in the long term. Always exercise particular caution when adopting experimental technologies!"
+  },
+  {
+   "t": "h2",
+   "text": "Biohacking Trends",
+   "id": "biohacking-trends"
+  },
+  {
+   "t": "p",
+   "text": "The main trend is the integration of science and a personalized approach. More and more people are using DNA and blood tests to adjust their diet, training, and lifestyle to their genes. Neurobiohacking is also trending – a combination of light, sound, breathing, and electrical stimulation of the brain. Interest in microdosing psychedelics, digital detox, and “deep silence” techniques is growing."
+  },
+  {
+   "t": "p",
+   "text": "Biohacking is increasingly integrated with digital applications, AI systems, and wearable gadgets. Bioethics, conscious refusal of excessive interventions, and “minimalist biohacking” are also rising. One of the essential biohacking trends is to think about personal productivity and mental wellness."
+  },
+  {
+   "t": "h2",
+   "text": "Popular Biohackers to Follow",
+   "id": "popular-biohackers-to-follow"
+  },
+  {
+   "t": "p",
+   "text": "As with any trendy practice, biohacking has its celebrities."
+  },
+  {
+   "t": "ol",
+   "items": [
+    "**Dave Asprey** is the originator of the philosophy; his name is a real biohacking synonym. His books became bestsellers and started the trend. The entrepreneur promotes the keto diet, coffee with butter, nootropics, and IR light.",
+    "**Ben Greenfield** is a fitness biohacker, author of podcasts and books, and practices extreme methods, including hormone experiments.",
+    "**Dr. Rhonda Patrick** is a researcher who shares data on vitamins, inflammation, mitochondria, and longevity.",
+    "**Bryan Johnson** is a billionaire who has spent tens of millions on rejuvenating his body to the level of an 18-year-old**.**"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking is becoming increasingly popular among modern people. In this article, we looked at:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "how you can apply this lifestyle to yourself;",
+    "[what should beginner biohackers do](https://www.biohackers.world/blog/biohacking-for-beginners);",
+    "what types of biohacking are there;",
+    "what tests should be done for the greatest effectiveness of biohacking."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "To start the path and hack your body, try tracking your indicators. This can be done with the help of applications and gadgets. Do not forget to include age-optimized physical activity and try intermittent fasting; it will renew your cells and charge you with energy. If you aren’t sure you can manage this path by yourself, take biohacking coaching. It could be helpful for beginners or intermediate biohackers."
+  },
+  {
+   "t": "p",
+   "text": "Warning! This article is intended solely for informational and entertainment purposes. Some of the peptides described here are ‘not for human consumption’. Their use may lead to unpredictable consequences for the body if used in self-experiments. Before using any of the substances or techniques mentioned above, please consult a specialist!"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is It Safe?",
+   "a": "The safety of biohacking depends on the approach. If everything is done scientifically, based on tests, and under the supervision of specialists, the risk is minimal. The danger begins when there is no medical assessment, self-medication is used, or untested substances are used. This is especially true for neotropics, hormonal interventions, or DNA experiments. Extremes are also unsafe: strict fasting, excessive supplements, and overloading the body."
+  },
+  {
+   "q": "Is Biohacking Illegal?",
+   "a": "Sleep tracking, meditations, and supplements are not illegal. However, some areas, such as genetic modification, nootropics, self-administration of hormones, or uncertified implants, may violate the law. Grinders, DIY experiments with CRISPR, or unlicensed interventions in physiology often raise concerns among regulators. Laws vary in different countries: in the US, they are more permissive, and in Europe and Asia, they are stricter."
+  }
+ ]
+}

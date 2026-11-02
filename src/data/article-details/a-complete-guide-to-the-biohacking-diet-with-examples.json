@@ -1,0 +1,775 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Biohacking diets use personalized nutrition based on genetic and biomarker testing.",
+  "Avoid sugar, processed foods, and excess salt to reduce health risks.",
+  "Hydration and organic, plant-based foods are essential components of biohacking.",
+  "Planning meals in advance helps maintain healthy eating and avoid unhealthy snacks.",
+  "Vegan and vegetarian biohackers must address nutrient gaps like B12, iron, and omega-3."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "Biohacking Diet: Basic Principles",
+   "id": "biohacking-diet-basic-principles"
+  },
+  {
+   "t": "p",
+   "text": "The first step is a comprehensive body assessment, including blood tests, hormone tests, microbiota, and other tests. The results give a complete picture of health and help determine what dietary changes are needed. For example, some people may have an alcohol intolerance, others may feel ill due to gluten intake, and some may not be able to drink milk. Biomarkers should be monitored regularly and used as a basis for an individualized diet."
+  },
+  {
+   "t": "p",
+   "text": "One of the other principles is to eat nutritious foods: fruits and vegetables, lean proteins, healthy fats and complex carbohydrates. And eliminating processed foods, sugar and trans fats reduces inflammation, improves gut function and strengthens the immune system."
+  },
+  {
+   "t": "p",
+   "text": "Dietary regimen matters, too. Eating regular meals at the same time normalizes metabolism and improves digestion. It is important to control portion sizes and avoid overeating, which leads to weight gain."
+  },
+  {
+   "t": "p",
+   "text": "Another way to improve body functions and maintain a balanced diet, according to biohackers, is to take supplements, vitamins and even nootropics that stimulate brain function."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h2",
+   "text": "Macronutrients and Micronutrients in a Biohacking Diet",
+   "id": "macronutrients-and-micronutrients-in-a-biohacking-diet"
+  },
+  {
+   "t": "p",
+   "text": "In 2019, scientists from the U.S. Institute for Health Measurement and Evaluation at Washington State University concluded that one in five deaths worldwide is related to nutritional problems. These problems arise from a lack of proteins, fats, and carbohydrates and from excessive consumption of meat, sugar, salt, and other foods."
+  },
+  {
+   "t": "p",
+   "text": "In the biohacking approach, nutrition is viewed as a tool for managing energy. Throughnutrition, we restore the body’s health and improve its condition. It is therefore important to maintain a balance of macronutrients and micronutrients. Macronutrients include proteins, fats and carbohydrates. The body requires these in relatively large quantities. It is convenient to calculate the recommended amounts per 1 kg of body weight:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "protein: 1.2-1.6 g/kg for muscle maintenance and recovery;",
+    "fat: 0.8-1 g/kg for hormonal balance and brain function;",
+    "carbohydrates: 2-4 g/kg depending on activity level and goals;",
+    "fibre: 0.3-0.5 g/kg for digestive health and appetite control."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "It is equally important to monitor your intake of micronutrients. Although the body requires them in minimal amounts, we cannot function properly without them. Let’s look at the most common ones:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Magnesium affects sleep and stress;",
+    "Vitamin D affects immunity and hormones;",
+    "Omega-3 reduces inflammation;",
+    "Iron supports energy levels;",
+    "Zinc is responsible for recovery and skin health;",
+    "B vitamins are involved in metabolism."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Even with the correct macronutrient balance, a deficiency in these elements can reduce results. Therefore, pay attention to the variety of your diet and the quality of your food. To accurately analyse the composition of foods and monitor nutrients, you can use[USDA FoodData Central.](https://fdc.nal.usda.gov/food-search?type=Foundation)"
+  },
+  {
+   "t": "h2",
+   "text": "Biohacking Food List",
+   "id": "biohacking-food-list"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/Biohacking-Food-List-1-1024x522-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "No innovation exists in any biohacker’s primary nutrition rule – eat healthy food and avoid junk food – but many people, even after numerous reminders, must follow this simple recommendation. Many people with their biohacking diet plans give up sugar, recognizing it as unhealthy as possible, and watch the salt levels in foods. Blacklisted are processed and cheap foods. Organic and plant-based foods are prioritized, but it’s not about vegetarianism. At the same time, people who are fond of biohacking agree that modern food products are pretty poor in micro- and macroelements necessary for the effective functioning of the body."
+  },
+  {
+   "t": "p",
+   "text": "Therefore, their diet includes all kinds of [biologically active supplements](https://www.biohackers.world/blog/best-biohacking-supplements) and nutrients. Remember to drink water and eat fruits and vegetables throughout the day, focusing on the rule “how much we lose, so much we replenish.” Without fluids, biochemical processes in the body are impossible and are also involved in energy production."
+  },
+  {
+   "t": "p",
+   "text": "Your recipes for daily nutrition should include:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "grains;",
+    "vegetables;",
+    "fruits;",
+    "lean meats;",
+    "dairy products;",
+    "fish."
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Planning helps you stick to a healthier biohacking meal plan and control your weight. If you take the time to organize your menu ahead of time, you won’t have to rack your brains about what to make for dinner."
+  },
+  {
+   "t": "p",
+   "text": "You can make a biohacking meal plan over the weekend, buy the necessary groceries, and prepare the ingredients for the week, such as washing and peeling vegetables and making meat preparations. This will help significantly reduce cooking time and protect you from unhealthy snacking."
+  },
+  {
+   "t": "p",
+   "text": "Without severe restrictions on such a diet, you can eat:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "any meat – beef, pork, poultry;",
+    "fish and seafood: salmon, mackerel, herring, squid and shrimp;",
+    "eggs;",
+    "butter;",
+    "vegetables and [herbs](https://www.biohackers.world/blog/botanical-biohacking): all types of cabbage and lettuce, zucchini, eggplant, olives, celery, spinach, cucumbers, tomatoes, peppers, onions;",
+    "mushrooms;",
+    "dairy products: heavy cream (20-40%), sour cream, fatty cheeses, cottage cheese, Greek yogurt;",
+    "nuts;",
+    "berries instead of desserts;",
+    "instead of frying and smoking – boiling and baking."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "List Of Foods Not To Eat",
+   "id": "list-of-foods-not-to-eat"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/List-Of-Foods-Not-To-Eat-1024x782-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "If you want to join the slender ranks of biohackers just to pay attention to your health, where to start needs to be clarified, and your diet must be adjusted according to the following rules. Remove all food garbage – fried food, flour, sauces, sodas, chips, sweets, convenience foods, and other helpful products. The basis of the diet should be organic and plant-based food."
+  },
+  {
+   "t": "p",
+   "text": "With meat, do at your discretion – some refuse it, others go mainly to fish, and some leave everything as it is. We remind you that there are no strict rules – focus on yourself, your feelings, and your body’s needs."
+  },
+  {
+   "t": "p",
+   "text": "**Important points:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Eliminate sugar and limit salt intake. It can lead to cardiovascular disease, obesity, and noticeably worsen skin conditions. It may “break” at first, but over time, you’ll get the hang of it and appreciate life without the two “white deaths.”",
+    "Give up industrially processed food. It’s full of harmful additives that negatively affect your health. Want meat? Bake it yourself, try not to buy sausages or other non-natural products.",
+    "Alcohol refusal. Alcoholic beverages cause the development of various diseases and worsen sleep."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/07/coloured-sweet-peppers-toxic-chemicals-symbol-768x512-optimized.jpg",
+   "alt": "Biohacking Guide to Avoiding Food Toxins"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking Guide to Avoiding Food Toxins Blog 18 min read What Are Toxins, and How Do They Make Their Way Into Our Food Toxins are poisonous substances of biological origin produced by living organisms that harm other living systems. Toxins are widespread in nature and are produced by various microorganisms. Bacteria, fungi, plants, animals, and even some algae can produce toxins. For example, bee venom, […] [Read The Full Article](https://www.biohackers.world/blog/avoiding-food-toxins)"
+  },
+  {
+   "t": "h2",
+   "text": "Example Of A Biohacking Meal Plan For A Week",
+   "id": "example-of-a-biohacking-meal-plan-for-a-week"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/10/close-up-hand-with-meal-plan_23-2148484654-1024x682-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Unlike popular short-term diets that promise to “slim you down” in a week, the Biohacker nutrition system promotes a healthy lifestyle in the long term. The menu is calculated so that a person can fully and deliciously eat all the time. The main emphasis is placed on the quality of food."
+  },
+  {
+   "t": "p",
+   "text": "For example, this meal plan variant optimizes cognitive function, energy levels, and overall well-being. It incorporates nutrient-dense foods, healthy fats, and minimally processed sugars."
+  },
+  {
+   "t": "h3",
+   "text": "Day 1: Monday"
+  },
+  {
+   "t": "p",
+   "text": "**Breakfast:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "[Bulletproof Coffee](https://www.biohackers.world/blog/biohacking-coffee) (coffee with grass-fed butter and MCT oil)",
+    "Scrambled eggs with spinach and avocado"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Lunch:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Grilled chicken salad with mixed greens, cherry tomatoes, cucumber, olive oil, and balsamic vinegar"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Snack:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Green apple or protein cocktail"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Dinner:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Grass-fed beef stir-fry with mixed vegetables (bell peppers, onions, broccoli) and cauliflower rice"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Day 2: Tuesday"
+  },
+  {
+   "t": "p",
+   "text": "**Breakfast:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cauliflower pancakes",
+    "Yoghurt"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Lunch:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Chicken stew in coconut milk and zucchini noodles"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Snack:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Pudding with a sprinkle of chia seeds"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Dinner:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Quinoa bowl with black beans, corn, avocado, and salsa"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Day 3: Wednesday"
+  },
+  {
+   "t": "p",
+   "text": "**Breakfast:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Smoothie with kale, spinach, banana, almond milk, and a scoop of protein powder"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Lunch:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Turkey and avocado wrap with whole-grain tortilla, lettuce, and tomato"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Snack:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Hard-boiled egg"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Dinner:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Baked chicken thighs with roasted sweet potatoes and Brussels sprouts",
+    "Juice"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Day 4: Thursday"
+  },
+  {
+   "t": "p",
+   "text": "**Breakfast:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Eggs and avocado with baked yams"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Lunch:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Vegetable soup with a side of mixed green salad"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Snack:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Protein bar"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Dinner:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Pork steak with salad"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Day 5: Friday"
+  },
+  {
+   "t": "p",
+   "text": "**Breakfast:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Greek yogurt with granola, flaxseeds, and sliced strawberries"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Lunch:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Baby carrots with tzatziki sauce"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Snack:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Fruit smoothie"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "**Dinner:**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Grass-fed beef burger (lettuce wrap instead of a bun) with a side of roasted vegetables",
+    "Fresh juice"
+   ]
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "h3",
+   "text": "Tips for Biohacking Success:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "**Hydration:** in biohacking, water is the main aspect throughout the day. Consider adding electrolytes for better hydration.",
+    "**Mindful eating:** eat slowly and mindfully, focusing on your food and how it makes you feel.",
+    "**Food quality:** buy only natural organic products or grow them by yourself!"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "A List Of Snack Ideas For The Biohacking Diet",
+   "id": "a-list-of-snack-ideas-for-the-biohacking-diet"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/10/crackers-with-flowers-high-angle_23-2149455765-1024x682-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "A snack is a meal between breakfast, lunch, and dinner that allows you to avoid hunger during the day if you have long intervals between meals. Instead of a full lunch or dinner, it is undesirable to snack on foods with a high glycemic index (sweets, baked goods, sweet drinks), which can provoke a sharp spike in blood sugar, and hunger will soon return. The snack should be light and as healthy as possible."
+  },
+  {
+   "t": "p",
+   "text": "Foods that are suitable for an afternoon snack:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "fermented dairy products (low-fat hard cheese, fat-free cottage cheese, kefir, yoghurt without sugar or other additives, portioned cottage cheese with dried fruit);",
+    "fruits and vegetables (local seasonal berries, fruits and vegetables);",
+    "nuts and dried fruits;",
+    "sandwiches made of whole-grain bread with vegetables, boiled chicken, or turkey breast;",
+    "energy bars;",
+    "granola (a cereal made of nuts, cereal, dried fruit, and honey);",
+    "Exclude food that is poorly digested;",
+    "a smoothie made of green fruits, vegetables, herbs, and plant milk (almond milk, coconut milk, soy milk);",
+    "dark chocolate with a high concentration of cocoa beans (60-99%)."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/still-life-press-kit-coffee-1-768x512-optimized.jpg",
+   "alt": "How to Biohack Your Coffee Ritual"
+  },
+  {
+   "t": "p",
+   "text": "How to Biohack Your Coffee Ritual Blog, Health & Wellness, Nutrition 18 min read How does caffeine work Caffeine belongs to the class of alkaloids, and the pharmacological effects of the substance are that it is analeptic, cardiotonic, and psychostimulant. Simply put, it directly affects the lungs, heart, and brain. At the respiratory system level, breathing becomes more frequent and deep. From the gastrointestinal tract, the secretion of the […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-coffee)"
+  },
+  {
+   "t": "h2",
+   "text": "Nutrition Biohack Tips",
+   "id": "nutrition-biohack-tips"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/10/nutrition-healthy-diet-plan-concept_53876-125013-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Hydration:** in biohacking, water is the main aspect throughout the day. Consider adding electrolytes for better hydration. Herbal teas are particularly good if you want to drink something other than just water. They will have a calming effect on your nervous system.",
+    "**Eat at regular intervals:** don’t wait until your body is crying out for food, and don’t let yourself get hungry. That way, you won’t overeat at mealtimes and your body won’t be under stress.",
+    "**Fermented foods:** incorporate fermented foods like sauerkraut, kimchi, or kefir for gut health.",
+    "**Mindful eating:** practice[mindful eating](https://www.health.harvard.edu/staying-healthy/mindful-eating)by paying full attention to your meals – savour each bite, eat slowly, and listen to your body’s hunger and fullness cues. This approach helps improve digestion, prevent overeating, and build a healthier relationship with food. Understand why you eat and set clear goals for your body; this will help you establish a routine and maintain self-discipline without even realising it.",
+    "**DNA Tests and wearable trackers:** DNA tests offer personalized insights into your genetic predispositions, helping you understand how your body responds to food,[exercise](https://www.biohackers.world/blog/fitness-and-biohacking), stress, and more. Wearable trackers complement this by monitoring real-time metrics like sleep, activity, and heart rate, allowing you to make data-driven decisions about your health.",
+    "**Use spices instead of salt:** WHO recommends consuming less than one teaspoon of salt per adult daily. Add spices to reduce your salt intake. They enhance the taste and flavor of the meal and do not harm."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Biohackers Popular Diet",
+   "id": "biohackers-popular-diet"
+  },
+  {
+   "t": "h3",
+   "text": "Keto Diet"
+  },
+  {
+   "t": "p",
+   "text": "[The keto diet](https://www.ncbi.nlm.nih.gov/books/NBK499830/) is a low-carbohydrate diet with moderate protein intake and high-fat content. Its essence is the restriction (exclusion) of carbohydrate-containing products, and energy reserves should be replenished from fats and proteins."
+  },
+  {
+   "t": "p",
+   "text": "The number of meals on the keto diet is selected by a gastroenterologist or dietitian who has prescribed it. As a rule, there are three main meals and one or two snacks. A snack on the keto diet, for example, should contain only carbohydrate-free foods (e.g., boiled egg, avocado, coconut, clementine, hard cheese, mozzarella)."
+  },
+  {
+   "t": "h3",
+   "text": "Intermittent Fasting"
+  },
+  {
+   "t": "p",
+   "text": "[Interval fasting](https://www.biohackers.world/blog/intermittent-fasting) is a form of fasting in which a person gives up food by the hour. Interval fasting is becoming increasingly popular, and scientists are even interested in this fasting method. [Initial small studies](https://karger.com/mip/article/34/1/142/909949/Health-Benefits-of-Intermittent-Fasting) indicate that regular fasting can reduce the risk of chronic diseases such as type 2 diabetes, cardiovascular disease, neurological diseases, and cancer. Such fasting also has a positive effect on brain function. Clinical studies on humans have not confirmed this, but they indicate that interval fasting positively affects our health and can serve as an alternative to other diets that aim to [lose weight](https://www.biohackers.world/blog/biohacking-for-weight-loss)."
+  },
+  {
+   "t": "h3",
+   "text": "Elimination Diet"
+  },
+  {
+   "t": "p",
+   "text": "[An elimination diet](https://www.biohackers.world/blog/elimination-diet-guide) for allergies is a nutritional system that identifies foods that cause an adverse reaction. For this purpose, the food groups that most often provoke a reaction are excluded from the menu: milk, eggs, nuts, soy, gluten, and seafood. Then, they are gradually returned, and the result is looked at, thus calculating the allergens."
+  },
+  {
+   "t": "p",
+   "text": "[The elimination diet](https://connect.mayoclinic.org/blog/eosinophilic-esophagitis/newsfeed-post/the-six-food-elimination-diet/) is considered successful if the products causing allergy or intolerance are identified and, after their exclusion, the body’s condition improves. For example, rashes disappear, or digestion improves. If the return of products does not cause repeated negative reactions, the diet can be ended."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/05/full-shot-woman-doing-yoga-mat-768x512-optimized.jpg",
+   "alt": "Practical Biohacking Guide to Mindful Eating"
+  },
+  {
+   "t": "p",
+   "text": "Practical Biohacking Guide to Mindful Eating Blog 10 min read What Is Mindful Eating? Mindful eating is being aware of what you eat and drink. It involves controlling how food makes you feel and what signals your body sends you about taste, satisfaction, and satiety. Mindful eating involves simply being aware and accepting, rather than judging, the sensations you experience. It can extend to the […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-guide-to-mindful-eating)"
+  },
+  {
+   "t": "h2",
+   "text": "Vegan Biohacking Diet",
+   "id": "vegan-biohacking-diet"
+  },
+  {
+   "t": "p",
+   "text": "[A biohacking diet for vegans](https://www.jandonline.org/article/S2212-2672(16)31192-3/abstract) must include a balanced menu with various foods to meet their nutrient needs. This means including fruits, vegetables, whole grains, legumes, seeds, and nuts."
+  },
+  {
+   "t": "p",
+   "text": "Vegetarians have eliminated meat and poultry; some have also given up seafood, eggs, and dairy products. As a result, they may be deficient in specific nutrients typically found in these foods. These deficiencies can have serious health consequences, making it difficult for vegetarians to achieve their health goals."
+  },
+  {
+   "t": "p",
+   "text": "Nutrients that vegetarians are most likely to be deficient in:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Vitamin B12 is mainly found in animal products such as meat, poultry, and seafood. It is essential for the production of red blood cells and the proper functioning of the nervous system.",
+    "Iron is also mainly found in animal products and some plant foods. It is essential for transporting oxygen throughout the body.",
+    "Omega-3 fatty acids are essential for heart, brain, and joint health. They are mainly found in fatty fish.",
+    "Protein is essential for tissue growth and repair and the production of hormones and enzymes. Although vegetarians can get protein from plant sources such as legumes, nuts, and grains, they may have a harder time meeting their needs than meat eaters."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Plant-based substitutes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Enriched soy milk can provide vitamin B12 and protein.",
+    "Vegan cheese can provide calcium, vitamin B12, and protein.",
+    "Tempeh and tofu are excellent sources of protein and iron."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Natural supplements are made from whole food sources, whereas synthetic supplements are synthesized artificially."
+  },
+  {
+   "t": "note",
+   "text": "Natural supplements may contain a broader range of nutrients but may be less concentrated than artificial supplements. Synthetic supplements may provide higher doses of specific nutrients. Still, they may be less bioavailable, making them more difficult for the body to absorb."
+  },
+  {
+   "t": "p",
+   "text": "When choosing supplements, it is important to choose high-quality products from reputable manufacturers. It is also vital to consult your doctor before taking supplements, especially if you are taking medications or have any medical conditions."
+  },
+  {
+   "t": "h2",
+   "text": "How a Biohacking Diet Can Support Your Weight Loss or Muscle Building",
+   "id": "how-a-biohacking-diet-can-support-your-weight-loss-or-muscle"
+  },
+  {
+   "t": "p",
+   "text": "This approach helps to improve the functioning of the whole body. By focusing on beneficial nutrients and complex carbohydrates, we are able to take a more holistic view of our diet and manage our fridge more responsibly. It is also worth noting that by adopting a more mindful approach to your diet, you balance your hormone levels. It is these hormones that are responsible for both weight loss and our mood. We minimize the number of dietary slip-ups and balance not only our diet but also our mindset. Thus, the biohacking-style diet helps to normalise the functioning of hormones, on which all processes in our body depend, including our mood."
+  },
+  {
+   "t": "p",
+   "text": "An important part of this approach is calorie counting. The basal metabolic rate (BMR) is usually calculated based on gender, age, weight and height. Let’s count the average amount for women and men with the most accurate and widely used one – Mifflin-St. George’s formula:"
+  },
+  {
+   "t": "p",
+   "text": "For women:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "BMR = 10 × weight (kg) + 6.25 × height (cm) – 5 × age – 161"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "For men:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "BMR = 10 × weight (kg) + 6.25 × height (cm) – 5 × age + 5"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "For convenience, you can use online calculators and apps such as**FatSecret, MyFitnessPal, YAZIO, and Lifesum** . They count everything automatically so you don’t need to do it by yourself. When losing weight, people usually start with a deficit of around 10-20% of their daily requirement. It helps your body not to stress out and lose weight without muscle mass. A bit later you can change it to 5-15%. That’s how you will support muscle growth without fat accumulation. It is important to monitor your body’s response and gradually adjust your calorie intake. Don’t let it drop to a critically low level! If you consume fewer than 1,200 calories a day, you’ll put your body under stress and stop losing weight."
+  },
+  {
+   "t": "p",
+   "text": "Remember that any changes to your diet should be discussed with a specialist beforehand. A dietitian or nutritionist will help you establish a diet that takes into account all the specific characteristics of your body. You may not be aware of your hormonal balance, insulin resistance or gastrointestinal conditions. Therefore, consulting a doctor is an essential part of establishing a healthy diet."
+  },
+  {
+   "t": "h2",
+   "text": "Supplements and Supperfoods in Biohacking Nutrition",
+   "id": "supplements-and-supperfoods-in-biohacking-nutrition"
+  },
+  {
+   "t": "p",
+   "text": "Mushrooms and superfoods are actively used in biohacking because of their rich composition, which can improve physical and mental health and energy. Mushrooms as superfoods in biohacking:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Hedgehog comb (Lion’s Mane):"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "It helps improve cognitive functions such as memory and concentration and supports the nervous system."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Reishi (Lucky Mushroom):"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Strengthen the immune system, [reduce stress](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health), and improve sleep."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Chaga (Black Mushroom):"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "It has antioxidant properties, strengthens the immune system, and helps fight inflammation."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cordyceps (Cordyceps):"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Increases energy and stamina and may help fight fatigue."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/cover3-1-768x572-optimized.png",
+   "alt": "Best Botanical Biohacking Practices"
+  },
+  {
+   "t": "p",
+   "text": "Best Botanical Biohacking Practices Blog, Health & Wellness, Nutrition 6 min read Best botanical biohacking practices Pharm drugs are oriented to work with receptors. Their task is to interfere with processes already taking place in the body and regulate them in a specific and defined way. Therefore, painkillers act quickly, as do remedies that help dissolve blood clots or relieve edema. The action of herbal supplements is […] [Read The Full Article](https://www.biohackers.world/blog/botanical-biohacking)"
+  },
+  {
+   "t": "h3",
+   "text": "Benefits of using mushrooms in biohacking"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Rich composition. Mushrooms contain vitamins, minerals, beta-glucans, and other beneficial substances.",
+    "Improved cognitive function. Some mushrooms, such as scalloped hedgehogs, help improve memory, concentration, and overall brain health.",
+    "Immune support. Many mushrooms, including Reishi, Chaga, and Cordyceps, have immunomodulatory properties.",
+    "Energy boost. Cordyceps and other mushrooms can help fight fatigue and boost overall energy levels.",
+    "Improved health. Mushrooms can help support the health of the heart, liver, and other organs."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Other superfoods used in biohacking:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "Green leafy vegetables (kale, spinach):Source of vitamins, minerals, and antioxidants.",
+    "Berries (cranberries, blueberries):Rich in antioxidants and can help [fight aging](https://www.biohackers.world/blog/how-biohacking-can-reverse-aging).",
+    "Nuts (almonds, walnuts):Source of healthy fats, protein, and antioxidants.",
+    "Seeds (flax, chia):A great source of omega-3 fatty acids and fiber."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "How to incorporate mushrooms and superfoods into your diet"
+  },
+  {
+   "t": "p",
+   "text": "Many mushrooms are available in capsules, powders, and extracts. Also they can be used in a variety of dishes to diversify your diet. Many superfoods, such as berries and seeds, can be added to smoothies."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**IMPORTANT:** Before you start taking any supplements, including mushrooms, consult your doctor, especially if you have any chronic conditions or are taking medications."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Risks Of Biohacking Your Diet",
+   "id": "risks-of-biohacking-your-diet"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/10/young-woman-working-from-home_23-2149187613-1024x682-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Biohacking your diet can be risky if not done right. You might need more essential nutrients, leading to imbalances. Extreme changes can cause stomach problems or weaken your immune system. With expert advice, you could avoid using too many supplements or eating too little. Rapid weight changes can stress your body and affect your metabolism. Also, trying unproven methods might harm your health in the long run."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h2",
+   "text": "Final Thoughts",
+   "id": "final-thoughts"
+  },
+  {
+   "t": "p",
+   "text": "The biohackers’ menu can now be safely added to the piggy bank of various diets and food systems. Their culinary preferences have long been formed into a separate trend, incidentally primarily based on nutrigenetics."
+  },
+  {
+   "t": "p",
+   "text": "This is a branch of genetics that studies genetic predispositions to disease, taking into account genetic variations and nutrient intake. The main emphasis is on the quality of food. For biohacking adherents, their body is represented as a system where food is the input and vitality, energy, and mood are the results of all the algorithms. Based on how they feel, they make adjustments by constantly changing food inputs to get the results they want. Understanding how different nutrients affect our health is the basis of nutrigenetics."
+  },
+  {
+   "t": "p",
+   "text": "In general, biohacker recipes are not extremely original and different from menus from other nutritional systems, although you can’t call them trivial either. Each one has a twist, a different culinary touch that simultaneously surprises, excites, and satisfies the senses."
+  },
+  {
+   "t": "note",
+   "text": "Please note! This article is for informational purposes only and does not constitute medical advice. Most of the diets described here are intended for people who do not suffer from IBS, metabolic, hormonal or other conditions. Remember that if you experience discomfort or an adverse reaction whilst following a diet, you must stop it immediately!"
+  }
+ ],
+ "faq": []
+}

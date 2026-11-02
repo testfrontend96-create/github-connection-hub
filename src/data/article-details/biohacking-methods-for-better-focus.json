@@ -1,0 +1,399 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Constant multitasking, chronic stress, and poor sleep gradually drain your ability to stay focused.",
+  "Sometimes a ten minute walk or a short break is enough to bring your attention back on track.",
+  "Instead of jumping between tasks, give your brain space to fully concentrate on one thing.",
+  "Strong focus is built through daily routines, proper recovery, and balanced eating habits."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "Why We Lose Focus",
+   "id": "why-we-lose-focus"
+  },
+  {
+   "t": "p",
+   "text": "This problem is often linked to fairly simple daily activities. The hectic pace of life leaves us no time to stop and think, so we end up doing several things at once.[A study by Stanford University](https://news.stanford.edu/stories/2020/10/poor-memory-tied-attention-lapses-media-multitasking?utm_source=chatgpt.com)has found a link between media multitasking and poor concentration. In the experiment, participants who frequently used several media simultaneously – for example, messaging and watching videos at the same time – performed worse on sustained attention tests. The researchers also recorded a higher frequency of ‘attention lapses’ and a tendency to be distracted in such individuals. The authors suggest that constantly switching between streams of information overloads the cognitive system. You may often hear a diagnosis of ADHD or even attribute it to yourself, but the problem may lie not in the condition itself, but in habits that can be corrected. Your concentration may be waning due to various factors, including diet, a sedentary lifestyle, a lack of fresh air and walks."
+  },
+  {
+   "t": "p",
+   "text": "Let’s break down the main causes of a lack of concentration:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Decision fatigue. When our bodies are constantly tired, even the most earnest attempts to gather our thoughts can fall short. This affects not only our daily lives but also our work. It is all the more important for those in senior and managerial positions to bear this in mind. For instance,[the study ‘Extraneous factors in judicial decisions’](https://www.pnas.org/doi/10.1073/pnas.1018033108)revealed that fatigue and hunger influence judges’ decisions. It was found that after a meal break, the rate of positive decisions was around 65%. The more tired the judge was, the lower the percentage dropped, reaching practically zero. As you can see, attention, self-control and the quality of decisions deteriorate during prolonged, uninterrupted cognitive work.",
+    "Lack of sleep. Have you noticed difficulty in focusing after staying awake for a prolonged period? Lack of sleep hasa directimpact on the quality of your cognitive abilities. Information processing speed decreases, the number of errors increases, and the ability to concentrate on a task deteriorates. [Research](https://www.researchgate.net/publication/24214335_Sleep_deprivation_Impact_on_cognitive_performance) also shows that the brain begins to work less efficiently. Activity in the prefrontal cortex, which is associated with self-control and attention, decreases. At the same time, a person may subjectively underestimate the extent of the deterioration in their condition, which is precisely why it is easy to overlook this factor.",
+    "Stress. Constant stress puts the body into energy-saving mode to enable the mind to cope with it. We may become easily distracted, forget everyday tasks and even overlook the most crucial matters.",
+    "Multitasking. Trying to get everything done at once can also lead to a decline in concentration. Scientists Joshua S. Rubinstein, David E. Meyer and Jeffrey E. Evans [studied](https://doi.org/10.1037/0096-1523.27.4.763) why, when switching from one task to another, people start to do their work more slowly and make mistakes more often.As it turns outour brain does not process multiple tasks simultaneously, but rather switches rapidly from one to another. As a result, the efficiency of all tasks performed drops, and more mistakes are committed. Such an approach tires the brain’s executive systems rather than helping us to do everything at once."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Quick Hacks for Better Mental Focus “Right Now”",
+   "id": "quick-hacks-for-better-mental-focus-right-now"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/05/Hacks-for-Better-Mental-Focus-1024x576-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "We’ve looked at why we might lose our concentration. But what can we do if we need to regain it right here and now? After all, it often takes time for the body to recover, yet a fulfilling life stands no delay. Let’s explore methods for focusing better, incorporate them into your daily life, and see the results."
+  },
+  {
+   "t": "h3",
+   "text": "Use the Pomodoro Method"
+  },
+  {
+   "t": "p",
+   "text": "Film director Taika Waititi used this technique, and with good reason. It is useful both for routine tasks and for creative professions. The brain often gets lazy and lets your attention wander. According to[research](https://doi.org/10.1016/j.cognition.2010.12.007)attention begins to wane during prolonged continuous work, especially if a person does not take breaks. It has been discovered by researchers that small mental breaks can revive one’s ability to concentrate on their task and lower the impact of decreased attention due to a monotonous task. The technique includes concentrating on your activity for 25 minutes and taking a break for five minutes, during which you can engage in any activity you wish."
+  },
+  {
+   "t": "h3",
+   "text": "Focus on One Task at a Time"
+  },
+  {
+   "t": "p",
+   "text": "When you do several tasks at once, it may seem as if you are more productive. But in reality, you become exhausted and distracted, which slows down your efficiency and impairs your concentration. Even if a person knows in advance that they will be switching tasks, the brain stillneedsextra time to refocus attention and working memory. This is precisely why doing one thing at a time is usually more effective than constantly switching between tabs, chats and notifications."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h3",
+   "text": "Minimise distractions"
+  },
+  {
+   "t": "p",
+   "text": "It is important to avoid distractions arising from the use of gadgets and messages, among other things, while you are carrying out an important task. There is no way you can handle such a large amount of data and do your work simultaneously, as you will definitely get distracted. [According to research](https://ics.uci.edu/~gmark/chi08-mark.pdf) carried out on digital behaviour, it takes an individual more than 20 minutes to come back to his/her normal state of attention after being distracted. This holds especially true for micro-switches, such as frequently checking your mobile phone and logging onto Facebook or Instagram for a short buzz."
+  },
+  {
+   "t": "h3",
+   "text": "Add Caffeine"
+  },
+  {
+   "t": "p",
+   "text": "[Caffeine](https://www.biohackers.world/blog/biohacking-coffee) can carry mental and physical benefits when properly consumed. Considered a mental fatigue fighter, caffeine works by inhibiting the effects of adenosine, a substance in the brain that causes drowsiness. As a result of caffeine, energy levels may increase and help you stay focused. However, caffeine intake should be moderated, as excess can have the opposite effect and cause anxiety and hinder cognitive function. A single cup of espresso is enough to improve your cognitive performance naturally."
+  },
+  {
+   "t": "h3",
+   "text": "Ground Yourself"
+  },
+  {
+   "t": "p",
+   "text": "Instead of forcing your brain to focus when it’s mentally full, switch your focus to a different task. To regain the ability to focus, switch to a different task temporarily. Oftentimes the smallest things will bring about the ease to focus. For instance, a walk of just 10-15 minutes will bring refreshment and make the brain ready to perform again because the walk gives fresh air. The walk can be replaced by a quick shower or a splash of cold water.You could also try taking breaks to do squats between tasks. Just a few movements will help your brain reset its information processing."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/04/cover3-2-optimized.jpg",
+   "alt": "What Is Grounding and How Can It Enhance Your Health?"
+  },
+  {
+   "t": "p",
+   "text": "What Is Grounding and How Can It Enhance Your Health? Blog, Health & Wellness, Cognitive Enhancement, Fitness 10 min read What Is Grounding? The grounding practice is familiar to us from physics and is used when working with electricity. Grounding reduces electrical voltage to a safe state for humans. Something similar is also used when there is severe emotional stress. Why do I need to ground myself? Grounding biohacking is useful for anxiety, fear, or […] [Read The Full Article](https://www.biohackers.world/blog/grounding-biohacking-practice)"
+  },
+  {
+   "t": "h2",
+   "text": "Biohacks for Long-Term Focus",
+   "id": "biohacks-for-long-term-focus"
+  },
+  {
+   "t": "p",
+   "text": "The methods mentioned above work for short bursts, but what about marathons? If you want to improve your concentration in the long term, it’s worth considering more complex techniques that require discipline and regular practice."
+  },
+  {
+   "t": "h3",
+   "text": "Train Your Brain"
+  },
+  {
+   "t": "p",
+   "text": "Your brain needs exercise just as much as the muscles in your body. The mechanism is essentially the same: the more challenging and varied the tasks you set it, the longer it stays young. For example, try memorising sequences, solving logic puzzles or practising your reaction times.Sometimes even the simplest exercises, such as spotting 10 yellow cars on the road, help the brain to warm up. Research shows that regular cognitive exercise improves the brain’s executive functions."
+  },
+  {
+   "t": "p",
+   "text": "It also helps to form new neural connections and maintain neuroplasticity.It has been[suggested](https://pmc.ncbi.nlm.nih.gov/articles/PMC4055506/)in the journal Molecular Psychiatry that attention, memory, and cognitive resilience can all be improved when combined with the right balance of cognitive training and intellectual activity. It is important not to carry cognitive training to the point of diminishing returns, as the researchers suggest that progressive training yields the best results. This adaptive approach has shown a noticeable effect over 10 years."
+  },
+  {
+   "t": "note",
+   "text": "It is important to note, however, that cognitive training works best when combined with physical activity and a reduction in overall stress levels."
+  },
+  {
+   "t": "h3",
+   "text": "Do Exercise"
+  },
+  {
+   "t": "p",
+   "text": "Physical exercise[has a direct impact](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.00902/full)on your cognitive flexibility. Aerobic and strength training help improve oxygenation of the brain and teach you to maintain focus. [Regular exercise](https://www.biohackers.world/blog/fitness-and-biohacking) can improve the functioning of your heart, blood vessels and metabolism. Even if you aren’t losing weight noticeably or have hit a plateau, you still get a significant positive effect from your workouts. Exercise also increases mitochondrial activity in your muscles and heart tissue. Your body starts to use oxygen more efficiently, your endurance improves, and your insulin sensitivity increases. This is precisely why physical activity so significantly reduces the risk of type 2 diabetes and metabolic disorders."
+  },
+  {
+   "t": "p",
+   "text": "What’s more, it works for both healthy, young people and older adults. Even a single workout can[temporarily improve executiv](https://pmc.ncbi.nlm.nih.gov/articles/PMC6776756/)e function and sustained attention. Scientists have found that aerobic exercise has a positive effect on executive function, the attention control system and working memory. So there is a strong link between regular exercise and improved cognitive function in people of all ages."
+  },
+  {
+   "t": "h3",
+   "text": "Practice Mindfulness"
+  },
+  {
+   "t": "p",
+   "text": "Such practices help to maintain and develop sustained attention. It is a way of consciously keeping one’s attention on the present moment, without judgment and without slipping into autopilot. The most common examples are breath meditation, body scan and mindful movement. This approach helps to regulate the chaotic wandering of thoughts. After practising mindfulness, the brain begins to coordinate its functionsmore effectively. These practices help to reduce anxiety, make neurons more flexible and improve emotional regulation."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
+  },
+  {
+   "t": "p",
+   "text": "In a recent [fMRI study](https://pmc.ncbi.nlm.nih.gov/articles/PMC10640625/) of older adults with sleep disorders, more mindfulness practice was associated with greater brain plasticity. These are brain systems associated with attention, self-reflection and switching between internal and external stimuli. Regular mindfulness practice can facilitate the brain’s transition into a state of sustained attention and reduce the cognitive effort required to maintain concentration."
+  },
+  {
+   "t": "h2",
+   "text": "Nutrition for Brain Function",
+   "id": "nutrition-for-brain-function"
+  },
+  {
+   "t": "p",
+   "text": "Nutrition plays an essential role in healthy mental function, so it’s worth choosing your [diet](https://www.biohackers.world/blog/biohacking-diet) carefully. Even though there are no ‘good’ or ‘bad’ foods, you should still adjust your diet to prioritise certain nutrients to boost brain function and improve concentration. Food can either improve or worsen your brain’s condition. Some foods maintain stable glucose levels and provide the brain with the nutrients needed for neuron function, whilst others cause sharp spikes in blood sugar, inflammation and a feeling of ‘brain fog’. Let’s look at what improves your concentration, and what ones to remove from your shopping basket."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/05/Nutrition-for-Brain-Function-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "What to eat:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "High-protein foods: eggs, fish, Greek yoghurt",
+    "Sources of omega-3 fatty acids: salmon, sardines, nuts",
+    "Slow-release carbohydrates: oats, quinoa, brown rice",
+    "Vegetables and berries are rich in antioxidants",
+    "Foods containing magnesium and B vitamins",
+    "Fermented foods to support the gut-brain axis",
+    "Sufficient water and [electrolytes](https://www.biohackers.world/blog/what-are-electrolytes)",
+    "Balanced meals containing protein, fats and fibre for sustained energy"
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/07/high-angle-women-with-fruits-vegetables-768x512-optimized.jpg",
+   "alt": "Practical Guide To Organic Food"
+  },
+  {
+   "t": "p",
+   "text": "Practical Guide To Organic Food Blog 12 min read What Does Mean Organic Food Organic food is food that is grown without the use of synthetic fertilizers, pesticides, genetically modified organisms (GMOs), and other artificial additives. In animal husbandry, organic certification requires that animals be raised without the use of antibiotics and growth hormones, be fed organic feed, and have more space to move […] [Read The Full Article](https://www.biohackers.world/blog/practical-guide-to-organic-food)"
+  },
+  {
+   "t": "p",
+   "text": "What not to eat:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Foods with high levels of added sugar",
+    "Sweet fizzy drinks and energy drinks",
+    "Ultra-processed foods",
+    "Fast food and foods containing trans fats",
+    "Excessive alcohol",
+    "Large amounts of fast-release carbohydrates without protein and fibre",
+    "Frequent snacking on sweets",
+    "Overeating before mental work"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Supplements for Focus",
+   "id": "supplements-for-focus"
+  },
+  {
+   "t": "p",
+   "text": "Now that we’ve covered the basic strategies for improving your concentration, let’s look at some more advanced options. Certain brain focus supplements can enhance your concentration and cognitive function. Here are the most popular and researched."
+  },
+  {
+   "t": "note",
+   "text": "But before we explore them, remember that you should only take any supplements after consulting a specialist."
+  },
+  {
+   "t": "h3",
+   "text": "Nootropics"
+  },
+  {
+   "t": "p",
+   "text": "These are substances that are believed to potentially improve memory, information processing speed and susceptibility to mental fatigue. This category can include both synthetic and natural options. The most popular biohacking focus helpers include Bacopa monnieri, Rhodiola rosea and Lion’s Mane mushroom. These components can help boost information perception skills and enhance memory, as well as reduce symptoms of mental fatigue. Nevertheless, it should be mentioned that such products only produce a weak effect and have not been extensively studied. In addition, it must be added that the effect provided by such supplements accumulates, so there is no need to take them all the time in order to prevent developing a tolerance."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/09/collection-pills-brain-boost-memory-improvement-768x513-optimized.jpg",
+   "alt": "Nootropics in Biohacking — Definition, Examples and Benefits"
+  },
+  {
+   "t": "p",
+   "text": "Nootropics in Biohacking — Definition, Examples and Benefits Blog 12 min read What Are Nootropics? Nootropics are substances that enhance brain function, including memory, concentration, and cognitive processing speed. The definition “nootropics” was first proposed by Romanian scientist Corneliu Giurgea in 1972. He combined it from two Greek components: noos, meaning mind, and tropos, meaning direction. The popularity of nootropics is growing every year and is especially […] [Read The Full Article](https://www.biohackers.world/blog/nootropics-in-biohacking-definition-examples-and-benefits)"
+  },
+  {
+   "t": "h3",
+   "text": "L-Theanine + Caffeine"
+  },
+  {
+   "t": "p",
+   "text": "The combination of these ingredients has been extensively studied before. Moreover, it assists in staying focused as well as being more aware. These benefits are seen particularly while working on activities that demand greater attention. There have even been some research studies suggesting that there are lower levels of perceived stress than when taking just caffeine because L-theanine tends to negate the side effects associated with high caffeine intake such as excessive nervousness and an immediate drop in energy levels."
+  },
+  {
+   "t": "h3",
+   "text": "Omega-3 fatty acids"
+  },
+  {
+   "t": "p",
+   "text": "The brain is primarily composed of fatty cells. This is one of the key reasons why fatty acids are essential for their proper operation. One of the main fatty acids found in the brain is DHA (docosahexaenoic acid). It forms part of cell membranes and influences signal transmission between brain cells. Adequate intake of omega-3 supports higher concentration, memory and overall brain function in the long term. It also helps reduce cognitive decline with age and regulates depressive episodes. Omega-3 is taken in a course lasting 1–3 months, followed by a short break. It is also important to take this supplement during or after a meal, with water."
+  },
+  {
+   "t": "h3",
+   "text": "Creatine"
+  },
+  {
+   "t": "p",
+   "text": "This supplement is often associated with athletes, but it is beneficial for everyone. It is a nitrogen-containing acid also found in beef and is one of the most studied and effective sports supplements. Due to creatine, the pump is achieved and you acquire strength; moreover, it improves concentration. In essence, creatine allows faster production of ATP which is the main provider of energy within cells. As the brain uses more of it, creatine can promote cognitive stamina especially when one is under pressure or sleep deprivation. Creatine will also be useful for women in cases of PMS, helping to keep the mind clear during hormonal changes."
+  },
+  {
+   "t": "h3",
+   "text": "Vitamin E"
+  },
+  {
+   "t": "p",
+   "text": "Our brains are prone to oxidative damage since they require high levels of oxygen. The antioxidant function of this vitamin contributes to protection against oxidative stress. Some research suggests that vitamin E contributes to the slowing of the decline of cognitive abilities due to aging, as well as to the prevention of neurodegeneration. It is believed that the effect of the antioxidant properties of this vitamin allows for reducing the harmful impact on neurons and protecting the membrane from deterioration. You can replenish your vitamin E stores by consuming nuts, seeds, oils, and greens."
+  },
+  {
+   "t": "h2",
+   "text": "Advanced Biohacking for Focus and Concentration",
+   "id": "advanced-biohacking-for-focus-and-concentration"
+  },
+  {
+   "t": "p",
+   "text": "Let’s dive into ways to biohack your concentration even further and discover techniques that’ll not only extend the benefits of previous methods but also help you consolidate them. Here are a few options for advanced biohackers."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/05/Advanced-Biohacking-for-Focus-and-Concentration-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Brain Apps"
+  },
+  {
+   "t": "p",
+   "text": "These are specialised apps designed to help you get the most out of your smartphone. They are aimed at training your attention span and thinking speed. They mainly consist of short cognitive tasks that train your working memory and your ability to switch focus. Among the best-known are Lumosity, Elevate and Peak. These apps adapt to the user and become more challenging over time. It is worth noting that although studies do show improvements in certain cognitive functions, this is not always reflected in everyday life. However, even though the effects of such apps are limited, they still [improve your brain function](https://www.biohackers.world/blog/how-to-biohack-brain-health), particularly in combination with physical activity."
+  },
+  {
+   "t": "h3",
+   "text": "Neurofeedback Training"
+  },
+  {
+   "t": "p",
+   "text": "This method helps you monitor and control the brain more consciously. To do this, you wear a special sensor that records your electroencephalogram. This is used to analyse your brain waves, and you receive visual or auditory feedback. For example, when the brain enters a more focused state, you may see an improved image on the screen or hear a change in sound. Over time, the brain learns to reproduce more optimal patterns of activity independently. This method helps reduce ADHD symptoms and can be used whilst studying or at work, where perseverance and concentration are required. It also helps combat [stress](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health) and brain fog. Among popular consumer devices, EEG headsets such as the Muse Headband and Neurosity Crown stand out, allowing you to track your state of attention and [meditation](https://www.biohackers.world/blog/biohacking-meditation) at home."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h3",
+   "text": "Brown Noise and Soundscapes"
+  },
+  {
+   "t": "p",
+   "text": "You’ve probably heard of white noise – a specific hum that has a particular effect on our consciousness. The concept of brown noise is somewhat similar, but this variant has a gentler effect on your brain, as it contains more low frequencies. Some describe it as the sound of rain or other falling water. You could also try using soundscapes such as the sounds of a forest, the ocean or a café. It is believed that such options help you switch off from external distractions. They help create a more stable sensory environment at work."
+  },
+  {
+   "t": "h3",
+   "text": "Vagus Nerve Stimulation (VNS)"
+  },
+  {
+   "t": "p",
+   "text": "The vagus nerve plays a vital role in the functioning of the entire body, including the autonomic nervous system. It connects the brain to the heart, lungs and digestive organs, influencing the body’s arousal and relaxation responses. VNS is designed to stimulate the parasympathetic nervous system. The method is divided into home-based and medical approaches. The former is non-invasive, whilst the latter can only be performed under a doctor’s supervision. Let’s discuss the option that can be used at home. Such methods include: washing with cold water, chanting or moaning similar to meditative techniques, deep breathing, and ear acupressure (gentle massage with pressure applied to specific points). There are also special devices that aid in stimulation. Among the well-known devices are Pulsetto and gammaCore. Such methods help to increase the body’s stress resistance and maintain focus."
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "In this article, we managed to examine a broad range of techniques that may help increase our concentration. We started with examining simple ways such as going outdoors and splashing cold water onto your face. After that, we went through more sophisticated ones, like neurostimulation and various dietary supplements. Knowing all of this, now you can choose the technique that fits you and increase your productivity. Additionally, the development of your cognitive skills will enable you to retain your youthful brain and to perform more complex tasks. So, let’s sum up how to improve attention span:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "Get enough sleep. This is fairly simple advice, but without proper sleep, your concentration will inevitably decline",
+    "Don’t forget to take Omega-3. This supplement helps nourish your brain",
+    "Don’t forget to take breaks for meditation or simply a short walk in the fresh air. It’s important to ensure your brain gets sufficient oxygen",
+    "Learn to do one thing at a time. Stop multitasking, as this drains your energy and doesn’t speed up your work; it simply leaves you feeling scattered.",
+    "Include physical activity in your daily routine. This helps maintain mental flexibility.",
+    "Get your diet in order. Include complex carbohydrates, green vegetables and sufficient protein on your plate. Don’t forget about unsaturated fats."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": []
+}

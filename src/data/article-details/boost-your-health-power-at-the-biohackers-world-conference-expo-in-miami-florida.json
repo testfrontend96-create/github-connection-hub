@@ -1,0 +1,57 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [],
+ "blocks": [
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/09/cover4-1-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "About Biohackers World Conference & Expo:",
+   "id": "about-biohackers-world-conference-expo"
+  },
+  {
+   "t": "p",
+   "text": "The Biohackers World Conference & Expo is dedicated to advancing the field of biohacking and wellness empowerment. Through modern technologies, networking opportunities, and interactive exhibitions, we aim to inspire individuals to optimize their health and unlock their full potential.The Biohackers World Conference & Expo is a great opportunity not only to learn something new in the world of health, wellness and biohacking but also to expand your network with like-minded people. Don’t miss out on the chance to be part of a community dedicated to optimizing human potential and well-being. Join us and take the next step towards a healthier, more vibrant life!"
+  },
+  {
+   "t": "h2",
+   "text": "Conference Title Sponsors:",
+   "id": "conference-title-sponsors"
+  },
+  {
+   "t": "h3",
+   "text": "The Root Brands:"
+  },
+  {
+   "t": "p",
+   "text": "The Root Brand by [Clayton Thomas](https://www.biohackers.world/speakers/clayton-thomas) is a leading company in wellness and longevity. Discover all-natural herbal products designed to cleanse and heal your body. The Root Brands products support your body’s innate detoxification processes, promoting healing from within."
+  },
+  {
+   "t": "h3",
+   "text": "Leela Quantum Tech:"
+  },
+  {
+   "t": "p",
+   "text": "Discover health possibilities with**Leela Quantum Tech** . This company is leading the way in natural health innovation, combining science and quantum energy wellness into an elegant, simple-to-use collection of products optimized for everyday use."
+  },
+  {
+   "t": "p",
+   "text": "Join us as we embark on a journey to shape the future of wellness together!"
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": []
+}

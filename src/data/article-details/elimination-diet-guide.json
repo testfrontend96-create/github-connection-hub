@@ -1,0 +1,334 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Elimination diets help detect food intolerances by cutting and reintroducing foods.",
+  "Foods are added back one by one while watching for headaches, rashes, or fatigue.",
+  "The diet supports gut health and helps biohackers personalize their nutrition."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What is an Elimination Diet?",
+   "id": "what-is-an-elimination-diet"
+  },
+  {
+   "t": "note",
+   "text": "An elimination diet for allergies is a nutritional system that identifies foods that cause an adverse reaction. For this purpose, the food groups that most often provoke a reaction are excluded from the menu: milk, eggs, nuts, soy, gluten, and seafood. Then, they are gradually returned, and the result is looked at, thus calculating the allergens."
+  },
+  {
+   "t": "p",
+   "text": "An undesirable reaction to food sometimes does not appear immediately but several hours or days after consuming the product. Because of this, it can be challenging to understand the problem. An elimination diet solves this issue, giving doctors a clear system."
+  },
+  {
+   "t": "p",
+   "text": "Apart from identifying allergens, an elimination diet is good for overall health. It improves digestion, helps the body cleanse itself of toxins, fights inflammation, and rebalances the immune system. It also helps fight certain diseases. For example, an elimination diet for dermatitis reduces the frequency of exacerbations and [improves skin condition](https://www.biohackers.world/blog/biohacking-skincare)."
+  },
+  {
+   "t": "p",
+   "text": "The elimination diet is considered successful if the products causing allergy or intolerance are identified and, after their exclusion, the body’s condition improves. For example, rashes disappear, or digestion improves. If the return of products does not cause repeated negative reactions, the diet can be ended."
+  },
+  {
+   "t": "p",
+   "text": "If the symptoms do not disappear or worsen despite the diet, the diagnosis is incorrect, and another diagnosis is needed. The same symptoms are often caused by stress, infections, or disruption of the intestinal microflora."
+  },
+  {
+   "t": "h2",
+   "text": "Symptoms of Food Intolerance",
+   "id": "symptoms-of-food-intolerance"
+  },
+  {
+   "t": "p",
+   "text": "Food intolerance is the body’s reaction to food without an immune response. It is a somewhat collective concept that describes the disruption of many interdependent processes in the digestion of specific foods and food in general. Food intolerance is similar in symptoms to food allergies."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "When consuming foods, the patient gets a particular pleasure during the meal but then realizes that something is wrong in his body; after the recent pleasure from the food, the patient may experience the following symptoms:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "flatulence,",
+    "heaviness in the abdomen,",
+    "bloating,",
+    "pronounced fatigue and drowsiness,",
+    "there may be a headache and a feeling of intoxication,",
+    "a feeling of heat,",
+    "gastrointestinal upset (diarrhea, constipation)",
+    "itching and rashes on the skin (redness, acne, etc.)."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Types of Elimination Diets",
+   "id": "types-of-elimination-diets"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/05/portrait-beautiful-young-woman-room-eating-breakfast-holding-bowl-with-dessert-spoon-1024x397-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Simple (Modified) Elimination Diet"
+  },
+  {
+   "t": "p",
+   "text": "This approach removes only one or two suspected trigger foods — common culprits like dairy, gluten, or eggs — while keeping the rest of the diet unchanged. It’s often used when there’s a strong suspicion about specific food intolerances or allergies and is the least restrictive of all elimination diets."
+  },
+  {
+   "t": "p",
+   "text": "**Best for** : Individuals with mild symptoms or a clear idea of potential triggers."
+  },
+  {
+   "t": "h3",
+   "text": "Moderate Elimination Diet"
+  },
+  {
+   "t": "p",
+   "text": "Over several weeks, this version excludes a broader group of common allergens and inflammatory foods — such as gluten, dairy, eggs, soy, corn, nuts, and nightshades. After symptoms improve, foods are reintroduced one at a time to identify reactions."
+  },
+  {
+   "t": "p",
+   "text": "**Best for** : Those with moderate or unclear symptoms or when simple elimination doesn’t resolve issues."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/05/full-shot-woman-doing-yoga-mat-768x512-optimized.jpg",
+   "alt": "Practical Biohacking Guide to Mindful Eating"
+  },
+  {
+   "t": "p",
+   "text": "Practical Biohacking Guide to Mindful Eating Blog 10 min read What Is Mindful Eating? Mindful eating is being aware of what you eat and drink. It involves controlling how food makes you feel and what signals your body sends you about taste, satisfaction, and satiety. Mindful eating involves simply being aware and accepting, rather than judging, the sensations you experience. It can extend to the […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-guide-to-mindful-eating)"
+  },
+  {
+   "t": "h3",
+   "text": "The Few-Foods Diet"
+  },
+  {
+   "t": "p",
+   "text": "Also known as the oligoantigenic diet, this is the most restrictive form. It includes only a small number of hypoallergenic foods (such as lamb, rice, and certain fruits/vegetables) and is typically used under medical supervision. Foods are reintroduced very gradually."
+  },
+  {
+   "t": "p",
+   "text": "**Best for** : Severe, chronic symptoms (e.g., eczema, ADHD, IBS) where other elimination diets have failed."
+  },
+  {
+   "t": "h2",
+   "text": "Key Steps of the Elimination Diet Process",
+   "id": "key-steps-of-the-elimination-diet-process"
+  },
+  {
+   "t": "h3",
+   "text": "Food Exclusion Stage"
+  },
+  {
+   "t": "p",
+   "text": "In the first stage, which lasts 2-3 weeks, the main food groups that cause intolerance, allergic reactions, or specific suspects are excluded at once."
+  },
+  {
+   "t": "p",
+   "text": "What to exclude:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Gluten: bread, pasta, muesli, beer, wheat, rye, barley, bulgur, semolina, couscous, industrial sauces.",
+    "Animal products: milk and dairy products, seafood, eggs, beef, pork, lamb.",
+    "Fruits: citrus fruits, melon, cherries, grapes, dried fruits.",
+    "Drinks: alcohol, coffee, black tea.",
+    "Vegetables: tomatoes, eggplants, corn, potatoes.",
+    "Legumes: all legumes, including lentils, soy, and products made from them.",
+    "Sugar and all sugar-containing products, including honey and syrups.",
+    "Nuts and seeds."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "During the exclusion phase, the alarming symptoms should completely disappear. If this does not happen, the cause is most likely not in the food products, and you should consult a doctor or your individual irritant is not included in the list of excluded."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/07/coloured-sweet-peppers-toxic-chemicals-symbol-768x512-optimized.jpg",
+   "alt": "Biohacking Guide to Avoiding Food Toxins"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking Guide to Avoiding Food Toxins Blog 18 min read What Are Toxins, and How Do They Make Their Way Into Our Food Toxins are poisonous substances of biological origin produced by living organisms that harm other living systems. Toxins are widespread in nature and are produced by various microorganisms. Bacteria, fungi, plants, animals, and even some algae can produce toxins. For example, bee venom, […] [Read The Full Article](https://www.biohackers.world/blog/avoiding-food-toxins)"
+  },
+  {
+   "t": "h3",
+   "text": "Stage of returning products"
+  },
+  {
+   "t": "p",
+   "text": "In the second stage, products are returned to the diet one by one or as a whole group. Then, the symptoms are observed for 2-3 days: skin reactions, gastrointestinal reactions, joint pain, lethargy, headaches, insomnia, mood swings, etc."
+  },
+  {
+   "t": "p",
+   "text": "If no reactions are detected, you can assume these products are safe for the body and proceed to the next group."
+  },
+  {
+   "t": "p",
+   "text": "Some nutritionists recommend returning products for a day or two and, while observing symptoms, returning to a limited diet during the exclusion stage."
+  },
+  {
+   "t": "h2",
+   "text": "Elimination diet meal plan",
+   "id": "elimination-diet-meal-plan"
+  },
+  {
+   "t": "p",
+   "text": "Here is an example of the most straightforward and inexpensive three-day elimination diet food list."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/05/top-view-assortment-food-with-planner-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Day 1"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Breakfast: oatmeal on water, half a green apple, tea without sugar.",
+    "Lunch: vegetable soup of potatoes, carrots and cabbage, boiled chicken breast.",
+    "Dinner: stewed cabbage with chicken, boiled rice.",
+    "Snack: baked pear and some sunflower seeds."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Day 2"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Breakfast: buckwheat porridge on water, cucumber, herbal tea.",
+    "Lunch: zucchini and potato soup, boiled turkey.",
+    "Dinner: boiled potatoes with steamed carrots, broccoli, and tea.",
+    "Snack: a handful of peeled pumpkin seeds."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Day 3"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Breakfast: rice porridge on water, pear puree (homemade), tea.",
+    "Lunch: light vegetable soup (onions, carrots, potatoes) and a steamed chicken cutlet.",
+    "Dinner: stewed vegetables, boiled fish (e.g. pollock or hake).",
+    "Snack: baked apple."
+   ]
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "p",
+   "text": "This is an example of the most affordable menu. If finances allow, the diet can be made more varied. For example, add quinoa, baked salmon or pumpkin, almonds, avocado, fresh berries, lentils, chia seeds, coconut milk, cod, and sweet potato. Before adding any products to the diet, be sure to consult with your doctor."
+  },
+  {
+   "t": "h2",
+   "text": "Risks & Considerations of an Elimination Diet",
+   "id": "risks-considerations-of-an-elimination-diet"
+  },
+  {
+   "t": "p",
+   "text": "An elimination diet for breastfeeding should be introduced carefully so as not to harm the baby. Mom needs to exclude products that can cause allergies, but at the same time, maintain a balanced diet for herself and the baby."
+  },
+  {
+   "t": "p",
+   "text": "However, the method may still not suit everyone. The body’s reactions often depend on food, stress, infections, and individual characteristics. In addition, the diet itself can cause stress and anxiety, making symptoms worse. In some cases, it leads to nutrient deficiencies, especially if important food groups like dairy are excluded for long periods of time."
+  },
+  {
+   "t": "p",
+   "text": "An elimination diet is usually prescribed only by a doctor — an allergist, a gastroenterologist, or a nutritionist. The specialist makes the diet, monitors the body’s state, and analyzes the results. Independent use of the method is strictly not recommended."
+  },
+  {
+   "t": "h2",
+   "text": "Tips for a Successful Elimination Diet",
+   "id": "tips-for-a-successful-elimination-diet"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/05/world-health-day-celebration-with-nutritious-food-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "The diet is based on low-allergenic foods. You can eat lean meats, some fruits and vegetables, healthy vegetable oils, and gluten-free cereals. Allowed dishes are boiled, stewed, or baked."
+  },
+  {
+   "t": "h3",
+   "text": "List of allowed foods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cereals: buckwheat, rice, oatmeal (gluten-free).",
+    "Vegetables: zucchini, broccoli, potatoes, carrots, cauliflower, cucumbers.",
+    "Fruit: green apples, pears (fresh or cooked).",
+    "Meat: turkey, chicken breast (without skin), lean beef.",
+    "Lean fish: e.g., pollock or hake.",
+    "Fats: sunflower, olive, coconut oil and seeds.",
+    "Drinks: water, herbal tea, compote of dried fruits without sugar."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h3",
+   "text": "List of prohibited foods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Dairy products: milk, cheese, yogurt, kefir.",
+    "Gluten-containing products: wheat, rye, barley, oats.",
+    "Eggs.",
+    "Nuts, especially peanuts, and almonds.",
+    "Soy products: tofu, soy milk.",
+    "Citrus fruits.",
+    "Chocolate and cocoa.",
+    "Coffee and alcohol.",
+    "Refined sugars and artificial sweeteners.",
+    "Seafood: shrimp, oysters, clams.",
+    "Processed and prepared foods: fast food, sausages, convenience foods.",
+    "Spices containing flavorings and preservatives (e.g., ready-made seasoning mixes).",
+    "Allergies are individual things, so suspicions can fall on authorized products. In this case, they are also excluded."
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Habitual food is returned gradually and under the supervision of a doctor. Each product is introduced into the diet for 3-5 days, and the body’s reaction is closely monitored; sometimes, the response manifests after a few hours or days. The product is considered safe and left on the menu if there are no symptoms. Otherwise, it is excluded for the duration of treatment or permanently."
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "An elimination diet is a great way to identify foods you shouldn’t eat and redesign your diet to maximize health benefits. It allows you to be mindful of your food intake, improve your well-being, and avoid allergens. The idea behind an elimination diet is to eliminate foods that you think you don’t tolerate well. Then, you add them back into your diet one by one so you can see what exactly is causing your body’s negative reaction. The main rule is to avoid self-medication and consult a doctor. Take your time!"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is an Elimination Diet?",
+   "a": "An undesirable reaction to food sometimes does not appear immediately but several hours or days after consuming the product. Because of this, it can be challenging to understand the problem. An elimination diet solves this issue, giving doctors a clear system."
+  }
+ ]
+}

@@ -1,0 +1,540 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "The afternoon slump happens when digestion and body rhythms lower mental energy.",
+  "Poor sleep, dehydration, heavy meals and high sugar intake cause afternoon fatigue.",
+  "To stop energy crashes, add daylight exposure, movement and light breaks.",
+  "Long or late naps often make afternoon fatigue worse, not better."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What Is the Afternoon Slump?",
+   "id": "what-is-the-afternoon-slump"
+  },
+  {
+   "t": "p",
+   "text": "The afternoon slump (or postprandial sleepiness) is a natural feeling of fatigue, lethargy, and drowsiness that occurs in the afternoon, especially after eating, due to biological rhythms and digestive processes, when the body redistributes blood to the stomach and experiences hormonal changes that reduce blood flow to the brain, and carbohydrate foods can increase sleepiness."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/2-What-Is-the-Afternoon-Slump-1024x765-optimized.webp",
+   "alt": "What Is the Afternoon Slump"
+  },
+  {
+   "t": "h3",
+   "text": "What Causes the Afternoon Slump"
+  },
+  {
+   "t": "p",
+   "text": "Scientists are still debating the exact reason why we experience a decline in energy in the middle of the day. This is because there are actually several reasons, and they are all individual."
+  },
+  {
+   "t": "p",
+   "text": "In part, it may be related to how you sleep. It is how you sleep, not how many hours — the number of hours does not always affect the quality. If you regularly don’t get enough sleep or wake up frequently during the night, you are more likely to experience fatigue and lack of concentration in the afternoon."
+  },
+  {
+   "t": "p",
+   "text": "The second reason is caffeine addiction. It gives us a quick boost of energy by triggering a release of adrenaline and a subsequent sharp spike in blood sugar levels. But as soon as the effects of caffeine wear off, there is a sharp drop in both adrenaline and glucose, often accompanied by drowsiness."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "p",
+   "text": "Surprisingly, dehydration can also lead to drowsiness. How much water do you drink per day? If it is less than you should be drinking, it can lead to fatigue, as dehydration does. When the body does not have enough water to function normally, it forces the heart to work even harder to supply all vital organs with nutrients and oxygen."
+  },
+  {
+   "t": "p",
+   "text": "In addition, a lack of fluid affects brain activity. Water is necessary for the transmission of nerve impulses and for the synthesis of neurotransmitters involved in the excitation and inhibition of the nervous system. When there is not enough water, electrolyte concentration is disrupted, which negatively affects cognitive functions, including attention, memory, and concentration."
+  },
+  {
+   "t": "note",
+   "text": "Several studies have also shown that eating can increase feelings of sleepiness. Many people have experienced this firsthand, and there is even a popular saying: “A good meal calls for a good rest.” The problem may lie in both what you eat and how much you eat."
+  },
+  {
+   "t": "p",
+   "text": "If you eat too much, your body allocates a significant portion of its resources to digesting the excess food. More blood flows to the digestive organs, and the brain receives less oxygen and nutrients, temporarily weakening your consciousness and inducing a feeling of relaxation and a desire to rest."
+  },
+  {
+   "t": "p",
+   "text": "At the same time, certain foods can contribute to fatigue, such as those high in fat and carbohydrates. The mechanism is roughly the same: the body needs a lot of energy to digest all this, and simple carbohydrates also cause a rapid rise in blood sugar levels, which increases the risk of fatigue."
+  },
+  {
+   "t": "p",
+   "text": "Other causes include: nutrient deficiencies, especially iron; alcohol consumption (who started the morning with sparkling wine instead of coffee?);"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/outdoor-shot-thoughtful-sporty-young-woman-dressed-activewear-takes-break-after-sport-training-feels-thirsty-drinks-water-from-sport-bottle-sits-looks-away-pensively-uses-fitness-mat-768x512-optimized.jpg",
+   "alt": "Sober-Curious Biohacking"
+  },
+  {
+   "t": "p",
+   "text": "Sober-Curious Biohacking Blog 7 min read What Is the Sober Curious Lifestyle? A sober curious lifestyle is not just about abstaining from alcohol and drugs. It is a philosophy based on clarity of mind, support for physical health, and emotional balance. For biohackers, a sober lifestyle, as a conscious choice, is the key to not only physical but also mental well-being, […] [Read The Full Article](https://www.biohackers.world/blog/sober-curious-biohacking)"
+  },
+  {
+   "t": "p",
+   "text": "boredom and lack of motivation; hormonal changes in women; intense physical activity."
+  },
+  {
+   "t": "h3",
+   "text": "Signs You’re Experiencing an Afternoon Energy Crash"
+  },
+  {
+   "t": "p",
+   "text": "Signs of an afternoon crash include severe sleepiness, lethargy, and fatigue despite a good night’s sleep; decreased concentration and memory; difficulty thinking; irritability; mood swings; as well as muscle aches, headaches, and general malaise by lunchtime. An important indicator is that this condition does not resolve with rest and often interferes with work or daily activities."
+  },
+  {
+   "t": "h2",
+   "text": "Biohacks to Beat the Afternoon Slump",
+   "id": "biohacks-to-beat-the-afternoon-slump"
+  },
+  {
+   "t": "p",
+   "text": "What to do if you often feel sleepy in the afternoon and feel midday energy crash? First, introduce simple habits that benefit your health, and review your nutrition and daily routine."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/3-Biohacks-to-Beat-the-Afternoon-Slump-1024x765-optimized.webp",
+   "alt": "Biohacks to Beat the Afternoon Slump"
+  },
+  {
+   "t": "h3",
+   "text": "Get a Good Night’s Sleep"
+  },
+  {
+   "t": "p",
+   "text": "[Quality sleep](https://www.biohackers.world/blog/biohacking-sleep) plays a key role in regulating metabolism and hormone levels. During sleep, other important hormones are produced, such as melatonin and somatotropin, which help regulate metabolism and overall hormonal balance. During sleep, the body restores energy, repairs damaged cells and tissues, and boosts immunity."
+  },
+  {
+   "t": "p",
+   "text": "Healthy sleep supports full recovery after physical activity and enhances overall body performance. This is especially important for athletes and people with active lifestyles. When we sleep, our bodies boost immunity to help fight disease."
+  },
+  {
+   "t": "p",
+   "text": "Growth hormone, or somatotropin, is produced during sleep and is one of the key factors influencing the body’s recovery after physical exertion. It accelerates recovery and helps athletes achieve better results while preventing injuries. Studies show that people who get enough sleep remember information better and have sharper attention and concentration than those who sleep less."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/10/Best-Sleep-Gadgets-768x513-optimized.webp",
+   "alt": "13 Best Sleep Gadgets"
+  },
+  {
+   "t": "p",
+   "text": "13 Best Sleep Gadgets Blog 10 min read Blue-Light Blocking Glasses All the screens around us produce a specific light spectrum that prevents us from relaxing and puts additional strain on our eyes. According to a study published in the Journal of Adolescent Health, using these glasses two hours before bed improves sleep latency by 15-20%. A few hours before bed, it’s best […] [Read The Full Article](https://www.biohackers.world/blog/13-best-sleep-gadgets)"
+  },
+  {
+   "t": "h3",
+   "text": "Eat a Balanced Breakfast and Lunch"
+  },
+  {
+   "t": "p",
+   "text": "Eat light lunches and snack on fruit or berries for a quick energy boost. If you eat too much, your body will divert a significant portion of its resources to digesting the excess food. More blood will flow to your digestive organs, and your brain will receive less oxygen and nutrients, which will temporarily weaken your consciousness and create a feeling of relaxation and the desire to rest."
+  },
+  {
+   "t": "h3",
+   "text": "Drink Green Tea"
+  },
+  {
+   "t": "p",
+   "text": "Green tea contains caffeine and L-theanine, which improve concentration and alertness without overstimulating the nervous system. It’s an excellent choice for a midday drink. Just don’t drink coffee! Otherwise, it will lead to sleep deprivation and poor sleep quality, and your afternoon sleepiness will become chronic."
+  },
+  {
+   "t": "h3",
+   "text": "Get Daylight Exposure"
+  },
+  {
+   "t": "p",
+   "text": "Daylight lifts your mood and keeps your body in good shape. Leave your workplace for just 10 minutes and take a walk in the fresh air to make up for the lack of sunlight. Studies show that this really works."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
+  },
+  {
+   "t": "p",
+   "text": "Also, make sure your workplace is spacious and well-lit. This is essential for comfort, productivity, and health, especially for your eyes, so place your desk by a window (but without glare), use desk and ceiling lamps, choose light colors, and keep things tidy so that everything is within reach."
+  },
+  {
+   "t": "h3",
+   "text": "Stay Hydrated"
+  },
+  {
+   "t": "p",
+   "text": "Surprisingly, dehydration can also lead to sleepiness. How much water do you drink per day? If you’re drinking less than you should, it can lead to fatigue, as dehydration causes fatigue. When the body doesn’t have enough water to function normally, it forces the heart to work even harder to supply all vital organs with nutrients and oxygen."
+  },
+  {
+   "t": "p",
+   "text": "On top of that, a lack of fluids affects brain activity. Water is necessary for the transmission of nerve impulses and for the synthesis of neurotransmitters involved in the excitation and inhibition of the nervous system. When there is not enough water, electrolyte concentration is disrupted, which negatively affects cognitive functions, including attention, memory, and concentration."
+  },
+  {
+   "t": "p",
+   "text": "An adult man needs 3.7 liters of fluid per day, and a woman needs 2.7 liters."
+  },
+  {
+   "t": "h3",
+   "text": "Mindfulness Practices"
+  },
+  {
+   "t": "p",
+   "text": "Relaxation techniques such as [meditation](https://www.biohackers.world/blog/biohacking-meditation), [yoga](https://www.biohackers.world/blog/biohackers-guide-to-yoga), [deep breathing](https://www.biohackers.world/blog/breathwork-biohacking), and progressive muscle relaxation can [help reduce stress levels](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health) and promote sleep."
+  },
+  {
+   "t": "h3",
+   "text": "Move Your Body"
+  },
+  {
+   "t": "p",
+   "text": "Do some [light stretching](https://www.biohackers.world/blog/full-body-stretching-exersices) or a short workout. Regular physical activity can improve the quality of your sleep and keep your body in shape overall. However, try not to exercise right before bed to avoid stimulating your body."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/cover3-4-768x572-optimized.png",
+   "alt": "What Is Biohacking In Fitness"
+  },
+  {
+   "t": "p",
+   "text": "What Is Biohacking In Fitness Blog, Health & Wellness, Fitness & Recovery, Fitness 14 min read How Biohacking is Related to Fitness Fitness biohacking and sports in general is a powerful method that can improve many areas of your life. For example, it can: reduce your risk of developing a disease to which you may be genetically predisposed; improve physical health; reduce symptoms of depression; lower blood pressure; aid in weight […] [Read The Full Article](https://www.biohackers.world/blog/fitness-and-biohacking)"
+  },
+  {
+   "t": "h3",
+   "text": "Switch Tasks"
+  },
+  {
+   "t": "p",
+   "text": "To stay alert during the day and not to get tired in afternoons, switch tasks by taking short breaks with physical activity (walking, exercise), breathing exercises, or a change of scenery, and switch to creative, easy tasks after difficult ones to reboot your brain. Alternating mental and physical activities, using bright light, listening to upbeat music, and taking short naps help combat fatigue and improve concentration."
+  },
+  {
+   "t": "h3",
+   "text": "Use Standing or Walking Desks"
+  },
+  {
+   "t": "p",
+   "text": "A height-adjustable desk, or a desk with a lifting mechanism, lets you work while standing. But in addition to standing, these laptop desks also allow you to sit. This type of desk allows you to alternate between sitting and standing, reducing the risk of weight gain, obesity, and related health problems such as cardiovascular disease and diabetes."
+  },
+  {
+   "t": "p",
+   "text": "Standing desks have become a popular solution for those who want to avoid the adverse health effects of prolonged sitting. Using a height-adjustable desk offers several benefits, including improved blood circulation, enhanced mood, and more."
+  },
+  {
+   "t": "h3",
+   "text": "Take a Catnap"
+  },
+  {
+   "t": "p",
+   "text": "It is worth setting aside time for a nap if you:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "feel tired or sleepy;",
+    "will soon be deprived of regular sleep (e.g., due to a long work shift);",
+    "want to make a planned nap part of your daily routine."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "p",
+   "text": "To get the most out of your nap, follow these tips."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Keep it short. Aim for 10 to 30 minutes. The longer your nap, the more likely you are to feel sleepy after waking up.",
+    "Nap in the afternoon. The best time to nap is between 2 and 3 p.m. At this time, you are most likely to experience normal post-lunch sleepiness or decreased alertness. In addition, napping during these hours will have the least impact on your sleep at night. However, keep in mind that individual factors — such as your sleep needs or daily routine — can also help determine the most appropriate time for a nap in your particular case.",
+    "Create a calm environment. Sleep in a quiet, darkened place, at a comfortable temperature, and with minimal distractions."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "After your nap, give yourself time to fully wake up before returning to active pursuits, especially those that require quick or sharp reactions."
+  },
+  {
+   "t": "h2",
+   "text": "Supplements to Get Through Afternoon Slump",
+   "id": "supplements-to-get-through-afternoon-slump"
+  },
+  {
+   "t": "p",
+   "text": "If you constantly feel sleepy and lack the energy to perform even simple tasks or everyday chores, you should not ignore the situation. The best solution would be to consult a doctor, who may recommend lifestyle changes and special supplements. We offer you a range of basic supplements to boost your energy and normalize your biorhythms."
+  },
+  {
+   "t": "h3",
+   "text": "Vitamin A (retinol)"
+  },
+  {
+   "t": "p",
+   "text": "This antioxidant has a rejuvenating effect, regenerating and accelerating metabolic processes. It strengthens bone tissue, improves visual acuity, supports the nervous system, and actively fights infections. It is especially important during heavy physical exertion or work that requires maximum eye strain."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/4-Vitamin-A-Retinol-1024x765-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "B1 (thiamine)"
+  },
+  {
+   "t": "p",
+   "text": "Plays one of the key roles in brain function:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "improves memory;",
+    "slows down the aging process of cells;",
+    "improves blood circulation;",
+    "saturates with oxygen and nutrients."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/5-B1-Thiamine-1024x765-optimized.webp",
+   "alt": "B1 (Thiamine)"
+  },
+  {
+   "t": "p",
+   "text": "Thiamine has a beneficial effect on the central nervous system. It improves metabolic processes throughout the body at the cellular level."
+  },
+  {
+   "t": "h3",
+   "text": "B2 (riboflavin)"
+  },
+  {
+   "t": "p",
+   "text": "Participates in the formation of blood and hormones. Improves nervous system function, strengthens the immune system, and increases visual acuity. Improves digestive processes and normalizes metabolic processes. Neutralizes the effects of toxins in the body."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/6-B2-Riboflavin-1024x765-optimized.webp",
+   "alt": "B2 (Riboflavin)"
+  },
+  {
+   "t": "h3",
+   "text": "B3 (niacin)"
+  },
+  {
+   "t": "p",
+   "text": "Promotes the breakdown of proteins, fats, and carbohydrates, releasing energy from food. Saturates cells with oxygen and has a vasodilatory effect, which benefits brain activity. Has a sedative effect and increases concentration."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/7-B3-Niacin-1024x765-optimized.webp",
+   "alt": "B3 (Niacin)"
+  },
+  {
+   "t": "h3",
+   "text": "B9 (folic acid)"
+  },
+  {
+   "t": "p",
+   "text": "Prevents the formation of atherosclerotic plaques, normalizes liver function, removes toxins, and regulates norepinephrine and serotonin levels. Participates in blood formation and cell division. Supports the functions of the central nervous system and prevents anemia."
+  },
+  {
+   "t": "h3",
+   "text": "B12 (cyanocobalamin)"
+  },
+  {
+   "t": "p",
+   "text": "Normalizes the functioning of the central and peripheral nervous systems, accelerates lipid metabolism, lowers cholesterol levels, improves coordination, and stimulates energy. Reduces irritability and anxiety, and normalizes sleep."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/9-B12-Cyanocobalamin-1024x765-optimized.webp",
+   "alt": "B12 (Cyanocobalamin)"
+  },
+  {
+   "t": "h3",
+   "text": "Vitamin C (ascorbic acid)"
+  },
+  {
+   "t": "p",
+   "text": "Activates the body’s defenses against adverse environmental conditions, infections, and other diseases. It is an antioxidant that promotes the elimination of toxins and drug breakdown products. It also promotes the production of norepinephrine, which improves mood."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/10-Vitamin-C-Ascorbic-Acid-1024x765-optimized.webp",
+   "alt": "Vitamin C (Ascorbic Acid)"
+  },
+  {
+   "t": "h3",
+   "text": "Iron"
+  },
+  {
+   "t": "p",
+   "text": "Responsible for the production of hemoglobin in red blood cells, which carries oxygen throughout the body. It is important for those who are tired or feel physically weak to get enough iron. A deficiency causes difficulty concentrating and a decrease in the body’s protective functions."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/11-Iron-1024x765-optimized.webp",
+   "alt": "Iron"
+  },
+  {
+   "t": "h3",
+   "text": "Magnesium"
+  },
+  {
+   "t": "p",
+   "text": "Regulates muscle and nerve function. It is an electrolyte, like potassium, sodium, calcium, and chloride. It facilitates communication between tissues and organs in the body. Common symptoms of magnesium deficiency are muscle spasms and weakness."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/01/12-Magnesium-1024x765-optimized.webp",
+   "alt": "Magnesium"
+  },
+  {
+   "t": "h2",
+   "text": "What Makes Afternoon Lethargy Worse",
+   "id": "what-makes-afternoon-lethargy-worse"
+  },
+  {
+   "t": "p",
+   "text": "Afternoon lethargy, a natural dip in energy from our circadian rhythms, worsens due to certain factors. Lifestyle choices and underlying issues significantly amplify this mid-day slump, making it more than just a natural phenomenon."
+  },
+  {
+   "t": "h3",
+   "text": "Foods to Avoid Afternoon Slump"
+  },
+  {
+   "t": "p",
+   "text": "To avoid afternoon fatigue, avoid fast carbs (sweets, pastries), fatty and fried foods (fast food), and excess simple sugars and alcohol, as they cause sharp spikes in blood sugar and require a lot of energy to digest, leading to drowsiness. Dairy products, nuts, and legumes can also cause fatigue in some people due to individual sensitivity."
+  },
+  {
+   "t": "h3",
+   "text": "Caffeine after 12 p.m."
+  },
+  {
+   "t": "p",
+   "text": "To avoid afternoon sleepiness and fatigue, many people prefer to drink a cup of coffee immediately after a meal. At first glance, this helps perk you up and get back into work mode, but in reality, it isn’t ideal for your health."
+  },
+  {
+   "t": "p",
+   "text": "Although coffee gives us a caffeine boost after a meal, you should think twice, as drinking coffee afterward can interfere with nutrient absorption. The tannin in coffee inhibits the absorption of iron in the stomach. It binds iron from non-animal sources, such as fruits and vegetables, so that it is excreted from the body without being used."
+  },
+  {
+   "t": "note",
+   "text": "Therefore, people who are already iron-deficient or prone to iron deficiency should not drink coffee after meals."
+  },
+  {
+   "t": "h3",
+   "text": "Long Midday Naps"
+  },
+  {
+   "t": "p",
+   "text": "According to a study conducted in Switzerland, only occasional midday naps — once or twice a week, rather than every day — are beneficial for heart health. The analysis shows that it is precisely this type of sleep, episodic rather than daily, that significantly reduces the risk of cardiovascular disease, explains Professor Hans-Joachim Trappe, MD, director of the cardiology department at Marienherne Hospital at the University Clinic of the Ruhr University in Bochum."
+  },
+  {
+   "t": "p",
+   "text": "Twenty to thirty minutes is enough to avoid falling into deep sleep and feeling more tired after waking up than before. If you have trouble sleeping at night, you should avoid napping in the afternoon."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h3",
+   "text": "Relying on Quick Dopamine"
+  },
+  {
+   "t": "p",
+   "text": "Relying on quick dopamine hits for activity, often from instant gratification (social media, junk food, gaming), drives motivation but can lead to addiction, poor focus, and difficulty with less stimulating, essential tasks, creating a cycle where you need more intense rewards for the same effect."
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "Afternoon lethargy worsens due to a combination of your natural circadian dip, poor sleep, dehydration, stress, and especially heavy meals rich in refined carbs and sugar, which cause blood sugar spikes and crashes, leaving you more tired and sluggish. Inconsistent sleep schedules, lack of exercise, screen fatigue, and underlying conditions such as sleep apnea or anemia also amplify the midday slump."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What Is the Afternoon Slump?",
+   "a": "The afternoon slump (or postprandial sleepiness) is a natural feeling of fatigue, lethargy, and drowsiness that occurs in the afternoon, especially after eating, due to biological rhythms and digestive processes, when the body redistributes blood to the stomach and experiences hormonal changes that reduce blood flow to the brain, and carbohydrate foods can increase sleepiness."
+  }
+ ]
+}

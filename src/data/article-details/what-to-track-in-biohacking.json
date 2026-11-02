@@ -1,0 +1,440 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "For sleep quality you need to track sleep duration, stages and efficiency.",
+  "In fitness biohacking most often measured metrics are: step count, active minutes and VO2 max.",
+  "Heart health is reflected in heart rate, HRV, blood oxygen levels (SpO₂), recovery and readiness score.",
+  "Advanced health enthusiasts also track EEG brain waves and reaction time to monitor brain activity."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "Sleep Metrics to Track",
+   "id": "sleep-metrics-to-track"
+  },
+  {
+   "t": "p",
+   "text": "[Sleep](https://www.biohackers.world/blog/biohacking-sleep) is fundamental to our health tracking. Without enough, the body not only fails to recover, but also destroys itself from within. We begin to age faster, gain excess weight, and are generally unable to live a full life. But oversleeping also doesn’t solve the problem."
+  },
+  {
+   "t": "p",
+   "text": "Special sleep trackers can help you understand your individual schedule and [improve your circadian rhythms](https://www.biohackers.world/blog/biohacking-your-circadian-rhythm)."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/04/Sleep-Metrics-to-Track-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Sleep Duration"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: total amount of sleep time per night.",
+    "How it is measured: using sleep trackers, watches or rings that record movement and heart rate.",
+    "How it is interpreted: the norm is 7-9 hours. Lack of sleep reduces cognitive function and recovery.",
+    "To improve these biometric tracking you need: a stable mode, reduced screen time, a dark room."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Sleep Stages"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: different phases of sleep, from early to deep.How it is measured: based on pulse, breathing and body movements.",
+    "How it is interpreted: getting enough deep and REM sleep is important. A lack of it impacts memory and recovery.",
+    "To improve this personal data tracking, it is worth reducing stress and establishing a sleep schedule."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/04/How-to-Recover-from-Sleep-Debt-and-Establish-a-Sleep-Rhyth-768x508-optimized.jpg",
+   "alt": "How to Recover From Lack of Sleep ​"
+  },
+  {
+   "t": "p",
+   "text": "How to Recover From Lack of Sleep ​ Blog 14 min read What Is Sleep Debt? Sleep deprivation occurs when a person does not get enough sleep to meet their body’s needs. It can result from a variety of factors, including lifestyle choices, medical conditions, or environmental influences. The National Sleep Foundation (NSF) recommends that adults aim for 7-9 hours of sleep per night, while children and […] [Read The Full Article](https://www.biohackers.world/blog/how-to-recover-from-lack-of-sleep)"
+  },
+  {
+   "t": "h3",
+   "text": "Sleep Efficiency"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: percentage of time spent sleeping versus time in bed.How it is measured: trackers analyze the time you fall asleep and wake up.How it is interpreted: the norm is above 85%. A low level indicates frequent awakenings.",
+    "Improvement: pre-bed rituals such as aromatherapy or a light massage. Avoiding gadgets an hour before bed can also help."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Sleep Consistency"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: regularity of sleep and wake-up times.",
+    "How it is measured: analysis of data over several days/weeks.",
+    "How it is interpreted: stability improves circadian rhythms."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Movement and Fitness Metrics",
+   "id": "movement-and-fitness-metrics"
+  },
+  {
+   "t": "p",
+   "text": "Sometimes we don’t realize how much energy we actually burn during our workouts. The same goes for calories. To ensure your workouts are truly beneficial, it’s important to track your fitness data. This will allow you to not only understand your body’s individual characteristics but also improve your performance."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/04/Movement-and-Fitness-Metrics-2-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Step Count"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: the total number of steps a person takes per day. This is a basic indicator of daily activity.",
+    "How it is measured: using accelerometers built into smart watches, phones, or fitness trackers that record body movement.",
+    "How it is interpreted: the average daily step count is considered normal, with 7,000-10,000 steps. Lower numbers may indicate a sedentary lifestyle. Increasing step count is associated with improved heart function, weight loss, and increased overall fitness. This can be improved through regular walks and increased daily activity."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/cover3-4-768x572-optimized.png",
+   "alt": "What Is Biohacking In Fitness"
+  },
+  {
+   "t": "p",
+   "text": "What Is Biohacking In Fitness Blog, Health & Wellness, Fitness & Recovery, Fitness 14 min read How Biohacking is Related to Fitness Fitness biohacking and sports in general is a powerful method that can improve many areas of your life. For example, it can: reduce your risk of developing a disease to which you may be genetically predisposed; improve physical health; reduce symptoms of depression; lower blood pressure; aid in weight […] [Read The Full Article](https://www.biohackers.world/blog/fitness-and-biohacking)"
+  },
+  {
+   "t": "h3",
+   "text": "Active Minutes"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: the amount of time spent in moderate to vigorous physical activity. This is a measure of the intensity of movement, not just its quantity.",
+    "How it is measured: recreators analyze your heart rate and activity level to determine when your workload exceeds your baseline.",
+    "How it is interpreted: the recommended daily intake is at least 150 minutes of moderate activity per week. Insufficient active minutes is associated with an increased risk of cardiovascular disease. Improvement can be achieved through regular exercise, cardio, and an active lifestyle."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Active Energy (kcal)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: the number of calories burned during the day through physical activity.",
+    "How it is measured: calculated based on the user’s heart rate, activity level, weight, height and age.",
+    "How it is interpreted: this indicator helps understand the body’s overall energy balance. It’s especially useful for weight management and assessing the effectiveness of exercise. However, it’s important to keep in mind that these figures are approximate and should be used as a guideline rather than a precise value."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "VO₂ Max"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: the maximum amount of oxygen that the body can use during intense physical activity.",
+    "How it is measured: it’s assessed based on the cardiovascular system’s response to exercise, typically through heart rate analysis during exercise.",
+    "How it is interpreted: a high VO₂ max indicates good endurance and heart health. A low value may indicate poor physical fitness. It can be improved through regular cardio training, interval training, and gradually increasing intensity."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Cardiovascular Metrics",
+   "id": "cardiovascular-metrics"
+  },
+  {
+   "t": "p",
+   "text": "One of the most important biomarkers is the cardiovascular system. These health metrics to track help you figure out the overall health of your body. This makes it much easier to identify what causes you excess stress and what activities actually improve your health. This approach can also help you track and predict cardiovascular pathologies."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/04/Cardiovascular-Metrics-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Heart Rate (HR)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: heart rate at rest, activity and stress.",
+    "How it is measured: using optical sensors that record changes in blood flow through the skin.",
+    "How it is interpreted: normal resting heart rate is approximately 60-80 beats per minute."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Lower values ​​are often found in trained individuals. An elevated heart rate may indicate stress, fatigue, or overexertion. This can be improved through regular exercise, sleep, and stress reduction. It is also important to monitor subjective indicators:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "energy level",
+    "mood",
+    "general well-being",
+    "productivity",
+    "stress level",
+    "concentration",
+    "quality of restoration"
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/03/Proven-Biohacks-for-Energy-768x512-optimized.jpg",
+   "alt": "Proven Biohacks for Energy"
+  },
+  {
+   "t": "p",
+   "text": "Proven Biohacks for Energy Blog 10 min read Simple Biohacks to Boost Energy Sleep Regimen Sleep mode is the basic method to boost energy levels, ensuring ATP recovery, hormonal balance (melatonin, somatotropin), and brain detoxification. Optimizing sleep (7-9 hours, falling asleep between 10 and 11 p.m.) improves cognitive function, stress resistance, and physical performance, preventing chronic fatigue. As technology becomes increasingly useful for […] [Read The Full Article](https://www.biohackers.world/blog/proven-biohacks-for-energy)"
+  },
+  {
+   "t": "h3",
+   "text": "Heart Rate Variability (HRV)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: variability of intervals between heartbeats, reflecting the functioning of the nervous system.",
+    "How it is measured: the time intervals between heart contractions are analyzed.",
+    "How it is interpreted: a high HRV indicates good recovery and adaptability. A low value may indicate stress, overwork, or lack of sleep. Improved biomarker tracking can be achieved through recovery, [meditation](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health), sleep, and [stress reduction](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health)."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Blood Oxygen (SpO₂)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: blood oxygen saturation level.",
+    "How it is measured: using sensors that analyze the light absorption of blood.",
+    "How it is interpreted: a level of 95-100% is considered normal. Lower values ​​may indicate problems with breathing, recovery, or sleep quality. Improvement is possible through breathing exercises and improved physical fitness."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Recovery Score"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: a comprehensive indicator of the body’s recovery.",
+    "How it is measured: based on sleep analysis, HRV, heart rate and activity level.",
+    "How it is interpreted: a high reading indicates the body’s readiness for exercise. A low reading indicates the need for rest and recovery. This reading helps plan workouts appropriately and avoid overtraining."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h3",
+   "text": "Readiness Score"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: general readiness of the body for physical and mental activity.",
+    "How it is measured: based on a set of data: sleep, pulse, HRV, activity.",
+    "How it is interpreted: used for planning your day. A high reading means you can increase your workload; a low reading means it’s better to focus on recovery."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Brain Activity Tracking",
+   "id": "brain-activity-tracking"
+  },
+  {
+   "t": "p",
+   "text": "If you want to develop your creativity and understand how your daily actions influence it, try tracking your brain activity. This is essentially a whole new level of [biohacking your brain](https://www.biohackers.world/blog/how-to-biohack-brain-health), as this data can completely change and improve your routine. You can analyze what affects your concentration, how stress occurs, and increase your productivity, both physical and cognitive."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/04/Brain-Activity-Tracking-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "EEG Brain Waves"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: electrical activity of the brain and types of brain waves (alpha, beta, theta and others).",
+    "How it is measured: will do special headbands that read brain signals through the scalp.",
+    "How it is interpreted: different wave patterns correspond to different states: concentration, relaxation, sleep. Analysis allows us to understand the brain’s current state and learn to control it through meditation and focus practices."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Reaction Time"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "What is measured: speed of reaction to external stimuli.",
+    "How it is measured: through cognitive tests in applications or special programs.",
+    "How it is interpreted: a quick reaction indicates a healthy nervous system and high concentration. A slow reaction may be a sign of fatigue, stress, or lack of sleep. Improvement is achieved through sleep, rest, and attention training."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Subjective Metrics Biohackers Track",
+   "id": "subjective-metrics-biohackers-track"
+  },
+  {
+   "t": "p",
+   "text": "In the digital age, we’ve become accustomed to relying on gadgets, but we shouldn’t place complete responsibility on them. Subjective indicators are those we track without additional sensors. That is, they reflect how you feel, independent of the data. Why is it important to pay attention to this data? Because sometimes, even with adequate sleep, [good nutrition](https://www.biohackers.world/blog/biohacking-diet), and regular exercise, you may feel underweight. And sometimes, your heart rate may be higher than average at rest, but you’ll still feel fine; this is simply an individual characteristic.They help complement the main results and provide a more complete picture. Regularly recording these parameters allows us to identify patterns and more accurately adjust our lifestyle. These metrics include:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "energy level,",
+    "mood,",
+    "motivation,",
+    "feeling of sleep quality,",
+    "productivity,",
+    "anxiety level,",
+    "how do you feel physically,",
+    "ability to concentrate."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/04/10-Biohacking-Motivation-Tips-768x512-optimized.jpg",
+   "alt": "How to Stay Motivated​"
+  },
+  {
+   "t": "p",
+   "text": "How to Stay Motivated​ Blog 10 min read Biohack Your Morning Routine Morning isn’t just the start of the day; it’s when the entire body’s rhythm is established: from energy levels to concentration and decision-making. In biohacking, morning rituals aren’t built on “magic habits,” but on an understanding of how hormones, neurotransmitters, and circadian rhythms work. The main goal isn’t to force yourself […] [Read The Full Article](https://www.biohackers.world/blog/how-to-stay-motivated)"
+  },
+  {
+   "t": "h2",
+   "text": "Most Effective Tracking Devices",
+   "id": "most-effective-tracking-devices"
+  },
+  {
+   "t": "p",
+   "text": "If you don’t want to wear thousands of trackers, you can opt for the most popular and multitasking ones. It’s also important that gadgets provide accurate data, as you’ll use it to improve your routine. For example, you might consider smartwatches such as[Apple](https://www.amazon.co.uk/dp/B0CXJ7DY7D?asc_campaign=5e29b90b0cdf9300086f8e7a&asc_refurl=https%3A%2F%2Fwww.wired.com%2Fgallery%2Fbest-smartwatches%2F&asc_source=verso&ascsubtag=5e29b90b0cdf9300086f8e7a&linkCode=gg4&tag=w050b-20&th=1)or[Google](https://www.amazon.co.uk/dp/B0D912YVPQ?asc_campaign=5e29b90b0cdf9300086f8e7a&asc_refurl=https%3A%2F%2Fwww.wired.com%2Fgallery%2Fbest-smartwatches%2F&asc_source=verso&ascsubtag=5e29b90b0cdf9300086f8e7a&linkCode=gg4&tag=w050b-20&th=1)ones. They help track multiple metrics and are fairly accurate. Rings, such as[Oura](https://www.johnlewis.com/oura-ring-4-health-fitness-tracker-smart-ring-black/p112664179)or[Samsung Galaxy Ring](https://www.johnlewis.com/samsung-galaxy-ring-health-fitness-tracker-smart-ring-with-galaxy-ai/p112238293)focusing on recovery and sleep quality. Also, if you meditate a lot or want to do it more often, try a headband like[Snoozeband](https://www.snoozeband.co.uk/?gad_source=1&gad_campaignid=18138490246&gbraid=0AAAAABJBFims76wPn10JPQKTSVk6RUHEM&gclid=CjwKCAjwqazPBhALEiwAOuXqdIHcQYCtujqUYDMWFScajplCwh50X8hsbYOBDAUSJr9XvIsuA0TU3xoCp5sQAvD_BwE)or[Muse](https://choosemuse.com/?srsltid=AfmBOoo9SKZ0VXYmLWKlyPPDJEu2qLMcQ1eX4NfB2wBeWj-ZmYavo10o). They track and analyze brain activity both during meditation and throughout the day."
+  },
+  {
+   "t": "h2",
+   "text": "Limitations and Pitfalls",
+   "id": "limitations-and-pitfalls"
+  },
+  {
+   "t": "p",
+   "text": "As useful as tracking your biomarkers and health status can be, it’s important to remember their limitations. Even the most accurate devices can have issues and be inaccurate. Let’s have a look on the most common issues you could have:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Medical point of view. It’s important to understand that self-tracking for biohackers should come together with a doctor’s consultation. You could be misinterpreting your data, so it’s always best to double-check with an experienced professional.",
+    "Individual differences. Many devices are also designed for a specific standard of the average body. Most often, studies and metrics were conducted on adult men, so women, for example, may have different indicators simply physiologically.",
+    "Biohacking self-experimentation. Listen to your inner feelings. This is important to remember when making further lifestyle changes if you rely on tracking data.",
+    "Don’t overly focus on the results. Sometimes we get too fixated on numbers and end up losing effectiveness due to anxiety. Constantly monitoring data can create a false sense of control. But it’s impossible to completely control your body. It consists of hormones, your psyche, and it faces external stress every day. Therefore, don’t place too much hope in trackers or take them as the final truth. Always rely on your own feelings."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
+  },
+  {
+   "t": "h2",
+   "text": "How to Effectively Use Trackers in Biohacking",
+   "id": "how-to-effectively-use-trackers-in-biohacking"
+  },
+  {
+   "t": "p",
+   "text": "For [trackers](https://www.biohackers.world/blog/best-biohacking-fitness-trackers) to be beneficial, it’s important to use them mindfully. Lets find out what could be useful for optimization tracking:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Set specific goals. For example you want to improve your sleep or lose some weight. If you have a goal to achieve it would be much easier to keep going.",
+    "Measuring. It’s also important to control biohacking performance metrics. Without constant tracking, you won’t be able to get a complete picture of what’s going on, so try to pay attention to this.",
+    "Don’t rely solely on numbers but consider your own feelings. Sometimes our own body knows better, so stay in contact with yourself and do not hyperfixate on tracking.",
+    "Don’t be scared to change the strategy. Adjust your daily routine based on your new data. It’s important not only to track them but also to change your habits."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "In this article we have covered the key self-tracking for biohackers and digital biomarkers, which help us better understand our body’s health. Lifestyle tracking for optimization of your routine could be efficient for day to day. We examined metrics for sleep, physical activity, cardiovascular health, and brain function, and learned how to interpret and apply them. The key result is the understanding that data can be a tool for improving quality of life if used correctly."
+  },
+  {
+   "t": "p",
+   "text": "To get maximum benefit, follow these simple biohacking tracking guide:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "Maintain a stable sleep pattern and its quality.",
+    "Maintain regular physical activity.",
+    "Analyze indicators dynamically, not one-time.",
+    "Consider subjective feelings along with the numbers.",
+    "Don’t overload yourself with data, focus on the main thing.",
+    "Use trackers as a tool, not as the sole source of truth.",
+    "Make regular lifestyle adjustments based on the information you receive."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": []
+}

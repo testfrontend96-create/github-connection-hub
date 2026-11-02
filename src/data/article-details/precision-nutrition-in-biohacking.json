@@ -1,0 +1,270 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Co-Founder & COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2024/06/Olia-Chernova-1-150x150-optimized.png"
+ },
+ "intro": "",
+ "highlights": [
+  "Precision nutrition adapts your diet to genetics, metabolism, lifestyle and real biomarkers.",
+  "The same food can trigger very different glucose responses in different people.",
+  "Personalized calorie and macronutrient ranges replace one-size-fits-all diets.",
+  "Supplements should be selected based on lab results, not trends or social media.",
+  "Certified nutrition specialists help avoid mistakes and track real progress."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What is Precision Nutrition",
+   "id": "what-is-precision-nutrition"
+  },
+  {
+   "t": "p",
+   "text": "Before delving deeper into the world of targeted nutrition, consider how it differs from most diets. Let’s start with the basics: the definition of precision nutrition, the main difference between this format, and its advantages."
+  },
+  {
+   "t": "h3",
+   "text": "Precision Nutrition vs Traditional Dieting"
+  },
+  {
+   "t": "p",
+   "text": "Classic diets are usually designed for the masses and therefore dips in them may not suit you specifically. It’s basically the same as if everyone wore the same colour because someone said it was the right one or the same shoe size. We are all different, and the same goes for our stomachs. Also, they may not fit your goals. The data-driven nutrition could be a smooth transition for the new biohacking routine. Often, [diets](https://www.biohackers.world/blog/biohacking-diet) are aimed at weight loss, and you need to gain weight. They also do not take individual food preferences into account and rarely offer options to change the table."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/woman-holding-green-detox-smoothie-using-nutrition-app-smartphone-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Benefits of Precision Nutrition"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "Optimising your metabolism. The analyses show how your body assimilates fats, proteins, and carbohydrates.",
+    "Reduced inflammation. Exclusion of foods that increase cytokine levels, for example, in gluten-sensitive people.",
+    "Improvement of energy and sleep. Balance of macronutrients under the level of cortisol and glucose.",
+    "Such an approach helps with [muscle gain](https://www.biohackers.world/blog/how-to-strengthen-muscle-growth-using-biohacking-methods), as you don’t need to struggle and can control your weight without stress. Individual calorie ranges instead of a universal 1200 kcal.",
+    "Disease prevention. MTHFR, APOE, and FTO gene tests help assess the risk of diabetes, atherosclerosis, and depression.",
+    "Microbiological balance. Strengthening beneficial bacteria and suppressing inflammatory strains.",
+    "Improved cognitive clarity. Elimination of B, D, iron, and omega-3 vitamin deficiencies."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "How to Evaluate Personal Precision Nutrition Needs",
+   "id": "how-to-evaluate-personal-precision-nutrition-needs"
+  },
+  {
+   "t": "p",
+   "text": "To get the most efficiency from this nutrition approach, it is important to understand all the features of your body. Here are the main indicators to use for accurate results."
+  },
+  {
+   "t": "h3",
+   "text": "DNA Testing"
+  },
+  {
+   "t": "p",
+   "text": "[Genetic tests](https://www.biohackers.world/blog/top-rated-dna-tests) will help determine the sensitivity to certain products and may even prevent inflammation. They will also be able to show the level of antioxidant protection. For example, the CYP1A2 gene will help you understand your caffeine metabolism. People with rapid metabolism may drink a few cups of coffee without affecting their health, while those with slow metabolism may increase their risk of hypertension. And this is just one example of how you can use genetics to develop your own food."
+  },
+  {
+   "t": "h3",
+   "text": "Blood & Glucose Testing"
+  },
+  {
+   "t": "p",
+   "text": "The most conscious way to regulate your diet is by taking regular blood and sugar tests. It depends on them which foods to abstain from. For example, in the case of insulin resistance, the diet should include foods that do not sharply raise insulin levels in the blood and rely on those that do not. CGM (continuous glucose monitoring, such as Levels or Freestyle Libre) shows how specific products affect your glucose response."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "p",
+   "text": "The Weizmann Institute’s 2015 research showed that different people use the same product to cause completely different glucose spikes."
+  },
+  {
+   "t": "h3",
+   "text": "Microbiome Testing"
+  },
+  {
+   "t": "p",
+   "text": "The bacteria in our bodies play an important role. They create a unique microbe that not only helps us digest food but can also improve many processes, including metabolism. Tests such as Viome, Zoe, and DayTwo analyse intestinal bacteria and help to understand which products cause inflammation. They also determine what will help maintain its balance. According to a 2020 study in Nature Medicine, microorganisms directly affect blood sugar levels, mood, and even the effectiveness of vitamins."
+  },
+  {
+   "t": "h3",
+   "text": "Metabolic Rate"
+  },
+  {
+   "t": "p",
+   "text": "The metabolism depends on your appearance and how quickly your body burns kilocalories, converting them into energy. To measure this factor, you can use a special Lumen meter or the laboratory test Resting Metabolic Rate. Metabolism is also a key to your [weight management routine](https://www.biohackers.world/blog/biohacking-for-weight-loss). So you can understand the correct amount of food consumed."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/07/coloured-sweet-peppers-toxic-chemicals-symbol-768x512-optimized.jpg",
+   "alt": "Biohacking Guide to Avoiding Food Toxins"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking Guide to Avoiding Food Toxins Blog 18 min read What Are Toxins, and How Do They Make Their Way Into Our Food Toxins are poisonous substances of biological origin produced by living organisms that harm other living systems. Toxins are widespread in nature and are produced by various microorganisms. Bacteria, fungi, plants, animals, and even some algae can produce toxins. For example, bee venom, […] [Read The Full Article](https://www.biohackers.world/blog/avoiding-food-toxins)"
+  },
+  {
+   "t": "h3",
+   "text": "Precision Nutrition Supplements"
+  },
+  {
+   "t": "p",
+   "text": "Vitamins and other supplements are also important to select according to need. Now attention to many of them has increased, but it is not worth ordering everything in a row. For example, if many people talk about reduced ferritin and iron coating, that does not mean you need it. It is very important to approach this question scientifically. For example:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "for MTHFR mutation – active form of folate 5-MTHF;",
+    "low ferritin – iron and vitamin C;",
+    "at low D3 – 2000-5000 IU per day and under the doctor’s supervision."
+   ]
+  },
+  {
+   "t": "note",
+   "text": "According to the NIH Dietary Guidelines, any BADs should be used with laboratory performance in mind."
+  },
+  {
+   "t": "p",
+   "text": "Also, you can have a look at precision nutrition superfoods such as fatty fish, avocado, coconut, and olive oil. These are full of nutrients you can get without a prescription."
+  },
+  {
+   "t": "h2",
+   "text": "How to Biohack Precision Nutrition",
+   "id": "how-to-biohack-precision-nutrition"
+  },
+  {
+   "t": "p",
+   "text": "Perhaps, after all the bits we discovered, such a nutrition system seems too complicated to you. It requires too much expense to implement. But the advantage is that you can adjust it to yourself and practice portion control and precision nutrition, which will work unconsciously. Let’s check a few target diets that could work with such a system."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/healthy-menu-recipe-food-diet-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Intermittent Fasting"
+  },
+  {
+   "t": "p",
+   "text": "[Interval fasting](https://www.biohackers.world/blog/intermittent-fasting) is one of the popular forms of [biohacking](https://www.biohackers.world/blog/what-is-biohacking). This approach to nutrition is built around circadian rhythms. So you have a symbolic window for feeding, which is a specific number of days. CGM tests show that different people, for each person, this time can be different, and if you want to try this way of eating, it is worth focusing on your feelings. There are several ways to introduce interval fasting into your routine. It is better to start with 12:12 or 14:10, rather than extreme schemes without a doctor’s control."
+  },
+  {
+   "t": "h3",
+   "text": "Elimination Diet"
+  },
+  {
+   "t": "p",
+   "text": "This diet has a strategy for identifying trigger products. Every week, a product such as gluten, dairy, eggs, or sugar is removed. So you understand which foods your body feels best with and which ones should be excluded. The result of a precision nutrition [elimination diet](https://www.biohackers.world/blog/elimination-diet-guide) is usually a decrease in vitality and an improvement in sleep. Suitable for those who face head fog or have problems with concentration and anxiety, as you are essentially working to improve the microbiome through such a diet and reconfigure it. It is this balance of bacteria that plays a role in many important processes in our body."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
+  },
+  {
+   "t": "h3",
+   "text": "Precision Nutrition Keto"
+  },
+  {
+   "t": "p",
+   "text": "Usually, the diet is aimed at helping the organism transition into a state of ketosis. Often, people think this format is not for them because of the high amount of fatty foods in the diet, but this is not quite true. If we consider such a diet in the Precision system, we are talking about controlling ketones, lipids, and micronutrients through analysis. While such a diet is quite popular and effective, it should be monitored by a specialist and conducted only after a basic examination."
+  },
+  {
+   "t": "h2",
+   "text": "Precision Nutrition Coaching",
+   "id": "precision-nutrition-coaching"
+  },
+  {
+   "t": "p",
+   "text": "Understanding all the subtleties of this diet is difficult, especially at the beginning of the journey. For this, you can help specialists who are not in their first year of nutrition."
+  },
+  {
+   "t": "note",
+   "text": "Certified specialists such as Precision Nutrition Level 1/2, ISSN, and NASM help decipher the tests, compile the diet, and track the dynamics."
+  },
+  {
+   "t": "p",
+   "text": "They adapt the food to your specific goal and make the overall approach personalised, so you do not have to spend a lot of time figuring out all the details yourself. Coaching is beneficial if you want to embed DNA or microbial data into practice without mistakes. In addition, this option offers a significant psychological advantage: you will not feel alone or lost."
+  },
+  {
+   "t": "h2",
+   "text": "Precision Nutrition Books",
+   "id": "precision-nutrition-books"
+  },
+  {
+   "t": "p",
+   "text": "If you want to dive into the topic of Precision Nutrition on your own, here are some specialised books that will help you along the way. Their authors approached the issue from a scientific point of view. They decomposed the power into atoms to understand how, with the right products, not only do you feel good, but also maintain youth and health."
+  },
+  {
+   "t": "ol",
+   "items": [
+    "**“The Personalised Diet” by Eran Segal & Eran Elinav, Weizmann Institute.** It is one of the most famous studies in the field of personalized nutrition meal plans. The authors showed that the reaction to food is strictly individual. For example, some glucose grows after bread, and others after rice. So you can’t say that one product is bad and another is good. The book explains in detail how microbiology, genetics, and lifestyle affect metabolism. It also teaches you how to self-monitor food reactions using glucometers or diet logs. This work has laid the foundation for modern ZOE and DayTwo programs that create personal food profiles.",
+    "**“Deep Nutrition” by Catherine Shanahan.** The author of the book is a doctor and biochemist who linked traditional forms of nutrition with epigenetics. The book explains how food affects gene expression, ageing, and tissue structure. It discusses the shift away from counting calories as dogma and towards high-quality nutrients. Shanahan argues that natural products such as fermented vegetables, fatty fish, and organic eggs shape not only the body’s health but also the quality of future generations through epigenetic mechanisms.10 Top-Rated Books About Biohacking Blog, Health & Wellness, Cognitive Enhancement 11 min read Best Biohacking Books For Beginners We want to start our journey from the basic famous books for beginners in biohacking. These are the perfect publications to discover more about wellness and body power. 1. “LIFESPAN: WHY WE AGE AND WHY WE DON’T HAVE TO” \\ DAVID SINCLAIR Would you take health and beauty advice from […] [Read The Full Article](https://www.biohackers.world/blog/books-about-biohacking)",
+    "**“Metabolical” Robert Lustig.** Lastig is known as an endocrinologist who was one of the first to link an epidemic of obesity with excessive added sugars. In “Metabolical,” he details how food affects hormonal regulation, insulin levels, and systemic inflammation. Essentially, it is a precision nutrition guide that shows how metabolism can change in response to stress and environmental factors. The book helps to understand why classic diets do not work and why it is important to control glycemia and hormones."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/world-health-day-celebration-with-nutritious-food-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "As you can see, precision nutrition is a whole philosophy about getting closer to your own body. In the new era of conscious consumption, it continues to gain popularity and quite reasonably. Because in this way you learn to analyse your diet and consciously select products. In addition, with this approach, you remove inflammation, the establishment of the microbial gut, and affect your mood. This diet integrates genetics, metabolism, analysis, and lifestyle, making nutrition an effective tool for health management. To implement this approach:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "Take key tests such as DNA, blood, microbiology, and metabolism.",
+    "Nutrition tracking is an essential part of this philosophy. Try to be persistent and make it part of your daily routine.",
+    "Work with a qualified specialist.",
+    "Watch the body’s reactions, not just the numbers.",
+    "Make changes gradually, review the precision nutrition you’ve followed, and correct if needed at least once a month.",
+    "Don’t look for one-size-fits-all solutions and work with the ones that are right for you."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": []
+}

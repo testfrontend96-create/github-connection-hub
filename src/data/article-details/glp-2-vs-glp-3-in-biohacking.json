@@ -1,0 +1,285 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "GLP-1 agonists are drugs that activate hormone receptors to reduce appetite.",
+  "Tirzepatide (dual GLP-1-based agonists) activates GLP-1 and GIP receptors for weight loss.",
+  "Retatrutide (Triple GLP-1-based agonists) activates GLP-1 GIP and glucagon receptors.",
+  "Tirzepatide is FDA approved for weight management while Retatrutide is still in trials.",
+  "These drugs require medical supervision and should only be used with a doctor’s prescription."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What Are GLP-1 Receptor Agonists",
+   "id": "what-are-glp-1-receptor-agonists"
+  },
+  {
+   "t": "p",
+   "text": "GLP-1 (glucagon-like peptide-1) is an incretin hormone that is secreted by intestinal cells in response to food intake and stimulates insulin secretion, inhibits glucagon release, slows gastric emptying, and reduces appetite through central mechanisms."
+  },
+  {
+   "t": "p",
+   "text": "Ozempic is the trade name for a semaglutide-based drug, a GLP-1 receptor agonist. It was originally developed for the treatment of type 2 diabetes. However, it soon began to be used for [weight loss](https://www.biohackers.world/blog/biohacking-for-weight-loss) as well. It affects appetite, slows gastric emptying, and promotes a feeling of fullness. This is why Ozempic has become so popular for weight loss. However, its effects on the body are not limited to weight loss."
+  },
+  {
+   "t": "p",
+   "text": "Semaglutide, the main active ingredient in Ozempic, mimics the natural GLP-1 receptor agonist, which is released after meals and ensures “smart” insulin secretion precisely when blood glucose levels rise. This helps control glycemic levels and reduces the risk of fatal cardiovascular diseases in people with diabetes."
+  },
+  {
+   "t": "p",
+   "text": "The drug’s effectiveness for weight loss has been confirmed in clinical trials. [After 68 weeks of Ozempic use,](https://www.nejm.org/doi/full/10.1056/NEJMoa2032183)half of the study participants lost 15% of their baseline weight. In response, in 2021, the manufacturer Novo Nordisk released Semaglutide under the new trade name Wegovy, which is FDA-approved for the treatment of obesity.These drugs, such as Ozempic and Wegovy, are known to suppress appetite, leading people to choose smaller portions."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/Retatrutide-vs-Tirzepatide-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Dual vs Triple GLP-1-Based Agonists: Key Differences",
+   "id": "dual-vs-triple-glp-1-based-agonists-key-differences"
+  },
+  {
+   "t": "p",
+   "text": "Building on the success of GLP-1–based therapies, which act on a single metabolic pathway, researchers have begun developing more advanced agents designed to target multiple metabolic pathways at once — GLP-2 (Tirzepatide) and GLP-3 (Retatrutide)."
+  },
+  {
+   "t": "p",
+   "text": "The main difference between Retatrutide and Tirzepatide lies in how they work inside the body. Both support weight loss but act on different hormone receptors. Retatrutide is a triple agonist, while Tirzepatide is a dual agonist. This means Retatrutide targets three receptors that affect hunger, metabolism, and fat use, whereas Tirzepatide focuses on two."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/1.-Cover-768x513-optimized.webp",
+   "alt": "Top-Studied Peptides for Biohackers"
+  },
+  {
+   "t": "p",
+   "text": "Top-Studied Peptides for Biohackers Blog 9 min read Peptides for Recovery and Regeneration Peptides for recovery and regeneration are short chains of amino acids that accelerate tissue repair, reduce inflammation, and enhance healing, making them popular for injury rehabilitation and anti-aging. BPC-157 BPC-157 (Body Protection Compound 157, laboratory code PL 14736) is a synthetic peptide consisting of 15 amino acids. It is a […] [Read The Full Article](https://www.biohackers.world/blog/best-studied-peptides-for-biohackers)"
+  },
+  {
+   "t": "p",
+   "text": "Retratutide demonstrates higher efficacy in weight loss (up to 24.2% over 48 weeks) compared to Tirzepatide (approximately 20.9% over 72 weeks) due to its effect on three receptors (GLP-1, GIP, glucagon). Retratutide burns fat better, but Tirzepatide has already been approved and is available, while Retratutide is still in the research stage. Let’s compare Retatrutide and Tirzepatide​ briefly."
+  },
+  {
+   "t": "table",
+   "rows": [
+    [
+     "Feature",
+     "Retatrutide",
+     "Tirzepatide"
+    ],
+    [
+     "Type",
+     "Triple agonist",
+     "Dual agonist"
+    ],
+    [
+     "Receptors Targeted",
+     "Acts on 3 hormone receptors: GIP, GLP-1, Glucagon (GCG)",
+     "Acts on 2 hormone receptors: GIP, GLP-1,"
+    ],
+    [
+     "Frequency of Use",
+     "May require less frequent dosing",
+     "Usually taken once a week"
+    ],
+    [
+     "Weight loss",
+     "24.2% in 48 weeks",
+     "20,9% in 72 weeks"
+    ],
+    [
+     "FDA approved",
+     "No",
+     "Yes"
+    ]
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "What is GLP-2 (Tirzepatide)",
+   "id": "what-is-glp-2-tirzepatide"
+  },
+  {
+   "t": "p",
+   "text": "Tirzepatideis a peptide developed by Eli Lilly and Co. in 2016. The drug’s structure affects both GIPR and GLP-1R receptors."
+  },
+  {
+   "t": "p",
+   "text": "GLP-2 (Tirz)mimics the actions of these hormones and triggers the processes that normally occur during eating. Still, it works more precisely and for longer. The combination of these effects yields a double[result](https://www.nejm.org/doi/full/10.1056/NEJMoa2206038): glucose levels are under control, and excess weight is gradually reduced. This is what makes Tirzepatide an interesting option both for people with type II diabetes and for patients with obesity, especially if these conditions go hand in hand."
+  },
+  {
+   "t": "p",
+   "text": "Tirzepatide acts on two hormone receptors: GLP-1 and GIP ( dual agonist). This combined action creates a synergistic effect, leading to greater weight loss and better glucose control compared to GLP-1–only drugs. In addition, [GIP may help reduce side effects](https://pubmed.ncbi.nlm.nih.gov/34176783/) like nausea and vomiting that are common with GLP-1 receptor agonists. This can make the treatment easier to tolerate while maintaining its metabolic benefits."
+  },
+  {
+   "t": "note",
+   "text": "It is important to understand that Tirzepatide is a drug, and not a universal means for weight loss. It is prescribed not “at will”, but strictly according to medical indications."
+  },
+  {
+   "t": "h2",
+   "text": "What is GLP-3 (Retratutide)",
+   "id": "what-is-glp-3-retratutide"
+  },
+  {
+   "t": "p",
+   "text": "Retratutide (GLP-3 (Reta) was developed in the early 2020s by Eli Lilly and Co., based on GIP, and is a 39-amino-acid peptide resistant to cleavage by DPP4. This enzyme cleaves GLP-1 and GIP. The peptide is engineered from the GIP peptide backbone to achieve triple agonistic activity against GCGR (glucagon receptors), GIPR, and GLP-1R."
+  },
+  {
+   "t": "p",
+   "text": "Retratutide was presented at the 83rd Scientific Session (2023) of the American Diabetes Association in San Diego and received enthusiastic applause from specialists. Human studies have shown that retatrutide lowers blood glucose and body weight, and experts believe it may be more beneficial in treating obesity than Ozempic and Rebelsas."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "p",
+   "text": "The study evaluating the effectiveness of retatrutide involved 338 adults with obesity. Some patients received a placebo, i.e., a dummy pill, while the rest were given retatrutide in doses of 1 mg, 4 mg, 8 mg, or 12 mg."
+  },
+  {
+   "t": "p",
+   "text": "The [experiment](https://pubmed.ncbi.nlm.nih.gov/37366315/) lasted 48 weeks. In the group receiving the highest dose of Retatrutide, patients lost an average of 24% of their body weight. It should be noted that even long-term studies on Semaglutide showed a reduction in body weight of no more than 15%. For Tirzepatide, the reduction was 20.9%."
+  },
+  {
+   "t": "video",
+   "id": "r1AfHN4hgjQ"
+  },
+  {
+   "t": "h2",
+   "text": "Which Generation Is More Effective?",
+   "id": "which-generation-is-more-effective"
+  },
+  {
+   "t": "p",
+   "text": "So, Semaglutide vs Retatrutide vs Tirzepatide? Essentially, triple agonists (GLP-1/GIP/glucagon), i.e., Retatrutide, currently show the most pronounced weight loss results, but it is still undergoing late-stage trials. A little more detail:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**GLP-1 agonists** = Semaglutide (brands Ozempic, Wegovy)."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Average weight loss: ~10-15% of body weight."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Dual agonists** (GLP-1 + GIP) = Tirzepatide."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Average weight loss: ~15-22% in clinical trials. Currently, the most effective of those already approved."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Triple agonists** (GLP-1 + GIP + glucagon) = Retatrutide."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "In phase 2, it showed >20-24% and more. Potentially the most powerful, but not yet fully approved for widespread use."
+  },
+  {
+   "t": "note",
+   "text": "However, there is an important nuance: more effective ≠ “better for everyone.” The stronger the mechanism, the higher the risk of side effects and the greater the need for medical supervision."
+  },
+  {
+   "t": "h3",
+   "text": "So What’s the Main Difference?"
+  },
+  {
+   "t": "p",
+   "text": "The simplest way to understand the distinction is that tirzepatide primarily helps people eat less by reducing hunger and improving satiety signals. Retatrutide appears to do that as well, but its glucagon-related activity may additionally encourage the body to expend more energy and burn more fat."
+  },
+  {
+   "t": "p",
+   "text": "That does not necessarily mean retatrutide is automatically the “better” option. Tirzepatide already has large Phase 3 trial data, FDA approval, and growing real-world evidence, while[retatrutide](https://www.drugs.com/medical-answers/how-retatrutide-compare-tirzepatide-3580916/?utm_source=chatgpt.com)is still moving through the clinical research process."
+  },
+  {
+   "t": "h2",
+   "text": "Clinical interpretation",
+   "id": "clinical-interpretation"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/Which-Generation-Is-More-Effective-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "It is important to note that there are currently no direct head-to-head clinical trials comparing semaglutide, tirzepatide, and retatrutide. Most comparisons available today are indirect and based on results from separate clinical studies rather than from a single trial evaluating all three medications side by side. The majority of studies were conducted in adults with overweight or obesity, typically involving participants without diabetes who had a body mass index (BMI) over 30. BMI refers to body weight in kilograms divided by the square of height in meters."
+  },
+  {
+   "t": "p",
+   "text": "The trials themselves were generally designed as double-blind, randomized, placebo-controlled studies, which is considered the gold standard in clinical research. However, the studies differed significantly in their clinical phases, duration, participant numbers, dosing strategies, and overall design, making direct comparisons more complex."
+  },
+  {
+   "t": "p",
+   "text": "It is also worth noting that these studies were funded by the manufacturers developing the medications."
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "Ozempic is an “assistant” that tells the brain, “you are full.” Tirzepatide is “two assistants” at once that reduce appetite more strongly, and Retatrutide is three assistants that not only reduce appetite but also force the body to burn energy faster. Retatrutide currently has the greatest potential, but while it is undergoing research, Ozempic and Tirzepatide, which are FDA-approved, are already in use in treatment. Any therapy requires medical supervision and a doctor’s prescription — these drugs are prohibited from being used independently!"
+  },
+  {
+   "t": "h2",
+   "text": "Disclaimer",
+   "id": "disclaimer"
+  },
+  {
+   "t": "p",
+   "text": "This article is for informational and educational purposes only and should not be considered medical advice. Weight loss medications like semaglutide, tirzepatide, and retatrutide affect hormonal and metabolic pathways and must be used under a qualified healthcare professional’s supervision. These medications are not suitable for self-prescription. Always consult a healthcare professional to evaluate the benefits, risks, and individual health factors before starting any treatment."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Which Generation Is More Effective?",
+   "a": "So, Semaglutide vs Retatrutide vs Tirzepatide? Essentially, triple agonists (GLP-1/GIP/glucagon), i.e., Retatrutide, currently show the most pronounced weight loss results, but it is still undergoing late-stage trials. A little more detail:"
+  },
+  {
+   "q": "So What’s the Main Difference?",
+   "a": "The simplest way to understand the distinction is that tirzepatide primarily helps people eat less by reducing hunger and improving satiety signals. Retatrutide appears to do that as well, but its glucagon-related activity may additionally encourage the body to expend more energy and burn more fat."
+  }
+ ]
+}

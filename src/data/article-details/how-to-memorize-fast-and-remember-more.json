@@ -1,0 +1,669 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Good sleep keeps memory strong. Without quality rest, it’s harder to learn and remember.",
+  "Eat for your brain. Omega-3s, veggies, and berries help, while junk food harms memory.",
+  "Lower stress, boost recall. Just 10 minutes of mindfulness reduces cortisol and improves focus.",
+  "A digital detox helps you concentrate and remember better.",
+  "Train your brain daily. Reading, games, visualization, and repetition keep it sharp."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "Long-Term Memory Boosting Biohacks",
+   "id": "long-term-memory-boosting-biohacks"
+  },
+  {
+   "t": "p",
+   "text": "Long-term memory is responsible for fundamental information. It is divided into declarative and non-declarative forms. The first is responsible for events and phenomena that can be consciously remembered and is divided into episodic – personal memories associated with specific places, for example, and semantic – serves for general knowledge about the world. The second is responsible for reflexes and unconscious knowledge. Long-term memory has a virtually unlimited capacity for memorisation, so with the right exercises, you can [grow a mega-brain](https://www.biohackers.world/blog/how-to-biohack-brain-health). Let’s look at ways to improve your memory."
+  },
+  {
+   "t": "h3",
+   "text": "1. Optimise Sleep"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "[Quality sleep](https://www.biohackers.world/blog/biohacking-sleep) is the foundation of long-term memory. During deep sleep phases, the brain rewrites short-term memories into long-term storage. All this is possible with a proper schedule, sleep hygiene, and tools to track the quality of your night’s rest."
+  },
+  {
+   "t": "p",
+   "text": "**How It Supports Long-Term Memory**"
+  },
+  {
+   "t": "p",
+   "text": "According to Nature Neuroscience, slow waves and REM phases are critical for memory consolidation.Their deficiency directly reduces the ability to learn.This can be especially noticeable during student learning and exam preparation."
+  },
+  {
+   "t": "p",
+   "text": "**How to Integrate It Into Daily Life**"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Go to bed and get up at the same time.",
+    "Eliminate blue light 2 hours before bed.",
+    "Use sleep trackers for analysis."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "**For Tip**"
+  },
+  {
+   "t": "p",
+   "text": "It can be sleep restriction – slightly shortened but regular sleep to synchronise circadian rhythms. With this technique, you spend exactly as much time in bed as you sleep, thus strengthening the brain’s bed-sleep connection and improving the quality and efficiency of sleep."
+  },
+  {
+   "t": "h3",
+   "text": "2. Brain-Boosting Nutrition and Supplements"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "[Diet](https://www.biohackers.world/blog/biohacking-diet) directly affects the speed of neurons. For example, a study from Annals of Neurology by Brigham and Women’s Hospital found that women who consumed more saturated and trans fats had significantly worse memory scores than those who avoided them. A PubMed review found that simple carbohydrates were associated with poorer cognitive function, while complex carbohydrates, protein, and omega-3 were associated with better memory and learning."
+  },
+  {
+   "t": "p",
+   "text": "**How It Supports Long-Term Memory**"
+  },
+  {
+   "t": "p",
+   "text": "Omega-3 found in fish and flaxseed oil has increased the volume of grey matter in the hippocampus. Green vegetables and berries provide antioxidants that work against inflammatory processes that damage memory. B12 deficiency is also associated with cognitive decline. The Journal of Alzheimer’s Disease indicates that DHA and EPA reduce the risk of cognitive decline."
+  },
+  {
+   "t": "p",
+   "text": "**How to Integrate It Into Daily Life**"
+  },
+  {
+   "t": "p",
+   "text": "An article in Scientific American confirms that even if you start the Mediterranean diet late, you can significantly slow down your memory loss. Often, you can see results after 2 years, so it’s worth considering incorporating it into your diet. Be careful with your trans fat intake, as they do not provide the same benefits as unsaturated fats and only createbarriers to brain function."
+  },
+  {
+   "t": "p",
+   "text": "**For Tip**"
+  },
+  {
+   "t": "p",
+   "text": "Try Lion’s Mane, a mushroom that stimulates neurogenesis and can be your memory biohack. It helps with concentration and has antioxidant effects."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/cover3-5-768x572-optimized.png",
+   "alt": "Top-Rated Biohacking Supplements, Vitamins and Minerals"
+  },
+  {
+   "t": "p",
+   "text": "Top-Rated Biohacking Supplements, Vitamins and Minerals Blog, Health & Wellness, Nutrition 12 min read What are biohacking supplements? Vitamins are essential supplements for our body that participate in many biochemical reactions. Biohacking is closely related to preventive medicine. It is important not to get sick to maintain health, youth, activity, beauty, etc. Vitamins contribute to achieving this goal. Preventive intake of multivitamin complexes does not make sense. There is […] [Read The Full Article](https://www.biohackers.world/blog/best-biohacking-supplements)"
+  },
+  {
+   "t": "h3",
+   "text": "3. Stress Relief and Meditation Techniques"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "[Meditation](https://www.biohackers.world/blog/biohacking-meditation) is a great way to free your mind and relax. This memory tip aids memorisation by helping to overcome the impact of excess stress on cognitive capabilities."
+  },
+  {
+   "t": "p",
+   "text": "**How It Supports Long-Term Memory**"
+  },
+  {
+   "t": "p",
+   "text": "Chronic stress has a profound effect on our ability to remember. Due to the increase in cortisol, your hippocampus, the centre of memory, collapses. Meditation reduces its level and increases the activity of the prefrontal cortex."
+  },
+  {
+   "t": "note",
+   "text": "Research shows that 10 minutes of mindfulness per day already improves cognitive tests."
+  },
+  {
+   "t": "p",
+   "text": "**How to Integrate It Into Daily Life**"
+  },
+  {
+   "t": "p",
+   "text": "Set aside some time for meditation before bed. A JAMA Psychiatry study found that 8 weeks of meditation improved memory and concentration in participants. Just 10-15 minutes a day will help you learn to focus on the most important processes both in your body and outside of it. Use a simple breathing technique, “4-7-8”. In moments of overload, include short breathing pauses. You can use the Headspace or Calm apps."
+  },
+  {
+   "t": "h3",
+   "text": "4. Digital Detox"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/08/6898541-1024x723-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "Digital detox is about limiting screen time and constant distractions. With so many screens around us every day and so much blue light hitting us, it’s no wonder that memory problems are becoming more common. Information overload reduces the brain’s ability to consolidate memory. If you reduce the amount of time you spend near your laptop or phone, you’ll feel your concentration improve quite quickly."
+  },
+  {
+   "t": "p",
+   "text": "**How It Supports Long-Term Memory**"
+  },
+  {
+   "t": "p",
+   "text": "Constantly waiting for notifications forms a habit and gets us hooked on dopamine.Stanford University has proven that constant task switching reduces the ability to record information for a long time."
+  },
+  {
+   "t": "note",
+   "text": "When you eliminate distractions from your screens and focus on something offline, it improves your memory ability and concentration."
+  },
+  {
+   "t": "p",
+   "text": "Your brain reduces anxiety, so you will feel more confident, even physically."
+  },
+  {
+   "t": "p",
+   "text": "**How to Integrate It Into Daily Life**"
+  },
+  {
+   "t": "p",
+   "text": "This may be difficult at first. Your brain will resist the habit of receiving quick information with bright visuals. Try turning off notifications on your smartphone. It is better to set a limit on screen time, especially on social networks, and try to develop a habit of going on them only for communication and important information. The rest of the time, spend without screens. Do not use notes on your phone, and choose handwriting instead. Do the same with books."
+  },
+  {
+   "t": "h3",
+   "text": "5. Reading Books"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "Reading is a great brain trainer. It activates neural connections and imagination. For example, comparing the process of reading a book with perceiving text information from social networks reveals that the former requires significantly more concentration and the use of cause-and-effect relationships. This develops our brain’s ability to store information. Reading also improves vocabulary and associative thinking."
+  },
+  {
+   "t": "p",
+   "text": "**How It Supports Long-Term Memory**"
+  },
+  {
+   "t": "p",
+   "text": "Books stimulate the hippocampus, strengthening long-term memory storage. Reading is thus a mental gym. In older people, it reduces the risk of dementia. Recording plots and details trains memory recall. Studies have shown improvements in cognitive tests in regular readers."
+  },
+  {
+   "t": "p",
+   "text": "**How to Integrate It Into Daily Life**"
+  },
+  {
+   "t": "p",
+   "text": "Read for at least 20 minutes daily. Use morning or evening when concentration is higher. Start with fiction if scientific texts are difficult to read. Make notes or summaries of what you read. Reading in paper format is better for memory than reading on an electronic device."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/The-Best-10-Biohacking-Books-768x512-optimized.jpg",
+   "alt": "10 Top-Rated Books About Biohacking"
+  },
+  {
+   "t": "p",
+   "text": "10 Top-Rated Books About Biohacking Blog, Health & Wellness, Cognitive Enhancement 11 min read Best Biohacking Books For Beginners We want to start our journey from the basic famous books for beginners in biohacking. These are the perfect publications to discover more about wellness and body power. 1. “LIFESPAN: WHY WE AGE AND WHY WE DON’T HAVE TO” \\ DAVID SINCLAIR Would you take health and beauty advice from […] [Read The Full Article](https://www.biohackers.world/blog/books-about-biohacking)"
+  },
+  {
+   "t": "p",
+   "text": "**For Tip**"
+  },
+  {
+   "t": "p",
+   "text": "The active recall method can help transfer information into long-term memory. After reading, retell the information out loud. You can also try alternating non-fiction with fiction. This way, you support different types of thinking."
+  },
+  {
+   "t": "h3",
+   "text": "6. Memory Games & Neurotraining Apps"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "If the previous methods are too dull for you or you find it difficult to concentrate on them now, then try a more game-like format. Applications and games can also train attention, working memory, and information processing speed. The most popular are Lumosity, Peak, and BrainHQ. They are based on the principles of neuroplasticity."
+  },
+  {
+   "t": "p",
+   "text": "**How It Supports Long-Term Memory**"
+  },
+  {
+   "t": "p",
+   "text": "Games stimulate the creation of new neural connections. They train the ability to retain and process information."
+  },
+  {
+   "t": "note",
+   "text": "Neurogames for sharp memory are the tips that help to transfer memorising from short-term memory to long-term."
+  },
+  {
+   "t": "p",
+   "text": "In clinical studies of older people, a slowdown in cognitive decline was recorded, and therefore, dementia was postponed. A meta-analysis in PLOS ONE showed a 12% improvement in memory after 6 weeks of training."
+  },
+  {
+   "t": "p",
+   "text": "**How to Integrate It Into Daily Life**"
+  },
+  {
+   "t": "p",
+   "text": "Make neurogames a mandatory part of your routine. To avoid skipping days, try using apps that track your progress. Start with simple tasks and gradually make them more difficult. But don’t try to replace the others with this option, because each of them improves cognitive abilities in its way."
+  },
+  {
+   "t": "h3",
+   "text": "7. Sound-Based Brainwave Stimulation"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/08/person-having-hearing-issues-1024x768-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "Neuroacoustics is a distinct trend in modern science that examines the impact of sound on the brain. Binaural beats and isochronic tones are used for this method. Their main goal is to bring the brain into a state of alpha or theta waves. In these modes, learning and memory consolidation are improved."
+  },
+  {
+   "t": "p",
+   "text": "**How It Supports Long-Term Memory**"
+  },
+  {
+   "t": "p",
+   "text": "Studies show that alpha wave stimulation improves word memorisation. Theta rhythms are associated with the formation of long-term memories. Sound stimulation reduces anxiety levels that interfere with concentration. It is a minimally invasive way to make the brain more plastic."
+  },
+  {
+   "t": "p",
+   "text": "**How to Integrate It Into Daily Life**"
+  },
+  {
+   "t": "p",
+   "text": "Listen to binaural beats for 10-20 minutes before studying. Use headphones for a better effect. Combine with meditation and [breathing exercises](https://www.biohackers.world/blog/breathwork-biohacking). Apps like Brain.fm or Endel make the process easier. Avoid volumes above 60 dB."
+  },
+  {
+   "t": "p",
+   "text": "**For Tip**"
+  },
+  {
+   "t": "p",
+   "text": "Try listening to sounds in a dark room or with your eyes tightly closed. This helps your brain focus on the vibrations and not be distracted by the light factor."
+  },
+  {
+   "t": "h2",
+   "text": "Short-Term Memory Boosting Biohacks",
+   "id": "short-term-memory-boosting-biohacks"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/08/woman-holding-coffee-cup-back-view-1024x681-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Short-term memory is responsible for retaining the here and now. It manages the information for immediate tasks. Here are a few of the best memory tips for your brain."
+  },
+  {
+   "t": "h3",
+   "text": "1. Feynman Technique"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "Richard Feynman’s method is based on explaining complex ideas in simple terms. If you can explain a topic to a child, then you understand it. In the process of explaining, gaps in knowledge are revealed. This short-term memory tip teaches how to structure information and trains through active reproduction."
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Try to explain as simply as possible what needs to be learned, and thus a clear understanding of the subject of study will be achieved."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Ideal for formulas, scientific concepts, and complex topics. Works well when preparing for exams and public speaking."
+  },
+  {
+   "t": "h3",
+   "text": "2. Spaced Repetition with Flashcards"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "This is a method based on the Ebbinghaus forgetting curve. This way, you can consolidate knowledge in long-term memory. In essence, this is a repetition of information at increasing intervals."
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Use the Anki or Quizlet apps. Create cards with questions and answers, and repeat them initially every other day, then every 3 days, and gradually increase the intervals to a month. Over time, the information will become completely ingrained in your mind."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Suitable for learning languages, terminology, and dates. Especially useful for students and professionals with a large array of facts, or before exams."
+  },
+  {
+   "t": "h3",
+   "text": "3. Loci Method (Memory Palace Technique)"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "This method was used by ancient rhetoricians. Its essence is placing information in a familiar space. For example, in your room, you associate each detail with a certain image. The brain uses spatial memory to store data."
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Choose a place you know well. Imagine that you are placing the facts in different rooms. When you need to remember, mentally walk through this place. Repeat several times to consolidate."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Best suited for long lists, sequences, and speeches. Often used by actors and speakers."
+  },
+  {
+   "t": "h3",
+   "text": "4. Leitner System"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/08/top-view-business-cards-surrounded-by-plants-1024x819-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "This is also a system of cards, but here the repetition is a little different. They are divided into two groups: the first are those that you know, and the second are those that you forget more often. In this way, we concentrate our attention on weaker points and speed up the process of memorising them."
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Take a box and divide it into several sections. The cards you remember move on. The ones you don’t remember stay closer. Repeat daily and gradually increase the intervals."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Studies, languages, formulas, definitions. Suitable for people who like a structured approach."
+  },
+  {
+   "t": "h3",
+   "text": "5. Chungking"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "This involves unifying information into different blocks. It is easier to remember each of the elements. This way, it is possible to reduce the cognitive load."
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Divide the material into small groups. Structure it logically or thematically. Repeat in blocks, not individual words."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Well-suited for numbers, codes, and foreign words. Works with large texts if divided into meaningful chunks."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h3",
+   "text": "6. Visualisation & Association"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "With the help of vivid images, the brain creates an associative series that allows you to remember information. Thus, by activating visual memory, the brain assimilates knowledge faster. The stranger the picture, the better the method works."
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Try to imagine words and numbers as pictures, and facts as personal experiences. Sometimes the most absurd associations work best."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Memorising words, dates, and foreign languages. Especially useful for visual learners."
+  },
+  {
+   "t": "h3",
+   "text": "7. Note-Taking Systems (Cornell, Zettelkasten)"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/08/businesswoman-planning-writing-notebook-marketing-campaign-concept-1024x971-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "These are systems for recording and structuring information. Cornell is a method that divides the page into zones for notes, keys, and summaries. Zettelkasten is a method for creating cards with ideas and connections between them. Both systems increase the assimilation and structure of knowledge."
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Use Cornell for lectures and books: write abstracts, highlight keys, draw conclusions. Zettelkasten is more suitable for long-term projects, as it allows you to create cards and link them."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Study, research, and knowledge base management. Useful for anyone who works with large amounts of information."
+  },
+  {
+   "t": "h3",
+   "text": "8. Dual Coding (Text + Images)"
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "The method combines text and visual information. When the brain receives data in different formats, it is better consolidated. This enhances the effect of memory through multiple channels of perception."
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Create diagrams and captions for them. Use mindmaps for big topics. Underline key words and link to pictures. Learn through video and notes simultaneously."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Ideal for textbooks, presentations, and complex concepts. Useful for visual and auditory learners."
+  },
+  {
+   "t": "h3",
+   "text": "9. Caffeine and Nootropics"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/08/front-view-brown-coffee-seeds-inside-colored-glass-jars-blue-yellow-surface-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "**What Is It?**"
+  },
+  {
+   "t": "p",
+   "text": "If physical exercise is not enough for the brain, you can turn to external safe stimulants. [Caffeine](https://www.biohackers.world/blog/biohacking-coffee) improves attention and short-term memory. Nootropics also improve cognitive function. Both options help the brain work more efficiently."
+  },
+  {
+   "t": "p",
+   "text": "**How to Implement It**"
+  },
+  {
+   "t": "p",
+   "text": "Caffeine can be consumed throughout the day, but if your reaction to it is too strong, limit yourself to morning intake. Coffee can also be replaced with green tea, which also contains caffeine but exhibits its properties much more gently. Try nootropics with proven effectiveness: L-theanine, caffeine, and omega-3."
+  },
+  {
+   "t": "p",
+   "text": "**Best For**"
+  },
+  {
+   "t": "p",
+   "text": "Before exams, intense work, and large projects. Especially useful for cognitive fatigue."
+  },
+  {
+   "t": "h2",
+   "text": "How Not to Burn Out",
+   "id": "how-not-to-burn-out"
+  },
+  {
+   "t": "p",
+   "text": "Don’t overdo it and overload yourself and your brain. Because, in the future, if you do this regularly, you will encounter strong resistance from the body and an unwillingness to do even the simplest exercises."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "Here are some tips to help you stay in a stable state and avoid burnout."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Alternate work and rest using the Pomodoro technique: take a 5-minute break after every 25 minutes of work",
+    "Watch your diet. Sharp spikes in sugar levels affect your concentration.",
+    "Plan your day so that your brain receives easy tasks after difficult ones.",
+    "Avoid information overload. It is better to study several topics in depth, rather than jumping from one to another superficially."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Sample Memory Routine",
+   "id": "sample-memory-routine"
+  },
+  {
+   "t": "p",
+   "text": "When you need to learn a large amount of information and it is essential to use your memory 100%, it is worth using several biohacks.**In the morning, give** yourself 5 minutes for good brain oxygenation. Breathe deeply and evenly, try using different breathing techniques, for example. Repeating the same material for 15 minutes will increase its memorization and help it become part of long-term memory. Don’t forget about omega-3; you can take it with your morning coffee after breakfast."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/04/cover3-1-768x572-optimized.png",
+   "alt": "How to Wake Up Like a Millionaire"
+  },
+  {
+   "t": "p",
+   "text": "How to Wake Up Like a Millionaire Blog, Health & Wellness, Regenerative 10 min read Why a morning routine is important Morning routines are the habits we develop to start the day right. We like to look at the rituals of bloggers on social networks, athletes, and biohackers and try to replicate them, but it doesn’t always work out. And, as business psychologist David Lurie and psychotherapist Dee Johnson told […] [Read The Full Article](https://www.biohackers.world/blog/morning-routine-biohacks)"
+  },
+  {
+   "t": "p",
+   "text": "**In the afternoon,** dedicate 1 to 2 hours to the main block of study. Do not forget to take a break for physical activity for 10-20 minutes; this will also improve the memorisation of information. In this way, your brain switches from mental to physical activity, which enhances its condition."
+  },
+  {
+   "t": "p",
+   "text": "**In the evening** , review the key points. Don’t overload yourself before bed; you’ve already done enough. Refresh the material further, and it’s better to save new material for the next day. Do some meditation before bed. This will help relax both your mind and body, allowing you to switch to a calm state. Don’t forget that you need to sleep for about 8 hours; this will also help your brain’s productivity and memorisation of the material."
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "We’ve broken down the most effective biohacks for memory, from long-term strategies like sleep, nutrition, and meditation to quick techniques. It’s essential to eat healthy, get enough sleep, and remember to take a break from digital. Feynman Technique, spaced repetition, and the loci method are highly effective for accelerating learning."
+  },
+  {
+   "t": "p",
+   "text": "Three key tips:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "An important foundation is healthy sleep and [stress relief](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health).",
+    "The brain needs to be trained just like muscles. Special games and meditations will help with this",
+    "Try training both long-term and short-term memory, combining exercises for maximum effectiveness."
+   ]
+  }
+ ],
+ "faq": []
+}

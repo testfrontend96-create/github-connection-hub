@@ -1,0 +1,517 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Brain fog clouds focus, memory, and creativity.",
+  "Stress slows brain function — manage it daily.",
+  "Eat smart: proteins, fats, greens, and hydration.",
+  "Vitamins B6, B9, B12, magnesium and L-theanine keep your brain sharp."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "Symptoms of Brain Fog",
+   "id": "symptoms-of-brain-fog"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/09/portrait-girl-with-computer-cafe-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Brain fog is a relatively new term in the medical field. Although the phenomenon itself has long been around, and almost everyone has experienced it at least once in their lifetime, it only became a recognized problem with the advent of the coronavirus, as the number of people complaining of brain fog increased dramatically during the pandemic. This vague term describes a feeling of distraction, detachment, a feeling of white noise in your ears, blurred and slow perception, and impaired cognitive function."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Lack of concentration.** Sometimes people confuse it with ADHD. However, you struggle with focusing and tend to get distracted quickly. It could be just a symptom of the brain fog, and it’s much easier to solve than you think, though.",
+    "**Forgetfulness.** Problems with memory are also a common issue. You can easily forget short-term things such as conversations, notes, or where you’ve put your keys.",
+    "**Mental fatigue.** Your social battery may be totally dead. You can’t be in society, and even decision-making becomes difficult. It may feel like your brain is slowing down.",
+    "**Absent-mindedness and indecision.** Brain fog interferes with decision-making. You can admit that you are more disorganized than before, and it’s hard to collect your own thoughts. Even simple discussions about what to eat for dinner can become complicated.",
+    "**Decreased creativity.** If you are from the creative industries, then it will be even more visible. Difficulties in generating ideas and sticking with them are quite a common problem when you have brain fog."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "As we can see, all these symptoms are quite common and really impacting your productivity. If you notice any of these symptoms in yourself, here are some ways to improve your condition."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h2",
+   "text": "Sleep Optimization",
+   "id": "sleep-optimization"
+  },
+  {
+   "t": "p",
+   "text": "To ensure your mind is fully alert and able to work effectively, you need [proper sleep](https://www.biohackers.world/blog/biohacking-sleep). Make sure to get at least eight hours of it a day. We get the best quality sleep at night, but it’s not just the time of day that affects it. Remove all screens an hour before bed and use dim lighting. This is all necessary for proper melatonin production."
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Go to bed and get up at the same time each day.",
+    "Remove screens 1 hour before bed.",
+    "Use dim lighting and cool air in the bedroom.",
+    "Include relaxation techniques such as breathing exercises or baths."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Late caffeine and alcohol before bed.",
+    "Changes in sleep schedule. Maintain a consistent sleep schedule, even on weekends.",
+    "Sleeping with working gadgets nearby."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Physical Activity",
+   "id": "physical-activity"
+  },
+  {
+   "t": "p",
+   "text": "A simple solution could solve a big part of your problem. It normalises hormone production, improves mental state, and even sleep. Your nervous system has some similarities with muscles. As a result, it becomes stronger and more resilient. Additionally, regular exercise supplies your brain with oxygen, which helps enhance mental clarity."
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "3 aerobic workouts per week, such as running, swimming, or cycling.",
+    "Daily walks in the fresh air.",
+    "[Yoga](https://www.biohackers.world/blog/biohackers-guide-to-yoga) or Pilates for relaxation and concentration."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/12/cover3-4-768x572-optimized.png",
+   "alt": "What Is Biohacking In Fitness"
+  },
+  {
+   "t": "p",
+   "text": "What Is Biohacking In Fitness Blog, Health & Wellness, Fitness & Recovery, Fitness 14 min read How Biohacking is Related to Fitness Fitness biohacking and sports in general is a powerful method that can improve many areas of your life. For example, it can: reduce your risk of developing a disease to which you may be genetically predisposed; improve physical health; reduce symptoms of depression; lower blood pressure; aid in weight […] [Read The Full Article](https://www.biohackers.world/blog/fitness-and-biohacking)"
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Overtraining without recovery.",
+    "Ignoring warm-up and [stretching](https://www.biohackers.world/blog/full-body-stretching-exersices).",
+    "Long periods of sedentary work without movement."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Stress managements",
+   "id": "stress-managements"
+  },
+  {
+   "t": "p",
+   "text": "One of the most challenging, yet crucial, points. [Managing stress](https://www.biohackers.world/blog/biohacking-for-stress-management-what-about-mental-health) is quite challenging. Sometimes we may not even realise how much anxiety, fatigue, and worry our bodies are experiencing."
+  },
+  {
+   "t": "note",
+   "text": "Stress also affects brain function. It slows down as neurons are preoccupied with survival. After all, any stress is a danger signal for our body."
+  },
+  {
+   "t": "p",
+   "text": "That’s why it’s important to incorporate aromatherapy, sound healing, and other relaxation techniques into your meditation routine. It’s also important to make time for yourself and prioritise your mental well-being."
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Use [meditation](https://www.biohackers.world/blog/biohacking-meditation) for 10-15 minutes to achieve mental clarity.",
+    "[Mindful breathing](https://www.biohackers.world/blog/breathwork-biohacking). Practice short breath holds and exercises throughout the day to maintain your physical well-being.",
+    "Aromatherapy or [sound therapy](https://www.biohackers.world/blog/sound-therapy-in-biohacking)."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Ignore stress before it accumulates.",
+    "Overload yourself with techniques at once.",
+    "Meditate without involvement."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Happy Hormones Balance",
+   "id": "happy-hormones-balance"
+  },
+  {
+   "t": "p",
+   "text": "Humans are a cocktail of hormones. They regulate all bodily processes. Hormones of joy are essential for maintaining mental clarity. Dopamine, serotonin, endorphins, and oxytocin control motivation, mood, and attention. To regulate them, you can incorporate certain practices. These could include special brain games or sports. Just don’t take the easy way out, such as the quick dopamine rush we get from drinking alcohol or watching entertainment on social media. This will only worsen your condition. It’s better to replace such habits with healthier ones, such as exercise or reading."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/04/cover3-1-optimized.jpg",
+   "alt": "How Can We Biohack Our Way to Happiness"
+  },
+  {
+   "t": "p",
+   "text": "How Can We Biohack Our Way to Happiness Blog, Health & Wellness, Cognitive Enhancement 11 min read The link between emotions and physiology Emotions are subjective reactions of humans and higher animals to external and internal stimuli. They are personal attitudes and reactions to events that occur to a person; they accompany all processes of human activity and are caused, among other things, by situations that exist only in the imagination. Since […] [Read The Full Article](https://www.biohackers.world/blog/biohacks-for-happiness-hormones)"
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Dopamine: create a daily to-do list and check off completed items – this gives your brain a small burst of dopamine and motivates you to keep moving forward. Add short breaks with enjoyable activities, such as listening to music, savoring tea, or taking a walk. However, it’s best to limit endless social media scrolling, as it quickly overloads the dopamine system.",
+    "Serotonin. Go outside for 10-15 minutes in the morning – sunlight triggers the production of serotonin. Another biohack is to walk or jog in the first half of the day. In the evening, it’s best to avoid bright artificial light to maintain this cycle.",
+    "Endorphins. [Metcon-style workouts](https://www.biohackers.world/blog/metcon-workouts) are beneficial for this hormone. These are short but intense workouts. Also, try adding more laughter to your life; stand-up comedy or a good movie will smooth out your endorphin levels without you even realising it, making you feel happier. A hot bath or sauna can also provide a natural endorphin boost.",
+    "Oxytocin. To produce it, try adding tactile stimulation to your life. For example, hugging loved ones significantly increases their levels. You can also pet a dog or a cat; the mechanism is similar. If this doesn’t work for you, try getting a massage. It’s essentially the same as touching"
+   ]
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Overstimulation of dopamine, such as social media, and bad habits, such as smoking and alcohol.",
+    "Isolation from society.",
+    "Underestimating the role of positive emotions."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Balanced Diet",
+   "id": "balanced-diet"
+  },
+  {
+   "t": "p",
+   "text": "Any physical and mental health is created in the kitchen. If your diet doesn’t include enough protein, you won’t be able to [build muscle](https://www.biohackers.world/blog/how-to-strengthen-muscle-growth-using-biohacking-methods). Without carbohydrates, you won’t have enough energy. And if you severely restrict fat, your hair, nails, and even your brain will suffer. Don’t demonise food or fear it. Even moderate sugar intake can be beneficial. It nourishes the brain and helps it stay productive. The key is balance. If counting calories isn’t your thing, then use the plate principle. Visually divide it into two sections, one reserved for vegetables, and the other for carbohydrates and proteins. And don’t forget about hydration. For example, drinking tea for mental clarity. It could be ginseng, pu-erh, or green tea. All of them provide an extra energy boost to the nervous system, thereby increasing your mindfulness."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/11/biohacking-diet-768x513-optimized.jpg",
+   "alt": "A Complete Guide To The Biohacking Diet With Examples"
+  },
+  {
+   "t": "p",
+   "text": "A Complete Guide To The Biohacking Diet With Examples Blog, Health & Wellness, Fitness & Recovery, Nutrition 17 min read Biohacking Diet: Basic Principles The first step is a comprehensive body assessment, including blood tests, hormone tests, microbiota, and other tests. The results give a complete picture of health and help determine what dietary changes are needed. For example, some people may have an alcohol intolerance, others may feel ill due to gluten intake, and […] [Read The Full Article](https://www.biohackers.world/blog/biohacking-diet)"
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Include unhealthy foods in your diet, but in small amounts.",
+    "Calorie counting or the plate principle.",
+    "Don’t forget to eat lots of green salads."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Strict diets.",
+    "Excess sugar and fast food.",
+    "Ignoring water balance."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Food list for mental clarity"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/09/legumes-fruit-salmon-fish-pieces-wooden-chopping-board-1024x681-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "If you’re having trouble deciding which products to look for on store shelves, here are a few options:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Fatty fish. Omega-3 helps restore brain cells and improve memory.",
+    "Nuts and seeds contain healthy fats, such as those found in extra-virgin olive oil, combined with slow-digesting carbohydrates.",
+    "Berries. Blueberries, raspberries, and blackberries contain antioxidants. They protect brain cells.",
+    "Leafy green vegetables, such as spinach, broccoli, and kale, are rich sources of folate and vitamin K.",
+    "Eggs. Choline is used in the synthesis of acetylcholine, a neurotransmitter that plays a role in memory and helps improve it."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Food to avoid"
+  },
+  {
+   "t": "p",
+   "text": "There are no bad foods, but to improve mental clarity, it is still worth reducing or eliminating consumption of:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Alcohol. This is probably one of the most important foods to avoid, as it disrupts sleep and cognitive function.",
+    "Trans fats, like margarine and processed foods, negatively impact blood vessels and the brain."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Intermittent Fasting",
+   "id": "intermittent-fasting"
+  },
+  {
+   "t": "p",
+   "text": "Hunger can also affect your mood and brain fog. Specifically, proper [fasting](https://www.biohackers.world/blog/intermittent-fasting) is beneficial for us. Reduces inflammation and [improves brain function](https://www.biohackers.world/blog/how-to-biohack-brain-health). It stabilises insulin levels, preventing sudden energy fluctuations. Many report improved concentration during the fasting window."
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Begin with a simple 12/12 pattern and gradually progress to a 16/8 pattern.",
+    "During the food window, choose foods with a low glycemic index.",
+    "Fasting in the first half of the day will be beneficial. Your head will be clearer, so postpone the most difficult tasks until the morning."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Don’t start with extreme protocols. Ease into the process gradually; don’t fast for 24 hours immediately.",
+    "Skipping hydration while fasting.",
+    "Ignore your condition. The body often tells us when something isn’t going as it should. Stop fasting if you feel dizzy or overly weak.",
+    "Do not consult a specialist before starting intermittent fasting."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Supplements for Mental Clarity",
+   "id": "supplements-for-mental-clarity"
+  },
+  {
+   "t": "p",
+   "text": "Some beneficial substances should be taken as separate supplements. They may be poorly absorbed through food or present in insufficient quantities, so it’s best to take them as a [supplement](https://www.biohackers.world/blog/best-biohacking-supplements)."
+  },
+  {
+   "t": "note",
+   "text": "For example, B vitamins, magnesium, and omega-3 are essential supplements, a deficiency of which can cause brain fog. Certain nootropics are also worth considering."
+  },
+  {
+   "t": "p",
+   "text": "According to the PMC, in a double-blind study. Some herbs that promote mental clarity may also be beneficial. Bacopa monnieri extract has been shown to significantly improve logical memory and word recall in individuals with age-related memory decline. The effect appeared gradually, starting around week 8, and intensified toward the end of the experiment."
+  },
+  {
+   "t": "p",
+   "text": "This is just one example of how they work. Lion’s mane is an excellent addition to your diet. This mushroom stimulates nerve cell growth and improves brain function. Bacopa monnieri, as we told earlier, enhances memory, and Rhodiola rosea reduces fatigue and stress."
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Vitamins for mental clarity: B6, B9, and B12. They support neurotransmitters.",
+    "Magnesium reduces anxiety and improves sleep.",
+    "L-theanine with caffeine is a great combination for better focus."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "You should not take supplements without consulting a doctor and undergoing tests.",
+    "Before using, figure out what can be combined with what.",
+    "Avoid nootropics that haven’t undergone sufficient research."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "h2",
+   "text": "Cryotherapy and Cold Exposures",
+   "id": "cryotherapy-and-cold-exposures"
+  },
+  {
+   "t": "p",
+   "text": "[Cold therapy](https://www.biohackers.world/blog/cold-water-therapy) is a great way to wake up and invigorate your brain health. It’s an option for those who aren’t afraid of extreme temperatures. You don’t need to go to a specialised facility to start [cryotherapy](https://www.biohackers.world/blog/biohacking-cryotherapy). All you need to do is add a 3-minute cold shower to your regular shower routine. This will help you prepare for longer, colder treatments, and you can later try an ice bath or a cryotherapy room. Each of these options will strengthen your body, improve your immunity, and awaken your dormant mind. After a few months, you’ll feel your concentration improve and your activity increase. However, remember not to overcool these treatments for too long, as this can lead to a cold."
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Contrast shower in the morning.",
+    "Cold water dousing after training.",
+    "Visiting the cryosauna several times a week."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Too long procedures without preparation.",
+    "Practice for colds or heart problems.",
+    "Ignoring gradual adaptation."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Heat Therapy",
+   "id": "heat-therapy"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/09/man-woman-sauna-interior-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "Along with cold, hot therapy helps your brain. It works slightly differently: it relaxes under the influence of high temperatures. Saunas, hot showers, or baths dilate blood vessels, allowing the body to rest and relax. [Hot therapy](https://www.biohackers.world/blog/heat-therapy-with-saunas) is especially beneficial after workouts. It helps your muscles relax after intense exercise, making subsequent recovery easier. It also helps your brain. Relaxation relieves excess anxiety and tension. A sauna or heat therapy activates endorphin production and promotes deep relaxation. Raising your body temperature improves blood flow and reduces cortisol levels. Combined with cold therapy, heat therapy helps restore the nervous system."
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Sauna 1-2 times a week for 10-15 minutes.",
+    "Hot bath with magnesium salt in the evening.",
+    "Infrared sauna for a gentle effect."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Overheating and prolonged stay without breaks.",
+    "Visiting a sauna after drinking alcohol.",
+    "Ignoring the drinking regime"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Digital Detox and Information Hygiene",
+   "id": "digital-detox-and-information-hygiene"
+  },
+  {
+   "t": "p",
+   "text": "Nowadays, it’s pretty tricky to get rid of social media as we all are communicating with it and even working there. But at least you can try to make this time cleaner for your nervous system. Overloading your brain with information increases anxiety and steals your concentration ability. So try to decrease screen time a few times per week. You don’t need to go back to cave times, but give yourself time when you can hear the word around. Go for a walk or just read a book. It will save your brain health and give you a clear mind. But don’t cheat! Being without blue screens means every one of them, so stop watching Netflix on your telly as well. Every connection with the screen didn’t give your brain a proper break. So, if you want to grow your creativity or overcome other issues, such as brain fog, this approach helps you see the world from a different perspective and calm the noise in your head."
+  },
+  {
+   "t": "h3",
+   "text": "Best biohacks / methods"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "In the morning and evening, put your phone on do-not-disturb mode for at least an hour and a half."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/04/cover3-1-768x572-optimized.png",
+   "alt": "How to Wake Up Like a Millionaire"
+  },
+  {
+   "t": "p",
+   "text": "How to Wake Up Like a Millionaire Blog, Health & Wellness, Regenerative 10 min read Why a morning routine is important Morning routines are the habits we develop to start the day right. We like to look at the rituals of bloggers on social networks, athletes, and biohackers and try to replicate them, but it doesn’t always work out. And, as business psychologist David Lurie and psychotherapist Dee Johnson told […] [Read The Full Article](https://www.biohackers.world/blog/morning-routine-biohacks)"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "The Pomodoro Technique is a real biohacking for boosting focus. Break your work into 25-minute chunks, then take a 5-minute break, and repeat this process throughout the day.",
+    "Once a week, have a day without social media."
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Mistakes to avoid"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Completely giving up gadgets without a clear plan.",
+    "Switching from one social network to another instead of getting real rest.",
+    "Ignoring information hygiene. Try setting up content filters to consume only useful and relevant content."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "Brain fog is a common issue today, but it is possible to overcome. As we explored in the article, it is the specific state of mind that presents a significant list of issues to deal with. Brain fog distracts thoughts, interferes with focus, and generally makes you less happy. Additionally, it affects all aspects of life, including sleep cycles, work, and creativity. Here are some tips for mental clarity that we discovered today. Let’s summarize them."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Eat functional food. Use healthy fats, enough protein, and don’t demonise food. It is essential to understand what you are eating, but at the same time, not to be scared of your food and call some products good or bad.",
+    "Have regular physical activity. Especially great for your brain are metcon workouts, as you need a lot of concentration and resistance in them. It helps calm your nervous system and shift your focus.",
+    "Happiness hormones are essential for your brain’s well-being. Use different approaches to grow them; basically, increase any healthy habits that make you happy. It could be a new hobby or a nice movie.",
+    "Give yourself time without the internet. A 2-hour break won’t change the world, but it helps you clear your mind.",
+    "Practising meditation and breathing exercises. It calms down the nervous system and balances it."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "With this advice and a conscious attitude, the brain fog will be left behind, and your productivity will improve each day."
+  }
+ ],
+ "faq": []
+}

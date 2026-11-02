@@ -1,0 +1,297 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Gene therapy aims to fix disease causes at the DNA level, not only reduce symptoms.",
+  "Modern gene therapies already help patients with blindness, SMA, and blood disorders.",
+  "CRISPR allows precise DNA changes and gives new hope for targeted medical treatment.",
+  "Cell therapy works with whole cells and can retrain the immune system to fight disease.",
+  "Gene therapy raises safety and ethics concerns, especially for heritable DNA changes."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What Is Gene Therapy?",
+   "id": "what-is-gene-therapy"
+  },
+  {
+   "t": "p",
+   "text": "Let’s talk about gene therapy definition at first. Every creature on the planet is made up of cells, and our bodies are no exception. All cells have their own specialised function, and each one is filled with our genes. These genes are the fundamental building blocks of life. We inherit them from our parents in the form of chromosomes. Each chromosome, in turn, consists of an organic substance called deoxyribonucleic acid (DNA) and is located in the cell nucleus: the “control centre” of the cell."
+  },
+  {
+   "t": "p",
+   "text": "We call the sections of DNA that contain instructions for the production of certain molecules in the body, usually proteins, genes. These proteins control the growth and functioning of our bodies. In addition, they are responsible for our appearance, even for some tastes and habits. For example, the reason for the dislike of cilantro in a certain part of humanity has been identified. It turned out that a mutation in the OR6A2O gene was to blame. Because of this mutation, 20 per cent of the population perceives the smell of cilantro as similar to that of bedbugs. The reason is that, due to this mutation, their bodies perceive certain aldehydes in cilantro differently than other people. And this is only a microscopic part of what can be discovered with the help of genes."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/10/science-engineer-using-microscope-analyze-dna-sample-laboratory-woman-biologist-working-with-microscopic-glass-lens-lab-tool-computer-wearing-protective-goggles-gloves-768x432-optimized.jpg",
+   "alt": "Top Rated Health-Focused DNA Tests"
+  },
+  {
+   "t": "p",
+   "text": "Top Rated Health-Focused DNA Tests Blog 6 min read What Are Health-Focused DNA Tests? The uniqueness of each of us is determined by genes encoded in DNA. The information encoded in DNA affects our appearance, character, behavior, and most of our bodily characteristics. The way the body reacts to various environmental factors, nutrition, and habits also depends on the activity of specific genes. That […] [Read The Full Article](https://www.biohackers.world/blog/top-rated-dna-tests)"
+  },
+  {
+   "t": "p",
+   "text": "DNA editing occurs frequently and is called genetic variation. They do not always cause problems. But there are cases when a change can cause a protein to malfunction. There may be too much or too little of it, which affects the body’s ability to function properly. Many rare diseases are caused by such variations. They can be inherited or arise de novo."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/3d-medical-background-with-dna-strand-abstract-design-1024x768-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "History of Gene Therapy"
+  },
+  {
+   "t": "p",
+   "text": "The very idea of editing genetic material to treat diseases dates back to the mid-20th century, immediately after James Watson and Francis Crick discovered the double helix structure of DNA in 1953. This marked the dawn of modern genetics, with a sense in the scientific community that genes could now be manipulated to correct genetic disorders."
+  },
+  {
+   "t": "p",
+   "text": "In the 1960s and 1970s, shortly after the development of molecular biology and genetic engineering technologies, primarily recombinant DNA technology, ideas about gene therapy emerged. He proposed the idea of using viruses as vectors to deliver therapeutic genes into cells. It exploited the inherent ability of viruses to insert their genetic material into host cells."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "p",
+   "text": "Gene therapy has a promising future, as current research in this field covers a much larger proportion of curable diseases, including diseases as complex as Alzheimer’s and heart disease. Improved delivery methods using nanoparticles and advanced viral vectors continue to contribute to the development of the accuracy and safety of gene therapy."
+  },
+  {
+   "t": "h3",
+   "text": "Examples of Gene Therapy"
+  },
+  {
+   "t": "p",
+   "text": "Even the last few years show how gene therapy has advanced. Now we can see some of the treatments officially approved by regulatory authorities and available on the market. For example Spark Therapeutics’ Luxturna. It is gene therapy for the treatment of Leber congenital amaurosis. This is a rare inherited form of blindness. Luxturna delivers a functional copy of the RPE65 gene directly to the retinal cells, restoring vision in patients."
+  },
+  {
+   "t": "p",
+   "text": "Another interesting development is Zolgensma. This revolutionary gene therapy drug is used to treat spinal muscular atrophy, a serious hereditary disease. It causes a neurological disorder that affects motor neurons, leading to muscle weakness and atrophy. It uses an adeno-associated viral vector to deliver a functional copy of the SMN1 gene. This one-time treatment has already shown remarkable results in clinical trials."
+  },
+  {
+   "t": "p",
+   "text": "Overall, there are quite a few examples of successful therapy. It is worth mentioning the use of Cas9 (exagamglogene autotemcel) for sickle cell disease and β-thalassemia, where CRISPR editing is used to modify the patient’s blood cells. In the UK, trials of gene therapy for Huntington’s disease show a significant slowdown in the progression of the disease."
+  },
+  {
+   "t": "note",
+   "text": "CRISPR therapies have also begun to be used in personalised approaches to rare metabolic disorders, demonstrating the potential for targeted correction. Biohacking gene therapy can also reduce cholesterol levels by 50%. It has been successfully tested in phase I, paving the way for the treatment of common diseases."
+  },
+  {
+   "t": "h2",
+   "text": "What Is Cell Therapy?",
+   "id": "what-is-cell-therapy"
+  },
+  {
+   "t": "p",
+   "text": "In cell therapy, living cells are introduced into a patient to restore tissue function or fight disease. These cells may be the patient’s own (autologous) or from a donor. They are often genetically modified before being introduced. Cell therapy differs from gene therapy in that it focuses on whole cells rather than necessarily altering DNA directly. This type of therapy is often used to treat complex diseases; it essentially resets the immune system and teaches it to fight what the body previously did not recognise. In some cases, such as CAR-T therapy, cells are modified to attack cancer cells. Research shows that this is a potentially beneficial treatment option, but it requires strict regulations and monitoring of the process."
+  },
+  {
+   "t": "h2",
+   "text": "What Is CRISPR Gene Editing",
+   "id": "what-is-crispr-gene-editing"
+  },
+  {
+   "t": "p",
+   "text": "The discovery of CRISPR-Cas9 technology in the early 2010s instantly changed gene therapy for technology and genetic engineering. CRISPR biohacking stands for clustered regularly interspaced short palindromic repeats. This refers to a repeating series of genetic bases that essentially allows for the editing of a very fine character associated with genome hacking – cutting DNA at will and inserting genes to remove, insert, or modify them."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2024/08/cover3-1-768x572-optimized.png",
+   "alt": "Biohacking: Definition, Examples And Techniques"
+  },
+  {
+   "t": "p",
+   "text": "Biohacking: Definition, Examples And Techniques Blog, Health & Wellness 14 min read Biohacking is an innovative approach to optimizing health and performance using numerous clinical and technological techniques. In this text, our professionals have analyzed the many sides of biohacking, from nutritional and sports activities methods to advanced genetic engineering and neurotechnology strategies. <br> <br> This comprehensive guide explores how human biohacking can enhance pressure management, recuperation, and promote anti-growing older. We provide practical tips and biohacking examples to help integrate body hacking into your lifestyle for a healthier and more youthful life. Let's start your biohacking journey! [Read The Full Article](https://www.biohackers.world/blog/what-is-biohacking)"
+  },
+  {
+   "t": "p",
+   "text": "It was a revolutionary technology that opened up new possibilities for gene therapy, now allowing for more precise and targeted treatments. Researchers began to think about using CRISPR to correct genetic mutations responsible for sickle cell anemia, muscular dystrophy, and certain types of cancer, and it also includes therapy with stem cells."
+  },
+  {
+   "t": "h3",
+   "text": "How CRISPR Works"
+  },
+  {
+   "t": "p",
+   "text": "The CRISPR/Cas system works as follows: guide RNA finds the target DNA site, Cas enzyme cuts, and the cell’s own mechanisms repair the genome according to a specified template. This ability to edit the genome with precision opens the way to correcting pathogenic mutations, suppressing harmful genes, or adding protective variants."
+  },
+  {
+   "t": "note",
+   "text": "CRISPR is often referred to as “genetic scissors” because of its precision and flexibility. Since individual cells can be modified ex vivo and returned to the patient, this method serves as a bridge between gene therapy and cell therapy."
+  },
+  {
+   "t": "h3",
+   "text": "Examples of CRISPR/Cas9"
+  },
+  {
+   "t": "p",
+   "text": "To date, there have been quite a few successful cases of using such technologies. Let’s take a closer look at some of them."
+  },
+  {
+   "t": "ol",
+   "items": [
+    "In 2025, for the first time in history, an infant with a rare genetic disorder called CPS1 deficiency was successfully treated with personalised CRISPR therapy, correcting the mutation directly in his liver cells and significantly improving ammonia metabolism, which previously required a liver transplant.",
+    "The only CRISPR-based therapy approved to date is Casgevy. It is used for sickle cell anaemia and β-thalassemia. In these regimens, the patient’s blood cells are removed from the body, edited ex vivo using CRISPR/Cas9, and then returned, resulting in a significant reduction in disease symptoms.",
+    "Another actively developing area is the editing of genes that affect cholesterol. In early clinical trials, CRISPR-like methods have shown a reduction in LDL and triglyceride levels of almost 50% in participants, paving the way for application in cardiovascular medicine."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/dna-genetic-engineering-biotechnology-with-scientist-rsquo-s-hands-disruptive-technology-remix-1024x682-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Safety, Ethics, and Scientific Criticism",
+   "id": "safety-ethics-and-scientific-criticism"
+  },
+  {
+   "t": "p",
+   "text": "Like any field that involves changes to the body, gene therapy faces ethical questions. The ability to alter gene therapy for humans, which may have hidden effects, and the genetic changes themselves may cause certain unknown effects, which are widely considered a moral issue. The high cost of treatment achieved through gene therapy makes equal access an even more serious problem."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Safety. One of the main stumbling blocks for all areas of gene therapy is that in 1999 18-year-old Jesse Gelsinger died during gene editing therapy trials and it was a precedent to talk about the safety of such a therapy. These first generations of vectors, based on adenoviruses, caused strong immune reactions and were a turning point for the industry. It was obvious to make the requirements for preclinical trials tighter after that. Vectors were also modified to reduce toxicity and immunogenicity. Modern technologies use adeno-associated viruses (AAV) and lipid nanoparticles, which demonstrate a milder safety profile. However, even the latest systems, including CRISPR editing, carry the risk of accidental changes outside the target DNA site.",
+    "Ethics. This point came to the top after another case as wellThe ethical context of gene therapy became particularly acute after the case of Chinese biophysicist He Jiankui, who in 2018 announced the birth of the world’s first children with edited CCR5 genes to protect them from HIV. This experiment, conducted without scientific and ethical oversight, drew international condemnation and became the starting point for a global ban on germline editing. LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/) Contemporary bioethicists emphasise that interference with somatic cells, where changes are not passed on to offspring, may be acceptable and beneficial, but any modifications to eggs, embryos or DIY modify DNA are considered unethical without a full understanding of the long-term consequences.",
+    "Scientific criticism. From a scientific point of view, criticism of gene therapy focuses on three areas: accuracy, stability, and predictability of effects. Despite the possible power of CRISPR/Cas9, studies from 2023–2025 have shown that editing sometimes causes unexpected DNA rearrangements. Especially in complex regions of the genome. Scientists also warn that moving too quickly from laboratory experiments to clinical trials without sufficient long-term observation could lead to new biological risks. So we have a philosophical aspect here: where is the line between treatment and “improvement” of humans? New biotechnics and conferences are trying to solve this question for new generations of scientists."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Is Gene and Cell Therapy Legal?",
+   "id": "is-gene-and-cell-therapy-legal"
+  },
+  {
+   "t": "p",
+   "text": "Each country has its own rules for the use of gene and cell therapy. However, as a rule, their clinical use is only permitted after regulators such as the EMA or FDA approve."
+  },
+  {
+   "t": "p",
+   "text": "Certain procedures are strictly prohibited, such as unauthorised germline editing, as this interferes with genes and can be dangerous without proper control."
+  },
+  {
+   "t": "p",
+   "text": "Clinical and regulatory procedures often include multi-stage trials, patient observation, and long-term monitoring of side effects. In general, legality depends directly on the stage of development of genome modification, the availability of permits, and compliance with ethical standards."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/12/3d-representation-dna-1024x731-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Future Trends of Gene and Cell Therapy",
+   "id": "future-trends-of-gene-and-cell-therapy"
+  },
+  {
+   "t": "p",
+   "text": "Since these types of therapies show promising results and the potential to address the root cause of the problem, we will likely see these technologies being used more and more in the future. Research is expanding the application of CRISPR editing to more complex diseases: HIV, oncology, and neurological disorders. New editing methods are emerging, such as base and prime editing, for even more accurate correction without breaking the double helix. The role of artificial intelligence in this process is also worth noting. AI tools improve the design of guide RNAs, increasing the safety of the gene editing tool. This does not mean that AI will be completely in charge of the creation process, but it could be a useful tool in the hands of scientists. The development of inexpensive, low-toxicity vectors and non-cellular delivery methods is a key technical challenge for the coming decade."
+  },
+  {
+   "t": "note",
+   "text": "In addition, legal and ethical aspects remain important, as they do not always keep pace with discoveries."
+  },
+  {
+   "t": "p",
+   "text": "Most likely, they will develop in parallel with the processes or slow them down slightly, allowing discoveries to be handled more safely."
+  },
+  {
+   "t": "h2",
+   "text": "Summary",
+   "id": "summary"
+  },
+  {
+   "t": "p",
+   "text": "As you can see human genome therapy is a wide topic to discuss, in which everyone can reach something useful. We have examined what gene-based therapy technology, cell therapy, and CRISPR are, why they are considered revolutionary, and how they are used in practice today. Real-life cases are described, from blood disorders and neurodegeneration to cholesterol reduction, demonstrating the growth of the evidence base. At the same time, scientific and ethical challenges remain, requiring caution."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "p",
+   "text": "Here are a few tips if you still want to incorporate gene therapy into your life:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "Focus only on clinical data from peer-reviewed studies.",
+    "Check the legal status of procedures in your country.",
+    "Do not experiment on your own – it is dangerous and illegal.",
+    "Discuss genetic testing and therapy with relevant specialists.",
+    "Follow FDA/EMA publications on new approvals.",
+    "Be aware of the possible side effects of gene editing technology and the risks of off-target changes.",
+    "Remember that the technology is still evolving – there is still a long way to go."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What Is Gene Therapy?",
+   "a": "Let’s talk about gene therapy definition at first. Every creature on the planet is made up of cells, and our bodies are no exception. All cells have their own specialised function, and each one is filled with our genes. These genes are the fundamental building blocks of life. We inherit them from our parents in the form of chromosomes. Each chromosome, in turn, consists of an organic substance called deoxyribonucleic acid (DNA) and is located in the cell nucleus: the “control centre” of the cell."
+  },
+  {
+   "q": "What Is Cell Therapy?",
+   "a": "In cell therapy, living cells are introduced into a patient to restore tissue function or fight disease. These cells may be the patient’s own (autologous) or from a donor. They are often genetically modified before being introduced. Cell therapy differs from gene therapy in that it focuses on whole cells rather than necessarily altering DNA directly. This type of therapy is often used to treat complex diseases; it essentially resets the immune system and teaches it to fight what the body previously did not recognise. In some cases, such as CAR-T therapy, cells are modified to attack cancer cells. Research shows that this is a potentially beneficial treatment option, but it requires strict regulations and monitoring of the process."
+  },
+  {
+   "q": "Is Gene and Cell Therapy Legal?",
+   "a": "Each country has its own rules for the use of gene and cell therapy. However, as a rule, their clinical use is only permitted after regulators such as the EMA or FDA approve."
+  }
+ ]
+}

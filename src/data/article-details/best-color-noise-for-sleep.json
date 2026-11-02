@@ -1,0 +1,281 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "",
+ "highlights": [
+  "Biohackers use different color noises to improve sleep and mask annoying sounds.",
+  "White noise creates a soft static sound that helps mask sudden nighttime noise.",
+  "Pink noise sounds like steady rain and may support deeper more stable sleep.",
+  "Green noise resembles calm forest ambience and helps reduce stress before bed."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "What Are Colored Noises",
+   "id": "what-are-colored-noises"
+  },
+  {
+   "t": "p",
+   "text": "Colored noises are sound signals with different frequency distributions (spectra) that are used to mask annoying sounds, [improve sleep](https://www.biohackers.world/blog/biohacking-sleep), and enhance concentration. The names (white, pink, brown) reflect an analogy with the spectrum of visible light. Popular examples include the sound of rain (pink), a waterfall (brown), or a television (white). The classification of noises by color is rather arbitrary. The sound it produces depends not only on the frequencies in the audio track but also on the playback device and volume."
+  },
+  {
+   "t": "p",
+   "text": "The history of noise-generating devices dates back to the 17th century. The first known prototype of such a device was created in 1667 by the Italian architect Giovanni Bernini for Pope Clement IX. Knowing that the pontiff found it easier to fall asleep to the soothing sound of a fountain, the architect designed a special mechanism that imitated the sound of running water."
+  },
+  {
+   "t": "p",
+   "text": "In the modern era, the function of such inventions is performed by special generators. These gadgets can reproduce the desired acoustic background throughout the night without a power source."
+  },
+  {
+   "t": "p",
+   "text": "As Dr. Jeffrey Ellenbogen, a neurologist and director of a sleep health research program,[explained](https://www.cbsnews.com/news/white-brown-pink-noise-help-sleep-neurologist/)in an interview with CBS News, our nervous system is sensitive to sudden sounds, perceiving them as a potential danger. At the same time, monotonous background noises, called “colored noises,” have a calming effect: the brain, upon detecting them, relaxes and lets its guard down."
+  },
+  {
+   "t": "h2",
+   "text": "Best Color Noises for Sleep",
+   "id": "best-color-noises-for-sleep"
+  },
+  {
+   "t": "p",
+   "text": "Today, there are entire collections and apps with various noises. Each sound[has its own function](https://www.hatch.co/blog/science-of-sleep-sounds?srsltid=AfmBOooXcO2jYN_59Ga2KPcGfo_PtcFxZw-LsVF9Q0rtvJRaYpG9RaXx): one helps you focus on work, another helps you fall asleep, a third relieves anxiety, and so on. Let’s look at which noises are best for what purpose."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/05/unnamed-3-optimized.png",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "White Noise"
+  },
+  {
+   "t": "p",
+   "text": "This is a uniform sound that includes all audible frequencies. The noise is similar to the hiss of a television or radio static. It is not found in nature; only similar sounds exist. White noise is a mixture of sounds across the entire frequency spectrum, from low to high. In nature, it occurs as the sound of light rain, running water, and the rustling of leaves in the wind."
+  },
+  {
+   "t": "p",
+   "text": "[Studies have shown](https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2017.00718/full?fbclid=IwZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAEev_c5a-8P6U8_NzHicOC33OvkeKo64U2-u0IArghv-rrrAQbNFo7lczSC9r4_aem_hAPCae_Milwtl6dSiB8-yQ)that white noise helps people fall asleep 40% faster. It can also help infants fall asleep, and schoolchildren concentrate better on their studies when background noise is playing."
+  },
+  {
+   "t": "p",
+   "text": "The effects of white noise on humans have been the most frequently studied by scientists. However, the sample sizes were too small."
+  },
+  {
+   "t": "p",
+   "text": "The authors of[one study](https://pubmed.ncbi.nlm.nih.gov/29312136/)examined how much faster people fell asleep when exposed to white noise. Only 18 people participated. During the first week, they went to bed in normal conditions. The subjects were surrounded only by sounds typically heard in a bedroom. During the second week, the participants fell asleep to white noise. The scientists found that when exposed to the sound, people fell asleep 38% faster."
+  },
+  {
+   "t": "p",
+   "text": "[Another small study](https://onlinelibrary.wiley.com/doi/10.1111/jocn.13928)with 40 participants showed that listening to white noise helps soothe colicky babies. Babies who were exposed to a recording cried less and fell asleep faster than those who were simply rocked."
+  },
+  {
+   "t": "h3",
+   "text": "Pink Noise"
+  },
+  {
+   "t": "p",
+   "text": "The noise is similar to white noise, but it contains lower-pitched sounds that become lower-pitched over time. The recording may resemble wind, rain, or a waterfall. In nature, pink noise is also associated with the sound of sea waves."
+  },
+  {
+   "t": "p",
+   "text": "[One of the most recent studies](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2017.00109/full)on the effectiveness of pink noise was published in 2017. It examined the effects of pink noise on sleep in older adults. The results showed that background pink noise promoted the stability of slow-wave (deep) sleep. Earlier studies found that pink noise also improved sleep and memory in young people who listened to it during the day."
+  },
+  {
+   "t": "h3",
+   "text": "Brown (Red) Noise"
+  },
+  {
+   "t": "p",
+   "text": "This noise is also called red. The sound contains predominantly low tones that gradually become even lower. The noise is quite loud, and it can be difficult to maintain a flowing state beneath it, but it helps to drown out other sounds. Brown noise is believed to resemble rain or a shower."
+  },
+  {
+   "t": "p",
+   "text": "The noise was named after the Scottish scientist Robert Brown, who discovered Brownian motion. In the 1800s, Brown observed pollen particles moving erratically in water, which led him to develop a mathematical formula to predict their movements. When this formula is used to generate sound, the result is a low-frequency noise. Brown noise is sometimes called red noise."
+  },
+  {
+   "t": "h3",
+   "text": "Green Noise"
+  },
+  {
+   "t": "p",
+   "text": "This type of noise, like white noise, contains equal amounts of all sound frequencies. Still, they intensify in the middle of the composition. On a spectrogram — a graphical representation of sound — it looks like a cardiogram with very sharp peaks. It’s the calming hum of a summer forest, the rustling of leaves and distant life, an ideal background for concentration and stress relief. It lies in the middle of the spectrum, emphasizing the energy around 500 Hz, which matches the acoustic profile of the natural environment."
+  },
+  {
+   "t": "p",
+   "text": "The Sleep Foundation’s experts[see](https://www.sleepfoundation.org/noise-and-sleep/white-noise)only one use for it: it can drown out extraneous sounds in the bedroom and, possibly, thereby reduce the number of nighttime awakenings."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/03/Group-35-300x132-optimized.png",
+   "alt": "Biohackers World Miami 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Main-banner-300x129-optimized.webp",
+   "alt": "Biohacking Conference in San Francisco 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-6-300x189-optimized.png",
+   "alt": "Biohackers World Chicago 2027 event logo"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
+   "alt": "Biohackers World Los Angeles 2027 event logo"
+  },
+  {
+   "t": "p",
+   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
+  },
+  {
+   "t": "h2",
+   "text": "Other Noise Colors",
+   "id": "other-noise-colors"
+  },
+  {
+   "t": "p",
+   "text": "In addition to the most well-known noises, there are others:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "**Blue noise** – unlike uniform white noise, whose power increases by 3 dB per octave with frequency. This creates a brighter, more hissing sound, reminiscent of a strong stream of water. It has found application in dithering, a technique for concealing digital distortions in audio and graphics.",
+    "**Violet noise** – its power increases even more rapidly (by 6 dB per octave). This makes it extremely harsh and high-pitched. The sound is a shrill “screech” and is sometimes used in scientific research for equipment testing.",
+    "**Orange noise** is more of a concept than a formal scientific term. It refers to quasi-periodic noise that mimics annoying acoustic artifacts, such as random water drops or the unstable hum of old electronics. Its name metaphorically reflects the “unnaturalness” of such sounds.",
+    "**Black noise** is a concept that extends beyond the traditional spectrum. Black noise most often refers to either complete silence (absence of frequencies) or noise with an extreme predominance of infrasonic frequencies, which are almost inaudible but can be physically felt."
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Best Devices and Apps for Sleep Noise",
+   "id": "best-devices-and-apps-for-sleep-noise"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/05/Best-Devices-and-Apps-for-Sleep-Noise-1024x683-optimized.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "When it comes to improving sleep quality with sound, the tools you choose matter just as much as the sound itself. Broadly, solutions fall into two categories: dedicated white noise devices and mobile apps, each offering a slightly different experience depending on your routine and preferences."
+  },
+  {
+   "t": "h3",
+   "text": "Devices: a consistent, distraction-free solution"
+  },
+  {
+   "t": "p",
+   "text": "Dedicated sleep noise machines are designed to do one thing well: create a stable, continuous sound environment throughout the night. Unlike smartphones, they don’t interrupt you with notifications, glowing screens, or battery concerns."
+  },
+  {
+   "t": "p",
+   "text": "Compact options like the LectroFan Micro2+ are especially practical for travel, combining portability with a surprisingly rich range of sounds — from fan noise to ocean waves. For a more targeted approach, devices such as the Manta White Noise Machine are built to actively mask external disturbances, making them useful if you’re dealing with street noise or thin walls."
+  },
+  {
+   "t": "p",
+   "text": "Overall, devices tend to offer more consistent sound quality and a more “set-and-forget” experience, which can be beneficial for building a stable nighttime routine."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2025/10/Best-Sleep-Gadgets-768x513-optimized.webp",
+   "alt": "13 Best Sleep Gadgets"
+  },
+  {
+   "t": "p",
+   "text": "13 Best Sleep Gadgets Blog 10 min read Blue-Light Blocking Glasses All the screens around us produce a specific light spectrum that prevents us from relaxing and puts additional strain on our eyes. According to a study published in the Journal of Adolescent Health, using these glasses two hours before bed improves sleep latency by 15-20%. A few hours before bed, it’s best […] [Read The Full Article](https://www.biohackers.world/blog/13-best-sleep-gadgets)"
+  },
+  {
+   "t": "h3",
+   "text": "Apps: flexibility and personalization"
+  },
+  {
+   "t": "p",
+   "text": "Sleep apps, on the other hand, bring variety and customization. Platforms like Calm and Headspace go beyond simple background noise, combining soundscapes with guided relaxation, breathing exercises, and sleep stories, particularly helpful if your main challenge is stress or an overactive mind before bed."
+  },
+  {
+   "t": "p",
+   "text": "For those looking for a broader (and often free) library, Insight Timer offers an extensive collection of ambient sounds and music. Meanwhile, Brain.fm takes a more science-driven approach, using engineered audio patterns designed to support deeper sleep states."
+  },
+  {
+   "t": "p",
+   "text": "Apps are ideal if you prefer to experiment with different types of sound — from white and pink noise to nature-based environments — and adjust your experience over time."
+  },
+  {
+   "t": "h3",
+   "text": "Finding what works for you"
+  },
+  {
+   "t": "p",
+   "text": "There’s no universal “best” option here. If you value consistency and minimal distractions, a dedicated device may fit better into your sleep routine. If you lean toward variety and guided support, apps offer more flexibility."
+  },
+  {
+   "t": "note",
+   "text": "Most importantly, sleep noise is highly individual. The same sound that helps one person fall asleep faster can feel irritating to another.A bit of trial and adjustment is often the key to finding the setup that truly supports deeper, uninterrupted rest."
+  },
+  {
+   "t": "h2",
+   "text": "How to Use Color Noise for Better Sleep",
+   "id": "how-to-use-color-noise-for-better-sleep"
+  },
+  {
+   "t": "p",
+   "text": "The most accessible way to create background noise is to turn on an air conditioner, a fan, or tune the radio to static."
+  },
+  {
+   "t": "p",
+   "text": "Turn to natural sounds. Different types of soothing noise, such as white, pink, and brown, can be found in natural environments: the sound of a waterfall, rustling leaves, or the surf. Another method is to choose an online service or mobile app that offers a wide library of sounds to suit every taste. Decide whether an app or a generator is right for you. For consistent use, it’s important to choose a convenient tool."
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Apps work by playing a pre-recorded audio recording.",
+    "Separate generators (which often look like smart speakers) either generate noise mechanically or use high-quality digital recordings, resulting in cleaner, more effective sound."
+   ]
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
+   "alt": "Dr. Mark Atkinson"
+  },
+  {
+   "t": "p",
+   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
+  },
+  {
+   "t": "p",
+   "text": "Specialized devices also have useful features, such as:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "A timer function that allows you to set the sound to automatically turn off after a preset period of time (e.g., 15, 30, or 60 minutes).",
+    "Memory settings let you save your favorite sound combinations so the device plays them automatically each night.",
+    "A two-phase alarm promotes gentle awakening: first, a quiet, calming melody plays, followed by a more energetic alarm."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Regardless of the selected background sound type, excessive volume can cause potential harm. This is especially true if you use headphones or are in close proximity to the sound source for extended periods."
+  },
+  {
+   "t": "h2",
+   "text": "To sum up",
+   "id": "to-sum-up"
+  },
+  {
+   "t": "p",
+   "text": "Many of these noises offer several benefits. First and foremost, they enhance brain activity associated with deep sleep. Therefore, noise can not only quickly induce sleep but also improve brain function in the long term. Noise also typically improves memory and concentration, relaxes, and relieves anxiety. It’s also used in [meditation](https://www.biohackers.world/blog/biohacking-meditation): it helps clear your mind and focus on your breathing. But you won’t know exactly how it will benefit you until you try it out — [sound therapy](https://www.biohackers.world/blog/sound-therapy-in-biohacking) is a personal choice."
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "academy"
+  }
+ ],
+ "faq": []
+}
