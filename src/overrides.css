@@ -870,7 +870,7 @@ a:hover .art[data-k="episode"] img,
 .art-events { padding: 36px 32px 32px; background: radial-gradient(90% 120% at 0% 0%, #15123a, transparent 60%), linear-gradient(160deg, var(--ink), #140b14); }
 .art-events-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 28px; }
 .prose .art-events-title, .prose .art-academy-title { margin: 0 !important; font-size: clamp(30px, 4.2vw, 52px) !important; line-height: .95 !important; font-weight: 800 !important; letter-spacing: -0.035em !important; text-transform: uppercase; color: var(--white) !important; }
-.prose .art-events-sub { margin: 12px 0 0 !important; font-size: clamp(16px, 1.8vw, 21px) !important; font-weight: 600; letter-spacing: -0.02em; color: var(--white) !important; }
+.prose .art-events-sub { margin: 12px 0 0 !important; line-height: 1.25 !important; font-size: clamp(16px, 1.8vw, 21px) !important; font-weight: 600; letter-spacing: -0.02em; color: var(--white) !important; }
 .art-events-nav { display: flex; gap: 12px; flex-shrink: 0; }
 .art-events-nav button { width: 52px; height: 52px; border-radius: 50%; border: 0; background: color-mix(in srgb, var(--white), transparent 82%); color: var(--white); font-size: 20px; cursor: pointer; transition: background .2s; }
 .art-events-nav button:hover { background: color-mix(in srgb, var(--white), transparent 70%); }
