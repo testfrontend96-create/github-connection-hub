@@ -92,11 +92,11 @@ function Events() {
         </div>
       </div>
       <div className="art-events-track" ref={track}>
-        {events.map((ev) => (
-          <a key={ev.url} className={`art-event art-event--${EV_TONE[ev.city] || 'miami'}`} href={ev.url} target="_blank" rel="noopener" style={{ ['--ev-img' as any]: `url("${ev.logo}")` }}>
-            <span className="art-event-art"><img src={ev.logo} alt={ev.name} loading="lazy" /></span>
+        {events.map((ev: any) => (
+          <a key={ev.url} className={`art-event art-event--${EV_TONE[ev.city] || 'miami'}`} href={ev.url} target="_blank" rel="noopener" style={{ ['--ev-img' as any]: `url("${ev.bg}")` }}>
+            <img className="art-event-logo" src={ev.logo} alt={`${ev.name} event logo`} loading="lazy" />
             <span className="art-event-strip"><b>{ev.city}</b><b>{ev.dates}</b></span>
-            <span className="art-event-foot"><span className="art-event-cta">Buy tickets</span></span>
+            <span className="art-event-cta">Buy tickets</span>
           </a>
         ))}
       </div>
