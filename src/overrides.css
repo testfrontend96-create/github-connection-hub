@@ -869,11 +869,11 @@ a:hover .art[data-k="episode"] img,
 .art-events h3 { margin: 0 0 4px !important; font-size: 22px !important; }
 .art-events > p { color: var(--muted) !important; font-size: 15px !important; }
 .art-events-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
-.art-event { display: flex; flex-direction: column; gap: 2px; padding: 16px; border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); text-decoration: none !important; font-size: 14px; transition: border-color .2s; }
+.prose .art-event, .art-event { display: flex; flex-direction: column; gap: 2px; padding: 16px; border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); text-decoration: none !important; font-size: 14px; transition: border-color .2s; }
 .art-event:hover { border-color: var(--card-hover, #C3C5CB); }
 .art-event-logo { display: grid; place-items: center; height: 92px; margin-bottom: 12px; border-radius: calc(var(--radius) - 4px); background: var(--ink); overflow: hidden; }
 .art-event-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
-.art-event b { font-size: 15px; }
+.prose .art-event b { font-size: 15px; color: var(--ink); }
 .art-event > span:not([class]) { color: var(--muted); }
 .art-event-cta { margin-top: 10px; color: var(--pulse); font-weight: 600; }
 
