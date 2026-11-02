@@ -87,10 +87,6 @@
    "alt": "Biohackers World Los Angeles 2027 event logo"
   },
   {
-   "t": "p",
-   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
-  },
-  {
    "t": "ul",
    "items": [
     "**Embrace spontaneity.** Go with the flow. Some of the best moments happen unexpectedly — like a hallway conversation with a speaker or joining a small-circle discussion on sleep optimization or nootropics.",
@@ -222,15 +218,6 @@
    "text": "Use a group chat or shared document where everyone can drop key takeaways, screenshots, useful links, or quotes from speakers. This becomes a valuable collective archive you can review long after the conference ends."
   },
   {
-   "t": "img",
-   "src": "https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png",
-   "alt": "Dr. Mark Atkinson"
-  },
-  {
-   "t": "p",
-   "text": "LongevityScience Academy Become a Trusted Guide in Health Optimization & Longevity 6Months 14Modules A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves. [Enroll now](https://academy.biohackers.world/) [Led by Dr. Mark Atkinson MBBS · FRSPH · Chief Instructor](https://academy.biohackers.world/)"
-  },
-  {
    "t": "ul",
    "items": [
     "**Use group presence to network more easily**"
@@ -314,10 +301,6 @@
    "t": "img",
    "src": "https://www.biohackers.world/wp-content/uploads/2026/09/Main-banner-300x191-optimized.png",
    "alt": "Biohackers World Los Angeles 2027 event logo"
-  },
-  {
-   "t": "p",
-   "text": "Upcoming Events Join one of our health & wellnes events in your city! [Miami, FL January 16-17, 2027 Buy Tickets](https://www.biohackers.world/events/miami?utm_source=our_blog&utm_medium=event_block) [San Francisco, CA March 13-14, 2027 Buy Tickets](https://www.biohackers.world/events/san-francisco?utm_source=our_blog&utm_medium=event_block) [Chicago, IL May 8-9, 2027 Buy Tickets](https://www.biohackers.world/events/chicago?utm_source=our_blog&utm_medium=event_block) [Los Angeles, CA July 10-11, 2027 Buy Tickets](https://www.biohackers.world/events/los-angeles?utm_source=our_blog&utm_medium=event_block)"
   },
   {
    "t": "h3",
