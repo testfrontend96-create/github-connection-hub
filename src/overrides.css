@@ -783,7 +783,7 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 1199px) {
   /* The picture band runs ~30% shorter than a 16:9 frame, and its bottom edge
      dissolves so the copy can begin while the image is still fading away. */
-  .bento .tile--a, .bento .tile--b { padding-top: calc(40% - 28px); }
+  .bento .tile--a, .bento .tile--b { padding-top: calc(40% - 44px); }
   .bento .tile--a .tile-photo, .bento .tile--b .tile-photo {
     left: 0; right: 0; top: 0; bottom: auto; width: auto; height: auto;
     aspect-ratio: 5 / 2; overflow: hidden;
