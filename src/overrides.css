@@ -838,7 +838,7 @@ a:hover .art[data-k="episode"] img,
 .art-meta-author img, .art-meta-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex: none; background: var(--surface); display: grid; place-items: center; font-weight: 600; }
 .art-meta-author > div { display: flex; flex-direction: column; gap: 4px; }
 .art-body { padding-top: 48px; }
-.art-layout { grid-template-columns: minmax(0, 1fr) 280px; }
+@media (min-width: 981px) { .art-layout { grid-template-columns: minmax(0, 1fr) 280px; } }
 .art-layout .prose { max-width: 72ch; }
 .art-layout .prose h2 { font-size: 26px; font-weight: 600; line-height: 1.25; letter-spacing: -0.02em; margin: 48px 0 14px; scroll-margin-top: 140px; }
 .art-layout .prose h3 { font-size: 19px; font-weight: 600; line-height: 1.35; margin: 32px 0 10px; }
@@ -912,7 +912,9 @@ a:hover .art[data-k="episode"] img,
 }
 @media (max-width: 600px) {
   .art-top { padding-top: 32px; }
-  .art-meta { grid-template-columns: 1fr; }
+  .art-meta { grid-template-columns: 1fr 1fr; }
+  .art-meta > div:first-child { grid-column: 1 / -1; }
+  .art-news form { flex-direction: column; }
   .art-meta > div { padding: 0; border-left: 0; }
   .art-news { grid-template-columns: 1fr; padding: 20px; }
   .art-events-grid { grid-template-columns: 1fr; }
