@@ -65,3 +65,6 @@
 - [x] Hero band: third drifting hue added low across the band's bottom edge (teal, centred under the Blog/Podcast row), masked from the top so the band's bottom stays a sharp cut.
 - [x] How-To cards: the big numeral now reads "5 steps" (small grey label on its baseline); the line below keeps only the duration.
 - [x] Hero Blog and Podcast tiles on phones: the user's supplied phone artwork, and the Blog card stacks text under its picture like the Podcast card.
+- [x] Hub nav row narrower (960px) than the main nav bar.
+- [x] Halve the gap between the nav and every Hub page title.
+- [x] Hero: main article 2/3, Start here/New 1/3, New items end with "…", hero row a bit shorter.
