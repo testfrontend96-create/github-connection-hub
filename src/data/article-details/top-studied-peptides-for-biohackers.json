@@ -1,0 +1,525 @@
+{
+ "author": {
+  "name": "Olia Chernova",
+  "role": "PhD (c), Wellness Enthusiast and Co-Founder, COO at Biohackers World",
+  "image": "https://www.biohackers.world/wp-content/uploads/2026/01/Olia-Chernova-1-150x150-optimized.webp"
+ },
+ "intro": "Peptides are organic substances formed by amino acid chains. Most of them are synthesized by the human body itself, while a smaller amount is obtained from food. Their significance is actively discussed in scientific, medical, and sports circles: how much do peptides prolong youth and beauty, and how do they improve appearance — let’s find out with our biohacking experts!",
+ "highlights": [
+  "Peptides are short chains of amino acids used not only for treatment but also for wellness and beauty.",
+  "The most studied peptides for tissue repair include BPC-157, TB-500, and Tα1.",
+  "GHK-Cu, Argireline, and Matrixyl are widely used to improve skin health and reduce wrinkles.",
+  "CJC-1295, Ipamorelin, and GHRPs are well known peptides that support muscle growth.",
+  "Promising peptides under research are MOTS-c, Humanin, Epithalon, and 5-Amino-1MQ."
+ ],
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "Peptides for Recovery and Regeneration",
+   "id": "peptides-for-recovery-and-regeneration"
+  },
+  {
+   "t": "p",
+   "text": "Peptides for recovery and regeneration are short chains of amino acids that accelerate tissue repair, reduce inflammation, and enhance healing, making them popular for injury rehabilitation and [anti-aging](https://www.biohackers.world/blog/how-biohacking-can-reverse-aging)."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/2.-Peptides-for-Recovery-and-Regeneration-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "BPC-157"
+  },
+  {
+   "t": "p",
+   "text": "BPC-157 (Body Protection Compound 157, laboratory code PL 14736) is a synthetic peptide consisting of 15 amino acids. It is a derivative of a protein found in gastric juice. It acts as a regulator of the digestive system’s anti-ulcer defense mechanisms."
+  },
+  {
+   "t": "p",
+   "text": "BPC-157 has a powerful regenerative effect and is used to treat inflammatory diseases of the gastrointestinal tract, stomach, and pancreas; heal damaged tissues (muscle, mucous membrane, bone, tooth); and eliminate joint pain. This peptide has shown excellent results in treating tendons."
+  },
+  {
+   "t": "video",
+   "id": "M7BZtfST4yM"
+  },
+  {
+   "t": "p",
+   "text": "Main properties of the peptide:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Increases the body’s anti-inflammatory properties.",
+    "Accelerates wound healing and the restoration of damaged tissues and ligaments.",
+    "Has a beneficial effect on the central nervous system, cardiovascular system, and liver.",
+    "Has no side effects."
+   ]
+  },
+  {
+   "t": "events"
+  },
+  {
+   "t": "p",
+   "text": "The BPC-157 peptide helps to eliminate muscle pain and restore damaged tissues and tendons. This is due to the peptide’s effect on angiogenesis (the process of creating new blood vessels in an organ or tissue, during which the primary capillary network is reorganized)."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/3.-BPC-157-optimized.webp",
+   "alt": "BPC-157"
+  },
+  {
+   "t": "h3",
+   "text": "Thymosin Alpha-1"
+  },
+  {
+   "t": "p",
+   "text": "Thymosin Alpha-1 is a highly effective immunomodulatory peptide consisting of 28 amino acids secreted from the thymus. It enhances the immune response, activates T cells, and fights viruses (including COVID-19 and hepatitis), as well as inflammation."
+  },
+  {
+   "t": "p",
+   "text": "Given thymosin alpha-1’s strong anti-inflammatory effects, scientists have suggested that the molecule may be effective in reducing pain. Studies in mice show that this is indeed the case and have even identified specific pathways with which thymosin alpha-1 interacts. It acts directly at the site of inflammation, reducing the production of cytokines and other molecules that cause pain."
+  },
+  {
+   "t": "p",
+   "text": "This mechanism of action is significantly different from typical anti-inflammatory pain relievers and may offer improved pain relief with fewer side effects than existing drugs."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/4.-Thymosin-Alpha-1-optimized.webp",
+   "alt": "Thymosin Alpha-1"
+  },
+  {
+   "t": "h3",
+   "text": "Thymosin Beta-4 (TB-500)"
+  },
+  {
+   "t": "p",
+   "text": "Tb-500, also known as thymosin beta-4, is a peptide that occurs naturally in the human body and plays a key role in regulating the activity of actin filaments in cells. This peptide has attracted attention for its potential regenerative properties."
+  },
+  {
+   "t": "p",
+   "text": "Laboratory studies have shown that Tb-500 can promote wound healing, tissue repair, reduce inflammation, and promote the formation of new blood vessels. As a result, it has gained popularity among athletes and people with active lifestyles as a means of accelerating recovery from injuries."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/5.-Thymosin-Beta-4-TB-500-optimized.webp",
+   "alt": "Thymosin Beta-4 (TB-500)"
+  },
+  {
+   "t": "h2",
+   "text": "Cosmetic Peptides",
+   "id": "cosmetic-peptides"
+  },
+  {
+   "t": "p",
+   "text": "Among other things, peptides activate the regenerative capacity of skin cells and enhance the synthesis of collagen, elastin (e.g., hyaluronic acid), and other key components that support the youthfulness and health of the skin. It also helps neutralize free radicals, reduces inflammation, and stimulates cell renewal."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/6.-Cosmetic-Peptides-optimized.webp",
+   "alt": "Cosmetic Peptides"
+  },
+  {
+   "t": "h3",
+   "text": "GHK-Cu (Copper Peptide)"
+  },
+  {
+   "t": "p",
+   "text": "Copper Tripeptide (GHK-Cu) is a peptide consisting of three amino acids (glycine-histidine-lysine) that binds copper (Cu) ions and plays a key role in regulating tissue repair and regeneration processes, especially in the skin."
+  },
+  {
+   "t": "p",
+   "text": "Between 1988 and 2000, scientists established that GHK-Cu:"
+  },
+  {
+   "t": "ol",
+   "items": [
+    "stimulates collagen synthesis in skin cell cultures;",
+    "stimulates the synthesis of moisture-retaining molecules in the dermis — glycosaminoglycans;",
+    "accelerates wound healing;",
+    "regulates skin regeneration;",
+    "increases the level of antioxidant and anti-inflammatory enzymes;",
+    "reduces the risk of scarring."
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Other studies conducted at universities and research centers in the US and Korea have confirmed all these effects and added several new discoveries. In particular, it was found that the tripeptide GHK significantly accelerates the healing of complicated wounds, such as burns, wounds with impaired blood supply, and wounds that are difficult to bandage. The peptide also significantly increased antioxidant levels in the wound and was found to bind some toxic products of lipid peroxidation, thereby protecting tissues from damage. It improved the condition of aging skin and enhanced hair growth."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/7.-GHK-Cu-Copper-Peptide-optimized.webp",
+   "alt": "GHK-Cu (Copper Peptide)"
+  },
+  {
+   "t": "h3",
+   "text": "Argireline (Acetyl Hexapeptide-8)"
+  },
+  {
+   "t": "p",
+   "text": "Acetyl Hexapeptide-8 is one of the most popular safest peptides with a botulinum-like effect. It is a viable alternative to Botox, as it relaxes facial muscles by slowing down the conduction of nerve impulses to the muscles and reducing their contractile activity without causing paralysis. Argyrelin also stimulates collagen production and prolongs the effect of botulinum toxin injections."
+  },
+  {
+   "t": "p",
+   "text": "Argyrelin is not addictive, so cosmetics containing it can be used continuously. Individual intolerance to the component is sometimes observed. The working concentration is 3-10%."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/8.-Argireline-Acetyl-Hexapeptide-8-optimized.webp",
+   "alt": "Argireline (Acetyl Hexapeptide-8)"
+  },
+  {
+   "t": "h3",
+   "text": "Matrixyl"
+  },
+  {
+   "t": "p",
+   "text": "Matrixyl is a highly effective signaling peptide complex widely used in anti-aging cosmetics to stimulate the synthesis of collagen, elastin, and hyaluronic acid. It smooths wrinkles, strengthens skin turgor, and provides a lifting effect by restoring the extracellular matrix."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/9.-Matrixyl-optimized.webp",
+   "alt": "Matrixyl"
+  },
+  {
+   "t": "h2",
+   "text": "Peptides for Weight Loss",
+   "id": "peptides-for-weight-loss"
+  },
+  {
+   "t": "p",
+   "text": "[Peptides for weight loss](https://www.nejm.org/doi/full/10.1056/NEJMoa2416394?) are small chains of amino acids that stimulate fat breakdown, suppress appetite, and increase metabolic rate by mimicking natural body hormones. They primarily work by increasing satiety (fullness) and reducing cravings, often leading to significant, [sustainable weight reduction](https://www.biohackers.world/blog/biohacking-for-weight-loss)."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/10.-Peptides-for-Weight-Loss-optimized.webp",
+   "alt": "Peptides for Weight Loss"
+  },
+  {
+   "t": "h3",
+   "text": "Semaglutide (GLP‑1 Agonist)"
+  },
+  {
+   "t": "p",
+   "text": "Semaglutide is a new-generation drug that effectively controls blood sugar levels and normalizes healthy weight. The positive effects of the semaglutide peptide include regulating body weight, suppressing appetite, and promoting a sense of fullness. It normalizes blood pressure and cholesterol levels, thereby reducing the risk of heart disease."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/11.-Semaglutide-GLP-1-Agonist-optimized.webp",
+   "alt": "Semaglutide (GLP-1 Agonist)"
+  },
+  {
+   "t": "h3",
+   "text": "Tirzepatide (GLP‑1/GIP Dual Agonist)"
+  },
+  {
+   "t": "p",
+   "text": "Tirzepatide simultaneously activates the receptors of two incretin hormones — GIP (glucose-dependent insulinotropic polypeptide) and GLP-1 (glucagon-like peptide-1). These hormones play a key role in regulating blood sugar levels by improving insulin sensitivity in tissues and suppressing excessive glucagon secretion."
+  },
+  {
+   "t": "p",
+   "text": "The drug has been approved in several countries due to its high efficacy, safety, and ease of use. It acts on the satiety centers in the brain, promoting natural food intake restriction and regulating lipid metabolism, which is important for patients who are overweight."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/12.-Tirzepatide-GLP-1GIP-Dual-Agonist-optimized.webp",
+   "alt": "Tirzepatide (GLP-1GIP Dual Agonist)"
+  },
+  {
+   "t": "h2",
+   "text": "Peptides for Muscle Growth",
+   "id": "peptides-for-muscle-growth"
+  },
+  {
+   "t": "p",
+   "text": "Peptides for [muscle growth](https://www.biohackers.world/blog/how-to-strengthen-muscle-growth-using-biohacking-methods) are chains of amino acids that stimulate the production of growth hormone (somatotropin) and IGF-1, which accelerate muscle anabolism, fat burning, and tissue repair. These peptides increase training efficiency, improve regeneration, and endurance."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/13.-Peptides-for-Muscle-Growth-optimized.webp",
+   "alt": "Peptides for Muscle Growth"
+  },
+  {
+   "t": "h3",
+   "text": "CJC-1295"
+  },
+  {
+   "t": "p",
+   "text": "CJC-1295 is a powerful peptide that stimulates growth hormone release, improving regeneration, increasing muscle mass, and reducing fat levels. It is used both for athletic purposes and to slow down the aging process. This peptide also improves sleep quality, which helps the body recover after intense workouts."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/14.-CJC-1295-optimized.webp",
+   "alt": "CJC-1295"
+  },
+  {
+   "t": "h3",
+   "text": "Ipamorelin"
+  },
+  {
+   "t": "p",
+   "text": "Ipamorelin is a peptide hormone that enhances growth hormone secretion and mimics ghrelin’s action in the body."
+  },
+  {
+   "t": "academy"
+  },
+  {
+   "t": "p",
+   "text": "It differs from previous versions in that it does not increase cortisol and prolactin levels or increase hunger. However, the main difference from previous-generation GHRP peptides is that Ipamorelin has a more potent effect on growth hormone secretion and also preserves natural growth hormone production with peaks at specific times."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/15.-Ipamorelin-optimized.webp",
+   "alt": "Ipamorelin"
+  },
+  {
+   "t": "h2",
+   "text": "Peptides Currently Under Research",
+   "id": "peptides-currently-under-research"
+  },
+  {
+   "t": "p",
+   "text": "Modern peptide research is actively developing in the areas of anti-aging, metabolic health, neuroprotection, and immunomodulation. Below are several of the most promising peptides currently under scientific research."
+  },
+  {
+   "t": "h3",
+   "text": "MOTS-c"
+  },
+  {
+   "t": "p",
+   "text": "A mitochondrial is the most well studied satiety peptide that regulates carbohydrate and fat metabolism, increases insulin sensitivity, and improves physical endurance. It is being studied as a promising agent for the prevention of metabolic syndrome, type 2 diabetes, and age-related changes."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/16.-MOTS-c-optimized.webp",
+   "alt": "MOTS-c"
+  },
+  {
+   "t": "h3",
+   "text": "Humanin"
+  },
+  {
+   "t": "p",
+   "text": "A cytoprotective peptide with pronounced neuroprotective activity, protecting cells from apoptosis and oxidative stress. It is being actively studied in the context of neurodegenerative diseases, including Alzheimer’s and Parkinson’s."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/17.-Humanin-optimized.webp",
+   "alt": "Humanin"
+  },
+  {
+   "t": "h3",
+   "text": "5-Amino-1MQ"
+  },
+  {
+   "t": "p",
+   "text": "A peptidomimetic that inhibits the NNMT enzyme, which is associated with obesity and metabolic disorders. It is being studied as a potential agent for weight loss, improving energy metabolism, and correcting insulin resistance."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/18.-5-Amino-1MQ-optimized.webp",
+   "alt": "5-Amino-1MQ"
+  },
+  {
+   "t": "h3",
+   "text": "Epithalon (Epithalon)"
+  },
+  {
+   "t": "p",
+   "text": "A peptide that influences telomerase activity and cellular aging processes. Studied in anti-aging medicine as a means of supporting the immune system, hormonal balance, and prolonging lifespan."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/19.-Epithalon-Epithalon-optimized.webp",
+   "alt": "Epithalon (Epithalon)"
+  },
+  {
+   "t": "h3",
+   "text": "Thymosin Alpha-1 (Tα1)"
+  },
+  {
+   "t": "p",
+   "text": "An immunomodulatory peptide that enhances the T-cell immune response and antiviral defense. It is being studied in the treatment of immunodeficiency conditions, cancer, and chronic infections."
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/20.-Thymosin-Alpha-1-T%CE%B11-optimized.webp",
+   "alt": "Thymosin Alpha-1 (Tα1)"
+  },
+  {
+   "t": "h2",
+   "text": "Best Products with Research-Backed Peptides",
+   "id": "best-products-with-research-backed-peptides"
+  },
+  {
+   "t": "p",
+   "text": "Today, peptides are widely used not only in “research formats” but also in ready-to-use commercial products, ranging from cosmetics to supplements and pharmaceuticals. Below are examples of popular products on the US market that contain research-backed peptides."
+  },
+  {
+   "t": "h3",
+   "text": "The Ordinary Multi-Peptide + Copper Peptides 1% Serum"
+  },
+  {
+   "t": "p",
+   "text": "**Peptides**: GHK-Cu, Matrixyl, Argireline"
+  },
+  {
+   "t": "p",
+   "text": "One of the most famous multi-peptide serums in the US, combining several technologies at once:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "copper peptide (GHK-Cu)",
+    "Matrixyl (Palmitoyl peptides)",
+    "Argireline (Acetyl Hexapeptide-8)"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The formula is designed to reduce wrinkles and improve skin elasticity and texture. The serum contains several types of peptides and hyaluronic acid for a comprehensive anti-aging effect."
+  },
+  {
+   "t": "h3",
+   "text": "DRMTLGY Needle-less Serum"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/22.-DRMTLGY-Needle-less-Serum-optimized.webp",
+   "alt": "DRMTLGY Needle-less Serum"
+  },
+  {
+   "t": "p",
+   "text": "**Peptides**: Argireline, Matrixyl"
+  },
+  {
+   "t": "p",
+   "text": "A popular cosmeceutical serum in the US that is often marketed as an “alternative to injections”:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "helps smooth expression lines",
+    "improves skin firmness",
+    "works through neuropeptides"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "SkinMedica TNS Advanced+ Serum"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/23.-SkinMedica-TNS-Advanced-Serum-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "**Peptides**: a complex of growth factors + signaling peptides"
+  },
+  {
+   "t": "p",
+   "text": "A premium product (Sephora / US dermatology clinics) that combines:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "peptides",
+    "growth factors",
+    "antioxidants"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Vital Proteins Collagen Peptides"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/24.-Vital-Proteins-Collagen-Peptides-optimized.webp",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "text": "**Peptides**: collagen peptides"
+  },
+  {
+   "t": "p",
+   "text": "One of the most popular dietary supplements in the US:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "hydrolyzed collagen peptides",
+    "supports skin, joints, and ligaments",
+    "often combined with vitamin C"
+   ]
+  },
+  {
+   "t": "h3",
+   "text": "Ozempic (semaglutide) / Wegovy (semaglutide)"
+  },
+  {
+   "t": "img",
+   "src": "https://www.biohackers.world/wp-content/uploads/2026/02/25.-Ozempic-semaglutide-Wegovy-semaglutide-optimized.webp",
+   "alt": "Ozempic (semaglutide) Wegovy (semaglutide)"
+  },
+  {
+   "t": "p",
+   "text": "**Peptide**: Semaglutide (GLP-1 analog)"
+  },
+  {
+   "t": "p",
+   "text": "Drugs that have revolutionized weight management:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "regulate appetite",
+    "affect glucose levels",
+    "used to treat obesity"
+   ]
+  },
+  {
+   "t": "p",
+   "text": "These are pharmaceutical peptides, not dietary supplements — they must be used strictly under a doctor’s supervision!"
+  },
+  {
+   "t": "h2",
+   "text": "Are Peptides Safe?",
+   "id": "are-peptides-safe"
+  },
+  {
+   "t": "p",
+   "text": "Peptides are actively [researched](https://pmc.ncbi.nlm.nih.gov/articles/PMC12010466/) in medicine, but their safety, efficacy, optimal dosages, and long-term effects for many compounds are still being studied. Therefore, their use requires a particularly balanced and individualized approach."
+  },
+  {
+   "t": "p",
+   "text": "Who is strictly advised not to take peptides: pregnant and lactating women; children and adolescents under 18; people with cancer or suspected cancer; For autoimmune diseases without strict medical supervision; for severe liver, kidney, or cardiovascular diseases; or for individuals with individual intolerance to the components."
+  },
+  {
+   "t": "video",
+   "id": "cPltVkYp3qA"
+  },
+  {
+   "t": "p",
+   "text": "Before taking peptides, be sure to:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "consult a physician (endocrinologist, general practitioner, sports medicine physician, or anti-aging medicine specialist);",
+    "undergo basic diagnostics and laboratory testing; assess potential risks, drug interactions,",
+    "and the appropriateness of use."
+   ]
+  },
+  {
+   "t": "note",
+   "text": "Important: this article is for informational purposes only and is not medical advice or a guide to self-medication. Any decisions regarding the use of peptides should be made only in consultation with a qualified physician."
+  },
+  {
+   "t": "p",
+   "text": "A responsible approach to your health is a key principle of biohacking and anti-aging medicine: any supplements and peptides should be used consciously, safely, and under professional supervision. Only in this way will they have the desired and beneficial effect on the biohacker’s body."
+  }
+ ]
+}
