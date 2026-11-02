@@ -758,6 +758,6 @@ a:hover .art[data-k="episode"] img,
 
 /* hero right column: one-line "New" items with ellipsis, tighter rows so the band is shorter */
 .tile--brief .brief li { padding: 7px 0; min-width: 0; }
-.tile--brief .brief li > * { min-width: 0; }
-.tile--brief .brief a, .tile--brief .brief small { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tile--brief .brief li { grid-template-columns: 26px minmax(0, 1fr); }
+.tile--brief .brief a { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bento .tile--lead { min-height: 0; }
