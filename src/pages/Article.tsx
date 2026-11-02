@@ -69,39 +69,56 @@ function Newsletter() {
   )
 }
 
+const EV_TONE: Record<string, string> = { 'Miami, FL': 'miami', 'San Francisco, CA': 'sf', 'Chicago, IL': 'chi', 'Los Angeles, CA': 'la' }
+
 function Events() {
+  const track = useRef<HTMLDivElement>(null)
+  const go = (dir: number) => {
+    const el = track.current
+    if (!el) return
+    const card = el.firstElementChild as HTMLElement | null
+    el.scrollBy({ left: dir * ((card?.offsetWidth || 300) + 20), behavior: 'smooth' })
+  }
   return (
-    <div className="art-events">
-      <h3>Upcoming events</h3>
-      <p>Join one of our health and wellness events in your city.</p>
-      <div className="art-events-grid">
+    <section className="art-events" aria-labelledby="art-events-h">
+      <div className="art-events-head">
+        <div>
+          <h2 id="art-events-h" className="art-events-title">Upcoming events</h2>
+          <p className="art-events-sub">Join one of our health &amp; wellness events in your city!</p>
+        </div>
+        <div className="art-events-nav">
+          <button type="button" aria-label="Previous events" onClick={() => go(-1)}>←</button>
+          <button type="button" aria-label="Next events" onClick={() => go(1)}>→</button>
+        </div>
+      </div>
+      <div className="art-events-track" ref={track}>
         {events.map((ev) => (
-          <a key={ev.url} className="art-event" href={ev.url} target="_blank" rel="noopener">
-            <span className="art-event-logo"><img src={ev.logo} alt={ev.name} loading="lazy" /></span>
-            <b>{ev.city}</b><span>{ev.dates}</span>
-            <span className="art-event-cta">Buy tickets</span>
+          <a key={ev.url} className={`art-event art-event--${EV_TONE[ev.city] || 'miami'}`} href={ev.url} target="_blank" rel="noopener" style={{ ['--ev-img' as any]: `url("${ev.logo}")` }}>
+            <span className="art-event-art"><img src={ev.logo} alt={ev.name} loading="lazy" /></span>
+            <span className="art-event-strip"><b>{ev.city}</b><b>{ev.dates}</b></span>
+            <span className="art-event-foot"><span className="art-event-cta">Buy tickets</span></span>
           </a>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
 function Academy() {
   return (
-    <div className="art-academy">
-      <p className="art-academy-kick">Longevity Science Academy</p>
-      <h3>Become a trusted guide in health optimization and longevity</h3>
-      <div className="art-academy-stats"><div><b>6</b><span>Months</span></div><div><b>14</b><span>Modules</span></div></div>
-      <p>A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves.</p>
-      <div className="art-academy-foot">
-        <a className="art-academy-cta" href={ACADEMY_URL} target="_blank" rel="noopener">Enroll now</a>
-        <a className="art-academy-lead" href={ACADEMY_URL} target="_blank" rel="noopener">
-          <img src="https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png" alt="" loading="lazy" />
-          <span><small>Led by</small><b>Dr. Mark Atkinson</b><small>MBBS · FRSPH · Chief Instructor</small></span>
-        </a>
+    <section className="art-academy" aria-labelledby="art-academy-h">
+      <div className="art-academy-copy">
+        <h2 id="art-academy-h" className="art-academy-title">Longevity Science Academy</h2>
+        <p className="art-academy-lede">Become a <em>Trusted Guide</em> in Health Optimization &amp; <em>Longevity</em></p>
+        <div className="art-academy-stats"><div><b>6</b><span>months</span></div><div><b>14</b><span>modules</span></div></div>
+        <p className="art-academy-text">A world-class coaching certification in longevity science, optimal health and applied biohacking — designed to help you build the knowledge, confidence and practical skills to coach others towards the healthiest, most thriving version of themselves.</p>
+        <a className="art-academy-cta" href={ACADEMY_URL} target="_blank" rel="noopener">Enroll now <span aria-hidden="true">→</span></a>
       </div>
-    </div>
+      <a className="art-academy-lead" href={ACADEMY_URL} target="_blank" rel="noopener">
+        <img src="https://www.biohackers.world/wp-content/uploads/2026/10/Dr.-Mark-Atkinson-Lead-Instructor-optimized.png" alt="Dr. Mark Atkinson" loading="lazy" />
+        <span className="art-academy-lead-copy"><small className="art-academy-ledby">Led by</small><b>Dr. Mark Atkinson</b><small>MBBS · FRSPH · Chief Instructor</small></span>
+      </a>
+    </section>
   )
 }
 
