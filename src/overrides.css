@@ -991,9 +991,6 @@ a:hover .art[data-k="episode"] img,
 @keyframes hub-dock-in { from { opacity: 0; transform: translate(-16px, 24px) scale(.96); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .is-collapsed .hub-nav-sub-row, .is-collapsed .hub-nav-search { animation: none; } }
 
-/* Article pages: breadcrumb-only band at half its former thickness */
-#main:has(.art-top) > .page-head.page-head--compact { padding-top: 136px; padding-bottom: 8px; }
-#main:has(.art-top) > .page-head .crumbs { padding-top: 0; padding-bottom: 0; line-height: 20px; }
 
 /* Academy promo: CTA sits close under the text, so the block (and Dr. Atkinson's photo) is shorter */
 .art-academy { height: auto; }
