@@ -59,7 +59,7 @@
 .hub-nav-toggle { display: none; }
 .hub-nav a:focus-visible, .hub-nav-toggle:focus-visible { outline: 2px solid var(--nav-focus); outline-offset: 3px; }
 .hub-nav-menu { display: none; }
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .hub-nav { padding: 10px 12px 0; }
   .hub-nav-bar { gap: 10px; }
   .hub-nav-links { display: none; }
@@ -73,7 +73,7 @@
   .hub-nav-menu a:hover, .hub-nav-menu a[aria-current] { background: var(--nav-highlight); color: var(--nav-text); }
   .hub-nav-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--nav-text); }
 }
-@media (min-width: 1101px) and (max-width: 1190px) { .hub-nav-lockup, .hub-nav-brand-divider { display: none; } .hub-nav-links { gap: 2px; } }
+@media (min-width: 901px) and (max-width: 1190px) { .hub-nav-lockup, .hub-nav-brand-divider { display: none; } .hub-nav-links { gap: 0; } .hub-nav-links a { padding: 8px 9px; } .hub-nav-bar { gap: 10px; } }
 @media (max-width: 600px) { .hub-nav-lockup, .hub-nav-brand-divider { display: none; } .hub-nav-brand img { height: 26px; } .hub-nav-bar { padding: 7px 7px 7px 12px; min-height: 48px; } .hub-nav-cta { padding: 0 10px; } .hub-nav-toggle { justify-self: end; } }
 @media (max-width: 420px) { .hub-nav-bar { gap: 8px; } .hub-nav-current { display: none; } .hub-nav-toggle { width: 32px; padding: 0; } }
 @keyframes hub-menu-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
@@ -976,3 +976,25 @@ a:hover .art[data-k="episode"] img,
   .art-academy-lead-copy small { font-size: 10px; letter-spacing: 0; }
 }
 .blog-more { display: flex; justify-content: center; margin-top: 32px; }
+
+/* Hub sub-navigation: hugs its links; on scroll the dropdown + search dock beside the main bar */
+@media (min-width: 901px) {
+  .hub-nav-sub:not(.is-collapsed) { width: fit-content; max-width: 960px; }
+  .hub-nav-sub:not(.is-collapsed) .hub-nav-secondary { padding: 4px 6px; }
+  .hub-nav.is-condensed { display: flex; justify-content: center; align-items: center; gap: 8px; }
+  .hub-nav.is-condensed .hub-nav-bar { flex: 0 1 auto; width: 100%; max-width: 880px; margin: 0; }
+  .hub-nav.is-condensed .hub-nav-sub { flex: 0 0 auto; width: auto; max-width: none; margin: 0; }
+  .hub-nav.is-condensed .hub-nav-lockup, .hub-nav.is-condensed .hub-nav-brand-divider { display: none; }
+  .is-collapsed .hub-nav-sub-row { animation: hub-dock-in .4s cubic-bezier(.2, .8, .2, 1) both; }
+  .is-collapsed .hub-nav-search { animation: hub-dock-in .4s cubic-bezier(.2, .8, .2, 1) both; }
+}
+@keyframes hub-dock-in { from { opacity: 0; transform: translate(-16px, 24px) scale(.96); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .is-collapsed .hub-nav-sub-row, .is-collapsed .hub-nav-search { animation: none; } }
+
+/* Article pages: breadcrumb-only band at half its former thickness */
+#main:has(.art-top) > .page-head.page-head--compact { padding-top: 136px; padding-bottom: 8px; }
+#main:has(.art-top) > .page-head .crumbs { padding-top: 0; padding-bottom: 0; line-height: 20px; }
+
+/* Academy promo: CTA sits close under the text, so the block (and Dr. Atkinson's photo) is shorter */
+.art-academy { height: auto; }
+.prose .art-academy-cta { margin-top: 4px; }
