@@ -995,3 +995,4 @@ a:hover .art[data-k="episode"] img,
 /* Academy promo: CTA sits close under the text, so the block (and Dr. Atkinson's photo) is shorter */
 .art-academy { height: auto; }
 .prose .art-academy-cta { margin-top: 4px; }
+.page-head .crumbs::before { height: 2px; }
