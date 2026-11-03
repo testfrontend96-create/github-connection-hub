@@ -1053,3 +1053,18 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 600px) { .knowledge-stats .stat { min-height: 0; padding: 16px 16px 18px; } .knowledge-stats .stat b { font-size: 36px; } }
 .kb-type-trigger { font-size: .84rem; }
 .erow-more .erow-more-label { margin: 0 0 8px; color: var(--muted); font-size: 13px; font-weight: 600; }
+
+/* Top Biohacker profile: article-style hero — name on the left riding down beside a large photo */
+.prof-art-hero .prof-hero-photo { width: 100%; max-width: none; aspect-ratio: 4 / 5; border-radius: var(--radius); background: var(--surface); }
+.prof-art-hero { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
+.prof-top .prof-id h1.display { position: static; margin: 0 0 16px; }
+.prof-top .prof-title { margin: 0 0 12px; color: var(--muted); }
+.prof-top .prof-id .lede { color: var(--muted); }
+@media (min-width: 981px) { .prof-top .art-hero-title .prof-id { position: sticky; top: 132px; } }
+.prof-top .p-chip { color: var(--ink); border-color: var(--line); }
+.prof-more--end { display: none; }
+@media (max-width: 900px) {
+  .prof-more--inline { display: none; }
+  .prof-more--end { display: block; }
+  .prof-art-hero .prof-hero-photo { max-width: 520px; }
+}
