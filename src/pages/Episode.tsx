@@ -35,7 +35,7 @@ export default function Episode() {
           </div></div>
           <div className="ep-body"><div className="ep-about">
             <span className="art-share-label">About this episode</span>
-            <div className="prose"><p>{p.description}</p></div>
+            <div className="prose">{p.description.split('\n\n').map((para: string, i: number) => <p key={i}>{para}</p>)}</div>
             {p.takeaways?.length > 0 && (<><span className="art-share-label" style={{ marginTop: 16 }}>Key takeaways</span><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
           </div></div>
           <div className="ep-side-top">
