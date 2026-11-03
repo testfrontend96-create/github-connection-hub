@@ -1069,3 +1069,21 @@ a:hover .art[data-k="episode"] img,
   .prof-art-hero .prof-hero-photo { max-width: 520px; }
 }
 @media (max-width: 980px) { .prof-art-hero { grid-template-columns: 1fr; } }
+
+/* Podcast episode: article-style hero; cover + listen panel stacked in the right column */
+.ep-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.ep-hero-id h1.display { position: static; margin: 12px 0 0; }
+@media (min-width: 981px) { .ep-top .art-hero-title .ep-hero-id { position: sticky; top: 132px; } }
+.ep-top .detail-head-meta { color: var(--muted); }
+.ep-hero-side { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.ep-hero-cover { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; border-radius: var(--radius); background: var(--surface); }
+.ep-listen { display: flex; flex-direction: column; gap: 16px; }
+.ep-listen-play { display: flex; align-items: center; gap: 14px; }
+.ep-listen-play b { display: block; color: var(--ink); font-size: 16px; }
+.ep-listen-play i { font-style: normal; color: var(--muted); font-size: 13px; }
+.ep-listen-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.ep-platform { display: inline-flex; align-items: center; gap: 8px; }
+.ep-platform img { width: 18px; height: 18px; flex: none; }
+.ep-listen .ep-tags { margin: 0; }
+.ep-body { padding-top: 48px; }
+@media (max-width: 980px) { .ep-hero { grid-template-columns: 1fr; } }
