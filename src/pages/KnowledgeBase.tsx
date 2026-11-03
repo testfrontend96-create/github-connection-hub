@@ -82,6 +82,7 @@ export default function KnowledgeBase() {
   const kind = KINDS.includes(params.get('type') || '') ? params.get('type') || 'all' : 'all'
   const setKind = (value: string) => { const next = new URLSearchParams(params); if (value === 'all') next.delete('type'); else next.set('type', value); setParams(next, { replace: true, preventScrollReset: true }) }
   const [topic, setTopic] = useState('all')
+  const [openSlug, setOpenSlug] = useState<string | null>(null)
 
   const sorted = useMemo(() => [...entities, ...howtos.map(h => ({ ...h, name: h.title, summary: h.excerpt, type: 'howto' }))].sort((a, b) => a.name.localeCompare(b.name)), [])
   const counts = Object.fromEntries(KINDS.map(k => [k, sorted.filter(e => e.type === k).length]))
@@ -89,6 +90,7 @@ export default function KnowledgeBase() {
   const hits = filterKnowledge(sorted, q, kind, topic)
   useEffect(() => {
     if (!hash) return
+    setOpenSlug(decodeURIComponent(hash.slice(1)))
     const frame = requestAnimationFrame(() => document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({ block: 'start' }))
     return () => cancelAnimationFrame(frame)
   }, [hash, kind])
@@ -105,9 +107,6 @@ export default function KnowledgeBase() {
             return <div key={k} className="stat">
               <span>{label}</span>
               <b>{counts[k]}</b>
-              <Button className="knowledge-stat-action" aria-label={`Show ${label}`} title={`Show ${label}`} onClick={() => setKind(k)}>
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
-              </Button>
             </div>
           })}
         </div>
@@ -124,16 +123,26 @@ export default function KnowledgeBase() {
         <p className="content-result-count" aria-live="polite">Showing {hits.length} of {sorted.length} entries</p>
         <div>
           {hits.map((e) => e.type === 'howto' ? (
-            <article key={e.slug} id={e.slug} className="knowledge-guide">
-              <div className="knowledge-guide-meta"><Tag kind="howto" /><span>{e.steps} steps · {e.time}</span><span>{pretty(e.date)}</span></div>
-              <h3>{e.name}</h3><p>{e.summary}</p>
-              <div className="mentions">{e.entities.map((slug: string) => <Mention key={slug} slug={slug} />)}</div>
+            <article key={e.slug} id={e.slug} className={'erow erow--expand' + (openSlug === e.slug ? ' is-open' : '')}>
+              <button type="button" className="erow-toggle" aria-expanded={openSlug === e.slug} aria-controls={`${e.slug}-more`}
+                onClick={() => setOpenSlug(openSlug === e.slug ? null : e.slug)}>
+                <div className="erow-main"><div className="erow-name">{e.name}</div><div className="erow-sum">{clip(e.summary, 150)}</div></div>
+                <div className="erow-side">
+                  <Tag kind="howto" />
+                  <svg className="erow-caret" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+                </div>
+              </button>
+              {openSlug === e.slug && <div className="erow-more" id={`${e.slug}-more`}>
+                <div className="knowledge-guide-meta"><span>{e.steps} steps · {e.time}</span><span>{pretty(e.date)}</span></div>
+                {e.entities.length > 0 && <p className="erow-more-label">Related entries</p>}
+                {e.entities.length > 0 && <div className="mentions">{e.entities.map((slug: string) => <Mention key={slug} slug={slug} />)}</div>}
+              </div>}
             </article>
           ) : (
             <Link key={e.slug} className="erow" to={`/knowledge/${e.slug}`}>
               <div className="erow-main"><div className="erow-name">{e.name}</div><div className="erow-sum">{clip(e.summary, 150)}</div></div>
-              <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexShrink: 0 }}>
-                <span className="evidence" data-lvl={e.evidence} style={{ color: 'var(--muted)' }}>{e.evidence}</span>
+              <div className="erow-side">
+                <span className="evidence evidence--tip" data-lvl={e.evidence} data-tip="Evidence" aria-label={`Evidence: ${e.evidence}`} style={{ color: 'var(--muted)' }}>{e.evidence}</span>
                 <Tag kind={e.type} />
               </div>
             </Link>
