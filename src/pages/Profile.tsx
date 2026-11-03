@@ -56,15 +56,12 @@ export default function Profile() {
           {b.imageCredit && <p className="prof-src">Photo: {b.imageCredit}, via Wikimedia Commons.</p>}
           <section className="prof-more prof-more--inline">
             <h2 className="prof-h">More biohackers</h2>
-            <div className="peers">
+            <div className="peers peers--cards">
               {peers.map((x) => (
-                <Link key={x.slug} className="peer" to={`/biohackers/${x.slug}`}>
-                  <PersonPhoto b={x} cls="peer-photo" />
-                  <span><b>{x.name}</b><i>{clip(x.title, 60)}</i></span>
-                </Link>
+                <article key={x.slug} className="pcard pcard--peer"><Link className="pcard-link" to={`/biohackers/${x.slug}`}><span className="pcard-media"><PersonPhoto b={x} cls="pcard-photo" /></span><span className="pcard-body"><h3 className="pcard-name">{x.name}</h3><span className="pcard-title">{x.title}</span></span></Link></article>
               ))}
             </div>
-            <Link className="link-more" to="/biohackers">All profiles</Link>
+            <Link className="link-more link-more--plain" to="/biohackers">All profiles</Link>
           </section>
         </div>
 
@@ -117,15 +114,12 @@ export default function Profile() {
       <div className="wrap">
   <section className="prof-more prof-more--end">
           <h2 className="prof-h">More biohackers</h2>
-          <div className="peers">
+          <div className="peers peers--cards">
             {peers.map((x) => (
-              <Link key={x.slug} className="peer" to={`/biohackers/${x.slug}`}>
-                <PersonPhoto b={x} cls="peer-photo" />
-                <span><b>{x.name}</b><i>{clip(x.title, 60)}</i></span>
-              </Link>
+              <article key={x.slug} className="pcard pcard--peer"><Link className="pcard-link" to={`/biohackers/${x.slug}`}><span className="pcard-media"><PersonPhoto b={x} cls="pcard-photo" /></span><span className="pcard-body"><h3 className="pcard-name">{x.name}</h3><span className="pcard-title">{x.title}</span></span></Link></article>
             ))}
           </div>
-          <Link className="link-more" to="/biohackers">All profiles</Link>
+          <Link className="link-more link-more--plain" to="/biohackers">All profiles</Link>
         </section>
       </div></section>
     </>
