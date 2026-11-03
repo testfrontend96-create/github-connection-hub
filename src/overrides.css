@@ -998,3 +998,16 @@ a:hover .art[data-k="episode"] img,
 .art-academy { height: auto; }
 .prose .art-academy-cta { margin-top: 4px; }
 .page-head .crumbs::before { height: 2px; }
+
+/* UDS dark button (Blog load more) */
+.btn-dark { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 48px; padding: 0 28px; border: 0; border-radius: 999px; background: var(--ink); color: var(--white); font-size: 15px; font-weight: 600; letter-spacing: -0.01em; cursor: pointer; transition: background .2s, transform .2s; }
+.btn-dark:hover { background: color-mix(in srgb, var(--ink), var(--white) 14%); }
+.btn-dark:active { transform: translateY(1px); }
+.btn-dark:focus-visible { outline: 2px solid var(--pulse); outline-offset: 3px; }
+
+/* Article meta on phones: no dividers, tighter to the thumbnail */
+@media (max-width: 640px) {
+  .art-hero { gap: 18px; }
+  .art-meta { margin-top: 18px; padding-top: 0; border-top: 0; row-gap: 14px; }
+  .art-meta > div { border: 0 !important; }
+}

@@ -24,6 +24,7 @@ export function TopNav() {
   const headerRef = useRef<HTMLElement>(null)
   const toggleRef = useRef<HTMLButtonElement>(null)
   const subToggleRef = useRef<HTMLButtonElement>(null)
+  const blogArea = pathname === '/blog' || pathname.startsWith('/articles/')
   const active = SUB_CHANNELS.find(([href]) => pathname === href || pathname.startsWith(href + '/'))
     ?? (pathname.startsWith('/articles/') ? SUB_CHANNELS[0] : pathname.startsWith('/knowledge/') ? SUB_CHANNELS[4] : undefined)
   useEffect(() => { setOpen(false); setSubOpen(false) }, [pathname])
@@ -101,9 +102,9 @@ export function TopNav() {
             {ring}<span>{active?.[1] ?? 'Biohacking Hub'}</span>
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true" className={subOpen ? 'is-open' : undefined}><path d="m6 8 4 4 4-4" /></svg>
           </button>
-          {searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) navigate(`/search?q=${encodeURIComponent(navQuery.trim())}`) }}>
+          {searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) navigate(`${blogArea ? '/blog' : '/search'}?q=${encodeURIComponent(navQuery.trim())}`) }}>
             <IconSearch />
-            <input type="search" aria-label="Search the Hub" placeholder="Search the Hub…" value={navQuery} onChange={event => setNavQuery(event.target.value)} />
+            <input type="search" aria-label={blogArea ? 'Search articles' : 'Search the Hub'} placeholder={blogArea ? 'Search articles…' : 'Search the Hub…'} value={navQuery} onChange={event => setNavQuery(event.target.value)} />
           </form>}
           </div>}
           {(!condensed || subOpen) && <nav id="hub-sub-navigation" className="hub-nav-links hub-nav-secondary" aria-label="Biohacking Hub">

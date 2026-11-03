@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { ArticleCard } from '../components/ui'
 import { articles, T, clip, pretty } from '../lib/data'
@@ -7,11 +7,13 @@ import { Button, SearchField } from '../components/controls'
 import { articleTopic, filterArticles } from '../lib/browsing'
 
 export default function Blog() {
-  const [query, setQuery] = useState('')
+  const [params] = useSearchParams()
+  const [query, setQuery] = useState(params.get('q') || '')
+  useEffect(() => { const q = params.get('q'); if (q !== null) setQuery(q) }, [params])
   const [category, setCategory] = useState('all')
   const sorted = useMemo(() => [...articles].sort((a, b) => (a.date < b.date ? 1 : -1)), [])
   const categories = useMemo(() => [...new Set(articles.flatMap(a => a.categories || []))].filter(value => value !== 'Blog').sort() as string[], [])
-  const hits = filterArticles(sorted, query, category)
+  const hits = filterArticles(sorted, query, category).filter(a => !query.trim() || a.title.toLowerCase().includes(query.trim().toLowerCase()))
   const [shown, setShown] = useState(9)
   useEffect(() => setShown(9), [query, category])
   const [lead, ...rest] = hits.slice(0, shown)
@@ -36,7 +38,7 @@ export default function Blog() {
           </Link>}
           {rest.map((a) => <ArticleCard key={a.slug} slug={a.slug} />)}
         </div>
-        {hits.length > shown && <div className="blog-more"><Button className="section-cta" onClick={() => setShown(n => n + 6)}>Load more</Button></div>}
+        {hits.length > shown && <div className="blog-more"><Button className="btn-dark" onClick={() => setShown(n => n + 6)}>Load more</Button></div>}
         {hits.length === 0 && <div className="content-empty"><p>No articles match your search and category.</p><Button className="chip" onClick={() => { setQuery(''); setCategory('all') }}>Clear filters</Button></div>}
       </div></section>
     </>
