@@ -1175,3 +1175,15 @@ a:hover .art[data-k="episode"] img,
 .next-card .k, .topic-card .cnt, .report .nums span, .art-academy-stats span, .art-academy-lead-copy small,
 .eyebrow { text-transform: none !important; letter-spacing: -0.01em !important; }
 .pro-row dt::first-letter, .foot-grid h5::first-letter { text-transform: uppercase; }
+
+/* Podcast episode: About this episode sits under the title, on the same horizontal line as Listen on */
+.ep-layout { grid-template-areas: "head top" "about side"; }
+.ep-body { grid-area: about; min-width: 0; align-self: start; }
+.ep-body .ep-about { border-top: 1px solid var(--line); padding-top: 20px; }
+.ep-body .ep-about .prose p { font-size: 17px; line-height: 1.65; margin: 0; max-width: 68ch; }
+.ep-body .ep-about .prof-list { max-width: 68ch; }
+.ep-body .ep-about .prof-list li { font-size: 16px; }
+@media (max-width: 980px) {
+  .ep-layout { grid-template-areas: "head" "top" "about" "side"; }
+  .ep-body { margin-top: 24px; }
+}
