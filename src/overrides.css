@@ -1054,3 +1054,4 @@ a:hover .art[data-k="episode"] img,
 .knowledge-stats .stat { min-height: 0; padding: 20px 24px 22px; }
 .knowledge-stats .stat b { font-size: 48px; }
 @media (max-width: 600px) { .knowledge-stats .stat { min-height: 0; padding: 16px 16px 18px; } .knowledge-stats .stat b { font-size: 36px; } }
+.kb-type-trigger { font-size: .84rem; }
