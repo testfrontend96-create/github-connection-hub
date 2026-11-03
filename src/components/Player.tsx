@@ -119,15 +119,15 @@ export function PlayerProvider({ children }: { children: ReactNode }) {
             </div>
           </div>
           <div className="dock-ctrl">
-            <button type="button" className="icon-btn" aria-label="Back 15 seconds" onClick={() => (audio.currentTime = Math.max(0, audio.currentTime - 15))}>
+            <button type="button" className="icon-btn" data-dock-back aria-label="Back 15 seconds" onClick={() => (audio.currentTime = Math.max(0, audio.currentTime - 15))}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 12a8 8 0 1 0 2.4-5.7" /><path d="M4 4v4h4" /><text x="12" y="15.6" textAnchor="middle" fontSize="7.5" fontWeight="800" fill="currentColor" stroke="none">15</text></svg>
             </button>
-            <button type="button" className="play-btn" aria-label="Play" onClick={toggle}><PlayIcons /></button>
-            <button type="button" className="icon-btn" aria-label="Forward 15 seconds" onClick={() => (audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 15))}>
+            <button type="button" className="play-btn" data-dock-toggle aria-label="Play" onClick={toggle}><PlayIcons /></button>
+            <button type="button" className="icon-btn" data-dock-fwd aria-label="Forward 15 seconds" onClick={() => (audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 15))}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M20 12a8 8 0 1 1-2.4-5.7" /><path d="M20 4v4h-4" /><text x="12" y="15.6" textAnchor="middle" fontSize="7.5" fontWeight="800" fill="currentColor" stroke="none">15</text></svg>
             </button>
-            <button type="button" className="rate" aria-label="Playback speed" onClick={cycleRate}>{rate}×</button>
-            <button type="button" className="icon-btn" aria-label="Close player" onClick={close}>
+            <button type="button" className="rate" data-dock-speed aria-label="Playback speed" onClick={cycleRate}>{rate}×</button>
+            <button type="button" className="icon-btn" data-dock-close aria-label="Close player" onClick={close}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
             </button>
           </div>
