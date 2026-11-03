@@ -160,7 +160,7 @@ export const SUB_TOPICS: [string, string][] = FRONT_PILLARS.map(([s, l]) => [`/t
 
 // ---- helpers --------------------------------------------------------------
 export const clip = (s: string, n: number) => {
-  s = (s || '').trim()
+  s = (s || '').replace(/\s+/g, ' ').trim()
   return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, '') + '…'
 }
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']

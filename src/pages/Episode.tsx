@@ -33,6 +33,11 @@ export default function Episode() {
             </div>
             <h1 className="display">{p.title}</h1>
           </div></div>
+          <div className="ep-body"><div className="ep-about">
+            <span className="art-share-label">About this episode</span>
+            <div className="prose">{p.description.split('\n\n').map((para: string, i: number) => <p key={i}>{para}</p>)}</div>
+            {p.takeaways?.length > 0 && (<><span className="art-share-label" style={{ marginTop: 16 }}>Key takeaways</span><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
+          </div></div>
           <div className="ep-side-top">
             {p.image && <img className="ep-hero-cover" src={p.image} alt="" />}
             {track && <div className="ep-side-block ep-listen-play"><span className="ep-detail-play"><PlayButton track={track} className="play-btn" /></span><span><b>Play episode</b><i>{p.duration}</i></span></div>}
@@ -44,11 +49,6 @@ export default function Episode() {
                 {listenLinks(p.title).map(([label, href]) => <a key={label} className="btn btn--outline ep-platform" href={href} target="_blank" rel="noopener">
                   {PLATFORM_LOGO[label] && <img src={PLATFORM_LOGO[label]} alt="" width={18} height={18} />}{label}</a>)}
               </div>
-            </div>
-            <div className="ep-side-block ep-about">
-              <span className="art-share-label">About this episode</span>
-              <div className="prose"><p>{p.description}</p></div>
-              {p.takeaways?.length > 0 && (<><span className="art-share-label" style={{ marginTop: 16 }}>Key takeaways</span><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
             </div>
             {(tops.length > 0 || ents.length > 0) && <div className="ep-side-block">
               <span className="art-share-label">In this episode</span>
