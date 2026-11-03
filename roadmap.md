@@ -68,3 +68,7 @@
 - [x] Hub nav row narrower (960px) than the main nav bar.
 - [x] Halve the gap between the nav and every Hub page title.
 - [x] Hero: main article 2/3, Start here/New 1/3, New items end with "…", hero row a bit shorter.
+- [x] Article inline images fill the text width with hero-matching corners, same height cap.
+- [ ] Knowledge Base counts: user to pick "Beside search" or "Sticky right panel" (preview toggle on page), then remove the toggle.
+- [x] Top Biohacker profile: photo 30% shorter, less gap before About.
+- [x] Podcast episode: info on the left, sticky right panel with ruled play/listen/topic blocks.

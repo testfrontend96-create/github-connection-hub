@@ -1087,3 +1087,52 @@ a:hover .art[data-k="episode"] img,
 .ep-listen .ep-tags { margin: 0; }
 .ep-body { padding-top: 48px; }
 @media (max-width: 980px) { .ep-hero { grid-template-columns: 1fr; } }
+
+/* Article inline images: always the text column's full width, hero-matching corners, height kept at the hero cap */
+.art-layout .prose img.art-img, .art-img { width: 100%; max-width: 100%; height: auto; max-height: var(--article-image-height); object-fit: cover; border-radius: var(--radius); }
+
+/* Top Biohacker profile: photo 30% shorter and less gap before the About section */
+.prof-art-hero .prof-hero-photo { aspect-ratio: 8 / 7; object-fit: cover; object-position: center 20%; }
+.prof-top + .prof-body { padding-top: 32px; }
+@media (min-width: 981px) { .prof-top .art-hero { align-items: start; } }
+
+/* Podcast episode: info on the left, a sticky right panel split into ruled blocks like the article sidebar */
+.ep-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 440px); grid-template-areas: "head side" "main side"; grid-template-rows: auto 1fr; column-gap: 56px; align-items: start; }
+.ep-head-id { grid-area: head; text-align: left; }
+.ep-head-id h1.display { margin: 12px 0 0; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.08; letter-spacing: -0.03em; color: var(--ink); }
+.ep-main { grid-area: main; padding-top: 32px; max-width: 72ch; }
+.ep-side { grid-area: side; align-self: stretch; }
+.ep-side-inner { position: sticky; top: 132px; display: flex; flex-direction: column; }
+.ep-side .ep-hero-cover { margin-bottom: 24px; }
+.ep-side-block { padding: 0 0 20px; margin-bottom: 20px; border-bottom: 1px solid var(--line); }
+.ep-side-block:last-child { border-bottom: 0; margin-bottom: 0; }
+.ep-side .ep-tags { margin: 0; }
+@media (max-width: 980px) {
+  .ep-layout { grid-template-columns: 1fr; grid-template-areas: "head" "side" "main"; }
+  .ep-side { margin-top: 24px; }
+  .ep-side-inner { position: static; }
+}
+
+/* Knowledge Base counts: compact, clickable type counts — beside the search or in a sticky right panel */
+.kb-layout-switch { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 13px; color: var(--muted); }
+.kb-layout-switch button { height: 32px; padding: 0 14px; border-radius: 999px; border: 1px solid #E7E5DE; background: transparent; color: var(--muted); font: inherit; cursor: pointer; }
+.kb-layout-switch button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--white); }
+.kb-search-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.kb-search-row .content-search { flex: 1 1 320px; max-width: 520px; }
+.kb-counts { display: flex; gap: 6px; }
+.kb-count { display: inline-flex; align-items: baseline; gap: 6px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--white); color: var(--muted); font: inherit; font-size: 13px; cursor: pointer; transition: border-color .2s; }
+.kb-count b { font-size: 18px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.kb-count:hover { border-color: var(--card-hover); }
+.kb-count.is-active { border-color: var(--ink); }
+.kb-counts--inline { flex-wrap: wrap; }
+.kb-shell--rail { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 40px; align-items: start; }
+.kb-shell-side { position: sticky; top: 132px; }
+.kb-counts--rail { flex-direction: column; gap: 8px; }
+.kb-counts-head { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+.kb-counts--rail .kb-count { justify-content: space-between; flex-direction: row-reverse; padding: 12px 16px; }
+@media (max-width: 980px) {
+  .kb-shell--rail { grid-template-columns: 1fr; }
+  .kb-shell-side { position: static; order: -1; }
+  .kb-counts--rail { flex-direction: row; flex-wrap: wrap; }
+  .kb-counts--rail .kb-count { flex-direction: row; padding: 8px 12px; }
+}
