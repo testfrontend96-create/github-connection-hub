@@ -5,6 +5,11 @@ import { PlayButton } from '../components/Player'
 import { EP, E, T, pretty } from '../lib/data'
 import { episodeLabel, listenLinks } from '../lib/browsing'
 import NotFound from './NotFound'
+import youtubeLogo from '../assets/platforms/youtube_logo.svg.asset.json'
+import appleLogo from '../assets/platforms/apple_podcasts_logo.svg.asset.json'
+import spotifyLogo from '../assets/platforms/spotify_logo.svg.asset.json'
+
+const PLATFORM_LOGO: Record<string, string> = { YouTube: youtubeLogo.url, 'Apple Podcasts': appleLogo.url, Spotify: spotifyLogo.url }
 
 export default function Episode() {
   const { slug } = useParams()
@@ -18,27 +23,33 @@ export default function Episode() {
   crumbs.push([`Episode ${p.number}`, null])
   return (
     <>
-      <PageHead compact crumbs={crumbs}>
-        <div className="ep-head">
-          {p.image && <img className="ep-head-cover" src={p.image} alt="" width={148} height={148} />}
-          <div>
+      <PageHead compact crumbs={crumbs} />
+      <section className="section art-top ep-top"><div className="wrap">
+        <div className="art-hero ep-hero">
+          <div className="art-hero-title"><div className="ep-hero-id">
             <div className="detail-head-meta">
               <span className="tag tag--episode">{episodeLabel(p)}</span>
               <span>{p.guest} · {p.duration} · {pretty(p.date)}</span>
             </div>
             <h1 className="display">{p.title}</h1>
+          </div></div>
+          <div className="ep-hero-side">
+            {p.image && <img className="ep-hero-cover" src={p.image} alt="" />}
+            <div className="ep-listen">
+              {track && <div className="ep-listen-play"><span className="ep-detail-play"><PlayButton track={track} className="play-btn" /></span><span><b>Play episode</b><i>{p.duration}</i></span></div>}
+              <div className="ep-listen-links">
+                {listenLinks(p.title).map(([label, href]) => <a key={label} className="btn btn--outline ep-platform" href={href} target="_blank" rel="noopener">
+                  {PLATFORM_LOGO[label] && <img src={PLATFORM_LOGO[label]} alt="" width={18} height={18} />}{label}</a>)}
+              </div>
+              {(tops.length > 0 || ents.length > 0) && <div className="ep-tags mentions">
+                {tops.map((s: string) => <Link key={s} className="chip" to={`/topics/${s}`}>{T[s].name}</Link>)}
+                {ents.map((s: string) => <Mention key={s} slug={s} />)}
+              </div>}
+            </div>
           </div>
         </div>
-      </PageHead>
-      <section className="section"><div className="wrap" style={{ maxWidth: '72ch' }}>
-        <div className="ep-actions">
-          {track && <span className="ep-detail-play"><PlayButton track={track} className="play-btn" /></span>}
-          {listenLinks(p.title).map(([label, href]) => <a key={label} className="btn btn--outline" href={href} target="_blank" rel="noopener">{label}</a>)}
-        </div>
-        {(tops.length > 0 || ents.length > 0) && <div className="ep-tags mentions">
-          {tops.map((s: string) => <Link key={s} className="chip" to={`/topics/${s}`}>{T[s].name}</Link>)}
-          {ents.map((s: string) => <Mention key={s} slug={s} />)}
-        </div>}
+      </div></section>
+      <section className="section ep-body"><div className="wrap" style={{ maxWidth: '72ch' }}>
         <div className="prose"><p>{p.description}</p></div>
         {p.takeaways?.length > 0 && (<><h2 className="prof-h" style={{ marginTop: 28 }}>Key takeaways</h2><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
       </div></section>
