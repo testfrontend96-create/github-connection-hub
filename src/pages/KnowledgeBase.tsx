@@ -83,8 +83,7 @@ export default function KnowledgeBase() {
   const setKind = (value: string) => { const next = new URLSearchParams(params); if (value === 'all') next.delete('type'); else next.set('type', value); setParams(next, { replace: true, preventScrollReset: true }) }
   const [topic, setTopic] = useState('all')
   const [openSlug, setOpenSlug] = useState<string | null>(null)
-  const statsLayout = params.get('stats') === 'rail' ? 'rail' : 'inline'
-  const setStatsLayout = (value: string) => { const next = new URLSearchParams(params); if (value === 'inline') next.delete('stats'); else next.set('stats', value); setParams(next, { replace: true, preventScrollReset: true }) }
+  const statsLayout = 'rail'
 
   const sorted = useMemo(() => [...entities, ...howtos.map(h => ({ ...h, name: h.title, summary: h.excerpt, type: 'howto' }))].sort((a, b) => a.name.localeCompare(b.name)), [])
   const counts = Object.fromEntries(KINDS.map(k => [k, sorted.filter(e => e.type === k).length]))
@@ -99,6 +98,9 @@ export default function KnowledgeBase() {
 
   const statList = <div className={'kb-counts kb-counts--' + statsLayout} role="group" aria-label="Entries by type">
     {statsLayout === 'rail' && <span className="kb-counts-head">In the Knowledge Base</span>}
+    <button type="button" className={'kb-count' + (kind === 'all' ? ' is-active' : '')} aria-pressed={kind === 'all'} onClick={() => setKind('all')}>
+      <b>{sorted.length}</b><span>All</span>
+    </button>
     {STAT_ORDER.map((k) => <button key={k} type="button" className={'kb-count' + (kind === k ? ' is-active' : '')} aria-pressed={kind === k}
       onClick={() => setKind(kind === k ? 'all' : k)}>
       <b>{counts[k]}</b><span>{k === 'howto' ? 'How To guides' : `${KIND_LABEL[k]}s`}</span>
@@ -110,19 +112,13 @@ export default function KnowledgeBase() {
         lede="Molecules, biomarkers, protocols, concepts and How To guides — connected to the topics, articles and episodes that reference them." />
 
       <section className="section--tight" style={{ paddingTop: 40 }}><div className="wrap">
-        <div className="kb-layout-switch" role="group" aria-label="Preview counts layout">
-          <span>Counts layout</span>
-          <button type="button" aria-pressed={statsLayout === 'inline'} onClick={() => setStatsLayout('inline')}>Beside search</button>
-          <button type="button" aria-pressed={statsLayout === 'rail'} onClick={() => setStatsLayout('rail')}>Sticky right panel</button>
-        </div>
         <div className={'kb-shell kb-shell--' + statsLayout}><div className="kb-shell-main">
         <div className="content-filter-bar">
           <div className="kb-search-row">
             <SearchField label="Filter the Knowledge Base" placeholder="Filter entries — try HRV, magnesium, fasting…" value={q} onChange={setQ} />
-            {statsLayout === 'inline' && statList}
+            
           </div>
           <div className="kb-filter-row">
-            <TypeMenu value={kind} onChange={setKind} options={typeOptions} />
             <div className="chip-row knowledge-topic-filters" role="group" aria-label="Entry topics">
               <Button className={'chip' + (topic === 'all' ? ' is-active' : '')} aria-pressed={topic === 'all'} onClick={() => setTopic('all')}>All topics</Button>
               {topics.map((t) => <Button key={t.slug} className={'chip' + (topic === t.slug ? ' is-active' : '')} aria-pressed={topic === t.slug} onClick={() => setTopic(t.slug)}>{t.name}</Button>)}

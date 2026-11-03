@@ -43,6 +43,11 @@ export default function Episode() {
                   {PLATFORM_LOGO[label] && <img src={PLATFORM_LOGO[label]} alt="" width={18} height={18} />}{label}</a>)}
               </div>
             </div>
+            <div className="ep-side-block ep-about">
+              <span className="art-share-label">About this episode</span>
+              <div className="prose"><p>{p.description}</p></div>
+              {p.takeaways?.length > 0 && (<><span className="art-share-label" style={{ marginTop: 16 }}>Key takeaways</span><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
+            </div>
             {(tops.length > 0 || ents.length > 0) && <div className="ep-side-block">
               <span className="art-share-label">In this episode</span>
               <div className="ep-tags mentions">
@@ -51,10 +56,6 @@ export default function Episode() {
               </div>
             </div>}
           </div></aside>
-          <div className="ep-main">
-            <div className="prose"><p>{p.description}</p></div>
-            {p.takeaways?.length > 0 && (<><h2 className="prof-h" style={{ marginTop: 28 }}>Key takeaways</h2><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
-          </div>
         </div>
       </div></section>
     </>
