@@ -9,71 +9,6 @@ import { filterKnowledge } from '../lib/browsing'
 const KINDS = ['molecule', 'biomarker', 'protocol', 'concept', 'howto']
 const STAT_ORDER = ['biomarker', 'protocol', 'molecule', 'concept', 'howto']
 
-const typeLabel = (k: string) => (k === 'howto' ? 'How To' : k === 'all' ? 'All types' : `${KIND_LABEL[k]}s`)
-
-// Entry-type menu: one designed popup instead of the browser's native select list.
-function TypeMenu({ value, onChange, options }: {
-  value: string
-  onChange: (value: string) => void
-  options: { value: string; label: string; count: number }[]
-}) {
-  const [open, setOpen] = useState(false)
-  const [active, setActive] = useState(() => Math.max(0, options.findIndex(o => o.value === value)))
-  const root = useRef<HTMLDivElement>(null)
-  const panel = useRef<HTMLDivElement>(null)
-  const items = useRef<(HTMLButtonElement | null)[]>([])
-  const current = options.find(o => o.value === value) || options[0]
-
-  useEffect(() => {
-    if (!open) return
-    const onDown = (event: MouseEvent) => { if (!root.current?.contains(event.target as Node)) setOpen(false) }
-    document.addEventListener('mousedown', onDown)
-    return () => document.removeEventListener('mousedown', onDown)
-  }, [open])
-
-  useEffect(() => {
-    if (open) items.current[active]?.scrollIntoView({ block: 'nearest' })
-  }, [open, active])
-
-  const pick = (option: { value: string }) => { onChange(option.value); setActive(options.findIndex(o => o.value === option.value)); setOpen(false) }
-  const move = (delta: number) => setActive((active + delta + options.length) % options.length)
-
-  const onKeyDown = (event: React.KeyboardEvent) => {
-    if (!open) {
-      if (event.key === 'ArrowDown' || event.key === 'ArrowUp' || event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault(); setOpen(true)
-      }
-      return
-    }
-    if (event.key === 'ArrowDown') { event.preventDefault(); move(1) }
-    else if (event.key === 'ArrowUp') { event.preventDefault(); move(-1) }
-    else if (event.key === 'Home') { event.preventDefault(); setActive(0) }
-    else if (event.key === 'End') { event.preventDefault(); setActive(options.length - 1) }
-    else if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); pick(options[active]) }
-    else if (event.key === 'Escape' || event.key === 'Tab') { event.preventDefault(); setOpen(false) }
-  }
-
-  return <div className={'kb-type' + (open ? ' is-open' : '')} ref={root}>
-    <button type="button" className="kb-type-trigger" aria-haspopup="listbox" aria-expanded={open}
-      aria-controls="kb-type-list" aria-activedescendant={open ? `kb-type-${options[active].value}` : undefined}
-      aria-label="Filter by entry type" onClick={() => setOpen(!open)} onKeyDown={onKeyDown}>
-      <span>{current.label}</span>
-      <svg className="kb-type-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
-    </button>
-    {open && <div className="kb-type-panel" id="kb-type-list" role="listbox" aria-label="Entry type" ref={panel}>
-      <span className="kb-type-panel-head">Entry type</span>
-      {options.map((option, index) => <button key={option.value} type="button" role="option" id={`kb-type-${option.value}`}
-        aria-selected={option.value === value}
-        className={'kb-type-option' + (index === active ? ' is-active' : '')}
-        ref={(el) => { items.current[index] = el }}
-        onMouseEnter={() => setActive(index)} onClick={() => pick(option)}>
-        <span className="kb-type-option-mark" aria-hidden="true">{option.value === value && <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 6L9 17l-5-5" /></svg>}</span>
-        <span>{option.label}</span>
-        <span className="kb-type-option-count">{option.count}</span>
-      </button>)}
-    </div>}
-  </div>
-}
 
 export default function KnowledgeBase() {
   const [q, setQ] = useState('')
@@ -87,7 +22,6 @@ export default function KnowledgeBase() {
 
   const sorted = useMemo(() => [...entities, ...howtos.map(h => ({ ...h, name: h.title, summary: h.excerpt, type: 'howto' }))].sort((a, b) => a.name.localeCompare(b.name)), [])
   const counts = Object.fromEntries(KINDS.map(k => [k, sorted.filter(e => e.type === k).length]))
-  const typeOptions = useMemo(() => [{ value: 'all', label: 'All types', count: sorted.length }, ...KINDS.map(k => ({ value: k, label: typeLabel(k), count: counts[k] }))], [sorted.length, counts])
   const hits = filterKnowledge(sorted, q, kind, topic)
   useEffect(() => {
     if (!hash) return
