@@ -122,13 +122,13 @@ function Academy() {
   )
 }
 
-function Block({ b }: { b: any }) {
+function Block({ b, start }: { b: any; start?: number }) {
   switch (b.t) {
     case 'h2': return <h2 id={b.id}>{sentenceCase(b.text)}</h2>
     case 'h3': return <h3>{b.text}</h3>
     case 'p': return <p><Inline text={b.text} /></p>
     case 'ul': return <ul>{b.items.map((x: string, i: number) => <li key={i}><Inline text={x} /></li>)}</ul>
-    case 'ol': return <ol>{b.items.map((x: string, i: number) => <li key={i}><Inline text={x} /></li>)}</ol>
+    case 'ol': return <ol start={start}>{b.items.map((x: string, i: number) => <li key={i}><Inline text={x} /></li>)}</ol>
     case 'note': return <blockquote className="art-note"><Inline text={b.text} /></blockquote>
     case 'img': return <img className="art-img" src={b.src} alt={b.alt || ''} loading="lazy" />
     case 'h4': return <h3>{b.text}</h3>
@@ -228,7 +228,7 @@ export default function Article() {
                 <ul>{d.highlights.map((h: string, i: number) => <li key={i}>{h}</li>)}</ul>
               </div>
             )}
-            {d ? d.blocks.map((b: any, i: number) => <Fragment key={i}><Block b={b} /></Fragment>) : (<>
+            {d ? numberBlocks(d.blocks).map(([b, start]: [any, number | undefined], i: number) => <Fragment key={i}><Block b={b} start={start} /></Fragment>) : (<>
               {rest!.map((p, i) => <p key={i}>{p}</p>)}
               <Events />
               <Academy />
@@ -255,4 +255,16 @@ export default function Article() {
       </div></section>
     </>
   )
+}
+
+// Scraped lists often arrive as one single-item <ol> per section; keep a running number until the next h2.
+function numberBlocks(blocks: any[]): [any, number | undefined][] {
+  let n = 0
+  return blocks.map(b => {
+    if (b.t === 'h2') n = 0
+    if (b.t !== 'ol') return [b, undefined]
+    const start = n + 1
+    n += b.items.length
+    return [b, start]
+  })
 }
