@@ -26,10 +26,10 @@ export default function Profile() {
 
   return (
     <>
-      <PageHead compact crumbs={[['Hub', '/'], ['Top Biohackers', '/biohackers'], [b.name, null]]}>
-        <div className="prof-hero">
-          <PersonPhoto b={b} cls="prof-photo" eager />
-          <div className="prof-id">
+      <PageHead compact crumbs={[['Hub', '/'], ['Top Biohackers', '/biohackers'], [b.name, null]]} />
+      <section className="section art-top prof-top"><div className="wrap">
+        <div className="art-hero prof-art-hero">
+          <div className="art-hero-title"><div className="prof-id">
             <p className="lede prof-title">{b.title}</p>
             <h1 className="display">{b.name}</h1>
             {(miami || (b.speaker && !miami)) && (
@@ -39,20 +39,22 @@ export default function Profile() {
               </div>
             )}
             {!b.speaker && <p className="lede">{clip(b.known, 240)}</p>}
-          </div>
+          </div></div>
+          <PersonPhoto b={b} cls="prof-photo prof-hero-photo" eager />
         </div>
-      </PageHead>
+      </div></section>
 
       <section className="section prof-body"><div className="wrap prof-grid">
         <div className="prof-main">
           <h2 className="prof-h">About {firstName(b.name)}</h2>
           <div className="prose prof-bio">{(b.bio?.length ? b.bio : [b.known]).map((p: string, i: number) => <p key={i}>{p}</p>)}</div>
           {b.highlights?.length > 0 && (<>
-            <h2 className="prof-h">Highlights</h2>
-            <ul className="prof-list">{b.highlights.map((x: string, i: number) => <li key={i}>{x}</li>)}</ul>
+            <div className="answer-box art-highlights"><p className="eyebrow">Highlights</p>
+              <ul>{b.highlights.map((x: string, i: number) => <li key={i}>{x}</li>)}</ul>
+            </div>
           </>)}
           {b.imageCredit && <p className="prof-src">Photo: {b.imageCredit}, via Wikimedia Commons.</p>}
-          <section className="prof-more">
+          <section className="prof-more prof-more--inline">
             <h2 className="prof-h">More biohackers</h2>
             <div className="peers">
               {peers.map((x) => (
@@ -111,6 +113,20 @@ export default function Profile() {
             </div>
           )}
         </aside>
+      </div>
+      <div className="wrap">
+  <section className="prof-more prof-more--end">
+          <h2 className="prof-h">More biohackers</h2>
+          <div className="peers">
+            {peers.map((x) => (
+              <Link key={x.slug} className="peer" to={`/biohackers/${x.slug}`}>
+                <PersonPhoto b={x} cls="peer-photo" />
+                <span><b>{x.name}</b><i>{clip(x.title, 60)}</i></span>
+              </Link>
+            ))}
+          </div>
+          <Link className="link-more" to="/biohackers">All profiles</Link>
+        </section>
       </div></section>
     </>
   )
