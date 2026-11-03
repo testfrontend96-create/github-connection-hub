@@ -1097,7 +1097,7 @@ a:hover .art[data-k="episode"] img,
 @media (min-width: 981px) { .prof-top .art-hero { align-items: start; } }
 
 /* Podcast episode: info on the left, a sticky right panel split into ruled blocks like the article sidebar */
-.ep-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 440px); grid-template-areas: "head side" "main side"; column-gap: 56px; align-items: start; }
+.ep-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 440px); grid-template-areas: "head side" "main side"; grid-template-rows: auto 1fr; column-gap: 56px; align-items: start; }
 .ep-head-id { grid-area: head; text-align: left; }
 .ep-head-id h1.display { margin: 12px 0 0; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.08; letter-spacing: -0.03em; color: var(--ink); }
 .ep-main { grid-area: main; padding-top: 32px; max-width: 72ch; }
