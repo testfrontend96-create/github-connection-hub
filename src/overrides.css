@@ -981,6 +981,8 @@ a:hover .art[data-k="episode"] img,
 @media (min-width: 901px) {
   .hub-nav-sub:not(.is-collapsed) { width: fit-content; max-width: 960px; }
   .hub-nav-sub:not(.is-collapsed) .hub-nav-secondary { padding: 4px 6px; }
+}
+@media (min-width: 1200px) {
   .hub-nav.is-condensed { display: flex; justify-content: center; align-items: center; gap: 8px; }
   .hub-nav.is-condensed .hub-nav-bar { flex: 0 1 auto; width: 100%; max-width: 880px; margin: 0; }
   .hub-nav.is-condensed .hub-nav-sub { flex: 0 0 auto; width: auto; max-width: none; margin: 0; }
