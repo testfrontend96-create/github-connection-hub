@@ -134,7 +134,7 @@ export default function KnowledgeBase() {
               </button>
               {openSlug === e.slug && <div className="erow-more" id={`${e.slug}-more`}>
                 <div className="knowledge-guide-meta"><span>{e.steps} steps · {e.time}</span><span>{pretty(e.date)}</span></div>
-                <p>{e.summary}</p>
+                {e.entities.length > 0 && <p className="erow-more-label">Related entries</p>}
                 {e.entities.length > 0 && <div className="mentions">{e.entities.map((slug: string) => <Mention key={slug} slug={slug} />)}</div>}
               </div>}
             </article>
