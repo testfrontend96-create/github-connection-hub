@@ -1179,7 +1179,7 @@ a:hover .art[data-k="episode"] img,
 /* Podcast episode: About this episode sits under the title, on the same horizontal line as Listen on */
 .ep-layout { grid-template-areas: "head top" "about side"; }
 .ep-body { grid-area: about; min-width: 0; align-self: start; padding-top: 0; }
-.ep-body .ep-about { border-top: 1px solid var(--line); padding-top: 20px; }
+.ep-body .ep-about { border-top: 0; padding-top: 0; }
 .ep-body .ep-about .prose p { font-size: 17px; line-height: 1.65; margin: 0; max-width: 68ch; }
 .ep-body .ep-about .prof-list { max-width: 68ch; }
 .ep-body .ep-about .prof-list li { font-size: 16px; }
