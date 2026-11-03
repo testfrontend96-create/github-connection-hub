@@ -87,8 +87,8 @@ function Events() {
           <p className="art-events-sub">Join one of our health &amp; wellness events in your city!</p>
         </div>
         <div className="art-events-nav">
-          <button type="button" aria-label="Previous events" onClick={() => go(-1)}>←</button>
-          <button type="button" aria-label="Next events" onClick={() => go(1)}>→</button>
+          <button type="button" aria-label="Previous events" onClick={() => go(-1)}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
+          <button type="button" aria-label="Next events" onClick={() => go(1)}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
         </div>
       </div>
       <div className="art-events-track" ref={track}>

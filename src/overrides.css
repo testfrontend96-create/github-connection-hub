@@ -873,8 +873,8 @@ a:hover .art[data-k="episode"] img,
 .prose .art-events-title { margin: 0 !important; font-size: clamp(26px, 3vw, 36px) !important; line-height: 1.1 !important; font-weight: 800 !important; letter-spacing: -0.03em !important; color: var(--ink) !important; }
 .prose .art-events-sub { margin: 8px 0 0 !important; line-height: 1.35 !important; font-size: 17px !important; font-weight: 500; color: var(--muted) !important; }
 .art-events-nav { display: flex; gap: 10px; flex-shrink: 0; }
-.art-events-nav button { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--ink); color: var(--white); font-size: 18px; cursor: pointer; transition: opacity .2s; }
-.art-events-nav button:hover { opacity: .8; }
+.art-events-nav button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--ink); display: grid; place-items: center; cursor: pointer; transition: border-color .2s ease, color .2s ease; }
+.art-events-nav button:hover { border-color: var(--card-hover); }
 .art-events-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 32px) / 3); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .art-events-track::-webkit-scrollbar { display: none; }
 .prose .art-event { --city: #29B57A; --city-fg: #0A0818; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 20px 28px; border-radius: 24px; overflow: hidden; isolation: isolate; scroll-snap-align: start; text-decoration: none !important; color: var(--white) !important; background: var(--ev-img) center / cover no-repeat, #0A0818; }
@@ -1177,7 +1177,7 @@ a:hover .art[data-k="episode"] img,
 .pro-row dt::first-letter, .foot-grid h5::first-letter { text-transform: uppercase; }
 
 /* Podcast episode: About this episode sits under the title, on the same horizontal line as Listen on */
-.ep-layout { grid-template-areas: "head top" "about side"; }
+.ep-layout { grid-template-areas: "head top" "about side"; row-gap: 32px; }
 .ep-body { grid-area: about; min-width: 0; align-self: start; padding-top: 0; }
 .ep-body .ep-about { border-top: 0; padding-top: 0; }
 .ep-body .ep-about .prose p { font-size: 17px; line-height: 1.65; margin: 0 0 14px; max-width: 68ch; }
