@@ -28,7 +28,7 @@ export default function Episode() {
       <PageHead compact crumbs={crumbs} />
       <section className="section art-top ep-top"><div className="wrap">
         <div className="ep-layout ep-layout--v3">
-          <div className="ep-main">
+          <div className="ep-col">
             <div className="ep-head-id">
               <span className="tag tag--episode">{episodeLabel(p)}</span>
               <h1 className="display">{p.title}</h1>
