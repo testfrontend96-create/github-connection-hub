@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { Mention } from '../components/ui'
@@ -14,6 +15,25 @@ const PLATFORM_LOGO: Record<string, string> = { YouTube: youtubeLogo.url, 'Apple
 export default function Episode() {
   const { slug } = useParams()
   const p = slug ? EP[slug] : undefined
+  const colRef = useRef<HTMLDivElement>(null)
+  const listenRef = useRef<HTMLDivElement>(null)
+  // Line "About this episode" up with "Listen on" on desktop, keeping at least 56px under the title.
+  useLayoutEffect(() => {
+    const col = colRef.current, listen = listenRef.current
+    if (!col || !listen) return
+    const head = col.querySelector('.ep-head-id') as HTMLElement | null
+    const about = col.querySelector('.ep-about') as HTMLElement | null
+    if (!head || !about) return
+    const fit = () => {
+      if (window.innerWidth <= 980) { about.style.marginTop = ''; return }
+      const target = listen.getBoundingClientRect().top - col.getBoundingClientRect().top
+      about.style.marginTop = Math.max(56, target - head.offsetHeight) + 'px'
+    }
+    fit()
+    const ro = new ResizeObserver(fit); ro.observe(col); ro.observe(listen.parentElement!)
+    window.addEventListener('resize', fit)
+    return () => { ro.disconnect(); window.removeEventListener('resize', fit) }
+  }, [slug])
   if (!p) return <NotFound />
   const ents = (p.entities || []).filter((s: string) => s in E)
   const tops = (p.topics || []).filter((s: string) => T[s])
@@ -28,27 +48,27 @@ export default function Episode() {
       <PageHead compact crumbs={crumbs} />
       <section className="section art-top ep-top"><div className="wrap">
         <div className="ep-layout ep-layout--v3">
-          <div className="ep-col">
+          <div className="ep-col" ref={colRef}>
             <div className="ep-head-id">
               <span className="tag tag--episode">{episodeLabel(p)}</span>
               <h1 className="display">{p.title}</h1>
               <div className="ep-facts">
-                {guest && <div><span>Guest</span><b>{guest}</b></div>}
-                {host && <div><span>Host</span><b>{host}</b></div>}
-                <div><span>Published</span><b>{pretty(p.date)}</b></div>
-                <div><span>Length</span><b>{p.duration}</b></div>
+                {guest && <div><b>{guest}</b><span>Guest</span></div>}
+                {host && <div><b>{host}</b><span>Host</span></div>}
+                <div><b>{pretty(p.date)}</b><span>Published</span></div>
+                <div><b>{p.duration}</b><span>Length</span></div>
               </div>
             </div>
             <div className="ep-about">
               <h2 className="prof-h">About this episode</h2>
               <div className="prose">{p.description.split('\n\n').map((para: string, i: number) => <p key={i}>{para}</p>)}</div>
-              {p.takeaways?.length > 0 && (<><span className="art-share-label" style={{ marginTop: 16 }}>Key takeaways</span><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
+              {p.takeaways?.length > 0 && (<div className="answer-box art-highlights"><p className="eyebrow">Key takeaways</p><ul>{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></div>)}
             </div>
           </div>
           <aside className="ep-rail"><div className="ep-rail-inner">
             {p.image && <img className="ep-hero-cover" src={p.image} alt="" />}
             {track && <div className="ep-side-block ep-listen-play"><span className="ep-detail-play"><PlayButton track={track} className="play-btn" /></span><span><b>Play episode</b><i>{p.duration}</i></span></div>}
-            <div className="ep-side-block">
+            <div className="ep-side-block" ref={listenRef}>
               <span className="art-share-label">Listen on</span>
               <div className="ep-listen-links">
                 {listenLinks(p.title).map(([label, href]) => <a key={label} className="btn btn--outline ep-platform" href={href} target="_blank" rel="noopener">

@@ -1241,3 +1241,7 @@ a:hover .art[data-k="episode"] img,
 }
 .prof-top.prof-body { padding-top: 40px; }
 @media (max-width: 600px) { .prof-top.prof-body { padding-top: 28px; } }
+
+/* Episode: platform logos turn white with the outline button's dark hover fill */
+.ep-platform img { transition: filter .15s ease; }
+.ep-platform:hover img, .ep-platform:focus-visible img { filter: brightness(0) invert(1); }
