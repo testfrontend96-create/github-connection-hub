@@ -1245,3 +1245,21 @@ a:hover .art[data-k="episode"] img,
 /* Episode: platform logos turn white with the outline button's dark hover fill */
 .ep-platform img { transition: filter .15s ease; }
 .ep-platform:hover img, .ep-platform:focus-visible img { filter: brightness(0) invert(1); }
+
+/* Article: Share sits level with the bottom of the hero image */
+@media (min-width: 981px) {
+  .art-top .art-hero { align-items: stretch; }
+  .art-top .art-hero-title { display: flex; flex-direction: column; justify-content: space-between; }
+  .art-top .art-hero-title .art-share { margin-top: 28px; }
+}
+/* Top teaser: CTA only, scrolls to the full form */
+.art-news-jump { justify-self: end; height: 44px; padding: 0 22px; border: 0; border-radius: 999px; background: var(--pulse); color: var(--white); font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; }
+.art-news-jump:hover { filter: brightness(1.08); }
+@media (max-width: 980px) { .art-news-jump { justify-self: start; } }
+/* Bottom form: all fields */
+.art-news--full { grid-template-columns: 1fr; scroll-margin-top: 140px; }
+.art-news--full form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.art-news--full form button { grid-column: 1 / -1; justify-self: start; }
+@media (max-width: 600px) { .art-news--full form { grid-template-columns: 1fr; } }
+/* "How to start" tips use the Highlights box */
+.art-howto p:not(.eyebrow) { margin: 0 !important; }

@@ -50,18 +50,34 @@ function Share({ title, url }: { title: string; url: string }) {
   )
 }
 
-function Newsletter() {
-  const [done, setDone] = useState(false)
-  const submit = (e: FormEvent) => { e.preventDefault(); setDone(true) }
+function NewsletterTeaser() {
+  const go = () => document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
   return (
     <div className="art-news">
       <div>
         <h3>Subscribe to our blog</h3>
         <p>Get the latest articles, research and biohacking updates right to your inbox.</p>
       </div>
-      {done ? <p className="art-news-done">Thank you for subscribing!</p> : (
+      <button type="button" className="art-news-jump" onClick={go}>Subscribe</button>
+    </div>
+  )
+}
+
+function Newsletter() {
+  const [done, setDone] = useState(false)
+  const submit = (e: FormEvent) => { e.preventDefault(); setDone(true) }
+  return (
+    <div className="art-news art-news--full" id="subscribe">
+      <div>
+        <h3>Subscribe to our blog</h3>
+        <p>Get the latest articles, research and biohacking updates right to your inbox.</p>
+      </div>
+      {done ? <p className="art-news-done">You've successfully subscribed!</p> : (
         <form onSubmit={submit}>
-          <input type="email" required placeholder="Your email" aria-label="Email address" />
+          <input type="text" name="firstname" required placeholder="First name*" aria-label="First name" autoComplete="given-name" />
+          <input type="text" name="lastname" required placeholder="Last name*" aria-label="Last name" autoComplete="family-name" />
+          <input type="email" name="user_email" required placeholder="Email*" aria-label="Email address" autoComplete="email" />
+          <input type="tel" name="phone" placeholder="Phone" aria-label="Phone" autoComplete="tel" />
           <button type="submit">Subscribe</button>
         </form>
       )}
@@ -126,7 +142,9 @@ function Block({ b, start }: { b: any; start?: number }) {
   switch (b.t) {
     case 'h2': return <h2 id={b.id}>{sentenceCase(b.text)}</h2>
     case 'h3': return <h3>{b.text}</h3>
-    case 'p': return <p><Inline text={b.text} /></p>
+    case 'p': return /^how to start\s*:/i.test(b.text)
+      ? <div className="answer-box art-highlights art-howto"><p className="eyebrow">How to start</p><p><Inline text={b.text.replace(/^how to start\s*:\s*/i, '').replace(/^./, (c: string) => c.toUpperCase())} /></p></div>
+      : <p><Inline text={b.text} /></p>
     case 'ul': return <ul>{b.items.map((x: string, i: number) => <li key={i}><Inline text={x} /></li>)}</ul>
     case 'ol': return <ol start={start}>{b.items.map((x: string, i: number) => <li key={i}><Inline text={x} /></li>)}</ol>
     case 'note': return <blockquote className="art-note"><Inline text={b.text} /></blockquote>
@@ -222,7 +240,7 @@ export default function Article() {
         <div className="entity-layout art-layout">
           <article className="prose">
             {intro && <p className="art-intro"><Inline text={intro} /></p>}
-            <Newsletter />
+            <NewsletterTeaser />
             {d?.highlights?.length > 0 && (
               <div className="answer-box art-highlights"><p className="eyebrow">Highlights</p>
                 <ul>{d.highlights.map((h: string, i: number) => <li key={i}>{h}</li>)}</ul>
