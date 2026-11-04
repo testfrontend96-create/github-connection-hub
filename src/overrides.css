@@ -324,6 +324,7 @@ a.tile:hover { border-color: rgba(255, 255, 255, .24); }
   --space-eyebrow: 20px; --space-title: 20px; --space-h3: 12px; --space-para: 16px;
   --space-block: 56px; --space-grid: 24px;
   --space-thumbnail-text: 16px;
+  --space-inline: 8px;         /* UDS inline control/icon gap */
 }
 body { font-family: var(--ds-font); font-size: 17px; line-height: 1.55; letter-spacing: -0.015em; }
 h1, h2, h3, h4 { text-wrap: balance; }
@@ -620,6 +621,7 @@ a:hover .art[data-k="episode"] img,
    =========================================================== */
 .home .hub-masthead h1 { font-size: 40px; line-height: 1.05; font-weight: 600; letter-spacing: -0.03em; }
 .home .kick, .home .tile-kick > span, .home .pillar-cats-label, .home .ig-kind, .home .pcard-title, .home .spine span { font-size: 13px !important; line-height: 1.4; font-weight: 500; }
+.home .spine span { font-weight: 700; letter-spacing: 0; }
 .home .meta, .home .meta b, .home .meta span, .home .card-meta, .home .ig-date, .home .howto .meta, .home .brief small, .home .fp-footer-note { font-size: 13px; line-height: 1.4; }
 .home .meta b { font-weight: 600; }
 
@@ -641,6 +643,12 @@ a:hover .art[data-k="episode"] img,
 .home .story p, .home .card p, .home .explainer p, .home .howto p, .home .faq-a, .home .soc span { font-size: 15px; line-height: 1.5; }
 .home .explainer .term { font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.02em; }
 .home .explainer--feature .term { font-size: 28px; line-height: 1.15; letter-spacing: -0.025em; }
+.home .explainer .term { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: var(--space-inline); }
+.home .explainer .term-name { font: inherit; min-width: 0; }
+.home .explainer .term .tag { margin: 0; align-self: start; white-space: nowrap; }
+.home .explainer--feature .kick { color: var(--muted-dark); }
+.home .explainer--feature .term { margin-top: var(--space-inline); }
+.home .explainer--feature .tag { color: var(--white); border-color: var(--line-dark); background: var(--content-glass-fill); }
 .home .soc b { font-size: 18px; line-height: 1.35; font-weight: 600; }
 .home .soc i { font-size: 13px; line-height: 1.4; }
 .home .howto .n { font-size: 28px; font-weight: 600; letter-spacing: -0.025em; }
@@ -760,7 +768,7 @@ a:hover .art[data-k="episode"] img,
 
 /* hero right column: one-line "New" items with ellipsis, tighter rows so the band is shorter */
 .tile--brief .brief li { padding: 7px 0; min-width: 0; }
-.tile--brief .brief li { grid-template-columns: 26px minmax(0, 1fr); }
+.tile--brief .brief li { grid-template-columns: 1ch minmax(0, 1fr); column-gap: var(--space-inline); }
 .tile--brief .brief a { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bento .tile--lead { min-height: 0; }
 .bento .tile--problems, .bento .tile--brief { padding: 16px 18px; }
