@@ -1269,7 +1269,7 @@ a:hover .art[data-k="episode"] img,
 .art-news-jump:hover { filter: brightness(1.08); }
 @media (max-width: 980px) { .art-news-jump { justify-self: start; } }
 /* Bottom form: all fields */
-.art-news--full { grid-template-columns: 1fr; scroll-margin-top: 140px; }
+.art-news--full { grid-template-columns: 1fr; scroll-margin-top: 120px; }
 .art-news--full form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .art-news--full form button { grid-column: 1 / -1; justify-self: start; }
 @media (max-width: 600px) { .art-news--full form { grid-template-columns: 1fr; } }
@@ -1296,12 +1296,14 @@ a:hover .art[data-k="episode"] img,
 .grid .card > .card-meta > span:first-child { min-width: 0; }
 /* Blog cards: Top Biohackers-style dimmed hover revealing the writer */
 .card--author .card-thumb { position: relative; overflow: hidden; }
-.card--author .card-thumb > img { transition: transform .5s var(--ease-o), filter .3s var(--ease-o); }
-.card-author { position: absolute; inset: 0; z-index: 1; display: flex; align-items: flex-end; gap: 12px; padding: 18px; color: #fff;
+.card--author .card-thumb > img { transition: transform .7s var(--ease-o), filter .45s var(--ease-o); will-change: transform; }
+.card-author { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 12px; padding: 18px; color: #fff;
   opacity: 0; transform: translate3d(0,14px,0); background: linear-gradient(to top, rgba(10,8,24,.97) 0%, rgba(10,8,24,.85) 55%, rgba(10,8,24,.45) 100%);
   transition: opacity .3s var(--ease-o), transform .5s var(--ease-o); }
 .card-author img { width: 44px !important; height: 44px !important; border-radius: 50%; object-fit: cover; flex-shrink: 0; position: static !important; aspect-ratio: 1; }
-.card-author > span { display: flex; flex-direction: column; gap: 2px; line-height: 1.25; }
+.card-author-who { display: flex; align-items: center; gap: 12px; }
+.card--author:hover .pcard-cta svg { transform: translateX(3px); }
+.card-author-who > span { display: flex; flex-direction: column; gap: 2px; line-height: 1.25; }
 .card-author small { font-size: 12px; font-weight: 600; color: rgba(255,255,255,.7); }
 .card-author b { font-size: 15px; font-weight: 700; color: #fff; }
 .card--author:hover .card-author, .card--author:focus-visible .card-author { opacity: 1; transform: none; }

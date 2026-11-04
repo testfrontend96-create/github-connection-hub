@@ -3,13 +3,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Any, E, T, A, EP, KIND_LABEL, clip, pretty } from '../lib/data'
+import { IconArrow } from './icons'
 import AUTHORS from '../data/article-authors.json'
 
 const AU = AUTHORS as Record<string, { name?: string; image?: string }>
 export const AuthorHover = ({ slug }: { slug: string }) => {
   const au = AU[slug]
   if (!au?.name) return null
-  return <span className="card-author">{au.image && <img src={au.image} alt="" loading="lazy" />}<span><small>Written by</small><b>{au.name}</b></span></span>
+  return <span className="card-author"><span className="card-author-who">{au.image && <img src={au.image} alt="" loading="lazy" />}<span><small>Written by</small><b>{au.name}</b></span></span><span className="pcard-cta">View full article<IconArrow /></span></span>
 }
 import { PlayButton } from './Player'
 import { articleTopic } from '../lib/browsing'
