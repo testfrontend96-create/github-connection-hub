@@ -1,12 +1,11 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
-import { Mention } from '../components/ui'
-import { IconArrow } from '../components/icons'
+import { FaqList, type FaqItem } from '../components/FaqList'
 import { SearchField } from '../components/controls'
-import { faqs, entities, topics, T, E, KIND_LABEL } from '../lib/data'
+import { faqs, entities, topics, T, KIND_LABEL } from '../lib/data'
 
-type Item = { q: string; a: string; topic: string; entities: string[]; href?: string; entity?: string }
+type Item = FaqItem
 
 function allFaqs(): Item[] {
   const out: Item[] = faqs.map((f) => ({ q: f.q, a: f.a, topic: 'Getting started', entities: f.entities || [] }))
@@ -26,7 +25,6 @@ function allFaqs(): Item[] {
 export default function FAQ() {
   const items = useMemo(allFaqs, [])
   const [q, setQ] = useState('')
-  const [open, setOpen] = useState<number | null>(null)
   const needle = q.trim().toLowerCase()
   const shown = items.map((it, i) => ({ it, i })).filter(({ it }) =>
     !needle || [it.q, it.a, it.topic, it.entity || ''].join(' ').toLowerCase().includes(needle))
@@ -39,29 +37,7 @@ export default function FAQ() {
           <SearchField label="Search the FAQ" placeholder={`Search ${items.length} questions`} value={q} onChange={setQ} onClear={() => setQ('')} />
         </div>
         <p className="dir-count">Showing {needle ? shown.length : <>all <b>{items.length}</b></>} questions</p>
-        <ol className="fq-list">
-          {shown.map(({ it, i }) => {
-            const isOpen = open === i
-            const ments = it.entities.filter((x) => x in E)
-            return (
-              <li key={i} className={'fq' + (isOpen ? ' is-open' : '')}>
-                <button className="fq-q" type="button" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : i)}>
-                  <span className="fq-text">{it.q}</span><span className="fq-topic">{it.topic}</span>
-                  <span className="fq-icon" aria-hidden="true" />
-                </button>
-                <div className="fq-a" role="region" style={isOpen ? { maxHeight: 600 } : undefined}><div className="fq-a-in">
-                  <p>{it.a}</p>
-                  {(ments.length > 0 || it.href) && (
-                    <div className="fq-foot">
-                      {ments.length > 0 && <div className="mentions">{ments.map((x) => <Mention key={x} slug={x} />)}</div>}
-                      {it.href && <Link className="faq-more" to={it.href}>Read the full {it.entity} entry<IconArrow /></Link>}
-                    </div>
-                  )}
-                </div></div>
-              </li>
-            )
-          })}
-        </ol>
+        <FaqList items={shown.map(({ it }) => it)} />
         {needle && shown.length === 0 && <p className="lede">No questions match “{q}”. Try a broader word, or <Link to="/search">search the whole Hub</Link>.</p>}
       </div></section>
     </>

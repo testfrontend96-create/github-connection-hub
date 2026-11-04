@@ -17,7 +17,7 @@ export function FaqList({ items }: { items: FaqItem[] }) {
       <button className="fq-q" type="button" aria-expanded={isOpen} aria-controls={answerId} onClick={() => setOpen(isOpen ? null : it.q)}>
         <span className="fq-text">{it.q}</span><span className="fq-topic">{it.topic}</span><span className="fq-icon" aria-hidden="true" />
       </button>
-      <div className="fq-a" id={answerId} role="region" aria-hidden={!isOpen} inert={!isOpen ? '' : undefined}><div className="fq-a-in">
+      <div className="fq-a" id={answerId} role="region" aria-hidden={!isOpen}><div className="fq-a-in">
         <p>{it.a}</p>
         {(mentions.length > 0 || it.href) && <div className="fq-foot">
           {mentions.length > 0 && <div className="mentions">{mentions.map(x => <Mention key={x} slug={x} />)}</div>}
