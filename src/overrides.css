@@ -1332,9 +1332,12 @@ a:hover .art[data-k="episode"] img,
 .art-news input { height: 48px; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.1); color: #fff; }
 .art-news button, .art-news-jump { height: 44px; padding: 0 26px; background: linear-gradient(90deg, #3B35C9, #6366F1); font-weight: 600; }
 .art-news-done { color: #fff !important; }
-.art-news--full { grid-template-columns: minmax(0, .8fr) minmax(0, 1.7fr); align-items: start; gap: 32px; padding: 30px 36px; }
+.art-news--full { grid-template-columns: minmax(0, .8fr) minmax(0, 1.7fr); align-items: center; gap: 32px; padding: 24px 36px; }
 .art-news--full h3 { font-size: 28px !important; line-height: 1.15 !important; letter-spacing: -0.025em !important; margin: 0 0 var(--space-h3) !important; }
 .art-news--full form { gap: 14px; }
-.art-news--full form button { grid-column: 1 / -1; justify-self: end; }
+/* Subscribe sits with the heading and description on the left, so the form holds only the fields */
+.art-news-intro { display: grid; justify-items: start; gap: 0; min-width: 0; }
+.art-news-intro button { margin-top: var(--space-h3); }
+@media (max-width: 860px) { .art-news-intro button { margin-top: 16px; } }
 @media (max-width: 860px) { .art-news, .art-news--full { grid-template-columns: 1fr; padding: 22px; border-radius: 28px; gap: 18px; } }
 .art-intro { font-size: 17px !important; line-height: 1.65 !important; }

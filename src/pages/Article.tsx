@@ -82,17 +82,17 @@ function Newsletter() {
   const submit = (e: FormEvent) => { e.preventDefault(); setDone(true) }
   return (
     <div className="art-news art-news--full" id="subscribe" ref={useHueTracking() as any}>
-      <div>
+      <div className="art-news-intro">
         <h3>Subscribe to our blog!</h3>
         <p>Get the latest articles, research, and biohacking updates right to your inbox.</p>
+        {!done && <button type="submit" form="art-subscribe-form">Subscribe</button>}
       </div>
       {done ? <p className="art-news-done">You've successfully subscribed!</p> : (
-        <form onSubmit={submit}>
+        <form id="art-subscribe-form" onSubmit={submit}>
           <label><span>First name*</span><input type="text" name="firstname" required autoComplete="given-name" /></label>
           <label><span>Last name*</span><input type="text" name="lastname" required autoComplete="family-name" /></label>
           <label><span>Email*</span><input type="email" name="user_email" required autoComplete="email" /></label>
           <label><span>Phone number (optional)</span><input type="tel" name="phone" autoComplete="tel" /></label>
-          <button type="submit">Subscribe</button>
         </form>
       )}
     </div>
