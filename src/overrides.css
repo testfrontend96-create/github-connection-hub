@@ -1239,3 +1239,5 @@ a:hover .art[data-k="episode"] img,
   .prof-top .prof-main-rest { order: 2; }
   .prof-top .prof-aside-rest { order: 3; margin-top: 40px; }
 }
+.prof-top.prof-body { padding-top: 40px; }
+@media (max-width: 600px) { .prof-top.prof-body { padding-top: 28px; } }
