@@ -1267,7 +1267,7 @@ a:hover .art[data-k="episode"] img,
 /* Top teaser: CTA only, scrolls to the full form */
 .art-news-jump { justify-self: end; height: 44px; padding: 0 22px; border: 0; border-radius: 999px; background: var(--pulse); color: var(--white); font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; }
 .art-news-jump:hover { filter: brightness(1.08); }
-@media (max-width: 980px) { .art-news-jump { justify-self: start; } }
+@media (max-width: 980px) { .art-news-jump { justify-self: end; } }
 /* Bottom form: all fields */
 .art-news--full { grid-template-columns: 1fr; scroll-margin-top: 120px; }
 .art-news--full form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
@@ -1312,19 +1312,22 @@ a:hover .art[data-k="episode"] img,
 @media (hover: none) { .card-author { display: none; } }
 
 /* Subscribe boxes: dark Biohackers World newsletter card with a pointer-following hue glow */
-.art-news { position: relative; overflow: hidden; isolation: isolate; border: 0; border-radius: 40px; padding: 48px 56px; gap: 40px; color: #fff;
+.art-news { position: relative; overflow: hidden; isolation: isolate; border: 0; border-radius: 40px; padding: 20px 28px; gap: var(--space-grid); align-items: center; color: #fff;
   background: radial-gradient(60% 90% at 25% 0%, rgba(74,104,150,.75), transparent 70%), radial-gradient(50% 60% at 100% 100%, rgba(40,40,120,.45), transparent 70%), linear-gradient(120deg, #0B1A3A 0%, #05070F 55%, #000 100%); }
 .art-news::before { content: ""; position: absolute; z-index: -1; width: 520px; height: 520px; left: calc(var(--mx, 25%) - 260px); top: calc(var(--my, 0%) - 260px);
   border-radius: 50%; background: radial-gradient(circle, rgba(120,140,255,.32), transparent 65%); opacity: 0; transition: opacity .45s var(--ease-o); pointer-events: none; }
 .art-news.is-lit::before { opacity: 1; }
-.art-news h3 { font-size: clamp(28px, 3.4vw, 44px) !important; font-weight: 900 !important; text-transform: uppercase; line-height: 1 !important; letter-spacing: -.02em; color: #fff !important; margin: 0 0 16px !important; }
-.art-news p { font-size: 16px !important; color: rgba(255,255,255,.75) !important; }
+/* UDS: sentence case, never all caps — card-title size on the teaser, small section heading on the form */
+.art-news h3 { font-size: 18px !important; font-weight: 600 !important; text-transform: none; line-height: 1.35 !important; letter-spacing: -0.015em; color: #fff !important; margin: 0 0 6px !important; }
+.art-news p { font-size: 14px !important; line-height: 1.5 !important; color: rgba(255,255,255,.7) !important; }
 .art-news label { display: grid; gap: 6px; min-width: 0; }
 .art-news label span { font-size: 13px; color: rgba(255,255,255,.6); }
 .art-news input { height: 48px; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.1); color: #fff; }
-.art-news button, .art-news-jump { height: 52px; padding: 0 44px; background: linear-gradient(90deg, #3B35C9, #6366F1); font-weight: 700; }
+.art-news button, .art-news-jump { height: 44px; padding: 0 26px; background: linear-gradient(90deg, #3B35C9, #6366F1); font-weight: 600; }
 .art-news-done { color: #fff !important; }
-.art-news--full { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
+.art-news--full { grid-template-columns: minmax(0, .8fr) minmax(0, 1.7fr); align-items: start; gap: 32px; padding: 30px 36px; }
+.art-news--full h3 { font-size: 22px !important; margin: 0 0 8px !important; }
 .art-news--full form { gap: 14px; }
-@media (max-width: 860px) { .art-news, .art-news--full { grid-template-columns: 1fr; padding: 32px 24px; border-radius: 28px; } }
+.art-news--full form button { grid-column: 1 / -1; justify-self: end; }
+@media (max-width: 860px) { .art-news, .art-news--full { grid-template-columns: 1fr; padding: 22px; border-radius: 28px; gap: 18px; } }
 .art-intro { font-size: 17px !important; line-height: 1.65 !important; }
