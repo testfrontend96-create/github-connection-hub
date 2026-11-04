@@ -1309,3 +1309,21 @@ a:hover .art[data-k="episode"] img,
 .card--author:hover .card-author, .card--author:focus-visible .card-author { opacity: 1; transform: none; }
 .card--author:hover .card-thumb > img, .card--author:focus-visible .card-thumb > img { transform: scale(1.06); filter: blur(3px); }
 @media (hover: none) { .card-author { display: none; } }
+
+/* Subscribe boxes: dark Biohackers World newsletter card with a pointer-following hue glow */
+.art-news { position: relative; overflow: hidden; isolation: isolate; border: 0; border-radius: 40px; padding: 48px 56px; gap: 40px; color: #fff;
+  background: radial-gradient(60% 90% at 25% 0%, rgba(74,104,150,.75), transparent 70%), radial-gradient(50% 60% at 100% 100%, rgba(40,40,120,.45), transparent 70%), linear-gradient(120deg, #0B1A3A 0%, #05070F 55%, #000 100%); }
+.art-news::before { content: ""; position: absolute; z-index: -1; width: 520px; height: 520px; left: calc(var(--mx, 25%) - 260px); top: calc(var(--my, 0%) - 260px);
+  border-radius: 50%; background: radial-gradient(circle, rgba(120,140,255,.32), transparent 65%); opacity: 0; transition: opacity .45s var(--ease-o); pointer-events: none; }
+.art-news.is-lit::before { opacity: 1; }
+.art-news h3 { font-size: clamp(28px, 3.4vw, 44px) !important; font-weight: 900 !important; text-transform: uppercase; line-height: 1 !important; letter-spacing: -.02em; color: #fff !important; margin: 0 0 16px !important; }
+.art-news p { font-size: 16px !important; color: rgba(255,255,255,.75) !important; }
+.art-news label { display: grid; gap: 6px; min-width: 0; }
+.art-news label span { font-size: 13px; color: rgba(255,255,255,.6); }
+.art-news input { height: 48px; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.1); color: #fff; }
+.art-news button, .art-news-jump { height: 52px; padding: 0 44px; background: linear-gradient(90deg, #3B35C9, #6366F1); font-weight: 700; }
+.art-news-done { color: #fff !important; }
+.art-news--full { grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); }
+.art-news--full form { gap: 14px; }
+@media (max-width: 860px) { .art-news, .art-news--full { grid-template-columns: 1fr; padding: 32px 24px; border-radius: 28px; } }
+.art-intro { font-size: 17px !important; line-height: 1.65 !important; }
