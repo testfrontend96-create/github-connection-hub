@@ -90,7 +90,7 @@ export function EpisodeCard({ slug, dark = false }: { slug: string; dark?: boole
         <CardThumb img={p.image} k="episode" track={track} />
         <span className="tag tag--episode">{p.number ? (p.season ? `S${p.season} · Ep. ${p.number}` : `Episode ${p.number}`) : 'Podcast'}</span>
         <h3>{p.title}</h3><p>{clip(p.description, 110)}</p>
-        <div className="card-meta"><span>{p.guest}</span><span>{p.duration}</span></div>
+        <div className="card-meta"><span>{[pretty(p.date), p.guest].filter(Boolean).join(' · ')}</span><span>{p.duration}</span></div>
       </Link>
     </div>
   )
