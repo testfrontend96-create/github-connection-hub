@@ -9,7 +9,7 @@ const SOCIAL_ICON: Record<string, [string, string]> = {
   facebook: ['Facebook', '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07z"/></svg>'],
   instagram: ['Instagram', '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.4" r="1.25" fill="currentColor" stroke="none"/></svg>'],
 }
-export const SocialIcon = ({ k }: { k: string }) => raw(SOCIAL_ICON[k]?.[1] || '')
+export const SocialIcon = ({ k }: { k: string }) => raw(filledMark(socialLabel(k)) || SOCIAL_ICON[k]?.[1] || '')
 export const socialLabel = (k: string) => SOCIAL_ICON[k]?.[0] || k
 
 export const NET_COLOR: Record<string, string> = {
@@ -38,7 +38,7 @@ const NET_ICON: Record<string, string> = {
   TikTok: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="16.5" r="3.6"/><path d="M12.6 16.5V3.8" stroke-linecap="round"/><path d="M12.6 4.2c.5 2.5 2.3 4.1 4.8 4.3" stroke-linecap="round"/></svg>',
   Reddit: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="14" rx="8.2" ry="5.6"/><circle cx="12" cy="4.4" r="1.4"/><path d="M12 5.8v2.6" stroke-linecap="round"/><circle cx="9.2" cy="13.6" r="1" fill="currentColor" stroke="none"/><circle cx="14.8" cy="13.6" r="1" fill="currentColor" stroke="none"/><path d="M9.6 16.6c1.4.9 3.4.9 4.8 0" stroke-linecap="round"/></svg>',
 }
-export const NetIcon = ({ name }: { name: string }) => raw(NET_MARK[name] || NET_ICON[name] || '')
+export const NetIcon = ({ name }: { name: string }) => raw((name !== 'X' ? filledMark(name) : '') || NET_MARK[name] || NET_ICON[name] || '')
 
 const SOC_LOGO: Record<string, string> = {
   Instagram: 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z',
@@ -50,4 +50,11 @@ const SOC_LOGO: Record<string, string> = {
   Facebook: 'M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07z',
 }
 export const SocLogo = ({ name }: { name: string }) =>
-  SOC_LOGO[name] ? <span className="soc-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d={SOC_LOGO[name]} /></svg></span> : null
+  SOC_LOGO[name] ? <span className="soc-logo" aria-hidden="true">{raw(filledMark(name))}</span> : null
+
+// Filled camera body with transparent lens and flash, shared on every page.
+const INSTAGRAM_FILLED = 'M7 0h10a7 7 0 0 1 7 7v10a7 7 0 0 1-7 7H7a7 7 0 0 1-7-7V7a7 7 0 0 1 7-7ZM12 6a6 6 0 1 0 0 12 6 6 0 0 0 0-12ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8ZM19.5 5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z'
+function filledMark(name: string) {
+  const path = name === 'Instagram' ? INSTAGRAM_FILLED : SOC_LOGO[name]
+  return path ? `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="${path}"/></svg>` : ''
+}

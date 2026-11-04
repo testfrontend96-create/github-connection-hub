@@ -11,7 +11,7 @@ import podcastTilePhoto from '../assets/home/podcast-tile.png.asset.json'
 import blogTileMobile from '../assets/home/blog-tile-mobile.png.asset.json'
 import podcastTileMobile from '../assets/home/podcast-tile-mobile.png.asset.json'
 import {
-  feed, problems, FRONT_PILLARS, T, E, KIND_LABEL, articles, howtos, faqs, social,
+  feed, problems, FRONT_PILLARS, T, E, articles, howtos, faqs, social,
   hackers, instagram, instagramTop, clip, pretty,
 } from '../lib/data'
 
@@ -151,13 +151,13 @@ export default function Home() {
         <div className="explainers">
           {feat && (
             <Link className="explainer explainer--feature" to={`/knowledge/${feat.slug}`}>
-              <span className="kick" data-k="entity" style={{ color: 'rgba(255,255,255,.55)' }}>Term of the month · {KIND_LABEL[feat.type]}</span>
-              <span className="term" style={{ marginTop: 8 }}>{feat.name}</span><p>{feat.summary}</p><EvMeter level={feat.evidence} />
+              <span className="kick" data-k="entity">Term of the month</span>
+              <span className="term"><span className="term-name">{feat.name}</span><Tag kind={feat.type} /></span><p>{feat.summary}</p><EvMeter level={feat.evidence} />
             </Link>
           )}
           {moreTerms.map((e) => (
             <Link key={e.slug} className="explainer" to={`/knowledge/${e.slug}`}>
-              <span className="term">{e.name}<Tag kind={e.type} /></span><p>{clip(e.summary, 105)}</p><EvMeter level={e.evidence} />
+              <span className="term"><span className="term-name">{e.name}</span><Tag kind={e.type} /></span><p>{clip(e.summary, 105)}</p><EvMeter level={e.evidence} />
             </Link>
           ))}
         </div>
