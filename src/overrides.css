@@ -858,10 +858,9 @@ a:hover .art[data-k="episode"] img,
 .art-video { position: relative; aspect-ratio: 16 / 9; margin: 24px 0; border-radius: var(--radius); overflow: hidden; background: var(--ink); }
 .art-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .art-note { margin: 24px 0; padding: 20px 24px; border-left: 3px solid var(--pulse); background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; font-size: 15px; line-height: 1.6; }
-.art-highlights { margin: 32px 0; padding: 28px; border-radius: var(--radius); }
+.art-highlights { margin: 32px 0; padding: var(--space-title) 28px; border-radius: var(--radius); }
 .art-highlights .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: -0.01em; text-transform: none; margin-bottom: 12px; }
 .art-highlights ul { margin: 0; }
-.art-source { margin-top: 28px; font-size: 14px !important; color: var(--muted) !important; }
 
 .art-news { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 24px; align-items: center; margin: 28px 0; padding: 24px 28px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .art-news h3 { margin: 0 0 4px !important; font-size: 18px !important; }
