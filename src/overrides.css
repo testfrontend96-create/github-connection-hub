@@ -1189,3 +1189,49 @@ a:hover .art[data-k="episode"] img,
   .ep-body { margin-top: 24px; }
   .ep-side-top { margin-top: 16px; }
 }
+
+/* Detail headers v4: no sliding titles; the space under each title carries real content */
+@media (min-width: 981px) {
+  .art-hero-title h1.display, .prof-top .art-hero-title .prof-id, .ep-head-stick { position: static !important; }
+  .art-top .art-hero { align-items: start; }
+}
+.art-hero-title .art-share { margin: 28px 0 0; padding: 0; border: 0; }
+.art-layout .side .art-toc { padding-top: 0; }
+
+/* Podcast episode v3: credits + About under the title on the left; right rail pinned below the header */
+.ep-layout--v3 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 440px); grid-template-areas: none; grid-template-rows: auto; column-gap: 56px; row-gap: 0; align-items: start; }
+.ep-main { min-width: 0; }
+.ep-layout--v3 .ep-head-id h1.display { margin: 14px 0 0; }
+.ep-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 32px; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--line); }
+.ep-facts > div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.ep-facts span { font-size: 14px; font-weight: 600; color: var(--muted); letter-spacing: -0.01em; }
+.ep-facts b { font-size: 22px; line-height: 1.25; font-weight: 600; color: var(--ink); letter-spacing: -0.02em; }
+.ep-layout--v3 .ep-about { margin-top: 40px; border-top: 0; padding-top: 0; }
+.ep-layout--v3 .ep-about .prof-h { margin: 0 0 16px; }
+.ep-layout--v3 .ep-about .prose p { font-size: 17px; line-height: 1.65; margin: 0 0 14px; max-width: 68ch; }
+.ep-layout--v3 .ep-about .prof-list li { font-size: 16px; }
+.ep-rail { align-self: stretch; min-width: 0; }
+.ep-rail-inner { position: sticky; top: 132px; display: flex; flex-direction: column; }
+.ep-rail .ep-hero-cover { margin-bottom: 24px; }
+.ep-rail .ep-side-block { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 20px; }
+.ep-rail .ep-side-block:last-child { border-bottom: 0; margin-bottom: 0; }
+@media (max-width: 980px) {
+  .ep-layout--v3 { grid-template-columns: 1fr; }
+  .ep-rail { order: -1; }
+  .ep-main { margin-top: 0; }
+  .ep-rail-inner { position: static; }
+  .ep-layout--v3 .ep-main { order: 0; }
+}
+@media (max-width: 980px) { .ep-layout--v3 { display: flex; flex-direction: column; } .ep-layout--v3 .ep-rail { order: 1; margin-top: 32px; } .ep-layout--v3 .ep-head-id { order: 0; } }
+@media (max-width: 600px) { .ep-facts b { font-size: 18px; } }
+
+/* Top Biohacker v4: photo moves to the top of the side column (Focus width); About follows the name directly */
+.prof-photo--wide { display: none; }
+@media (min-width: 981px) {
+  .prof-art-hero { grid-template-columns: minmax(0, 1fr); }
+  .prof-art-hero .prof-photo--narrow { display: none; }
+  .prof-aside .prof-photo--wide { display: block; width: 100%; aspect-ratio: 4 / 5; border-radius: var(--radius); }
+  .prof-top + .prof-body { padding-top: 32px; }
+  .prof-top .art-hero-title { align-self: auto; }
+  .prof-body .prof-aside { margin-top: calc(-1 * var(--prof-head-h, 0px)); }
+}

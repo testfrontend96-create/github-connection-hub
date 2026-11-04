@@ -204,7 +204,7 @@ export default function Article() {
       <PageHead compact crumbs={[['Hub', '/'], ['Blog', '/blog'], [a.title, null]]} />
       <section className="section art-top" ref={topRef}><div className="wrap">
         <div className="art-hero">
-          <div className="art-hero-title"><h1 className="display">{a.title}</h1></div>
+          <div className="art-hero-title"><h1 className="display">{a.title}</h1><Share title={a.title} url={url} /></div>
           {a.image && <img className="art-hero-img" src={a.image} alt="" />}
         </div>
         <div className="art-meta">
@@ -238,7 +238,6 @@ export default function Article() {
             {a.sourceUrl && <p className="art-source">Originally published on the <a href={a.sourceUrl}>Biohackers World blog</a>.</p>}
           </article>
           <aside className="side">
-            <Share title={a.title} url={url} />
             {toc.length > 0 && (
               <div className="art-toc"><span className="art-share-label">In this article</span>
                 <ol>{toc.map((h: any) => <li key={h.id}><a href={`#${h.id}`}>{sentenceCase(h.text)}</a></li>)}</ol>

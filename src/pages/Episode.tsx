@@ -18,6 +18,8 @@ export default function Episode() {
   const ents = (p.entities || []).filter((s: string) => s in E)
   const tops = (p.topics || []).filter((s: string) => T[s])
   const track = p.audio ? { src: p.audio, title: p.title, img: p.image, url: p.listenUrl } : undefined
+  // Episode credits list the guest first and the host second.
+  const [guest, host] = String(p.guest || '').split(/,\s*/)
   const crumbs: [string, string | null][] = [['Hub', '/'], ['Podcast', '/podcast']]
   if (p.season) crumbs.push([`Season ${p.season}`, null])
   crumbs.push([`Episode ${p.number}`, null])
@@ -25,24 +27,27 @@ export default function Episode() {
     <>
       <PageHead compact crumbs={crumbs} />
       <section className="section art-top ep-top"><div className="wrap">
-        <div className="ep-layout">
-          <div className="ep-head-id"><div className="ep-head-stick">
-            <div className="detail-head-meta">
+        <div className="ep-layout ep-layout--v3">
+          <div className="ep-main">
+            <div className="ep-head-id">
               <span className="tag tag--episode">{episodeLabel(p)}</span>
-              <span>{p.guest} · {p.duration} · {pretty(p.date)}</span>
+              <h1 className="display">{p.title}</h1>
+              <div className="ep-facts">
+                {guest && <div><span>Guest</span><b>{guest}</b></div>}
+                {host && <div><span>Host</span><b>{host}</b></div>}
+                <div><span>Published</span><b>{pretty(p.date)}</b></div>
+                <div><span>Length</span><b>{p.duration}</b></div>
+              </div>
             </div>
-            <h1 className="display">{p.title}</h1>
-          </div></div>
-          <div className="ep-body"><div className="ep-about">
-            <span className="art-share-label">About this episode</span>
-            <div className="prose">{p.description.split('\n\n').map((para: string, i: number) => <p key={i}>{para}</p>)}</div>
-            {p.takeaways?.length > 0 && (<><span className="art-share-label" style={{ marginTop: 16 }}>Key takeaways</span><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
-          </div></div>
-          <div className="ep-side-top">
+            <div className="ep-about">
+              <h2 className="prof-h">About this episode</h2>
+              <div className="prose">{p.description.split('\n\n').map((para: string, i: number) => <p key={i}>{para}</p>)}</div>
+              {p.takeaways?.length > 0 && (<><span className="art-share-label" style={{ marginTop: 16 }}>Key takeaways</span><ul className="prof-list">{p.takeaways.map((t: string, i: number) => <li key={i}>{t}</li>)}</ul></>)}
+            </div>
+          </div>
+          <aside className="ep-rail"><div className="ep-rail-inner">
             {p.image && <img className="ep-hero-cover" src={p.image} alt="" />}
             {track && <div className="ep-side-block ep-listen-play"><span className="ep-detail-play"><PlayButton track={track} className="play-btn" /></span><span><b>Play episode</b><i>{p.duration}</i></span></div>}
-          </div>
-          <aside className="ep-side"><div className="ep-side-inner">
             <div className="ep-side-block">
               <span className="art-share-label">Listen on</span>
               <div className="ep-listen-links">

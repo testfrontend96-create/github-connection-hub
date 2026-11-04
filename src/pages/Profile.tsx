@@ -40,7 +40,7 @@ export default function Profile() {
             )}
             {!b.speaker && <p className="lede">{clip(b.known, 240)}</p>}
           </div></div>
-          <PersonPhoto b={b} cls="prof-photo prof-hero-photo" eager />
+          <PersonPhoto b={b} cls="prof-photo prof-hero-photo prof-photo--narrow" eager />
         </div>
       </div></section>
 
@@ -66,6 +66,7 @@ export default function Profile() {
         </div>
 
         <aside className="prof-aside">
+          <PersonPhoto b={b} cls="prof-photo prof-hero-photo prof-photo--wide" eager />
           {miami && (
             <div className="prof-event">
               <p className="prof-event-h">Hear {firstName(b.name)} live at Biohackers World Miami</p>
