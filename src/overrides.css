@@ -1289,3 +1289,21 @@ a:hover .art[data-k="episode"] img,
 .grid > .card-wrap { height: 100%; }
 .grid .card > .card-meta { margin-top: auto; padding-top: 14px; justify-content: space-between; }
 .grid .card > p { margin-bottom: 0; }
+
+/* Card chips keep their own width; minutes never wrap */
+.grid .card > .tag { align-self: flex-start; }
+.grid .card > .card-meta > span:last-child { white-space: nowrap; flex-shrink: 0; }
+.grid .card > .card-meta > span:first-child { min-width: 0; }
+/* Blog cards: Top Biohackers-style dimmed hover revealing the writer */
+.card--author .card-thumb { position: relative; overflow: hidden; }
+.card--author .card-thumb > img { transition: transform .5s var(--ease-o), filter .3s var(--ease-o); }
+.card-author { position: absolute; inset: 0; z-index: 1; display: flex; align-items: flex-end; gap: 12px; padding: 18px; color: #fff;
+  opacity: 0; transform: translate3d(0,14px,0); background: linear-gradient(to top, rgba(10,8,24,.97) 0%, rgba(10,8,24,.85) 55%, rgba(10,8,24,.45) 100%);
+  transition: opacity .3s var(--ease-o), transform .5s var(--ease-o); }
+.card-author img { width: 44px !important; height: 44px !important; border-radius: 50%; object-fit: cover; flex-shrink: 0; position: static !important; aspect-ratio: 1; }
+.card-author > span { display: flex; flex-direction: column; gap: 2px; line-height: 1.25; }
+.card-author small { font-size: 12px; font-weight: 600; color: rgba(255,255,255,.7); }
+.card-author b { font-size: 15px; font-weight: 700; color: #fff; }
+.card--author:hover .card-author, .card--author:focus-visible .card-author { opacity: 1; transform: none; }
+.card--author:hover .card-thumb > img, .card--author:focus-visible .card-thumb > img { transform: scale(1.06); filter: blur(3px); }
+@media (hover: none) { .card-author { display: none; } }
