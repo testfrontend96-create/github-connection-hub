@@ -75,7 +75,7 @@ export default function Profile() {
           {(focus.length > 0 || topicLinks.length > 0) && (
             <div className="prof-box"><h3>Focus</h3>
               {focus.length > 0 && <div className="mentions">{focus.map((x: string) => <Mention key={x} slug={x} />)}</div>}
-              {topicLinks.length > 0 && <div className="prof-topics">{topicLinks.map((t: string) => <Link key={t} className="chip" to={`/topics/${t}`}>{T[t].name}</Link>)}</div>}
+              {topicLinks.length > 0 && <div className="prof-topics">{topicLinks.map((t: string) => <Link key={t} className="mention mention--topic" to={`/topics/${t}`}>{T[t].name}</Link>)}</div>}
             </div>
           )}
           {hasPro && (
