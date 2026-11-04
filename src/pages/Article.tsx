@@ -51,7 +51,20 @@ function Share({ title, url }: { title: string; url: string }) {
 }
 
 function NewsletterTeaser() {
-  const go = () => document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  // Lazy images above the form load during the smooth scroll and push it down,
+  // so keep re-aiming at the form until it actually lands in view.
+  const go = () => {
+    let tries = 0
+    const aim = () => {
+      const el = document.getElementById('subscribe'); if (!el) return
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      setTimeout(() => {
+        const top = document.getElementById('subscribe')!.getBoundingClientRect().top
+        if (Math.abs(top - 120) > 40 && ++tries < 6) aim()
+      }, 900)
+    }
+    aim()
+  }
   return (
     <div className="art-news">
       <div>
@@ -240,8 +253,8 @@ export default function Article() {
       <section className="section art-body"><div className="wrap">
         <div className="entity-layout art-layout">
           <article className="prose">
-            {intro && <p className="art-intro"><Inline text={intro} /></p>}
             <NewsletterTeaser />
+            {intro && String(intro).split(/\n\n+/).map((t: string, i: number) => <p key={i} className="art-intro"><Inline text={t} /></p>)}
             {d?.highlights?.length > 0 && (
               <div className="answer-box art-highlights"><p className="eyebrow">Highlights</p>
                 <ul>{d.highlights.map((h: string, i: number) => <li key={i}>{h}</li>)}</ul>
