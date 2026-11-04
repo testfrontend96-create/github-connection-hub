@@ -1,5 +1,5 @@
 # Page updates
-- [ ] Tighten homepage New number spacing using UDS, fill social icons except X, align Top terms chips, add Peptides Molecule chip, and bold topic spine labels.
+- [x] Tighten homepage New number spacing using UDS, fill social icons except X, align Top terms chips, add Peptides Molecule chip, and bold topic spine labels.
 - [x] Match homepage hero gradients to the other Hub heading bands and share their pointer-following hue effect.
 - [x] Make Knowledge Base summary cards light and match the Sales conference section cards.
 - [x] Match the Sales glass effect on Start here and suitable shared card surfaces, preserving photos and legibility.
