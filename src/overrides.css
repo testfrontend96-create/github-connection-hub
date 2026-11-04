@@ -1333,7 +1333,7 @@ a:hover .art[data-k="episode"] img,
 .art-news button, .art-news-jump { height: 44px; padding: 0 26px; background: linear-gradient(90deg, #3B35C9, #6366F1); font-weight: 600; }
 .art-news-done { color: #fff !important; }
 .art-news--full { grid-template-columns: minmax(0, .8fr) minmax(0, 1.7fr); align-items: start; gap: 32px; padding: 30px 36px; }
-.art-news--full h3 { font-size: 22px !important; margin: 0 0 8px !important; }
+.art-news--full h3 { font-size: 28px !important; line-height: 1.15 !important; letter-spacing: -0.025em !important; margin: 0 0 var(--space-h3) !important; }
 .art-news--full form { gap: 14px; }
 .art-news--full form button { grid-column: 1 / -1; justify-self: end; }
 @media (max-width: 860px) { .art-news, .art-news--full { grid-template-columns: 1fr; padding: 22px; border-radius: 28px; gap: 18px; } }
