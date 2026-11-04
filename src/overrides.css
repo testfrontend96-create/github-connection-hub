@@ -1070,8 +1070,8 @@ a:hover .art[data-k="episode"] img,
 .prof-art-hero .prof-hero-photo { width: 100%; max-width: none; aspect-ratio: 4 / 5; border-radius: var(--radius); background: var(--surface); }
 .prof-art-hero { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); }
 .prof-top .prof-id h1.display { position: static; margin: 0 0 16px; }
-.prof-top .prof-title { margin: 0 0 12px; color: var(--muted); }
-.prof-top .prof-id .lede { color: var(--muted); }
+.prof-top .prof-title { margin: 0 0 12px; color: var(--body); }
+.prof-top .prof-id .lede { color: var(--body); font-size: 17px; line-height: 1.55; font-weight: 400; }
 @media (min-width: 981px) { .prof-top .art-hero-title .prof-id { position: sticky; top: 132px; } }
 .prof-top .p-chip { color: var(--ink); border-color: var(--line); }
 .prof-more--end { display: none; }
@@ -1143,9 +1143,16 @@ a:hover .art[data-k="episode"] img,
 .kb-counts-head { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
 .kb-counts--rail .kb-count { justify-content: space-between; flex-direction: row-reverse; padding: 12px 16px; }
 @media (max-width: 980px) {
-  .kb-shell--rail { grid-template-columns: 1fr; }
-  .kb-shell-side { position: static; order: -1; }
+  /* Mobile: search first, then "In the Knowledge Base" with its heading above the tabs, then the topics */
+  .kb-shell--rail { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .kb-shell-main, .kb-shell--rail .content-filter-bar { display: contents; }
+  .kb-search-row { order: 1; margin-bottom: 32px; }
+  .kb-shell-side { position: static; order: 2; margin-bottom: 48px; }
+  .kb-filter-row { order: 3; }
+  .content-result-count { order: 4; }
+  .kb-results { order: 5; }
   .kb-counts--rail { flex-direction: row; flex-wrap: wrap; }
+  .kb-counts-head { flex: 0 0 100%; margin-bottom: 14px; }
   .kb-counts--rail .kb-count { flex-direction: row; padding: 8px 12px; }
 }
 
@@ -1238,7 +1245,7 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 600px) { .ep-facts b { font-size: 18px; } }
 
 /* Top Biohacker v4: name + About on the left; photo heads the side column at the Focus box's width */
-.prof-top.prof-body .prof-id { margin-bottom: 36px; }
+.prof-top.prof-body .prof-id { margin-bottom: var(--space-block); }
 .prof-top .prof-id h1.display { font-size: clamp(34px, 4.4vw, 56px); line-height: 1.06; letter-spacing: -0.03em; color: var(--ink); }
 .prof-aside-photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); overflow: hidden; }
 .prof-aside-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
@@ -1246,7 +1253,7 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 980px) {
   .prof-top .prof-grid { display: flex; flex-direction: column; gap: 0; }
   .prof-top .prof-main, .prof-top .prof-aside { display: contents; }
-  .prof-top .prof-id { order: 0; margin-bottom: 24px; }
+  .prof-top .prof-id { order: 0; margin-bottom: 40px; }
   .prof-top .prof-aside-photo { order: 1; max-width: 520px; aspect-ratio: 8 / 7; margin-bottom: 32px; }
   .prof-top .prof-main-rest { order: 2; }
   .prof-top .prof-aside-rest { order: 3; margin-top: 40px; }

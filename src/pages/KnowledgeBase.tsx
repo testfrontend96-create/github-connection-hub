@@ -60,7 +60,7 @@ export default function KnowledgeBase() {
           </div>
         </div>
         <p className="content-result-count" aria-live="polite">Showing {hits.length} of {sorted.length} entries</p>
-        <div>
+        <div className="kb-results">
           {hits.map((e) => e.type === 'howto' ? (
             <article key={e.slug} id={e.slug} className={'erow erow--expand' + (openSlug === e.slug ? ' is-open' : '')}>
               <button type="button" className="erow-toggle" aria-expanded={openSlug === e.slug} aria-controls={`${e.slug}-more`}
