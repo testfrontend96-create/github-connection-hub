@@ -1,5 +1,5 @@
 # Page updates
-- [ ] Match and align the homepage Molecule chip, restore black Social icons, and share the main FAQ question UI.
+- [x] Match and align the homepage Molecule chip, restore black Social icons, and share the main FAQ question UI.
 - [x] Match every How to start block to Highlights, reduce callout vertical padding using UDS, and remove old publication notes.
 - [x] Tighten homepage New number spacing using UDS, fill social icons except X, align Top terms chips, add Peptides Molecule chip, and bold topic spine labels.
 - [x] Match homepage hero gradients to the other Hub heading bands and share their pointer-following hue effect.
