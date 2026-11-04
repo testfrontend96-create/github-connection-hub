@@ -226,7 +226,7 @@ export default function Home() {
         <section className="sec">
           <div className="sec-head"><h2>Common questions</h2><p className="q">Straight answers to what people ask most</p><MoreLink to="/faq">All FAQ</MoreLink></div>
           <div className="faqs" style={{ paddingBottom: 30 }}>
-            <FaqList items={faqs.slice(0, 6).map(f => ({ ...f, topic: 'Getting started', entities: f.entities || [] }))} />
+            <FaqList items={faqs.slice(0, 6).map(f => ({ q: f.q, a: f.a, topic: 'Getting started', entities: f.entities || [] }))} />
           </div>
         </section>
 
