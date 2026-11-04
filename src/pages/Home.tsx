@@ -5,6 +5,7 @@ import { useHueTracking } from '../components/chrome'
 import { guideUrl } from '../lib/browsing'
 import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../components/ui'
 import { SocLogo } from '../components/social'
+import { FaqList } from '../components/FaqList'
 import { IconArrow } from '../components/icons'
 import blogTilePhoto from '../assets/home/blog-tile.png.asset.json'
 import podcastTilePhoto from '../assets/home/podcast-tile.png.asset.json'
@@ -225,7 +226,7 @@ export default function Home() {
         <section className="sec">
           <div className="sec-head"><h2>Common questions</h2><p className="q">Straight answers to what people ask most</p><MoreLink to="/faq">All FAQ</MoreLink></div>
           <div className="faqs" style={{ paddingBottom: 30 }}>
-            {faqs.slice(0, 6).map((f, i) => <div key={i} className="faq-item"><p className="faq-q">{f.q}</p><p className="faq-a">{clip(f.a, 200)}</p></div>)}
+            <FaqList items={faqs.slice(0, 6).map(f => ({ q: f.q, a: f.a, topic: 'Getting started', entities: f.entities || [] }))} />
           </div>
         </section>
 

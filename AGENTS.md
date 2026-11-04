@@ -1,4 +1,5 @@
 # Project conventions
+- Share the expandable FaqList between the homepage and FAQ directory so question appearance, answers, and interactions stay identical.
 - Resolve filled social platform artwork through the shared social mark helper, retaining X's existing mark, so all page renderers use consistent silhouettes.
 
 - Keep shared Hub navigation in `src/components/chrome.tsx` with navigation-specific tokens and styles in `src/overrides.css`, so all pages share one header without altering page content.
