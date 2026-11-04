@@ -1275,3 +1275,11 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 600px) { .art-news--full form { grid-template-columns: 1fr; } }
 /* "How to start" tips use the Highlights box */
 .art-howto p:not(.eyebrow) { margin: 0 !important; }
+
+/* Episode: tighter fact rows, separate Topics / Knowledge base boxes; topic chips share the KB chip look without the dot. */
+.ep-facts { row-gap: 10px; }
+.ep-in { display: flex; flex-direction: column; gap: 12px; }
+.ep-chip-box { padding: 18px; }
+.ep-chip-box h3 { font-size: 14px !important; line-height: 1.3; margin: 0 0 10px; font-weight: 600; letter-spacing: -0.01em; text-transform: none; color: var(--muted); }
+.prof-topics { display: flex; flex-wrap: wrap; gap: 8px; }
+.ep-platform svg { flex: none; color: currentColor; }
