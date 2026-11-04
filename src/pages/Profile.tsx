@@ -27,9 +27,9 @@ export default function Profile() {
   return (
     <>
       <PageHead compact crumbs={[['Hub', '/'], ['Top Biohackers', '/biohackers'], [b.name, null]]} />
-      <section className="section art-top prof-top"><div className="wrap">
-        <div className="art-hero prof-art-hero">
-          <div className="art-hero-title"><div className="prof-id">
+      <section className="section art-top prof-top prof-body"><div className="wrap prof-grid">
+        <div className="prof-main">
+          <div className="prof-id">
             <p className="lede prof-title">{b.title}</p>
             <h1 className="display">{b.name}</h1>
             {(miami || (b.speaker && !miami)) && (
@@ -39,13 +39,8 @@ export default function Profile() {
               </div>
             )}
             {!b.speaker && <p className="lede">{clip(b.known, 240)}</p>}
-          </div></div>
-          <PersonPhoto b={b} cls="prof-photo prof-hero-photo" eager />
-        </div>
-      </div></section>
-
-      <section className="section prof-body"><div className="wrap prof-grid">
-        <div className="prof-main">
+          </div>
+          <div className="prof-main-rest">
           <h2 className="prof-h">About {firstName(b.name)}</h2>
           <div className="prose prof-bio">{(b.bio?.length ? b.bio : [b.known]).map((p: string, i: number) => <p key={i}>{p}</p>)}</div>
           {b.highlights?.length > 0 && (<>
@@ -63,9 +58,12 @@ export default function Profile() {
             </div>
             <Link className="link-more link-more--plain" to="/biohackers">All profiles</Link>
           </section>
+          </div>
         </div>
 
         <aside className="prof-aside">
+          <PersonPhoto b={b} cls="prof-photo prof-hero-photo prof-aside-photo" eager />
+          <div className="prof-aside-rest">
           {miami && (
             <div className="prof-event">
               <p className="prof-event-h">Hear {firstName(b.name)} live at Biohackers World Miami</p>
@@ -109,6 +107,7 @@ export default function Profile() {
               </dl>
             </div>
           )}
+          </div>
         </aside>
       </div>
       <div className="wrap">

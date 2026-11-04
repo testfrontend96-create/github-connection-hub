@@ -1123,7 +1123,7 @@ a:hover .art img{transform:scale(1.03)}
 
 /* ===========================================================
    BRAND PALETTE — "Four colors. One signal."
-   Void #0A0818 · Deep Signal #2E2E88 · Pulse #6B6CFF · Bone #F5F4ED
+   Void #0A0818 · Deep Signal #2E2E88 · Pulse #6B6CFF · Bone #F5F5F7
    Final layer: maps the monochrome build onto the brand tokens and
    restores per-pillar colour (the ramp lives in data/topics.json).
    =========================================================== */
@@ -1131,7 +1131,7 @@ a:hover .art img{transform:scale(1.03)}
   --void:#0A0818;
   --deep:#2E2E88;
   --pulse:#6B6CFF;
-  --bone:#F5F4ED;
+  --bone:#F5F5F7;
 
   --ink:var(--void);
   --ink-soft:#0D0B1C;
@@ -1139,10 +1139,10 @@ a:hover .art img{transform:scale(1.03)}
   --accent:var(--pulse);
   --green:var(--bone);            /* button fill token */
   --green-dim:var(--deep);        /* on-light accent text */
-  --surface:#F7F6F1;              /* Bone, lightened for large areas */
-  --line:#E7E5DE;
+  --surface:#F6F7F8;              /* Bone, lightened for large areas */
+  --line:#E6E7EA;
   --pill:var(--void);
-  --page-top:#F2F1EA;
+  --page-top:#F2F2F4;
 }
 
 /* pillar spines + section rules take the topic ramp again */
@@ -1264,7 +1264,7 @@ a:hover .art img{transform:scale(1.03)}
 .dock.is-paused .play-btn svg:nth-of-type(2){display:none}
 .dock:not(.is-paused) .play-btn svg:nth-of-type(1){display:none}
 .dock:not(.is-paused) .play-btn svg:nth-of-type(2){display:block}
-.dock .rate{min-width:44px;height:34px;border-radius:99px;border:0;background:#F5F4ED;color:#0A0818;
+.dock .rate{min-width:44px;height:34px;border-radius:99px;border:0;background:#F5F5F7;color:#0A0818;
   font:600 12.5px/1 var(--display);cursor:pointer}
 .dock .rate:hover{background:#fff}
 .dock .scrub{flex:1;min-width:60px;height:20px;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer}
