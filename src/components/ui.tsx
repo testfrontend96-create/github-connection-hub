@@ -3,6 +3,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Any, E, T, A, EP, KIND_LABEL, clip, pretty } from '../lib/data'
+import AUTHORS from '../data/article-authors.json'
+
+const AU = AUTHORS as Record<string, { name?: string; image?: string }>
+export const AuthorHover = ({ slug }: { slug: string }) => {
+  const au = AU[slug]
+  if (!au?.name) return null
+  return <span className="card-author">{au.image && <img src={au.image} alt="" loading="lazy" />}<span><small>Written by</small><b>{au.name}</b></span></span>
+}
 import { PlayButton } from './Player'
 import { articleTopic } from '../lib/browsing'
 
@@ -23,10 +31,11 @@ export const Mention = ({ slug }: { slug: string }) => {
   return <Link className="mention" data-t={e.type} to={`/knowledge/${slug}`}><i />{e.name}</Link>
 }
 
-export const CardThumb = ({ img, k = 'entity', track }: { img?: string; k?: string; track?: any }) =>
+export const CardThumb = ({ img, k = 'entity', track, children }: { img?: string; k?: string; track?: any; children?: any }) =>
   img ? (
     <span className="card-thumb" data-k={k}>
       <img src={img} alt="" loading="lazy" decoding="async" />
+      {children}
       {track && <PlayButton track={track} />}
     </span>
   ) : null
@@ -69,11 +78,11 @@ export function Story({ item, size = 'sm', withArt = true, dek = true }: { item:
   return <Link className={`story story--${size}`} to={item.u}>{art}{body}</Link>
 }
 
-export function ArticleCard({ slug, dark = false }: { slug: string; dark?: boolean }) {
+export function ArticleCard({ slug, dark = false, author = false }: { slug: string; dark?: boolean; author?: boolean }) {
   const a = A[slug]
   return (
-    <Link className={dark ? 'card card--dark' : 'card'} to={`/articles/${slug}`}>
-      <CardThumb img={a.image} k="article" />
+    <Link className={`${dark ? 'card card--dark' : 'card'}${author ? ' card--author' : ''}`} to={`/articles/${slug}`}>
+      <CardThumb img={a.image} k="article">{author && <AuthorHover slug={slug} />}</CardThumb>
       <span className="tag tag--article">{articleTopic(a, T)}</span>
       <h3>{a.title}</h3><p>{clip(a.excerpt, 118)}</p>
       <div className="card-meta"><span>{pretty(a.date)}</span><span>{a.readTime} min read</span></div>

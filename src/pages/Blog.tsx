@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
-import { ArticleCard } from '../components/ui'
+import { ArticleCard, AuthorHover } from '../components/ui'
 import { articles, T, clip, pretty } from '../lib/data'
 import { Button, SearchField } from '../components/controls'
 import { articleTopic, filterArticles } from '../lib/browsing'
@@ -30,13 +30,13 @@ export default function Blog() {
         </div>
         <p className="content-result-count" aria-live="polite">{hits.length} {hits.length === 1 ? 'article' : 'articles'}</p>
         <div className="grid g3">
-          {lead && <Link className="card card--lead" to={`/articles/${lead.slug}`}>
-            {lead.image && <span className="card-thumb" data-k="article"><img src={lead.image} alt="" loading="lazy" /></span>}
+          {lead && <Link className="card card--lead card--author" to={`/articles/${lead.slug}`}>
+            {lead.image && <span className="card-thumb" data-k="article"><img src={lead.image} alt="" loading="lazy" /><AuthorHover slug={lead.slug} /></span>}
             <span className="tag tag--article">{articleTopic(lead, T)}</span>
             <h3>{lead.title}</h3><p>{clip(lead.excerpt, 150)}</p>
             <div className="card-meta"><span>{pretty(lead.date)}</span><span>{lead.readTime} min read</span></div>
           </Link>}
-          {rest.map((a) => <ArticleCard key={a.slug} slug={a.slug} />)}
+          {rest.map((a) => <ArticleCard key={a.slug} slug={a.slug} author />)}
         </div>
         {hits.length > shown && <div className="blog-more"><Button className="btn-dark" onClick={() => setShown(n => n + 6)}>Load more</Button></div>}
         {hits.length === 0 && <div className="content-empty"><p>No articles match your search and category.</p><Button className="chip" onClick={() => { setQuery(''); setCategory('all') }}>Clear filters</Button></div>}
