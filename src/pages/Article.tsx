@@ -139,12 +139,13 @@ function Academy() {
 }
 
 function Block({ b, start }: { b: any; start?: number }) {
+  if (typeof b.text === 'string' && /^\s*how to start\s*:/i.test(b.text)) {
+    return <div className="answer-box art-highlights art-howto"><p className="eyebrow">How to start</p><p><Inline text={b.text.replace(/^\s*how to start\s*:\s*/i, '').replace(/^./, (c: string) => c.toUpperCase())} /></p></div>
+  }
   switch (b.t) {
     case 'h2': return <h2 id={b.id}>{sentenceCase(b.text)}</h2>
     case 'h3': return <h3>{b.text}</h3>
-    case 'p': return /^how to start\s*:/i.test(b.text)
-      ? <div className="answer-box art-highlights art-howto"><p className="eyebrow">How to start</p><p><Inline text={b.text.replace(/^how to start\s*:\s*/i, '').replace(/^./, (c: string) => c.toUpperCase())} /></p></div>
-      : <p><Inline text={b.text} /></p>
+    case 'p': return <p><Inline text={b.text} /></p>
     case 'ul': return <ul>{b.items.map((x: string, i: number) => <li key={i}><Inline text={x} /></li>)}</ul>
     case 'ol': return <ol start={start}>{b.items.map((x: string, i: number) => <li key={i}><Inline text={x} /></li>)}</ol>
     case 'note': return <blockquote className="art-note"><Inline text={b.text} /></blockquote>
@@ -247,13 +248,12 @@ export default function Article() {
               </div>
             )}
             {d ? numberBlocks(d.blocks).map(([b, start]: [any, number | undefined], i: number) => <Fragment key={i}><Block b={b} start={start} /></Fragment>) : (<>
-              {rest!.map((p, i) => <p key={i}>{p}</p>)}
+              {rest?.map((p, i) => <Block key={i} b={{ t: 'p', text: p }} />)}
               <Events />
               <Academy />
             </>)}
             {ents.length > 0 && <div className="mentions" style={{ marginTop: 28 }}>{ents.map((s: string) => <Mention key={s} slug={s} />)}</div>}
             <Faq items={faqItems} />
-            {a.sourceUrl && <p className="art-source">Originally published on the <a href={a.sourceUrl}>Biohackers World blog</a>.</p>}
           </article>
           <aside className="side">
             {toc.length > 0 && (

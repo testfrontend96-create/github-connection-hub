@@ -1,4 +1,5 @@
 # Page updates
+- [ ] Match every How to start block to Highlights, reduce callout vertical padding using UDS, and remove old publication notes.
 - [x] Tighten homepage New number spacing using UDS, fill social icons except X, align Top terms chips, add Peptides Molecule chip, and bold topic spine labels.
 - [x] Match homepage hero gradients to the other Hub heading bands and share their pointer-following hue effect.
 - [x] Make Knowledge Base summary cards light and match the Sales conference section cards.
