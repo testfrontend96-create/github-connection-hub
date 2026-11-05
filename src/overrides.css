@@ -1392,4 +1392,4 @@ a:hover .art[data-k="episode"] img,
 
 /* Invisible bridge so the pointer can travel from the folded Hub pill into its menu without it closing */
 .is-collapsed .hub-nav-secondary::before { content: ''; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
-#main:has(.search-page) .search-page { padding-top: var(--space-block, 32px); }
+.search-page { padding-top: 28px; }

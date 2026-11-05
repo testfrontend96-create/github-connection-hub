@@ -61,7 +61,7 @@ export default function Simple({ which }: { which: 'reports' | 'about' | 'search
   return (
     <>
       <PageHead compact title="Search" lede="Search across molecules, biomarkers, protocols, articles, episodes and How To guides." />
-      <section className="section search-page"><div className="wrap">
+      <section className="section blog-listing search-page"><div className="wrap">
         <SearchField label="Search the Hub" placeholder="Try HRV, magnesium, fasting…" value={q} onChange={setQ} />
         <div className="grid g3" style={{ marginTop: 28 }}>
           {hits.map((h, i) => (
