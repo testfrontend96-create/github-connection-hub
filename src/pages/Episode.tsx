@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { Mention } from '../components/ui'
