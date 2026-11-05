@@ -1225,7 +1225,7 @@ a:hover .art[data-k="episode"] img,
 .ep-facts > div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .ep-facts span { font-size: 14px; font-weight: 600; color: var(--muted); letter-spacing: -0.01em; }
 .ep-facts b { font-size: 22px; line-height: 1.25; font-weight: 600; color: var(--ink); letter-spacing: -0.02em; }
-.ep-layout--v3 .ep-about { margin-top: 40px; border-top: 0; padding-top: 0; }
+.ep-layout--v3 .ep-about { margin-top: 48px; border-top: 0; padding-top: 0; }
 .ep-layout--v3 .ep-about .prof-h { margin: 0 0 16px; }
 .ep-layout--v3 .ep-about .prose p { font-size: 17px; line-height: 1.65; margin: 0 0 14px; max-width: 68ch; }
 .ep-layout--v3 .ep-about .prof-list li { font-size: 16px; }
