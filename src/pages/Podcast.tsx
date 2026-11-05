@@ -5,6 +5,7 @@ import { EpisodeCard } from '../components/ui'
 import { Button, SearchField } from '../components/controls'
 import { episodes, T } from '../lib/data'
 import { filterEpisodes } from '../lib/browsing'
+import podLogo from '../assets/biohack-your-world-logo-white.svg.asset.json'
 
 export default function Podcast() {
   const [params] = useSearchParams()
@@ -16,7 +17,9 @@ export default function Podcast() {
   return (
     <>
       <PageHead compact accent="#5757D7" title="Podcast"
-        lede="Conversations with researchers, physicians and practitioners on the science of biohacking." />
+        lede="Conversations with researchers, physicians and practitioners on the science of biohacking.">
+        <img className="pod-logo" src={podLogo.url} alt="Biohack Your World podcast" />
+      </PageHead>
       <section className="section blog-listing"><div className="wrap">
         <div className="content-filter-bar">
           <SearchField label="Search podcast episodes" placeholder="Search episodes or guests…" value={query} onChange={setQuery} />
