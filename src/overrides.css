@@ -1372,3 +1372,13 @@ a:hover .art[data-k="episode"] img,
 .art-news-quick .art-news-jump { flex: none; }
 .art-news--quick .art-news-done { color: #fff; margin: 0; }
 @media (max-width: 767px) { .art-news-quick { flex-basis: 100%; width: 100%; } }
+
+/* Topic pages: white content band, UDS spacing */
+#main:has(.topic-kinds) .topic-kinds { padding-top: var(--space-grid); }
+#main .topic-content { background: #fff; padding-top: var(--space-block); }
+#main .topic-content .section-head { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; }
+/* FAQ: text link to related article; arrow sized to text */
+.faq-more svg { width: 14px !important; height: 14px !important; flex: none; }
+.fq-article { margin: 12px 0 0 !important; font-size: 15px; }
+.fq-article a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line); }
+.fq-article a:hover { text-decoration-color: currentColor; }
