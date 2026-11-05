@@ -73,7 +73,7 @@ export default function Topic() {
       {(t._articles.length > 0 || t._episodes.length > 0) && (
         <section className="section topic-content"><div className="wrap">
           <div className="section-head"><div><p className="eyebrow">Articles & episodes</p><h2 className="display">{t.name} content</h2></div>
-            <span className="topic-ctas"><Link className="topic-cta" to="/blog">Articles<IconArrow /></Link><Link className="topic-cta" to="/podcast">Episodes<IconArrow /></Link></span></div>
+            <span className="topic-ctas"><Link className="topic-cta" to={`/blog?topic=${slug}`}>Articles<IconArrow /></Link><Link className="topic-cta" to={`/podcast?topic=${slug}`}>Episodes<IconArrow /></Link></span></div>
           <div className="grid g3">
             {t._articles.slice(0, 3).map((s: string) => <ArticleCard key={s} slug={s} author />)}
             {t._episodes.slice(0, 3).map((s: string) => <EpisodeCard key={s} slug={s} />)}
