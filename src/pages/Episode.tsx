@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import podLogoW from '../assets/biohack-your-world-logo-white.svg.asset.json'
 import podLogoB from '../assets/biohack-your-world-logo-black.png.asset.json'
 import { Link, useParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
@@ -33,7 +32,6 @@ export default function Episode() {
   return (
     <>
       <PageHead compact crumbs={crumbs}>
-        <Link to="/podcast" className="pod-logo pod-logo--sm" aria-label="Biohack Your World podcast"><img src={podLogoW.url} alt="" /></Link>
       </PageHead>
       <section className="section art-top ep-top"><div className="wrap">
         <div className="ep-layout ep-layout--v3">
@@ -55,9 +53,8 @@ export default function Episode() {
             </div>
           </div>
           <aside className="ep-rail"><div className="ep-rail-inner">
-            <Link to="/podcast" className="ep-show"><img src={podLogoB.url} alt="" /><span><small>From the podcast</small><b>Biohack Your World</b></span></Link>
             {p.image && <img className="ep-hero-cover" src={p.image} alt="" />}
-            {track && <div className="ep-side-block ep-listen-play"><span className="ep-detail-play"><PlayButton track={track} className="play-btn" /></span><span><b>Play episode</b><i>{p.duration}</i></span></div>}
+            {track && <div className="ep-side-block ep-listen-play"><span className="ep-detail-play"><PlayButton track={track} className="play-btn" /></span><span><b>Play episode</b><i>{p.duration}</i></span><Link to="/podcast" className="ep-play-logo" aria-label="Biohack Your World podcast"><img src={podLogoB.url} alt="" /></Link></div>}
             <div className="ep-side-block" ref={listenRef}>
               <span className="art-share-label">Listen on</span>
               <div className="ep-listen-links">
