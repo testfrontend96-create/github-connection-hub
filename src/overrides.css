@@ -1448,3 +1448,17 @@ a:hover .art[data-k="episode"] img,
   .hs-list { grid-template-columns: 1fr; }
 }
 .hs-bar input::-webkit-search-cancel-button { display: none; }
+/* Hub search v2: shared chips, plain close X, real thumbnails */
+.hs-close { width: 32px; height: 32px; border: 0 !important; border-radius: 6px; background: transparent; color: var(--muted); }
+.hs-close:hover { color: var(--ink); background: transparent; }
+.hs-close svg { width: 20px; height: 20px; }
+.hs-filters.chip-row { margin: 0; }
+.hs-filters .chip { display: inline-flex; align-items: center; gap: 8px; }
+.hs-filters .chip.is-active .hs-count { background: rgba(255,255,255,.2); color: inherit; }
+.hs-item { align-items: center; padding: 10px; }
+.hs-item img.is-thumb { width: 128px; height: 72px; border-radius: 12px; object-fit: cover; }
+.hs-item--podcast img.is-thumb { object-fit: cover; }
+.hs-item img.is-round { width: 64px; height: 64px; border-radius: 999px; object-fit: cover; object-position: center 20%; }
+.hs-item-mark { width: 64px; height: 64px; border-radius: 14px; font-size: 22px; }
+.hs-item--knowledge .hs-item-mark { background: linear-gradient(135deg, #EEF0FB, #E3E6F8); }
+@media (max-width: 767px) { .hs-item img.is-thumb { width: 104px; height: 60px; } .hs-item img.is-round, .hs-item-mark { width: 52px; height: 52px; } }
