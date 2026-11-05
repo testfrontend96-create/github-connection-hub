@@ -24,7 +24,7 @@ export function FaqList({ items }: { items: FaqItem[] }) {
           {mentions.length > 0 && <div className="mentions">{mentions.map(x => <Mention key={x} slug={x} />)}</div>}
           {it.href && <Link className="faq-more" to={it.href}>Read the full {it.entity} entry<IconArrow /></Link>}
         </div>}
-        {art && <p className="fq-article"><Link to={`/blog/${art}`}>Related article: {A[art].title}</Link></p>}
+        {art && <p className="fq-article"><Link to={`/articles/${art}`}>Related article: {A[art].title}</Link></p>}
       </div></div>
     </li>
   })}</ol>
