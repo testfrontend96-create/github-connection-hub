@@ -37,15 +37,17 @@ export function HubSearch({ initial, onClose }: { initial: string; onClose: () =
   const [kbType, setKbType] = useState('all')
   const inputRef = useRef<HTMLInputElement>(null)
   const navigate = useNavigate()
+  const closeRef = useRef(onClose)
+  closeRef.current = onClose
 
   useEffect(() => {
     inputRef.current?.focus()
-    const key = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    const key = (e: KeyboardEvent) => { if (e.key === 'Escape') closeRef.current() }
     document.addEventListener('keydown', key)
     const prev = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     return () => { document.removeEventListener('keydown', key); document.body.style.overflow = prev }
-  }, [onClose])
+  }, [])
 
   const n = q.trim().toLowerCase()
   const scored = useMemo(() => n.length < 2 ? [] : INDEX.map(h => ({ h, s: score(h, n) })).filter(x => x.s > 0).sort((a, b) => b.s - a.s).map(x => x.h), [n])
