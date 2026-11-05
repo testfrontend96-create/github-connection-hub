@@ -6,6 +6,7 @@ import { PRODUCT_NAV, SUB_CHANNELS, BRAND_URL, ACADEMY_URL, TICKETS_URL, topics 
 import { TnArrow, IconClose, IconSearch } from './icons'
 import { Crumbs } from './ui'
 import { searchRoute } from '../lib/searchRoute'
+import { HubSearch } from './HubSearch'
 import navLogo from '../assets/sales-nav-logo.png.asset.json'
 
 const isInternal = (href: string) => href.startsWith('/')
@@ -22,6 +23,7 @@ export function TopNav() {
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const [searchHidden, setSearchHidden] = useState(false)
   const [navQuery, setNavQuery] = useState('')
+  const [searchOpen, setSearchOpen] = useState(false)
   const navigate = useNavigate()
   const headerRef = useRef<HTMLElement>(null)
   const toggleRef = useRef<HTMLButtonElement>(null)
@@ -82,6 +84,7 @@ export function TopNav() {
 
   return (
     <>
+      {searchOpen && <HubSearch initial={navQuery} onClose={() => { setSearchOpen(false); (document.activeElement as HTMLElement | null)?.blur() }} />}
       <header className="hub-nav" ref={headerRef} onMouseEnter={() => { if (closeTimer.current) clearTimeout(closeTimer.current) }} onMouseLeave={() => { if (isTablet()) { closeTimer.current = setTimeout(() => { setOpen(false); setSubOpen(false) }, 350) } }}>
         <div className="hub-nav-bar">
           <Link className="hub-nav-brand" to="/" aria-label="Biohacking Hub home">
@@ -106,7 +109,7 @@ export function TopNav() {
           </button>
           {searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) { const to = searchRoute(navQuery); navigate(blogArea && to.includes("q=") ? `/blog?q=${encodeURIComponent(navQuery.trim())}` : to) } }}>
             <IconSearch />
-            <input type="search" aria-label={blogArea ? 'Search articles' : 'Search the Hub'} placeholder={blogArea ? 'Search articles…' : 'Search the Hub…'} value={navQuery} onChange={event => setNavQuery(event.target.value)} />
+            <input type="search" aria-label="Open Hub search" placeholder="Search the Hub…" value={navQuery} readOnly onFocus={() => setSearchOpen(true)} onClick={() => setSearchOpen(true)} />
           </form>}
           </div>}
           {(!condensed || subOpen) && <nav id="hub-sub-navigation" className="hub-nav-links hub-nav-secondary" aria-label="Biohacking Hub">
