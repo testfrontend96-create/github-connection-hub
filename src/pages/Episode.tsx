@@ -19,23 +19,6 @@ export default function Episode() {
   const p = slug ? EP[slug] : undefined
   const colRef = useRef<HTMLDivElement>(null)
   const listenRef = useRef<HTMLDivElement>(null)
-  // Line "About this episode" up with "Listen on" on desktop, keeping at least 56px under the title.
-  useLayoutEffect(() => {
-    const col = colRef.current, listen = listenRef.current
-    if (!col || !listen) return
-    const head = col.querySelector('.ep-head-id') as HTMLElement | null
-    const about = col.querySelector('.ep-about') as HTMLElement | null
-    if (!head || !about) return
-    const fit = () => {
-      if (window.innerWidth <= 980) { about.style.marginTop = ''; return }
-      const target = listen.getBoundingClientRect().top - col.getBoundingClientRect().top
-      about.style.marginTop = Math.max(56, target - head.offsetHeight) + 'px'
-    }
-    fit()
-    const ro = new ResizeObserver(fit); ro.observe(col); ro.observe(listen.parentElement!)
-    window.addEventListener('resize', fit)
-    return () => { ro.disconnect(); window.removeEventListener('resize', fit) }
-  }, [slug])
   if (!p) return <NotFound />
   const ents = (p.entities || []).filter((s: string) => s in E)
   const tops = (p.topics || []).filter((s: string) => T[s])
