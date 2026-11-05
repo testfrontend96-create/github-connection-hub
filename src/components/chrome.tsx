@@ -80,7 +80,7 @@ export function TopNav() {
 
   return (
     <>
-      <header className="hub-nav" ref={headerRef}>
+      <header className="hub-nav" ref={headerRef} onMouseLeave={() => { if (isTablet()) { setOpen(false); setSubOpen(false) } }}>
         <div className="hub-nav-bar">
           <Link className="hub-nav-brand" to="/" aria-label="Biohacking Hub home">
             <img src={`https://id-preview--${navLogo.project_id}.lovable.app${navLogo.url}`} alt="Biohackers World" />
@@ -90,15 +90,15 @@ export function TopNav() {
           <nav className="hub-nav-links hub-nav-primary" aria-label="Biohackers World">
             {PRODUCT_NAV.map(([label, href]) => <NavLink key={href} href={href} label={label} active={href === '/'} />)}
           </nav>
-          <button ref={toggleRef} className="hub-nav-toggle" type="button" aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={open} aria-controls="hub-navigation-menu" onClick={() => setOpen(value => !value)}>
+          <button ref={toggleRef} className="hub-nav-toggle" type="button" aria-label={open ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={open} aria-controls="hub-navigation-menu" onMouseEnter={() => { if (isTablet()) setOpen(true) }} onClick={() => setOpen(value => !value)}>
             {ring}<span className="hub-nav-current">{active?.[1] ?? 'Menu'}</span>
             {open ? <IconClose /> : <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true"><path d="M4 6h12M4 10h12M4 14h12" /></svg>}
           </button>
           <a className="hub-nav-cta" href={TICKETS_URL}>Buy Tickets<TnArrow /></a>
         </div>
-        <div className={`hub-nav-sub${condensed ? ' is-collapsed' : ''}`} onMouseEnter={() => { if (condensed && window.matchMedia('(hover: hover)').matches) setSubOpen(true) }} onMouseLeave={() => { if (condensed && window.matchMedia('(hover: hover)').matches) setSubOpen(false) }}>
+        <div className={`hub-nav-sub${condensed ? ' is-collapsed' : ''}`}>
           {condensed && <div className="hub-nav-sub-row">
-          <button ref={subToggleRef} className="hub-nav-sub-toggle" type="button" aria-label={subOpen ? 'Close Hub navigation' : 'Open Hub navigation'} aria-expanded={subOpen} aria-controls="hub-sub-navigation" onClick={() => setSubOpen(value => !value)}>
+          <button ref={subToggleRef} className="hub-nav-sub-toggle" type="button" aria-label={subOpen ? 'Close Hub navigation' : 'Open Hub navigation'} aria-expanded={subOpen} aria-controls="hub-sub-navigation" onMouseEnter={() => { if (isTablet()) setSubOpen(true) }} onClick={() => setSubOpen(value => !value)}>
             {ring}<span>{active?.[1] ?? 'Biohacking Hub'}</span>
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true" className={subOpen ? 'is-open' : undefined}><path d="m6 8 4 4 4-4" /></svg>
           </button>
@@ -205,3 +205,6 @@ export function Footer() {
     </footer>
   )
 }
+
+// Tablet widths open folded menus on hover; phones keep tap-to-open.
+const isTablet = () => window.matchMedia('(min-width: 600px) and (max-width: 1199px)').matches

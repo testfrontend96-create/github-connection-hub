@@ -52,27 +52,18 @@ function Share({ title, url }: { title: string; url: string }) {
 }
 
 function NewsletterTeaser() {
-  // Lazy images above the form load during the smooth scroll and push it down,
-  // so keep re-aiming at the form until it actually lands in view.
-  const go = () => {
-    let tries = 0
-    const aim = () => {
-      const el = document.getElementById('subscribe'); if (!el) return
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      setTimeout(() => {
-        const top = document.getElementById('subscribe')!.getBoundingClientRect().top
-        if (Math.abs(top - 120) > 40 && ++tries < 6) aim()
-      }, 900)
-    }
-    aim()
-  }
+  const [done, setDone] = useState(false)
   return (
-    <div className="art-news" ref={useHueTracking() as any}>
+    <div className="art-news art-news--quick" ref={useHueTracking() as any}>
       <div>
         <h3>Subscribe to our blog!</h3>
         <p>Get the latest articles, research, and biohacking updates right to your inbox.</p>
       </div>
-      <button type="button" className="art-news-jump" onClick={go}>Subscribe</button>
+      {done ? <p className="art-news-done" role="status">You've successfully subscribed!</p> :
+      <form className="art-news-quick" onSubmit={e => { e.preventDefault(); setDone(true) }}>
+        <input type="email" required aria-label="Email" placeholder="Your email" />
+        <button type="submit" className="art-news-jump">Subscribe</button>
+      </form>}
     </div>
   )
 }
@@ -245,9 +236,9 @@ export default function Article() {
             {author.image ? <img src={author.image} alt="" /> : <span className="art-meta-avatar" aria-hidden="true">{author.name[0]}</span>}
             <div><b>{author.name}</b><span>{author.role}</span></div>
           </div>
+          <div><b>{articleTopic(a, T)}</b><span>Topic</span></div>
           <div><b>{pretty(a.date)}</b><span>Published</span></div>
           <div><b>{a.readTime} min read</b><span>{toc.length ? `${toc.length} sections` : 'Reading time'}</span></div>
-          <div><b>{articleTopic(a, T)}</b><span>Topic</span></div>
         </div>
       </div></section>
 
