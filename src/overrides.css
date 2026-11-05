@@ -1480,7 +1480,7 @@ a:hover .art[data-k="episode"] img,
 /* Frosted search panel: keep it readable as an overlay, not a page */
 .hs-panel .hs-bar, .hs-panel .hs-results, .hs-panel .hs-foot { background: transparent !important; }
 .hs-panel .hs-item { background: rgba(255,255,255,.55); }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .hs-overlay { padding: 12px !important; }
   .hs-panel { height: auto !important; max-height: calc(100vh - 24px) !important; border-radius: 20px !important; background: rgba(255,255,255,.78); }
 }
