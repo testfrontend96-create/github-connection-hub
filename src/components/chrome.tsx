@@ -96,7 +96,7 @@ export function TopNav() {
           </button>
           <a className="hub-nav-cta" href={TICKETS_URL}>Buy Tickets<TnArrow /></a>
         </div>
-        <div className={`hub-nav-sub${condensed ? ' is-collapsed' : ''}`}>
+        <div className={`hub-nav-sub${condensed ? ' is-collapsed' : ''}`} onMouseEnter={() => { if (condensed && window.matchMedia('(hover: hover)').matches) setSubOpen(true) }} onMouseLeave={() => { if (condensed && window.matchMedia('(hover: hover)').matches) setSubOpen(false) }}>
           {condensed && <div className="hub-nav-sub-row">
           <button ref={subToggleRef} className="hub-nav-sub-toggle" type="button" aria-label={subOpen ? 'Close Hub navigation' : 'Open Hub navigation'} aria-expanded={subOpen} aria-controls="hub-sub-navigation" onClick={() => setSubOpen(value => !value)}>
             {ring}<span>{active?.[1] ?? 'Biohacking Hub'}</span>
