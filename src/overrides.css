@@ -1398,8 +1398,10 @@ a:hover .art[data-k="episode"] img,
 .fq-a-in { padding-bottom: 24px !important; }
 
 /* ---------- Full-screen Hub search ---------- */
-.hs-overlay { position: fixed; inset: 0; z-index: 5000; display: flex; justify-content: center; align-items: flex-start; padding: 5vh 24px; background: rgba(10,12,40,.28) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); animation: hs-fade .18s ease both; }
-.hs-panel { width: min(1040px, 100%); max-height: 90vh; display: flex; flex-direction: column; background: rgba(255,255,255,.72); backdrop-filter: blur(28px) saturate(1.6); -webkit-backdrop-filter: blur(28px) saturate(1.6); border: 1px solid rgba(255,255,255,.6); border-radius: 24px; box-shadow: 0 40px 120px -30px rgba(8,10,40,.6); overflow: hidden; animation: hs-rise .26s cubic-bezier(.2,.8,.2,1) both; }
+/* Frosted glass: the whole screen behind the panel is blurred and lit, so the
+   panel reads as a floating glass sheet rather than a separate page. */
+.hs-overlay { position: fixed; inset: 0; z-index: 5000; display: flex; justify-content: center; align-items: flex-start; padding: 5vh 24px; background: rgba(238,240,248,.5) !important; backdrop-filter: blur(24px) saturate(1.5); -webkit-backdrop-filter: blur(24px) saturate(1.5); animation: hs-fade .18s ease both; }
+.hs-panel { width: min(1040px, 100%); max-height: 90vh; display: flex; flex-direction: column; background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.7)); backdrop-filter: blur(40px) saturate(1.8); -webkit-backdrop-filter: blur(40px) saturate(1.8); border: 1px solid rgba(255,255,255,.85); border-radius: 24px; box-shadow: 0 40px 120px -30px rgba(8,10,40,.45), inset 0 1px 0 rgba(255,255,255,.9); overflow: hidden; animation: hs-rise .26s cubic-bezier(.2,.8,.2,1) both; }
 .hs-bar { display: flex; align-items: center; gap: 14px; padding: 22px 26px; border-bottom: 1px solid var(--line); }
 .hs-bar > svg { width: 22px; height: 22px; color: var(--muted); flex-shrink: 0; }
 .hs-bar input { flex: 1; min-width: 0; border: 0; outline: none; background: transparent; font-size: 22px; font-weight: 500; letter-spacing: -.02em; color: var(--ink); }
@@ -1467,20 +1469,23 @@ a:hover .art[data-k="episode"] img,
 /* Smaller mark. The hover reuses the FAQ card treatment from the Biohackers
    Media Hub project: a soft tint that fades in over 500ms on the slow-out
    cubic-bezier(.16,1,.3,1) curve. */
-.pod-logo { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); width: 112px; height: auto; padding: 12px; border-radius: 18px; background-color: rgba(255,255,255,0); opacity: .9; transition: background-color .5s cubic-bezier(.16,1,.3,1), opacity .5s cubic-bezier(.16,1,.3,1); }
+.pod-logo { position: absolute; right: 44px; top: 50%; transform: translateY(-50%); width: 112px; height: auto; padding: 12px; border-radius: 18px; background-color: rgba(255,255,255,0); opacity: .9; transition: background-color .5s cubic-bezier(.16,1,.3,1), opacity .5s cubic-bezier(.16,1,.3,1); }
 .pod-logo:hover { background-color: rgba(255,255,255,.07); opacity: 1; }
 /* Black mark at the right end of the play row under the episode artwork. */
-.ep-play-logo { margin-left: auto; flex: none; width: 56px; height: 56px; display: block; opacity: .9; transition: opacity .5s cubic-bezier(.16,1,.3,1), transform .5s cubic-bezier(.16,1,.3,1); }
+.ep-play-logo { margin-left: auto; margin-right: 28px; flex: none; width: 56px; height: 56px; display: block; opacity: .9; transition: opacity .5s cubic-bezier(.16,1,.3,1), transform .5s cubic-bezier(.16,1,.3,1); }
 .ep-play-logo img { width: 100%; height: 100%; display: block; object-fit: contain; }
 .ep-play-logo:hover { opacity: 1; transform: translateY(-2px); }
-@media (max-width: 767px) { .pod-logo { width: 76px; padding: 8px; right: 8px; } .ep-play-logo { width: 44px; height: 44px; } }
-.page-head .wrap:has(> .pod-logo) > .lede, .page-head .wrap:has(> .pod-logo) > h1 { padding-right: 150px; }
-@media (max-width: 767px) { .page-head .wrap:has(> .pod-logo) > .lede, .page-head .wrap:has(> .pod-logo) > h1 { padding-right: 96px; } }
+@media (max-width: 767px) { .pod-logo { width: 76px; padding: 8px; right: 20px; } .ep-play-logo { width: 44px; height: 44px; margin-right: 10px; } }
+.page-head .wrap:has(> .pod-logo) > .lede, .page-head .wrap:has(> .pod-logo) > h1 { padding-right: 186px; }
+@media (max-width: 767px) { .page-head .wrap:has(> .pod-logo) > .lede, .page-head .wrap:has(> .pod-logo) > h1 { padding-right: 116px; } }
 
 /* Frosted search panel: keep it readable as an overlay, not a page */
 .hs-panel .hs-bar, .hs-panel .hs-results, .hs-panel .hs-foot { background: transparent !important; }
-.hs-panel .hs-item { background: rgba(255,255,255,.55); }
+.hs-panel .hs-item { background: rgba(255,255,255,.62); }
+.hs-panel .hs-item:hover, .hs-panel .hs-item:focus-visible { background: rgba(255,255,255,.92); }
+.hs-panel .hs-chip, .hs-panel .chip { background: rgba(255,255,255,.8); }
+.hs-panel .hs-count { background: rgba(255,255,255,.9); }
 @media (max-width: 767px) {
   .hs-overlay { padding: 12px !important; }
-  .hs-panel { height: auto !important; max-height: calc(100vh - 24px) !important; border-radius: 20px !important; background: rgba(255,255,255,.78); }
+  .hs-panel { height: auto !important; max-height: calc(100vh - 24px) !important; border-radius: 20px !important; background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.78)); }
 }
