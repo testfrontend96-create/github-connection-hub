@@ -17,7 +17,7 @@ const label = (k: string) => k === 'howto' ? 'How To' : k[0].toUpperCase() + k.s
 
 const INDEX: Hit[] = [
   ...articles.map(a => ({ area: 'blog' as const, kind: 'Article', title: a.title, text: a.excerpt || '', to: `/articles/${a.slug}`, img: a.image, meta: a.date })),
-  ...episodes.map(p => ({ area: 'podcast' as const, kind: 'Episode', title: p.title, text: [p.guest, p.description].filter(Boolean).join(' — '), to: `/podcast/${p.slug}`, meta: p.guest })),
+  ...episodes.map(p => ({ area: 'podcast' as const, kind: 'Episode', title: p.title, text: [p.guest, p.description].filter(Boolean).join(' — '), to: `/podcast/${p.slug}`, img: p.image, meta: p.guest })),
   ...hackers.map(h => ({ area: 'biohackers' as const, kind: 'Biohacker', title: h.name, text: [h.title, h.known, h.summary].filter(Boolean).join(' — '), to: `/biohackers/${h.slug}`, img: h.image, meta: h.title })),
   ...entities.map(e => ({ area: 'knowledge' as const, kind: e.type, title: e.name, text: [e.aka?.join?.(', '), e.summary].filter(Boolean).join(' — '), to: `/knowledge/${e.slug}` })),
   ...howtos.map(h => ({ area: 'knowledge' as const, kind: 'howto', title: h.title, text: h.excerpt || '', to: guideUrl(h.slug) })),
@@ -71,27 +71,26 @@ export function HubSearch({ initial, onClose }: { initial: string; onClose: () =
         <form className="hs-bar" onSubmit={submit} role="search">
           <IconSearch />
           <input ref={inputRef} type="search" value={q} onChange={e => setQ(e.target.value)} placeholder="Search articles, episodes, biohackers, molecules, biomarkers…" aria-label="Search the Hub" />
-          <kbd>Esc</kbd>
           <button type="button" className="hs-close" aria-label="Close search" onClick={onClose}><IconClose /></button>
         </form>
 
-        <div className="hs-filters" role="group" aria-label="Search in">
+        <div className="hs-filters chip-row" role="group" aria-label="Search in">
           {AREAS.map(([a, name]) => (
-            <button key={a} type="button" className={'hs-chip' + (area === a ? ' is-on' : '')} aria-pressed={area === a} onClick={() => { setArea(a); setKbType('all') }}>
+            <button key={a} type="button" className={'chip' + (area === a ? ' is-active' : '')} aria-pressed={area === a} onClick={() => { setArea(a); setKbType('all') }}>
               {name}{n.length >= 2 && <span className="hs-count">{counts[a]}</span>}
             </button>
           ))}
         </div>
-        {area === 'knowledge' && <div className="hs-filters hs-filters--sub" role="group" aria-label="Knowledge Base type">
+        {area === 'knowledge' && <div className="hs-filters hs-filters--sub chip-row" role="group" aria-label="Knowledge Base type">
           {KB_TYPES.map(([k, name]) => (
-            <button key={k} type="button" className={'hs-chip hs-chip--sm' + (kbType === k ? ' is-on' : '')} aria-pressed={kbType === k} onClick={() => setKbType(k)}>{name}</button>
+            <button key={k} type="button" className={'chip' + (kbType === k ? ' is-active' : '')} aria-pressed={kbType === k} onClick={() => setKbType(k)}>{name}</button>
           ))}
         </div>}
 
         <div className="hs-results">
           {n.length < 2 && <div className="hs-empty">
             <p className="hs-hint">Try a search</p>
-            <div className="hs-suggest">{SUGGEST.map(s => <button key={s} type="button" className="hs-chip" onClick={() => setQ(s)}>{s}</button>)}</div>
+            <div className="hs-suggest">{SUGGEST.map(s => <button key={s} type="button" className="chip" onClick={() => setQ(s)}>{s}</button>)}</div>
           </div>}
           {n.length >= 2 && groups.length === 0 && <p className="hs-hint">Nothing matches “{q}”{area !== 'all' ? ' here — try Everything.' : '.'}</p>}
           {groups.map(g => (
@@ -102,8 +101,8 @@ export function HubSearch({ initial, onClose }: { initial: string; onClose: () =
               </div>
               <div className="hs-list">
                 {g.items.slice(0, area === 'all' ? 4 : 40).map(h => (
-                  <Link key={h.to} to={h.to} className="hs-item" onClick={onClose}>
-                    {h.img ? <img src={h.img} alt="" loading="lazy" className={g.a === 'biohackers' ? 'is-round' : ''} /> : <span className="hs-item-mark">{h.title[0]}</span>}
+                  <Link key={h.to} to={h.to} className={`hs-item hs-item--${g.a}`} onClick={onClose}>
+                    {h.img ? <img src={h.img} alt="" loading="lazy" className={g.a === 'biohackers' ? 'is-round' : 'is-thumb'} /> : <span className="hs-item-mark">{h.title[0]}</span>}
                     <span className="hs-item-body">
                       <span className="hs-item-kind">{label(h.kind)}{h.meta && g.a !== 'biohackers' && h.kind !== 'Article' ? ` · ${h.meta}` : ''}</span>
                       <b>{h.title}</b>
