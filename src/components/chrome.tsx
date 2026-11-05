@@ -103,7 +103,7 @@ export function TopNav() {
             {ring}<span>{active?.[1] ?? 'Biohacking Hub'}</span>
             <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true" className={subOpen ? 'is-open' : undefined}><path d="m6 8 4 4 4-4" /></svg>
           </button>
-          {searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) navigate(blogArea ? `/blog?q=${encodeURIComponent(navQuery.trim())}` : searchRoute(navQuery)) }}>
+          {searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) { const to = searchRoute(navQuery); navigate(blogArea && to.includes("q=") ? `/blog?q=${encodeURIComponent(navQuery.trim())}` : to) } }}>
             <IconSearch />
             <input type="search" aria-label={blogArea ? 'Search articles' : 'Search the Hub'} placeholder={blogArea ? 'Search articles…' : 'Search the Hub…'} value={navQuery} onChange={event => setNavQuery(event.target.value)} />
           </form>}
