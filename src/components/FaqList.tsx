@@ -2,7 +2,7 @@ import { useId, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Mention } from './ui'
 import { IconArrow } from './icons'
-import { E } from '../lib/data'
+import { E, A } from '../lib/data'
 
 export type FaqItem = { q: string; a: string; topic: string; entities: string[]; href?: string; entity?: string }
 
@@ -12,6 +12,7 @@ export function FaqList({ items }: { items: FaqItem[] }) {
   return <ol className="fq-list">{items.map((it, i) => {
     const isOpen = open === it.q
     const mentions = it.entities.filter(x => x in E)
+    const art = mentions.flatMap(x => E[x]._articles || []).find(a => a in A)
     const answerId = `${id}-${i}`
     return <li key={`${it.q}-${i}`} className={'fq' + (isOpen ? ' is-open' : '')}>
       <button className="fq-q" type="button" aria-expanded={isOpen} aria-controls={answerId} onClick={() => setOpen(isOpen ? null : it.q)}>
@@ -23,6 +24,7 @@ export function FaqList({ items }: { items: FaqItem[] }) {
           {mentions.length > 0 && <div className="mentions">{mentions.map(x => <Mention key={x} slug={x} />)}</div>}
           {it.href && <Link className="faq-more" to={it.href}>Read the full {it.entity} entry<IconArrow /></Link>}
         </div>}
+        {art && <p className="fq-article"><Link to={`/articles/${art}`}>Related article: {A[art].title}</Link></p>}
       </div></div>
     </li>
   })}</ol>

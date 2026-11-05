@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import { Tag, EntityCard, ArticleCard, EpisodeCard } from '../components/ui'
 import { PageHead } from '../components/chrome'
+import { MoreLink } from '../components/controls'
 import { T, E, KIND_LABEL, clip } from '../lib/data'
 import NotFound from './NotFound'
 
@@ -57,7 +58,7 @@ export default function Topic() {
         ))}
       </div></section>
 
-      <section className="section"><div className="wrap">
+      <section className="section topic-kinds"><div className="wrap">
         {['concept', 'biomarker', 'molecule', 'protocol'].filter((k) => byKind[k]).map((kind) => (
           <div key={kind} style={{ marginBottom: 48 }}>
             <div className="section-head">
@@ -70,12 +71,12 @@ export default function Topic() {
       </div></section>
 
       {(t._articles.length > 0 || t._episodes.length > 0) && (
-        <section className="section dark"><div className="wrap">
+        <section className="section topic-content"><div className="wrap">
           <div className="section-head"><div><p className="eyebrow">Articles & episodes</p><h2 className="display">{t.name} content</h2></div>
-            <Link className="link-more" to="/blog">All articles →</Link></div>
+            <MoreLink to="/blog">All articles</MoreLink></div>
           <div className="grid g3">
-            {t._articles.slice(0, 3).map((s: string) => <ArticleCard key={s} slug={s} dark />)}
-            {t._episodes.slice(0, 3).map((s: string) => <EpisodeCard key={s} slug={s} dark />)}
+            {t._articles.slice(0, 3).map((s: string) => <ArticleCard key={s} slug={s} />)}
+            {t._episodes.slice(0, 3).map((s: string) => <EpisodeCard key={s} slug={s} />)}
           </div>
         </div></section>
       )}
