@@ -11,8 +11,9 @@ const STAT_ORDER = ['biomarker', 'protocol', 'molecule', 'concept', 'howto']
 
 
 export default function KnowledgeBase() {
-  const [q, setQ] = useState('')
   const [params, setParams] = useSearchParams()
+  const [q, setQ] = useState(params.get('q') || '')
+  useEffect(() => { const v = params.get('q'); if (v !== null) setQ(v) }, [params])
   const { hash } = useLocation()
   const kind = KINDS.includes(params.get('type') || '') ? params.get('type') || 'all' : 'all'
   const setKind = (value: string) => { const next = new URLSearchParams(params); if (value === 'all') next.delete('type'); else next.set('type', value); setParams(next, { replace: true, preventScrollReset: true }) }
