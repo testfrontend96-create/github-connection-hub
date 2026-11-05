@@ -66,8 +66,8 @@ export function HubSearch({ initial, onClose }: { initial: string; onClose: () =
   }
 
   return createPortal(
-    <div className="hs-overlay" role="dialog" aria-modal="true" aria-label="Search the Biohacking Hub" onMouseDown={e => { if (e.target === e.currentTarget) onClose() }}>
-      <div className="hs-panel">
+    <div className="hs-overlay" style={{ backdropFilter: 'blur(24px) saturate(1.5)', WebkitBackdropFilter: 'blur(24px) saturate(1.5)' }} role="dialog" aria-modal="true" aria-label="Search the Biohacking Hub" onMouseDown={e => { if (e.target === e.currentTarget) onClose() }}>
+      <div className="hs-panel" style={{ backdropFilter: 'blur(40px) saturate(1.8)', WebkitBackdropFilter: 'blur(40px) saturate(1.8)' }}>
         <form className="hs-bar" onSubmit={submit} role="search">
           <IconSearch />
           <input ref={inputRef} type="search" value={q} onChange={e => setQ(e.target.value)} placeholder="Search articles, episodes, biohackers, molecules, biomarkers…" aria-label="Search the Hub" />
