@@ -1475,3 +1475,5 @@ a:hover .art[data-k="episode"] img,
 .ep-show small { font-size: 12px; font-weight: 600; color: var(--muted); }
 .ep-show b { font-size: 15px; font-weight: 600; color: var(--ink); }
 @media (max-width: 767px) { .pod-logo { width: 84px; right: 16px; } .pod-logo--sm { width: 52px; } }
+.page-head .wrap:has(> .pod-logo) > .lede, .page-head .wrap:has(> .pod-logo) > h1 { padding-right: 170px; }
+@media (max-width: 767px) { .page-head .wrap:has(> .pod-logo) > .lede, .page-head .wrap:has(> .pod-logo) > h1 { padding-right: 100px; } }
