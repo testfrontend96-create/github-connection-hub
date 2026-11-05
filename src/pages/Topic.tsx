@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import { Tag, EntityCard, ArticleCard, EpisodeCard } from '../components/ui'
 import { PageHead } from '../components/chrome'
-import { MoreLink } from '../components/controls'
+import { IconArrow } from '../components/icons'
 import { T, E, KIND_LABEL, clip } from '../lib/data'
 import NotFound from './NotFound'
 
@@ -51,7 +51,7 @@ export default function Topic() {
         <div className="section-head"><div><p className="eyebrow">Beginner path</p><h2 className="display">Where to start, in order</h2></div></div>
         {(t.beginnerPath || []).filter((s: string) => s in E).map((s: string, i: number) => (
           <Link key={s} className="erow" to={`/knowledge/${s}`}>
-            <span style={{ fontWeight: 900, color: 'var(--green)', fontSize: '1.1rem', minWidth: 26 }}>{i + 1}</span>
+            <span style={{ fontWeight: 900, color: 'var(--ink)', fontSize: '1.1rem', minWidth: 26 }}>{i + 1}</span>
             <div className="erow-main"><div className="erow-name">{E[s].name}</div><div className="erow-sum">{clip(E[s].summary, 130)}</div></div>
             <Tag kind={E[s].type} />
           </Link>
@@ -73,9 +73,9 @@ export default function Topic() {
       {(t._articles.length > 0 || t._episodes.length > 0) && (
         <section className="section topic-content"><div className="wrap">
           <div className="section-head"><div><p className="eyebrow">Articles & episodes</p><h2 className="display">{t.name} content</h2></div>
-            <MoreLink to="/blog">All articles</MoreLink></div>
+            <span className="topic-ctas"><Link className="topic-cta" to="/blog">Articles<IconArrow /></Link><Link className="topic-cta" to="/podcast">Episodes<IconArrow /></Link></span></div>
           <div className="grid g3">
-            {t._articles.slice(0, 3).map((s: string) => <ArticleCard key={s} slug={s} />)}
+            {t._articles.slice(0, 3).map((s: string) => <ArticleCard key={s} slug={s} author />)}
             {t._episodes.slice(0, 3).map((s: string) => <EpisodeCard key={s} slug={s} />)}
           </div>
         </div></section>
