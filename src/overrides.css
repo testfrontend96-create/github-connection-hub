@@ -1389,3 +1389,7 @@ a:hover .art[data-k="episode"] img,
 .topic-content a.topic-cta svg { width: 16px; height: 16px; transition: transform .18s ease; }
 .topic-content a.topic-cta:hover { border-color: #C9CBD1; background: var(--surface); }
 .topic-content a.topic-cta:hover svg { transform: translateX(3px); }
+
+/* Invisible bridge so the pointer can travel from the folded Hub pill into its menu without it closing */
+.is-collapsed .hub-nav-secondary::before { content: ''; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+#main:has(.search-page) .search-page { padding-top: var(--space-block, 32px); }

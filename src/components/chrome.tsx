@@ -19,6 +19,7 @@ export function TopNav() {
   const [open, setOpen] = useState(false)
   const [condensed, setCondensed] = useState(false)
   const [subOpen, setSubOpen] = useState(false)
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const [searchHidden, setSearchHidden] = useState(false)
   const [navQuery, setNavQuery] = useState('')
   const navigate = useNavigate()
@@ -81,7 +82,7 @@ export function TopNav() {
 
   return (
     <>
-      <header className="hub-nav" ref={headerRef} onMouseLeave={() => { if (isTablet()) { setOpen(false); setSubOpen(false) } }}>
+      <header className="hub-nav" ref={headerRef} onMouseEnter={() => { if (closeTimer.current) clearTimeout(closeTimer.current) }} onMouseLeave={() => { if (isTablet()) { closeTimer.current = setTimeout(() => { setOpen(false); setSubOpen(false) }, 350) } }}>
         <div className="hub-nav-bar">
           <Link className="hub-nav-brand" to="/" aria-label="Biohacking Hub home">
             <img src={`https://id-preview--${navLogo.project_id}.lovable.app${navLogo.url}`} alt="Biohackers World" />

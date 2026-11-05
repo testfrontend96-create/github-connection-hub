@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { Mention, ArticleCard, EpisodeCard, EntityCard } from '../components/ui'
 import { reports, howtos, entities, articles, episodes, pretty, clip } from '../lib/data'
-import { IconSearch } from '../components/icons'
+import { SearchField } from '../components/controls'
 import { guideUrl } from '../lib/browsing'
 
 export default function Simple({ which }: { which: 'reports' | 'about' | 'search' }) {
@@ -49,23 +49,23 @@ export default function Simple({ which }: { which: 'reports' | 'about' | 'search
   }
   // search
   const needle = q.trim().toLowerCase()
+  const TYPE_WORDS: Record<string, string> = { molecule: 'molecule', molecules: 'molecule', biomarker: 'biomarker', biomarkers: 'biomarker', protocol: 'protocol', protocols: 'protocol', concept: 'concept', concepts: 'concept', entity: '*', entities: '*' }
+  const typeHit = TYPE_WORDS[needle]
+  const has = (...parts: any[]) => parts.flat().filter(Boolean).join(' ').toLowerCase().includes(needle)
   const hits = needle.length < 2 ? [] : [
-    ...entities.filter((e) => (e.name + ' ' + e.summary).toLowerCase().includes(needle)).map((e) => ({ t: e.name, d: clip(e.summary, 120), u: `/knowledge/${e.slug}`, kind: 'entity' })),
-    ...articles.filter((a) => a.title.toLowerCase().includes(needle)).map((a) => ({ t: a.title, d: clip(a.excerpt, 120), u: `/articles/${a.slug}`, kind: 'article' })),
-    ...episodes.filter((p) => p.title.toLowerCase().includes(needle)).map((p) => ({ t: p.title, d: clip(p.description, 120), u: `/podcast/${p.slug}`, kind: 'episode' })),
-    ...howtos.filter(h => (h.title + ' ' + h.excerpt).toLowerCase().includes(needle)).map(h => ({ t: h.title, d: clip(h.excerpt, 120), u: guideUrl(h.slug), kind: 'howto' })),
-  ].slice(0, 40)
+    ...entities.filter((e) => typeHit ? (typeHit === '*' || e.type === typeHit) : has(e.name, e.aka, e.type, e.summary, e.keyFacts?.map?.((f: any) => typeof f === 'string' ? f : JSON.stringify(f)))).map((e) => ({ t: e.name, d: clip(e.summary, 120), u: `/knowledge/${e.slug}`, kind: e.type })),
+    ...howtos.filter(h => typeHit ? false : has(h.title, h.excerpt)).map(h => ({ t: h.title, d: clip(h.excerpt, 120), u: guideUrl(h.slug), kind: 'howto' })),
+    ...articles.filter((a) => !typeHit && has(a.title, a.excerpt)).map((a) => ({ t: a.title, d: clip(a.excerpt, 120), u: `/articles/${a.slug}`, kind: 'article' })),
+    ...episodes.filter((p) => !typeHit && has(p.title, p.guest)).map((p) => ({ t: p.title, d: clip(p.description, 120), u: `/podcast/${p.slug}`, kind: 'episode' })),
+  ].slice(0, 60)
   return (
     <>
-      <PageHead crumbs={[['Hub', '/'], ['Search', null]]} title="Search" lede="Search across molecules, biomarkers, protocols, articles, episodes and How To guides." />
-      <section className="section"><div className="wrap">
-        <label className="dir-search" style={{ maxWidth: 560 }}>
-          <IconSearch />
-          <input type="search" aria-label="Search the Hub" placeholder="Try HRV, magnesium, fasting…" value={q} onChange={(e) => setQ(e.target.value)} autoFocus />
-        </label>
+      <PageHead compact title="Search" lede="Search across molecules, biomarkers, protocols, articles, episodes and How To guides." />
+      <section className="section search-page"><div className="wrap">
+        <SearchField label="Search the Hub" placeholder="Try HRV, magnesium, fasting…" value={q} onChange={setQ} />
         <div className="grid g3" style={{ marginTop: 28 }}>
           {hits.map((h, i) => (
-            <Link key={i} className="card" to={h.u}><span className={`tag tag--${h.kind}`}>{h.kind}</span><h3>{h.t}</h3><p>{h.d}</p></Link>
+            <Link key={i} className="card" to={h.u}><span className={`tag tag--${h.kind}`}>{h.kind === 'howto' ? 'How To' : h.kind[0].toUpperCase() + h.kind.slice(1)}</span><h3>{h.t}</h3><p>{h.d}</p></Link>
           ))}
         </div>
         {needle.length >= 2 && hits.length === 0 && <p style={{ color: 'var(--muted)', marginTop: 20 }}>Nothing matches “{q}”.</p>}
