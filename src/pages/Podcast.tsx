@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { EpisodeCard } from '../components/ui'
 import { Button, SearchField } from '../components/controls'
@@ -7,7 +8,8 @@ import { filterEpisodes } from '../lib/browsing'
 
 export default function Podcast() {
   const [query, setQuery] = useState('')
-  const [topic, setTopic] = useState('all')
+  const [params] = useSearchParams()
+  const [topic, setTopic] = useState(() => { const t = params.get('topic'); return t && T[t] ? t : 'all' })
   const topicList = useMemo(() => [...new Set(episodes.flatMap(p => p.topics || []))].filter(s => T[s]) as string[], [])
   const hits = filterEpisodes(episodes, query, topic)
   return (

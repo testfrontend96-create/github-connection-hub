@@ -10,10 +10,12 @@ export default function Blog() {
   const [params] = useSearchParams()
   const [query, setQuery] = useState(params.get('q') || '')
   useEffect(() => { const q = params.get('q'); if (q !== null) setQuery(q) }, [params])
-  const [category, setCategory] = useState('all')
+  const topicParam = params.get('topic')
+  const topicChip = topicParam && T[topicParam] ? topicParam : null
+  const [category, setCategory] = useState(topicChip ? `topic:${topicChip}` : 'all')
   const sorted = useMemo(() => [...articles].sort((a, b) => (a.date < b.date ? 1 : -1)), [])
   const categories = useMemo(() => [...new Set(articles.flatMap(a => a.categories || []))].filter(value => value !== 'Blog').sort() as string[], [])
-  const hits = filterArticles(sorted, query, category).filter(a => !query.trim() || a.title.toLowerCase().includes(query.trim().toLowerCase()))
+  const hits = (category.startsWith('topic:') ? filterArticles(sorted, query, 'all').filter(a => (a.topics || []).includes(category.slice(6))) : filterArticles(sorted, query, category)).filter(a => !query.trim() || a.title.toLowerCase().includes(query.trim().toLowerCase()))
   const [shown, setShown] = useState(9)
   useEffect(() => setShown(9), [query, category])
   const [lead, ...rest] = hits.slice(0, shown)
@@ -25,6 +27,7 @@ export default function Blog() {
           <SearchField label="Search blog articles" placeholder="Search articles…" value={query} onChange={setQuery} />
           <div className="chip-row" aria-label="Article categories">
             <Button className={`chip${category === 'all' ? ' is-active' : ''}`} aria-pressed={category === 'all'} onClick={() => setCategory('all')}>All categories</Button>
+            {topicChip && <Button className={`chip${category === `topic:${topicChip}` ? ' is-active' : ''}`} aria-pressed={category === `topic:${topicChip}`} onClick={() => setCategory(`topic:${topicChip}`)}>{T[topicChip].name}</Button>}
             {categories.map(value => <Button key={value} className={`chip${category === value ? ' is-active' : ''}`} aria-pressed={category === value} onClick={() => setCategory(value)}>{value}</Button>)}
           </div>
         </div>
