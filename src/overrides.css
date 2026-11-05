@@ -1382,3 +1382,10 @@ a:hover .art[data-k="episode"] img,
 .fq-article { margin: 12px 0 0 !important; font-size: 15px; }
 .fq-article a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line); }
 .fq-article a:hover { text-decoration-color: currentColor; }
+
+/* Topic pages reuse the homepage outline CTA */
+.topic-ctas { display: flex; gap: 10px; flex-wrap: wrap; }
+.topic-content a.topic-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border: 1px solid var(--line); border-radius: 999px; font-size: 16px; font-weight: 600; line-height: 1.2; color: var(--ink); text-decoration: none; background: transparent; transition: border-color .18s ease, background-color .18s ease; }
+.topic-content a.topic-cta svg { width: 16px; height: 16px; transition: transform .18s ease; }
+.topic-content a.topic-cta:hover { border-color: #C9CBD1; background: var(--surface); }
+.topic-content a.topic-cta:hover svg { transform: translateX(3px); }
