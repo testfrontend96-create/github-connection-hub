@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { MoreLink, SearchField } from '../components/controls'
+import { HubSearch } from '../components/HubSearch'
 import { useHueTracking } from '../components/chrome'
 import { guideUrl } from '../lib/browsing'
 import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../components/ui'
@@ -61,6 +62,7 @@ function Tile({ item, cls }: { item: any; cls: string }) {
 export default function Home() {
   const heroRef = useHueTracking()
   const [query, setQuery] = useState('')
+  const [hubOpen, setHubOpen] = useState(false)
   const navigate = useNavigate()
   const items = feed()
   const used = new Set<string>()
@@ -115,9 +117,11 @@ export default function Home() {
         <div className="wrap">
         <div className="hub-masthead">
           <h1>Biohacking Hub</h1>
-          <form role="search" onSubmit={event => { event.preventDefault(); if (query.trim()) navigate(`/search?q=${encodeURIComponent(query.trim())}`) }}>
-            <SearchField label="Search the Hub" placeholder="Search the Hub…" value={query} onChange={setQuery} />
+          <form role="search" onSubmit={event => { event.preventDefault(); setHubOpen(true) }}
+            onFocusCapture={event => { if ((event.target as HTMLElement).tagName === 'INPUT') { (event.target as HTMLElement).blur(); setHubOpen(true) } }}>
+            <SearchField label="Search the Hub" placeholder="Search the Hub…" value={query} onChange={v => { setQuery(v); setHubOpen(true) }} />
           </form>
+          {hubOpen && <HubSearch initial={query} onClose={() => { setHubOpen(false); setQuery('') }} />}
         </div>
         <div className="bento">
           <Link className={'tile tile--lead' + (lead.img ? ' tile--photo' : '')} data-k={lead.k} to={lead.u}>
