@@ -1341,3 +1341,20 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 860px) { .art-news-intro button { margin-top: 16px; } }
 @media (max-width: 860px) { .art-news, .art-news--full { grid-template-columns: 1fr; padding: 22px; border-radius: 28px; gap: 18px; } }
 .art-intro { font-size: 17px !important; line-height: 1.65 !important; }
+
+/* Homepage topic CTA — UDS outline button */
+.home .pillar .sec-head .topic-cta {
+  display: inline-flex; align-items: center; gap: 8px; flex: none;
+  padding: 10px 18px; border: 1px solid var(--line); border-radius: 999px;
+  font-size: 16px; font-weight: 600; line-height: 1.2; color: var(--ink);
+  text-decoration: none; background: transparent;
+  transition: border-color .18s ease, background-color .18s ease;
+}
+.home .pillar .sec-head .topic-cta svg { width: 16px; height: 16px; transition: transform .18s ease; }
+.home .pillar .sec-head .topic-cta:hover { border-color: var(--card-hover, #C9CEE8); background: var(--surface); }
+.home .pillar .sec-head .topic-cta:hover svg { transform: translateX(3px); }
+/* Mobile: clear separator between topic sections */
+@media (max-width: 767px) {
+  .home .pillar { border-top: 1px solid var(--line) !important; padding-top: 32px !important; margin-top: 8px; }
+  .home .pillar + .pillar { margin-top: 24px; }
+}

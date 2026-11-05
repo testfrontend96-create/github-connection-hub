@@ -96,7 +96,7 @@ export default function Home() {
     [leadI, ...rest].forEach((i) => pillarUsed.add(i.u))
     return (
       <section key={slug} className={'pillar' + (n % 2 ? ' pillar--flip' : '')} style={{ ['--sc' as any]: t.color }}>
-        <div className="sec-head"><h2>{t.question}</h2><MoreLink to={`/topics/${slug}`}>All {label.toLowerCase()}</MoreLink></div>
+        <div className="sec-head"><h2>{t.question}</h2><Link className="topic-cta" to={`/topics/${slug}`}>{label}<IconArrow /></Link></div>
         <div className="spine"><span>{label}</span></div>
         <div className="sec-grid"><Story item={leadI} size="md" />{rest.map((i) => <Story key={i.u} item={i} size="sm" />)}</div>
       </section>
@@ -164,8 +164,8 @@ export default function Home() {
         </div>
         <div id="topics">
           <div className="pillar-cats pillar-cats--global">
-            <span className="pillar-cats-label">Browse all categories</span>
-            <div className="chip-row">{BLOG_CATEGORIES.map(([name, url]) => <a key={name} className="chip cat-chip" href={url} rel="noopener">{name}</a>)}</div>
+            <span className="pillar-cats-label">Browse all topics</span>
+            <div className="chip-row">{FRONT_PILLARS.map(([slug, label]) => <Link key={slug} className="chip cat-chip" to={`/topics/${slug}`}>{label}</Link>)}</div>
           </div>
           {pillarSections}
         </div>
