@@ -1462,3 +1462,18 @@ a:hover .art[data-k="episode"] img,
 .hs-item-mark { width: 64px; height: 64px; border-radius: 14px; font-size: 22px; }
 .hs-item--knowledge .hs-item-mark { background: linear-gradient(135deg, #EEF0FB, #E3E6F8); }
 @media (max-width: 767px) { .hs-item img.is-thumb { width: 104px; height: 60px; } .hs-item img.is-round, .hs-item-mark { width: 52px; height: 52px; } }
+/* Biohack Your World podcast logo */
+.page-head .wrap:has(> .pod-logo) { position: relative; }
+.pod-logo { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); width: 132px; height: auto; opacity: .95; }
+.pod-logo--sm { width: 72px; display: block; transition: opacity .2s; }
+.pod-logo--sm img { width: 100%; display: block; }
+.pod-logo--sm:hover { opacity: 1; }
+.ep-show { display: flex; align-items: center; gap: 14px; padding: 12px 14px; margin-bottom: 16px; border: 1px solid var(--line); border-radius: 16px; color: inherit; text-decoration: none; transition: border-color .15s; }
+.ep-show:hover { border-color: #C9CBD1; }
+.ep-show img { width: 48px; height: 48px; flex-shrink: 0; }
+.ep-show span { display: grid; gap: 2px; }
+.ep-show small { font-size: 12px; font-weight: 600; color: var(--muted); }
+.ep-show b { font-size: 15px; font-weight: 600; color: var(--ink); }
+@media (max-width: 767px) { .pod-logo { width: 84px; right: 16px; } .pod-logo--sm { width: 52px; } }
+.page-head .wrap:has(> .pod-logo) > .lede, .page-head .wrap:has(> .pod-logo) > h1 { padding-right: 170px; }
+@media (max-width: 767px) { .page-head .wrap:has(> .pod-logo) > .lede, .page-head .wrap:has(> .pod-logo) > h1 { padding-right: 100px; } }
