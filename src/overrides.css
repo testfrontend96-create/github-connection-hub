@@ -1500,3 +1500,11 @@ a:hover .art[data-k="episode"] img,
 /* Homepage "All Topics" chips: brand blue/violet, slightly larger */
 .pillar-cats--global .chip.topic-chip { background: var(--accent-soft, #EEF0FF); border-color: #C9CEFB; color: #3B3FD0; font-size: 15px; font-weight: 600; padding: 9px 16px; }
 .pillar-cats--global .chip.topic-chip:hover { background: #DFE3FF; border-color: #A9B0F7; color: #2C2FB0; }
+
+/* Square search button beside the Hub row — same surface as the Hub pill */
+.hub-nav-search-btn { display: inline-flex; align-items: center; justify-content: center; align-self: stretch; aspect-ratio: 1; padding: 0; border: 1px solid var(--nav-border); border-radius: 999px; background: var(--nav-glass); backdrop-filter: blur(26px) saturate(170%); -webkit-backdrop-filter: blur(26px) saturate(170%); box-shadow: var(--nav-shadow); color: var(--nav-muted); cursor: pointer; animation: hub-menu-in .2s ease; transition: color .3s ease; }
+.hub-nav-search-btn:hover { color: var(--nav-text); }
+.hub-nav-search-btn:focus-visible { outline: 2px solid var(--nav-focus); outline-offset: 3px; }
+.hub-nav-search-btn svg { width: 18px; height: 18px; }
+.hub-nav-sub-row { align-items: stretch; }
+.hub-nav-search-btn { align-self: center; aspect-ratio: auto; flex: 0 0 42px; width: 42px; height: 42px; }

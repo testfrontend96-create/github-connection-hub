@@ -117,10 +117,7 @@ export function TopNav() {
               {active?.[0] === href && ring}<span>{label}</span>
             </Link>)}
           </nav>
-          {condensed && searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) { const to = searchRoute(navQuery); navigate(blogArea && to.includes("q=") ? `/blog?q=${encodeURIComponent(navQuery.trim())}` : to) } }}>
-            <IconSearch />
-            <input type="search" aria-label="Open Hub search" placeholder="Search the Hub…" value={navQuery} readOnly onFocus={() => setSearchOpen(true)} onClick={() => setSearchOpen(true)} />
-          </form>}
+          {condensed && searchHidden && <button type="button" className="hub-nav-search-btn" aria-label="Search the Hub" onClick={() => setSearchOpen(true)}><IconSearch /></button>}
           </div>
         </div>
         {open && <div id="hub-navigation-menu" className="hub-nav-menu">
