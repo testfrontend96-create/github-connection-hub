@@ -1507,3 +1507,4 @@ a:hover .art[data-k="episode"] img,
 .hub-nav-search-btn:focus-visible { outline: 2px solid var(--nav-focus); outline-offset: 3px; }
 .hub-nav-search-btn svg { width: 18px; height: 18px; }
 .hub-nav-sub-row { align-items: stretch; }
+.hub-nav-search-btn { align-self: center; aspect-ratio: auto; flex: 0 0 42px; width: 42px; height: 42px; }
