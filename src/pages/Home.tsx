@@ -13,7 +13,7 @@ import podcastTilePhoto from '../assets/home/podcast-tile.png.asset.json'
 import blogTileMobile from '../assets/home/blog-tile-mobile.png.asset.json'
 import podcastTileMobile from '../assets/home/podcast-tile-mobile.png.asset.json'
 import {
-  feed, problems, FRONT_PILLARS, T, E, articles, howtos, faqs, social,
+  feed, problems, FRONT_PILLARS, PILLARS, T, E, articles, howtos, faqs, social,
   hackers, instagram, instagramTop, clip, pretty,
 } from '../lib/data'
 
@@ -169,7 +169,7 @@ export default function Home() {
         <div id="topics">
           <div className="pillar-cats pillar-cats--global">
             <span className="pillar-cats-label">All Topics</span>
-            <div className="chip-row">{FRONT_PILLARS.map(([slug, label]) => <Link key={slug} className="chip cat-chip topic-chip" to={`/topics/${slug}`}>{label}</Link>)}</div>
+            <div className="chip-row">{PILLARS.map(([slug, label]) => <Link key={slug} className="chip cat-chip topic-chip" to={`/topics/${slug}`}>{label}</Link>)}</div>
           </div>
           {pillarSections}
         </div>
