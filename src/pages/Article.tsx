@@ -56,7 +56,6 @@ function NewsletterTeaser() {
   return (
     <div className="art-news art-news--quick" ref={useHueTracking() as any}>
       <div>
-        <h3>Subscribe to our blog!</h3>
         <p>Get the latest articles, research, and biohacking updates right to your inbox.</p>
       </div>
       {done ? <p className="art-news-done" role="status">You've successfully subscribed!</p> :
@@ -245,8 +244,8 @@ export default function Article() {
       <section className="section art-body"><div className="wrap">
         <div className="entity-layout art-layout">
           <article className="prose">
-            <NewsletterTeaser />
             {intro && String(intro).split(/\n\n+/).map((t: string, i: number) => <p key={i} className="art-intro"><Inline text={t} /></p>)}
+            <NewsletterTeaser />
             {d?.highlights?.length > 0 && (
               <div className="answer-box art-highlights"><p className="eyebrow">Highlights</p>
                 <ul>{d.highlights.map((h: string, i: number) => <li key={i}>{h}</li>)}</ul>

@@ -169,7 +169,7 @@ export default function Home() {
         <div id="topics">
           <div className="pillar-cats pillar-cats--global">
             <span className="pillar-cats-label">All Topics</span>
-            <div className="chip-row">{FRONT_PILLARS.map(([slug, label]) => <Link key={slug} className="chip cat-chip topic-chip" to={`/topics/${slug}`}>{label}</Link>)}</div>
+            <div className="chip-row">{PILLARS.map(([slug, label]) => <Link key={slug} className="chip cat-chip topic-chip" to={`/topics/${slug}`}>{label}</Link>)}</div>
           </div>
           {pillarSections}
         </div>
