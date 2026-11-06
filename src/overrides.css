@@ -1490,3 +1490,13 @@ a:hover .art[data-k="episode"] img,
   .hs-overlay { padding: 12px !important; }
   .hs-panel { height: auto !important; max-height: calc(100vh - 24px) !important; border-radius: 20px !important; background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.78)); }
 }
+
+/* Hub header: brand bar slides up behind the Hub row on scroll down, returns on scroll up */
+.hub-nav { transition: transform .35s ease; }
+.hub-nav.is-top-hidden { transform: translateY(calc(-1 * var(--top-shift, 72px))); }
+.hub-nav-sub-row { justify-content: center; }
+.hub-nav-sub-row .hub-nav-secondary { flex: 0 1 auto; }
+
+/* Homepage "All Topics" chips: brand blue/violet, slightly larger */
+.pillar-cats--global .chip.topic-chip { background: var(--accent-soft, #EEF0FF); border-color: #C9CEFB; color: #3B3FD0; font-size: 15px; font-weight: 600; padding: 9px 16px; }
+.pillar-cats--global .chip.topic-chip:hover { background: #DFE3FF; border-color: #A9B0F7; color: #2C2FB0; }

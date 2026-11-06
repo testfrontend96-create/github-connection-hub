@@ -147,8 +147,8 @@ export const PRODUCT_NAV: [string, string][] = [
   ['Community', BRAND_URL + '/community'], ['About Us', BRAND_URL + '/about-us'],
 ]
 export const SUB_CHANNELS: [string, string][] = [
-  ['/blog', 'Blog'], ['/podcast', 'Podcast'], ['/social', 'Social Media'],
-  ['/biohackers', 'Top Biohackers'], ['/knowledge-base', 'Knowledge Base'], ['/faq', 'FAQ'],
+  ['/blog', 'Blog'], ['/podcast', 'Podcast'], ['/knowledge-base', 'Knowledge Base'],
+  ['/biohackers', 'Top Biohackers'], ['/faq', 'FAQ'],
 ]
 export const PILLARS: [string, string][] = ([
   ['longevity', 'Longevity'], ['sleep', 'Sleep'], ['nutrition', 'Nutrition'],
