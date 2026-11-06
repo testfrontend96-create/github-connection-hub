@@ -1555,3 +1555,9 @@ a:hover .art[data-k="episode"] img,
   .art-news-quick input { height: 48px; font-size: 16px; width: 100%; flex: none; }
   .art-news-quick .art-news-jump { width: 100%; }
 }
+
+/* Detail pages: the fixed-nav spacer is taller than the compact band on phones and peeked out as a dark strip */
+.tn-spacer:has(+ main .art-top), .tn-spacer:has(~ main .art-top), div:has(> #main .art-top) > .tn-spacer { background: transparent !important; }
+@media (max-width: 767px) {
+  .art-top:not(.ep-top) { padding-top: 48px !important; }
+}
