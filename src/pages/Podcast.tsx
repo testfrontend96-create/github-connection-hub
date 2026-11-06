@@ -18,7 +18,7 @@ export default function Podcast() {
     <>
       <PageHead compact accent="#5757D7" title="Podcast"
         lede="Conversations with researchers, physicians and practitioners on the science of biohacking.">
-        <img className="pod-logo" src={podLogo.url} alt="Biohack Your World podcast" />
+        <span className="pod-logo"><img src={podLogo.url} alt="Biohack Your World podcast" /></span>
       </PageHead>
       <section className="section blog-listing"><div className="wrap">
         <div className="content-filter-bar">
