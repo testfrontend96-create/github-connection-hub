@@ -44,7 +44,16 @@ export default function KnowledgeBase() {
 
   return (    <>
       <PageHead compact accent="#4243B0" title="Knowledge Base"
-        lede="Molecules, biomarkers, protocols, concepts and How To guides — connected to the topics, articles and episodes that reference them." />
+        lede="Molecules, biomarkers, protocols, concepts and How To guides — connected to the topics, articles and episodes that reference them.">
+        <svg className="kb-head-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          strokeWidth="1.35" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5" />
+          <path d="M9 18h6M10 22h4" />
+          <path d="M12 5.2v7.2" />
+          <path d="M12 5.2c-1.4 0-2.4.9-2.4 2.1 0 .6.3 1.2.7 1.5-.4.4-.7.9-.7 1.5 0 1.2 1 2.1 2.4 2.1" />
+          <path d="M12 5.2c1.4 0 2.4.9 2.4 2.1 0 .6-.3 1.2-.7 1.5.4.4.7.9.7 1.5 0 1.2-1 2.1-2.4 2.1" />
+        </svg>
+      </PageHead>
 
       <section className="section--tight" style={{ paddingTop: 40 }}><div className="wrap">
         <div className={'kb-shell kb-shell--' + statsLayout}><div className="kb-shell-main">
