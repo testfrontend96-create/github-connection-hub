@@ -30,15 +30,24 @@ export function TopNav() {
   const subToggleRef = useRef<HTMLButtonElement>(null)
   const blogArea = pathname === '/blog' || pathname.startsWith('/articles/')
   const active = SUB_CHANNELS.find(([href]) => pathname === href || pathname.startsWith(href + '/'))
-    ?? (pathname.startsWith('/articles/') ? SUB_CHANNELS[0] : pathname.startsWith('/knowledge/') ? SUB_CHANNELS[4] : undefined)
+    ?? (pathname.startsWith('/articles/') ? SUB_CHANNELS[0] : pathname.startsWith('/knowledge/') ? SUB_CHANNELS.find(([h]) => h === '/knowledge-base') : undefined)
   useEffect(() => { setOpen(false); setSubOpen(false) }, [pathname])
 
   useEffect(() => {
+    let lastY = window.scrollY
     const onScroll = () => {
       const header = headerRef.current
       if (!header) return
       header.classList.toggle('is-condensed', window.scrollY > 40)
       setCondensed(window.scrollY > 40)
+      // scrolling down slides the brand bar up behind the Hub row; scrolling up brings it back
+      const y = window.scrollY, dy = y - lastY
+      if (y <= 40) header.classList.remove('is-top-hidden')
+      else if (dy > 4) header.classList.add('is-top-hidden')
+      else if (dy < -4) header.classList.remove('is-top-hidden')
+      lastY = y
+      const bar = header.querySelector('.hub-nav-bar')
+      if (bar instanceof HTMLElement) header.style.setProperty('--top-shift', `${bar.offsetHeight + 10}px`)
       const pageSearch = document.querySelector('#main .content-search')
       setSearchHidden(pageSearch instanceof HTMLElement ? pageSearch.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom : true)
       // the bar only needs its own fill once the dark heading band has scrolled
@@ -101,22 +110,18 @@ export function TopNav() {
           </button>
           <a className="hub-nav-cta" href={TICKETS_URL}>Buy Tickets<TnArrow /></a>
         </div>
-        <div className={`hub-nav-sub${condensed ? ' is-collapsed' : ''}`}>
-          {condensed && <div className="hub-nav-sub-row">
-          <button ref={subToggleRef} className="hub-nav-sub-toggle" type="button" aria-label={subOpen ? 'Close Hub navigation' : 'Open Hub navigation'} aria-expanded={subOpen} aria-controls="hub-sub-navigation" onMouseEnter={() => { if (isTablet()) setSubOpen(true) }} onClick={() => setSubOpen(value => !value)}>
-            {ring}<span>{active?.[1] ?? 'Biohacking Hub'}</span>
-            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true" className={subOpen ? 'is-open' : undefined}><path d="m6 8 4 4 4-4" /></svg>
-          </button>
-          {searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) { const to = searchRoute(navQuery); navigate(blogArea && to.includes("q=") ? `/blog?q=${encodeURIComponent(navQuery.trim())}` : to) } }}>
+        <div className="hub-nav-sub">
+          <div className="hub-nav-sub-row">
+          <nav id="hub-sub-navigation" className="hub-nav-links hub-nav-secondary" aria-label="Biohacking Hub">
+            {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} aria-current={active?.[0] === href ? 'page' : undefined}>
+              {active?.[0] === href && ring}<span>{label}</span>
+            </Link>)}
+          </nav>
+          {condensed && searchHidden && <form role="search" className="hub-nav-search" onSubmit={event => { event.preventDefault(); if (navQuery.trim()) { const to = searchRoute(navQuery); navigate(blogArea && to.includes("q=") ? `/blog?q=${encodeURIComponent(navQuery.trim())}` : to) } }}>
             <IconSearch />
             <input type="search" aria-label="Open Hub search" placeholder="Search the Hub…" value={navQuery} readOnly onFocus={() => setSearchOpen(true)} onClick={() => setSearchOpen(true)} />
           </form>}
-          </div>}
-          {(!condensed || subOpen) && <nav id="hub-sub-navigation" className="hub-nav-links hub-nav-secondary" aria-label="Biohacking Hub">
-            {SUB_CHANNELS.map(([href, label]) => <Link key={href} to={href} onClick={() => setSubOpen(false)} aria-current={active?.[0] === href ? 'page' : undefined}>
-              {!condensed && active?.[0] === href && ring}<span>{label}</span>
-            </Link>)}
-          </nav>}
+          </div>
         </div>
         {open && <div id="hub-navigation-menu" className="hub-nav-menu">
           <nav className="hub-nav-menu-group" aria-label="Biohackers World pages">
