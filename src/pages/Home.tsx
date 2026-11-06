@@ -13,7 +13,7 @@ import podcastTilePhoto from '../assets/home/podcast-tile.png.asset.json'
 import blogTileMobile from '../assets/home/blog-tile-mobile.png.asset.json'
 import podcastTileMobile from '../assets/home/podcast-tile-mobile.png.asset.json'
 import {
-  feed, problems, FRONT_PILLARS, T, E, articles, howtos, faqs, social,
+  feed, problems, FRONT_PILLARS, PILLARS, T, E, articles, howtos, faqs, social,
   hackers, instagram, instagramTop, clip, pretty,
 } from '../lib/data'
 

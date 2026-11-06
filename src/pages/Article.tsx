@@ -56,7 +56,7 @@ function NewsletterTeaser() {
   return (
     <div className="art-news art-news--quick" ref={useHueTracking() as any}>
       <div>
-        <p>Get the latest articles, research, and biohacking updates right to your inbox.</p>
+        <p>Latest articles, research, and biohacking updates right to your inbox.</p>
       </div>
       {done ? <p className="art-news-done" role="status">You've successfully subscribed!</p> :
       <form className="art-news-quick" onSubmit={e => { e.preventDefault(); setDone(true) }}>
