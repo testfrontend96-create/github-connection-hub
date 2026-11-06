@@ -1508,3 +1508,25 @@ a:hover .art[data-k="episode"] img,
 .hub-nav-search-btn svg { width: 18px; height: 18px; }
 .hub-nav-sub-row { align-items: stretch; }
 .hub-nav-search-btn { align-self: center; aspect-ratio: auto; flex: 0 0 42px; width: 42px; height: 42px; }
+
+/* FAQ: clearer gap between an opened answer's last line and the next question */
+.fq.is-open .fq-a-in { padding-bottom: 36px !important; }
+.fq-article { margin-bottom: 0; }
+
+/* Expanded Hub search — dark frosted glass matching the Hub nav pill */
+.hs-overlay { background: rgba(6,6,12,.45) !important; }
+.hs-panel { background: linear-gradient(180deg, rgba(14,15,24,.86), rgba(10,11,18,.8)) !important; border: 1px solid rgba(255,255,255,.12) !important; box-shadow: 0 40px 120px -30px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.08) !important; color: #fff; }
+.hs-panel .hs-bar, .hs-panel .hs-group + .hs-group, .hs-panel .hs-foot { border-color: rgba(255,255,255,.1) !important; }
+.hs-panel .hs-bar > svg, .hs-panel .hs-hint, .hs-panel .hs-foot, .hs-panel .hs-group-head h3, .hs-panel .hs-item-kind, .hs-panel .hs-item-text, .hs-panel .hs-close { color: rgba(255,255,255,.62); }
+.hs-panel .hs-bar input, .hs-panel .hs-group-head h3 span, .hs-panel .hs-more, .hs-panel .hs-item b, .hs-panel .hs-close:hover { color: #fff; }
+.hs-panel .hs-bar input::placeholder { color: rgba(255,255,255,.45); }
+.hs-panel .hs-more:hover { color: #B9BEFF; }
+.hs-panel .hs-item { background: rgba(255,255,255,.04); }
+.hs-panel .hs-item:hover, .hs-panel .hs-item:focus-visible { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.14); }
+.hs-panel .hs-item img, .hs-panel .hs-item-mark, .hs-item--knowledge .hs-item-mark { background: rgba(255,255,255,.08); color: #C5C9FF; }
+.hs-panel .chip:not(.is-active), .hs-panel .hs-chip:not(.is-on) { background: rgba(255,255,255,.06) !important; border-color: rgba(255,255,255,.16) !important; color: #fff !important; }
+.hs-panel .chip:not(.is-active):hover, .hs-panel .hs-chip:not(.is-on):hover { background: rgba(255,255,255,.12) !important; border-color: rgba(255,255,255,.3) !important; }
+.hs-panel .chip.is-active, .hs-panel .hs-chip.is-on { background: #fff !important; border-color: #fff !important; color: #0B0C14 !important; }
+.hs-panel .chip:not(.is-active) .hs-count, .hs-panel .hs-count { background: rgba(255,255,255,.12) !important; color: rgba(255,255,255,.8) !important; }
+.hs-panel .chip.is-active .hs-count { background: rgba(11,12,20,.1) !important; color: #0B0C14 !important; }
+@media (max-width: 767px) { .hs-panel { background: linear-gradient(180deg, rgba(14,15,24,.94), rgba(10,11,18,.9)) !important; } }
