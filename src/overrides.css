@@ -1597,3 +1597,18 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 899px) {
   .prof-top .prof-src { order: 1; max-width: 520px; margin: -20px 0 32px; }
 }
+
+/* Top Biohackers "Update list" suggestion form (reuses dark subscribe box) */
+.ul-wrap { margin-top: 32px; display: grid; justify-items: center; }
+.ul-open { height: 48px; padding: 0 28px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); color: var(--ink); font: inherit; font-size: 16px; font-weight: 600; cursor: pointer; transition: border-color .18s, background .18s; }
+.ul-open:hover { border-color: var(--card-hover, #C9CEE8); background: var(--surface); }
+.ul-box { width: 100%; margin: 0; align-items: start; padding: 32px 36px; }
+.ul-box form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ul-box .ul-wide { grid-column: 1 / -1; }
+.ul-box select, .ul-box textarea { width: 100%; padding: 12px 16px; border: 1px solid rgba(255,255,255,.08); border-radius: 20px; background: rgba(255,255,255,.1); color: #fff; font: inherit; font-size: 15px; resize: vertical; }
+.ul-box select { height: 48px; border-radius: 999px; }
+.ul-box select option { color: #111; }
+.ul-box input::placeholder, .ul-box textarea::placeholder { color: rgba(255,255,255,.45); }
+.ul-err { font-style: normal; font-size: 13px; color: #FCA5A5; }
+.ul-done { display: grid; gap: 16px; justify-items: start; align-self: center; }
+@media (max-width: 600px) { .ul-box form { grid-template-columns: 1fr; } .ul-box { padding: 22px; } }

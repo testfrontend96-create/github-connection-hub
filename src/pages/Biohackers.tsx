@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { PersonPhoto, Mention } from '../components/ui'
 import { IconArrow } from '../components/icons'
+import { UpdateList } from '../components/UpdateList'
 import { SearchField } from '../components/controls'
 import { hackers, E, personSortKey, clip } from '../lib/data'
 
@@ -56,6 +57,7 @@ export default function Biohackers() {
           })}
         </div>
         <p className="dir-note">Profiles are compiled from public sources; each profile page lists its sources and photo credit.</p>
+        <UpdateList />
       </div></section>
     </>
   )
