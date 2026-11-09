@@ -27,3 +27,5 @@
 - Measure article hero and events dimensions with a shared ResizeObserver in the article renderer and expose scoped CSS sizing variables, so image caps and promotion heights follow the actual layout at every viewport.
 - Admin edits live in Cloud `content_items` rows merged over the built-in JSON at startup (`src/lib/remote.ts`, `overrides.ts`, `contentKinds.ts`); keeps the shipped content as the fallback and avoids seeding it into the database.
 - `/admin` access: verified company-domain Google accounts plus `admin_emails` overrides (revocation wins), checked server-side via `is_admin()`; matches the Sales project's rules.
+- Stage public-site admin edits in the shared DraftProvider and publish atomically through publish_admin_changes; database audit triggers record authenticated editor attribution so changes and history cannot diverge.
+- Share hero resolution and Start here defaults between the admin and homepage so saved selections render identically.

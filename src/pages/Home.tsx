@@ -9,6 +9,7 @@ import { SocLogo } from '../components/social'
 import { FaqList } from '../components/FaqList'
 import { IconArrow } from '../components/icons'
 import { homeFeature, popular, siteSetting } from '../lib/remote'
+import { resolveHero, startHereValue } from '../lib/homeSelection'
 import blogTilePhoto from '../assets/home/blog-tile.png.asset.json'
 import podcastTilePhoto from '../assets/home/podcast-tile.png.asset.json'
 import blogTileMobile from '../assets/home/blog-tile-mobile.png.asset.json'
@@ -76,21 +77,13 @@ export default function Home() {
     }
     return out
   }
-  // Hero slots follow the admin "Homepage" choice: latest, most popular, or a starred item.
-  const pick = (slot: string, k: 'article' | 'episode') => {
-    const f = homeFeature(slot)
-    const base = k === 'article' ? '/articles/' : '/podcast/'
-    const wanted = f?.mode === 'pinned' && f.item_slug ? [f.item_slug] : f?.mode === 'popular' ? popular(k) : []
-    for (const s of wanted) {
-      const it = items.find((i) => i.u === base + s)
-      if (it && !used.has(it.u)) { used.add(it.u); return it }
-    }
-    return take((i) => i.k === k, 1)[0]
-  }
-  const lead = pick('lead', 'article')
-  const tileA = pick('blog', 'article')
-  const tileB = pick('podcast', 'episode')
-  const startHere = siteSetting<{ title?: string; body?: string }>('start_here') || {}
+  const hero = resolveHero(['lead', 'blog', 'podcast'].map(homeFeature).filter(Boolean), {
+    article: items.filter(i => i.k === 'article').map(i => ({ ...i, slug: i.u.split('/').pop() })),
+    episode: items.filter(i => i.k === 'episode').map(i => ({ ...i, slug: i.u.split('/').pop() })),
+  }, { article: popular('article'), episode: popular('episode') })
+  const lead = hero.lead, tileA = hero.blog, tileB = hero.podcast
+  for (const item of [lead, tileA, tileB]) if (item) used.add(item.u)
+  const startHere = startHereValue(siteSetting('start_here'), problems.map(p => p.slug))
   const brief = take((i) => i.k !== 'entity', 5)
   const latest = [...articles].sort((a, b) => (a.date < b.date ? 1 : -1)).filter((a) => !used.has(`/articles/${a.slug}`)).slice(0, 2)
   const weekday = WEEKDAYS[(BUILT.getDay() + 6) % 7]
@@ -145,9 +138,9 @@ export default function Home() {
           </Link>
           <div className="tile tile--problems" id="problems">
             <div className="tile-kick"><span className="kick" data-k="event">Start here</span></div>
-            <h3 style={{ fontSize: '1.1rem' }}>{startHere.title || 'What are you interested in?'}</h3>
-            <p>{startHere.body || 'Pick the symptom. Each page routes you to what to measure and what to consider.'}</p>
-            <div className="prob-chips">{problems.map((p) => <Link key={p.slug} to={`/problems/${p.slug}`}>{p.name}</Link>)}</div>
+            <h3 style={{ fontSize: '1.1rem' }}>{startHere.title}</h3>
+            <p>{startHere.body}</p>
+            <div className="prob-chips">{startHere.chips.map(slug => problems.find(p => p.slug === slug)).filter(Boolean).map((p) => <Link key={p.slug} to={`/problems/${p.slug}`}>{p.name}</Link>)}</div>
           </div>
           <div className="tile tile--brief">
             <div className="tile-kick"><span className="kick" data-k="article">New</span><span style={{ fontSize: '.72rem', color: 'rgba(255,255,255,.5)' }}>{weekday}, {pretty(BUILT.toISOString().slice(0, 10))}</span></div>
