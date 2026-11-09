@@ -45,13 +45,14 @@ export default function KnowledgeBase() {
   return (    <>
       <PageHead compact accent="#4243B0" title="Knowledge Base"
         lede="Molecules, biomarkers, protocols, concepts and How To guides — connected to the topics, articles and episodes that reference them.">
-        <svg className="kb-head-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          strokeWidth="1.35" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5" />
-          <path d="M9 18h6M10 22h4" />
-          <path d="M12 5.2v7.2" />
-          <path d="M12 5.2c-1.4 0-2.4.9-2.4 2.1 0 .6.3 1.2.7 1.5-.4.4-.7.9-.7 1.5 0 1.2 1 2.1 2.4 2.1" />
-          <path d="M12 5.2c1.4 0 2.4.9 2.4 2.1 0 .6-.3 1.2-.7 1.5.4.4.7.9.7 1.5 0 1.2-1 2.1-2.4 2.1" />
+        <svg className="kb-head-icon" viewBox="0 0 824 824" fill="none" aria-hidden="true">
+          <path fill="currentColor" d="M370.8 710.357C359.127 699.828 352.146 686.667 349.857 670.873H474.143C471.855 686.667 464.873 699.828 453.2 710.357C441.527 720.885 427.793 726.15 412 726.15C396.207 726.15 382.473 720.885 370.8 710.357ZM311.833 640.103V605.77H512.167V640.103H311.833Z" />
+          <path fill="currentColor" d="M216.987 433.973C235.756 466.704 269.391 493.713 301.893 515H530.107V480.667H311.85C285.986 462.127 258.072 439.467 244.11 412.687C230.148 385.907 223.167 357.067 223.167 326.167C223.167 273.522 241.478 228.889 278.1 192.267C314.722 155.644 359.356 137 412 137L420 103C343.5 103 296.983 124.63 253.723 167.89C210.463 211.15 188.833 263.909 188.833 326.167C188.833 365.307 198.218 401.242 216.987 433.973Z" />
+          <path d="M412 483.5V111" stroke="currentColor" strokeWidth="34" strokeLinejoin="round" />
+          <path d="M529 497.8C561.5 497.8 623 497.8 584 423.962C654 423.962 648 350.962 605 324.962C661 299.5 644 230.462 584 230.462C616.5 180.5 567 137 518 156C518 87 430 79.5 397.5 127" stroke="currentColor" strokeWidth="34.3" strokeLinejoin="round" />
+          <path d="M459.949 192C488.949 180 520.949 205 520.949 233" stroke="currentColor" strokeWidth="22" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M514.449 385C530.449 388.5 565.3 388.3 548.5 345.5M468 374.5C457 411.5 444 448.5 514.449 439.5M464 267C514.449 260.5 482.5 299 503 310C523.5 321 541.449 274.5 574 292" stroke="currentColor" strokeWidth="22" strokeLinecap="round" strokeLinejoin="round" />
+          <path fill="currentColor" d="M311.833 547V581.333H512.167V547H311.833Z" />
         </svg>
       </PageHead>
 
