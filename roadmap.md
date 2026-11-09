@@ -5,3 +5,4 @@
 - [x] Dedicated attributed publication history.
 - [x] Verify authenticated save, discard and history flows.
 - [x] Let the profile sidebar scroll away before More biohackers; center All profiles and match Update list.
+- [x] Split profile chips into separate Topics and evidence-marked Focus containers.
