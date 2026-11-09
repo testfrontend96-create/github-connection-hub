@@ -1593,6 +1593,11 @@ a:hover .art[data-k="episode"] img,
 .prof-src { margin: 8px 0 0; padding-top: 0; border-top: 0; font-size: 11px; line-height: 1.5; color: #A8ABB3; text-align: right; }
 .prof-src a { color: inherit; }
 .prof-box--focus { margin-bottom: 32px; }
+/* Profile: topics and knowledge-base chips live in separate, equal-height containers */
+.prof-split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-bottom: 32px; }
+.prof-split .prof-box { margin-bottom: 0; }
+.prof-split .prof-topics { margin-top: 0; }
+@media (max-width: 980px) { .prof-split { grid-template-columns: 1fr; gap: 16px; } }
 .prof-more--inline { margin-top: 56px; }
 @media (max-width: 899px) {
   .prof-top .prof-src { order: 1; max-width: 520px; margin: -20px 0 32px; }
