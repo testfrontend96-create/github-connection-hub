@@ -219,3 +219,22 @@ textarea.adm-field{resize:vertical;line-height:1.5}
   .adm-seg span{display:none}
   .adm-drop{flex-direction:column;align-items:flex-start}
 }
+
+/* custom date picker (UDS) */
+.adm-date{position:relative}
+.adm-date-btn{display:flex;align-items:center;justify-content:space-between;gap:10px;text-align:left;cursor:pointer;color:#fff!important}
+.adm-date-btn svg{color:#fff;flex:none}
+.adm-date-empty{color:rgba(255,255,255,.3)}
+.adm-date-pop{position:absolute;z-index:60;top:calc(100% + 8px);left:0;width:300px;padding:16px;border-radius:20px;border:1px solid var(--a-line2);background:rgba(18,18,22,.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+.adm-date-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.adm-date-head b{font-size:14px;font-weight:600;letter-spacing:-.01em}
+.adm-date-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.adm-date-dow{font-size:11.5px;font-weight:600;color:var(--a-muted);text-align:center;padding:4px 0}
+.adm-date-day{height:36px;border-radius:999px;font-size:13px;color:rgba(255,255,255,.85);transition:background .15s}
+.adm-date-day:hover{background:rgba(255,255,255,.1)}
+.adm-date-day.is-today{box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+.adm-date-day.is-on{background:#fff;color:#000;font-weight:600}
+.adm-date-foot{display:flex;justify-content:space-between;gap:8px;margin-top:12px}
+.adm-date-foot .adm-pill{padding:6px 14px}
+.adm-number{-moz-appearance:textfield}
+.adm-number::-webkit-inner-spin-button,.adm-number::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}

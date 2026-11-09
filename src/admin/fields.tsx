@@ -3,6 +3,7 @@ import { useRef, useState, type ReactNode } from 'react'
 import type { Field, Opt } from './schemas'
 import { uploadImage } from './media'
 import { I } from './icons'
+import { DateField } from './DateField'
 
 export function Modal({ title, onClose, children, wide, footer }: { title: string; onClose: () => void; children: ReactNode; wide?: boolean; footer?: ReactNode }) {
   return (
@@ -160,8 +161,8 @@ export function FieldInput({ f, value, onChange, folder }: { f: Field; value: an
   switch (f.type) {
     case 'textarea': return <textarea className="adm-field" rows={4} value={value || ''} onChange={(e) => onChange(e.target.value)} />
     case 'lines': return <textarea className="adm-field" rows={5} value={(value || []).join('\n')} onChange={(e) => onChange(e.target.value.split('\n'))} />
-    case 'number': return <input className="adm-field" type="number" value={value ?? ''} onChange={(e) => onChange(e.target.value === '' ? undefined : Number(e.target.value))} />
-    case 'date': return <input className="adm-field" type="date" value={value || ''} onChange={(e) => onChange(e.target.value)} />
+    case 'number': return <input className="adm-field adm-number" type="number" inputMode="numeric" min={0} value={value ?? ''} onChange={(e) => onChange(e.target.value === '' ? undefined : Number(e.target.value))} />
+    case 'date': return <DateField value={value} onChange={onChange} />
     case 'url': return <input className="adm-field" type="url" value={value || ''} onChange={(e) => onChange(e.target.value)} placeholder="https://…" />
     case 'bool': return <label className="adm-switch"><input type="checkbox" checked={!!value} onChange={(e) => onChange(e.target.checked)} /><span /> {value ? 'Yes' : 'No'}</label>
     case 'image': return <ImageField value={value || ''} onChange={onChange} folder={folder} />
