@@ -60,7 +60,7 @@ export default function Episode() {
             <div className="ep-side-block" ref={listenRef}>
               <span className="art-share-label">Listen on</span>
               <div className="ep-listen-links">
-                {listenLinks(p.title).map(([label, href]) => <a key={label} className="btn btn--outline ep-platform" href={href} target="_blank" rel="noopener">
+                {listenLinks(p.title).map(([label, search]) => [label, ({ YouTube: p.youtubeUrl, 'Apple Podcasts': p.appleUrl, Spotify: p.spotifyUrl } as Record<string, string>)[label] || search]).map(([label, href]) => <a key={label} className="btn btn--outline ep-platform" href={href} target="_blank" rel="noopener">
                   {label === 'YouTube' && <YouTubeMark />}{PLATFORM_LOGO[label] && <img src={PLATFORM_LOGO[label]} alt="" width={18} height={18} />}{label}</a>)}
               </div>
             </div>
