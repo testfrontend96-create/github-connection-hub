@@ -355,7 +355,7 @@ function ContentManager({ def }: { def: KindDef }) {
                 <span className="adm-row-tools">
                   {def.star && (
                     <span className="adm-star-wrap">
-                      <button type="button" className={'adm-icon-btn adm-star' + (stars.length ? ' is-on' : '')} title={stars.length ? 'Featured on the homepage' : 'Feature on the homepage'}
+                      <button type="button" className={'adm-icon-btn adm-star' + (stars.length ? ' is-on' : '')} data-tip={stars.length ? 'Featured on the homepage. Click to change' : 'Feature on the homepage'}
                         aria-label="Feature on the homepage" onClick={() => def.star?.length === 1 ? star(x._slug, def.star[0]) : setStarMenu(starMenu === x._slug ? null : x._slug)}>
                         {stars.length ? I.starFill : I.star}
                       </button>
@@ -366,10 +366,10 @@ function ContentManager({ def }: { def: KindDef }) {
                       )}
                     </span>
                   )}
-                  {def.url && x._visible && <a className="adm-icon-btn" href={def.url(x._slug)} target="_blank" rel="noreferrer" title="View on site" aria-label="View on site">{I.ext}</a>}
-                  <button type="button" className="adm-icon-btn" onClick={() => toggleVisible(x)} title={x._visible ? 'Visible — click to hide' : 'Hidden — click to show'} aria-label="Toggle visibility">{x._visible ? I.eye : I.eyeOff}</button>
-                  <button type="button" className="adm-icon-btn" onClick={() => open(x)} aria-label="Edit">{I.pencil}</button>
-                  <button type="button" className="adm-icon-btn adm-danger" onClick={() => remove(x)} aria-label="Delete">{I.trash}</button>
+                  {def.url && x._visible && <a className="adm-icon-btn" href={def.url(x._slug)} target="_blank" rel="noreferrer" data-tip="Open this page on the site" aria-label="View on site">{I.ext}</a>}
+                  <button type="button" className="adm-icon-btn" onClick={() => toggleVisible(x)} data-tip={x._visible ? 'Shown on the site. Click to hide it' : 'Hidden from the site. Click to show it'} aria-label="Toggle visibility">{x._visible ? I.eye : I.eyeOff}</button>
+                  <button type="button" className="adm-icon-btn" onClick={() => open(x)} aria-label="Edit" data-tip="Edit this item">{I.pencil}</button>
+                  <button type="button" className="adm-icon-btn adm-danger" onClick={() => remove(x)} aria-label="Delete" data-tip="Delete this item">{I.trash}</button>
                 </span>
               </li>
             )
