@@ -1074,10 +1074,7 @@ a:hover .art[data-k="episode"] img,
 .prof-top .prof-id .lede { color: var(--body); font-size: 17px; line-height: 1.55; font-weight: 400; }
 @media (min-width: 981px) { .prof-top .art-hero-title .prof-id { position: sticky; top: 132px; } }
 .prof-top .p-chip { color: var(--ink); border-color: var(--line); }
-.prof-more--end { display: block; }
 @media (max-width: 900px) {
-  .prof-more--inline { display: none; }
-  .prof-more--end { display: block; }
   .prof-art-hero .prof-hero-photo { max-width: 520px; }
 }
 @media (max-width: 980px) { .prof-art-hero { grid-template-columns: 1fr; } }
@@ -1259,6 +1256,7 @@ a:hover .art[data-k="episode"] img,
   .prof-top .prof-aside-photo { order: 1; max-width: 520px; aspect-ratio: 8 / 7; margin-bottom: 32px; }
   .prof-top .prof-main-rest { order: 2; }
   .prof-top .prof-aside-rest { order: 3; margin-top: 40px; }
+  .prof-top .prof-more--inline { order: 4; }
 }
 .prof-top.prof-body { padding-top: 40px; }
 @media (max-width: 600px) { .prof-top.prof-body { padding-top: 28px; } }
