@@ -10,13 +10,12 @@ import { sentenceCase } from '../lib/sentenceCase'
 import { events } from '../lib/data'
 import { submitEntry, trackView } from '../lib/remote'
 import { useEffect } from 'react'
+import { builtInDetail } from '../lib/articleDetails'
 import NotFound from './NotFound'
 
 // Full article bodies pulled from biohackers.world, keyed by slug. Articles
 // without one fall back to the short body in articles.json. Admin edits store
 // a `detail` object on the article that overrides the built-in body.
-const DETAILS = import.meta.glob('../data/article-details/*.json', { eager: true, import: 'default' }) as Record<string, any>
-export const builtInDetail = (slug: string) => DETAILS[`../data/article-details/${slug}.json`]
 const detailFor = (slug: string) => {
   const base = builtInDetail(slug)
   const edit = A[slug]?.detail
