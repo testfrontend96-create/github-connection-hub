@@ -26,5 +26,6 @@ export const I = {
   shield: s(<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />),
   inbox: s(<><path d="M22 12h-6l-2 3h-4l-2-3H2" /><path d="M5.5 5h13L22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6Z" /></>),
   restore: s(<path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5" />),
+  history: s(<><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5" /><path d="M12 7v5l3 2" /></>),
   download: s(<path d="M12 3v12M7 10l5 5 5-5M5 21h14" />),
 }

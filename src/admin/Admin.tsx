@@ -119,7 +119,7 @@ export default function Admin() {
 type View = 'panel' | 'split' | 'live'
 type Tab = 'home' | Kind | 'inbox' | 'admins' | 'history'
 
-function ViewSwitcher({ view, setView, swapped, setSwapped }: { view: View; setView: (v: View) => void; swapped: boolean; setSwapped: (v: boolean) => void }) {
+function ViewSwitcher({ view, setView, swapped, setSwapped, tab, setTab }: { view: View; setView: (v: View) => void; swapped: boolean; setSwapped: (v: boolean) => void; tab: Tab; setTab: (t: Tab) => void }) {
   const items: [View, string, React.ReactNode][] = [['panel', 'Admin panel', I.panel], ['split', 'Split view', I.split], ['live', 'Live site', I.monitor]]
   return (
     <div className="adm-switch-row">
@@ -128,6 +128,7 @@ function ViewSwitcher({ view, setView, swapped, setSwapped }: { view: View; setV
       </div>
       {view === 'split' && <button type="button" className="adm-pill" onClick={() => setSwapped(!swapped)}>{I.swap} Swap sides</button>}
       <a className="adm-pill" href="/" target="_blank" rel="noreferrer">{I.ext} Live site in a new window</a>
+      <button type="button" className={tab === 'history' ? 'adm-pill adm-switch-end is-on' : 'adm-pill adm-switch-end'} onClick={() => { setTab('history'); if (view === 'live') setView('panel') }}>{I.history} History</button>
     </div>
   )
 }
@@ -159,13 +160,13 @@ function Dashboard({ session }: { session: Session }) {
   const [tab, setTab] = useState<Tab>('home')
   const body = <PanelBody session={session} tab={tab} setTab={setTab} />
   if (view === 'live') return (
-    <main className="adm adm-full"><ViewSwitcher view={view} setView={setView} swapped={swapped} setSwapped={setSwapped} /><LivePane /></main>
+    <main className="adm adm-full"><ViewSwitcher view={view} setView={setView} swapped={swapped} setSwapped={setSwapped} tab={tab} setTab={setTab} /><LivePane /></main>
   )
   if (view === 'split') {
     const panel = <div className="adm-split-panel">{body}</div>
     return (
       <main className="adm adm-full">
-        <ViewSwitcher view={view} setView={setView} swapped={swapped} setSwapped={setSwapped} />
+        <ViewSwitcher view={view} setView={setView} swapped={swapped} setSwapped={setSwapped} tab={tab} setTab={setTab} />
         <div className="adm-split">{swapped ? <><LivePane />{panel}</> : <>{panel}<LivePane /></>}</div>
       </main>
     )
@@ -174,7 +175,7 @@ function Dashboard({ session }: { session: Session }) {
     <main className="adm adm-page">
       <div className="adm-glow" aria-hidden />
       <div className="adm-wrap">
-        <ViewSwitcher view={view} setView={setView} swapped={swapped} setSwapped={setSwapped} />
+        <ViewSwitcher view={view} setView={setView} swapped={swapped} setSwapped={setSwapped} tab={tab} setTab={setTab} />
         {body}
       </div>
     </main>
@@ -183,7 +184,7 @@ function Dashboard({ session }: { session: Session }) {
 
 const TABS: [Tab, string][] = [
   ['home', 'Homepage'], ['article', 'Blog'], ['episode', 'Podcast'], ['entity', 'Knowledge Base'], ['howto', 'How To'],
-  ['history', 'History'], ['biohacker', 'Top Biohackers'], ['topic', 'Topics'], ['problem', 'Problems'], ['faq', 'FAQ'], ['event', 'Events'], ['social', 'Social Media'],
+  ['biohacker', 'Top Biohackers'], ['topic', 'Topics'], ['problem', 'Problems'], ['faq', 'FAQ'], ['event', 'Events'], ['social', 'Social Media'],
 ]
 
 function PanelBody({ session, tab, setTab }: { session: Session; tab: Tab; setTab: (t: Tab) => void }) {

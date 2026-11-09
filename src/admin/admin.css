@@ -53,6 +53,9 @@
 /* view switcher */
 .adm-switch-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:28px}
 .adm-full .adm-switch-row{margin:0}
+.adm-switch-end{margin-left:auto}
+.adm-switch-row>.adm-pill,.adm-tabs>.adm-pill{height:38px}
+.adm-seg{height:38px;align-items:center;box-sizing:border-box}.adm-seg button{padding-top:0;padding-bottom:0;height:28px}
 .adm-seg{display:inline-flex;border:1px solid var(--a-line2);background:var(--a-fill);border-radius:999px;padding:4px;gap:2px}
 .adm-seg button{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:500;color:rgba(255,255,255,.7)}
 .adm-seg button:hover{color:#fff}
