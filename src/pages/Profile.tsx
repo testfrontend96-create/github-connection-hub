@@ -41,6 +41,12 @@ export default function Profile() {
             {!b.speaker && <p className="lede">{clip(b.known, 240)}</p>}
           </div>
           <div className="prof-main-rest">
+          {(focus.length > 0 || topicLinks.length > 0) && (
+            <div className="prof-box prof-box--focus"><h3>Focus</h3>
+              {focus.length > 0 && <div className="mentions">{focus.map((x: string) => <Mention key={x} slug={x} />)}</div>}
+              {topicLinks.length > 0 && <div className="prof-topics">{topicLinks.map((t: string) => <Link key={t} className="mention mention--topic" to={`/topics/${t}`}>{T[t].name}</Link>)}</div>}
+            </div>
+          )}
           <h2 className="prof-h">About {firstName(b.name)}</h2>
           <div className="prose prof-bio">{(b.bio?.length ? b.bio : [b.known]).map((p: string, i: number) => <p key={i}>{p}</p>)}</div>
           {b.highlights?.length > 0 && (<>
@@ -48,7 +54,6 @@ export default function Profile() {
               <ul>{b.highlights.map((x: string, i: number) => <li key={i}>{x}</li>)}</ul>
             </div>
           </>)}
-          {b.imageCredit && <p className="prof-src">Photo: {b.imageCredit}, via Wikimedia Commons.</p>}
           <section className="prof-more prof-more--inline">
             <h2 className="prof-h">More biohackers</h2>
             <div className="peers peers--cards">
@@ -63,6 +68,7 @@ export default function Profile() {
 
         <aside className="prof-aside">
           <PersonPhoto b={b} cls="prof-photo prof-hero-photo prof-aside-photo" eager />
+          {b.imageCredit && <p className="prof-src">Photo: {b.imageCredit}, via Wikimedia Commons.</p>}
           <div className="prof-aside-rest">
           {miami && (
             <div className="prof-event">
@@ -70,12 +76,6 @@ export default function Profile() {
               <p className="prof-event-when">January 16–17, 2027 · InterContinental Miami</p>
               <p>Two days of keynotes, expo and experiences at 100 Chopin Plaza.</p>
               <a className="btn btn--green" href={TICKETS_URL}>Get tickets</a>
-            </div>
-          )}
-          {(focus.length > 0 || topicLinks.length > 0) && (
-            <div className="prof-box"><h3>Focus</h3>
-              {focus.length > 0 && <div className="mentions">{focus.map((x: string) => <Mention key={x} slug={x} />)}</div>}
-              {topicLinks.length > 0 && <div className="prof-topics">{topicLinks.map((t: string) => <Link key={t} className="mention mention--topic" to={`/topics/${t}`}>{T[t].name}</Link>)}</div>}
             </div>
           )}
           {hasPro && (
