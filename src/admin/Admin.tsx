@@ -11,6 +11,10 @@ import { builtInDetail } from '../lib/articleDetails'
 import { KIND_DEFS, getPath, setPath, type KindDef } from './schemas'
 import { FieldInput, Modal } from './fields'
 import { I } from './icons'
+import { DraftProvider, useDrafts } from './Drafts'
+import { overlayRows } from './draftState'
+import { History } from './History'
+import { resolveHero, startHereValue, type StartHere } from '../lib/homeSelection'
 import './admin.css'
 
 const OWNER = 'mykyta.b@biohackers.world'
@@ -107,13 +111,13 @@ export default function Admin() {
       </div>
     </AccessCard>
   )
-  return <Dashboard session={a.session} />
+  return <DraftProvider><Dashboard session={a.session} /></DraftProvider>
 }
 
 /* ---------------- workspace ---------------- */
 
 type View = 'panel' | 'split' | 'live'
-type Tab = 'home' | Kind | 'inbox' | 'admins'
+type Tab = 'home' | Kind | 'inbox' | 'admins' | 'history'
 
 function ViewSwitcher({ view, setView, swapped, setSwapped }: { view: View; setView: (v: View) => void; swapped: boolean; setSwapped: (v: boolean) => void }) {
   const items: [View, string, React.ReactNode][] = [['panel', 'Admin panel', I.panel], ['split', 'Split view', I.split], ['live', 'Live site', I.monitor]]
@@ -179,7 +183,7 @@ function Dashboard({ session }: { session: Session }) {
 
 const TABS: [Tab, string][] = [
   ['home', 'Homepage'], ['article', 'Blog'], ['episode', 'Podcast'], ['entity', 'Knowledge Base'], ['howto', 'How To'],
-  ['biohacker', 'Top Biohackers'], ['topic', 'Topics'], ['problem', 'Problems'], ['faq', 'FAQ'], ['event', 'Events'], ['social', 'Social Media'],
+  ['history', 'History'], ['biohacker', 'Top Biohackers'], ['topic', 'Topics'], ['problem', 'Problems'], ['faq', 'FAQ'], ['event', 'Events'], ['social', 'Social Media'],
 ]
 
 function PanelBody({ session, tab, setTab }: { session: Session; tab: Tab; setTab: (t: Tab) => void }) {
@@ -209,7 +213,7 @@ function PanelBody({ session, tab, setTab }: { session: Session; tab: Tab; setTa
       <nav className="adm-tabs" aria-label="Sections">
         {TABS.map(([k, l]) => <button key={k} type="button" className={tab === k ? 'adm-pill is-on' : 'adm-pill'} onClick={() => setTab(k)}>{l}</button>)}
       </nav>
-      {tab === 'home' ? <HomepageManager /> : tab === 'inbox' ? <Inbox /> : tab === 'admins' ? <AdminsManager email={u.email || ''} /> : def ? <ContentManager key={def.kind} def={def} /> : null}
+      {tab === 'home' ? <HomepageManager /> : tab === 'history' ? <History /> : tab === 'inbox' ? <Inbox /> : tab === 'admins' ? <AdminsManager email={u.email || ''} /> : def ? <ContentManager key={def.kind} def={def} /> : null}
     </div>
   )
 }
@@ -228,37 +232,30 @@ function useCount(table: 'submissions' | 'admin_requests') {
 /* ---------------- shared data hooks ---------------- */
 
 function useRows(kind: Kind) {
+  const { changes, revision } = useDrafts()
   const [rows, setRows] = useState<ContentRow[] | null>(null)
   const reload = useCallback(async () => {
     const { data } = await supabase.from('content_items').select('kind,slug,data,visible,deleted,sort,updated_at').eq('kind', kind)
     setRows((data as ContentRow[]) || [])
-  }, [kind])
+  }, [kind, revision])
   useEffect(() => { reload() }, [reload])
-  return { rows, reload }
+  return { rows: rows ? overlayRows(rows, changes, 'content_items', kind) : null, reload }
 }
 
 function useFeatures() {
-  const [features, setFeatures] = useState<HomeFeature[]>([])
+  const { changes, stage, revision } = useDrafts()
+  const [base, setBase] = useState<HomeFeature[]>([])
   const reload = useCallback(async () => {
     const { data } = await supabase.from('home_features').select('slot,mode,item_kind,item_slug')
-    setFeatures((data as HomeFeature[]) || [])
-  }, [])
+    setBase((data as HomeFeature[]) || [])
+  }, [revision])
   useEffect(() => { reload() }, [reload])
+  const features = overlayRows(base, changes, 'home_features')
   const set = async (slot: string, patch: Partial<HomeFeature>) => {
-    const cur = features.find((f) => f.slot === slot) || { slot, mode: 'latest', item_kind: null, item_slug: null }
-    const next = { ...cur, ...patch, updated_at: new Date().toISOString() }
-    const { error } = await supabase.from('home_features').upsert(next)
-    if (error) alert(error.message)
-    await log('feature', 'home', slot, cur)
-    await reload(); saved()
+    const cur = features.find(f => f.slot === slot) || { slot, mode: 'latest', item_kind: null, item_slug: null }
+    stage({ table: 'home_features', key: slot, operation: 'upsert', value: { ...cur, ...patch } })
   }
   return { features, set, reload }
-}
-
-async function log(action: string, kind: string | null, slug: string | null, before: any) {
-  const { data } = await supabase.auth.getUser()
-  if (!data.user) return
-  await supabase.from('activity_log').insert({ actor: data.user.id, actor_email: data.user.email, action, kind, slug, before })
 }
 
 const SLOT_LABEL: Record<string, string> = { lead: 'Lead story', blog: 'Blog card', podcast: 'Podcast card' }
@@ -266,6 +263,7 @@ const SLOT_LABEL: Record<string, string> = { lead: 'Lead story', blog: 'Blog car
 /* ---------------- content manager ---------------- */
 
 function ContentManager({ def }: { def: KindDef }) {
+  const { stage } = useDrafts()
   const { rows, reload } = useRows(def.kind)
   const { features, set: setFeature } = useFeatures()
   const [q, setQ] = useState('')
@@ -277,7 +275,7 @@ function ContentManager({ def }: { def: KindDef }) {
   const items = useMemo(() => {
     if (!rows) return []
     const all = mergeRows(KINDS[def.kind].base(), rows, KINDS[def.kind].key, true)
-    const sorted = def.date ? [...all].sort((a, b) => ((def.date!(a) || '') < (def.date!(b) || '') ? 1 : -1)) : all
+    const sorted = def.date ? [...all].sort((a, b) => ((def.date?.(a) || '') < (def.date?.(b) || '') ? 1 : -1)) : all
     return sorted
   }, [rows, def])
   const shown = items.filter((x) => {
@@ -292,26 +290,19 @@ function ContentManager({ def }: { def: KindDef }) {
   const write = async (slug: string, patch: Partial<ContentRow>, action: string) => {
     const before = rowOf(slug) || null
     const base = before || { kind: def.kind, slug, data: {}, visible: true, deleted: false }
-    const { error } = await supabase.from('content_items').upsert({ ...base, ...patch, kind: def.kind, slug, updated_at: new Date().toISOString(), updated_by: (await supabase.auth.getUser()).data.user?.id })
-    if (error) { alert(error.message); return false }
-    await log(action, def.kind, slug, before)
-    await reload(); saved()
+    stage({ table: 'content_items', kind: def.kind, key: slug, operation: 'upsert', value: { ...base, ...patch, kind: def.kind, slug } })
     return true
   }
   const toggleVisible = (x: any) => write(x._slug, { visible: !x._visible, data: rowOf(x._slug)?.data || {} }, x._visible ? 'hide' : 'show')
   const remove = async (x: any) => {
-    if (!confirm(`Delete “${def.title(x)}”? You can undo this from Admins → History.`)) return
+    if (!confirm(`Delete “${def.title(x)}”? You can undo this from History.`)) return
     if (x._origin === 'new') {
-      const before = rowOf(x._slug)
-      await supabase.from('content_items').delete().eq('kind', def.kind).eq('slug', x._slug)
-      await log('delete', def.kind, x._slug, before); await reload(); saved()
+      stage({ table: 'content_items', kind: def.kind, key: x._slug, operation: 'delete' })
     } else await write(x._slug, { deleted: true, data: rowOf(x._slug)?.data || {} }, 'delete')
   }
   const restore = async (slug: string) => {
     if (!confirm('Discard all edits and return to the original version?')) return
-    const before = rowOf(slug)
-    await supabase.from('content_items').delete().eq('kind', def.kind).eq('slug', slug)
-    await log('restore', def.kind, slug, before); await reload(); saved(); setEditing(null)
+    stage({ table: 'content_items', kind: def.kind, key: slug, operation: 'delete' }); setEditing(null)
   }
 
   const starredSlots = (slug: string) => (def.star || []).filter((s) => { const f = features.find((x) => x.slot === s); return f?.mode === 'pinned' && f.item_slug === slug })
@@ -364,7 +355,7 @@ function ContentManager({ def }: { def: KindDef }) {
                   {def.star && (
                     <span className="adm-star-wrap">
                       <button type="button" className={'adm-icon-btn adm-star' + (stars.length ? ' is-on' : '')} title={stars.length ? 'Featured on the homepage' : 'Feature on the homepage'}
-                        aria-label="Feature on the homepage" onClick={() => def.star!.length === 1 ? star(x._slug, def.star![0]) : setStarMenu(starMenu === x._slug ? null : x._slug)}>
+                        aria-label="Feature on the homepage" onClick={() => def.star?.length === 1 ? star(x._slug, def.star[0]) : setStarMenu(starMenu === x._slug ? null : x._slug)}>
                         {stars.length ? I.starFill : I.star}
                       </button>
                       {starMenu === x._slug && (
@@ -439,10 +430,10 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
     <Modal wide title={_new ? `New ${def.singular}` : `Edit ${def.singular}`} onClose={onClose}
       footer={<>
         {err && <p className="adm-err adm-grow">{err}</p>}
-        {!err && <span className="adm-grow adm-hint">{_origin === 'edited' ? 'This item has edits saved over the original.' : _new ? 'New items go live as soon as you save.' : 'Saving publishes your changes to the site.'}</span>}
+        {!err && <span className="adm-grow adm-hint">{_origin === 'edited' ? 'This item has edits saved over the original.' : _new ? 'New items stay unpublished until Save changes.' : 'Apply edits, then publish with Save changes.'}</span>}
         {onRestore && <button type="button" className="adm-pill" onClick={onRestore}>{I.restore} Restore original</button>}
         <button type="button" className="adm-pill" onClick={onClose}>Cancel</button>
-        <button type="button" className="adm-btn" onClick={save} disabled={busy}>{busy ? 'Saving…' : 'Save'}</button>
+        <button type="button" className="adm-btn" onClick={save} disabled={busy}>{busy ? 'Applying…' : 'Apply edits'}</button>
       </>}>
       <div className="adm-form">
         {_new && (
@@ -467,36 +458,41 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
 /* ---------------- homepage ---------------- */
 
 function HomepageManager() {
+  const { changes, stage, revision } = useDrafts()
+  const [chooser, setChooser] = useState<string | null>(null)
+  const [chooseKind, setChooseKind] = useState<'article' | 'episode'>('article')
+  const [chooseQuery, setChooseQuery] = useState('')
+  const { rows: pRows } = useRows('problem')
+  const problemList = useMemo(() => mergeRows(KINDS.problem.base(), pRows || [], KINDS.problem.key), [pRows])
   const { features, set } = useFeatures()
   const { rows: aRows } = useRows('article')
   const { rows: eRows } = useRows('episode')
   const [pop, setPop] = useState<Record<string, { slug: string; views: number }[]>>({})
-  const [start, setStart] = useState<{ title?: string; body?: string }>({})
-  const [startSaved, setStartSaved] = useState(false)
+  const [startBase, setStartBase] = useState<Partial<StartHere> | undefined>()
+  const startRow = changes.find(c => c.table === 'site_settings' && c.key === 'start_here')
+  const start = startHereValue(startRow ? startRow.operation === 'delete' ? undefined : startRow.value : startBase, problemList.map(p => p._slug))
+  const setStart = (value: StartHere) => stage({ table: 'site_settings', key: 'start_here', operation: 'upsert', value })
   useEffect(() => {
     Promise.all([supabase.rpc('popular_items', { _kind: 'article', _limit: 5 }), supabase.rpc('popular_items', { _kind: 'episode', _limit: 5 })])
       .then(([a, e]) => setPop({ article: (a.data as any) || [], episode: (e.data as any) || [] }))
-    supabase.from('site_settings').select('value').eq('key', 'start_here').maybeSingle().then(({ data }) => data && setStart(data.value as any))
-  }, [])
+    supabase.from('site_settings').select('value').eq('key', 'start_here').maybeSingle().then(({ data }) => setStartBase(data?.value as any))
+  }, [revision])
   const lists = useMemo(() => ({
     article: aRows ? mergeRows(KINDS.article.base(), aRows, KINDS.article.key).sort((a: any, b: any) => (a.date < b.date ? 1 : -1)) : [],
     episode: eRows ? mergeRows(KINDS.episode.base(), eRows, KINDS.episode.key).sort((a: any, b: any) => (a.date < b.date ? 1 : -1)) : [],
   }), [aRows, eRows])
 
-  // Mirror of the homepage's resolution so the preview matches the live hero.
-  const resolved = useMemo(() => {
-    const used = new Set<string>()
-    const out: Record<string, any> = {}
-    for (const [slot, k] of [['lead', 'article'], ['blog', 'article'], ['podcast', 'episode']] as const) {
-      const f = features.find((x) => x.slot === slot)
-      const list: any[] = lists[k]
-      const wanted = f?.mode === 'pinned' && f.item_slug ? [f.item_slug] : f?.mode === 'popular' ? (pop[k] || []).map((p) => p.slug) : []
-      let it = wanted.map((s) => list.find((x) => x._slug === s)).find((x) => x && !used.has(x._slug))
-      if (!it) it = list.find((x) => !used.has(x._slug))
-      if (it) { used.add(it._slug); out[slot] = it }
-    }
-    return out
-  }, [features, lists, pop])
+  const resolved = useMemo(() => resolveHero(features, lists, Object.fromEntries(Object.entries(pop).map(([k, v]) => [k, v.map(x => x.slug)]))), [features, lists, pop])
+
+  if (chooser) return <section className="adm-card">
+    <div className="adm-card-head"><div><h2>Choose content · {SLOT_LABEL[chooser]}</h2></div><button type="button" className="adm-pill" onClick={() => setChooser(null)}>Back to Homepage</button></div>
+    <div className="adm-toolbar"><select className="adm-field adm-picker-kind" aria-label="Content type" value={chooseKind} onChange={e => setChooseKind(e.target.value as 'article' | 'episode')}><option value="article">Blog article</option><option value="episode">Podcast episode</option></select>
+    <input className="adm-field adm-search" aria-label="Search content to feature" placeholder="Search all content…" value={chooseQuery} onChange={e => setChooseQuery(e.target.value)} /></div>
+    <ul className="adm-list">{lists[chooseKind].filter(x => [x.title, x.guest, x.date].join(' ').toLowerCase().includes(chooseQuery.toLowerCase())).map(x => <li className="adm-row" key={x._slug}>
+      <span className="adm-thumb">{x.image ? <img src={x.image} alt="" loading="lazy" /> : I.image}</span><div className="adm-row-main adm-row-static"><b>{x.title}</b><span>{x.date}{x.guest ? ` · ${x.guest}` : ''}</span></div>
+      <button type="button" className="adm-pill" onClick={() => { set(chooser, { mode: 'pinned', item_kind: chooseKind, item_slug: x._slug }); setChooser(null) }}>Select</button>
+    </li>)}</ul>
+  </section>
 
   return (
     <>
@@ -505,7 +501,7 @@ function HomepageManager() {
         <div className="adm-slots">
           {(['lead', 'blog', 'podcast'] as const).map((slot) => {
             const f = features.find((x) => x.slot === slot)
-            const k = slot === 'podcast' ? 'episode' : 'article'
+            const k: 'article' | 'episode' = f?.mode === 'pinned' && f.item_kind === 'episode' ? 'episode' : slot === 'podcast' ? 'episode' : 'article'
             const it = resolved[slot]
             const mode = f?.mode || 'latest'
             return (
@@ -521,11 +517,8 @@ function HomepageManager() {
                     </button>
                   ))}
                 </div>
-                {mode === 'pinned' && (
-                  <select className="adm-field adm-field--sm" value={f?.item_slug || ''} onChange={(e) => set(slot, { mode: 'pinned', item_kind: k, item_slug: e.target.value })}>
-                    {lists[k].map((x: any) => <option key={x._slug} value={x._slug}>{x.date} — {x.title}</option>)}
-                  </select>
-                )}
+                <div className="adm-choose-row"><select className="adm-field adm-field--sm" aria-label={`Content type for ${SLOT_LABEL[slot]}`} value={chooseKind} onChange={e => setChooseKind(e.target.value as 'article' | 'episode')}><option value="article">Blog article</option><option value="episode">Podcast episode</option></select>
+                <button type="button" className="adm-pill" onClick={() => { setChooser(slot); setChooseQuery('') }}>Choose</button></div>
                 {mode === 'popular' && (
                   <small className="adm-help">{(pop[k] || []).length ? `Most viewed in the last 30 days (${pop[k][0].views} views for the top one).` : 'No views counted yet — showing the latest until visitors start reading.'}</small>
                 )}
@@ -549,17 +542,10 @@ function HomepageManager() {
       <section className="adm-card">
         <div className="adm-card-head"><div><h2>“Start here” card</h2><p>The card in the hero that lists the problem pages.</p></div></div>
         <div className="adm-form">
-          <label className="adm-wide"><span className="adm-label">Heading</span><input className="adm-field" value={start.title || ''} placeholder="What are you interested in?" onChange={(e) => { setStart({ ...start, title: e.target.value }); setStartSaved(false) }} /></label>
-          <label className="adm-wide"><span className="adm-label">Text</span><textarea className="adm-field" rows={2} value={start.body || ''} placeholder="Pick the symptom. Each page routes you to what to measure and what to consider." onChange={(e) => { setStart({ ...start, body: e.target.value }); setStartSaved(false) }} /></label>
+          <label className="adm-wide"><span className="adm-label">Heading</span><input className="adm-field" value={start.title || ''} placeholder="What are you interested in?" onChange={(e) => setStart({ ...start, title: e.target.value })} /></label>
+          <label className="adm-wide"><span className="adm-label">Text</span><textarea className="adm-field" rows={2} value={start.body || ''} placeholder="Pick the symptom. Each page routes you to what to measure and what to consider." onChange={(e) => setStart({ ...start, body: e.target.value })} /></label>
         </div>
-        <div className="adm-actions">
-          {startSaved && <span className="adm-note">Saved</span>}
-          <button type="button" className="adm-btn" onClick={async () => {
-            const { error } = await supabase.from('site_settings').upsert({ key: 'start_here', value: start, updated_at: new Date().toISOString() })
-            if (error) return alert(error.message)
-            await log('setting', 'home', 'start_here', null); setStartSaved(true); saved()
-          }}>Save</button>
-        </div>
+        <div className="adm-wide"><span className="adm-label">Problem chips</span><FieldInput folder="home" f={{ k: 'chips', label: 'Problem chips', type: 'chips', options: () => problemList.map(p => [p._slug, p.name]) }} value={start.chips} onChange={chips => setStart({ ...start, chips })} /></div>
       </section>
     </>
   )
@@ -628,16 +614,14 @@ function Inbox() {
 function AdminsManager({ email }: { email: string }) {
   const [admins, setAdmins] = useState<any[] | null>(null)
   const [requests, setRequests] = useState<any[]>([])
-  const [history, setHistory] = useState<any[]>([])
   const [add, setAdd] = useState('')
   const [err, setErr] = useState('')
   const reload = useCallback(async () => {
-    const [a, r, h] = await Promise.all([
+    const [a, r] = await Promise.all([
       supabase.rpc('list_admins'),
       supabase.from('admin_requests').select('*').eq('status', 'pending').order('created_at', { ascending: false }),
-      supabase.from('activity_log').select('*').order('created_at', { ascending: false }).limit(60),
     ])
-    setAdmins((a.data as any[]) || []); setRequests(r.data || []); setHistory(h.data || [])
+    setAdmins((a.data as any[]) || []); setRequests(r.data || [])
   }, [])
   useEffect(() => { reload() }, [reload])
   const setAccess = async (target: string, allow: boolean) => {
@@ -645,16 +629,6 @@ function AdminsManager({ email }: { email: string }) {
     const { error } = await supabase.rpc('set_admin_email_access', { target_email: target, allow_access: allow })
     if (error) setErr(error.message)
     reload()
-  }
-  const undo = async (h: any) => {
-    if (!confirm('Undo this change?')) return
-    if (h.kind === 'home' && h.action === 'feature') {
-      if (h.before) await supabase.from('home_features').upsert(h.before)
-    } else if (h.kind && h.kind !== 'home') {
-      if (h.before) await supabase.from('content_items').upsert(h.before)
-      else await supabase.from('content_items').delete().eq('kind', h.kind).eq('slug', h.slug)
-    }
-    await log('undo', h.kind, h.slug, null); reload(); saved()
   }
   const me = email.toLowerCase()
   return (
@@ -705,22 +679,7 @@ function AdminsManager({ email }: { email: string }) {
           </ul>
         )}
       </section>
-      <section className="adm-card">
-        <div className="adm-card-head"><div><h2>History</h2><p>The latest 60 changes. Undo puts an item back exactly as it was before that change.</p></div></div>
-        {!history.length ? <p className="adm-hint">No changes yet.</p> : (
-          <ul className="adm-list">
-            {history.map((h) => (
-              <li key={h.id} className="adm-row">
-                <div className="adm-row-main adm-row-static">
-                  <b>{h.action[0].toUpperCase() + h.action.slice(1)} · {KIND_DEFS.find((d) => d.kind === h.kind)?.label || (h.kind === 'home' ? 'Homepage' : h.kind)} · {h.slug}</b>
-                  <span>{h.actor_email} · {new Date(h.created_at).toLocaleString()}</span>
-                </div>
-                {h.action !== 'undo' && h.action !== 'setting' && <span className="adm-row-tools"><button type="button" className="adm-pill" onClick={() => undo(h)}>{I.undo} Undo</button></span>}
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
+
     </>
   )
 }
