@@ -1561,3 +1561,21 @@ a:hover .art[data-k="episode"] img,
 @media (max-width: 767px) {
   .art-top:not(.ep-top) { padding-top: 48px !important; }
 }
+
+/* No "unread"-style dots before kickers/dates: the Hub doesn't track read state */
+.kick::before, .on-dark .kick::before { display: none !important; }
+
+/* Widest desktop: Blog + Podcast hero tiles show the artwork whole across the
+   top of the card with the copy beneath — no side fade or scrim. */
+@media (min-width: 1200px) {
+  .bento .tile--a, .bento .tile--b { padding-top: calc(42% + 16px); justify-content: flex-start; }
+  .bento .tile--a .tile-photo, .bento .tile--b .tile-photo {
+    inset: 0 0 auto 0 !important; width: 100% !important; height: auto !important;
+    aspect-ratio: 872 / 366 !important; -webkit-mask-image: none !important; mask-image: none !important;
+  }
+  .bento .tile--a .tile-photo img, .bento .tile--b .tile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .bento .tile--a::after, .bento .tile--b::after { background: none !important; }
+  .bento .tile--a h3, .bento .tile--a p, .bento .tile--a .meta,
+  .bento .tile--b h3, .bento .tile--b p, .bento .tile--b .meta { max-width: 100%; }
+  .bento .tile--b .meta { flex-direction: row; align-items: center; gap: 8px; }
+}
