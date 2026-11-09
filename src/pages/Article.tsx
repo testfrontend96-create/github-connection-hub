@@ -7,13 +7,21 @@ import { SocLogo } from '../components/social'
 import { A, E, T, ACADEMY_URL, pretty, articles, faqs } from '../lib/data'
 import { articleTopic } from '../lib/browsing'
 import { sentenceCase } from '../lib/sentenceCase'
-import events from '../data/events.json'
+import { events } from '../lib/data'
+import { submitEntry, trackView } from '../lib/remote'
+import { useEffect } from 'react'
 import NotFound from './NotFound'
 
 // Full article bodies pulled from biohackers.world, keyed by slug. Articles
-// without one fall back to the short body in articles.json.
+// without one fall back to the short body in articles.json. Admin edits store
+// a `detail` object on the article that overrides the built-in body.
 const DETAILS = import.meta.glob('../data/article-details/*.json', { eager: true, import: 'default' }) as Record<string, any>
-const detailFor = (slug: string) => DETAILS[`../data/article-details/${slug}.json`]
+export const builtInDetail = (slug: string) => DETAILS[`../data/article-details/${slug}.json`]
+const detailFor = (slug: string) => {
+  const base = builtInDetail(slug)
+  const edit = A[slug]?.detail
+  return edit ? { ...(base || {}), ...edit } : base
+}
 
 // Minimal inline markdown: [text](url) and **bold**.
 function Inline({ text }: { text: string }) {
@@ -59,8 +67,8 @@ function NewsletterTeaser() {
         <p>Latest articles, research, and biohacking updates right to your inbox.</p>
       </div>
       {done ? <p className="art-news-done" role="status">You've successfully subscribed!</p> :
-      <form className="art-news-quick" onSubmit={e => { e.preventDefault(); setDone(true) }}>
-        <input type="email" required aria-label="Email" placeholder="Your email" />
+      <form className="art-news-quick" onSubmit={e => { e.preventDefault(); const email = (new FormData(e.currentTarget).get('email') as string || '').trim().slice(0, 255); submitEntry('newsletter', { email, source: location.pathname }).catch(() => {}); setDone(true) }}>
+        <input type="email" name="email" required maxLength={255} aria-label="Email" placeholder="Your email" />
         <button type="submit" className="art-news-jump">Subscribe</button>
       </form>}
     </div>
@@ -69,7 +77,13 @@ function NewsletterTeaser() {
 
 function Newsletter() {
   const [done, setDone] = useState(false)
-  const submit = (e: FormEvent) => { e.preventDefault(); setDone(true) }
+  const submit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const f = new FormData(e.currentTarget)
+    const v = (k: string) => String(f.get(k) || '').trim().slice(0, 255)
+    submitEntry('newsletter', { firstName: v('firstname'), lastName: v('lastname'), email: v('user_email'), phone: v('phone'), source: location.pathname }).catch(() => {})
+    setDone(true)
+  }
   return (
     <div className="art-news art-news--full" id="subscribe" ref={useHueTracking() as any}>
       <div className="art-news-intro">
