@@ -112,7 +112,7 @@ export default function Admin() {
       </div>
     </AccessCard>
   )
-  return <DraftProvider><Dashboard session={a.session} /></DraftProvider>
+  return <DraftProvider><Dashboard session={a.session} /><Tooltips /></DraftProvider>
 }
 
 /* ---------------- workspace ---------------- */
