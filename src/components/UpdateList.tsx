@@ -54,6 +54,7 @@ export function UpdateList() {
           <div className="art-news-intro">
             <h3>Update the list</h3>
             <p>Suggest someone we should add, a detail to change, or a profile to remove. We review every submission.</p>
+            <div className="ul-addcard" aria-hidden="true"><span className="ul-addcard-plus" /></div>
           </div>
           {done ? (
             <div className="ul-done">
