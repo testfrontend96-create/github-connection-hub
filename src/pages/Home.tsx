@@ -8,6 +8,7 @@ import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../compone
 import { SocLogo } from '../components/social'
 import { FaqList } from '../components/FaqList'
 import { IconArrow } from '../components/icons'
+import { homeFeature, popular, siteSetting } from '../lib/remote'
 import blogTilePhoto from '../assets/home/blog-tile.png.asset.json'
 import podcastTilePhoto from '../assets/home/podcast-tile.png.asset.json'
 import blogTileMobile from '../assets/home/blog-tile-mobile.png.asset.json'
@@ -75,9 +76,21 @@ export default function Home() {
     }
     return out
   }
-  const lead = take((i) => i.k === 'article', 1)[0]
-  const tileA = take((i) => i.k === 'article', 1)[0]
-  const tileB = take((i) => i.k === 'episode', 1)[0]
+  // Hero slots follow the admin "Homepage" choice: latest, most popular, or a starred item.
+  const pick = (slot: string, k: 'article' | 'episode') => {
+    const f = homeFeature(slot)
+    const base = k === 'article' ? '/articles/' : '/podcast/'
+    const wanted = f?.mode === 'pinned' && f.item_slug ? [f.item_slug] : f?.mode === 'popular' ? popular(k) : []
+    for (const s of wanted) {
+      const it = items.find((i) => i.u === base + s)
+      if (it && !used.has(it.u)) { used.add(it.u); return it }
+    }
+    return take((i) => i.k === k, 1)[0]
+  }
+  const lead = pick('lead', 'article')
+  const tileA = pick('blog', 'article')
+  const tileB = pick('podcast', 'episode')
+  const startHere = siteSetting<{ title?: string; body?: string }>('start_here') || {}
   const brief = take((i) => i.k !== 'entity', 5)
   const latest = [...articles].sort((a, b) => (a.date < b.date ? 1 : -1)).filter((a) => !used.has(`/articles/${a.slug}`)).slice(0, 2)
   const weekday = WEEKDAYS[(BUILT.getDay() + 6) % 7]
@@ -132,8 +145,8 @@ export default function Home() {
           </Link>
           <div className="tile tile--problems" id="problems">
             <div className="tile-kick"><span className="kick" data-k="event">Start here</span></div>
-            <h3 style={{ fontSize: '1.1rem' }}>What are you interested in?</h3>
-            <p>Pick the symptom. Each page routes you to what to measure and what to consider.</p>
+            <h3 style={{ fontSize: '1.1rem' }}>{startHere.title || 'What are you interested in?'}</h3>
+            <p>{startHere.body || 'Pick the symptom. Each page routes you to what to measure and what to consider.'}</p>
             <div className="prob-chips">{problems.map((p) => <Link key={p.slug} to={`/problems/${p.slug}`}>{p.name}</Link>)}</div>
           </div>
           <div className="tile tile--brief">

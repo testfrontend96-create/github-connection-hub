@@ -1,4 +1,5 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
+import { trackView } from '../lib/remote'
 import podLogoB from '../assets/biohack-your-world-logo-black.png.asset.json'
 import { Link, useParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
@@ -20,6 +21,7 @@ export default function Episode() {
   const p = slug ? EP[slug] : undefined
   const colRef = useRef<HTMLDivElement>(null)
   const listenRef = useRef<HTMLDivElement>(null)
+  useEffect(() => { if (slug && EP[slug]) trackView('episode', slug) }, [slug])
   if (!p) return <NotFound />
   const ents = (p.entities || []).filter((s: string) => s in E)
   const tops = (p.topics || []).filter((s: string) => T[s])
@@ -58,7 +60,7 @@ export default function Episode() {
             <div className="ep-side-block" ref={listenRef}>
               <span className="art-share-label">Listen on</span>
               <div className="ep-listen-links">
-                {listenLinks(p.title).map(([label, href]) => <a key={label} className="btn btn--outline ep-platform" href={href} target="_blank" rel="noopener">
+                {listenLinks(p.title).map(([label, search]) => [label, ({ YouTube: p.youtubeUrl, 'Apple Podcasts': p.appleUrl, Spotify: p.spotifyUrl } as Record<string, string>)[label] || search]).map(([label, href]) => <a key={label} className="btn btn--outline ep-platform" href={href} target="_blank" rel="noopener">
                   {label === 'YouTube' && <YouTubeMark />}{PLATFORM_LOGO[label] && <img src={PLATFORM_LOGO[label]} alt="" width={18} height={18} />}{label}</a>)}
               </div>
             </div>

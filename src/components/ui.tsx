@@ -8,7 +8,7 @@ import AUTHORS from '../data/article-authors.json'
 
 const AU = AUTHORS as Record<string, { name?: string; image?: string }>
 export const AuthorHover = ({ slug }: { slug: string }) => {
-  const au = AU[slug]
+  const au = A[slug]?.detail?.author?.name ? A[slug].detail.author : AU[slug]
   if (!au?.name) return null
   return <span className="card-author"><span className="card-author-who">{au.image && <img src={au.image} alt="" loading="lazy" />}<span><small>Written by</small><b>{au.name}</b></span></span><span className="pcard-cta">View full article<IconArrow /></span></span>
 }
