@@ -14,16 +14,266 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      activity_log: {
+        Row: {
+          action: string
+          actor: string | null
+          actor_email: string | null
+          before: Json | null
+          created_at: string
+          id: string
+          kind: string | null
+          slug: string | null
+        }
+        Insert: {
+          action: string
+          actor?: string | null
+          actor_email?: string | null
+          before?: Json | null
+          created_at?: string
+          id?: string
+          kind?: string | null
+          slug?: string | null
+        }
+        Update: {
+          action?: string
+          actor?: string | null
+          actor_email?: string | null
+          before?: Json | null
+          created_at?: string
+          id?: string
+          kind?: string | null
+          slug?: string | null
+        }
+        Relationships: []
+      }
+      admin_emails: {
+        Row: {
+          added_by: string | null
+          email: string
+          enabled: boolean
+          updated_at: string
+        }
+        Insert: {
+          added_by?: string | null
+          email: string
+          enabled?: boolean
+          updated_at?: string
+        }
+        Update: {
+          added_by?: string | null
+          email?: string
+          enabled?: boolean
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      admin_requests: {
+        Row: {
+          created_at: string
+          email: string
+          name: string | null
+          status: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          name?: string | null
+          status?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          name?: string | null
+          status?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      content_items: {
+        Row: {
+          data: Json
+          deleted: boolean
+          kind: string
+          slug: string
+          sort: number | null
+          updated_at: string
+          updated_by: string | null
+          visible: boolean
+        }
+        Insert: {
+          data?: Json
+          deleted?: boolean
+          kind: string
+          slug: string
+          sort?: number | null
+          updated_at?: string
+          updated_by?: string | null
+          visible?: boolean
+        }
+        Update: {
+          data?: Json
+          deleted?: boolean
+          kind?: string
+          slug?: string
+          sort?: number | null
+          updated_at?: string
+          updated_by?: string | null
+          visible?: boolean
+        }
+        Relationships: []
+      }
+      home_features: {
+        Row: {
+          item_kind: string | null
+          item_slug: string | null
+          mode: string
+          slot: string
+          updated_at: string
+        }
+        Insert: {
+          item_kind?: string | null
+          item_slug?: string | null
+          mode?: string
+          slot: string
+          updated_at?: string
+        }
+        Update: {
+          item_kind?: string | null
+          item_slug?: string | null
+          mode?: string
+          slot?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      page_views: {
+        Row: {
+          id: number
+          kind: string
+          slug: string
+          viewed_at: string
+        }
+        Insert: {
+          id?: number
+          kind: string
+          slug: string
+          viewed_at?: string
+        }
+        Update: {
+          id?: number
+          kind?: string
+          slug?: string
+          viewed_at?: string
+        }
+        Relationships: []
+      }
+      site_settings: {
+        Row: {
+          key: string
+          updated_at: string
+          value: Json
+        }
+        Insert: {
+          key: string
+          updated_at?: string
+          value: Json
+        }
+        Update: {
+          key?: string
+          updated_at?: string
+          value?: Json
+        }
+        Relationships: []
+      }
+      submissions: {
+        Row: {
+          created_at: string
+          data: Json
+          done: boolean
+          id: string
+          kind: string
+        }
+        Insert: {
+          created_at?: string
+          data: Json
+          done?: boolean
+          id?: string
+          kind: string
+        }
+        Update: {
+          created_at?: string
+          data?: Json
+          done?: boolean
+          id?: string
+          kind?: string
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      decline_admin_request: {
+        Args: { target_user: string }
+        Returns: undefined
+      }
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
+      is_admin: { Args: never; Returns: boolean }
+      list_admins: {
+        Args: never
+        Returns: {
+          avatar: string
+          email: string
+          has_access: boolean
+          last_sign_in_at: string
+          name: string
+          source: string
+        }[]
+      }
+      popular_items: {
+        Args: { _kind: string; _limit?: number }
+        Returns: {
+          slug: string
+          views: number
+        }[]
+      }
+      request_admin_access: { Args: never; Returns: undefined }
+      set_admin_email_access: {
+        Args: { allow_access: boolean; target_email: string }
+        Returns: undefined
+      }
+      sync_admin_role: { Args: { _uid: string }; Returns: undefined }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +400,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin"],
+    },
   },
 } as const
