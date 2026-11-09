@@ -1612,3 +1612,12 @@ a:hover .art[data-k="episode"] img,
 .ul-err { font-style: normal; font-size: 13px; color: #FCA5A5; }
 .ul-done { display: grid; gap: 16px; justify-items: start; align-self: center; }
 @media (max-width: 600px) { .ul-box form { grid-template-columns: 1fr; } .ul-box { padding: 22px; } }
+
+/* FAQ preview line: tighter under the question, faded at the fold, more air before the next question */
+.fq-q { padding-top: 18px; padding-bottom: 6px; }
+.fq:not(.is-open) .fq-a { margin-bottom: 14px; }
+.fq:not(.is-open) .fq-a-in { position: relative; }
+.fq:not(.is-open) .fq-a-in::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 25%, #fff 90%);
+}
