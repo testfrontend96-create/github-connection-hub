@@ -3,20 +3,11 @@
 // edges declared one-directionally in the data are made symmetric here and every
 // inbound blog/podcast/report/how-to reference is attached, exactly as the Python
 // generator did.
-import molecules from '../data/entities-molecules.json'
-import biomarkers from '../data/entities-biomarkers.json'
-import protocols from '../data/entities-protocols.json'
-import articlesRaw from '../data/articles.json'
-import episodesRaw from '../data/episodes.json'
-import problemsRaw from '../data/problems.json'
 import reportsRaw from '../data/reports.json'
-import howtosRaw from '../data/howtos.json'
-import topicsRaw from '../data/topics.json'
-import biohackersRaw from '../data/biohackers.json'
-import famousRaw from '../data/biohackers-famous.json'
-import faqRaw from '../data/faq.json'
-import socialRaw from '../data/social.json'
 import instagramRaw from '../data/instagram.json'
+import { KINDS, type Kind } from './contentKinds'
+import { mergeRows, strip } from './overrides'
+import { remoteRows } from './remote'
 import { guideUrl } from './browsing'
 import { sentenceCase } from './sentenceCase'
 
@@ -38,23 +29,26 @@ const RETIRED = new Set(['recovery'])
 // ---- load & normalise -----------------------------------------------------
 const clone = <T,>(x: T): T => JSON.parse(JSON.stringify(x))
 
-export const topics: Any[] = clone(topicsRaw).filter((t: Any) => !RETIRED.has(t.slug))
-export const entities: Any[] = [...clone(molecules), ...clone(biomarkers), ...clone(protocols)]
-export const articles: Any[] = clone(articlesRaw)
-export const episodes: Any[] = clone(episodesRaw)
-export const problems: Any[] = clone(problemsRaw)
+// Admin edits (Lovable Cloud) merged over the built-in JSON.
+const live = (kind: Kind): Any[] => mergeRows(KINDS[kind].base(), remoteRows(kind), KINDS[kind].key).map(strip)
+const byDateDesc = (a: Any, b: Any) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0)
+
+export const topics: Any[] = live('topic').filter((t: Any) => !RETIRED.has(t.slug))
+export const entities: Any[] = live('entity')
+export const articles: Any[] = live('article').sort(byDateDesc)
+export const episodes: Any[] = live('episode').sort(byDateDesc)
+export const problems: Any[] = live('problem')
 export const reports: Any[] = clone(reportsRaw)
-export const howtos: Any[] = clone(howtosRaw)
-for (const list of [articles, episodes, reports, howtos]) for (const x of list) x.title = sentenceCase(x.title)
-export const faqs: Any[] = clone(faqRaw)
-export const social: Any[] = clone(socialRaw)
+export const howtos: Any[] = live('howto')
+for (const list of [articles, episodes, reports, howtos]) for (const x of list) x.title = sentenceCase(x.title || '')
+export const faqs: Any[] = live('faq')
+export const social: Any[] = live('social')
+export const events: Any[] = live('event')
 export const instagram: Any = clone(instagramRaw)
 
 // biohackers: speaker roster + famous figures (famous only when slug is new)
-export const hackers: Any[] = clone(biohackersRaw)
+export const hackers: Any[] = live('biohacker')
 {
-  const have = new Set(hackers.map((b) => b.slug))
-  for (const b of clone(famousRaw)) if (!have.has(b.slug)) hackers.push(b)
   for (const b of hackers) {
     b.title ??= b.known ?? ''
     b.known ??= b.title
