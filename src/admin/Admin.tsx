@@ -89,6 +89,7 @@ function RequestAccess() {
   )
 }
 
+import { Tooltips } from './Tooltip'
 export default function Admin() {
   const a = useAccess()
   useEffect(() => {
@@ -601,7 +602,7 @@ function Inbox() {
               </div>
               <span className="adm-row-tools">
                 <button type="button" className="adm-pill" onClick={async () => { await supabase.from('submissions').update({ done: !r.done }).eq('id', r.id); reload() }}>{r.done ? 'Reopen' : <>{I.check} Mark handled</>}</button>
-                <button type="button" className="adm-icon-btn adm-danger" aria-label="Delete" onClick={async () => { if (confirm('Delete this entry?')) { await supabase.from('submissions').delete().eq('id', r.id); reload() } }}>{I.trash}</button>
+                <button type="button" className="adm-icon-btn adm-danger" aria-label="Delete" data-tip="Delete this entry" onClick={async () => { if (confirm('Delete this entry?')) { await supabase.from('submissions').delete().eq('id', r.id); reload() } }}>{I.trash}</button>
               </span>
             </li>
           ))}

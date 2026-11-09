@@ -12,7 +12,7 @@ export function Modal({ title, onClose, children, wide, footer }: { title: strin
       <div className={'adm-modal' + (wide ? ' adm-modal--wide' : '')} role="dialog" aria-label={title}>
         <div className="adm-modal-head">
           <h2>{title}</h2>
-          <button type="button" className="adm-icon-btn" onClick={onClose} aria-label="Close">{I.x}</button>
+          <button type="button" className="adm-icon-btn" onClick={onClose} aria-label="Close" data-tip="Close without saving">{I.x}</button>
         </div>
         <div className="adm-modal-body">{children}</div>
         {footer && <div className="adm-modal-foot">{footer}</div>}
@@ -98,9 +98,9 @@ function Records({ f, value, onChange }: { f: Extract<Field, { type: 'records' }
             ))}
           </div>
           <div className="adm-record-tools">
-            <button type="button" className="adm-icon-btn" disabled={i === 0} onClick={() => move(i, -1)} aria-label="Move up">{I.up}</button>
-            <button type="button" className="adm-icon-btn" disabled={i === value.length - 1} onClick={() => move(i, 1)} aria-label="Move down">{I.down}</button>
-            <button type="button" className="adm-icon-btn adm-danger" onClick={() => onChange(value.filter((_, j) => j !== i))} aria-label="Remove">{I.trash}</button>
+            <button type="button" className="adm-icon-btn" disabled={i === 0} onClick={() => move(i, -1)} aria-label="Move up" data-tip="Move up one place">{I.up}</button>
+            <button type="button" className="adm-icon-btn" disabled={i === value.length - 1} onClick={() => move(i, 1)} aria-label="Move down" data-tip="Move down one place">{I.down}</button>
+            <button type="button" className="adm-icon-btn adm-danger" onClick={() => onChange(value.filter((_, j) => j !== i))} aria-label="Remove" data-tip="Remove this section">{I.trash}</button>
           </div>
         </div>
       ))}
@@ -125,7 +125,7 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
       {BLOCK_TYPES.map(([t, l]) => <button key={t} type="button" className="adm-chip" onClick={() => { insert(at, t); setAdding(null) }}>{l}</button>)}
       <button type="button" className="adm-link" onClick={() => setAdding(null)}>Cancel</button>
     </div>
-  ) : <button type="button" className="adm-block-plus" onClick={() => setAdding(at)} aria-label="Insert block here">{I.plus}</button>
+  ) : <button type="button" className="adm-block-plus" onClick={() => setAdding(at)} aria-label="Insert block here" data-tip="Add a section here">{I.plus}</button>
   return (
     <div className="adm-blocks">
       <Adder at={0} />
@@ -137,9 +137,9 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
                 {BLOCK_TYPES.map(([t, l]) => <option key={t} value={t}>{l}</option>)}
               </select>
               <div className="adm-record-tools adm-record-tools--row">
-                <button type="button" className="adm-icon-btn" disabled={i === 0} onClick={() => move(i, -1)} aria-label="Move up">{I.up}</button>
-                <button type="button" className="adm-icon-btn" disabled={i === value.length - 1} onClick={() => move(i, 1)} aria-label="Move down">{I.down}</button>
-                <button type="button" className="adm-icon-btn adm-danger" onClick={() => onChange(value.filter((_, j) => j !== i))} aria-label="Remove">{I.trash}</button>
+                <button type="button" className="adm-icon-btn" disabled={i === 0} onClick={() => move(i, -1)} aria-label="Move up" data-tip="Move up one place">{I.up}</button>
+                <button type="button" className="adm-icon-btn" disabled={i === value.length - 1} onClick={() => move(i, 1)} aria-label="Move down" data-tip="Move down one place">{I.down}</button>
+                <button type="button" className="adm-icon-btn adm-danger" onClick={() => onChange(value.filter((_, j) => j !== i))} aria-label="Remove" data-tip="Remove this section">{I.trash}</button>
               </div>
             </div>
             {['p', 'note'].includes(b.t) && <textarea className="adm-field" rows={4} value={b.text || ''} onChange={(e) => set(i, { ...b, text: e.target.value })} placeholder="Text — links as [text](https://…), bold as **text**" />}
