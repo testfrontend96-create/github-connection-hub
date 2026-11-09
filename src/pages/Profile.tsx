@@ -55,6 +55,15 @@ export default function Profile() {
             </div>
           </>)}
           </div>
+          <section className="prof-more prof-more--inline">
+            <h2 className="prof-h">More biohackers</h2>
+            <div className="peers peers--cards">
+              {peers.map((x) => (
+                <article key={x.slug} className="pcard pcard--peer"><Link className="pcard-link" to={`/biohackers/${x.slug}`}><span className="pcard-media"><PersonPhoto b={x} cls="pcard-photo" /></span><span className="pcard-body"><h3 className="pcard-name">{x.name}</h3><span className="pcard-title">{x.title}</span></span></Link></article>
+              ))}
+            </div>
+            <div className="ul-wrap"><Link className="ul-open prof-all-profiles" to="/biohackers">All profiles</Link></div>
+          </section>
         </div>
 
         <aside className="prof-aside">
@@ -100,17 +109,6 @@ export default function Profile() {
           )}
           </div>
         </aside>
-      </div>
-      <div className="wrap">
-  <section className="prof-more prof-more--end">
-          <h2 className="prof-h">More biohackers</h2>
-          <div className="peers peers--cards">
-            {peers.map((x) => (
-              <article key={x.slug} className="pcard pcard--peer"><Link className="pcard-link" to={`/biohackers/${x.slug}`}><span className="pcard-media"><PersonPhoto b={x} cls="pcard-photo" /></span><span className="pcard-body"><h3 className="pcard-name">{x.name}</h3><span className="pcard-title">{x.title}</span></span></Link></article>
-            ))}
-          </div>
-          <div className="ul-wrap"><Link className="ul-open prof-all-profiles" to="/biohackers">All profiles</Link></div>
-        </section>
       </div></section>
     </>
   )
