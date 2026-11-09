@@ -68,6 +68,7 @@ export default function Profile() {
 
         <aside className="prof-aside">
           <PersonPhoto b={b} cls="prof-photo prof-hero-photo prof-aside-photo" eager />
+          {b.imageCredit && <p className="prof-src">Photo: {b.imageCredit}, via Wikimedia Commons.</p>}
           <div className="prof-aside-rest">
           {miami && (
             <div className="prof-event">
@@ -75,12 +76,6 @@ export default function Profile() {
               <p className="prof-event-when">January 16–17, 2027 · InterContinental Miami</p>
               <p>Two days of keynotes, expo and experiences at 100 Chopin Plaza.</p>
               <a className="btn btn--green" href={TICKETS_URL}>Get tickets</a>
-            </div>
-          )}
-          {(focus.length > 0 || topicLinks.length > 0) && (
-            <div className="prof-box"><h3>Focus</h3>
-              {focus.length > 0 && <div className="mentions">{focus.map((x: string) => <Mention key={x} slug={x} />)}</div>}
-              {topicLinks.length > 0 && <div className="prof-topics">{topicLinks.map((t: string) => <Link key={t} className="mention mention--topic" to={`/topics/${t}`}>{T[t].name}</Link>)}</div>}
             </div>
           )}
           {hasPro && (
