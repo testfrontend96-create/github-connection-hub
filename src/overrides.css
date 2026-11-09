@@ -1074,7 +1074,7 @@ a:hover .art[data-k="episode"] img,
 .prof-top .prof-id .lede { color: var(--body); font-size: 17px; line-height: 1.55; font-weight: 400; }
 @media (min-width: 981px) { .prof-top .art-hero-title .prof-id { position: sticky; top: 132px; } }
 .prof-top .p-chip { color: var(--ink); border-color: var(--line); }
-.prof-more--end { display: none; }
+.prof-more--end { display: block; }
 @media (max-width: 900px) {
   .prof-more--inline { display: none; }
   .prof-more--end { display: block; }
@@ -1250,6 +1250,8 @@ a:hover .art[data-k="episode"] img,
 .prof-aside-photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); overflow: hidden; }
 .prof-aside-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
 .prof-aside-rest { display: grid; gap: 20px; }
+.prof-top .prof-aside { position: static; }
+.prof-all-profiles { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
 @media (max-width: 980px) {
   .prof-top .prof-grid { display: flex; flex-direction: column; gap: 0; }
   .prof-top .prof-main, .prof-top .prof-aside { display: contents; }
