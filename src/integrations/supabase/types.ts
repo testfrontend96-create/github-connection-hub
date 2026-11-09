@@ -19,6 +19,7 @@ export type Database = {
           action: string
           actor: string | null
           actor_email: string | null
+          after: Json | null
           before: Json | null
           created_at: string
           id: string
@@ -29,6 +30,7 @@ export type Database = {
           action: string
           actor?: string | null
           actor_email?: string | null
+          after?: Json | null
           before?: Json | null
           created_at?: string
           id?: string
@@ -39,6 +41,7 @@ export type Database = {
           action?: string
           actor?: string | null
           actor_email?: string | null
+          after?: Json | null
           before?: Json | null
           created_at?: string
           id?: string
@@ -265,6 +268,7 @@ export type Database = {
           views: number
         }[]
       }
+      publish_admin_changes: { Args: { changes: Json }; Returns: undefined }
       request_admin_access: { Args: never; Returns: undefined }
       set_admin_email_access: {
         Args: { allow_access: boolean; target_email: string }
