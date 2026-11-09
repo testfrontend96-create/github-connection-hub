@@ -1,4 +1,5 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
+import { trackView } from '../lib/remote'
 import podLogoB from '../assets/biohack-your-world-logo-black.png.asset.json'
 import { Link, useParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
@@ -20,6 +21,7 @@ export default function Episode() {
   const p = slug ? EP[slug] : undefined
   const colRef = useRef<HTMLDivElement>(null)
   const listenRef = useRef<HTMLDivElement>(null)
+  useEffect(() => { if (slug && EP[slug]) trackView('episode', slug) }, [slug])
   if (!p) return <NotFound />
   const ents = (p.entities || []).filter((s: string) => s in E)
   const tops = (p.topics || []).filter((s: string) => T[s])

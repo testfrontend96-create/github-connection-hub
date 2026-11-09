@@ -31,6 +31,7 @@ export function UpdateList() {
       return setErr(m)
     }
     setErr({})
+    submitEntry('biohacker', r.data).catch(() => {})
     setDone(`${r.data.firstName} ${r.data.lastName}`)
   }
   const again = () => { setF({ ...EMPTY, name: f.name, email: f.email }); setDone(null) }
