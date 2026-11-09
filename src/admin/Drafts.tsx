@@ -24,7 +24,7 @@ export function DraftProvider({ children }: { children: ReactNode }) {
     window.dispatchEvent(new Event('hub-admin-saved'))
   }
   return <DraftContext.Provider value={{ changes, stage: c => setChanges(prev => stageChange(prev, c)), revision }}>
-    <div className="adm-savebar" role="region" aria-label="Publish changes">
+    <div className="adm adm-savebar" role="region" aria-label="Publish changes">
       <span>{busy ? 'Saving changes…' : changes.length ? `${changes.length} unpublished change${changes.length === 1 ? '' : 's'}` : 'All changes saved'}</span>
       {error && <span className="adm-err" role="alert">{error}</span>}
       <div><button type="button" className="adm-pill" disabled={!changes.length || busy} onClick={() => { setChanges([]); setError(''); setRevision(x => x + 1) }}>Discard changes</button>

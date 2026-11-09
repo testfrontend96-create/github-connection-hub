@@ -462,6 +462,7 @@ function HomepageManager() {
   const [chooser, setChooser] = useState<string | null>(null)
   const [chooseKind, setChooseKind] = useState<'article' | 'episode'>('article')
   const [chooseQuery, setChooseQuery] = useState('')
+  const [slotKinds, setSlotKinds] = useState<Record<string, 'article' | 'episode'>>({ lead: 'article', blog: 'article', podcast: 'episode' })
   const { rows: pRows } = useRows('problem')
   const problemList = useMemo(() => mergeRows(KINDS.problem.base(), pRows || [], KINDS.problem.key), [pRows])
   const { features, set } = useFeatures()
@@ -517,8 +518,8 @@ function HomepageManager() {
                     </button>
                   ))}
                 </div>
-                <div className="adm-choose-row"><select className="adm-field adm-field--sm" aria-label={`Content type for ${SLOT_LABEL[slot]}`} value={chooseKind} onChange={e => setChooseKind(e.target.value as 'article' | 'episode')}><option value="article">Blog article</option><option value="episode">Podcast episode</option></select>
-                <button type="button" className="adm-pill" onClick={() => { setChooser(slot); setChooseQuery('') }}>Choose</button></div>
+                <div className="adm-choose-row"><select className="adm-field adm-field--sm" aria-label={`Content type for ${SLOT_LABEL[slot]}`} value={slotKinds[slot]} onChange={e => setSlotKinds(prev => ({ ...prev, [slot]: e.target.value as 'article' | 'episode' }))}><option value="article">Blog article</option><option value="episode">Podcast episode</option></select>
+                <button type="button" className="adm-pill" onClick={() => { setChooseKind(slotKinds[slot]); setChooser(slot); setChooseQuery('') }}>Choose</button></div>
                 {mode === 'popular' && (
                   <small className="adm-help">{(pop[k] || []).length ? `Most viewed in the last 30 days (${pop[k][0].views} views for the top one).` : 'No views counted yet — showing the latest until visitors start reading.'}</small>
                 )}
