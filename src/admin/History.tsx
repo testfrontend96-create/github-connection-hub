@@ -25,7 +25,7 @@ export function History() {
     <ul className="adm-list">{rows.filter(h => [h.actor_email, h.action, h.kind, h.slug].join(' ').toLowerCase().includes(q.toLowerCase())).map(h => <li key={h.id} className="adm-row">
       <div className="adm-row-main adm-row-static"><b>{h.action} · {h.kind === 'home' ? 'Homepage' : h.kind} · {h.slug}</b><span>{h.actor_email || 'System'} · {new Date(h.created_at).toLocaleString()}</span>
       {h.before && h.after && <span>Changed: {Object.keys(h.after).filter(k => !['updated_at', 'updated_by'].includes(k) && JSON.stringify(h.after[k]) !== JSON.stringify(h.before[k])).join(', ')}</span>}</div>
-      {h.after !== undefined && <button className="adm-pill" type="button" onClick={() => undo(h)}>Undo</button>}
+      {(h.after || h.before) && <button className="adm-pill" type="button" onClick={() => undo(h)}>Undo</button>}
     </li>)}</ul>
     {!rows.length && <p className="adm-hint">No published changes yet.</p>}
     {rows.length === limit && <button type="button" className="adm-pill adm-more" onClick={() => setLimit(x => x + 60)}>Load older changes</button>}
