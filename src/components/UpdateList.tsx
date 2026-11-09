@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { z } from 'zod'
 import { useHueTracking } from './chrome'
+import { submitEntry } from '../lib/remote'
 
 const schema = z.object({
   firstName: z.string().trim().min(1, 'Enter a first name').max(80),
