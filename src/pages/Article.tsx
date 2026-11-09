@@ -222,6 +222,7 @@ export default function Article() {
       main.style.removeProperty('--article-promo-height')
     }
   }, [slug])
+  useEffect(() => { if (slug && A[slug]) trackView('article', slug) }, [slug])
   const a = slug ? A[slug] : undefined
   if (!a) return <NotFound />
   const d = detailFor(a.slug)
@@ -229,7 +230,7 @@ export default function Article() {
   const toc = d ? d.blocks.filter((b: any) => b.t === 'h2') : []
   const author = d?.author || { name: 'Biohackers World', role: 'Editorial team' }
   const url = a.sourceUrl || `https://www.biohackers.world/hub/articles/${a.slug}`
-  const paras: string[] = d ? [] : a.body
+  const paras: string[] = d ? [] : (a.body || [a.excerpt || ''])
   const intro = d ? d.intro : paras[0]
   const rest = d ? null : paras.slice(1)
   // Article's own question headings; topped up with general Hub questions.
