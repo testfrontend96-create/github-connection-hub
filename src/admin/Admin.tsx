@@ -2,8 +2,8 @@
 // Sales (Invited Only) admin: Google sign-in, company-domain admins, email overrides.
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import type { Session } from '@supabase/supabase-js'
-import { supabase } from '@/integrations/supabase/client'
-import { lovable } from '@/integrations/lovable/index'
+import { supabase } from '../integrations/supabase/client'
+import { lovable } from '../integrations/lovable/index'
 import { KINDS, type Kind } from '../lib/contentKinds'
 import { mergeRows, keyOf } from '../lib/overrides'
 import type { ContentRow, HomeFeature } from '../lib/remote'

@@ -25,3 +25,5 @@
 - Let a page whose final band is dark run straight into the dark footer via `#main:has(> .dark:last-child)` in `src/overrides.css`, so no light strip separates two dark surfaces while light-ending pages keep their bottom breathing room.
 - Keep full blog article bodies as block lists in `src/data/article-details/<slug>.json` (with `events`/`academy` placeholder blocks); `Article.tsx` falls back to the short `articles.json` body when no detail file exists, so every article page uses one layout.
 - Measure article hero and events dimensions with a shared ResizeObserver in the article renderer and expose scoped CSS sizing variables, so image caps and promotion heights follow the actual layout at every viewport.
+- Admin edits live in Cloud `content_items` rows merged over the built-in JSON at startup (`src/lib/remote.ts`, `overrides.ts`, `contentKinds.ts`); keeps the shipped content as the fallback and avoids seeding it into the database.
+- `/admin` access: verified company-domain Google accounts plus `admin_emails` overrides (revocation wins), checked server-side via `is_admin()`; matches the Sales project's rules.

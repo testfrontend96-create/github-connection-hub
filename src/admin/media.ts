@@ -1,4 +1,4 @@
-import { supabase } from '@/integrations/supabase/client'
+import { supabase } from '../integrations/supabase/client'
 
 const TEN_YEARS = 60 * 60 * 24 * 365 * 10
 
