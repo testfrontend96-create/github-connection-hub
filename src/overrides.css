@@ -1621,3 +1621,18 @@ a:hover .art[data-k="episode"] img,
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(to bottom, rgba(255,255,255,0) 25%, #fff 90%);
 }
+
+/* Update list: dashed "add" card filling the left column on wide screens only */
+.ul-addcard { display: none; }
+@media (min-width: 1024px) {
+  .ul-addcard {
+    display: grid; place-items: center; margin-top: 28px; width: 100%; max-width: 320px; aspect-ratio: 1 / 1.05;
+    border: 2px dashed rgba(255,255,255,.22); border-radius: 24px;
+  }
+  .ul-addcard-plus { position: relative; width: 34px; height: 34px; }
+  .ul-addcard-plus::before, .ul-addcard-plus::after {
+    content: ""; position: absolute; left: 50%; top: 50%; border-radius: 3px; background: rgba(255,255,255,.55);
+  }
+  .ul-addcard-plus::before { width: 34px; height: 4px; transform: translate(-50%,-50%); }
+  .ul-addcard-plus::after { width: 4px; height: 34px; transform: translate(-50%,-50%); }
+}
