@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, lazy, Suspense } from 'react'
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { PlayerProvider } from './components/Player'
 import { TopNav, Footer } from './components/chrome'
@@ -29,7 +29,12 @@ function LegacyHowTo() {
   return <Navigate replace to={`/knowledge-base?type=howto${hash}`} />
 }
 
+const Admin = lazy(() => import('./admin/Admin'))
+
 export default function App() {
+  const { pathname } = useLocation()
+  if (pathname === '/admin' || pathname.startsWith('/admin/'))
+    return <Suspense fallback={null}><Admin /></Suspense>
   return (
     <PlayerProvider>
       <ScrollToTop />
