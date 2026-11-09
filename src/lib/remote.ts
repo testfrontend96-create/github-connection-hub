@@ -1,6 +1,6 @@
 // Content edits made in the admin panel, loaded once before the site renders.
 // Built-in JSON stays the base; rows here add, replace, hide or delete items.
-import { supabase } from '@/integrations/supabase/client'
+import { supabase } from '../integrations/supabase/client'
 
 export type ContentRow = {
   kind: string
