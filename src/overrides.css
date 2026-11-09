@@ -1579,3 +1579,8 @@ a:hover .art[data-k="episode"] img,
   .bento .tile--b h3, .bento .tile--b p, .bento .tile--b .meta { max-width: 100%; }
   .bento .tile--b .meta { flex-direction: row; align-items: center; gap: 8px; }
 }
+
+/* Breadcrumbs: the / separator had no room on its left (the label and the
+   slash were glued together). Every breadcrumb item now spaces its label and
+   its separator by the same 8px the items already use between each other. */
+.crumbs > span { display: inline-flex; align-items: center; gap: 8px; }
