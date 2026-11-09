@@ -16,7 +16,7 @@ test('Staged changes do not mutate the published rows and discard restores them'
 })
 test('Repeated edits create one pending change per item', () => {
   const c = { table: 'home_features', key: 'lead', operation: 'upsert', value: { slot: 'lead', mode: 'latest' } }
-  expect(stageChange(stageChange([], c), { ...c, value: { slot: 'lead', mode: 'pinned' } })).length).toBe(1)
+  expect(stageChange(stageChange([], c), { ...c, value: { slot: 'lead', mode: 'pinned' } }).length).toBe(1)
 })
 test('Each hero slot can explicitly select a blog article or podcast episode', () => {
   const lists = { article: [{ slug: 'blog-a' }], episode: [{ slug: 'episode-a' }] }
