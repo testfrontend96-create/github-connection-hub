@@ -1638,3 +1638,11 @@ a:hover .art[data-k="episode"] img,
   .ul-addcard-plus::before { width: 34px; height: 4px; transform: translate(-50%,-50%); }
   .ul-addcard-plus::after { width: 4px; height: 34px; transform: translate(-50%,-50%); }
 }
+
+/* Homepage: round hero search, bigger section titles, prominent All Topics */
+.hub-masthead .content-search, .hub-masthead .content-search input, .hub-masthead form input { border-radius: 999px !important; }
+.home .sec-head h2, .home .rail-head { font-size: 24px; }
+@media (min-width: 768px) { .home .sec-head h2, .home .rail-head { font-size: 28px; } }
+.home .pillar-cats--global { margin: 64px 0 20px; padding: 22px 24px; }
+.home .pillar-cats--global .pillar-cats-label { font-size: 18px !important; font-weight: 600; margin-bottom: 14px; color: var(--ink); }
+.home .pillar-cats--global .chip.topic-chip { font-size: 17px; padding: 11px 20px; }

@@ -29,7 +29,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:auto}
 body{
   margin:0;background:var(--white);color:var(--body);overflow-x:clip;
   font-family:var(--display);font-size:16px;line-height:1.6;
