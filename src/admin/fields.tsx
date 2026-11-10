@@ -123,7 +123,7 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
   const Adder = ({ at }: { at: number }) => adding === at ? (
     <div className="adm-block-add">
       {BLOCK_TYPES.map(([t, l]) => <button key={t} type="button" className="adm-chip" onClick={() => { insert(at, t); setAdding(null) }}>{l}</button>)}
-      <button type="button" className="adm-link" onClick={() => setAdding(null)}>Cancel</button>
+      <button type="button" className="adm-icon-btn adm-danger" onClick={() => setAdding(null)} aria-label="Cancel" data-tip="Cancel">{I.trash}</button>
     </div>
   ) : at === 0 ? <button type="button" className="adm-pill adm-body-add" onClick={() => setAdding(0)}>{I.plus}Add article body</button>
   : <button type="button" className="adm-block-plus" onClick={() => setAdding(at)} aria-label="Insert block here" data-tip="Add a section here">{I.plus}</button>
