@@ -173,7 +173,7 @@ export function feed(): FeedItem[] {
   for (const p of episodes) items.push({ k: 'episode', kick: `Podcast · Ep. ${p.number}`, t: p.title, d: p.description, u: `/podcast/${p.slug}`, date: p.date, topics: p.topics, meta: `${p.guest} · ${p.duration}`, guest: p.guest, duration: p.duration, mark: 'EP', img: p.image || '', audio: p.audio || '', listen: p.listenUrl || '' })
   for (const r of reports) items.push({ k: 'report', kick: r.kind, t: r.title, d: r.excerpt, u: `/reports#${r.slug}`, date: r.date, topics: r.topics, meta: 'Report', mark: r.stats[0].v })
   for (const h of howtos) items.push({ k: 'howto', kick: 'How-to', t: h.title, d: h.excerpt, u: guideUrl(h.slug), date: h.date, topics: h.topics, meta: `${h.steps} steps · ${h.time}`, mark: String(h.steps) })
-  for (const e of entities) items.push({ k: 'entity', kick: KIND_LABEL[e.type], t: e.name, d: e.summary, u: `/knowledge/${e.slug}`, date: e.updated, topics: e.topics, meta: `${e.evidence} evidence`, mark: e.name.slice(0, 2) })
+  for (const e of entities) items.push({ k: 'entity', kick: KIND_LABEL[e.type], t: e.name, d: e.summary, u: `/knowledge/${e.slug}`, date: e.updated, topics: e.topics, mark: e.name.slice(0, 2) })
   items.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
   return items
 }

@@ -19,7 +19,6 @@ export default function Entity() {
       <PageHead compact accent="var(--indigo)" crumbs={[['Hub', '/'], ['Knowledge Base', '/knowledge-base'], [e.name, null]]}>
           <div className="detail-head-meta knowledge-item-meta">
             <Tag kind={e.type} />
-            <span className="evidence" data-lvl={e.evidence}>{e.evidence} evidence</span>
           </div>
           <h1 className="display">{e.name}</h1>
           {e.aka?.length > 0 && <p className="lede">Also known as: {e.aka.join(', ')}</p>}
@@ -52,7 +51,6 @@ export default function Entity() {
             {e._problems.length > 0 && <div className="side-block" style={{ background: 'var(--surface)', border: 0 }}><h4>Helps with</h4>{e._problems.map((s: string) => <Link key={s} className="side-link" to={`/problems/${s}`} style={{ borderColor: 'rgba(0,0,0,.07)' }}><span className="t">{PR[s].name}</span><span>→</span></Link>)}</div>}
             <div className="side-block"><h4>Entry details</h4>
               <a className="side-link" style={{ cursor: 'default' }}><span className="t">Type</span><Tag kind={e.type} /></a>
-              <a className="side-link" style={{ cursor: 'default' }}><span className="t">Evidence</span><span className="evidence" data-lvl={e.evidence}>{e.evidence}</span></a>
               <a className="side-link" style={{ cursor: 'default' }}><span className="t">Updated</span><span>{pretty(e.updated)}</span></a>
             </div>
           </aside>

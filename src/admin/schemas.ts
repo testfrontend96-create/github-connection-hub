@@ -84,12 +84,11 @@ export const KIND_DEFS: KindDef[] = [
   },
   {
     kind: 'entity', label: 'Knowledge Base', singular: 'entry',
-    title: (x) => x.name, sub: (x) => [ENTITY_TYPES.find(([v]) => v === x.type)?.[1], x.evidence].filter(Boolean).join(' · '),
+    title: (x) => x.name, sub: (x) => [ENTITY_TYPES.find(([v]) => v === x.type)?.[1], ].filter(Boolean).join(' · '),
     date: (x) => x.updated, url: (s) => `/knowledge/${s}`,
     fields: [
       { k: 'name', label: 'Name', type: 'text', required: true },
       { k: 'type', label: 'Type', type: 'select', options: () => ENTITY_TYPES, required: true },
-      { k: 'evidence', label: 'Indicator', type: 'select', options: () => EVIDENCE },
       { k: 'updated', label: 'Last updated', type: 'date' },
       { k: 'aka', label: 'Also known as', type: 'lines', help: 'One per line.' },
       { k: 'summary', label: 'Summary', type: 'textarea', wide: true },
