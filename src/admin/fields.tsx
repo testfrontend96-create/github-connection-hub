@@ -125,7 +125,8 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
       {BLOCK_TYPES.map(([t, l]) => <button key={t} type="button" className="adm-chip" onClick={() => { insert(at, t); setAdding(null) }}>{l}</button>)}
       <button type="button" className="adm-link" onClick={() => setAdding(null)}>Cancel</button>
     </div>
-  ) : <button type="button" className="adm-block-plus" onClick={() => setAdding(at)} aria-label="Insert block here" data-tip="Add a section here">{I.plus}</button>
+  ) : at === 0 ? <button type="button" className="adm-pill adm-body-add" onClick={() => setAdding(0)}>{I.plus}Add article body</button>
+  : <button type="button" className="adm-block-plus" onClick={() => setAdding(at)} aria-label="Insert block here" data-tip="Add a section here">{I.plus}</button>
   return (
     <div className="adm-blocks">
       <Adder at={0} />

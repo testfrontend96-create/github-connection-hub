@@ -446,7 +446,7 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
           </label>
         )}
         {def.fields.map((f) => (
-          <div key={f.k} className={f.wide || ['blocks', 'records', 'chips', 'image'].includes(f.type) ? 'adm-wide' : ''}>
+          <div key={f.k} className={f.cls ? f.cls : f.wide || ['blocks', 'records', 'chips', 'image'].includes(f.type) ? 'adm-wide' : ''}>
             <span className="adm-label">{f.label}{f.required ? ' *' : ''}</span>
             <FieldInput f={f} value={getPath(v, f.k)} onChange={(x) => setV((cur: any) => setPath(cur, f.k, x))} folder={def.kind} />
             {f.help && <small className="adm-help">{f.help}</small>}
