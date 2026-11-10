@@ -445,13 +445,24 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
               <input className="adm-field" value={autoSlug} onChange={(e) => { setSlugTouched(true); setSlug(keyOf(e.target.value)) }} placeholder="filled from the title" /></div>
           </label>
         )}
-        {def.fields.map((f) => (
-          <div key={f.k} className={f.cls ? f.cls : f.wide || ['blocks', 'records', 'chips', 'image'].includes(f.type) ? 'adm-wide' : ''}>
-            <span className="adm-label">{f.label}{f.required ? ' *' : ''}</span>
-            <FieldInput f={f} value={getPath(v, f.k)} onChange={(x) => setV((cur: any) => setPath(cur, f.k, x))} folder={def.kind} />
-            {f.help && <small className="adm-help">{f.help}</small>}
-          </div>
-        ))}
+        {(() => {
+          const cell = (f: any) => (
+            <div key={f.k} className={f.cls ? f.cls : f.wide || ['blocks', 'records', 'chips', 'image'].includes(f.type) ? 'adm-wide' : ''}>
+              <span className="adm-label">{f.label}{f.required ? ' *' : ''}</span>
+              <FieldInput f={f} value={getPath(v, f.k)} onChange={(x) => setV((cur: any) => setPath(cur, f.k, x))} folder={def.kind} />
+              {f.help && <small className="adm-help">{f.help}</small>}
+            </div>
+          )
+          const groups: { g?: { title: string; sub: string }; fs: any[] }[] = []
+          def.fields.forEach((f: any) => { if (f.group || !groups.length) groups.push({ g: f.group, fs: [] }); groups[groups.length - 1].fs.push(f) })
+          return groups.map((gr, i) => gr.g ? (
+            <section key={i} className={'adm-sec adm-wide adm-sec--' + (i % 6)}>
+              <h3 className="adm-sec-title">{gr.g.title}</h3>
+              <p className="adm-sec-sub">{gr.g.sub}</p>
+              <div className="adm-form">{gr.fs.map(cell)}</div>
+            </section>
+          ) : gr.fs.map(cell))
+        })()}
       </div>
     </Modal>
   )

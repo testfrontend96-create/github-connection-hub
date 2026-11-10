@@ -3,12 +3,12 @@ import { KINDS, type Kind } from '../lib/contentKinds'
 
 export type Opt = [value: string, label: string]
 export type Field =
-  | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines'; help?: string; wide?: boolean; required?: boolean; cls?: string }
-  | { k: string; label: string; type: 'select'; options: () => Opt[]; help?: string; wide?: boolean; required?: boolean; cls?: string }
-  | { k: string; label: string; type: 'chips'; options: () => Opt[]; custom?: boolean; help?: string; wide?: boolean; required?: boolean; cls?: string }
-  | { k: string; label: string; type: 'records'; sub: { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'lines' }[]; help?: string; wide?: boolean; required?: boolean; cls?: string }
-  | { k: string; label: string; type: 'dict'; keys: string[]; help?: string; wide?: boolean; required?: boolean; cls?: string }
-  | { k: string; label: string; type: 'blocks'; help?: string; wide?: boolean; required?: boolean; cls?: string }
+  | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines'; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
+  | { k: string; label: string; type: 'select'; options: () => Opt[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
+  | { k: string; label: string; type: 'chips'; options: () => Opt[]; custom?: boolean; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
+  | { k: string; label: string; type: 'records'; sub: { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'lines' }[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
+  | { k: string; label: string; type: 'dict'; keys: string[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
+  | { k: string; label: string; type: 'blocks'; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
 
 const list = (kind: Kind, label: (x: any) => string): Opt[] =>
   KINDS[kind].base().map((x: any) => [KINDS[kind].key(x), label(x)] as Opt).sort((a, b) => a[1].localeCompare(b[1]))
@@ -42,21 +42,21 @@ export const KIND_DEFS: KindDef[] = [
     title: (x) => x.title, sub: (x) => [x.date, x.detail?.author?.name, (x.categories || []).join(', ')].filter(Boolean).join(' · '),
     image: (x) => x.image, date: (x) => x.date, url: (s) => `/articles/${s}`,
     fields: [
-      { k: 'title', label: 'Title', type: 'text', wide: true, required: true },
+      { k: 'title', label: 'Title', type: 'text', wide: true, required: true, ph: 'e.g. How sleep shapes your metabolism', group: { title: 'Basics', sub: 'Headline, publish date and reading time.' } },
       { k: 'date', label: 'Publish date', type: 'date', required: true },
-      { k: 'readTime', label: 'Reading time (minutes)', type: 'number', help: 'Leave empty to calculate it from the body.' },
-      { k: 'image', label: 'Cover image', type: 'image', wide: true },
-      { k: 'excerpt', label: 'Card description', type: 'textarea', wide: true, help: 'Shown on cards and in search.' },
-      { k: 'detail.intro', label: 'Opening paragraph', type: 'textarea', wide: true },
-      { k: 'detail.blocks', label: 'Article body', type: 'blocks', wide: true },
-      { k: 'topics', label: 'Hub topic', type: 'chips', options: TOPIC_OPTS, wide: true },
+      { k: 'readTime', label: 'Reading time (minutes)', type: 'number', ph: 'Auto from body, e.g. 8', help: 'Leave empty to calculate it from the body.' },
+      { k: 'image', label: 'Cover image', type: 'image', wide: true, group: { title: 'Cover and summary', sub: 'What readers see on cards, in search and at the top of the article.' } },
+      { k: 'excerpt', label: 'Card description', type: 'textarea', wide: true, ph: 'One or two sentences that sum up the article.', help: 'Shown on cards and in search.' },
+      { k: 'detail.intro', label: 'Opening paragraph', type: 'textarea', wide: true, ph: 'The first paragraph readers see, right under the subscribe box.' },
+      { k: 'detail.blocks', label: 'Article body', type: 'blocks', wide: true, group: { title: 'Article body', sub: 'Build the article section by section: text, headings, images, lists and more.' } },
+      { k: 'topics', label: 'Hub topic', type: 'chips', options: TOPIC_OPTS, wide: true, group: { title: 'Tags', sub: 'Where the article shows up across the Hub and the Blog filters.' } },
       { k: 'categories', label: 'Blog categories', type: 'chips', options: CATEGORY_OPTS, custom: true, wide: true },
       { k: 'entities', label: 'Knowledge Base mentions', type: 'chips', options: ENTITY_OPTS, wide: true },
-      { k: 'detail.author.image', label: 'Writer photo', type: 'image', cls: 'adm-writer-photo' },
-      { k: 'detail.author.name', label: 'Writer name', type: 'text' },
-      { k: 'detail.author.role', label: 'Writer role', type: 'text' },
-      { k: 'sourceUrl', label: 'Original link', type: 'url', wide: true, cls: 'adm-wide adm-source' },
-      { k: 'detail.highlights', label: 'Highlights', type: 'lines', wide: true, help: 'One highlight per line.' },
+      { k: 'detail.author.image', label: 'Writer photo', type: 'image', cls: 'adm-writer-photo', group: { title: 'Writer and source', sub: 'Who wrote it and where it was first published.' } },
+      { k: 'detail.author.name', label: 'Writer name', type: 'text', ph: 'e.g. Jane Smith' },
+      { k: 'detail.author.role', label: 'Writer role', type: 'text', ph: 'e.g. Health writer' },
+      { k: 'sourceUrl', label: 'Original link', type: 'url', wide: true, cls: 'adm-wide adm-source', ph: 'https://… where the article first appeared' },
+      { k: 'detail.highlights', label: 'Highlights', type: 'lines', wide: true, ph: 'One key takeaway per line', group: { title: 'Highlights and FAQ', sub: 'Key takeaways and common questions shown in the article.' }, help: 'One highlight per line.' },
       { k: 'detail.faq', label: 'Article FAQ', type: 'records', wide: true, sub: [{ k: 'q', label: 'Question', type: 'text' }, { k: 'a', label: 'Answer', type: 'textarea' }] },
     ],
   },
