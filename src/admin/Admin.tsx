@@ -457,13 +457,22 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
           def.fields.forEach((f: any) => { if (f.group || !groups.length) groups.push({ g: f.group, fs: [] }); groups[groups.length - 1].fs.push(f) })
           return groups.map((gr, i) => gr.g ? (
             <section key={i} className="adm-sec adm-wide">
-              <h3 className="adm-sec-title">{gr.g.title}</h3>
-              <p className="adm-sec-sub">{gr.g.sub}</p>
+              <div className="adm-sec-head"><div>
+                <h3 className="adm-sec-title">{gr.g.title}</h3>
+                <p className="adm-sec-sub">{gr.g.sub}</p>
+              </div>{def.kind === 'article' && EX_KEY[gr.g.title] && (
+                <button type="button" className="adm-icon-btn" data-tip="See where this shows on a real article" aria-label="See an example" onClick={() => setExample(EX_KEY[gr.g.title])}>{I.eye}</button>
+              )}</div>
               <div className="adm-form">{gr.fs.map(cell)}</div>
             </section>
           ) : gr.fs.map(cell))
         })()}
       </div>
+      {example && createPortal(
+        <div className="adm adm-example" role="dialog" aria-label="Example article">
+          <iframe src={`/articles/15-longevity-biomarkers-everyone-should-track?example=${example}`} title="Example article" />
+          <button type="button" className="adm-icon-btn adm-example-x" data-tip="Close example" aria-label="Close example" onClick={() => setExample(null)}>{I.x}</button>
+        </div>, document.body)}
     </Modal>
   )
 }
