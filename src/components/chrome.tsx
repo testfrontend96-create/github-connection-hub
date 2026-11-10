@@ -17,6 +17,7 @@ const NavLink = ({ href, label, active }: { href: string; label: string; active?
 
 export function TopNav() {
   const { pathname } = useLocation()
+  useEffect(() => { recordTrail(pathname) }, [pathname])
   const [open, setOpen] = useState(false)
   const [condensed, setCondensed] = useState(false)
   const [subOpen, setSubOpen] = useState(false)
