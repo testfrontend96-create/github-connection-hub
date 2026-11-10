@@ -251,13 +251,7 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-writer-photo .adm-drop-copy{flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
 .adm-writer-photo .adm-drop-copy>span{display:none}
 @media (max-width:640px){.adm-writer-photo{grid-row:auto}.adm-writer-photo .adm-drop{height:auto;flex:none}}
-.adm-sec{border-radius:20px;padding:20px 20px 22px;border:1px solid rgba(255,255,255,.08)}
+.adm-sec{border-radius:20px;padding:20px 20px 22px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
 .adm-sec-title{font-size:17px;font-weight:600;letter-spacing:-.01em;margin:0}
 .adm-sec-sub{margin:4px 0 16px;font-size:13px;color:var(--a-faint)}
-.adm-sec--0{background:rgba(99,132,255,.07)}
-.adm-sec--1{background:rgba(160,110,255,.07)}
-.adm-sec--2{background:rgba(70,200,180,.06)}
-.adm-sec--3{background:rgba(255,170,80,.06)}
-.adm-sec--4{background:rgba(255,110,150,.06)}
-.adm-sec--5{background:rgba(120,200,255,.06)}
 @media (max-width:640px){.adm-sec{padding:16px 14px}}
