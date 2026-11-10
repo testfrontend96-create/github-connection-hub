@@ -17,7 +17,9 @@ export const TOPIC_OPTS = (): Opt[] => list('topic', (t) => t.name).filter(([s])
 export const ENTITY_OPTS = (): Opt[] => list('entity', (e) => e.name)
 export const CATEGORY_OPTS = (): Opt[] =>
   ['Blog', 'Event Releases', 'Health & Wellness', 'Fitness & Recovery', 'Sleep', 'Longevity & Anti-Aging', 'Skin & Body Care', 'Devices', 'Nutrition', 'Cognitive Enhancement', 'Fitness', 'Regenerative', 'Testing & Monitoring'].map((c) => [c, c])
-const EVIDENCE: Opt[] = [['Strong', 'Strong'], ['Moderate', 'Moderate'], ['Emerging', 'Emerging']]
+// Backlog: evidence indicator hidden until a ranking approach is decided.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _EVIDENCE: Opt[] = [['Strong', 'Strong'], ['Moderate', 'Moderate'], ['Emerging', 'Emerging']]
 const ENTITY_TYPES: Opt[] = [['molecule', 'Molecule'], ['biomarker', 'Biomarker'], ['protocol', 'Protocol'], ['concept', 'Concept']]
 const SOCIALS = ['instagram', 'x', 'linkedin', 'youtube', 'tiktok', 'facebook', 'podcast']
 
