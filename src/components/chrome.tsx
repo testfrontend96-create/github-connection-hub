@@ -98,8 +98,6 @@ export function TopNav() {
         <div className="hub-nav-bar">
           <Link className="hub-nav-brand" to="/" aria-label="Biohacking Hub home">
             <img src={`https://id-preview--${navLogo.project_id}.lovable.app${navLogo.url}`} alt="Biohackers World" />
-            <span className="hub-nav-brand-divider" aria-hidden="true" />
-            <span className="hub-nav-lockup"><span>Biohacking</span><span>Hub</span></span>
           </Link>
           <nav className="hub-nav-links hub-nav-primary" aria-label="Biohackers World">
             {PRODUCT_NAV.map(([label, href]) => <NavLink key={href} href={href} label={label} active={href === '/'} />)}
