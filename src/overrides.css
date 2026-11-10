@@ -1643,7 +1643,7 @@ a:hover .art[data-k="episode"] img,
 .hub-masthead .content-search, .hub-masthead .content-search input, .hub-masthead form input { border-radius: 999px !important; }
 .home .sec-head h2, .home .rail-head { font-size: 24px; }
 @media (min-width: 768px) { .home .sec-head h2, .home .rail-head { font-size: 28px; } }
-.home .pillar-cats--global { margin: 36px 0 6px; padding: 22px 24px; }
+.home .pillar-cats--global { margin: 84px 0 6px; padding: 22px 24px; }
 .home .pillar-cats--global .pillar-cats-label { font-size: 18px !important; font-weight: 600; margin-bottom: 14px; color: var(--ink); }
 .home .pillar-cats--global .chip.topic-chip { font-size: 17px; padding: 11px 20px; }
 /* All Topics reads as the head of the topic sections: drop the divider under it
@@ -1659,6 +1659,19 @@ a:hover .art[data-k="episode"] img,
   transition: border-color .18s ease, background-color .18s ease;
 }
 .home .section-cta-arrow { font-size: 16px; line-height: 1; }
+/* Outline CTAs: one border colour all the way round. The base stylesheet puts a
+   coloured underline under .sec-head links, which shows up as a darker fourth
+   edge on the pill — pull it back to the outline colour at every state. */
+.home .sec-head a.section-cta,
+.home .rail-head a.section-cta,
+.home .ig-head a.section-cta { border-bottom-color: var(--line) !important; }
+.home .sec-head a.section-cta:hover,
+.home .rail-head a.section-cta:hover,
+.home .ig-head a.section-cta:hover { border-bottom-color: #C9CBD1 !important; }
+.home .on-dark .sec-head a.section-cta,
+.home .dark .sec-head a.section-cta { border-bottom-color: rgba(255,255,255,.22) !important; }
+.home .on-dark .sec-head a.section-cta:hover,
+.home .dark .sec-head a.section-cta:hover { border-bottom-color: rgba(255,255,255,.4) !important; }
 .home .rail-head .section-cta:hover, .home .sec-head .section-cta:hover, .home .ig-head .section-cta:hover { color: var(--ink); border-color: #C9CBD1; background: var(--surface); }
 .home .section-cta:hover .section-cta-arrow { transform: translateX(3px); }
 
