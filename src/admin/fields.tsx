@@ -159,12 +159,13 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
 }
 
 export function FieldInput({ f, value, onChange, folder }: { f: Field; value: any; onChange: (v: any) => void; folder: string }) {
+  const ph = f.ph || (f.type === 'lines' ? 'One item per line' : f.type === 'number' ? 'e.g. 1' : f.type === 'url' ? 'https://…' : 'Enter ' + f.label.toLowerCase())
   switch (f.type) {
-    case 'textarea': return <textarea className="adm-field" rows={4} value={value || ''} onChange={(e) => onChange(e.target.value)} />
-    case 'lines': return <textarea className="adm-field" rows={5} value={(value || []).join('\n')} onChange={(e) => onChange(e.target.value.split('\n'))} />
-    case 'number': return <input className="adm-field adm-number" type="number" inputMode="numeric" min={0} value={value ?? ''} onChange={(e) => onChange(e.target.value === '' ? undefined : Number(e.target.value))} />
+    case 'textarea': return <textarea className="adm-field" rows={4} value={value || ''} onChange={(e) => onChange(e.target.value)} placeholder={ph} />
+    case 'lines': return <textarea className="adm-field" rows={5} value={(value || []).join('\n')} onChange={(e) => onChange(e.target.value.split('\n'))} placeholder={ph} />
+    case 'number': return <input className="adm-field adm-number" type="number" inputMode="numeric" min={0} value={value ?? ''} onChange={(e) => onChange(e.target.value === '' ? undefined : Number(e.target.value))} placeholder={ph} />
     case 'date': return <DateField value={value} onChange={onChange} />
-    case 'url': return <input className="adm-field" type="url" value={value || ''} onChange={(e) => onChange(e.target.value)} placeholder="https://…" />
+    case 'url': return <input className="adm-field" type="url" value={value || ''} onChange={(e) => onChange(e.target.value)} placeholder={ph} />
     case 'bool': return <label className="adm-switch"><input type="checkbox" checked={!!value} onChange={(e) => onChange(e.target.checked)} /><span /> {value ? 'Yes' : 'No'}</label>
     case 'image': return <ImageField value={value || ''} onChange={onChange} folder={folder} />
     case 'select': return (
@@ -184,6 +185,6 @@ export function FieldInput({ f, value, onChange, folder }: { f: Field; value: an
       </div>
     )
     case 'blocks': return <Blocks value={value || []} onChange={onChange} />
-    default: return <input className="adm-field" value={value || ''} onChange={(e) => onChange(e.target.value)} />
+    default: return <input className="adm-field" value={value || ''} onChange={(e) => onChange(e.target.value)} placeholder={ph} />
   }
 }

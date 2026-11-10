@@ -245,8 +245,19 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-tip{position:fixed;z-index:200;pointer-events:none;max-width:240px;padding:6px 10px;border-radius:8px;background:#fff;color:#000;font:500 12.5px/1.35 inherit;font-family:inherit;box-shadow:0 10px 30px -10px rgba(0,0,0,.6);white-space:normal;text-align:center}
 .adm-body-add{align-self:flex-start}
 .adm-writer-photo{grid-row:span 2;display:flex;flex-direction:column}
-.adm-writer-photo>div{position:relative;flex:1;display:flex;flex-direction:column;min-height:0}
-.adm-writer-photo .adm-drop{flex:1;min-height:0;box-sizing:border-box}
-.adm-writer-photo .adm-field--sm{position:absolute;left:0;right:0;top:100%}
-.adm-writer-photo~.adm-source{margin-top:42px}
-@media (max-width:640px){.adm-writer-photo{grid-row:auto}.adm-writer-photo .adm-field--sm{position:static}.adm-writer-photo~.adm-source{margin-top:0}}
+.adm-writer-photo>div{flex:1;display:flex;flex-direction:column;min-height:0}
+.adm-writer-photo .adm-drop{flex:1 1 0;height:0;min-height:0;overflow:hidden;box-sizing:border-box;padding:10px 14px;gap:12px;flex-direction:row!important;align-items:center!important}
+.adm-writer-photo .adm-drop img,.adm-writer-photo .adm-drop-empty{width:52px;height:52px;flex:none;border-radius:999px;object-fit:cover}
+.adm-writer-photo .adm-drop-copy{flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px}
+.adm-writer-photo .adm-drop-copy>span{display:none}
+@media (max-width:640px){.adm-writer-photo{grid-row:auto}.adm-writer-photo .adm-drop{height:auto;flex:none}}
+.adm-sec{border-radius:20px;padding:20px 20px 22px;border:1px solid rgba(255,255,255,.08)}
+.adm-sec-title{font-size:17px;font-weight:600;letter-spacing:-.01em;margin:0}
+.adm-sec-sub{margin:4px 0 16px;font-size:13px;color:var(--a-faint)}
+.adm-sec--0{background:rgba(99,132,255,.07)}
+.adm-sec--1{background:rgba(160,110,255,.07)}
+.adm-sec--2{background:rgba(70,200,180,.06)}
+.adm-sec--3{background:rgba(255,170,80,.06)}
+.adm-sec--4{background:rgba(255,110,150,.06)}
+.adm-sec--5{background:rgba(120,200,255,.06)}
+@media (max-width:640px){.adm-sec{padding:16px 14px}}
