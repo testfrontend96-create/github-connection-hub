@@ -3,12 +3,12 @@ import { KINDS, type Kind } from '../lib/contentKinds'
 
 export type Opt = [value: string, label: string]
 export type Field =
-  | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines'; help?: string; wide?: boolean; required?: boolean }
-  | { k: string; label: string; type: 'select'; options: () => Opt[]; help?: string; wide?: boolean; required?: boolean }
-  | { k: string; label: string; type: 'chips'; options: () => Opt[]; custom?: boolean; help?: string; wide?: boolean; required?: boolean }
-  | { k: string; label: string; type: 'records'; sub: { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'lines' }[]; help?: string; wide?: boolean; required?: boolean }
-  | { k: string; label: string; type: 'dict'; keys: string[]; help?: string; wide?: boolean; required?: boolean }
-  | { k: string; label: string; type: 'blocks'; help?: string; wide?: boolean; required?: boolean }
+  | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines'; help?: string; wide?: boolean; required?: boolean; cls?: string }
+  | { k: string; label: string; type: 'select'; options: () => Opt[]; help?: string; wide?: boolean; required?: boolean; cls?: string }
+  | { k: string; label: string; type: 'chips'; options: () => Opt[]; custom?: boolean; help?: string; wide?: boolean; required?: boolean; cls?: string }
+  | { k: string; label: string; type: 'records'; sub: { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'lines' }[]; help?: string; wide?: boolean; required?: boolean; cls?: string }
+  | { k: string; label: string; type: 'dict'; keys: string[]; help?: string; wide?: boolean; required?: boolean; cls?: string }
+  | { k: string; label: string; type: 'blocks'; help?: string; wide?: boolean; required?: boolean; cls?: string }
 
 const list = (kind: Kind, label: (x: any) => string): Opt[] =>
   KINDS[kind].base().map((x: any) => [KINDS[kind].key(x), label(x)] as Opt).sort((a, b) => a[1].localeCompare(b[1]))
@@ -47,16 +47,16 @@ export const KIND_DEFS: KindDef[] = [
       { k: 'readTime', label: 'Reading time (minutes)', type: 'number', help: 'Leave empty to calculate it from the body.' },
       { k: 'image', label: 'Cover image', type: 'image', wide: true },
       { k: 'excerpt', label: 'Card description', type: 'textarea', wide: true, help: 'Shown on cards and in search.' },
+      { k: 'detail.blocks', label: 'Article body', type: 'blocks', wide: true },
       { k: 'topics', label: 'Hub topic', type: 'chips', options: TOPIC_OPTS, wide: true },
       { k: 'categories', label: 'Blog categories', type: 'chips', options: CATEGORY_OPTS, custom: true, wide: true },
       { k: 'entities', label: 'Knowledge Base mentions', type: 'chips', options: ENTITY_OPTS, wide: true },
+      { k: 'detail.author.image', label: 'Writer photo', type: 'image', cls: 'adm-writer-photo' },
       { k: 'detail.author.name', label: 'Writer name', type: 'text' },
       { k: 'detail.author.role', label: 'Writer role', type: 'text' },
-      { k: 'detail.author.image', label: 'Writer photo', type: 'image' },
       { k: 'sourceUrl', label: 'Original link', type: 'url' },
       { k: 'detail.intro', label: 'Opening paragraph', type: 'textarea', wide: true },
       { k: 'detail.highlights', label: 'Highlights', type: 'lines', wide: true, help: 'One highlight per line.' },
-      { k: 'detail.blocks', label: 'Article body', type: 'blocks', wide: true },
       { k: 'detail.faq', label: 'Article FAQ', type: 'records', wide: true, sub: [{ k: 'q', label: 'Question', type: 'text' }, { k: 'a', label: 'Answer', type: 'textarea' }] },
     ],
   },

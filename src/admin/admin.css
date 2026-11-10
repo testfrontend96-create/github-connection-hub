@@ -243,3 +243,7 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-block-plus{padding:0!important;line-height:0}
 .adm-block-plus svg,.adm-chip svg,.adm-pill svg,.adm-icon-btn svg{display:block;flex:none}
 .adm-tip{position:fixed;z-index:200;pointer-events:none;max-width:240px;padding:6px 10px;border-radius:8px;background:#fff;color:#000;font:500 12.5px/1.35 inherit;font-family:inherit;box-shadow:0 10px 30px -10px rgba(0,0,0,.6);white-space:normal;text-align:center}
+.adm-body-add{align-self:flex-start}
+.adm-writer-photo{grid-row:span 2}
+.adm-writer-photo .adm-drop,.adm-writer-photo>div:last-child{height:100%}
+@media (max-width:640px){.adm-writer-photo{grid-row:auto}}
