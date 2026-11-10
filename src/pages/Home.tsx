@@ -153,12 +153,12 @@ export default function Home() {
       </div></section>
 
       <div className="wrap">
-        <div className="rail-head" style={{ marginTop: 88 }}>Latest from the blog <MoreLink to="/blog">All articles</MoreLink></div>
+        <div className="rail-head" style={{ marginTop: 88 }}>Latest articles <MoreLink to="/blog">All articles</MoreLink></div>
         <div className="grid g2" style={{ marginTop: 4 }}>{latest.map((a) => <ArticleCard key={a.slug} slug={a.slug} />)}</div>
       </div>
 
       <div className="wrap">
-        <div className="rail-head" style={{ marginTop: 30 }}>Top terms — knowledge base <MoreLink to="/knowledge-base">All {E && Object.keys(E).length} entries</MoreLink></div>
+        <div className="rail-head" style={{ marginTop: 30 }}>Top terms <MoreLink to="/knowledge-base">Knowledge Base</MoreLink></div>
         <div className="explainers">
           {feat && (
             <Link className="explainer explainer--feature" to={`/knowledge/${feat.slug}`}>
