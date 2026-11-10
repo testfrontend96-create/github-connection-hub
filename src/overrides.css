@@ -296,8 +296,10 @@ a.tile:hover { border-color: rgba(255, 255, 255, .24); }
 .detail-head-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 12px; color: var(--muted-dark); font-size: .84rem; }
 .detail-head-counts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
 /* Knowledge entry bands are shallower, without changing shared title sizes. */
-#main:has(.knowledge-item-meta) > .page-head.page-head--compact { padding-top: 124px; padding-bottom: 18px; }
-#main:has(.knowledge-item-meta) > .page-head .crumbs { padding-top: 12px; margin-bottom: 12px; }
+#main:has(.knowledge-item-meta) > .page-head.page-head--compact,
+#main:has(.detail-head-counts) > .page-head.page-head--compact { padding-top: 124px; padding-bottom: 18px; }
+#main:has(.knowledge-item-meta) > .page-head .crumbs,
+#main:has(.detail-head-counts) > .page-head .crumbs { padding-top: 12px; margin-bottom: 12px; }
 .knowledge-item-meta { margin-bottom: 8px; }
 .page-head--compact .prof-hero { grid-template-columns: 148px minmax(0, 1fr); gap: 24px; align-items: center; margin-top: 0; }
 .page-head--compact .prof-photo { border-radius: 16px; }
@@ -1680,7 +1682,7 @@ a:hover .art[data-k="episode"] img,
 .home .on-dark .section-cta:hover, .home .dark .section-cta:hover { color: #fff; border-color: rgba(255,255,255,.4); background: rgba(255,255,255,.06); }
 
 /* Breadcrumbs: the page the visitor is on takes the Hub bar's periwinkle. */
-.crumbs .crumb-current { color: #B9BAFF; font-weight: 600; }
+.crumbs .crumb-current { color: #6B6CFF; font-weight: 600; opacity: 1; }
 
 /* Topic page empty-slot placeholders (UDS dashed card) */
 .topic-kinds .kind-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100%;border:0;border-radius:16px;background-color:#FBFBFC;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3e%3crect x='.75' y='.75' width='99.5%25' height='99%25' rx='15' fill='none' stroke='%23C9CBD1' stroke-width='1.5' stroke-dasharray='12 10'/%3e%3c/svg%3e");color:#9A9CA5;font-size:14px;font-weight:600}
