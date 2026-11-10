@@ -24,9 +24,6 @@
 .hub-nav.is-condensed .hub-nav-bar { max-width: 1080px; background: var(--nav-glass-condensed); padding-top: 8px; padding-bottom: 8px; min-height: 50px; }
 .hub-nav-brand { display: flex; gap: 12px; align-items: center; text-decoration: none; }
 .hub-nav-brand img { height: 28px; width: auto; flex-shrink: 0; }
-.hub-nav-brand-divider { width: 1px; height: 24px; background: var(--nav-border); }
-.hub-nav-lockup { display: flex; flex-direction: column; font-size: 12px; font-weight: 500; line-height: 1.15; }
-.hub-nav-lockup span:last-child { font-size: 11px; color: var(--nav-muted); }
 .hub-nav-links { display: flex; justify-content: center; gap: 8px; min-width: 0; }
 .hub-nav-links a { position: relative; padding: 8px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; line-height: 16px; white-space: nowrap; color: var(--nav-muted); text-decoration: none; transition: color .3s ease, background .3s ease; }
 .hub-nav-links a:hover { color: var(--nav-text); }
@@ -73,8 +70,8 @@
   .hub-nav-menu a:hover, .hub-nav-menu a[aria-current] { background: var(--nav-highlight); color: var(--nav-text); }
   .hub-nav-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--nav-text); }
 }
-@media (min-width: 901px) and (max-width: 1190px) { .hub-nav-lockup, .hub-nav-brand-divider { display: none; } .hub-nav-links { gap: 0; } .hub-nav-links a { padding: 8px 9px; } .hub-nav-bar { gap: 10px; } }
-@media (max-width: 600px) { .hub-nav-lockup, .hub-nav-brand-divider { display: none; } .hub-nav-brand img { height: 26px; } .hub-nav-bar { padding: 7px 7px 7px 12px; min-height: 48px; } .hub-nav-cta { padding: 0 10px; } .hub-nav-toggle { justify-self: end; } }
+@media (min-width: 901px) and (max-width: 1190px) { .hub-nav-links { gap: 0; } .hub-nav-links a { padding: 8px 9px; } .hub-nav-bar { gap: 10px; } }
+@media (max-width: 600px) { .hub-nav-brand img { height: 26px; } .hub-nav-bar { padding: 7px 7px 7px 12px; min-height: 48px; } .hub-nav-cta { padding: 0 10px; } .hub-nav-toggle { justify-self: end; } }
 @media (max-width: 420px) { .hub-nav-bar { gap: 8px; } .hub-nav-current { display: none; } .hub-nav-toggle { width: 32px; padding: 0; } }
 @keyframes hub-menu-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) { .hub-nav *, .hub-nav.is-condensed .hub-nav-bar { animation: none; transition: none; } }
