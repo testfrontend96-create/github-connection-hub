@@ -1,6 +1,7 @@
 // Biohacking Hub administration — layout, hierarchy and access rules follow the
 // Sales (Invited Only) admin: Google sign-in, company-domain admins, email overrides.
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { createPortal } from 'react-dom'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from '../integrations/supabase/client'
 import { lovable } from '../integrations/lovable/index'
@@ -404,6 +405,8 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
   const [v, setV] = useState<any>(initial)
   const [slug, setSlug] = useState<string>(_slug || '')
   const [slugTouched, setSlugTouched] = useState(false)
+  const [example, setExample] = useState<string | null>(null)
+  useEffect(() => { if (!example) return; const k = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopPropagation(); setExample(null) } }; addEventListener('keydown', k, true); return () => removeEventListener('keydown', k, true) }, [example])
   const [err, setErr] = useState('')
   const [busy, setBusy] = useState(false)
   const titleKey = def.fields[0].k
@@ -476,6 +479,8 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
     </Modal>
   )
 }
+
+const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer and source': 'writer', 'Highlights and FAQ': 'highlights' }
 
 /* ---------------- homepage ---------------- */
 
