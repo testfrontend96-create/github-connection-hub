@@ -142,7 +142,7 @@ a.tile:hover { border-color: rgba(255, 255, 255, .24); }
 /* Compact editorial masthead and content browsing. */
 .hub-masthead { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 4px 0 18px; }
 .hub-masthead h1 { margin: 0; font-size: 1.8rem; font-weight: 800; line-height: 1.15; letter-spacing: 0; color: var(--white); }
-.hub-masthead form { width: 340px; max-width: 100%; }
+.hub-masthead form { width: 300px; max-width: 100%; }
 .content-search { height: 44px; width: 100%; background: var(--white); border-radius: 8px; }
 .page-head--compact { padding: 24px 0 26px; }
 .page-head--compact h1.display { font-size: 2.5rem; line-height: 1.1; letter-spacing: 0; }

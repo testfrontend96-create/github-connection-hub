@@ -54,8 +54,8 @@ function Tile({ item, cls }: { item: any; cls: string }) {
       {item.kick && <div className="tile-kick"><span className="kick" data-k={item.k}>{item.kick}</span></div>}
       <h3>{item.t}</h3><p>{clip(item.d, 400)}</p>
       {item.k === 'article'
-        ? <div className="meta"><span>{pretty(item.date)} · {item.meta}</span></div>
-        : <div className="meta"><b>{item.guest || item.meta}</b><span>{item.duration ? `${item.duration} · ` : ''}{pretty(item.date)}</span></div>}
+        ? <div className="meta"><span>{item.meta}</span></div>
+        : <div className="meta"><b>{item.guest || item.meta}</b><span>{item.duration || ''}</span></div>}
       <Motif kind={item.k} />
     </Link>
   )
@@ -132,7 +132,7 @@ export default function Home() {
         <div className="bento">
           <Link className={'tile tile--lead' + (lead.img ? ' tile--photo' : '')} data-k={lead.k} to={lead.u}>
             {lead.img && <span className="tile-photo"><img src={lead.img} alt="" loading="lazy" decoding="async" /></span>}
-            <span className="kick" data-k={lead.k}>{lead.kick ? `${lead.kick} · ` : ''}{pretty(lead.date)}</span>
+            <span className="kick" data-k={lead.k}>{lead.kick}</span>
             <h2>{lead.t}</h2><p>{clip(lead.d, 180)}</p>
             <div className="meta"><b>{lead.meta}</b></div>
           </Link>
