@@ -198,7 +198,7 @@ function related(a: any) {
     .sort((x, y) => y[0] - x[0] || (x[1].date < y[1].date ? 1 : -1)).slice(0, 3).map(([, b]) => b)
 }
 
-import ExampleHighlight from '@/components/ExampleHighlight'
+import ExampleHighlight from '../components/ExampleHighlight'
 
 export default function Article() {
   const { slug } = useParams()
