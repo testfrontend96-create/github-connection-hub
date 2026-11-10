@@ -65,7 +65,14 @@ export default function Topic() {
               <div><p className="eyebrow">{HEADS[kind]}</p><h3 className="display">{KIND_LABEL[kind]}s</h3></div>
               <span className="count-pill" style={{ background: 'rgba(0,0,0,.05)', color: 'var(--muted)' }}>{byKind[kind].length} entries</span>
             </div>
-            <div className="grid g3">{[...byKind[kind]].sort((a, b) => E[a].name.localeCompare(E[b].name)).map((s) => <EntityCard key={s} slug={s} />)}</div>
+            <div className="grid g3">{[...byKind[kind]].sort((a, b) => E[a].name.localeCompare(E[b].name)).map((s) => <EntityCard key={s} slug={s} />)}
+              {Array.from({ length: Math.max(0, 3 - byKind[kind].length) }, (_, i) => (
+                <div key={`ph${i}`} aria-hidden="true" className={`kind-ph${(byKind[kind].length + i) % 2 === 0 && byKind[kind].length + i >= 2 ? ' kind-ph--tab-hide' : ''}`}>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M21 8v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8" /><path d="M1 3h22v5H1z" /><path d="M10 12h4" /></svg>
+                  <span>More coming soon</span>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div></section>
