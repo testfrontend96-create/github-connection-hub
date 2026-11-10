@@ -1681,3 +1681,8 @@ a:hover .art[data-k="episode"] img,
 
 /* Breadcrumbs: the page the visitor is on takes the Hub bar's periwinkle. */
 .crumbs .crumb-current { color: #B9BAFF; font-weight: 600; }
+
+/* Topic page empty-slot placeholders (UDS dashed card) */
+.topic-kinds .kind-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:100%;border:1.5px dashed #C9CBD1;border-radius:16px;background:var(--surface);color:#9A9CA5;font-size:14px;font-weight:600}
+@media(max-width:960px){.topic-kinds .kind-ph--tab-hide{display:none}}
+@media(max-width:640px){.topic-kinds .kind-ph{display:none}}
