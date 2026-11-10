@@ -456,7 +456,7 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
           const groups: { g?: { title: string; sub: string }; fs: any[] }[] = []
           def.fields.forEach((f: any) => { if (f.group || !groups.length) groups.push({ g: f.group, fs: [] }); groups[groups.length - 1].fs.push(f) })
           return groups.map((gr, i) => gr.g ? (
-            <section key={i} className={'adm-sec adm-wide adm-sec--' + (i % 6)}>
+            <section key={i} className="adm-sec adm-wide">
               <h3 className="adm-sec-title">{gr.g.title}</h3>
               <p className="adm-sec-sub">{gr.g.sub}</p>
               <div className="adm-form">{gr.fs.map(cell)}</div>
