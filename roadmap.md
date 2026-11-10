@@ -11,3 +11,5 @@
 - [x] Give the Top terms "Knowledge base" link the topic outline CTA, lowercase "base".
 - [x] Halve the gap between the hero and Latest articles.
 - [x] Pull All Topics tight against the topic sections below it.
+- [x] Give every section outline CTA one uniform border colour, no darker bottom edge.
+- [x] Add more breathing room between Top terms and All Topics.
