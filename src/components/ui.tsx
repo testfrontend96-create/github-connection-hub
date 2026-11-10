@@ -1,7 +1,7 @@
 // Shared presentational primitives, ported from build.py render helpers so the
 // existing hub.css classes style them unchanged.
 import { useState } from 'react'
-import { Link } , useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Any, E, T, A, EP, KIND_LABEL, clip, pretty } from '../lib/data'
 import { IconArrow } from './icons'
 import AUTHORS from '../data/article-authors.json'
@@ -125,7 +125,7 @@ export function PersonPhoto({ b, cls, eager = false }: { b: Any; cls: string; ea
 // falling back to the page's own hierarchy when it was opened directly.
 const TRAIL_KEY = 'hub:trail'
 const LABEL_KEY = 'hub:crumb-labels'
-const DIR_LABELS: Record<string, string> = { '/blog': 'Blog', '/podcast': 'Podcast', '/knowledge-base': 'Knowledge Base', '/biohackers': 'Top Biohackers', '/faq': 'FAQ', '/topics': 'Topics' }
+const DIR_LABELS: Record<string, string> = { '/blog': 'Blog', '/podcast': 'Podcast', '/knowledge-base': 'Knowledge Base', '/biohackers': 'Top Biohackers', '/faq': 'FAQ' }
 const readJSON = <T,>(k: string, d: T): T => { try { return JSON.parse(sessionStorage.getItem(k) || '') as T } catch { return d } }
 export function recordTrail(path: string) {
   if (typeof sessionStorage === 'undefined') return
