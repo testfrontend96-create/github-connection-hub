@@ -198,6 +198,8 @@ function related(a: any) {
     .sort((x, y) => y[0] - x[0] || (x[1].date < y[1].date ? 1 : -1)).slice(0, 3).map(([, b]) => b)
 }
 
+import ExampleHighlight from '../components/ExampleHighlight'
+
 export default function Article() {
   const { slug } = useParams()
   const topRef = useRef<HTMLElement>(null)
@@ -288,6 +290,7 @@ export default function Article() {
         <div className="rail-head art-related-head">Related articles</div>
         <div className="grid g3 art-related">{related(a).map((b) => <ArticleCard key={b.slug} slug={b.slug} />)}</div>
       </div></section>
+      <ExampleHighlight example={new URLSearchParams(location.search).get('example')} />
     </>
   )
 }

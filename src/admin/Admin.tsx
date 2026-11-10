@@ -1,6 +1,7 @@
 // Biohacking Hub administration — layout, hierarchy and access rules follow the
 // Sales (Invited Only) admin: Google sign-in, company-domain admins, email overrides.
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { createPortal } from 'react-dom'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from '../integrations/supabase/client'
 import { lovable } from '../integrations/lovable/index'
@@ -404,6 +405,8 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
   const [v, setV] = useState<any>(initial)
   const [slug, setSlug] = useState<string>(_slug || '')
   const [slugTouched, setSlugTouched] = useState(false)
+  const [example, setExample] = useState<string | null>(null)
+  useEffect(() => { if (!example) return; const k = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopPropagation(); setExample(null) } }; addEventListener('keydown', k, true); return () => removeEventListener('keydown', k, true) }, [example])
   const [err, setErr] = useState('')
   const [busy, setBusy] = useState(false)
   const titleKey = def.fields[0].k
@@ -457,16 +460,27 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
           def.fields.forEach((f: any) => { if (f.group || !groups.length) groups.push({ g: f.group, fs: [] }); groups[groups.length - 1].fs.push(f) })
           return groups.map((gr, i) => gr.g ? (
             <section key={i} className="adm-sec adm-wide">
-              <h3 className="adm-sec-title">{gr.g.title}</h3>
-              <p className="adm-sec-sub">{gr.g.sub}</p>
+              <div className="adm-sec-head"><div>
+                <h3 className="adm-sec-title">{gr.g.title}</h3>
+                <p className="adm-sec-sub">{gr.g.sub}</p>
+              </div>{def.kind === 'article' && EX_KEY[gr.g.title] && (
+                <button type="button" className="adm-icon-btn" data-tip="See where this shows on a real article" aria-label="See an example" onClick={() => setExample(EX_KEY[gr.g.title])}>{I.eye}</button>
+              )}</div>
               <div className="adm-form">{gr.fs.map(cell)}</div>
             </section>
           ) : gr.fs.map(cell))
         })()}
       </div>
+      {example && createPortal(
+        <div className="adm adm-example" role="dialog" aria-label="Example article">
+          <iframe src={`/articles/15-longevity-biomarkers-everyone-should-track?example=${example}`} title="Example article" />
+          <button type="button" className="adm-icon-btn adm-example-x" data-tip="Close example" aria-label="Close example" onClick={() => setExample(null)}>{I.x}</button>
+        </div>, document.body)}
     </Modal>
   )
 }
+
+const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer and source': 'writer', 'Highlights and FAQ': 'highlights' }
 
 /* ---------------- homepage ---------------- */
 
