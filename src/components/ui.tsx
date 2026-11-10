@@ -1,7 +1,7 @@
 // Shared presentational primitives, ported from build.py render helpers so the
 // existing hub.css classes style them unchanged.
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Any, E, T, A, EP, KIND_LABEL, clip, pretty } from '../lib/data'
 import { IconArrow } from './icons'
 import AUTHORS from '../data/article-authors.json'
@@ -121,13 +121,40 @@ export function PersonPhoto({ b, cls, eager = false }: { b: Any; cls: string; ea
   return <span className={`${cls} ${cls}--none`} aria-hidden="true"><b>{initials(b.name)}</b></span>
 }
 
+// Breadcrumbs follow the visitor's actual path through the Hub (session trail),
+// falling back to the page's own hierarchy when it was opened directly.
+const TRAIL_KEY = 'hub:trail'
+const LABEL_KEY = 'hub:crumb-labels'
+const DIR_LABELS: Record<string, string> = { '/blog': 'Blog', '/podcast': 'Podcast', '/knowledge-base': 'Knowledge Base', '/biohackers': 'Top Biohackers', '/faq': 'FAQ' }
+const readJSON = <T,>(k: string, d: T): T => { try { return JSON.parse(sessionStorage.getItem(k) || '') as T } catch { return d } }
+export function recordTrail(path: string) {
+  if (typeof sessionStorage === 'undefined') return
+  if (path === '/') { sessionStorage.setItem(TRAIL_KEY, '[]'); return }
+  let trail = readJSON<string[]>(TRAIL_KEY, [])
+  const i = trail.indexOf(path)
+  trail = i >= 0 ? trail.slice(0, i + 1) : [...trail, path].slice(-6)
+  sessionStorage.setItem(TRAIL_KEY, JSON.stringify(trail))
+}
+
 export function Crumbs({ items }: { items: [string, string | null][] }) {
+  const { pathname } = useLocation()
+  const current = items[items.length - 1]
+  const labels = readJSON<Record<string, string>>(LABEL_KEY, {})
+  if (typeof sessionStorage !== 'undefined' && current && labels[pathname] !== current[0]) {
+    labels[pathname] = current[0]; sessionStorage.setItem(LABEL_KEY, JSON.stringify(labels))
+  }
+  const trail = readJSON<string[]>(TRAIL_KEY, [])
+  const idx = trail.indexOf(pathname)
+  const prior = (idx >= 0 ? trail.slice(0, idx) : trail).filter(p => p !== '/' && (labels[p] || DIR_LABELS[p]))
+  const list: [string, string | null][] = prior.length
+    ? [['Hub', '/'], ...prior.map(p => [labels[p] || DIR_LABELS[p], p] as [string, string]), [current[0], null]]
+    : items
   return (
-    <nav className="crumbs">
-      {items.map(([label, href], i) => (
+    <nav className="crumbs" aria-label="Breadcrumb">
+      {list.map(([label, href], i) => (
         <span key={i}>
-          {href ? <Link to={href}>{label}</Link> : label}
-          {i < items.length - 1 && <span>/</span>}
+          {href ? <Link to={href}>{label}</Link> : <span className="crumb-current" aria-current="page">{label}</span>}
+          {i < list.length - 1 && <span>/</span>}
         </span>
       ))}
     </nav>

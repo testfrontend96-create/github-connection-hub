@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, ReactNode } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { PRODUCT_NAV, SUB_CHANNELS, BRAND_URL, ACADEMY_URL, TICKETS_URL, topics } from '../lib/data'
 import { TnArrow, IconClose, IconSearch } from './icons'
-import { Crumbs } from './ui'
+import { Crumbs, recordTrail } from './ui'
 import { searchRoute } from '../lib/searchRoute'
 import { HubSearch } from './HubSearch'
 import navLogo from '../assets/sales-nav-logo.png.asset.json'
@@ -17,6 +17,7 @@ const NavLink = ({ href, label, active }: { href: string; label: string; active?
 
 export function TopNav() {
   const { pathname } = useLocation()
+  useEffect(() => { recordTrail(pathname) }, [pathname])
   const [open, setOpen] = useState(false)
   const [condensed, setCondensed] = useState(false)
   const [subOpen, setSubOpen] = useState(false)
