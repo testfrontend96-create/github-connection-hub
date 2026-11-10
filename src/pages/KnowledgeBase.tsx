@@ -92,7 +92,6 @@ export default function KnowledgeBase() {
             <Link key={e.slug} className="erow" to={`/knowledge/${e.slug}`}>
               <div className="erow-main"><div className="erow-name">{e.name}</div><div className="erow-sum">{clip(e.summary, 150)}</div></div>
               <div className="erow-side">
-                <span className="evidence evidence--tip" data-lvl={e.evidence} data-tip="Evidence" aria-label={`Evidence: ${e.evidence}`} style={{ color: 'var(--muted)' }}>{e.evidence}</span>
                 <Tag kind={e.type} />
               </div>
             </Link>

@@ -4,7 +4,7 @@ import { MoreLink, SearchField } from '../components/controls'
 import { HubSearch } from '../components/HubSearch'
 import { useHueTracking } from '../components/chrome'
 import { guideUrl } from '../lib/browsing'
-import { Story, Motif, ArticleCard, EvMeter, Tag, PersonPhoto } from '../components/ui'
+import { Story, Motif, ArticleCard, Tag, PersonPhoto } from '../components/ui'
 import { SocLogo } from '../components/social'
 import { FaqList } from '../components/FaqList'
 import { IconArrow } from '../components/icons'
@@ -163,12 +163,12 @@ export default function Home() {
           {feat && (
             <Link className="explainer explainer--feature" to={`/knowledge/${feat.slug}`}>
               <span className="kick" data-k="entity">Term of the month</span>
-              <span className="term"><span className="term-name">{feat.name}</span><Tag kind={feat.type} /></span><p>{feat.summary}</p><EvMeter level={feat.evidence} />
+              <span className="term"><span className="term-name">{feat.name}</span><Tag kind={feat.type} /></span><p>{feat.summary}</p>
             </Link>
           )}
           {moreTerms.map((e) => (
             <Link key={e.slug} className="explainer" to={`/knowledge/${e.slug}`}>
-              <span className="term"><span className="term-name">{e.name}</span><Tag kind={e.type} /></span><p>{clip(e.summary, 105)}</p><EvMeter level={e.evidence} />
+              <span className="term"><span className="term-name">{e.name}</span><Tag kind={e.type} /></span><p>{clip(e.summary, 105)}</p>
             </Link>
           ))}
         </div>

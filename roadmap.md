@@ -13,3 +13,4 @@
 - [x] Pull All Topics tight against the topic sections below it.
 - [x] Give every section outline CTA one uniform border colour, no darker bottom edge.
 - [x] Add more breathing room between Top terms and All Topics.
+- [ ] Backlog: replace the evidence indicator (data kept in entries, hidden on site and admin)
