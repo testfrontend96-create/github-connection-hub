@@ -54,7 +54,7 @@ export const KIND_DEFS: KindDef[] = [
       { k: 'topics', label: 'Hub topic', type: 'chips', options: TOPIC_OPTS, wide: true, group: { title: 'Tags', sub: 'Where the article shows up across the Hub and the Blog filters.' } },
       { k: 'categories', label: 'Blog categories', type: 'chips', options: CATEGORY_OPTS, custom: true, wide: true },
       { k: 'entities', label: 'Knowledge Base mentions', type: 'chips', options: ENTITY_OPTS, wide: true },
-      { k: 'detail.author.image', label: 'Writer photo', type: 'image', cls: 'adm-writer-photo', group: { title: 'Writer and source', sub: 'Who wrote it and how readers can reach them.' } },
+      { k: 'detail.author.image', label: 'Writer photo', type: 'image', cls: 'adm-writer-photo', group: { title: 'Writer', sub: 'Who wrote it and how readers can reach them.' } },
       { k: 'detail.author.name', label: 'Writer name', type: 'text', ph: 'e.g. Jane Smith' },
       { k: 'detail.author.role', label: 'Writer role', type: 'text', ph: 'e.g. Health writer' },
       { k: 'detail.author.email', label: 'Writer email', type: 'text', ph: 'e.g. jane@biohackers.world' },
