@@ -404,3 +404,4 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-pop-list .adm-mpill{flex:none}
 .adm-card > .adm-more{margin:14px auto 0;display:flex}
 .adm-pop{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.adm-pop>div{min-width:0}.adm-pop.adm-pop--one{grid-template-columns:minmax(0,1fr)}@media (max-width:900px){.adm-pop{grid-template-columns:minmax(0,1fr)}}
+.adm-slots{grid-template-columns:repeat(3,minmax(0,1fr))}.adm-slot{min-width:0}.adm-slot-title{overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}@media (max-width:900px){.adm-slots{grid-template-columns:minmax(0,1fr)}}
