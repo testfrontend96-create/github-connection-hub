@@ -14,7 +14,7 @@ import { FieldInput, Modal } from './fields'
 import { I } from './icons'
 import { DraftProvider, useDrafts } from './Drafts'
 import { overlayRows } from './draftState'
-import { History } from './History'
+import { History, changeTypes } from './History'
 import { resolveHero, startHereValue, type StartHere } from '../lib/homeSelection'
 import './admin.css'
 
@@ -184,7 +184,7 @@ function Dashboard({ session }: { session: Session }) {
   )
 }
 
-const KB_TABS: [Tab, string][] = [['entity', 'Entries'], ['howto', 'How To'], ['topic', 'Topics'], ['problem', 'Problems']]
+const KB_TABS: [Tab, string][] = [['entity', 'Knowledge base'], ['howto', 'How To'], ['topic', 'Topics'], ['problem', 'Problems']]
 const TABS: [Tab, string][] = [
   ['home', 'Homepage'], ['article', 'Blog'], ['episode', 'Podcast'], ['entity', 'Knowledge Base'],
   ['biohacker', 'Top Biohackers'], ['faq', 'FAQ'], ['event', 'Events'], ['social', 'Social Media'],
@@ -233,10 +233,10 @@ function KbTab({ tab, setTab }: { tab: Tab; setTab: (t: Tab) => void }) {
   const cur = KB_TABS.find(([k]) => k === tab)
   return (
     <span className="adm-star-wrap adm-kb-tab" ref={ref}>
-      <button type="button" className={cur ? 'adm-pill is-on' : 'adm-pill'} aria-expanded={open} onClick={() => setOpen(!open)}>Knowledge Base{cur ? ` · ${cur[1]}` : ''} {I.down}</button>
+      <button type="button" className={cur ? 'adm-pill is-on' : 'adm-pill'} aria-expanded={open} onClick={() => setOpen(!open)}>Knowledge Base{cur && cur[0] !== 'entity' ? ` · ${cur[1]}` : ''} {I.down}</button>
       {open && (
         <span className="adm-menu">
-          {KB_TABS.map(([k, l]) => <button key={k} type="button" onClick={() => { setTab(k); setOpen(false) }}>{tab === k ? I.check : <i style={{ width: 16 }} />} {l}</button>)}
+          {KB_TABS.map(([k, l]) => <button key={k} type="button" className={tab === k ? 'is-on' : ''} onClick={() => { setTab(k); setOpen(false) }}>{l}</button>)}
         </span>
       )}
     </span>
@@ -320,6 +320,40 @@ function RowMeta({ def, x, updated, views }: { def: KindDef; x: any; updated?: s
   )
 }
 
+let adminNames: Promise<Record<string, string>> | null = null
+const getNames = () => adminNames ||= Promise.resolve(supabase.rpc('list_admins')).then(({ data }) => Object.fromEntries((data || []).map((a: any) => [String(a.email).toLowerCase(), a.name || ''])))
+const getAt = (o: any, path: string) => path.split('.').reduce((v, k) => v?.[k], o)
+function changedParts(def: KindDef, h: any): string[] {
+  if (!h.before && h.after) return ['Created']
+  if (h.before && !h.after) return ['Removed']
+  const a = h.before?.data || {}, b = h.after?.data || {}
+  const out: string[] = []
+  if (h.before?.visible !== h.after?.visible) out.push(h.after?.visible ? 'Shown on site' : 'Hidden from site')
+  if (h.before?.deleted !== h.after?.deleted) out.push(h.after?.deleted ? 'Removed' : 'Restored')
+  for (const f of def.fields) if (JSON.stringify(getAt(a, f.k) ?? null) !== JSON.stringify(getAt(b, f.k) ?? null)) out.push(f.label)
+  return out.length ? out : changeTypes(h)
+}
+function RowHistory({ def, slug }: { def: KindDef; slug: string }) {
+  const [rows, setRows] = useState<any[] | null>(null)
+  const [names, setNames] = useState<Record<string, string>>({})
+  useEffect(() => {
+    supabase.from('activity_log').select('*').eq('kind', def.kind).eq('slug', slug).order('created_at', { ascending: false }).limit(3).then(({ data }) => setRows(data || []))
+    getNames().then(setNames).catch(() => {})
+  }, [def.kind, slug])
+  return (
+    <div className="adm-xhist">
+      <div className="adm-xhist-head"><span>Recent changes</span><button type="button" className="adm-xlink" disabled data-tip="Full history page for this item is coming soon">View all history {I.ext}</button></div>
+      {!rows ? <p className="adm-xhist-empty">Loading…</p> : !rows.length ? <p className="adm-xhist-empty">No changes published yet.</p> : (
+        <ul>{rows.map((h) => {
+          const mail = h.actor_email || ''
+          const who = names[mail.toLowerCase()] || mail.split('@')[0] || 'System'
+          return <li key={h.id}><b>{who}</b><span className="adm-xhist-mail">{mail}</span><span className="adm-xhist-date">{shortDate(h.created_at)}</span><em>{changedParts(def, h).join(', ')}</em></li>
+        })}</ul>
+      )}
+    </div>
+  )
+}
+
 function firstSentences(t: string, n = 2) {
   const parts = (t || '').replace(/\s+/g, ' ').trim().match(/[^.!?]+[.!?]+/g)
   return parts ? parts.slice(0, n).join(' ').trim() : (t || '').slice(0, 220)
@@ -346,6 +380,7 @@ function RowDetails({ def, x }: { def: KindDef; x: any }) {
         {fact('Status', x._visible ? 'Shown on the site' : 'Hidden')}
         {fact('Web address', def.url ? def.url(x._slug) : x._slug)}
       </div>
+      <RowHistory def={def} slug={x._slug} />
       {x.sourceUrl && <a className="adm-xlink" href={x.sourceUrl} target="_blank" rel="noreferrer">Original source {I.ext}</a>}
     </div>
   )
