@@ -3,7 +3,7 @@ import { KINDS, type Kind } from '../lib/contentKinds'
 
 export type Opt = [value: string, label: string]
 export type Field =
-  | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines'; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
+  | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines' | 'list'; min?: number; add?: string; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
   | { k: string; label: string; type: 'select'; options: () => Opt[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
   | { k: string; label: string; type: 'chips'; options: () => Opt[]; custom?: boolean; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
   | { k: string; label: string; type: 'records'; sub: { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'lines' }[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
@@ -49,17 +49,17 @@ export const KIND_DEFS: KindDef[] = [
       { k: 'image', label: 'Cover image', type: 'image', wide: true, group: { title: 'Cover and summary', sub: 'What readers see on cards, in search and at the top of the article.' } },
       { k: 'excerpt', label: 'Card description', type: 'textarea', wide: true, ph: 'One or two sentences that sum up the article.', help: 'Shown on cards and in search.' },
       { k: 'detail.intro', label: 'Opening paragraph', type: 'textarea', wide: true, ph: 'The first paragraph readers see, right under the subscribe box.' },
+      { k: 'detail.highlights', label: 'Key takeaways', type: 'list', min: 3, add: 'Add highlight', wide: true, ph: 'A key takeaway, in one sentence', group: { title: 'Highlights', sub: 'Short bullet points shown in the Highlights box near the top of the article.' } },
       { k: 'detail.blocks', label: 'Article body', type: 'blocks', wide: true, group: { title: 'Article body', sub: 'Build the article section by section: text, headings, images, lists and more.' } },
       { k: 'topics', label: 'Hub topic', type: 'chips', options: TOPIC_OPTS, wide: true, group: { title: 'Tags', sub: 'Where the article shows up across the Hub and the Blog filters.' } },
       { k: 'categories', label: 'Blog categories', type: 'chips', options: CATEGORY_OPTS, custom: true, wide: true },
       { k: 'entities', label: 'Knowledge Base mentions', type: 'chips', options: ENTITY_OPTS, wide: true },
-      { k: 'detail.author.image', label: 'Writer photo', type: 'image', cls: 'adm-writer-photo', group: { title: 'Writer and source', sub: 'Who wrote it and where it was first published.' } },
+      { k: 'detail.author.image', label: 'Writer photo', type: 'image', cls: 'adm-writer-photo', group: { title: 'Writer and source', sub: 'Who wrote it and how readers can reach them.' } },
       { k: 'detail.author.name', label: 'Writer name', type: 'text', ph: 'e.g. Jane Smith' },
       { k: 'detail.author.role', label: 'Writer role', type: 'text', ph: 'e.g. Health writer' },
       { k: 'detail.author.email', label: 'Writer email', type: 'text', ph: 'e.g. jane@biohackers.world' },
-      { k: 'sourceUrl', label: 'Original link', type: 'url', wide: true, cls: 'adm-wide adm-source', ph: 'https://… where the article first appeared' },
-      { k: 'detail.highlights', label: 'Highlights', type: 'lines', wide: true, ph: 'One key takeaway per line', group: { title: 'Highlights and FAQ', sub: 'Key takeaways and common questions shown in the article.' }, help: 'One highlight per line.' },
-      { k: 'detail.faq', label: 'Article FAQ', type: 'records', wide: true, sub: [{ k: 'q', label: 'Question', type: 'text' }, { k: 'a', label: 'Answer', type: 'textarea' }] },
+      { k: 'sources', label: 'Source links', type: 'list', min: 1, add: 'Add source', wide: true, ph: 'https://… where the article first appeared', group: { title: 'Sources', sub: 'Where the article was first published. The first link is used as the original.' } },
+      { k: 'detail.faq', label: 'Article FAQ', type: 'records', wide: true, group: { title: 'FAQ', sub: 'Common questions and answers shown at the end of the article.' }, sub: [{ k: 'q', label: 'Question', type: 'text' }, { k: 'a', label: 'Answer', type: 'textarea' }] },
     ],
   },
   {

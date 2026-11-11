@@ -580,7 +580,7 @@ function wordsIn(d: any) {
 
 function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: KindDef; item: any; existing: Set<string>; onClose: () => void; onSave: (slug: string, data: any) => Promise<void>; onRestore?: () => void }) {
   const { _slug, _origin, _visible, _deleted, _new, ...initial } = item
-  const [v, setV] = useState<any>(initial)
+  const [v, setV] = useState<any>(() => def.kind === 'article' && !initial.sources && initial.sourceUrl ? { ...initial, sources: [initial.sourceUrl] } : initial)
   const [slug, setSlug] = useState<string>(_slug || '')
   const [slugTouched, setSlugTouched] = useState(false)
   const [example, setExample] = useState<string | null>(null)
@@ -597,8 +597,9 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
     if (!finalSlug) return setErr('Please add a web address (slug).')
     if (_new && existing.has(finalSlug)) return setErr('Another item already uses this web address — change the slug.')
     let data = { ...v }
-    for (const f of def.fields) if (f.type === 'lines') { const x = getPath(data, f.k); if (Array.isArray(x)) data = setPath(data, f.k, x.map((s: string) => s.trim()).filter(Boolean)) }
+    for (const f of def.fields) if (f.type === 'lines' || f.type === 'list') { const x = getPath(data, f.k); if (Array.isArray(x)) data = setPath(data, f.k, x.map((s: string) => s.trim()).filter(Boolean)) }
     if (def.kind === 'article') {
+      data.sourceUrl = data.sources?.[0] || undefined
       if (!data.readTime) data.readTime = Math.max(1, Math.round(wordsIn(data.detail) / 220))
       if (!data.categories?.length) data.categories = ['Blog']
       if (!data.excerpt && data.detail?.intro) data.excerpt = data.detail.intro.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').slice(0, 200)
@@ -616,7 +617,7 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
         {!err && <span className="adm-grow adm-hint">{_origin === 'edited' ? 'This item has edits saved over the original.' : _new ? 'New items stay unpublished until Save changes.' : 'Apply edits, then publish with Save changes.'}</span>}
         {onRestore && <button type="button" className="adm-pill" onClick={onRestore}>{I.restore} Restore original</button>}
         <button type="button" className="adm-pill" onClick={onClose}>Cancel</button>
-        <button type="button" className="adm-btn" onClick={save} disabled={busy}>{busy ? 'Applying…' : 'Apply edits'}</button>
+        <button type="button" className="adm-btn" onClick={save} disabled={busy}>{busy ? 'Applying…' : _new ? 'Create' : 'Apply edits'}</button>
       </>}>
       <div className="adm-form">
         {_new && (
@@ -658,7 +659,7 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
   )
 }
 
-const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer and source': 'writer', 'Highlights and FAQ': 'highlights' }
+const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer and source': 'writer', 'Highlights': 'highlights', 'Sources': 'writer', 'FAQ': 'highlights' }
 
 /* ---------------- homepage ---------------- */
 

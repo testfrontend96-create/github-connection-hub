@@ -385,3 +385,9 @@ textarea.adm-field{resize:vertical;line-height:1.5}
   .adm-modal--confirm .adm-modal-foot{padding:20px;flex-wrap:nowrap}
   .adm-modal--confirm .adm-modal-foot button{flex:1}
 }
+
+.adm-list{display:flex;flex-direction:column;gap:8px}
+.adm-list-row{display:flex;align-items:center;gap:8px}
+.adm-list-row .adm-field{flex:1;min-width:0}
+.adm-list-n{width:22px;flex:none;text-align:center;font-size:12px;font-weight:600;opacity:.55}
+.adm-list>.adm-pill{margin-top:4px}
