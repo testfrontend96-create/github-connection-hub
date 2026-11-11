@@ -4,6 +4,8 @@ const s = (d: React.ReactNode, fill = 'none') => (
 )
 export const I = {
   x: s(<path d="M18 6 6 18M6 6l12 12" />),
+  globe: s(<><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" /></>),
+  user: s(<><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" /></>),
   plus: s(<path d="M12 5v14M5 12h14" />),
   check: s(<path d="m5 12 5 5L20 7" />),
   up: s(<path d="m18 15-6-6-6 6" />),
