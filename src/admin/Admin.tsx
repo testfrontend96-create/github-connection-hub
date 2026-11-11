@@ -635,15 +635,15 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
               {f.help && <small className="adm-help">{f.help}</small>}
             </div>
           )
-          const groups: { g?: { title: string; sub: string }; fs: any[] }[] = []
+          const groups: { g?: { title: string; sub: string; ex?: string }; fs: any[] }[] = []
           def.fields.forEach((f: any) => { if (f.group || !groups.length) groups.push({ g: f.group, fs: [] }); groups[groups.length - 1].fs.push(f) })
           return groups.map((gr, i) => gr.g ? (
             <section key={i} className="adm-sec adm-wide">
               <div className="adm-sec-head"><div>
                 <h3 className="adm-sec-title">{gr.g.title}</h3>
                 <p className="adm-sec-sub">{gr.g.sub}</p>
-              </div>{def.kind === 'article' && EX_KEY[gr.g.title] && (
-                <button type="button" className="adm-icon-btn" data-tip="See where this shows on a real article" aria-label="See an example" onClick={() => setExample(EX_KEY[gr.g.title])}>{I.expand}</button>
+              </div>{EX_PAGE[def.kind] && (gr.g.ex || (def.kind === 'article' && EX_KEY[gr.g.title])) && (
+                <button type="button" className="adm-icon-btn" data-tip={`See where this shows on a real ${def.singular}`} aria-label="See an example" onClick={() => setExample(gr.g!.ex || EX_KEY[gr.g!.title])}>{I.expand}</button>
               )}</div>
               <div className="adm-form">{gr.fs.map(cell)}</div>
             </section>
@@ -651,14 +651,15 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
         })()}
       </div>
       {example && createPortal(
-        <div className="adm adm-example" role="dialog" aria-label="Example article">
-          <iframe src={`/articles/15-longevity-biomarkers-everyone-should-track?example=${example}`} title="Example article" />
+        <div className="adm adm-example" role="dialog" aria-label={`Example ${def.singular}`}>
+          <iframe src={`${EX_PAGE[def.kind]}?example=${example}`} title={`Example ${def.singular}`} />
           <button type="button" className="adm-icon-btn adm-example-x" data-tip="Close example" aria-label="Close example" onClick={() => setExample(null)}>{I.x}</button>
         </div>, document.body)}
     </Modal>
   )
 }
 
+const EX_PAGE: Record<string, string> = { article: '/articles/15-longevity-biomarkers-everyone-should-track', episode: '/podcast/why-normal-tests-don-t-mean-you-re-healthy', entity: '/knowledge/hrv', biohacker: '/biohackers/kris-gethin' }
 const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer': 'writer', 'Highlights': 'highlights', 'Sources': 'writer', 'FAQ': 'highlights' }
 
 /* ---------------- homepage ---------------- */

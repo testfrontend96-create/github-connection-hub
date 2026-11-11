@@ -1700,3 +1700,7 @@ a:hover .art[data-k="episode"] img,
 #main:has(.topic-kinds) .topic-kinds { padding-bottom: 40px; }
 #main:has(.topic-kinds) .topic-content { padding-top: 40px; padding-bottom: 48px; }
 #main:has(.topic-kinds) { padding-bottom: 0; }
+
+/* Long unbroken titles wrap inside their column instead of running over the hero image. */
+.art-hero > *, .art-hero-title { min-width: 0; }
+.art-hero h1.display, .ep-head-id h1.display, .prof-id h1.display, .page-head h1.display { overflow-wrap: anywhere; }

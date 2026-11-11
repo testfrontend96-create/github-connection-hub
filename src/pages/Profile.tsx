@@ -5,6 +5,7 @@ import { IconLink } from '../components/icons'
 import { SOCIAL_ORDER, SocialIcon, socialLabel } from '../components/social'
 import { H, E, T, hackers, firstName, personSortKey, clip, TICKETS_URL } from '../lib/data'
 import NotFound from './NotFound'
+import ExampleHighlight from '../components/ExampleHighlight'
 
 const EVENT_LABEL: Record<string, string> = { 'miami-2027': 'Speaker at Miami 2027' }
 
@@ -118,6 +119,7 @@ export default function Profile() {
           </div>
         </aside>
       </div></section>
+      <ExampleHighlight example={new URLSearchParams(window.location.search).get('example')} />
     </>
   )
 }
