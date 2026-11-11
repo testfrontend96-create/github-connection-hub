@@ -350,7 +350,9 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-row-tags--in{display:none}
 @media (max-width:640px){.adm-row-tags--in{display:flex}.adm-row-tags--out{display:none}}
 /* UDS alert dialog: compact type, 6px controls, dark input and clear destructive action */
-.adm-modal--confirm{max-width:512px;border-radius:14px;background:#101016;box-shadow:0 24px 70px -24px rgba(0,0,0,.9)}
+.adm-modal--confirm{max-width:512px;border-radius:14px;background:#101016;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;box-shadow:0 24px 70px -24px rgba(0,0,0,.9)}
+.adm-modal--confirm button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.adm-modal--confirm button:disabled{cursor:not-allowed}
 .adm-modal--confirm .adm-modal-head{padding:24px 24px 0;gap:16px}
 .adm-modal--confirm .adm-modal-head h2{font-size:20px;line-height:28px;font-weight:600;letter-spacing:-.015em}
 .adm-modal--confirm .adm-modal-head .adm-icon-btn{width:36px;height:36px;margin:-8px -8px 0 0;border-radius:6px;color:var(--a-muted)!important}
