@@ -676,12 +676,14 @@ function HomepageManager() {
   const { rows: aRows } = useRows('article')
   const { rows: eRows } = useRows('episode')
   const [pop, setPop] = useState<Record<string, { slug: string; views: number }[]>>({})
+  const [popKind, setPopKind] = useState<'both' | 'article' | 'episode'>('both')
+  const [popAll, setPopAll] = useState(false)
   const [startBase, setStartBase] = useState<Partial<StartHere> | undefined>()
   const startRow = changes.find(c => c.table === 'site_settings' && c.key === 'start_here')
   const start = startHereValue(startRow ? startRow.operation === 'delete' ? undefined : startRow.value : startBase, problemList.map(p => p._slug))
   const setStart = (value: StartHere) => stage({ table: 'site_settings', key: 'start_here', operation: 'upsert', value })
   useEffect(() => {
-    Promise.all([supabase.rpc('popular_items', { _kind: 'article', _limit: 5 }), supabase.rpc('popular_items', { _kind: 'episode', _limit: 5 })])
+    Promise.all([supabase.rpc('popular_items', { _kind: 'article', _limit: 10 }), supabase.rpc('popular_items', { _kind: 'episode', _limit: 10 })])
       .then(([a, e]) => setPop({ article: (a.data as any) || [], episode: (e.data as any) || [] }))
     supabase.from('site_settings').select('value').eq('key', 'start_here').maybeSingle().then(({ data }) => setStartBase(data?.value as any))
   }, [revision])
@@ -737,23 +739,34 @@ function HomepageManager() {
         </div>
       </section>
       <section className="adm-card">
-        <div className="adm-card-head"><div><h2>Most popular right now</h2><p>Page views over the last 30 days, counted once per visitor session.</p></div></div>
-        <div className="adm-pop">
-          {(['article', 'episode'] as const).map((k) => (
-            <div key={k}>
-              <span className="adm-kicker">{k === 'article' ? 'Blog posts' : 'Podcast episodes'}</span>
-              {(pop[k] || []).length ? <ol>{pop[k].map((p) => <li key={p.slug}><span>{lists[k].find((x: any) => x._slug === p.slug)?.title || p.slug}</span><b>{p.views}</b></li>)}</ol> : <p className="adm-hint">No views yet.</p>}
-            </div>
-          ))}
-        </div>
-      </section>
-      <section className="adm-card">
         <div className="adm-card-head"><div><h2>“Start here” card</h2><p>The card in the hero that lists the problem pages.</p></div></div>
         <div className="adm-form">
           <label className="adm-wide"><span className="adm-label">Heading</span><input className="adm-field" value={start.title || ''} placeholder="What are you interested in?" onChange={(e) => setStart({ ...start, title: e.target.value })} /></label>
           <label className="adm-wide"><span className="adm-label">Text</span><textarea className="adm-field" rows={2} value={start.body || ''} placeholder="Pick the symptom. Each page routes you to what to measure and what to consider." onChange={(e) => setStart({ ...start, body: e.target.value })} /></label>
         </div>
         <div className="adm-wide"><span className="adm-label">Problem chips</span><FieldInput folder="home" f={{ k: 'chips', label: 'Problem chips', type: 'chips', options: () => problemList.map(p => [p._slug, p.name]) }} value={start.chips} onChange={chips => setStart({ ...start, chips })} /></div>
+      </section>
+      <section className="adm-card">
+        <div className="adm-card-head"><div><h2>Most popular right now</h2><p>Page views over the last 30 days, counted once per visitor session.</p></div>
+          <div className="adm-seg adm-seg--sm">
+            {([['both', 'Both'], ['article', 'Blog'], ['episode', 'Podcast']] as const).map(([m, l]) => <button key={m} type="button" className={popKind === m ? 'is-on' : ''} onClick={() => setPopKind(m)}>{l}</button>)}
+          </div></div>
+        <div className={'adm-pop' + (popKind === 'both' ? '' : ' adm-pop--one')}>
+          {(['article', 'episode'] as const).filter((k) => popKind === 'both' || popKind === k).map((k) => (
+            <div key={k}>
+              <span className="adm-kicker">{k === 'article' ? 'Blog posts' : 'Podcast episodes'}</span>
+              {(pop[k] || []).length ? <ol className="adm-pop-list">{pop[k].slice(0, popAll ? 10 : 5).map((p, i) => {
+                const x: any = lists[k].find((y: any) => y._slug === p.slug)
+                return <li key={p.slug}><span className="adm-pop-n">{i + 1}</span><span className="adm-thumb">{x?.image ? <img src={x.image} alt="" loading="lazy" /> : I.image}</span>
+                  <span className="adm-pop-title" data-tip={x?.title || p.slug}>{x?.title || p.slug}</span>
+                  <span className="adm-mpill" data-tip="Page views, last 30 days">{I.eye}{Number(p.views).toLocaleString('en-US')}</span></li>
+              })}</ol> : <p className="adm-hint">No views yet.</p>}
+            </div>
+          ))}
+        </div>
+        {(['article', 'episode'] as const).some((k) => (popKind === 'both' || popKind === k) && (pop[k] || []).length > 5) && (
+          <button type="button" className="adm-pill adm-more" onClick={() => setPopAll(!popAll)}>{popAll ? 'Show top 5' : 'Show top 10'}</button>
+        )}
       </section>
     </>
   )
