@@ -15,6 +15,7 @@ import { I } from './icons'
 import { DraftProvider, useDrafts } from './Drafts'
 import { overlayRows } from './draftState'
 import { History, changeTypes } from './History'
+import { askDelete, ConfirmHost } from './Confirm'
 import { resolveHero, startHereValue, type StartHere } from '../lib/homeSelection'
 import './admin.css'
 
@@ -113,7 +114,7 @@ export default function Admin() {
       </div>
     </AccessCard>
   )
-  return <DraftProvider><Dashboard session={a.session} /><Tooltips /></DraftProvider>
+  return <DraftProvider><Dashboard session={a.session} /><Tooltips /><ConfirmHost /></DraftProvider>
 }
 
 /* ---------------- workspace ---------------- */
@@ -467,7 +468,7 @@ function ContentManager({ def }: { def: KindDef }) {
   }
   const toggleVisible = (x: any) => write(x._slug, { visible: !x._visible, data: rowOf(x._slug)?.data || {} }, x._visible ? 'hide' : 'show')
   const remove = async (x: any) => {
-    if (!confirm(`Delete “${def.title(x)}”? You can undo this from History.`)) return
+    if (!(await askDelete(def.title(x), 'It will disappear from the site once you save your changes. You can undo this from History.'))) return
     if (x._origin === 'new') {
       stage({ table: 'content_items', kind: def.kind, key: x._slug, operation: 'delete' })
     } else await write(x._slug, { deleted: true, data: rowOf(x._slug)?.data || {} }, 'delete')
@@ -524,6 +525,11 @@ function ContentManager({ def }: { def: KindDef }) {
                   {stars.map((s) => <span key={s} className="adm-tag adm-tag--star">{SLOT_LABEL[s]}</span>)}
                 </span>
                 </button>
+                <span className="adm-row-tags adm-row-tags--out">
+                  {x._origin !== 'built-in' && <span className="adm-tag">{x._origin === 'new' ? 'Added' : 'Updated'}</span>}
+                  {!x._visible && <span className="adm-tag adm-tag--muted">Hidden</span>}
+                  {stars.map((s) => <span key={s} className="adm-tag adm-tag--star">{SLOT_LABEL[s]}</span>)}
+                </span>
                 <span className="adm-row-tools">
                   {def.star && (
                     <span className="adm-star-wrap">
@@ -799,7 +805,7 @@ function Inbox() {
               </div>
               <span className="adm-row-tools">
                 <button type="button" className="adm-pill" onClick={async () => { await supabase.from('submissions').update({ done: !r.done }).eq('id', r.id); reload() }}>{r.done ? 'Reopen' : <>{I.check} Mark handled</>}</button>
-                <button type="button" className="adm-icon-btn adm-danger" aria-label="Delete" data-tip="Delete this entry" onClick={async () => { if (confirm('Delete this entry?')) { await supabase.from('submissions').delete().eq('id', r.id); reload() } }}>{I.trash}</button>
+                <button type="button" className="adm-icon-btn adm-danger" aria-label="Delete" data-tip="Delete this entry" onClick={async () => { if (await askDelete(r.name || r.email || 'this entry', 'This inbox entry is deleted right away and cannot be recovered.')) { await supabase.from('submissions').delete().eq('id', r.id); reload() } }}>{I.trash}</button>
               </span>
             </li>
           ))}

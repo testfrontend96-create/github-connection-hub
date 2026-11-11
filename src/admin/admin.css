@@ -346,3 +346,12 @@ textarea.adm-field{resize:vertical;line-height:1.5}
   .adm-xhist li em{flex-basis:100%;white-space:normal}
   .adm-ed-menu{max-width:calc(100vw - 40px)}
 }
+.adm-tip{width:max-content}
+.adm-row-tags--in{display:none}
+@media (max-width:640px){.adm-row-tags--in{display:flex}.adm-row-tags--out{display:none}}
+.adm-confirm p{margin:0 0 16px;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.8)}
+.adm-confirm b{color:#fff;font-weight:600}
+.adm-confirm-check{display:flex;gap:10px;align-items:flex-start;font-size:14px;cursor:pointer;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:rgba(255,255,255,.04)}
+.adm-confirm-check input{width:16px;height:16px;margin-top:2px;accent-color:#FF453A;flex:none}
+.adm .adm-btn--danger{background:#FF453A!important;color:#fff!important;border-color:#FF453A!important}
+.adm .adm-btn--danger:disabled{opacity:.4;cursor:not-allowed}
