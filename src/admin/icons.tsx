@@ -33,4 +33,5 @@ export const I = {
   left: s(<path d="m15 18-6-6 6-6" />),
   right: s(<path d="m9 18 6-6-6-6" />),
   download: s(<path d="M12 3v12M7 10l5 5 5-5M5 21h14" />),
+  expand: s(<path d="M9 3H3v6M15 3h6v6M15 21h6v-6M9 21H3v-6" />),
 }
