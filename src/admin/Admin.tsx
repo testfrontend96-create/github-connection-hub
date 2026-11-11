@@ -1,6 +1,6 @@
 // Biohacking Hub administration — layout, hierarchy and access rules follow the
 // Sales (Invited Only) admin: Google sign-in, company-domain admins, email overrides.
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useRef, useEffect, useMemo, useState } from 'react'
 import { createPortal } from 'react-dom'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from '../integrations/supabase/client'

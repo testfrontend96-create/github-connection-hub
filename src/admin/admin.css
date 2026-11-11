@@ -263,3 +263,15 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 @media (max-width:640px){.adm-example{padding:8px}.adm-example .adm-example-x{top:16px;right:16px}}
 .adm .adm-sec .adm-sec-head{margin-bottom:24px}
 .adm .adm-sec .adm-sec-sub{margin:6px 0 0!important}
+/* list row meta pills */
+.adm-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:4px}
+.adm-row-main .adm-meta>span{overflow:visible}
+.adm-mpill{display:inline-flex;align-items:center;gap:5px;height:22px;padding:0 9px;border:1px solid var(--a-line2);background:rgba(255,255,255,.04);border-radius:999px;font-size:12px;color:rgba(255,255,255,.75);white-space:nowrap}
+.adm-mpill svg{width:12px;height:12px;display:block;flex:none}
+.adm-mpill--who{padding-left:3px}
+.adm-mpill--who img,.adm-mpill-ph{width:16px;height:16px;border-radius:999px;object-fit:cover;flex:none}
+.adm-mpill-ph{display:inline-grid;place-items:center;background:rgba(255,255,255,.12);font-style:normal}
+.adm-mpill-ph svg{width:10px;height:10px}
+.adm .adm-meta-rest{color:var(--a-muted);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.adm-kb-tab>.adm-pill{display:inline-flex;align-items:center;gap:6px}
+.adm-kb-tab .adm-menu{left:0;right:auto;top:44px}
