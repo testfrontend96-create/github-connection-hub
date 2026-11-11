@@ -1,5 +1,5 @@
 // One shared hover tooltip for every icon-only admin button (reads data-tip, falls back to aria-label).
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 
 const SEL = '.adm [data-who-name], .adm [data-tip], .adm .adm-icon-btn[aria-label], .adm .adm-block-plus[aria-label]'
 
@@ -35,12 +35,19 @@ export function Tooltips() {
       window.removeEventListener('scroll', clear, true); document.removeEventListener('mousedown', clear)
     }
   }, [])
+  const ref = useRef<HTMLDivElement>(null)
+  useLayoutEffect(() => {
+    const el = ref.current; if (!el) return
+    const r = el.getBoundingClientRect(), pad = 8
+    const dx = r.right > innerWidth - pad ? innerWidth - pad - r.right : r.left < pad ? pad - r.left : 0
+    if (dx) el.style.marginLeft = dx + 'px'
+  }, [tip])
   if (!tip) return null
   if (tip.who) return (
-    <div className="adm-tip adm-tip--who" role="tooltip" style={{ left: tip.x, top: tip.y, transform: `translate(-50%, ${tip.below ? '0' : '-100%'})` }}>
+    <div ref={ref} className="adm-tip adm-tip--who" role="tooltip" style={{ left: tip.x, top: tip.y, transform: `translate(-50%, ${tip.below ? '0' : '-100%'})` }}>
       {tip.who.img ? <img src={tip.who.img} alt="" /> : <span className="adm-tip-ph" />}
       <span><b>{tip.who.name}</b><small>{tip.who.mail}</small></span>
     </div>
   )
-  return <div className="adm-tip" role="tooltip" style={{ left: tip.x, top: tip.y, transform: `translate(-50%, ${tip.below ? '0' : '-100%'})` }}>{tip.text}</div>
+  return <div ref={ref} className="adm-tip" role="tooltip" style={{ left: tip.x, top: tip.y, transform: `translate(-50%, ${tip.below ? '0' : '-100%'})` }}>{tip.text}</div>
 }
