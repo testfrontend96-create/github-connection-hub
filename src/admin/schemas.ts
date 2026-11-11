@@ -3,7 +3,7 @@ import { KINDS, type Kind } from '../lib/contentKinds'
 
 export type Opt = [value: string, label: string]
 export type Field =
-  | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines' | 'list'; min?: number; add?: string; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
+  | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines' | 'list'; min?: number; add?: string; bullet?: boolean; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
   | { k: string; label: string; type: 'select'; options: () => Opt[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
   | { k: string; label: string; type: 'chips'; options: () => Opt[]; custom?: boolean; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
   | { k: string; label: string; type: 'records'; sub: { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'lines' }[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string } }
@@ -49,7 +49,7 @@ export const KIND_DEFS: KindDef[] = [
       { k: 'image', label: 'Cover image', type: 'image', wide: true, group: { title: 'Cover and summary', sub: 'What readers see on cards, in search and at the top of the article.' } },
       { k: 'excerpt', label: 'Card description', type: 'textarea', wide: true, ph: 'One or two sentences that sum up the article.', help: 'Shown on cards and in search.' },
       { k: 'detail.intro', label: 'Opening paragraph', type: 'textarea', wide: true, ph: 'The first paragraph readers see, right under the subscribe box.' },
-      { k: 'detail.highlights', label: 'Key takeaways', type: 'list', min: 3, add: 'Add highlight', wide: true, ph: 'A key takeaway, in one sentence', group: { title: 'Highlights', sub: 'Short bullet points shown in the Highlights box near the top of the article.' } },
+      { k: 'detail.highlights', label: 'Key takeaways', type: 'list', min: 3, add: 'Add highlight', bullet: true, wide: true, ph: 'A key takeaway, in one sentence', group: { title: 'Highlights', sub: 'Short bullet points shown in the Highlights box near the top of the article.' } },
       { k: 'detail.blocks', label: 'Article body', type: 'blocks', wide: true, group: { title: 'Article body', sub: 'Build the article section by section: text, headings, images, lists and more.' } },
       { k: 'topics', label: 'Hub topic', type: 'chips', options: TOPIC_OPTS, wide: true, group: { title: 'Tags', sub: 'Where the article shows up across the Hub and the Blog filters.' } },
       { k: 'categories', label: 'Blog categories', type: 'chips', options: CATEGORY_OPTS, custom: true, wide: true },

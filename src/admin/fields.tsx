@@ -157,14 +157,14 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
   )
 }
 
-function ListField({ value, onChange, min, add, ph }: { value: string[]; onChange: (v: string[]) => void; min: number; add: string; ph: string }) {
+function ListField({ value, onChange, min, add, ph, bullet }: { value: string[]; onChange: (v: string[]) => void; min: number; add: string; ph: string; bullet?: boolean }) {
   const rows = value.length >= min ? value : [...value, ...Array(min - value.length).fill('')]
   const set = (i: number, x: string) => onChange(rows.map((r, j) => (j === i ? x : r)))
   return (
-    <div className="adm-list">
+    <div className="adm-list adm-list--fields">
       {rows.map((r, i) => (
         <div className="adm-list-row" key={i}>
-          <span className="adm-list-n">{i + 1}</span>
+          <span className={'adm-list-n' + (bullet ? ' adm-list-dot' : '')} aria-hidden={bullet ? 'true' : undefined}>{bullet ? '' : i + 1}</span>
           <input className="adm-field" value={r} onChange={(e) => set(i, e.target.value)} placeholder={ph} />
           <button type="button" className="adm-icon-btn adm-danger" disabled={rows.length <= 1} onClick={() => onChange(rows.filter((_, j) => j !== i))} aria-label="Remove" data-tip="Remove this line">{I.trash}</button>
         </div>
@@ -183,7 +183,7 @@ export function FieldInput({ f, value, onChange, folder }: { f: Field; value: an
     case 'date': return <DateField value={value} onChange={onChange} />
     case 'url': return <input className="adm-field" type="url" value={value || ''} onChange={(e) => onChange(e.target.value)} placeholder={ph} />
     case 'bool': return <label className="adm-switch"><input type="checkbox" checked={!!value} onChange={(e) => onChange(e.target.checked)} /><span /> {value ? 'Yes' : 'No'}</label>
-    case 'list': return <ListField value={value || []} onChange={onChange} min={(f as any).min ?? 1} add={(f as any).add || 'Add'} ph={ph} />
+    case 'list': return <ListField value={value || []} onChange={onChange} min={(f as any).min ?? 1} add={(f as any).add || 'Add'} ph={ph} bullet={(f as any).bullet} />
     case 'image': return <ImageField value={value || ''} onChange={onChange} folder={folder} />
     case 'select': return (
       <select className="adm-field" value={value || ''} onChange={(e) => onChange(e.target.value)}>
