@@ -275,3 +275,29 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm .adm-meta-rest{color:var(--a-muted);font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .adm-kb-tab>.adm-pill{display:inline-flex;align-items:center;gap:6px}
 .adm-kb-tab .adm-menu{left:0;right:auto;top:44px}
+/* dark tooltips */
+.adm-tip{background:#1C1C21!important;color:#fff!important;border:1px solid rgba(255,255,255,.14);box-shadow:0 12px 32px -10px rgba(0,0,0,.8)!important}
+.adm-tip--who{display:flex;align-items:center;gap:10px;text-align:left;padding:8px 12px 8px 8px;max-width:300px}
+.adm-tip--who img,.adm-tip-ph{width:40px;height:40px;border-radius:999px;object-fit:cover;flex:none;background:rgba(255,255,255,.12)}
+.adm-tip--who span{display:flex;flex-direction:column;gap:2px;min-width:0}
+.adm-tip--who b{font-size:13.5px;font-weight:600}
+.adm-tip--who small{font-size:12px;color:rgba(255,255,255,.6)}
+/* tighter date pills */
+.adm-mpill{padding:0 9px 0 6px;gap:4px}
+.adm-mpill svg{width:11px;height:11px}
+.adm-mpill--who{padding-left:3px}
+/* row details dropdown */
+.adm-row{flex-wrap:wrap}
+.adm-xbtn svg{transition:transform .2s}.adm-xbtn.is-open svg{transform:rotate(180deg)}
+.adm-xpanel{flex-basis:100%;margin:10px 0 4px;padding:16px 18px;border:1px solid var(--a-line2);border-radius:14px;background:rgba(255,255,255,.03);display:flex;flex-direction:column;gap:12px}
+.adm-xdesc{margin:0;font-size:14px;line-height:1.5;color:rgba(255,255,255,.8)}
+.adm-xrow{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.adm-xrow>span,.adm-xfact span{font-size:12px;font-weight:600;color:var(--a-muted);min-width:110px}
+.adm-xchips{display:flex;flex-wrap:wrap;gap:6px}
+.adm-xchips b{font-weight:500;font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--a-line2);color:rgba(255,255,255,.8)}
+.adm-xfacts{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px 18px}
+.adm-xfact{display:flex;flex-direction:column;gap:2px}
+.adm-xfact span{min-width:0}
+.adm-xfact b{font-weight:500;font-size:13px;color:#fff;overflow-wrap:anywhere}
+.adm-xlink{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:#9FA0FF;align-self:flex-start}
+.adm-row-main{flex:1 1 0}

@@ -294,19 +294,60 @@ function shortDate(v?: string) {
   const d = m ? { mo: +m[2] - 1, day: +m[3] } : (() => { const t = new Date(v); return isNaN(+t) ? null : { mo: t.getMonth(), day: t.getDate() } })()
   return d ? `${MON[d.mo]} ${d.day}` : ''
 }
-function RowMeta({ def, x, updated }: { def: KindDef; x: any; updated?: string }) {
+function readMins(x: any) {
+  const r = x.readTime
+  if (typeof r === 'number') return r
+  const n = parseInt(String(r || ''), 10)
+  return isNaN(n) ? 0 : n
+}
+function RowMeta({ def, x, updated, views }: { def: KindDef; x: any; updated?: string; views?: number }) {
   const pub = shortDate(def.date?.(x))
   const upd = x._origin !== 'built-in' ? shortDate(updated) : ''
   const a = def.author?.(x)
   const first = (a?.name || '').trim().split(/\s+/)[0]
-  const rest = def.sub(x)
+  const isArticle = def.kind === 'article'
+  const mins = isArticle ? readMins(x) : 0
+  const rest = isArticle ? '' : def.sub(x)
   return (
     <span className="adm-meta">
       {upd && <span className="adm-mpill" data-tip="Last updated">{I.pencil}{upd}</span>}
       {pub && <span className="adm-mpill" data-tip="Published">{I.globe}{pub}</span>}
-      {def.author && <span className="adm-mpill adm-mpill--who">{a?.image ? <img src={a.image} alt="" loading="lazy" /> : <i className="adm-mpill-ph">{I.user}</i>}{first || 'No writer'}</span>}
+      {def.author && <span className="adm-mpill adm-mpill--who" data-who-name={a?.name || 'No writer set'} data-who-img={a?.image || ''} data-who-mail={a?.email || 'No email on file'}>{a?.image ? <img src={a.image} alt="" loading="lazy" /> : <i className="adm-mpill-ph">{I.user}</i>}{first || 'No writer'}</span>}
+      {views !== undefined && <span className="adm-mpill" data-tip="Page views, last 30 days">{I.eye}{views.toLocaleString('en-US')}</span>}
+      {isArticle && mins > 0 && <span className="adm-mpill" data-tip="Reading time">{mins} min read</span>}
       {rest && <span className="adm-meta-rest">{rest}</span>}
     </span>
+  )
+}
+
+function firstSentences(t: string, n = 2) {
+  const parts = (t || '').replace(/\s+/g, ' ').trim().match(/[^.!?]+[.!?]+/g)
+  return parts ? parts.slice(0, n).join(' ').trim() : (t || '').slice(0, 220)
+}
+function RowDetails({ def, x }: { def: KindDef; x: any }) {
+  const desc = firstSentences(x.excerpt || x.detail?.intro || x.summary || x.description || x.question || x.a || '')
+  const list = (label: string, v?: string[]) => v && v.length ? <div className="adm-xrow"><span>{label}</span><div className="adm-xchips">{v.map((c) => <b key={c}>{c}</b>)}</div></div> : null
+  const fact = (label: string, v: any) => v || v === 0 ? <div className="adm-xfact"><span>{label}</span><b>{v}</b></div> : null
+  const blocks: any[] = x.detail?.blocks || []
+  const imgs = blocks.filter((b) => b?.type === 'img').length
+  return (
+    <div className="adm-xpanel">
+      {desc && <p className="adm-xdesc">{desc}</p>}
+      {list('Blog categories', x.categories)}
+      {list('Hub topics', x.topics)}
+      <div className="adm-xfacts">
+        {def.author && fact('Writer', [x.detail?.author?.name, x.detail?.author?.role].filter(Boolean).join(', ') || 'Not set')}
+        {def.kind === 'article' && fact('Body sections', blocks.length || 'Short body only')}
+        {def.kind === 'article' && imgs > 0 && fact('Images in body', imgs)}
+        {def.kind === 'article' && fact('Highlights', (x.detail?.highlights || []).length)}
+        {def.kind === 'article' && fact('FAQ questions', (x.detail?.faq || []).length)}
+        {def.kind === 'episode' && fact('Guest', x.guest)}
+        {def.kind === 'episode' && fact('Length', x.duration)}
+        {fact('Status', x._visible ? 'Shown on the site' : 'Hidden')}
+        {fact('Web address', def.url ? def.url(x._slug) : x._slug)}
+      </div>
+      {x.sourceUrl && <a className="adm-xlink" href={x.sourceUrl} target="_blank" rel="noreferrer">Original source {I.ext}</a>}
+    </div>
   )
 }
 
@@ -319,6 +360,12 @@ function ContentManager({ def }: { def: KindDef }) {
   const [editing, setEditing] = useState<any | null>(null)
   const [starMenu, setStarMenu] = useState<string | null>(null)
   const [limit, setLimit] = useState(60)
+  const [expanded, setExpanded] = useState<string | null>(null)
+  const [views, setViews] = useState<Record<string, number> | null>(null)
+  useEffect(() => {
+    if (def.kind !== 'article' && def.kind !== 'episode') return
+    supabase.rpc('popular_items', { _kind: def.kind, _limit: 5000 }).then(({ data }) => setViews(Object.fromEntries((data || []).map((r: any) => [r.slug, Number(r.views) || 0]))))
+  }, [def.kind])
 
   const items = useMemo(() => {
     if (!rows) return []
@@ -392,7 +439,7 @@ function ContentManager({ def }: { def: KindDef }) {
                 {def.image && <span className="adm-thumb">{img ? <img src={img} alt="" loading="lazy" /> : I.image}</span>}
                 <button type="button" className="adm-row-main" onClick={() => open(x)}>
                   <b>{def.title(x) || <em>Untitled</em>}</b>
-                  <RowMeta def={def} x={x} updated={rowOf(x._slug)?.updated_at} />
+                  <RowMeta def={def} x={x} updated={rowOf(x._slug)?.updated_at} views={views ? views[x._slug] || 0 : undefined} />
                 </button>
                 <span className="adm-row-tags">
                   {x._origin !== 'built-in' && <span className="adm-tag">{x._origin === 'new' ? 'Added' : 'Updated'}</span>}
@@ -417,7 +464,9 @@ function ContentManager({ def }: { def: KindDef }) {
                   <button type="button" className="adm-icon-btn" onClick={() => toggleVisible(x)} data-tip={x._visible ? 'Shown on the site. Click to hide it' : 'Hidden from the site. Click to show it'} aria-label="Toggle visibility">{x._visible ? I.eye : I.eyeOff}</button>
                   <button type="button" className="adm-icon-btn" onClick={() => open(x)} aria-label="Edit" data-tip="Edit this item">{I.pencil}</button>
                   <button type="button" className="adm-icon-btn adm-danger" onClick={() => remove(x)} aria-label="Delete" data-tip="Delete this item">{I.trash}</button>
+                  <button type="button" className={'adm-icon-btn adm-xbtn' + (expanded === x._slug ? ' is-open' : '')} onClick={() => setExpanded(expanded === x._slug ? null : x._slug)} aria-expanded={expanded === x._slug} aria-label="More details" data-tip={expanded === x._slug ? 'Hide details' : 'Show more details'}>{I.down}</button>
                 </span>
+                {expanded === x._slug && <RowDetails def={def} x={x} />}
               </li>
             )
           })}
