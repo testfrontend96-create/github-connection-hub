@@ -50,7 +50,6 @@ function ImageField({ value, onChange, folder }: { value: string; onChange: (v: 
         </div>
         <input ref={input} type="file" accept="image/*" hidden onChange={(e) => take(e.target.files?.[0])} />
       </div>
-      <input className="adm-field adm-field--sm" value={value} onChange={(e) => onChange(e.target.value)} placeholder="…or paste an image link" />
       {err && <p className="adm-err">{err}</p>}
     </div>
   )
@@ -158,6 +157,23 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
   )
 }
 
+function ListField({ value, onChange, min, add, ph }: { value: string[]; onChange: (v: string[]) => void; min: number; add: string; ph: string }) {
+  const rows = value.length >= min ? value : [...value, ...Array(min - value.length).fill('')]
+  const set = (i: number, x: string) => onChange(rows.map((r, j) => (j === i ? x : r)))
+  return (
+    <div className="adm-list">
+      {rows.map((r, i) => (
+        <div className="adm-list-row" key={i}>
+          <span className="adm-list-n">{i + 1}</span>
+          <input className="adm-field" value={r} onChange={(e) => set(i, e.target.value)} placeholder={ph} />
+          <button type="button" className="adm-icon-btn adm-danger" disabled={rows.length <= 1} onClick={() => onChange(rows.filter((_, j) => j !== i))} aria-label="Remove" data-tip="Remove this line">{I.trash}</button>
+        </div>
+      ))}
+      <button type="button" className="adm-pill adm-body-add" onClick={() => onChange([...rows, ''])}>{I.plus}{add}</button>
+    </div>
+  )
+}
+
 export function FieldInput({ f, value, onChange, folder }: { f: Field; value: any; onChange: (v: any) => void; folder: string }) {
   const ph = f.ph || (f.type === 'lines' ? 'One item per line' : f.type === 'number' ? 'e.g. 1' : f.type === 'url' ? 'https://…' : 'Enter ' + f.label.toLowerCase())
   switch (f.type) {
@@ -167,6 +183,7 @@ export function FieldInput({ f, value, onChange, folder }: { f: Field; value: an
     case 'date': return <DateField value={value} onChange={onChange} />
     case 'url': return <input className="adm-field" type="url" value={value || ''} onChange={(e) => onChange(e.target.value)} placeholder={ph} />
     case 'bool': return <label className="adm-switch"><input type="checkbox" checked={!!value} onChange={(e) => onChange(e.target.checked)} /><span /> {value ? 'Yes' : 'No'}</label>
+    case 'list': return <ListField value={value || []} onChange={onChange} min={(f as any).min ?? 1} add={(f as any).add || 'Add'} ph={ph} />
     case 'image': return <ImageField value={value || ''} onChange={onChange} folder={folder} />
     case 'select': return (
       <select className="adm-field" value={value || ''} onChange={(e) => onChange(e.target.value)}>
