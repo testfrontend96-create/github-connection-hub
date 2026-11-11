@@ -643,7 +643,7 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
                 <h3 className="adm-sec-title">{gr.g.title}</h3>
                 <p className="adm-sec-sub">{gr.g.sub}</p>
               </div>{def.kind === 'article' && EX_KEY[gr.g.title] && (
-                <button type="button" className="adm-icon-btn" data-tip="See where this shows on a real article" aria-label="See an example" onClick={() => setExample(EX_KEY[gr.g.title])}>{I.eye}</button>
+                <button type="button" className="adm-icon-btn" data-tip="See where this shows on a real article" aria-label="See an example" onClick={() => setExample(EX_KEY[gr.g.title])}>{I.expand}</button>
               )}</div>
               <div className="adm-form">{gr.fs.map(cell)}</div>
             </section>
@@ -659,7 +659,7 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
   )
 }
 
-const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer and source': 'writer', 'Highlights': 'highlights', 'Sources': 'writer', 'FAQ': 'highlights' }
+const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer': 'writer', 'Highlights': 'highlights', 'Sources': 'writer', 'FAQ': 'highlights' }
 
 /* ---------------- homepage ---------------- */
 
