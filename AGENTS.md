@@ -29,3 +29,4 @@
 - `/admin` access: verified company-domain Google accounts plus `admin_emails` overrides (revocation wins), checked server-side via `is_admin()`; matches the Sales project's rules.
 - Stage public-site admin edits in the shared DraftProvider and publish atomically through publish_admin_changes; database audit triggers record authenticated editor attribution so changes and history cannot diverge.
 - Share hero resolution and Start here defaults between the admin and homepage so saved selections render identically.
+- Admin form islands come from each field's `group` in `src/admin/schemas.ts`; a group's `ex` key links its expand button to `ExampleHighlight` frames on that kind's sample page (`EX_PAGE` in Admin.tsx), so every form shares one section and example system.

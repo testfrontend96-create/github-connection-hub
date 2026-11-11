@@ -8,6 +8,7 @@ import { PlayButton } from '../components/Player'
 import { EP, E, T, pretty } from '../lib/data'
 import { episodeLabel, listenLinks } from '../lib/browsing'
 import NotFound from './NotFound'
+import ExampleHighlight from '../components/ExampleHighlight'
 import appleLogo from '../assets/platforms/apple_podcasts_logo.svg.asset.json'
 import spotifyLogo from '../assets/platforms/spotify_logo.svg.asset.json'
 
@@ -76,6 +77,7 @@ export default function Episode() {
           </div></aside>
         </div>
       </div></section>
+      <ExampleHighlight example={new URLSearchParams(window.location.search).get('example')} />
     </>
   )
 }

@@ -3,6 +3,7 @@ import { PageHead } from '../components/chrome'
 import { Tag, ArticleCard, EpisodeCard } from '../components/ui'
 import { E, T, PR, BRAND_URL, ACADEMY_URL, pretty } from '../lib/data'
 import NotFound from './NotFound'
+import ExampleHighlight from '../components/ExampleHighlight'
 
 export default function Entity() {
   const { slug } = useParams()
@@ -79,6 +80,7 @@ export default function Entity() {
           <a className="next-card" href={ACADEMY_URL}><span className="k">Academy</span><h4>Learn it properly</h4><p>Structured courses that take {e.name} and the rest of {topicName.toLowerCase()} from reference material to practice.</p></a>
         </div>
       </div></section>
+      <ExampleHighlight example={new URLSearchParams(window.location.search).get('example')} />
     </>
   )
 }
