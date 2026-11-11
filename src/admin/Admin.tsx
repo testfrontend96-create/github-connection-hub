@@ -342,7 +342,7 @@ function RowHistory({ def, slug }: { def: KindDef; slug: string }) {
   }, [def.kind, slug])
   return (
     <div className="adm-xhist">
-      <div className="adm-xhist-head"><span>Recent changes</span><button type="button" className="adm-xlink" disabled data-tip="Full history page for this item is coming soon">View all history {I.ext}</button></div>
+      <div className="adm-xhist-head"><span>Recent changes</span><button type="button" className="adm-xlink" aria-disabled="true" data-tip="Full history page for this item is coming soon">View all history {I.ext}</button></div>
       {!rows ? <p className="adm-xhist-empty">Loading…</p> : !rows.length ? <p className="adm-xhist-empty">No changes published yet.</p> : (
         <ul>{rows.map((h) => {
           const mail = h.actor_email || ''

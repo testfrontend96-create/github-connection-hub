@@ -308,7 +308,7 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-xhist{border-top:1px solid var(--a-line);padding-top:10px}
 .adm-xhist-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
 .adm-xhist-head>span{font-size:12px;font-weight:600;color:var(--a-muted)}
-.adm-xhist-head .adm-xlink{font-size:12px}.adm-xhist-head .adm-xlink:disabled{opacity:.7;cursor:default}
+.adm-xhist-head .adm-xlink{font-size:12px}.adm-xhist-head .adm-xlink[aria-disabled]{opacity:.7;cursor:default}
 .adm-xhist ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
 .adm-xhist li{display:flex;gap:8px;align-items:baseline;font-size:12.5px;min-width:0;white-space:nowrap}
 .adm-xhist li b{font-weight:600}
