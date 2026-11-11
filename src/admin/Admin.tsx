@@ -333,6 +333,38 @@ function changedParts(def: KindDef, h: any): string[] {
   for (const f of def.fields) if (JSON.stringify(getAt(a, f.k) ?? null) !== JSON.stringify(getAt(b, f.k) ?? null)) out.push(f.label)
   return out.length ? out : changeTypes(h)
 }
+function EditorFilter({ value, onChange }: { value: string | null; onChange: (v: string | null) => void }) {
+  const [open, setOpen] = useState(false)
+  const [admins, setAdmins] = useState<any[]>([])
+  const ref = useRef<HTMLSpanElement>(null)
+  useEffect(() => { supabase.rpc('list_admins').then(({ data }) => setAdmins((data || []).filter((a: any) => a.has_access))) }, [])
+  useEffect(() => {
+    if (!open) return
+    const off = (e: MouseEvent) => { if (!ref.current?.contains(e.target as Node)) setOpen(false) }
+    document.addEventListener('mousedown', off); return () => document.removeEventListener('mousedown', off)
+  }, [open])
+  const cur = admins.find((a) => a.email.toLowerCase() === value)
+  const face = (a: any) => a.avatar ? <img src={a.avatar} alt="" referrerPolicy="no-referrer" /> : <i className="adm-mpill-ph">{I.user}</i>
+  return (
+    <span className="adm-star-wrap adm-ed" ref={ref}>
+      <button type="button" className={'adm-pill' + (cur ? ' is-on' : '')} aria-expanded={open} onClick={() => setOpen(!open)}>
+        {cur ? <>{face(cur)}{(cur.name || cur.email).split(' ')[0]}</> : 'Sort by editor'} {I.down}
+      </button>
+      {open && (
+        <span className="adm-menu adm-ed-menu">
+          <span className="adm-ed-label">Sort by editor</span>
+          <button type="button" className={!value ? 'is-on' : ''} onClick={() => { onChange(null); setOpen(false) }}>Everyone</button>
+          {admins.map((a) => (
+            <button key={a.email} type="button" className={value === a.email.toLowerCase() ? 'is-on' : ''} onClick={() => { onChange(a.email.toLowerCase()); setOpen(false) }}>
+              {face(a)}<span><b>{a.name || a.email.split('@')[0]}</b><small>{a.email}</small></span>
+            </button>
+          ))}
+        </span>
+      )}
+    </span>
+  )
+}
+
 function RowHistory({ def, slug }: { def: KindDef; slug: string }) {
   const [rows, setRows] = useState<any[] | null>(null)
   const [names, setNames] = useState<Record<string, string>>({})
@@ -342,12 +374,12 @@ function RowHistory({ def, slug }: { def: KindDef; slug: string }) {
   }, [def.kind, slug])
   return (
     <div className="adm-xhist">
-      <div className="adm-xhist-head"><span>Recent changes</span><button type="button" className="adm-xlink" aria-disabled="true" data-tip="Full history page for this item is coming soon">View all history {I.ext}</button></div>
+      <div className="adm-xhist-head"><span>Recent changes</span><button type="button" className="adm-xlink">All history {I.ext}</button></div>
       {!rows ? <p className="adm-xhist-empty">Loading…</p> : !rows.length ? <p className="adm-xhist-empty">No changes published yet.</p> : (
         <ul>{rows.map((h) => {
           const mail = h.actor_email || ''
           const who = names[mail.toLowerCase()] || mail.split('@')[0] || 'System'
-          return <li key={h.id}><b>{who}</b><span className="adm-xhist-mail">{mail}</span><span className="adm-xhist-date">{shortDate(h.created_at)}</span><em>{changedParts(def, h).join(', ')}</em></li>
+          return <li key={h.id}><b>{who}</b><span className="adm-xhist-mail">{mail}</span><span className="adm-mpill" data-tip="Changed on">{I.pencil}{shortDate(h.created_at)}, {new Date(h.created_at).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span><em>{changedParts(def, h).join(', ')}</em></li>
         })}</ul>
       )}
     </div>
@@ -396,6 +428,15 @@ function ContentManager({ def }: { def: KindDef }) {
   const [starMenu, setStarMenu] = useState<string | null>(null)
   const [limit, setLimit] = useState(60)
   const [expanded, setExpanded] = useState<string | null>(null)
+  const [editor, setEditor] = useState<string | null>(null)
+  const [lastBy, setLastBy] = useState<Record<string, string>>({})
+  useEffect(() => {
+    supabase.from('activity_log').select('slug,actor_email,created_at').eq('kind', def.kind).order('created_at', { ascending: false }).limit(5000).then(({ data }) => {
+      const m: Record<string, string> = {}
+      for (const r of data || []) if (r.slug && r.actor_email && !m[r.slug]) m[r.slug] = r.actor_email.toLowerCase()
+      setLastBy(m)
+    })
+  }, [def.kind])
   const [views, setViews] = useState<Record<string, number> | null>(null)
   useEffect(() => {
     if (def.kind !== 'article' && def.kind !== 'episode') return
@@ -411,6 +452,7 @@ function ContentManager({ def }: { def: KindDef }) {
   const shown = items.filter((x) => {
     if (filter === 'updated' && x._origin === 'built-in') return false
     if (filter === 'hidden' && x._visible) return false
+    if (editor && lastBy[x._slug] !== editor) return false
     if (!q) return true
     const s = (def.title(x) + ' ' + def.sub(x)).toLowerCase()
     return s.includes(q.toLowerCase())
@@ -460,6 +502,7 @@ function ContentManager({ def }: { def: KindDef }) {
       </div>
       <div className="adm-toolbar">
         <input className="adm-field adm-search" placeholder={`Search ${def.label.toLowerCase()}…`} value={q} onChange={(e) => setQ(e.target.value)} />
+        <EditorFilter value={editor} onChange={setEditor} />
         <div className="adm-seg adm-seg--sm">
           {(['all', 'updated', 'hidden'] as const).map((f) => <button key={f} type="button" className={filter === f ? 'is-on' : ''} onClick={() => setFilter(f)}>{f === 'all' ? 'All' : f === 'updated' ? 'Updated' : 'Hidden'}</button>)}
         </div>
