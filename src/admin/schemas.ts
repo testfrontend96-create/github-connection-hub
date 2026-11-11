@@ -56,6 +56,7 @@ export const KIND_DEFS: KindDef[] = [
       { k: 'detail.author.image', label: 'Writer photo', type: 'image', cls: 'adm-writer-photo', group: { title: 'Writer and source', sub: 'Who wrote it and where it was first published.' } },
       { k: 'detail.author.name', label: 'Writer name', type: 'text', ph: 'e.g. Jane Smith' },
       { k: 'detail.author.role', label: 'Writer role', type: 'text', ph: 'e.g. Health writer' },
+      { k: 'detail.author.email', label: 'Writer email', type: 'text', ph: 'e.g. jane@biohackers.world' },
       { k: 'sourceUrl', label: 'Original link', type: 'url', wide: true, cls: 'adm-wide adm-source', ph: 'https://… where the article first appeared' },
       { k: 'detail.highlights', label: 'Highlights', type: 'lines', wide: true, ph: 'One key takeaway per line', group: { title: 'Highlights and FAQ', sub: 'Key takeaways and common questions shown in the article.' }, help: 'One highlight per line.' },
       { k: 'detail.faq', label: 'Article FAQ', type: 'records', wide: true, sub: [{ k: 'q', label: 'Question', type: 'text' }, { k: 'a', label: 'Answer', type: 'textarea' }] },
