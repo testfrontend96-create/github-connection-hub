@@ -184,9 +184,10 @@ function Dashboard({ session }: { session: Session }) {
   )
 }
 
+const KB_TABS: [Tab, string][] = [['entity', 'Entries'], ['howto', 'How To'], ['topic', 'Topics'], ['problem', 'Problems']]
 const TABS: [Tab, string][] = [
-  ['home', 'Homepage'], ['article', 'Blog'], ['episode', 'Podcast'], ['entity', 'Knowledge Base'], ['howto', 'How To'],
-  ['biohacker', 'Top Biohackers'], ['topic', 'Topics'], ['problem', 'Problems'], ['faq', 'FAQ'], ['event', 'Events'], ['social', 'Social Media'],
+  ['home', 'Homepage'], ['article', 'Blog'], ['episode', 'Podcast'], ['entity', 'Knowledge Base'],
+  ['biohacker', 'Top Biohackers'], ['faq', 'FAQ'], ['event', 'Events'], ['social', 'Social Media'],
 ]
 
 function PanelBody({ session, tab, setTab }: { session: Session; tab: Tab; setTab: (t: Tab) => void }) {
@@ -214,10 +215,31 @@ function PanelBody({ session, tab, setTab }: { session: Session; tab: Tab; setTa
         </div>
       </header>
       <nav className="adm-tabs" aria-label="Sections">
-        {TABS.map(([k, l]) => <button key={k} type="button" className={tab === k ? 'adm-pill is-on' : 'adm-pill'} onClick={() => setTab(k)}>{l}</button>)}
+        {TABS.map(([k, l]) => k === 'entity' ? <KbTab key={k} tab={tab} setTab={setTab} /> : <button key={k} type="button" className={tab === k ? 'adm-pill is-on' : 'adm-pill'} onClick={() => setTab(k)}>{l}</button>)}
       </nav>
       {tab === 'home' ? <HomepageManager /> : tab === 'history' ? <History /> : tab === 'inbox' ? <Inbox /> : tab === 'admins' ? <AdminsManager email={u.email || ''} /> : def ? <ContentManager key={def.kind} def={def} /> : null}
     </div>
+  )
+}
+
+function KbTab({ tab, setTab }: { tab: Tab; setTab: (t: Tab) => void }) {
+  const [open, setOpen] = useState(false)
+  const ref = useRef<HTMLSpanElement>(null)
+  useEffect(() => {
+    if (!open) return
+    const off = (e: MouseEvent) => { if (!ref.current?.contains(e.target as Node)) setOpen(false) }
+    document.addEventListener('mousedown', off); return () => document.removeEventListener('mousedown', off)
+  }, [open])
+  const cur = KB_TABS.find(([k]) => k === tab)
+  return (
+    <span className="adm-star-wrap adm-kb-tab" ref={ref}>
+      <button type="button" className={cur ? 'adm-pill is-on' : 'adm-pill'} aria-expanded={open} onClick={() => setOpen(!open)}>Knowledge Base{cur ? ` · ${cur[1]}` : ''} {I.down}</button>
+      {open && (
+        <span className="adm-menu">
+          {KB_TABS.map(([k, l]) => <button key={k} type="button" onClick={() => { setTab(k); setOpen(false) }}>{tab === k ? I.check : <i style={{ width: 16 }} />} {l}</button>)}
+        </span>
+      )}
+    </span>
   )
 }
 
@@ -265,12 +287,35 @@ const SLOT_LABEL: Record<string, string> = { lead: 'Lead story', blog: 'Blog car
 
 /* ---------------- content manager ---------------- */
 
+const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+function shortDate(v?: string) {
+  if (!v) return ''
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(v)
+  const d = m ? { mo: +m[2] - 1, day: +m[3] } : (() => { const t = new Date(v); return isNaN(+t) ? null : { mo: t.getMonth(), day: t.getDate() } })()
+  return d ? `${MON[d.mo]} ${d.day}` : ''
+}
+function RowMeta({ def, x, updated }: { def: KindDef; x: any; updated?: string }) {
+  const pub = shortDate(def.date?.(x))
+  const upd = x._origin !== 'built-in' ? shortDate(updated) : ''
+  const a = def.author?.(x)
+  const first = (a?.name || '').trim().split(/\s+/)[0]
+  const rest = def.sub(x)
+  return (
+    <span className="adm-meta">
+      {upd && <span className="adm-mpill" data-tip="Last updated">{I.pencil}{upd}</span>}
+      {pub && <span className="adm-mpill" data-tip="Published">{I.globe}{pub}</span>}
+      {def.author && <span className="adm-mpill adm-mpill--who">{a?.image ? <img src={a.image} alt="" loading="lazy" /> : <i className="adm-mpill-ph">{I.user}</i>}{first || 'No writer'}</span>}
+      {rest && <span className="adm-meta-rest">{rest}</span>}
+    </span>
+  )
+}
+
 function ContentManager({ def }: { def: KindDef }) {
   const { stage } = useDrafts()
   const { rows, reload } = useRows(def.kind)
   const { features, set: setFeature } = useFeatures()
   const [q, setQ] = useState('')
-  const [filter, setFilter] = useState<'all' | 'edited' | 'hidden'>('all')
+  const [filter, setFilter] = useState<'all' | 'updated' | 'hidden'>('all')
   const [editing, setEditing] = useState<any | null>(null)
   const [starMenu, setStarMenu] = useState<string | null>(null)
   const [limit, setLimit] = useState(60)
@@ -282,7 +327,7 @@ function ContentManager({ def }: { def: KindDef }) {
     return sorted
   }, [rows, def])
   const shown = items.filter((x) => {
-    if (filter === 'edited' && x._origin === 'built-in') return false
+    if (filter === 'updated' && x._origin === 'built-in') return false
     if (filter === 'hidden' && x._visible) return false
     if (!q) return true
     const s = (def.title(x) + ' ' + def.sub(x)).toLowerCase()
@@ -327,14 +372,14 @@ function ContentManager({ def }: { def: KindDef }) {
       <div className="adm-card-head">
         <div>
           <h2>{def.label}</h2>
-          <p>{items.length} {def.singular}{items.length === 1 ? '' : 's'} · {items.filter((x) => x._origin !== 'built-in').length} edited or added{def.star ? ' · Star an item to feature it in the homepage hero' : ''}</p>
+          <p>{items.length} {def.singular}{items.length === 1 ? '' : 's'} · {items.filter((x) => x._origin !== 'built-in').length} updated or added{def.star ? ' · Star an item to feature it in the homepage hero' : ''}</p>
         </div>
         <button type="button" className="adm-btn" onClick={() => open()}>{I.plus} Add {def.singular}</button>
       </div>
       <div className="adm-toolbar">
         <input className="adm-field adm-search" placeholder={`Search ${def.label.toLowerCase()}…`} value={q} onChange={(e) => setQ(e.target.value)} />
         <div className="adm-seg adm-seg--sm">
-          {(['all', 'edited', 'hidden'] as const).map((f) => <button key={f} type="button" className={filter === f ? 'is-on' : ''} onClick={() => setFilter(f)}>{f === 'all' ? 'All' : f === 'edited' ? 'Edited' : 'Hidden'}</button>)}
+          {(['all', 'updated', 'hidden'] as const).map((f) => <button key={f} type="button" className={filter === f ? 'is-on' : ''} onClick={() => setFilter(f)}>{f === 'all' ? 'All' : f === 'updated' ? 'Updated' : 'Hidden'}</button>)}
         </div>
       </div>
       {!rows ? <p className="adm-hint">Loading…</p> : (
@@ -347,10 +392,10 @@ function ContentManager({ def }: { def: KindDef }) {
                 {def.image && <span className="adm-thumb">{img ? <img src={img} alt="" loading="lazy" /> : I.image}</span>}
                 <button type="button" className="adm-row-main" onClick={() => open(x)}>
                   <b>{def.title(x) || <em>Untitled</em>}</b>
-                  <span>{def.sub(x)}</span>
+                  <RowMeta def={def} x={x} updated={rowOf(x._slug)?.updated_at} />
                 </button>
                 <span className="adm-row-tags">
-                  {x._origin !== 'built-in' && <span className="adm-tag">{x._origin === 'new' ? 'Added' : 'Edited'}</span>}
+                  {x._origin !== 'built-in' && <span className="adm-tag">{x._origin === 'new' ? 'Added' : 'Updated'}</span>}
                   {!x._visible && <span className="adm-tag adm-tag--muted">Hidden</span>}
                   {stars.map((s) => <span key={s} className="adm-tag adm-tag--star">{SLOT_LABEL[s]}</span>)}
                 </span>

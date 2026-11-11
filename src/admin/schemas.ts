@@ -29,6 +29,7 @@ export type KindDef = {
   singular: string
   title: (x: any) => string
   sub: (x: any) => string
+  author?: (x: any) => { name?: string; image?: string } | null
   image?: (x: any) => string | undefined
   date?: (x: any) => string | undefined
   star?: ('lead' | 'blog' | 'podcast')[]
@@ -39,7 +40,7 @@ export type KindDef = {
 export const KIND_DEFS: KindDef[] = [
   {
     kind: 'article', label: 'Blog', singular: 'article', star: ['lead', 'blog'],
-    title: (x) => x.title, sub: (x) => [x.date, x.detail?.author?.name, (x.categories || []).join(', ')].filter(Boolean).join(' · '),
+    title: (x) => x.title, sub: (x) => { const c: string[] = x.categories || []; return c.length > 2 ? c.slice(0, 2).join(', ') + ' +' + (c.length - 2) : c.join(', ') }, author: (x) => x.detail?.author || null,
     image: (x) => x.image, date: (x) => x.date, url: (s) => `/articles/${s}`,
     fields: [
       { k: 'title', label: 'Title', type: 'text', wide: true, required: true, ph: 'e.g. How sleep shapes your metabolism', group: { title: 'Basics', sub: 'Headline, publish date and reading time.' } },
@@ -62,7 +63,7 @@ export const KIND_DEFS: KindDef[] = [
   },
   {
     kind: 'episode', label: 'Podcast', singular: 'episode', star: ['podcast'],
-    title: (x) => x.title, sub: (x) => [x.date, x.season && `S${x.season} · Ep. ${x.number}`, x.guest].filter(Boolean).join(' · '),
+    title: (x) => x.title, sub: (x) => [x.season && `S${x.season} · Ep. ${x.number}`, x.guest].filter(Boolean).join(' · '),
     image: (x) => x.image, date: (x) => x.date, url: (s) => `/podcast/${s}`,
     fields: [
       { k: 'title', label: 'Title', type: 'text', wide: true, required: true },
@@ -104,7 +105,7 @@ export const KIND_DEFS: KindDef[] = [
   },
   {
     kind: 'howto', label: 'How To', singular: 'guide',
-    title: (x) => x.title, sub: (x) => [x.date, `${x.steps} steps`, x.time].filter(Boolean).join(' · '), date: (x) => x.date,
+    title: (x) => x.title, sub: (x) => [`${x.steps} steps`, x.time].filter(Boolean).join(' · '), date: (x) => x.date,
     fields: [
       { k: 'title', label: 'Title', type: 'text', wide: true, required: true },
       { k: 'steps', label: 'Number of steps', type: 'number' },
