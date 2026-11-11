@@ -152,10 +152,10 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-chip.is-on{background:rgba(10,132,255,.22)!important;border-color:rgba(10,132,255,.6)!important;color:#fff!important}
 .adm-chip--add{border-style:dashed!important}
 
-.adm-drop{display:flex;gap:16px;align-items:center;border:1px dashed rgba(255,255,255,.2);border-radius:14px;padding:12px;transition:.15s}
+.adm-drop{display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;text-align:center;border:1px dashed rgba(255,255,255,.2);border-radius:14px;padding:12px;transition:.15s}
 .adm-drop.is-over{border-color:var(--a-accent);background:rgba(10,132,255,.08)}
 .adm-drop img,.adm-drop-empty{width:120px;height:80px;border-radius:10px;object-fit:cover;background:rgba(255,255,255,.05);display:grid;place-items:center;color:var(--a-faint);flex:none}
-.adm-drop-copy{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;color:var(--a-muted)}
+.adm-drop-copy{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;text-align:center;font-size:13px;color:var(--a-muted)}
 .adm-drop-copy b{color:#fff;font-weight:500;width:100%}
 
 .adm-records{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
@@ -217,7 +217,7 @@ textarea.adm-field{resize:vertical;line-height:1.5}
   .adm-modal-head,.adm-modal-body,.adm-modal-foot{padding-left:18px;padding-right:18px}
   .adm-modal-foot{flex-wrap:wrap}
   .adm-seg span{display:none}
-  .adm-drop{flex-direction:column;align-items:flex-start}
+  .adm-drop{flex-direction:column;align-items:center}
 }
 
 /* custom date picker (UDS) */
@@ -387,7 +387,9 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 }
 
 .adm-list{display:flex;flex-direction:column;gap:8px}
+.adm-list--fields{border-top:0}
 .adm-list-row{display:flex;align-items:center;gap:8px}
 .adm-list-row .adm-field{flex:1;min-width:0}
 .adm-list-n{width:22px;flex:none;text-align:center;font-size:12px;font-weight:600;opacity:.55}
+.adm-list-dot::before{content:'';display:block;width:6px;height:6px;margin:0 auto;border-radius:999px;background:currentColor}
 .adm-list>.adm-pill{margin-top:4px}
