@@ -354,8 +354,8 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-modal--confirm button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .adm-modal--confirm button:disabled{cursor:not-allowed}
 .adm-modal--confirm .adm-modal-head{padding:24px 24px 0;gap:16px}
-.adm-modal--confirm .adm-modal-head h2{font-size:20px;line-height:28px;font-weight:600;letter-spacing:-.015em}
-.adm-modal--confirm .adm-modal-head .adm-icon-btn{width:36px;height:36px;margin:-8px -8px 0 0;border-radius:6px;color:var(--a-muted)!important}
+.adm-modal--confirm .adm-modal-head h2{color:#fff;font-size:20px;line-height:28px;font-weight:600;letter-spacing:-.015em}
+.adm-modal--confirm .adm-modal-head .adm-icon-btn{width:36px;height:36px;margin:-8px -8px 0 0;border:0;border-radius:6px;background:transparent;color:var(--a-muted)!important}
 .adm-modal--confirm .adm-modal-head .adm-icon-btn:hover{background:rgba(255,255,255,.08)!important;color:#fff!important}
 .adm-modal--confirm .adm-modal-body{padding:14px 24px 0;overflow:visible}
 .adm-modal--confirm .adm-modal-foot{justify-content:flex-end;gap:8px;padding:24px;border-top:0}
