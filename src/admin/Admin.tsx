@@ -314,7 +314,7 @@ function RowMeta({ def, x, updated, views }: { def: KindDef; x: any; updated?: s
       {pub && <span className="adm-mpill" data-tip="Published">{I.globe}{pub}</span>}
       {def.author && <span className="adm-mpill adm-mpill--who" data-who-name={a?.name || 'No writer set'} data-who-img={a?.image || ''} data-who-mail={a?.email || 'No email on file'}>{a?.image ? <img src={a.image} alt="" loading="lazy" /> : <i className="adm-mpill-ph">{I.user}</i>}{first || 'No writer'}</span>}
       {views !== undefined && <span className="adm-mpill" data-tip="Page views, last 30 days">{I.eye}{views.toLocaleString('en-US')}</span>}
-      {isArticle && mins > 0 && <span className="adm-mpill" data-tip="Reading time">{mins} min read</span>}
+      {isArticle && mins > 0 && <span className="adm-mpill" data-tip="Reading time">{mins} min</span>}
       {rest && <span className="adm-meta-rest">{rest}</span>}
     </span>
   )
@@ -450,7 +450,7 @@ function ContentManager({ def }: { def: KindDef }) {
     return sorted
   }, [rows, def])
   const shown = items.filter((x) => {
-    if (filter === 'updated' && x._origin === 'built-in') return false
+    if (filter === 'updated' && x._origin !== 'edited') return false
     if (filter === 'hidden' && x._visible) return false
     if (editor && lastBy[x._slug] !== editor) return false
     if (!q) return true
@@ -496,7 +496,7 @@ function ContentManager({ def }: { def: KindDef }) {
       <div className="adm-card-head">
         <div>
           <h2>{def.label}</h2>
-          <p>{items.length} {def.singular}{items.length === 1 ? '' : 's'} · {items.filter((x) => x._origin !== 'built-in').length} updated or added{def.star ? ' · Star an item to feature it in the homepage hero' : ''}</p>
+          <p>{items.length} {def.singular}{items.length === 1 ? '' : 's'} · {items.filter((x) => x._origin === 'edited').length} updated · {items.filter((x) => x._origin === 'new').length} added{def.star ? ' · Star an item to feature it in the homepage hero' : ''}</p>
         </div>
         <button type="button" className="adm-btn" onClick={() => open()}>{I.plus} Add {def.singular}</button>
       </div>
@@ -518,12 +518,12 @@ function ContentManager({ def }: { def: KindDef }) {
                 <button type="button" className="adm-row-main" onClick={() => open(x)}>
                   <b>{def.title(x) || <em>Untitled</em>}</b>
                   <RowMeta def={def} x={x} updated={rowOf(x._slug)?.updated_at} views={views ? views[x._slug] || 0 : undefined} />
-                </button>
-                <span className="adm-row-tags">
+                <span className="adm-row-tags adm-row-tags--in">
                   {x._origin !== 'built-in' && <span className="adm-tag">{x._origin === 'new' ? 'Added' : 'Updated'}</span>}
                   {!x._visible && <span className="adm-tag adm-tag--muted">Hidden</span>}
                   {stars.map((s) => <span key={s} className="adm-tag adm-tag--star">{SLOT_LABEL[s]}</span>)}
                 </span>
+                </button>
                 <span className="adm-row-tools">
                   {def.star && (
                     <span className="adm-star-wrap">
