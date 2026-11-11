@@ -403,3 +403,4 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-pop-title{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:rgba(255,255,255,.88);font-size:14px}
 .adm-pop-list .adm-mpill{flex:none}
 .adm-card > .adm-more{margin:14px auto 0;display:flex}
+.adm-pop{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.adm-pop>div{min-width:0}.adm-pop.adm-pop--one{grid-template-columns:minmax(0,1fr)}@media (max-width:900px){.adm-pop{grid-template-columns:minmax(0,1fr)}}
