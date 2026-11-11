@@ -300,3 +300,4 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-xfact span{min-width:0}
 .adm-xfact b{font-weight:500;font-size:13px;color:#fff;overflow-wrap:anywhere}
 .adm-xlink{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:#9FA0FF;align-self:flex-start}
+.adm-row-main{flex:1 1 0}
