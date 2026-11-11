@@ -659,7 +659,7 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
   )
 }
 
-const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer and source': 'writer', 'Highlights': 'highlights', 'Sources': 'writer', 'FAQ': 'highlights' }
+const EX_KEY: Record<string, string> = { 'Basics': 'basics', 'Cover and summary': 'cover', 'Article body': 'body', 'Tags': 'tags', 'Writer': 'writer', 'Highlights': 'highlights', 'Sources': 'writer', 'FAQ': 'highlights' }
 
 /* ---------------- homepage ---------------- */
 
