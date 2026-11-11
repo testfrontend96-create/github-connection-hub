@@ -349,9 +349,39 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-tip{width:max-content}
 .adm-row-tags--in{display:none}
 @media (max-width:640px){.adm-row-tags--in{display:flex}.adm-row-tags--out{display:none}}
-.adm-confirm p{margin:0 0 16px;font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.8)}
+/* UDS alert dialog: compact type, 6px controls, dark input and clear destructive action */
+.adm-modal--confirm{max-width:512px;border-radius:14px;background:#101016;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;box-shadow:0 24px 70px -24px rgba(0,0,0,.9)}
+.adm-modal--confirm button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+.adm-modal--confirm button:disabled{cursor:not-allowed}
+.adm-modal--confirm .adm-modal-head{padding:24px 24px 0;gap:16px}
+.adm-modal--confirm .adm-modal-head h2{color:#fff;font-size:20px;line-height:28px;font-weight:600;letter-spacing:-.015em}
+.adm-modal--confirm .adm-modal-head .adm-icon-btn{width:36px;height:36px;margin:-8px -8px 0 0;border:0;border-radius:6px;background:transparent;color:var(--a-muted)!important}
+.adm-modal--confirm .adm-modal-head .adm-icon-btn:hover{background:rgba(255,255,255,.08)!important;color:#fff!important}
+.adm-modal--confirm .adm-modal-body{padding:14px 24px 0;overflow:visible}
+.adm-modal--confirm .adm-modal-foot{justify-content:flex-end;gap:8px;padding:24px;border-top:0}
+.adm-confirm{width:100%;min-width:0}
+.adm-confirm p{margin:0;max-width:100%;overflow-wrap:anywhere}
+.adm-confirm .adm-confirm-copy{font-size:15px;line-height:1.6;color:rgba(255,255,255,.92)}
 .adm-confirm b{color:#fff;font-weight:600}
-.adm-confirm-check{display:flex;gap:10px;align-items:flex-start;font-size:14px;cursor:pointer;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:rgba(255,255,255,.04)}
-.adm-confirm-check input{width:16px;height:16px;margin-top:2px;accent-color:#FF453A;flex:none}
-.adm .adm-btn--danger{background:#FF453A!important;color:#fff!important;border-color:#FF453A!important}
-.adm .adm-btn--danger:disabled{opacity:.4;cursor:not-allowed}
+.adm-confirm .adm-confirm-note{margin-top:8px;font-size:14px;line-height:1.55;color:var(--a-muted)}
+.adm-confirm-check{display:flex;gap:12px;align-items:flex-start;margin-top:20px;padding:14px;border:1px solid var(--a-line2);border-radius:8px;background:var(--a-fill);font-size:14px;line-height:1.45;color:rgba(255,255,255,.82);cursor:pointer;transition:border-color .15s,background .15s}
+.adm-confirm-check:hover{border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.06)}
+.adm-confirm-check input{appearance:none;-webkit-appearance:none;display:grid;place-content:center;width:18px;height:18px;margin:1px 0 0;flex:none;border:1px solid rgba(255,255,255,.34);border-radius:4px;background:#15151b;color:#fff;cursor:pointer;transition:background .15s,border-color .15s,box-shadow .15s}
+.adm-confirm-check input::before{content:"";width:10px;height:10px;transform:scale(0);background:currentColor;clip-path:polygon(14% 44%,0 59%,39% 100%,100% 22%,84% 7%,38% 70%);transition:transform .12s}
+.adm-confirm-check input:checked{background:#6B6CFF;border-color:#6B6CFF}
+.adm-confirm-check input:checked::before{transform:scale(1)}
+.adm-confirm-check input:focus-visible{outline:0;box-shadow:0 0 0 3px rgba(107,108,255,.25)}
+.adm-confirm-cancel,.adm-modal--confirm .adm-btn--danger{display:inline-flex;align-items:center;justify-content:center;min-width:88px;height:36px;padding:0 16px;border-radius:6px;font-size:14px;font-weight:500;line-height:1;white-space:nowrap;box-shadow:none;transition:background .15s,border-color .15s}
+.adm-modal--confirm{--a-line2:rgba(255,255,255,.14);--a-fill:rgba(255,255,255,.04);--a-muted:rgba(255,255,255,.55)}
+.adm-modal--confirm .adm-confirm-cancel{border:1px solid var(--a-line2);background:var(--a-fill);color:rgba(255,255,255,.88)}
+.adm-modal--confirm .adm-confirm-cancel:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.24)}
+.adm-modal--confirm .adm-btn--danger{background:#991F35!important;color:#fff!important;border:1px solid #991F35!important}
+.adm-modal--confirm .adm-btn--danger:hover:not(:disabled){background:#B32842!important;border-color:#B32842!important}
+.adm-modal--confirm .adm-btn--danger:disabled{opacity:.45;cursor:not-allowed}
+.adm-confirm-cancel:focus-visible,.adm-modal--confirm .adm-btn--danger:focus-visible{outline:0;box-shadow:0 0 0 3px rgba(107,108,255,.28)}
+@media (max-width:640px){
+  .adm-modal--confirm .adm-modal-head{padding:20px 20px 0}
+  .adm-modal--confirm .adm-modal-body{padding:12px 20px 0}
+  .adm-modal--confirm .adm-modal-foot{padding:20px;flex-wrap:nowrap}
+  .adm-modal--confirm .adm-modal-foot button{flex:1}
+}

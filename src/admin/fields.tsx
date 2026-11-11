@@ -5,11 +5,11 @@ import { uploadImage } from './media'
 import { I } from './icons'
 import { DateField } from './DateField'
 
-export function Modal({ title, onClose, children, wide, footer }: { title: string; onClose: () => void; children: ReactNode; wide?: boolean; footer?: ReactNode }) {
+export function Modal({ title, onClose, children, wide, footer, className = '' }: { title: string; onClose: () => void; children: ReactNode; wide?: boolean; footer?: ReactNode; className?: string }) {
   return (
     <div className="adm-modal-wrap">
       <button type="button" aria-label="Close" className="adm-modal-scrim" onClick={onClose} />
-      <div className={'adm-modal' + (wide ? ' adm-modal--wide' : '')} role="dialog" aria-label={title}>
+      <div className={'adm-modal' + (wide ? ' adm-modal--wide' : '') + (className ? ' ' + className : '')} role="dialog" aria-label={title}>
         <div className="adm-modal-head">
           <h2>{title}</h2>
           <button type="button" className="adm-icon-btn" onClick={onClose} aria-label="Close" data-tip="Close without saving">{I.x}</button>
