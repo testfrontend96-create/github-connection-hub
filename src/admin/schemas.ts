@@ -29,7 +29,7 @@ export type KindDef = {
   singular: string
   title: (x: any) => string
   sub: (x: any) => string
-  author?: (x: any) => { name?: string; image?: string } | null
+  author?: (x: any) => { name?: string; image?: string; email?: string } | null
   image?: (x: any) => string | undefined
   date?: (x: any) => string | undefined
   star?: ('lead' | 'blog' | 'podcast')[]
