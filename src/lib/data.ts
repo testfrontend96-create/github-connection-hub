@@ -10,6 +10,8 @@ import { mergeRows, strip } from './overrides'
 import { remoteRows } from './remote'
 import { guideUrl } from './browsing'
 import { sentenceCase } from './sentenceCase'
+import articlePlaceholder from '../assets/placeholder-article.jpg'
+import episodePlaceholder from '../assets/placeholder-episode.jpg'
 
 export type Any = Record<string, any>
 
@@ -37,6 +39,9 @@ export const topics: Any[] = live('topic').filter((t: Any) => !RETIRED.has(t.slu
 export const entities: Any[] = live('entity')
 export const articles: Any[] = live('article').sort(byDateDesc)
 export const episodes: Any[] = live('episode').sort(byDateDesc)
+// Every card needs artwork: fall back to the first body image, then a shared placeholder.
+for (const a of articles) if (!a.image) a.image = (a.detail?.blocks || []).find((b: Any) => b?.t === 'img' && b.src)?.src || articlePlaceholder
+for (const p of episodes) if (!p.image) p.image = episodePlaceholder
 export const problems: Any[] = live('problem')
 export const reports: Any[] = clone(reportsRaw)
 export const howtos: Any[] = live('howto')
