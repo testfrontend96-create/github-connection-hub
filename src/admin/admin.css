@@ -424,3 +424,16 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-jump-up{animation:adm-jump-up .38s cubic-bezier(.3,.7,.4,1)}
 .adm-jump-down{animation:adm-jump-down .38s cubic-bezier(.3,.7,.4,1)}
 @media (prefers-reduced-motion:reduce){.adm-jump-up,.adm-jump-down{animation:none}}
+
+/* Numbered, reorderable rows; the moved row keeps a purple outline */
+.adm-numbered{display:flex;gap:12px;align-items:flex-start}
+.adm-num{flex:none;display:grid;place-items:center;width:24px;height:24px;margin-top:4px;border-radius:999px;background:rgba(255,255,255,.08);color:var(--a-faint,#aaa);font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.adm-record.adm-jump-up,.adm-record.adm-jump-down,.adm-block.adm-jump-up,.adm-block.adm-jump-down{border-color:rgba(150,152,255,.85)!important;box-shadow:0 0 0 3px rgba(107,108,255,.18)}
+.adm-jump-up .adm-num,.adm-jump-down .adm-num{background:rgba(150,152,255,.3);color:#fff}
+/* Article body editor */
+.adm-sec{position:relative}
+.adm-blocks{gap:10px}
+.adm-block-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px}
+.adm-block-head{margin-bottom:0}
+.adm-body-more{position:absolute;top:20px;right:60px}
+.adm-body-ctas{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
