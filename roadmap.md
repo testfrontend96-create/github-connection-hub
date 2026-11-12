@@ -14,3 +14,5 @@
 - [x] Give every section outline CTA one uniform border colour, no darker bottom edge.
 - [x] Add more breathing room between Top terms and All Topics.
 - [ ] Backlog: replace the evidence indicator (data kept in entries, hidden on site and admin)
+- [ ] Backlog: Events admin panel — hidden from the admin tab bar (data and panel code kept in place), upcoming events stay as they are on the site
+- [ ] Backlog: homepage hero — no dropdown in the hero cards; the Choose button opens a picker with Blog article / Podcast episode tabs
