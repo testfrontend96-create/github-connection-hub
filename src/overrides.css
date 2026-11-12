@@ -1731,3 +1731,7 @@ a:hover .art[data-k="episode"] img,
   .crumbs--back { display: flex; }
   .crumbs--back a { color: rgba(255,255,255,.75); font-weight: 600; }
 }
+
+/* KB diagrams: show the whole drawing, frame hugs the picture, capped at the photo frame height */
+.entity-photo--fit { aspect-ratio: auto; padding: 14px; display: flex; justify-content: center; }
+.entity-photo--fit img { width: 100%; height: auto; max-height: 440px; object-fit: contain; }
