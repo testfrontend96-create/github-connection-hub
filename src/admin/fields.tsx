@@ -80,14 +80,17 @@ function Chips({ options, value, onChange, custom }: { options: Opt[]; value: st
 }
 
 function Records({ f, value, onChange }: { f: Extract<Field, { type: 'records' }>; value: any[]; onChange: (v: any[]) => void }) {
-  const set = (i: number, k: string, v: any) => onChange(value.map((r, j) => (j === i ? { ...r, [k]: v } : r)))
+  // An empty list still shows one blank card, so there is always something to type into.
+  const min = (f as any).min ?? 0
+  const rows = value.length >= min ? value : [...value, ...Array.from({ length: min - value.length }, () => ({}) as any)]
+  const set = (i: number, k: string, v: any) => onChange(rows.map((r, j) => (j === i ? { ...r, [k]: v } : r)))
   const [jump, setJump] = useState<{ i: number; d: number; n: number } | null>(null)
-  const move = (i: number, d: number) => { const n = [...value]; const [x] = n.splice(i, 1); n.splice(i + d, 0, x); onChange(n); setJump((j) => ({ i: i + d, d, n: (j?.n || 0) + 1 })) }
+  const move = (i: number, d: number) => { const n = [...rows]; const [x] = n.splice(i, 1); n.splice(i + d, 0, x); onChange(n); setJump((j) => ({ i: i + d, d, n: (j?.n || 0) + 1 })) }
   const jc = (i: number) => (jump && jump.i === i ? (jump.d < 0 ? ' adm-jump-up' : ' adm-jump-down') : '')
   const jk = (i: number) => (jump && jump.i === i ? `j${jump.n}` : '')
   return (
     <div className="adm-records">
-      {value.map((r, i) => (
+      {rows.map((r, i) => (
         <div className={`adm-record adm-numbered${jc(i)}`} key={`${i}${jk(i)}`}>
           <span className="adm-num">{i + 1}</span>
           <div className="adm-record-fields">
@@ -95,19 +98,19 @@ function Records({ f, value, onChange }: { f: Extract<Field, { type: 'records' }
               <label key={s.k}>
                 <span className="adm-label">{s.label}</span>
                 {s.type === 'textarea' || s.type === 'lines'
-                  ? <textarea className="adm-field" rows={s.type === 'lines' ? 4 : 3} value={s.type === 'lines' ? (r[s.k] || []).join('\n') : r[s.k] || ''} onChange={(e) => set(i, s.k, s.type === 'lines' ? e.target.value.split('\n') : e.target.value)} />
-                  : <input className="adm-field" value={r[s.k] || ''} onChange={(e) => set(i, s.k, e.target.value)} />}
+                  ? <textarea className="adm-field" rows={s.type === 'lines' ? 4 : 3} value={s.type === 'lines' ? (r[s.k] || []).join('\n') : r[s.k] || ''} onChange={(e) => set(i, s.k, s.type === 'lines' ? e.target.value.split('\n') : e.target.value)} placeholder={s.ph || ''} />
+                  : <input className="adm-field" value={r[s.k] || ''} onChange={(e) => set(i, s.k, e.target.value)} placeholder={s.ph || ''} />}
               </label>
             ))}
           </div>
           <div className="adm-record-tools">
             <button type="button" className="adm-icon-btn" disabled={i === 0} onClick={() => move(i, -1)} aria-label="Move up" data-tip="Move up one place">{I.up}</button>
-            <button type="button" className="adm-icon-btn" disabled={i === value.length - 1} onClick={() => move(i, 1)} aria-label="Move down" data-tip="Move down one place">{I.down}</button>
-            <button type="button" className="adm-icon-btn adm-danger" onClick={() => onChange(value.filter((_, j) => j !== i))} aria-label="Remove" data-tip="Remove this section">{I.trash}</button>
+            <button type="button" className="adm-icon-btn" disabled={i === rows.length - 1} onClick={() => move(i, 1)} aria-label="Move down" data-tip="Move down one place">{I.down}</button>
+            <button type="button" className="adm-icon-btn adm-danger" disabled={i >= value.length} onClick={() => onChange(rows.filter((_, j) => j !== i))} aria-label="Remove" data-tip="Remove this section">{I.trash}</button>
           </div>
         </div>
       ))}
-      <button type="button" className="adm-pill" onClick={() => onChange([...value, {}])}>{I.plus}Add</button>
+      <button type="button" className="adm-pill" onClick={() => onChange([...rows, {}])}>{I.plus}Add</button>
     </div>
   )
 }
@@ -136,6 +139,7 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
   return (
     <div className="adm-blocks">
       <div className="adm-body-more">
+        <span className="adm-body-more-label">More items</span>
         <button type="button" className="adm-icon-btn" aria-label="More section types" data-tip="Add a list, table, video or promo" aria-expanded={menu} onClick={() => setMenu(!menu)}>{DOTS}</button>
         {menu && <div className="adm-menu">{MORE_BLOCKS.map(([t, l]) => <button key={t} type="button" onClick={() => { add(t); setMenu(false) }}>{l}</button>)}</div>}
       </div>
