@@ -19,7 +19,7 @@ export default function Topic() {
 
   return (
     <>
-      <PageHead compact crumbs={[['Hub', '/'], ['Topics', '/#topics'], [t.name, null]]}>
+      <PageHead compact crumbs={[['Hub', '/'], ['Topics', '/#topics'], ['Topic', null]]}>
         <p className="eyebrow">{t.tagline}</p>
         <h1 className="display">{t.name}</h1>
         <p className="lede">{t.summary}</p>

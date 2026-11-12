@@ -20,7 +20,7 @@ export default function Entity() {
 
   return (
     <>
-      <PageHead compact accent="var(--indigo)" crumbs={[['Hub', '/'], ['Knowledge Base', '/knowledge-base'], [e.name, null]]}>
+      <PageHead compact accent="var(--indigo)" crumbs={[['Hub', '/'], ['Knowledge Base', '/knowledge-base'], [e.type ? e.type[0].toUpperCase() + e.type.slice(1) : 'Entry', null]]}>
           <div className="detail-head-meta knowledge-item-meta">
             <Tag kind={e.type} />
           </div>

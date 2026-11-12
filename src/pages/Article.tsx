@@ -240,7 +240,7 @@ export default function Article() {
 
   return (
     <>
-      <PageHead compact crumbs={[['Hub', '/'], ['Blog', '/blog'], [a.title, null]]} />
+      <PageHead compact crumbs={[['Hub', '/'], ['Blog', '/blog'], ['Article', null]]} />
       <section className="section art-top" ref={topRef}><div className="wrap">
         <div className="art-hero">
           <div className="art-hero-title"><h1 className="display">{a.title}</h1><Share title={a.title} url={url} /></div>

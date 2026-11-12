@@ -10,7 +10,7 @@ export default function Problem() {
   if (!pr) return <NotFound />
   return (
     <>
-      <PageHead compact crumbs={[['Hub', '/'], ['Where it hurts', '/#problems'], [pr.name, null]]}>
+      <PageHead compact crumbs={[['Hub', '/'], ['Where it hurts', '/#problems'], ['Problem', null]]}>
         <p className="eyebrow">{pr.tagline}</p>
         <h1 className="display">{pr.name}</h1>
         <p className="lede">{pr.summary}</p>

@@ -30,8 +30,7 @@ export default function Episode() {
   // Episode credits list the guest first and the host second.
   const [guest, host] = String(p.guest || '').split(/,\s*/)
   const crumbs: [string, string | null][] = [['Hub', '/'], ['Podcast', '/podcast']]
-  if (p.season) crumbs.push([`Season ${p.season}`, null])
-  crumbs.push([`Episode ${p.number}`, null])
+  crumbs.push(['Episode', null])
   return (
     <>
       <PageHead compact crumbs={crumbs}>
