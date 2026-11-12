@@ -728,7 +728,7 @@ function HomepageManager() {
                     </button>
                   ))}
                 </div>
-                <div className="adm-choose-row"><button type="button" className="adm-pill" onClick={() => { setChooseKind(k); setChooser(slot); setChooseQuery('') }}>{I.search} Choose what to feature</button></div>
+                <div className="adm-choose-row"><button type="button" className="adm-pill" onClick={() => { setChooseKind(k); setChooser(slot); setChooseQuery('') }}>Choose what to feature{I.right}</button></div>
                 <small className="adm-help adm-slot-help">{mode === 'popular' ? ((pop[k] || []).length ? `Most viewed in the last 30 days (${pop[k][0].views} views for the top one).` : 'No views counted yet — showing the latest until visitors start reading.') : mode === 'latest' ? `Newest ${k === 'article' ? 'blog post' : 'episode'} not already shown.` : ''}</small>
               </div>
             )
