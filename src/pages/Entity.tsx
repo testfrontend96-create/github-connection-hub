@@ -6,6 +6,8 @@ import NotFound from './NotFound'
 import ExampleHighlight from '../components/ExampleHighlight'
 
 const PICS = import.meta.glob('../assets/knowledge/*.asset.json', { eager: true, import: 'default' }) as Record<string, { url: string }>
+// Diagrams, molecule drawings and white-background artwork show whole (frame shrinks to the picture); photos fill the frame.
+const FIT = new Set(['autophagy','biological-age','caffeine-l-theanine','circadian-rhythm','creatine','deep-sleep','fasting-insulin','hrv','hs-crp','melatonin','mitochondria','nad','nmn','omega-3','peptides','protein-intake','rbc-magnesium','sleep-hygiene-protocol','time-restricted-eating','vitamin-d-blood','vitamin-d','vo2-max'])
 const pic = (slug: string) => PICS[`../assets/knowledge/${slug}.asset.json`]?.url
 
 export default function Entity() {
@@ -49,7 +51,7 @@ export default function Entity() {
             <div className="disclaimer"><strong>Educational content, not medical advice.</strong> The Biohacking Hub summarises published research for general education. Talk to your doctor before changing medication, starting a supplement, or acting on any test result.</div>
           </div>
           <aside className="side">
-            {(e.image || pic(e.slug)) && <figure className="entity-photo"><img src={e.image || pic(e.slug)} alt={e.name} /></figure>}
+            {(e.image || pic(e.slug)) && <figure className={`entity-photo${!e.image && FIT.has(e.slug) ? ' entity-photo--fit' : ''}`}><img src={e.image || pic(e.slug)} alt={e.name} /></figure>}
             {tl.length > 0 && <div className="side-block"><h4>Topics</h4>{tl.map((s: string) => <Link key={s} className="side-link" to={`/topics/${s}`}><span className="t">{T[s].name}</span><span>→</span></Link>)}</div>}
             {rel.length > 0 && <div className="side-block"><h4>Connected entities</h4>{rel.map((s: string) => <Link key={s} className="side-link" to={`/knowledge/${s}`}><span className="t">{E[s].name}</span><Tag kind={E[s].type} /></Link>)}</div>}
             {meas.length > 0 && <div className="side-block"><h4>{measLabel}</h4>{meas.map((s) => <Link key={s} className="side-link" to={`/knowledge/${s}`}><span className="t">{E[s].name}</span><span>→</span></Link>)}</div>}
