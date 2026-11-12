@@ -6,7 +6,7 @@ export type Field =
   | { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'date' | 'number' | 'image' | 'bool' | 'lines' | 'list'; min?: number; add?: string; bullet?: boolean; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string; ex?: string } }
   | { k: string; label: string; type: 'select'; options: () => Opt[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string; ex?: string } }
   | { k: string; label: string; type: 'chips'; options: () => Opt[]; custom?: boolean; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string; ex?: string } }
-  | { k: string; label: string; type: 'records'; sub: { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'lines' }[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string; ex?: string } }
+  | { k: string; label: string; type: 'records'; sub: { k: string; label: string; type: 'text' | 'textarea' | 'url' | 'lines'; ph?: string }[]; min?: number; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string; ex?: string } }
   | { k: string; label: string; type: 'dict'; keys: string[]; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string; ex?: string } }
   | { k: string; label: string; type: 'blocks'; help?: string; wide?: boolean; required?: boolean; cls?: string; ph?: string; group?: { title: string; sub: string; ex?: string } }
 
@@ -59,7 +59,7 @@ export const KIND_DEFS: KindDef[] = [
       { k: 'detail.author.role', label: 'Writer role', type: 'text', ph: 'e.g. Health writer' },
       { k: 'detail.author.email', label: 'Writer email', type: 'text', ph: 'e.g. jane@biohackers.world' },
       { k: 'sources', label: 'Source links', type: 'list', min: 1, add: 'Add source', wide: true, ph: 'https://… where the article first appeared', group: { title: 'Sources', sub: 'Where the article was first published. The first link is used as the original.' } },
-      { k: 'detail.faq', label: 'Article FAQ', type: 'records', wide: true, group: { title: 'FAQ', sub: 'Common questions and answers shown at the end of the article.' }, sub: [{ k: 'q', label: 'Question', type: 'text' }, { k: 'a', label: 'Answer', type: 'textarea' }] },
+      { k: 'detail.faq', label: 'Article FAQ', type: 'records', min: 1, wide: true, group: { title: 'FAQ', sub: 'Common questions and answers shown at the end of the article.' }, sub: [{ k: 'q', label: 'Question', type: 'text', ph: 'e.g. How long does it take to see results?' }, { k: 'a', label: 'Answer', type: 'textarea', ph: 'A clear, short answer.' }] },
     ],
   },
   {
@@ -98,7 +98,7 @@ export const KIND_DEFS: KindDef[] = [
       { k: 'summary', label: 'Summary', type: 'textarea', wide: true, ph: 'Explain the entry in one short paragraph.', group: { title: 'Summary', sub: 'The one-paragraph answer at the top of the entry.', ex: 'kb-summary' } },
       { k: 'keyFacts', label: 'Key facts', type: 'records', wide: true, group: { title: 'Key facts', sub: 'Label and value pairs shown in the facts table.', ex: 'kb-facts' }, sub: [{ k: 'label', label: 'Label', type: 'text' }, { k: 'value', label: 'Value', type: 'text' }] },
       { k: 'sections', label: 'Sections', type: 'records', wide: true, group: { title: 'Body', sub: 'Headed sections that explain the entry in depth.', ex: 'kb-body' }, sub: [{ k: 'h', label: 'Heading', type: 'text' }, { k: 'body', label: 'Paragraphs (one per line)', type: 'lines' }] },
-      { k: 'faq', label: 'FAQ', type: 'records', wide: true, group: { title: 'FAQ', sub: 'Common questions and answers shown under the body.', ex: 'kb-faq' }, sub: [{ k: 'q', label: 'Question', type: 'text' }, { k: 'a', label: 'Answer', type: 'textarea' }] },
+      { k: 'faq', label: 'FAQ', type: 'records', min: 1, wide: true, group: { title: 'FAQ', sub: 'Common questions and answers shown under the body.', ex: 'kb-faq' }, sub: [{ k: 'q', label: 'Question', type: 'text', ph: 'e.g. What is a healthy range?' }, { k: 'a', label: 'Answer', type: 'textarea', ph: 'A clear, short answer.' }] },
       { k: 'topics', label: 'Topics', type: 'chips', options: TOPIC_OPTS, wide: true, group: { title: 'Connections', sub: 'Topics and related entries listed beside the entry.', ex: 'kb-links' } },
       { k: 'related', label: 'Related entries', type: 'chips', options: ENTITY_OPTS, wide: true },
       { k: 'measuredBy', label: 'Measured by', type: 'chips', options: ENTITY_OPTS, wide: true },
