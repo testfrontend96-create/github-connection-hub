@@ -413,3 +413,14 @@ textarea.adm-field{resize:vertical;line-height:1.5}
   .adm-slots > .adm-slot > * { margin-top: 0; margin-bottom: 0; align-self: start; }
 }
 .adm-slot-date:empty::before, .adm-slot-help:empty::before { content: "\00a0"; }
+
+/* Active states: periwinkle field focus + the whole island lights up */
+.adm .adm-field:focus,.adm .adm-date-btn:focus,.adm .adm-date-btn[aria-expanded="true"]{border-color:rgba(150,152,255,.85)!important;box-shadow:0 0 0 3px rgba(107,108,255,.22);outline:0}
+.adm-sec{transition:border-color .18s ease,box-shadow .18s ease}
+.adm-sec:focus-within{border-color:rgba(150,152,255,.6)!important;box-shadow:0 0 0 1px rgba(150,152,255,.25)}
+/* Reorder jump */
+@keyframes adm-jump-up{0%{transform:translateY(28px)}55%{transform:translateY(-8px)}80%{transform:translateY(2px)}100%{transform:none}}
+@keyframes adm-jump-down{0%{transform:translateY(-28px)}55%{transform:translateY(8px)}80%{transform:translateY(-2px)}100%{transform:none}}
+.adm-jump-up{animation:adm-jump-up .38s cubic-bezier(.3,.7,.4,1)}
+.adm-jump-down{animation:adm-jump-down .38s cubic-bezier(.3,.7,.4,1)}
+@media (prefers-reduced-motion:reduce){.adm-jump-up,.adm-jump-down{animation:none}}

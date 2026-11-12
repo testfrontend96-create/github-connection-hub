@@ -81,11 +81,14 @@ function Chips({ options, value, onChange, custom }: { options: Opt[]; value: st
 
 function Records({ f, value, onChange }: { f: Extract<Field, { type: 'records' }>; value: any[]; onChange: (v: any[]) => void }) {
   const set = (i: number, k: string, v: any) => onChange(value.map((r, j) => (j === i ? { ...r, [k]: v } : r)))
-  const move = (i: number, d: number) => { const n = [...value]; const [x] = n.splice(i, 1); n.splice(i + d, 0, x); onChange(n) }
+  const [jump, setJump] = useState<{ i: number; d: number; n: number } | null>(null)
+  const move = (i: number, d: number) => { const n = [...value]; const [x] = n.splice(i, 1); n.splice(i + d, 0, x); onChange(n); setJump((j) => ({ i: i + d, d, n: (j?.n || 0) + 1 })) }
+  const jc = (i: number) => (jump && jump.i === i ? (jump.d < 0 ? ' adm-jump-up' : ' adm-jump-down') : '')
+  const jk = (i: number) => (jump && jump.i === i ? `j${jump.n}` : '')
   return (
     <div className="adm-records">
       {value.map((r, i) => (
-        <div className="adm-record" key={i}>
+        <div className={`adm-record${jc(i)}`} key={`${i}${jk(i)}`}>
           <div className="adm-record-fields">
             {f.sub.map((s) => (
               <label key={s.k}>
@@ -117,7 +120,10 @@ const slug = (s: string) => s.toLowerCase().replace(/[^\w\s-]/g, '').trim().repl
 function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => void }) {
   const set = (i: number, b: any) => onChange(value.map((x, j) => (j === i ? b : x)))
   const insert = (i: number, t: string) => { const n = [...value]; n.splice(i, 0, { t }); onChange(n) }
-  const move = (i: number, d: number) => { const n = [...value]; const [x] = n.splice(i, 1); n.splice(i + d, 0, x); onChange(n) }
+  const [jump, setJump] = useState<{ i: number; d: number; n: number } | null>(null)
+  const move = (i: number, d: number) => { const n = [...value]; const [x] = n.splice(i, 1); n.splice(i + d, 0, x); onChange(n); setJump((j) => ({ i: i + d, d, n: (j?.n || 0) + 1 })) }
+  const jc = (i: number) => (jump && jump.i === i ? (jump.d < 0 ? ' adm-jump-up' : ' adm-jump-down') : '')
+  const jk = (i: number) => (jump && jump.i === i ? `j${jump.n}` : '')
   const [adding, setAdding] = useState<number | null>(null)
   const Adder = ({ at }: { at: number }) => adding === at ? (
     <div className="adm-block-add">
@@ -130,7 +136,7 @@ function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => voi
     <div className="adm-blocks">
       <Adder at={0} />
       {value.map((b, i) => (
-        <div key={i}>
+        <div key={`${i}${jk(i)}`} className={jc(i).trim() || undefined}>
           <div className="adm-block">
             <div className="adm-block-head">
               <select className="adm-field adm-field--sm" value={b.t} onChange={(e) => set(i, { ...b, t: e.target.value })}>
