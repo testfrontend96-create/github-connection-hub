@@ -43,17 +43,11 @@ export default function Profile() {
           </div>
           <div className="prof-main-rest">
           {(focus.length > 0 || topicLinks.length > 0) && (
-            <div className="prof-split">
-              {topicLinks.length > 0 && (
-                <div className="prof-box prof-box--topics"><h3>Topics</h3>
-                  <div className="prof-topics">{topicLinks.map((t: string) => <Link key={t} className="mention mention--topic" to={`/topics/${t}`}>{T[t].name}</Link>)}</div>
-                </div>
-              )}
-              {focus.length > 0 && (
-                <div className="prof-box prof-box--focus"><h3>Focus</h3>
-                  <div className="mentions">{focus.map((x: string) => <Mention key={x} slug={x} />)}</div>
-                </div>
-              )}
+            <div className="prof-box prof-box--focus prof-box--combined"><h3>Topics and focus</h3>
+              <div className="mentions">
+                {topicLinks.map((t: string) => <Link key={t} className="mention mention--topic" to={`/topics/${t}`}>{T[t].name}</Link>)}
+                {focus.map((x: string) => <Mention key={x} slug={x} />)}
+              </div>
             </div>
           )}
           <h2 className="prof-h">About {firstName(b.name)}</h2>
