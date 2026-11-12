@@ -27,7 +27,7 @@ export default function Profile() {
 
   return (
     <>
-      <PageHead compact crumbs={[['Hub', '/'], ['Top Biohackers', '/biohackers'], [b.name, null]]} />
+      <PageHead compact crumbs={[['Hub', '/'], ['Top Biohackers', '/biohackers'], ['Profile', null]]} />
       <section className="section art-top prof-top prof-body"><div className="wrap prof-grid">
         <div className="prof-main">
           <div className="prof-id">

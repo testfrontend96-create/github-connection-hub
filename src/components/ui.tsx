@@ -132,6 +132,9 @@ const readJSON = <T,>(k: string, d: T): T => { try { return JSON.parse(sessionSt
 export function recordTrail(path: string) {
   if (typeof sessionStorage === 'undefined') return
   if (path === '/') { sessionStorage.setItem(TRAIL_KEY, '[]'); return }
+  // Opening a section from the navigation starts a fresh trail, so an older
+  // article never lingers behind a podcast episode.
+  if (DIR_LABELS[path] || /^\/(topics|problems)$/.test(path)) { sessionStorage.setItem(TRAIL_KEY, JSON.stringify([path])); return }
   let trail = readJSON<string[]>(TRAIL_KEY, [])
   const i = trail.indexOf(path)
   trail = i >= 0 ? trail.slice(0, i + 1) : [...trail, path].slice(-6)
@@ -148,11 +151,15 @@ export function Crumbs({ items }: { items: [string, string | null][] }) {
   const trail = readJSON<string[]>(TRAIL_KEY, [])
   const idx = trail.indexOf(pathname)
   const prior = (idx >= 0 ? trail.slice(0, idx) : trail).filter(p => p !== '/' && (labels[p] || DIR_LABELS[p]))
-  const list: [string, string | null][] = prior.length
+  const full: [string, string | null][] = prior.length
     ? [['Hub', '/'], ...prior.map(p => [labels[p] || DIR_LABELS[p], p] as [string, string]), [current[0], null]]
     : items
-  return (
-    <nav className="crumbs" aria-label="Breadcrumb">
+  // Hub always shows, plus at most the last three steps (current page included).
+  const list = full.length > 4 ? [full[0], ...full.slice(-3)] : full
+  const back = list[list.length - 2]
+  return (<>
+    {back?.[1] && <nav className="crumbs crumbs--back" aria-label="Back"><Link to={back[1]}>‹ {back[0]}</Link></nav>}
+    <nav className="crumbs crumbs--full" aria-label="Breadcrumb">
       {list.map(([label, href], i) => (
         <span key={i}>
           {href ? <Link to={href}>{label}</Link> : <span className="crumb-current" aria-current="page">{label}</span>}
@@ -160,5 +167,5 @@ export function Crumbs({ items }: { items: [string, string | null][] }) {
         </span>
       ))}
     </nav>
-  )
+  </>)
 }
