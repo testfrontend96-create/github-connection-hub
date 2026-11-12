@@ -188,7 +188,7 @@ function Dashboard({ session }: { session: Session }) {
 const KB_TABS: [Tab, string][] = [['entity', 'Knowledge base'], ['howto', 'How To'], ['topic', 'Topics'], ['problem', 'Problems']]
 const TABS: [Tab, string][] = [
   ['home', 'Homepage'], ['article', 'Blog'], ['episode', 'Podcast'], ['entity', 'Knowledge Base'],
-  ['biohacker', 'Top Biohackers'], ['faq', 'FAQ'], ['event', 'Events'], ['social', 'Social Media'],
+  ['biohacker', 'Top Biohackers'], ['faq', 'FAQ'], ['social', 'Social Media'],
 ]
 
 function PanelBody({ session, tab, setTab }: { session: Session; tab: Tab; setTab: (t: Tab) => void }) {
@@ -669,7 +669,6 @@ function HomepageManager() {
   const [chooser, setChooser] = useState<string | null>(null)
   const [chooseKind, setChooseKind] = useState<'article' | 'episode'>('article')
   const [chooseQuery, setChooseQuery] = useState('')
-  const [slotKinds, setSlotKinds] = useState<Record<string, 'article' | 'episode'>>({ lead: 'article', blog: 'article', podcast: 'episode' })
   const { rows: pRows } = useRows('problem')
   const problemList = useMemo(() => mergeRows(KINDS.problem.base(), pRows || [], KINDS.problem.key), [pRows])
   const { features, set } = useFeatures()
@@ -696,7 +695,9 @@ function HomepageManager() {
 
   if (chooser) return <section className="adm-card">
     <div className="adm-card-head"><div><h2>Choose content · {SLOT_LABEL[chooser]}</h2></div><button type="button" className="adm-pill" onClick={() => setChooser(null)}>Back to Homepage</button></div>
-    <div className="adm-toolbar"><select className="adm-field adm-picker-kind" aria-label="Content type" value={chooseKind} onChange={e => setChooseKind(e.target.value as 'article' | 'episode')}><option value="article">Blog article</option><option value="episode">Podcast episode</option></select>
+    <div className="adm-toolbar"><div className="adm-seg adm-seg--sm" role="group" aria-label="Content type">
+      {([['article', 'Blog article'], ['episode', 'Podcast episode']] as const).map(([kk, ll]) => <button key={kk} type="button" className={chooseKind === kk ? 'is-on' : ''} onClick={() => setChooseKind(kk)}>{ll}</button>)}
+    </div>
     <input className="adm-field adm-search" aria-label="Search content to feature" placeholder="Search all content…" value={chooseQuery} onChange={e => setChooseQuery(e.target.value)} /></div>
     <ul className="adm-list">{lists[chooseKind].filter(x => [x.title, x.guest, x.date].join(' ').toLowerCase().includes(chooseQuery.toLowerCase())).map(x => <li className="adm-row" key={x._slug}>
       <span className="adm-thumb">{x.image ? <img src={x.image} alt="" loading="lazy" /> : I.image}</span><div className="adm-row-main adm-row-static"><b>{x.title}</b><span>{x.date}{x.guest ? ` · ${x.guest}` : ''}</span></div>
@@ -727,8 +728,7 @@ function HomepageManager() {
                     </button>
                   ))}
                 </div>
-                <div className="adm-choose-row"><select className="adm-field adm-field--sm" aria-label={`Content type for ${SLOT_LABEL[slot]}`} value={slotKinds[slot]} onChange={e => setSlotKinds(prev => ({ ...prev, [slot]: e.target.value as 'article' | 'episode' }))}><option value="article">Blog article</option><option value="episode">Podcast episode</option></select>
-                <button type="button" className="adm-pill" onClick={() => { setChooseKind(slotKinds[slot]); setChooser(slot); setChooseQuery('') }}>Choose</button></div>
+                <div className="adm-choose-row"><button type="button" className="adm-pill" onClick={() => { setChooseKind(k); setChooser(slot); setChooseQuery('') }}>{I.search} Choose what to feature</button></div>
                 <small className="adm-help adm-slot-help">{mode === 'popular' ? ((pop[k] || []).length ? `Most viewed in the last 30 days (${pop[k][0].views} views for the top one).` : 'No views counted yet — showing the latest until visitors start reading.') : mode === 'latest' ? `Newest ${k === 'article' ? 'blog post' : 'episode'} not already shown.` : ''}</small>
               </div>
             )
