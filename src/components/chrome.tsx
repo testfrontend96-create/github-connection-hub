@@ -30,7 +30,9 @@ export function TopNav() {
   const toggleRef = useRef<HTMLButtonElement>(null)
   const subToggleRef = useRef<HTMLButtonElement>(null)
   const blogArea = pathname === '/blog' || pathname.startsWith('/articles/')
-  const active = SUB_CHANNELS.find(([href]) => pathname === href || pathname.startsWith(href + '/'))
+  const { search } = useLocation()
+  const isFaq = pathname === '/knowledge-base' && new URLSearchParams(search).get('type') === 'faq'
+  const active = (isFaq ? SUB_CHANNELS.find(([h]) => h.includes('type=faq')) : undefined) ?? SUB_CHANNELS.find(([href]) => pathname === href || pathname.startsWith(href + '/'))
     ?? (pathname.startsWith('/articles/') ? SUB_CHANNELS[0] : pathname.startsWith('/knowledge/') ? SUB_CHANNELS.find(([h]) => h === '/knowledge-base') : undefined)
   useEffect(() => { setOpen(false); setSubOpen(false) }, [pathname])
 

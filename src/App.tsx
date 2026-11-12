@@ -13,7 +13,6 @@ import Episode from './pages/Episode'
 import Biohackers from './pages/Biohackers'
 import Profile from './pages/Profile'
 import Social from './pages/Social'
-import FAQ from './pages/FAQ'
 import Problem from './pages/Problem'
 import Simple from './pages/Simple'
 import NotFound from './pages/NotFound'
@@ -52,7 +51,7 @@ export default function App() {
           <Route path="/biohackers" element={<Biohackers />} />
           <Route path="/biohackers/:slug" element={<Profile />} />
           <Route path="/social" element={<Social />} />
-          <Route path="/faq" element={<FAQ />} />
+          <Route path="/faq" element={<Navigate replace to="/knowledge-base?type=faq" />} />
           <Route path="/problems/:slug" element={<Problem />} />
           <Route path="/reports" element={<Simple which="reports" />} />
           <Route path="/howto" element={<LegacyHowTo />} />

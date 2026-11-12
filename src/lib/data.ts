@@ -22,7 +22,7 @@ export const TICKETS_URL = 'https://luma.com/event/evt-LApwCxBD0kyGLyd'
 
 export const KIND_LABEL: Record<string, string> = {
   molecule: 'Molecule', biomarker: 'Biomarker', protocol: 'Protocol', concept: 'Concept',
-  howto: 'How To',
+  howto: 'How To', faq: 'FAQ',
 }
 
 // Topics withdrawn from the Hub (data keeps their tags; the app drops them).
@@ -147,7 +147,7 @@ export const PRODUCT_NAV: [string, string][] = [
 ]
 export const SUB_CHANNELS: [string, string][] = [
   ['/blog', 'Blog'], ['/podcast', 'Podcast'], ['/knowledge-base', 'Knowledge Base'],
-  ['/biohackers', 'Top Biohackers'], ['/faq', 'FAQ'],
+  ['/biohackers', 'Top Biohackers'], ['/knowledge-base?type=faq', 'FAQ'],
 ]
 export const PILLARS: [string, string][] = ([
   ['longevity', 'Longevity'], ['sleep', 'Sleep'], ['nutrition', 'Nutrition'],
