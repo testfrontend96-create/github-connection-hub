@@ -3,11 +3,18 @@ import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import { PageHead } from '../components/chrome'
 import { Tag, Mention } from '../components/ui'
 import { Button, SearchField } from '../components/controls'
-import { entities, howtos, topics, KIND_LABEL, clip, pretty } from '../lib/data'
+import { entities, howtos, faqs, topics, KIND_LABEL, clip, pretty } from '../lib/data'
 import { filterKnowledge } from '../lib/browsing'
 
-const KINDS = ['molecule', 'biomarker', 'protocol', 'concept', 'howto']
-const STAT_ORDER = ['biomarker', 'protocol', 'molecule', 'concept', 'howto']
+const KINDS = ['molecule', 'biomarker', 'protocol', 'concept', 'howto', 'faq']
+const STAT_ORDER = ['biomarker', 'protocol', 'molecule', 'concept', 'howto', 'faq']
+
+function faqEntries(): any[] {
+  const out: any[] = faqs.map((f: any, i: number) => ({ slug: `faq-${i + 1}`, name: f.q, summary: f.a, type: 'faq', topics: f.topics || [], entities: f.entities || [] }))
+  for (const e of entities) (e.faq || []).forEach((f: any, i: number) =>
+    out.push({ slug: `faq-${e.slug}-${i + 1}`, name: f.q, summary: f.a, type: 'faq', topics: e.topics || [], entities: [e.slug] }))
+  return out
+}
 
 
 export default function KnowledgeBase() {
@@ -21,7 +28,7 @@ export default function KnowledgeBase() {
   const [openSlug, setOpenSlug] = useState<string | null>(null)
   const statsLayout = 'rail'
 
-  const sorted = useMemo(() => [...entities, ...howtos.map(h => ({ ...h, name: h.title, summary: h.excerpt, type: 'howto' }))].sort((a, b) => a.name.localeCompare(b.name)), [])
+  const sorted = useMemo(() => [...entities, ...howtos.map(h => ({ ...h, name: h.title, summary: h.excerpt, type: 'howto' })), ...faqEntries()].sort((a, b) => a.name.localeCompare(b.name)), [])
   const counts = Object.fromEntries(KINDS.map(k => [k, sorted.filter(e => e.type === k).length]))
   const hits = filterKnowledge(sorted, q, kind, topic)
   useEffect(() => {
@@ -38,13 +45,13 @@ export default function KnowledgeBase() {
     </button>
     {STAT_ORDER.map((k) => <button key={k} type="button" className={'kb-count' + (kind === k ? ' is-active' : '')} aria-pressed={kind === k}
       onClick={() => setKind(kind === k ? 'all' : k)}>
-      <b>{counts[k]}</b><span>{k === 'howto' ? 'How To guides' : `${KIND_LABEL[k]}s`}</span>
+      <b>{counts[k]}</b><span>{k === 'howto' ? 'How To guides' : k === 'faq' ? 'FAQ' : `${KIND_LABEL[k]}s`}</span>
     </button>)}
   </div>
 
   return (    <>
       <PageHead compact accent="#4243B0" title="Knowledge Base"
-        lede="Molecules, biomarkers, protocols, concepts and How To guides — connected to the topics, articles and episodes that reference them.">
+        lede="Molecules, biomarkers, protocols, concepts, How To guides and FAQ — connected to the topics, articles and episodes that reference them.">
         <svg className="kb-head-icon" viewBox="0 0 824 824" fill="none" aria-hidden="true">
           <path fill="currentColor" d="M370.8 710.357C359.127 699.828 352.146 686.667 349.857 670.873H474.143C471.855 686.667 464.873 699.828 453.2 710.357C441.527 720.885 427.793 726.15 412 726.15C396.207 726.15 382.473 720.885 370.8 710.357ZM311.833 640.103V605.77H512.167V640.103H311.833Z" />
           <path fill="currentColor" d="M216.987 433.973C235.756 466.704 269.391 493.713 301.893 515H530.107V480.667H311.85C285.986 462.127 258.072 439.467 244.11 412.687C230.148 385.907 223.167 357.067 223.167 326.167C223.167 273.522 241.478 228.889 278.1 192.267C314.722 155.644 359.356 137 412 137L420 103C343.5 103 296.983 124.63 253.723 167.89C210.463 211.15 188.833 263.909 188.833 326.167C188.833 365.307 198.218 401.242 216.987 433.973Z" />
@@ -72,18 +79,18 @@ export default function KnowledgeBase() {
         </div>
         <p className="content-result-count" aria-live="polite">Showing {hits.length} of {sorted.length} entries</p>
         <div className="kb-results">
-          {hits.map((e) => e.type === 'howto' ? (
+          {hits.map((e) => e.type === 'howto' || e.type === 'faq' ? (
             <article key={e.slug} id={e.slug} className={'erow erow--expand' + (openSlug === e.slug ? ' is-open' : '')}>
               <button type="button" className="erow-toggle" aria-expanded={openSlug === e.slug} aria-controls={`${e.slug}-more`}
                 onClick={() => setOpenSlug(openSlug === e.slug ? null : e.slug)}>
-                <div className="erow-main"><div className="erow-name">{e.name}</div><div className="erow-sum">{clip(e.summary, 150)}</div></div>
+                <div className="erow-main"><div className="erow-name">{e.name}</div>{e.type !== 'faq' && <div className="erow-sum">{clip(e.summary, 150)}</div>}</div>
                 <div className="erow-side">
-                  <Tag kind="howto" />
+                  <Tag kind={e.type} />
                   <svg className="erow-caret" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
                 </div>
               </button>
               {openSlug === e.slug && <div className="erow-more" id={`${e.slug}-more`}>
-                <div className="knowledge-guide-meta"><span>{e.steps} steps · {e.time}</span><span>{pretty(e.date)}</span></div>
+                {e.type === 'faq' ? <p className="erow-answer">{e.summary}</p> : <div className="knowledge-guide-meta"><span>{e.steps} steps · {e.time}</span><span>{pretty(e.date)}</span></div>}
                 {e.entities.length > 0 && <p className="erow-more-label">Related entries</p>}
                 {e.entities.length > 0 && <div className="mentions">{e.entities.map((slug: string) => <Mention key={slug} slug={slug} />)}</div>}
               </div>}
