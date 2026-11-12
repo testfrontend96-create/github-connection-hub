@@ -88,7 +88,8 @@ function Records({ f, value, onChange }: { f: Extract<Field, { type: 'records' }
   return (
     <div className="adm-records">
       {value.map((r, i) => (
-        <div className={`adm-record${jc(i)}`} key={`${i}${jk(i)}`}>
+        <div className={`adm-record adm-numbered${jc(i)}`} key={`${i}${jk(i)}`}>
+          <span className="adm-num">{i + 1}</span>
           <div className="adm-record-fields">
             {f.sub.map((s) => (
               <label key={s.k}>
@@ -117,48 +118,50 @@ const BLOCK_TYPES: Opt[] = [
 ]
 const slug = (s: string) => s.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').slice(0, 80)
 
+const MAIN_BLOCKS: Opt[] = [['h2', 'Section heading'], ['p', 'Paragraph'], ['img', 'Image']]
+const MORE_BLOCKS = BLOCK_TYPES.filter(([t]) => !MAIN_BLOCKS.some(([m]) => m === t))
+const BLOCK_LABEL = Object.fromEntries(BLOCK_TYPES) as Record<string, string>
+const DOTS = <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="2" /><circle cx="12" cy="12" r="2" /><circle cx="19" cy="12" r="2" /></svg>
+
 function Blocks({ value, onChange }: { value: any[]; onChange: (v: any[]) => void }) {
-  const set = (i: number, b: any) => onChange(value.map((x, j) => (j === i ? b : x)))
-  const insert = (i: number, t: string) => { const n = [...value]; n.splice(i, 0, { t }); onChange(n) }
+  // A new article starts with a heading, a paragraph and an image already placed.
+  const list = value.length ? value : MAIN_BLOCKS.map(([t]) => ({ t }))
+  const set = (i: number, b: any) => onChange(list.map((x, j) => (j === i ? b : x)))
+  const add = (t: string) => onChange([...list, { t }])
   const [jump, setJump] = useState<{ i: number; d: number; n: number } | null>(null)
-  const move = (i: number, d: number) => { const n = [...value]; const [x] = n.splice(i, 1); n.splice(i + d, 0, x); onChange(n); setJump((j) => ({ i: i + d, d, n: (j?.n || 0) + 1 })) }
+  const move = (i: number, d: number) => { const n = [...list]; const [x] = n.splice(i, 1); n.splice(i + d, 0, x); onChange(n); setJump((j) => ({ i: i + d, d, n: (j?.n || 0) + 1 })) }
   const jc = (i: number) => (jump && jump.i === i ? (jump.d < 0 ? ' adm-jump-up' : ' adm-jump-down') : '')
   const jk = (i: number) => (jump && jump.i === i ? `j${jump.n}` : '')
-  const [adding, setAdding] = useState<number | null>(null)
-  const Adder = ({ at }: { at: number }) => adding === at ? (
-    <div className="adm-block-add">
-      {BLOCK_TYPES.map(([t, l]) => <button key={t} type="button" className="adm-chip" onClick={() => { insert(at, t); setAdding(null) }}>{l}</button>)}
-      <button type="button" className="adm-icon-btn adm-danger" onClick={() => setAdding(null)} aria-label="Cancel" data-tip="Cancel">{I.trash}</button>
-    </div>
-  ) : at === 0 ? <button type="button" className="adm-pill adm-body-add" onClick={() => setAdding(0)}>{I.plus}Add article body</button>
-  : <button type="button" className="adm-block-plus" onClick={() => setAdding(at)} aria-label="Insert block here" data-tip="Add a section here">{I.plus}</button>
+  const [menu, setMenu] = useState(false)
   return (
     <div className="adm-blocks">
-      <Adder at={0} />
-      {value.map((b, i) => (
-        <div key={`${i}${jk(i)}`} className={jc(i).trim() || undefined}>
-          <div className="adm-block">
+      <div className="adm-body-more">
+        <button type="button" className="adm-icon-btn" aria-label="More section types" data-tip="Add a list, table, video or promo" aria-expanded={menu} onClick={() => setMenu(!menu)}>{DOTS}</button>
+        {menu && <div className="adm-menu">{MORE_BLOCKS.map(([t, l]) => <button key={t} type="button" onClick={() => { add(t); setMenu(false) }}>{l}</button>)}</div>}
+      </div>
+      {list.map((b, i) => (
+        <div key={`${i}${jk(i)}`} className={`adm-block adm-numbered${jc(i)}`}>
+          <span className="adm-num">{i + 1}</span>
+          <div className="adm-block-main">
             <div className="adm-block-head">
-              <select className="adm-field adm-field--sm" value={b.t} onChange={(e) => set(i, { ...b, t: e.target.value })}>
-                {BLOCK_TYPES.map(([t, l]) => <option key={t} value={t}>{l}</option>)}
-              </select>
+              <span className="adm-label">{BLOCK_LABEL[b.t] || b.t}</span>
               <div className="adm-record-tools adm-record-tools--row">
                 <button type="button" className="adm-icon-btn" disabled={i === 0} onClick={() => move(i, -1)} aria-label="Move up" data-tip="Move up one place">{I.up}</button>
-                <button type="button" className="adm-icon-btn" disabled={i === value.length - 1} onClick={() => move(i, 1)} aria-label="Move down" data-tip="Move down one place">{I.down}</button>
-                <button type="button" className="adm-icon-btn adm-danger" onClick={() => onChange(value.filter((_, j) => j !== i))} aria-label="Remove" data-tip="Remove this section">{I.trash}</button>
+                <button type="button" className="adm-icon-btn" disabled={i === list.length - 1} onClick={() => move(i, 1)} aria-label="Move down" data-tip="Move down one place">{I.down}</button>
+                <button type="button" className="adm-icon-btn adm-danger" onClick={() => onChange(list.filter((_, j) => j !== i))} aria-label="Remove" data-tip="Remove this section">{I.trash}</button>
               </div>
             </div>
-            {['p', 'note'].includes(b.t) && <textarea className="adm-field" rows={4} value={b.text || ''} onChange={(e) => set(i, { ...b, text: e.target.value })} placeholder="Text — links as [text](https://…), bold as **text**" />}
-            {['h2', 'h3'].includes(b.t) && <input className="adm-field" value={b.text || ''} onChange={(e) => set(i, { ...b, text: e.target.value, ...(b.t === 'h2' ? { id: slug(e.target.value) } : {}) })} />}
+            {['p', 'note'].includes(b.t) && <textarea className="adm-field" rows={4} value={b.text || ''} onChange={(e) => set(i, { ...b, text: e.target.value })} placeholder="Write the paragraph — links as [text](https://…), bold as **text**" />}
+            {['h2', 'h3'].includes(b.t) && <input className="adm-field" value={b.text || ''} placeholder={b.t === 'h2' ? 'Section heading' : 'Sub-heading'} onChange={(e) => set(i, { ...b, text: e.target.value, ...(b.t === 'h2' ? { id: slug(e.target.value) } : {}) })} />}
             {b.t === 'img' && <><ImageField value={b.src || ''} onChange={(v) => set(i, { ...b, src: v })} folder="articles" /><input className="adm-field adm-field--sm" placeholder="Image description (alt text)" value={b.alt || ''} onChange={(e) => set(i, { ...b, alt: e.target.value })} /></>}
             {['ul', 'ol'].includes(b.t) && <textarea className="adm-field" rows={4} value={(b.items || []).join('\n')} onChange={(e) => set(i, { ...b, items: e.target.value.split('\n') })} placeholder="One item per line" />}
             {b.t === 'video' && <input className="adm-field" value={b.id || ''} onChange={(e) => { const v = e.target.value; const m = v.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/); set(i, { ...b, id: m ? m[1] : v }) }} placeholder="YouTube link or video ID" />}
             {b.t === 'table' && <textarea className="adm-field adm-mono" rows={5} value={(b.rows || []).map((r: string[]) => r.join(' | ')).join('\n')} onChange={(e) => set(i, { ...b, rows: e.target.value.split('\n').map((r) => r.split('|').map((c) => c.trim())) })} placeholder="One row per line, cells separated by |. First row is the header." />}
             {['events', 'academy'].includes(b.t) && <p className="adm-hint">The {b.t === 'events' ? 'Upcoming events' : 'Longevity Science Academy'} promo appears here.</p>}
           </div>
-          <Adder at={i + 1} />
         </div>
       ))}
+      <div className="adm-body-ctas">{MAIN_BLOCKS.map(([t, l]) => <button key={t} type="button" className="adm-pill" onClick={() => add(t)}>{I.plus}{l}</button>)}</div>
     </div>
   )
 }
