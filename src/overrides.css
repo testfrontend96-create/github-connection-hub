@@ -1704,3 +1704,15 @@ a:hover .art[data-k="episode"] img,
 /* Long unbroken titles wrap inside their column instead of running over the hero image. */
 .art-hero > *, .art-hero-title { min-width: 0; }
 .art-hero h1.display, .ep-head-id h1.display, .prof-id h1.display, .page-head h1.display { overflow-wrap: anywhere; }
+
+/* Equal grid tracks: long unbroken titles must never widen one card */
+.g2 { --cols: 2; } .g3 { --cols: 3; } .g4 { --cols: 4; }
+.g2, .g3, .g4 { grid-template-columns: repeat(var(--cols), minmax(0, 1fr)); }
+@media (max-width: 960px) { .g3, .g4 { --cols: 2; } }
+@media (max-width: 640px) { .g2, .g3, .g4 { --cols: 1; } }
+.grid > .card, .grid > .card-wrap { min-width: 0; }
+.card h3, .card p { overflow-wrap: anywhere; }
+
+/* Knowledge Base entry picture at the top of the right rail (profile rail proportions) */
+.entity-photo { margin: 0 0 18px; aspect-ratio: 4 / 5; border-radius: var(--radius); overflow: hidden; background: #fff; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+.entity-photo img { width: 100%; height: 100%; object-fit: contain; display: block; }

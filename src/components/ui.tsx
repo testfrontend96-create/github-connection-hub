@@ -1,3 +1,5 @@
+import articlePlaceholder from '../assets/placeholder-article.jpg'
+import episodePlaceholder from '../assets/placeholder-episode.jpg'
 // Shared presentational primitives, ported from build.py render helpers so the
 // existing hub.css classes style them unchanged.
 import { useState } from 'react'
@@ -35,7 +37,7 @@ export const Mention = ({ slug }: { slug: string }) => {
 export const CardThumb = ({ img, k = 'entity', track, children }: { img?: string; k?: string; track?: any; children?: any }) =>
   img ? (
     <span className="card-thumb" data-k={k}>
-      <img src={img} alt="" loading="lazy" decoding="async" />
+      <img src={img} alt="" loading="lazy" decoding="async" onError={e => { const el = e.currentTarget; const fb = k === 'episode' ? episodePlaceholder : articlePlaceholder; if (!el.src.endsWith(fb)) el.src = fb }} />
       {children}
       {track && <PlayButton track={track} />}
     </span>

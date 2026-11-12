@@ -30,3 +30,5 @@
 - Stage public-site admin edits in the shared DraftProvider and publish atomically through publish_admin_changes; database audit triggers record authenticated editor attribution so changes and history cannot diverge.
 - Share hero resolution and Start here defaults between the admin and homepage so saved selections render identically.
 - Admin form islands come from each field's `group` in `src/admin/schemas.ts`; a group's `ex` key links its expand button to `ExampleHighlight` frames on that kind's sample page (`EX_PAGE` in Admin.tsx), so every form shares one section and example system.
+- Fill missing article/episode artwork in `src/lib/data.ts` (first body image, then shared placeholder) and fall back again on image load errors in `CardThumb`, so every card always has a picture.
+- Knowledge Base rail pictures resolve from `src/assets/knowledge/<slug>.asset.json` unless the entry sets its own `image`, so new entries can add art without code changes.
