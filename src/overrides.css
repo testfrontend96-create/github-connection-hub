@@ -1706,8 +1706,8 @@ a:hover .art[data-k="episode"] img,
 .art-hero h1.display, .ep-head-id h1.display, .prof-id h1.display, .page-head h1.display { overflow-wrap: anywhere; }
 
 /* Equal grid tracks: long unbroken titles must never widen one card */
-.grid { grid-template-columns: repeat(var(--cols, 1), minmax(0, 1fr)); }
 .g2 { --cols: 2; } .g3 { --cols: 3; } .g4 { --cols: 4; }
+.g2, .g3, .g4 { grid-template-columns: repeat(var(--cols), minmax(0, 1fr)); }
 @media (max-width: 960px) { .g3, .g4 { --cols: 2; } }
 @media (max-width: 640px) { .g2, .g3, .g4 { --cols: 1; } }
 .grid > .card, .grid > .card-wrap { min-width: 0; }
