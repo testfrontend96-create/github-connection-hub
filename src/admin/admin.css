@@ -405,3 +405,11 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-card > .adm-more{margin:14px auto 0;display:flex}
 .adm-pop{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.adm-pop>div{min-width:0}.adm-pop.adm-pop--one{grid-template-columns:minmax(0,1fr)}@media (max-width:900px){.adm-pop{grid-template-columns:minmax(0,1fr)}}
 .adm-slots{grid-template-columns:repeat(3,minmax(0,1fr))}.adm-slot{min-width:0}.adm-slot-title{overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}@media (max-width:900px){.adm-slots{grid-template-columns:minmax(0,1fr)}}
+
+/* Hero slots: every row (label, art, title, date, tabs, choose, help) lines up across the three cards */
+@media (min-width: 901px) {
+  .adm-slots { grid-template-rows: repeat(7, auto); }
+  .adm-slots > .adm-slot { display: grid; grid-row: span 7; grid-template-rows: subgrid; align-content: start; row-gap: 8px; }
+  .adm-slots > .adm-slot > * { margin-top: 0; margin-bottom: 0; align-self: start; }
+}
+.adm-slot-date:empty::before, .adm-slot-help:empty::before { content: "\00a0"; }

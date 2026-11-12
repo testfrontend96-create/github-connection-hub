@@ -719,7 +719,7 @@ function HomepageManager() {
                 <span className="adm-kicker">{SLOT_LABEL[slot]}</span>
                 <div className="adm-slot-art">{it?.image ? <img src={it.image} alt="" /> : I.image}</div>
                 <b className="adm-slot-title">{it?.title || '—'}</b>
-                <span className="adm-hint">{it?.date}</span>
+                <span className="adm-hint adm-slot-date">{it?.date || ''}</span>
                 <div className="adm-seg adm-seg--sm adm-seg--fill">
                   {(['latest', 'popular', 'pinned'] as const).map((m) => (
                     <button key={m} type="button" className={mode === m ? 'is-on' : ''} onClick={() => set(slot, m === 'pinned' ? { mode: 'pinned', item_kind: k, item_slug: f?.item_slug || it?._slug } : { mode: m, item_kind: null, item_slug: null })}>
@@ -729,10 +729,7 @@ function HomepageManager() {
                 </div>
                 <div className="adm-choose-row"><select className="adm-field adm-field--sm" aria-label={`Content type for ${SLOT_LABEL[slot]}`} value={slotKinds[slot]} onChange={e => setSlotKinds(prev => ({ ...prev, [slot]: e.target.value as 'article' | 'episode' }))}><option value="article">Blog article</option><option value="episode">Podcast episode</option></select>
                 <button type="button" className="adm-pill" onClick={() => { setChooseKind(slotKinds[slot]); setChooser(slot); setChooseQuery('') }}>Choose</button></div>
-                {mode === 'popular' && (
-                  <small className="adm-help">{(pop[k] || []).length ? `Most viewed in the last 30 days (${pop[k][0].views} views for the top one).` : 'No views counted yet — showing the latest until visitors start reading.'}</small>
-                )}
-                {mode === 'latest' && <small className="adm-help">Newest {k === 'article' ? 'blog post' : 'episode'} not already shown.</small>}
+                <small className="adm-help adm-slot-help">{mode === 'popular' ? ((pop[k] || []).length ? `Most viewed in the last 30 days (${pop[k][0].views} views for the top one).` : 'No views counted yet — showing the latest until visitors start reading.') : mode === 'latest' ? `Newest ${k === 'article' ? 'blog post' : 'episode'} not already shown.` : ''}</small>
               </div>
             )
           })}
