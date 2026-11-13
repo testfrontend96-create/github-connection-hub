@@ -55,18 +55,21 @@ export type Database = {
           added_by: string | null
           email: string
           enabled: boolean
+          role: string
           updated_at: string
         }
         Insert: {
           added_by?: string | null
           email: string
           enabled?: boolean
+          role?: string
           updated_at?: string
         }
         Update: {
           added_by?: string | null
           email?: string
           enabled?: boolean
+          role?: string
           updated_at?: string
         }
         Relationships: []
@@ -250,6 +253,9 @@ export type Database = {
         Returns: boolean
       }
       is_admin: { Args: never; Returns: boolean }
+      is_owner: { Args: never; Returns: boolean }
+      is_owner_email: { Args: { _email: string }; Returns: boolean }
+      is_staff: { Args: never; Returns: boolean }
       list_admins: {
         Args: never
         Returns: {
@@ -261,6 +267,17 @@ export type Database = {
           source: string
         }[]
       }
+      list_team: {
+        Args: never
+        Returns: {
+          avatar: string
+          email: string
+          last_sign_in_at: string
+          name: string
+          role: string
+        }[]
+      }
+      my_admin_role: { Args: never; Returns: string }
       popular_items: {
         Args: { _kind: string; _limit?: number }
         Returns: {
@@ -272,6 +289,10 @@ export type Database = {
       request_admin_access: { Args: never; Returns: undefined }
       set_admin_email_access: {
         Args: { allow_access: boolean; target_email: string }
+        Returns: undefined
+      }
+      set_team_role: {
+        Args: { new_role: string; target_email: string }
         Returns: undefined
       }
       sync_admin_role: { Args: { _uid: string }; Returns: undefined }
