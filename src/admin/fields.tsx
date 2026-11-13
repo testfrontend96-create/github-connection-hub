@@ -1,4 +1,5 @@
 // Form controls for the admin editors (dark Sales-panel styling, see admin.css).
+import { canEdit } from './role'
 import { useRef, useState, type ReactNode } from 'react'
 import type { Field, Opt } from './schemas'
 import { uploadImage } from './media'
@@ -14,8 +15,8 @@ export function Modal({ title, onClose, children, wide, footer, className = '' }
           <h2>{title}</h2>
           <button type="button" className="adm-icon-btn" onClick={onClose} aria-label="Close" data-tip="Close without saving">{I.x}</button>
         </div>
-        <div className="adm-modal-body">{children}</div>
-        {footer && <div className="adm-modal-foot">{footer}</div>}
+        <div className="adm-modal-body">{canEdit() ? children : <fieldset disabled className="adm-readonly">{children}</fieldset>}</div>
+        {footer && canEdit() && <div className="adm-modal-foot">{footer}</div>}
       </div>
     </div>
   )

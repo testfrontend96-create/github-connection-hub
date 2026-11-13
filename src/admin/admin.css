@@ -436,3 +436,15 @@ textarea.adm-field{resize:vertical;line-height:1.5}
 .adm-body-more-label{font-size:12.5px;font-weight:500;color:var(--a-faint);white-space:nowrap}
 @media (max-width:640px){.adm-body-more{position:static;align-self:flex-end;margin:-4px 0 2px}}
 .adm-body-ctas{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+
+/* Team roles: viewer read-only mode */
+.adm-role-badge{display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.14);font-size:13px;font-weight:600;opacity:.85}
+.adm-viewer .adm-savebar,.adm-viewer .adm .adm-btn,.adm-viewer .adm .adm-danger,.adm-viewer .adm-row-tools .adm-icon-btn{display:none!important}
+.adm-readonly{border:0;margin:0;padding:0;min-width:0}
+.adm-readonly :is(input,textarea,select,button){cursor:not-allowed}
+.adm-role-legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 16px}
+.adm-role-legend>div{padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.adm-role-legend b{display:flex;justify-content:space-between;font-size:14px}
+.adm-role-legend b span{opacity:.6;font-weight:500}
+.adm-role-legend p{margin:4px 0 0;font-size:13px;opacity:.65}
+@media (max-width:640px){.adm-role-legend{grid-template-columns:1fr}}
