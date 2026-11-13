@@ -17,6 +17,7 @@ import { overlayRows } from './draftState'
 import { History, changeTypes } from './History'
 import { askDelete, ConfirmHost } from './Confirm'
 import { resolveHero, startHereValue, type StartHere } from '../lib/homeSelection'
+import { setAdminRole, adminRole, type AdminRole } from './role'
 import './admin.css'
 
 const OWNER = 'mykyta.b@biohackers.world'
@@ -24,24 +25,28 @@ const saved = () => window.dispatchEvent(new Event('hub-admin-saved'))
 
 /* ---------------- access ---------------- */
 
-type Access = { session: Session | null; ready: boolean; isAdmin: boolean; checking: boolean }
+type Access = { session: Session | null; ready: boolean; isAdmin: boolean; checking: boolean; role: AdminRole }
 
 function useAccess(): Access {
   const [session, setSession] = useState<Session | null>(null)
   const [ready, setReady] = useState(false)
   const [isAdmin, setIsAdmin] = useState(false)
   const [checking, setChecking] = useState(false)
+  const [role, setRole] = useState<AdminRole>('none')
   useEffect(() => {
     const { data } = supabase.auth.onAuthStateChange((_e, s) => { setSession(s); setReady(true) })
     supabase.auth.getSession().then(({ data }) => { setSession(data.session); setReady(true) })
     return () => data.subscription.unsubscribe()
   }, [])
   useEffect(() => {
-    if (!session) { setIsAdmin(false); return }
+    if (!session) { setIsAdmin(false); setRole('none'); return }
     setChecking(true)
-    supabase.rpc('is_admin').then(({ data }) => { setIsAdmin(!!data); setChecking(false) })
+    supabase.rpc('my_admin_role').then(({ data }) => {
+      const r = ((data as string) || 'none') as AdminRole
+      setAdminRole(r); setRole(r); setIsAdmin(r !== 'none'); setChecking(false)
+    })
   }, [session?.user?.id])
-  return { session, ready, isAdmin, checking }
+  return { session, ready, isAdmin, checking, role }
 }
 
 const signOut = async () => { await supabase.auth.signOut(); location.reload() }
@@ -107,7 +112,7 @@ export default function Admin() {
     </AccessCard>
   )
   if (!a.isAdmin) return (
-    <AccessCard title="Administrators only" body={`${a.session.user.email ?? 'This account'} does not have administrator access. You can request it — the administrators will see your request and approve it.`}>
+    <AccessCard title="No access yet" body={`${a.session.user.email ?? 'This account'} does not have administrator access. You can request it — the administrators will see your request and approve it.`}>
       <div className="adm-stack">
         <RequestAccess />
         <button type="button" className="adm-pill adm-pill--block" onClick={signOut}>Use another account</button>
@@ -211,14 +216,16 @@ function PanelBody({ session, tab, setTab }: { session: Session; tab: Tab; setTa
         </div>
         <div className="adm-head-tools">
           <button type="button" className={tab === 'inbox' ? 'adm-pill is-on' : 'adm-pill'} onClick={() => setTab('inbox')}>{I.inbox} Inbox{inbox ? <b className="adm-count">{inbox}</b> : null}</button>
-          <button type="button" className={tab === 'admins' ? 'adm-pill is-on' : 'adm-pill'} onClick={() => setTab('admins')}>{I.shield} Admins{requests ? <b className="adm-count">{requests}</b> : null}</button>
+          {adminRole() === 'owner'
+            ? <button type="button" className={tab === 'admins' ? 'adm-pill is-on' : 'adm-pill'} onClick={() => setTab('admins')}>{I.shield} Team{requests ? <b className="adm-count">{requests}</b> : null}</button>
+            : <span className="adm-role-badge" data-tip={adminRole() === 'viewer' ? 'You can look around but not change anything. Ask the owner to make you an editor.' : 'You can edit and publish. Only the owner manages the team.'}>{adminRole() === 'viewer' ? 'Viewer · Read only' : 'Editor'}</span>}
           <button type="button" className="adm-pill" onClick={signOut}>{I.logout} Sign out</button>
         </div>
       </header>
       <nav className="adm-tabs" aria-label="Sections">
         {TABS.map(([k, l]) => k === 'entity' ? <KbTab key={k} tab={tab} setTab={setTab} /> : <button key={k} type="button" className={tab === k ? 'adm-pill is-on' : 'adm-pill'} onClick={() => setTab(k)}>{l}</button>)}
       </nav>
-      {tab === 'home' ? <HomepageManager /> : tab === 'history' ? <History /> : tab === 'inbox' ? <Inbox /> : tab === 'admins' ? <AdminsManager email={u.email || ''} /> : def ? <ContentManager key={def.kind} def={def} /> : null}
+      {tab === 'home' ? <HomepageManager /> : tab === 'history' ? <History /> : tab === 'inbox' ? <Inbox /> : tab === 'admins' && adminRole() === 'owner' ? <AdminsManager email={u.email || ''} /> : def ? <ContentManager key={def.kind} def={def} /> : null}
     </div>
   )
 }
@@ -829,37 +836,47 @@ function Inbox() {
 
 /* ---------------- admins ---------------- */
 
+const ROLE_INFO: Record<string, [string, string]> = {
+  owner: ['Owner', 'Edits, publishes and manages the team'],
+  editor: ['Editor', 'Edits and publishes content'],
+  viewer: ['Viewer', 'Can look around, cannot change anything'],
+  revoked: ['No access', 'Blocked from the admin panel'],
+}
+
 function AdminsManager({ email }: { email: string }) {
-  const [admins, setAdmins] = useState<any[] | null>(null)
+  const [team, setTeam] = useState<any[] | null>(null)
   const [requests, setRequests] = useState<any[]>([])
   const [add, setAdd] = useState('')
+  const [addRole, setAddRole] = useState<'editor' | 'viewer'>('viewer')
   const [err, setErr] = useState('')
   const reload = useCallback(async () => {
     const [a, r] = await Promise.all([
-      supabase.rpc('list_admins'),
+      supabase.rpc('list_team'),
       supabase.from('admin_requests').select('*').eq('status', 'pending').order('created_at', { ascending: false }),
     ])
-    setAdmins((a.data as any[]) || []); setRequests(r.data || [])
+    setTeam((a.data as any[]) || []); setRequests(r.data || [])
   }, [])
   useEffect(() => { reload() }, [reload])
-  const setAccess = async (target: string, allow: boolean) => {
+  const setRole = async (target: string, role: string) => {
     setErr('')
-    const { error } = await supabase.rpc('set_admin_email_access', { target_email: target, allow_access: allow })
+    const { error } = await supabase.rpc('set_team_role', { target_email: target, new_role: role })
     if (error) setErr(error.message)
     reload()
   }
   const me = email.toLowerCase()
+  const counts = (team || []).reduce((m: Record<string, number>, t) => ({ ...m, [t.role]: (m[t.role] || 0) + 1 }), {})
   return (
     <>
       {requests.length > 0 && (
         <section className="adm-card">
-          <div className="adm-card-head"><div><h2>Access requests</h2><p>People who signed in and asked for admin access.</p></div></div>
+          <div className="adm-card-head"><div><h2>Access requests</h2><p>People outside the company who signed in and asked for access.</p></div></div>
           <ul className="adm-list">
             {requests.map((r) => (
               <li key={r.user_id} className="adm-row">
                 <div className="adm-row-main adm-row-static"><b>{r.name || r.email}</b><span>{r.email} · {new Date(r.created_at).toLocaleDateString()}</span></div>
                 <span className="adm-row-tools">
-                  <button type="button" className="adm-btn" onClick={() => setAccess(r.email, true)}>Approve</button>
+                  <button type="button" className="adm-pill" onClick={() => setRole(r.email, 'viewer')}>Approve as viewer</button>
+                  <button type="button" className="adm-btn" onClick={() => setRole(r.email, 'editor')}>Approve as editor</button>
                   <button type="button" className="adm-pill" onClick={async () => { await supabase.rpc('decline_admin_request', { target_user: r.user_id }); reload() }}>Decline</button>
                 </span>
               </li>
@@ -868,28 +885,39 @@ function AdminsManager({ email }: { email: string }) {
         </section>
       )}
       <section className="adm-card">
-        <div className="adm-card-head"><div><h2>Administrators</h2><p>Anyone with a verified @biohackers.world Google account is an admin automatically. Add other people by email, or revoke access — a revoked email stays blocked.</p></div></div>
-        <form className="adm-toolbar" onSubmit={(e) => { e.preventDefault(); if (add.trim()) { setAccess(add.trim(), true); setAdd('') } }}>
-          <input className="adm-field adm-search" type="email" placeholder="name@example.com" value={add} onChange={(e) => setAdd(e.target.value)} maxLength={255} />
+        <div className="adm-card-head"><div><h2>Team and permissions</h2><p>Anyone with a verified @biohackers.world Google account joins as a viewer. Promote people to editor so they can change and publish content, or remove their access entirely.</p></div></div>
+        <div className="adm-role-legend">
+          {(['owner', 'editor', 'viewer'] as const).map((k) => <div key={k}><b>{ROLE_INFO[k][0]} <span>{counts[k] || 0}</span></b><p>{ROLE_INFO[k][1]}</p></div>)}
+        </div>
+        <form className="adm-toolbar" onSubmit={(e) => { e.preventDefault(); if (add.trim()) { setRole(add.trim(), addRole); setAdd('') } }}>
+          <input className="adm-field adm-search" type="email" placeholder="Invite by email: name@example.com" value={add} onChange={(e) => setAdd(e.target.value)} maxLength={255} />
+          <div className="adm-seg adm-seg--sm">
+            <button type="button" className={addRole === 'viewer' ? 'is-on' : ''} onClick={() => setAddRole('viewer')}>Viewer</button>
+            <button type="button" className={addRole === 'editor' ? 'is-on' : ''} onClick={() => setAddRole('editor')}>Editor</button>
+          </div>
           <button type="submit" className="adm-btn">{I.plus} Give access</button>
         </form>
         {err && <p className="adm-err">{err}</p>}
-        {!admins ? <p className="adm-hint">Loading…</p> : (
+        {!team ? <p className="adm-hint">Loading…</p> : (
           <ul className="adm-list">
-            {admins.map((a) => {
-              const protectedOne = a.email === OWNER || a.email === me
+            {team.map((a) => {
+              const locked = a.role === 'owner' || a.email === me
               return (
-                <li key={a.email} className={'adm-row' + (a.source === 'Revoked' ? ' is-hidden' : '')}>
+                <li key={a.email} className={'adm-row' + (a.role === 'revoked' ? ' is-hidden' : '')}>
                   <span className="adm-thumb adm-thumb--round">{a.avatar ? <img src={a.avatar} alt="" referrerPolicy="no-referrer" /> : (a.name || a.email)[0].toUpperCase()}</span>
                   <div className="adm-row-main adm-row-static">
                     <b>{a.name || a.email}{a.email === me ? ' (you)' : ''}</b>
                     <span>{a.email} · {a.last_sign_in_at ? `last signed in ${new Date(a.last_sign_in_at).toLocaleDateString()}` : 'has not signed in yet'}</span>
                   </div>
-                  <span className="adm-row-tags"><span className={'adm-tag' + (a.source === 'Revoked' ? ' adm-tag--muted' : '')}>{a.source}</span></span>
                   <span className="adm-row-tools">
-                    {a.source === 'Revoked'
-                      ? <button type="button" className="adm-pill" onClick={() => setAccess(a.email, true)}>Restore access</button>
-                      : !protectedOne && <button type="button" className="adm-pill adm-danger" onClick={() => confirm(`Revoke admin access for ${a.email}?`) && setAccess(a.email, false)}>Revoke</button>}
+                    {locked ? <span className={'adm-tag adm-tag--' + a.role}>{ROLE_INFO[a.role]?.[0]}</span> : (
+                      <div className="adm-seg adm-seg--sm" role="group" aria-label={`Role for ${a.email}`}>
+                        {(['viewer', 'editor', 'revoked'] as const).map((k) => (
+                          <button key={k} type="button" className={a.role === k ? 'is-on' : ''} data-tip={ROLE_INFO[k][1]}
+                            onClick={() => a.role !== k && (k !== 'revoked' || confirm(`Remove ${a.email} from the admin panel?`)) && setRole(a.email, k)}>{ROLE_INFO[k][0]}</button>
+                        ))}
+                      </div>
+                    )}
                   </span>
                 </li>
               )
@@ -897,7 +925,6 @@ function AdminsManager({ email }: { email: string }) {
           </ul>
         )}
       </section>
-
     </>
   )
 }
