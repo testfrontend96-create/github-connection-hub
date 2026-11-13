@@ -22,7 +22,7 @@ export const TICKETS_URL = 'https://luma.com/event/evt-LApwCxBD0kyGLyd'
 
 export const KIND_LABEL: Record<string, string> = {
   molecule: 'Molecule', biomarker: 'Biomarker', protocol: 'Protocol', concept: 'Concept',
-  howto: 'How To', faq: 'FAQ',
+  howto: 'How To', faq: 'FAQ', topic: 'Topic',
 }
 
 // Topics withdrawn from the Hub (data keeps their tags; the app drops them).

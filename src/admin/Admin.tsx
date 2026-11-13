@@ -190,7 +190,7 @@ function Dashboard({ session }: { session: Session }) {
   )
 }
 
-const KB_TABS: [Tab, string][] = [['entity', 'Knowledge base'], ['howto', 'How To'], ['topic', 'Topics'], ['problem', 'Problems']]
+const KB_TABS: [Tab, string][] = [['topic', 'Topics'], ['entity', 'Knowledge base'], ['howto', 'How To'], ['problem', 'Problems']]
 const TABS: [Tab, string][] = [
   ['home', 'Homepage'], ['article', 'Blog'], ['episode', 'Podcast'], ['entity', 'Knowledge Base'],
   ['biohacker', 'Top Biohackers'], ['faq', 'FAQ'], ['social', 'Social Media'],
