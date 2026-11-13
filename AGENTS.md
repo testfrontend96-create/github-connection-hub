@@ -33,3 +33,4 @@
 - Fill missing article/episode artwork in `src/lib/data.ts` (first body image, then shared placeholder) and fall back again on image load errors in `CardThumb`, so every card always has a picture.
 - Knowledge Base rail pictures resolve from `src/assets/knowledge/<slug>.asset.json` unless the entry sets its own `image`, so new entries can add art without code changes.
 - FAQ items are a Knowledge Base entry type (`faq`) built in KnowledgeBase.tsx; `/faq` and the Hub nav FAQ link open `/knowledge-base?type=faq`, so questions live in one directory.
+- Topics are a Knowledge Base entry type (`topic`) listed in KnowledgeBase.tsx and linking to /topics/:slug; the directory has no topic filter chips since each Topic page acts as the filter.
