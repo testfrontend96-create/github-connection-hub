@@ -1740,17 +1740,24 @@ a:hover .art[data-k="episode"] img,
 
 /* Mobile directory filters: one swipeable row, without widening the page. */
 @media (max-width: 640px) {
-  .content-filter-bar, .content-filter-bar .kb-filter-row { min-width: 0; }
+  .content-filter-bar { --filter-gutter: 24px; min-width: 0; }
+  .content-filter-bar .kb-filter-row { min-width: 0; }
   .content-filter-bar .chip-row {
+    flex: none;
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    max-width: 100%;
+    width: calc(100% + var(--filter-gutter) * 2);
+    max-width: none;
     min-width: 0;
-    padding-block: 3px;
+    margin-inline: calc(-1 * var(--filter-gutter));
+    padding: 3px var(--filter-gutter);
     overscroll-behavior-x: contain;
     scrollbar-width: none;
   }
   .content-filter-bar .chip-row::-webkit-scrollbar { display: none; }
   .content-filter-bar .chip-row > .chip { flex: 0 0 auto; white-space: nowrap; }
+}
+@media (max-width: 360px) {
+  .content-filter-bar { --filter-gutter: 16px; }
 }
