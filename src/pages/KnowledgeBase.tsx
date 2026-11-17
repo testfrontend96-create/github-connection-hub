@@ -28,8 +28,10 @@ export default function KnowledgeBase() {
   const statsLayout = 'rail'
 
   const sorted = useMemo(() => [...entities, ...howtos.map(h => ({ ...h, name: h.title, summary: h.excerpt, type: 'howto' })), ...faqEntries(), ...topics.map(t => ({ ...t, summary: t.summary || t.tagline || '', type: 'topic', topics: [t.slug], entities: [] }))].sort((a, b) => a.name.localeCompare(b.name)), [])
+  // On "All", items stack by type in the same order the count list on the right shows them.
+  const ordered = useMemo(() => STAT_ORDER.flatMap((k) => sorted.filter((e) => e.type === k)), [sorted])
   const counts = Object.fromEntries(KINDS.map(k => [k, sorted.filter(e => e.type === k).length]))
-  const hits = filterKnowledge(sorted, q, kind, 'all')
+  const hits = filterKnowledge(ordered, q, kind, 'all')
   useEffect(() => {
     if (!hash) return
     setOpenSlug(decodeURIComponent(hash.slice(1)))
