@@ -790,7 +790,7 @@ function Inbox() {
   const shown = (rows || []).filter((r) => showDone || !r.done)
   const exportCsv = () => {
     const keys = Array.from(new Set((rows || []).flatMap((r) => Object.keys(r.data))))
-    const esc = (s: any) => `"${String(s ?? '').replace(/"/g, '""')}"`
+    const esc = (s: any) => { let v = String(s ?? ''); if (/^[=+\-@\t\r]/.test(v)) v = "'" + v; return `"${v.replace(/"/g, '""')}"` }
     const csv = [['date', ...keys].join(','), ...(rows || []).map((r) => [r.created_at, ...keys.map((k) => r.data[k])].map(esc).join(','))].join('\n')
     const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); a.download = `${kind}-submissions.csv`; a.click()
   }
