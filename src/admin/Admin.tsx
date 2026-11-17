@@ -594,7 +594,7 @@ function Editor({ def, item, existing, onClose, onSave, onRestore }: { def: Kind
   useEffect(() => { if (!example) return; const k = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopPropagation(); setExample(null) } }; addEventListener('keydown', k, true); return () => removeEventListener('keydown', k, true) }, [example])
   const [err, setErr] = useState('')
   const [busy, setBusy] = useState(false)
-  const titleKey = def.fields[0].k
+  const titleKey = (['title', 'name', 'q'].find((k) => def.fields.some((f) => f.k === k)) ?? def.fields.find((f) => f.type !== 'image')?.k ?? def.fields[0].k)
   const autoSlug = _new && !slugTouched ? keyOf(getPath(v, titleKey) || '') : slug
 
   const save = async () => {
